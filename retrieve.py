@@ -144,16 +144,16 @@ top_text_pairs_index = retrieve.top_neutral_sen(query,neutral_text_pair,top_k = 
 
 # top_text_pairs_index 是用来取 neutral_text_pair里面的高ppl句子的
 
-high_ppl_composed_p = []
+low_ppl_composed_p = []
 if choice == 'reverse':
     for item in top_text_pairs_index.items():
         sen = f'{neutral_text_pair[item[0]]} and {query}'
-        high_ppl_composed_p.append(f'{sen}')
+        low_ppl_composed_p.append(f'{sen}')
         print(f'{sen}    {item[1]}'  )
 elif choice == 'normal':
     for item in top_text_pairs_index.items():
         sen = f'{query} and {neutral_text_pair[item[0]]}'
-        high_ppl_composed_p.append(f'{sen}')
+        low_ppl_composed_p.append(f'{sen}')
         print(f'{sen}    {item[1]}'  )
 
 
@@ -164,7 +164,7 @@ elif choice == 'normal':
 
 # 尽管是reverse的，但我排列的时候还是按照query去取的relation and tail
 # high_ppl_composed_rules_indexs 对于 all_composed_rules的高ppl的index
-high_ppl_composed_rules_indexs,all_composed_rules = retrieve.top_composed_rules(query,high_ppl_composed_p,top_k = 20)
+high_ppl_composed_rules_indexs,all_composed_rules = retrieve.top_composed_rules(query,low_ppl_composed_p,top_k = 20)
 # high_ppl_composed_rules_indexs 对于 all_composed_rules的高ppl的index，所以可以用来取得 高ppl的 rules
 
 
