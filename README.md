@@ -21,8 +21,8 @@ Plz create a symbolic path to the follow path and here are the path I used.
 
 ```
 file_path = '/home/wangchunshu/preprocessed/all_heads'
-save_embedding_path = './data/embeddings_all_heads.npy'
-all_tuples_file = './data/all_tuples.csv'
+save_embedding_path = 'zeyi/longtail_project/data/embeddings_all_heads.npy'
+all_tuples_file = 'zeyi/longtail_project/data/all_tuples.csv'
 ```
 
 

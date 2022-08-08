@@ -111,12 +111,22 @@ if __name__ == '__main__':
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     device = 'cpu'
 
+if __name__ == '__main__':
 
+<<<<<<< HEAD:main.py
     retrieve = Retrieve(file_path,save_embedding_path,all_tuples_file,device)
 
     query = 'PersonX loses his father'
     mask_query = query.replace('loses','<mask>')
     masked_word = 'loses'
+=======
+    file_path = '/home/wangchunshu/preprocessed/all_heads'
+    save_embedding_path = './data/embeddings_all_heads.npy'
+    all_tuples_file = './data/all_tuples.csv'
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    device = 'cpu'
+
+>>>>>>> 909fedacd2934ce372fd07c513ed2d25d9b8b853:retrieve.py
 
 # 1.
     neutral_text_pair = retrieve.query_neutral_index(query,top_k = 40, threshold = 0.5)
@@ -140,21 +150,41 @@ if __name__ == '__main__':
             low_ppl_composed_p.append(f'{sen}')
             print(f'{sen}    {item[1]}'  )
 
+    retrieve = Retrieve(file_path,save_embedding_path,all_tuples_file,device)
 
+<<<<<<< HEAD:main.py
 
 
 
 # 4.1
     high_ppl_composed_rules_indexs,all_composed_rules = retrieve.top_composed_rules(query,low_ppl_composed_p,top_k = 20)
+=======
+    # query = 'PersonX loses his father'
+    # mask_query = query.replace('loses','<mask>')
+    # masked_word = 'loses'
+
+    # query = 'PersonX decides to see a therapist'
+    # mask_query = query.replace('see','<mask>')
+    # masked_word = 'see'
+
+    query = 'PersonX never drives to Paris'
+    mask_query = query.replace('drives','<mask>')
+    masked_word = 'drives'
+
+>>>>>>> 909fedacd2934ce372fd07c513ed2d25d9b8b853:retrieve.py
+
+    neutral_text_pair = retrieve.query_neutral_index(query,top_k = 40, threshold = 0.5)
 
 
-
+    choice = 'normal'
+    top_text_pairs_index = retrieve.top_neutral_sen(query,neutral_text_pair,top_k = 5,choice = choice)
 
 
 #4.2
     high_ppl_composed_mask_p = []
 
 
+<<<<<<< HEAD:main.py
     if choice == 'reverse':
         for item in top_text_pairs_index.items():
             sen = f'{neutral_text_pair[item[0]]} and {mask_query}'
@@ -168,4 +198,44 @@ if __name__ == '__main__':
 
 
 
+=======
+    low_ppl_composed_p = []
+    if choice == 'reverse':
+    for item in top_text_pairs_index.items():
+        sen = f'{neutral_text_pair[item[0]]} and {query}'
+        low_ppl_composed_p.append(f'{sen}')
+        print(f'{sen}    {item[1]}'  )
+    elif choice == 'normal':
+    for item in top_text_pairs_index.items():
+        sen = f'{query} and {neutral_text_pair[item[0]]}'
+        low_ppl_composed_p.append(f'{sen}')
+        print(f'{sen}    {item[1]}'  )
+
+
+
+
+
+
+
+    high_ppl_composed_rules_indexs,all_composed_rules = retrieve.top_composed_rules(query,low_ppl_composed_p,top_k = 20)
+
+
+
+    high_ppl_composed_mask_p = []
+
+
+    if choice == 'reverse':
+    for item in top_text_pairs_index.items():
+        sen = f'{neutral_text_pair[item[0]]} and {mask_query}'
+        high_ppl_composed_mask_p.append(f'{sen}')
+        print(f'{sen}')
+    elif choice == 'normal':
+    for item in top_text_pairs_index.items():
+        sen = f'{mask_query} and {neutral_text_pair[item[0]]}'
+        high_ppl_composed_mask_p.append(f'{sen}')
+        print(f'{sen}')
+
+
+
+>>>>>>> 909fedacd2934ce372fd07c513ed2d25d9b8b853:retrieve.py
     retrieve.masked_composed_rules(query,high_ppl_composed_mask_p,masked_word)
