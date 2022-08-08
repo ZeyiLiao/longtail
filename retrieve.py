@@ -103,89 +103,69 @@ class Retrieve():
 
 
 
+if __name__ == '__main__':
+
+    file_path = '/home/wangchunshu/preprocessed/all_heads'
+    save_embedding_path = './data/embeddings_all_heads.npy'
+    all_tuples_file = './data/all_tuples.csv'
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    device = 'cpu'
 
 
+    retrieve = Retrieve(file_path,save_embedding_path,all_tuples_file,device)
+
+    query = 'PersonX loses his father'
+    mask_query = query.replace('loses','<mask>')
+    masked_word = 'loses'
+
+# 1.
+    neutral_text_pair = retrieve.query_neutral_index(query,top_k = 40, threshold = 0.5)
 
 
-file_path = '/home/wangchunshu/preprocessed/all_heads'
-save_embedding_path = './data/embeddings_all_heads.npy'
-all_tuples_file = './data/all_tuples.csv'
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
-device = 'cpu'
+# 2.
+    choice = 'normal'
+    top_text_pairs_index = retrieve.top_neutral_sen(query,neutral_text_pair,top_k = 5,choice = choice)
 
 
-
-
-
-
-
-retrieve = Retrieve(file_path,save_embedding_path,all_tuples_file,device)
-
-# query = 'PersonX loses his father'
-# mask_query = query.replace('loses','<mask>')
-# masked_word = 'loses'
-
-# query = 'PersonX decides to see a therapist'
-# mask_query = query.replace('see','<mask>')
-# masked_word = 'see'
-
-query = 'PersonX never drives to Paris'
-mask_query = query.replace('drives','<mask>')
-masked_word = 'drives'
-
-
-neutral_text_pair = retrieve.query_neutral_index(query,top_k = 40, threshold = 0.5)
-
-
-choice = 'normal'
-top_text_pairs_index = retrieve.top_neutral_sen(query,neutral_text_pair,top_k = 5,choice = choice)
-
-
-
-# top_text_pairs_index 是用来取 neutral_text_pair里面的高ppl句子的
-
-high_ppl_composed_p = []
-if choice == 'reverse':
-    for item in top_text_pairs_index.items():
-        sen = f'{neutral_text_pair[item[0]]} and {query}'
-        high_ppl_composed_p.append(f'{sen}')
-        print(f'{sen}    {item[1]}'  )
-elif choice == 'normal':
-    for item in top_text_pairs_index.items():
-        sen = f'{query} and {neutral_text_pair[item[0]]}'
-        high_ppl_composed_p.append(f'{sen}')
-        print(f'{sen}    {item[1]}'  )
+# 3.
+    low_ppl_composed_p = []
+    if choice == 'reverse':
+        for item in top_text_pairs_index.items():
+            sen = f'{neutral_text_pair[item[0]]} and {query}'
+            low_ppl_composed_p.append(f'{sen}')
+            print(f'{sen}    {item[1]}'  )
+    elif choice == 'normal':
+        for item in top_text_pairs_index.items():
+            sen = f'{query} and {neutral_text_pair[item[0]]}'
+            low_ppl_composed_p.append(f'{sen}')
+            print(f'{sen}    {item[1]}'  )
 
 
 
 
 
-
-
-# 尽管是reverse的，但我排列的时候还是按照query去取的relation and tail
-# high_ppl_composed_rules_indexs 对于 all_composed_rules的高ppl的index
-high_ppl_composed_rules_indexs,all_composed_rules = retrieve.top_composed_rules(query,high_ppl_composed_p,top_k = 20)
-# high_ppl_composed_rules_indexs 对于 all_composed_rules的高ppl的index，所以可以用来取得 高ppl的 rules
+# 4.1
+    high_ppl_composed_rules_indexs,all_composed_rules = retrieve.top_composed_rules(query,low_ppl_composed_p,top_k = 20)
 
 
 
 
 
-
-high_ppl_composed_mask_p = []
-
-
-if choice == 'reverse':
-    for item in top_text_pairs_index.items():
-        sen = f'{neutral_text_pair[item[0]]} and {mask_query}'
-        high_ppl_composed_mask_p.append(f'{sen}')
-        print(f'{sen}')
-elif choice == 'normal':
-    for item in top_text_pairs_index.items():
-        sen = f'{mask_query} and {neutral_text_pair[item[0]]}'
-        high_ppl_composed_mask_p.append(f'{sen}')
-        print(f'{sen}')
+#4.2
+    high_ppl_composed_mask_p = []
 
 
+    if choice == 'reverse':
+        for item in top_text_pairs_index.items():
+            sen = f'{neutral_text_pair[item[0]]} and {mask_query}'
+            high_ppl_composed_mask_p.append(f'{sen}')
+            print(f'{sen}')
+    elif choice == 'normal':
+        for item in top_text_pairs_index.items():
+            sen = f'{mask_query} and {neutral_text_pair[item[0]]}'
+            high_ppl_composed_mask_p.append(f'{sen}')
+            print(f'{sen}')
 
-retrieve.masked_composed_rules(query,high_ppl_composed_mask_p,masked_word)
+
+
+    retrieve.masked_composed_rules(query,high_ppl_composed_mask_p,masked_word)
