@@ -30,7 +30,7 @@ PersonX loses his father and PersonX's father has cancer, Because PersonX intent
 
 
 Approach II:
-mask the last word of composed rules and compute Jaccard , KL score compared to the original score
+mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
 
 
 Rule00(original):PersonX loses his father, So PersonX is seen as to be sad
