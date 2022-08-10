@@ -1,0 +1,167 @@
+Approach I: probing the GPT-J model by composed rules
+We also probe the GPT-J model with composed rules and the RHS score is perplexity, where the lower perplexity means the higher liklihood. 
+Note: When we generate composed p(instead of composed rules), we should rank the composed p by unliklihood, which means less plausible to model
+
+
+PersonX ends the family and PersonX loses his father, As a result, PersonX has a good relationship with his father         ppl:47.33
+PersonX's dad gets sick and PersonX loses his father, As a result, PersonX has a good relationship with his father         ppl:47.55
+PersonX loses PersonX's inheritance and PersonX loses his father, As a result, PersonX has a good relationship with his father         ppl:47.59
+PersonX's father gets angry and PersonX loses his father, As a result, PersonX has a good relationship with his father         ppl:47.68
+PersonX's father becomes ill and PersonX loses his father, As a result, PersonX has a good relationship with his father         ppl:47.78
+PersonX's father has cancer and PersonX loses his father, As a result, PersonX has a good relationship with his father         ppl:47.81
+PersonX's son was hospitalized and PersonX loses his father, As a result, PersonX has a good relationship with his father         ppl:47.82
+PersonX's father gets sick and PersonX loses his father, As a result, PersonX has a good relationship with his father         ppl:47.83
+PersonX blames her son and PersonX loses his father, As a result, PersonX has a good relationship with his father         ppl:47.94
+PersonX abandons his family and PersonX loses his father, As a result, PersonX has a good relationship with his father         ppl:48.0
+Before PersonX ends the family and PersonX loses his father, PersonX has to have a close relationship with his father         ppl:48.65
+Before PersonX loses PersonX's inheritance and PersonX loses his father, PersonX has to have a close relationship with his father         ppl:48.78
+PersonX ends the family and PersonX loses his father, Because PersonX intents to have a strong relationship with his father         ppl:48.94
+Before PersonX's father gets angry and PersonX loses his father, PersonX has to have a close relationship with his father         ppl:48.95
+PersonX loses PersonX's inheritance and PersonX loses his father, Because PersonX intents to have a strong relationship with his father         ppl:48.95
+Before PersonX's dad gets sick and PersonX loses his father, PersonX has to have a close relationship with his father         ppl:49.01
+Before PersonX's father has cancer and PersonX loses his father, PersonX has to have a close relationship with his father         ppl:49.06
+PersonX's dad gets sick and PersonX loses his father, Because PersonX intents to have a strong relationship with his father         ppl:49.07
+PersonX's father gets angry and PersonX loses his father, Because PersonX intents to have a strong relationship with his father         ppl:49.13
+PersonX's father becomes ill and PersonX loses his father, Because PersonX intents to have a strong relationship with his father         ppl:49.15
+Approach II:
+mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
+Rule00(original):PersonX loses his father, So PersonX is seen as to be sad
+Rule01(composed):PersonX blames her son and PersonX loses his father, So PersonX is seen as to be sad
+Rule02(composed):PersonX abandons his family and PersonX loses his father, So PersonX is seen as to be sad
+Rule03(composed):PersonX's father gets sick and PersonX loses his father, So PersonX is seen as to be sad
+Rule04(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX is seen as to be sad
+Rule05(composed):PersonX's father has cancer and PersonX loses his father, So PersonX is seen as to be sad
+Rule06(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX is seen as to be sad
+Rule07(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX is seen as to be sad
+Rule08(composed):PersonX's father gets angry and PersonX loses his father, So PersonX is seen as to be sad
+Rule09(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX is seen as to be sad
+Rule010(composed):PersonX ends the family and PersonX loses his father, So PersonX is seen as to be sad
+Jaccard score is 0.6380952380952382
+KL score is 4.359808244203123e-07
+*******************************
+Rule10(original):PersonX loses his father, So PersonX is seen as to understand his father
+Rule11(composed):PersonX blames her son and PersonX loses his father, So PersonX is seen as to understand his father
+Rule12(composed):PersonX abandons his family and PersonX loses his father, So PersonX is seen as to understand his father
+Rule13(composed):PersonX's father gets sick and PersonX loses his father, So PersonX is seen as to understand his father
+Rule14(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX is seen as to understand his father
+Rule15(composed):PersonX's father has cancer and PersonX loses his father, So PersonX is seen as to understand his father
+Rule16(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX is seen as to understand his father
+Rule17(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX is seen as to understand his father
+Rule18(composed):PersonX's father gets angry and PersonX loses his father, So PersonX is seen as to understand his father
+Rule19(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX is seen as to understand his father
+Rule110(composed):PersonX ends the family and PersonX loses his father, So PersonX is seen as to understand his father
+Jaccard score is 0.18452380952380956
+KL score is 4.0623936286010577e-07
+*******************************
+Rule20(original):PersonX loses his father, So PersonX is seen as feels guilty
+Rule21(composed):PersonX blames her son and PersonX loses his father, So PersonX is seen as feels guilty
+Rule22(composed):PersonX abandons his family and PersonX loses his father, So PersonX is seen as feels guilty
+Rule23(composed):PersonX's father gets sick and PersonX loses his father, So PersonX is seen as feels guilty
+Rule24(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX is seen as feels guilty
+Rule25(composed):PersonX's father has cancer and PersonX loses his father, So PersonX is seen as feels guilty
+Rule26(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX is seen as feels guilty
+Rule27(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX is seen as feels guilty
+Rule28(composed):PersonX's father gets angry and PersonX loses his father, So PersonX is seen as feels guilty
+Rule29(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX is seen as feels guilty
+Rule210(composed):PersonX ends the family and PersonX loses his father, So PersonX is seen as feels guilty
+Jaccard score is 0.40476190476190477
+KL score is 5.004622437354556e-07
+*******************************
+Rule30(original):PersonX loses his father, So PersonX is seen as lonely
+Rule31(composed):PersonX blames her son and PersonX loses his father, So PersonX is seen as lonely
+Rule32(composed):PersonX abandons his family and PersonX loses his father, So PersonX is seen as lonely
+Rule33(composed):PersonX's father gets sick and PersonX loses his father, So PersonX is seen as lonely
+Rule34(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX is seen as lonely
+Rule35(composed):PersonX's father has cancer and PersonX loses his father, So PersonX is seen as lonely
+Rule36(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX is seen as lonely
+Rule37(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX is seen as lonely
+Rule38(composed):PersonX's father gets angry and PersonX loses his father, So PersonX is seen as lonely
+Rule39(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX is seen as lonely
+Rule310(composed):PersonX ends the family and PersonX loses his father, So PersonX is seen as lonely
+Jaccard score is 0.2678571428571429
+KL score is 4.57100796324994e-07
+*******************************
+Rule40(original):PersonX loses his father, So PersonX is seen as to see his father
+Rule41(composed):PersonX blames her son and PersonX loses his father, So PersonX is seen as to see his father
+Rule42(composed):PersonX abandons his family and PersonX loses his father, So PersonX is seen as to see his father
+Rule43(composed):PersonX's father gets sick and PersonX loses his father, So PersonX is seen as to see his father
+Rule44(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX is seen as to see his father
+Rule45(composed):PersonX's father has cancer and PersonX loses his father, So PersonX is seen as to see his father
+Rule46(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX is seen as to see his father
+Rule47(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX is seen as to see his father
+Rule48(composed):PersonX's father gets angry and PersonX loses his father, So PersonX is seen as to see his father
+Rule49(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX is seen as to see his father
+Rule410(composed):PersonX ends the family and PersonX loses his father, So PersonX is seen as to see his father
+Jaccard score is 0.4404761904761904
+KL score is 4.285826577188345e-07
+*******************************
+Rule50(original):PersonX loses his father, So PersonX feels feels lonely
+Rule51(composed):PersonX blames her son and PersonX loses his father, So PersonX feels feels lonely
+Rule52(composed):PersonX abandons his family and PersonX loses his father, So PersonX feels feels lonely
+Rule53(composed):PersonX's father gets sick and PersonX loses his father, So PersonX feels feels lonely
+Rule54(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX feels feels lonely
+Rule55(composed):PersonX's father has cancer and PersonX loses his father, So PersonX feels feels lonely
+Rule56(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX feels feels lonely
+Rule57(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX feels feels lonely
+Rule58(composed):PersonX's father gets angry and PersonX loses his father, So PersonX feels feels lonely
+Rule59(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX feels feels lonely
+Rule510(composed):PersonX ends the family and PersonX loses his father, So PersonX feels feels lonely
+Jaccard score is 0.6190476190476191
+KL score is 4.913231265391005e-07
+*******************************
+Rule60(original):PersonX loses his father, So PersonX is seen as to find his father
+Rule61(composed):PersonX blames her son and PersonX loses his father, So PersonX is seen as to find his father
+Rule62(composed):PersonX abandons his family and PersonX loses his father, So PersonX is seen as to find his father
+Rule63(composed):PersonX's father gets sick and PersonX loses his father, So PersonX is seen as to find his father
+Rule64(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX is seen as to find his father
+Rule65(composed):PersonX's father has cancer and PersonX loses his father, So PersonX is seen as to find his father
+Rule66(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX is seen as to find his father
+Rule67(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX is seen as to find his father
+Rule68(composed):PersonX's father gets angry and PersonX loses his father, So PersonX is seen as to find his father
+Rule69(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX is seen as to find his father
+Rule610(composed):PersonX ends the family and PersonX loses his father, So PersonX is seen as to find his father
+Jaccard score is 0.34325396825396826
+KL score is 5.695237575764623e-07
+*******************************
+Rule70(original):PersonX loses his father, So PersonX feels is comforted by his mother
+Rule71(composed):PersonX blames her son and PersonX loses his father, So PersonX feels is comforted by his mother
+Rule72(composed):PersonX abandons his family and PersonX loses his father, So PersonX feels is comforted by his mother
+Rule73(composed):PersonX's father gets sick and PersonX loses his father, So PersonX feels is comforted by his mother
+Rule74(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX feels is comforted by his mother
+Rule75(composed):PersonX's father has cancer and PersonX loses his father, So PersonX feels is comforted by his mother
+Rule76(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX feels is comforted by his mother
+Rule77(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX feels is comforted by his mother
+Rule78(composed):PersonX's father gets angry and PersonX loses his father, So PersonX feels is comforted by his mother
+Rule79(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX feels is comforted by his mother
+Rule710(composed):PersonX ends the family and PersonX loses his father, So PersonX feels is comforted by his mother
+Jaccard score is 0.3214285714285714
+KL score is 4.4842777526810094e-07
+*******************************
+Rule80(original):PersonX loses his father, So PersonX feels is upset
+Rule81(composed):PersonX blames her son and PersonX loses his father, So PersonX feels is upset
+Rule82(composed):PersonX abandons his family and PersonX loses his father, So PersonX feels is upset
+Rule83(composed):PersonX's father gets sick and PersonX loses his father, So PersonX feels is upset
+Rule84(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX feels is upset
+Rule85(composed):PersonX's father has cancer and PersonX loses his father, So PersonX feels is upset
+Rule86(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX feels is upset
+Rule87(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX feels is upset
+Rule88(composed):PersonX's father gets angry and PersonX loses his father, So PersonX feels is upset
+Rule89(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX feels is upset
+Rule810(composed):PersonX ends the family and PersonX loses his father, So PersonX feels is upset
+Jaccard score is 0.30357142857142855
+KL score is 5.740847853985542e-07
+*******************************
+Rule90(original):PersonX loses his father, So PersonX feels sad
+Rule91(composed):PersonX blames her son and PersonX loses his father, So PersonX feels sad
+Rule92(composed):PersonX abandons his family and PersonX loses his father, So PersonX feels sad
+Rule93(composed):PersonX's father gets sick and PersonX loses his father, So PersonX feels sad
+Rule94(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX feels sad
+Rule95(composed):PersonX's father has cancer and PersonX loses his father, So PersonX feels sad
+Rule96(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX feels sad
+Rule97(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX feels sad
+Rule98(composed):PersonX's father gets angry and PersonX loses his father, So PersonX feels sad
+Rule99(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX feels sad
+Rule910(composed):PersonX ends the family and PersonX loses his father, So PersonX feels sad
+Jaccard score is 0.18055555555555558
+KL score is 9.385034672959591e-07
+*******************************

@@ -54,7 +54,6 @@ class Retrieve():
 
     def select_highppl_neutral(self,query,neutral_text_pair,top_k = 10,combine_order = 'normal'):
         selected_neutral_text_pair = self.gptppl.have_ppl_pair(query,neutral_text_pair,combine_order = combine_order,top_k = top_k)
-        # composed_p = generate_composed_p(query,neutral_text_pair,selected_neutral_text_pair_index,combine_order)
         return selected_neutral_text_pair
 
     def  query_relation_tail_ppl(self,query,composed_p):
@@ -105,9 +104,6 @@ class Retrieve():
     def select_composed_rules(self,query,composed_p,top_k = 20):
         composed_rules = self.query_relation_tail_ppl(query,composed_p)
         composed_rules_ppl_low = self.gptppl.have_ppl(composed_rules,top_k = top_k)
-
-        for item in composed_rules_ppl_low.items():
-            print(f'{item[0]}   {item[1]}')
 
         return composed_rules_ppl_low
 
@@ -174,10 +170,12 @@ if __name__ == '__main__':
     original_composed_rules = retrieve.query_relation_tail_mask(query,keep_attr_react = True)
     composed_rules = retrieve.query_relation_tail_mask(query,composed_p,keep_attr_react = True)
     jaccard_result,KL_result = retrieve.masked_composed_rules(original_composed_rules,composed_rules)
-    print(jaccard_result)
-    print(KL_result)
+
     nl = '\n'
-    with open('./file.txt','w') as f:
+    file_path = f'./file_{combine_order}.txt'
+    with open(file_path,'w') as f:
+        f.write('Approach I: probing the GPT-J model by composed rules')
+        f.write(nl)
         f.write('We also probe the GPT-J model with composed rules and the RHS score is perplexity, where the lower perplexity means the higher liklihood. ')
         f.write(nl)
         f.write('Note: When we generate composed p(instead of composed rules), we should rank the composed p by unliklihood, which means less plausible to model')
@@ -190,7 +188,10 @@ if __name__ == '__main__':
             f.write(nl)
 
 
-
+        f.write('Approach II:')
+        f.write(nl)
+        f.write('mask the last word of composed rules and compute Jaccard , KL score compared to the original rules')
+        f.write(nl)
         for key in original_composed_rules.keys():
             f.write(f'Rule{key}0(original):')
             f.write(original_composed_rules[key][0])
