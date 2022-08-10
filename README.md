@@ -24,3 +24,8 @@ file_path = '/home/wangchunshu/preprocessed/all_heads'
 save_embedding_path = 'zeyi/longtail_project/data/embeddings_all_heads.npy'
 all_tuples_file = 'zeyi/longtail_project/data/all_tuples.csv'
 ```
+
+
+#TODO
+1. I didn't set device = gpu and it may cause some run our of memory problem.
+2. Mask which word should be implemented at `masked_composed_rules()`
