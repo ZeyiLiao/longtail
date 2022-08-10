@@ -132,10 +132,13 @@ class Retrieve():
         original_composed_rules_top_indices = self.decoder.top_k_for_jaccard(original_composed_rules_mask_softmaxs,top_k = 5)
         composed_rules_top_indices = self.decoder.top_k_for_jaccard(composed_rules_mask_softmaxs,top_k = 5)
 
+
+        original_composed_rules_decoded_words = self.decoder.decode_to_word(original_composed_rules_top_indices)
+        composed_rules_decoded_words = self.decoder.decode_to_word(composed_rules_top_indices)
         jaccard_result = self.decoder.jaccard(original_composed_rules_top_indices,composed_rules_top_indices)
         KL_result = self.decoder.KL_divergence(original_composed_rules_mask_softmaxs,composed_rules_mask_softmaxs)
 
-        return jaccard_result,KL_result
+        return jaccard_result,KL_result,original_composed_rules_decoded_words,composed_rules_decoded_words
 
 if __name__ == '__main__':
 
@@ -159,7 +162,7 @@ if __name__ == '__main__':
 # 2.
     # select neutral texts with high ppl when combining with query in a 'normal' order or 'reverse' order
     # named them composed p
-    combine_order= 'reverse'
+    combine_order= 'normal'
     selected_neutral_texts = retrieve.select_highppl_neutral(query,neutral_texts,top_k = 10,combine_order = combine_order)
     composed_p = generate_composed_p(query,selected_neutral_texts,combine_order)
 
@@ -167,14 +170,20 @@ if __name__ == '__main__':
     # select composed rules with low ppl
     composed_rules_ppl_low = retrieve.select_composed_rules(query,composed_p,top_k = 20)
 
+# 4.
     original_composed_rules = retrieve.query_relation_tail_mask(query,keep_attr_react = True)
     composed_rules = retrieve.query_relation_tail_mask(query,composed_p,keep_attr_react = True)
-    jaccard_result,KL_result = retrieve.masked_composed_rules(original_composed_rules,composed_rules)
+
+    jaccard_result,KL_result,original_composed_rules_decoded_words,composed_rules_decoded_words = retrieve.masked_composed_rules(original_composed_rules,composed_rules)
+
+
+
+
+
 
     nl = '\n'
     file_path = f'./file_{combine_order}.txt'
     with open(file_path,'w') as f:
-        # f.write('Approach I: probing the GPT-J model by composed rules')
         # f.write(nl)
         # f.write('We also probe the GPT-J model with composed rules and the RHS score is perplexity, where the lower perplexity means the higher liklihood. ')
         # f.write(nl)
@@ -188,13 +197,16 @@ if __name__ == '__main__':
         #     f.write(nl)
 
 
-        # f.write('Approach II:')
         f.write(nl)
         f.write('mask the last word of composed rules and compute Jaccard , KL score compared to the original rules')
         f.write(nl)
         for key in original_composed_rules.keys():
             f.write(f'Rule{key}0(original):')
             f.write(original_composed_rules[key][0])
+            f.write(nl)
+            f.write(f'Decoded words:  ')
+            f.write(original_composed_rules_decoded_words[key][0])
+            f.write(nl)
             f.write(nl)
             for index,sen in enumerate(composed_rules[key]):
                 f.write(f'Rule{key}{index+1}(composed):')
@@ -203,6 +215,10 @@ if __name__ == '__main__':
                 f.write(f'Jaccard score: {jaccard_result[key][index]}')
                 f.write(nl)
                 f.write(f'KL score: {KL_result[key][index]}')
+                f.write(nl)
+                f.write(f'Decoded words:  ')
+                f.write(composed_rules_decoded_words[key][index])
+                f.write(nl)
                 f.write(nl)
             f.write(nl)
             f.write('*******************************')
