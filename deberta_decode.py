@@ -36,30 +36,28 @@ class Decoder:
         return decoder_result
 
     def KL_divergence(self,original_composed_rules_logits,composed_rules_logits):
-        KL_result = dict()
+        KL_result = ddict(lambda : ddict(list))
         for key in original_composed_rules_logits.keys():
-            result = 0
             l1 = original_composed_rules_logits[key][0]
             l1 = torch.log(l1)
-            for l2 in composed_rules_logits[key]:
-                result += F.kl_div(l1,l2).item()
-            result = result/len(composed_rules_logits[key])
-            KL_result[key] = result
+            for index,l2 in enumerate(composed_rules_logits[key]):
+                result = F.kl_div(l1,l2).item()
+                KL_result[key][index] = result
+
         return KL_result
 
 
     def jaccard(self,original_composed_rules_top_indices,composed_rules_top_indices):
 
-        jaccard_result = dict()
+        jaccard_result = ddict(lambda : ddict(list))
         for key in original_composed_rules_top_indices.keys():
-            result = 0;
             l1 = original_composed_rules_top_indices[key][0]
-            for l2 in composed_rules_top_indices[key]:
+            for index,l2 in enumerate(composed_rules_top_indices[key]):
                 intersection = len(list(set(l1).intersection(l2)))
                 union = (len(l1) + len(l2)) - intersection
-                result += float(intersection) / union
+                result = float(intersection) / union
+                jaccard_result[key][index] = result
 
-            jaccard_result[key] = result/len(composed_rules_top_indices[key])
         return jaccard_result
 
 

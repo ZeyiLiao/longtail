@@ -159,7 +159,7 @@ if __name__ == '__main__':
 # 2.
     # select neutral texts with high ppl when combining with query in a 'normal' order or 'reverse' order
     # named them composed p
-    combine_order= 'normal'
+    combine_order= 'reverse'
     selected_neutral_texts = retrieve.select_highppl_neutral(query,neutral_texts,top_k = 10,combine_order = combine_order)
     composed_p = generate_composed_p(query,selected_neutral_texts,combine_order)
 
@@ -174,21 +174,21 @@ if __name__ == '__main__':
     nl = '\n'
     file_path = f'./file_{combine_order}.txt'
     with open(file_path,'w') as f:
-        f.write('Approach I: probing the GPT-J model by composed rules')
-        f.write(nl)
-        f.write('We also probe the GPT-J model with composed rules and the RHS score is perplexity, where the lower perplexity means the higher liklihood. ')
-        f.write(nl)
-        f.write('Note: When we generate composed p(instead of composed rules), we should rank the composed p by unliklihood, which means less plausible to model')
-        f.write(nl)
-        f.write(nl)
-        f.write(nl)
-        for item in composed_rules_ppl_low.items():
-            f.write(item[0])
-            f.write(f'         ppl:{item[1]}')
-            f.write(nl)
+        # f.write('Approach I: probing the GPT-J model by composed rules')
+        # f.write(nl)
+        # f.write('We also probe the GPT-J model with composed rules and the RHS score is perplexity, where the lower perplexity means the higher liklihood. ')
+        # f.write(nl)
+        # f.write('Note: When we generate composed p(instead of composed rules), we should rank the composed p by unliklihood, which means less plausible to model')
+        # f.write(nl)
+        # f.write(nl)
+        # f.write(nl)
+        # for item in composed_rules_ppl_low.items():
+        #     f.write(item[0])
+        #     f.write(f'         ppl:{item[1]}')
+        #     f.write(nl)
 
 
-        f.write('Approach II:')
+        # f.write('Approach II:')
         f.write(nl)
         f.write('mask the last word of composed rules and compute Jaccard , KL score compared to the original rules')
         f.write(nl)
@@ -200,9 +200,10 @@ if __name__ == '__main__':
                 f.write(f'Rule{key}{index+1}(composed):')
                 f.write(sen)
                 f.write(nl)
-            f.write(f'Jaccard score is {jaccard_result[key]}')
-            f.write(nl)
-            f.write(f'KL score is {KL_result[key]}')
+                f.write(f'Jaccard score: {jaccard_result[key][index]}')
+                f.write(nl)
+                f.write(f'KL score: {KL_result[key][index]}')
+                f.write(nl)
             f.write(nl)
             f.write('*******************************')
             f.write(nl)
