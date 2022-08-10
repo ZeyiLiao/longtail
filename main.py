@@ -56,11 +56,12 @@ class Retrieve():
         selected_neutral_text_pair = self.gptppl.have_ppl_pair(query,neutral_text_pair,combine_order = combine_order,top_k = top_k)
         return selected_neutral_text_pair
 
-    def  query_relation_tail_ppl(self,query,composed_p):
+    def query_relation_tail_ppl(self,query,composed_p):
         df_selected = self.df.loc[query]
         relations = list(df_selected['relation'])
-
         tails = list(df_selected['tail'])
+
+
         composed_rules = []
         for text_pair in composed_p:
             for index,relation in enumerate(relations):
@@ -73,16 +74,16 @@ class Retrieve():
     def query_relation_tail_mask(self,query,composed_p = None ,keep_attr_react=False):
         df_selected = self.df.loc[query]
         relations = list(df_selected['relation'])
-        if keep_attr_react:
-            relations = [relation for relation in relations if (relation =='xReact' or relation == 'xAttr')]
         tails = list(df_selected['tail'])
+        if keep_attr_react:
+            relations_tails = [(relation,tails[index]) for index,relation in enumerate(relations) if (relation =='xReact' or relation == 'xAttr')]
 
         if composed_p is not None:
             composed_rules = ddict(list)
             for text_pair in composed_p:
                 group = 0
-                for index,relation in enumerate(relations):
-                    tail = tails[index]
+                for index,relation_tail in enumerate(relations_tails):
+                    relation,tail = relation_tail
                     composed_rule = back_to_sen(text_pair,relation,tail)
                     composed_rules[group].append(composed_rule)
                     group += 1
@@ -92,8 +93,8 @@ class Retrieve():
         else:
             original_composed_rules = ddict(list)
             group = 0
-            for index,relation in enumerate(relations):
-                tail = tails[index]
+            for index,relation_tail in enumerate(relations_tails):
+                relation,tail = relation_tail
                 composed_rule = back_to_sen(query,relation,tail)
                 original_composed_rules[group].append(composed_rule)
                 group += 1
@@ -101,9 +102,9 @@ class Retrieve():
 
 
 
-    def select_composed_rules(self,query,composed_p,top_k = 20):
+    def select_composed_rules(self,query,composed_p,top_k_ratio = 0.73):
         composed_rules = self.query_relation_tail_ppl(query,composed_p)
-        composed_rules_ppl_low = self.gptppl.have_ppl(composed_rules,top_k = top_k)
+        composed_rules_ppl_low = self.gptppl.have_ppl(composed_rules,top_k_ratio = top_k_ratio)
 
         return composed_rules_ppl_low
 
@@ -162,13 +163,13 @@ if __name__ == '__main__':
 # 2.
     # select neutral texts with high ppl when combining with query in a 'normal' order or 'reverse' order
     # named them composed p
-    combine_order= 'normal'
+    combine_order= 'reverse'
     selected_neutral_texts = retrieve.select_highppl_neutral(query,neutral_texts,top_k = 10,combine_order = combine_order)
     composed_p = generate_composed_p(query,selected_neutral_texts,combine_order)
 
 # 3.
     # select composed rules with low ppl
-    composed_rules_ppl_low = retrieve.select_composed_rules(query,composed_p,top_k = 20)
+    composed_rules_ppl_low = retrieve.select_composed_rules(query,composed_p,top_k_ratio = 0.73)
 
 # 4.
     original_composed_rules = retrieve.query_relation_tail_mask(query,keep_attr_react = True)

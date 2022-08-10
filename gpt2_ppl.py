@@ -43,7 +43,8 @@ class GPTppl():
 
 
 
-    def have_ppl(self,composed_rules,top_k = 20):
+    def have_ppl(self,composed_rules,top_k_ratio):
+        composed_rules = list(set(composed_rules))
         features = [torch.LongTensor(self.tokenizer.convert_tokens_to_ids(self.tokenizer.tokenize(composed_rule))) for composed_rule in composed_rules]
         lenght_text_pair = [len(composed_rule.split(' ')) for composed_rule in composed_rules]
         selected_text_ppl_low = ddict(list)
@@ -60,6 +61,7 @@ class GPTppl():
                 selected_text_ppl_low[composed_rules[index]] = round(math.exp(loss.item())/(lenght_text_pair[index]),2)
 
         # This is for probing the gpt-j, so we sould select higher liklihood which is low perplexity
-        selected_text_ppl_low = sorted(selected_text_ppl_low.items(), key= lambda item:item[1])[:top_k]
+        selected_text_ppl_low = sorted(selected_text_ppl_low.items(), key= lambda item:item[1])
+        selected_text_ppl_low = selected_text_ppl_low[:int(len(composed_rules) * top_k_ratio)]
         selected_text_ppl_low = {l[0]:l[1] for l in selected_text_ppl_low}
         return selected_text_ppl_low
