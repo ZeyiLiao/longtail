@@ -14,7 +14,7 @@ def generate_composed_p(query,text_pairs,combine_order):
     return ans
 
 
-def main_process(args,query,retrieve: Retrieve):
+def main_process(args,query,retrieve: Retrieve,query_order):
 
     top_k_retrieval = args.top_k_retrieval
     threshold_retrieval = args.threshold_retrieval
@@ -48,12 +48,15 @@ def main_process(args,query,retrieve: Retrieve):
     jaccard_result,KL_result,original_composed_rules_decoded_words,composed_rules_decoded_words = retrieve.masked_composed_rules(original_composed_rules,composed_rules,top_k_jaccard)
 
 
-
     nl = '\n'
     file_path = f'./file_{combine_order}.txt'
     with open(file_path,'a+') as f:
 
-        f.write("Query:")
+        f.write(nl)
+        f.write(nl)
+        f.write(f'{query_order}')
+        f.write(nl)
+        f.write("***Query:")
         f.write(nl)
         f.write(query)
         f.write(nl)
@@ -61,7 +64,7 @@ def main_process(args,query,retrieve: Retrieve):
         f.write(nl)
 
 
-        f.write('Intermediate results whose are neutral in both direction and has high PPL')
+        f.write('***Intermediate results whose are neutral in both direction and has high PPL***')
         f.write(nl)
         f.write(nl)
         f.write(nl)
@@ -69,12 +72,12 @@ def main_process(args,query,retrieve: Retrieve):
             f.write(text)
             f.write(nl)
 
-
+        f.write(nl)
         f.write('********************')
-
+        f.write(nl)
 
         f.write(nl)
-        f.write('Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules')
+        f.write('***Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules***')
         f.write(nl)
         for key in original_composed_rules.keys():
             f.write(f'Rule{key}0(original):')
@@ -117,10 +120,10 @@ def main(args):
     retrieve = Retrieve(all_heads_path,save_embedding_path,all_tuples_path,device)
     with open(query_path,'r') as f:
         reader = csv.reader(f)
-        for query in tqdm(reader):
+        for index,query in enumerate(reader):
             query = query[0]
             print(f'Process for {query}')
-            main_process(args,query,retrieve)
+            main_process(args,query,retrieve,index+1)
 
 if __name__ == '__main__':
 
