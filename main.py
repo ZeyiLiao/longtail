@@ -102,6 +102,7 @@ def main_process(args,query,retrieve: Retrieve):
         f.write(nl)
         f.write(nl)
         f.write('*************************************************************************************')
+        f.write(nl)
 
 
 def main(args):
