@@ -1,25 +1,7 @@
+
 from helper import *
-from nli import NLI
-from gpt2_ppl import GPTppl
-from deberta_decode import Decoder
+from retrieve import Retrieve
 
-
-def back_to_sen(head,relation,tail):
-    if relation == 'xAttr':
-        content = head + ', So PersonX is seen as ' + tail
-    elif relation == 'xReact':
-        content = head + ', So PersonX feels ' + tail
-    elif relation == 'xNeed':
-        content = 'Before ' + head + ', PersonX has ' + tail
-    elif relation == 'xWant':
-        content = head + ', So PersonX wants ' + tail
-    elif relation == 'xIntent':
-        content = head + ', Because PersonX intents ' + tail
-    elif relation == 'xEffect':
-        content = head + ', As a result, PersonX ' + tail
-    elif relation == 'HinderedBy':
-        content =  head + ', This is hindered if ' + tail
-    return content
 
 
 def generate_composed_p(query,text_pairs,combine_order):
@@ -33,173 +15,63 @@ def generate_composed_p(query,text_pairs,combine_order):
     return ans
 
 
-class Retrieve():
-    def __init__(self,file_path,save_embedding_path,all_tuples_file,device):
-        self.embedder = SimCSE('princeton-nlp/sup-simcse-bert-base-uncased',device = device)
-        # embedder.build_index(file_path,device=device,batch_size=64,save_path=save_embedding_path)
-        self.embedder.load_embeddings(file_path,save_embedding_path)
-        self.nli = NLI(device)
-        self.gptppl = GPTppl(device)
-        self.decoder = Decoder(device)
-        self.df = pd.read_csv(all_tuples_file,names = ['head','relation','tail'],index_col='head')
+def main_process(args,query,retrieve):
 
-    def query_neutral(self,query,top_k=80,threshold=0.2):
-        results = self.embedder.search(query,device = device, top_k=top_k, threshold=threshold)
-
-        text_pair = [text[0] for text in results]
-        neutral_text_pair = self.nli(query,text_pair)
-        return neutral_text_pair
-
-
-
-    def select_highppl_neutral(self,query,neutral_text_pair,top_k = 10,combine_order = 'normal'):
-        selected_neutral_text_pair = self.gptppl.have_ppl_pair(query,neutral_text_pair,combine_order = combine_order,top_k = top_k)
-        return selected_neutral_text_pair
-
-    def query_relation_tail_ppl(self,query,composed_p):
-        df_selected = self.df.loc[query]
-        relations = list(df_selected['relation'])
-        tails = list(df_selected['tail'])
-
-
-        composed_rules = []
-        for text_pair in composed_p:
-            for index,relation in enumerate(relations):
-                tail = tails[index]
-                composed_rule = back_to_sen(text_pair,relation,tail)
-                composed_rules.append(composed_rule)
-
-        return composed_rules
-
-    def query_relation_tail_mask(self,query,composed_p = None ,keep_attr_react=False):
-        df_selected = self.df.loc[query]
-        relations = list(df_selected['relation'])
-        tails = list(df_selected['tail'])
-        if keep_attr_react:
-            relations_tails = [(relation,tails[index]) for index,relation in enumerate(relations) if (relation =='xReact' or relation == 'xAttr')]
-
-        if composed_p is not None:
-            composed_rules = ddict(list)
-            for text_pair in composed_p:
-                group = 0
-                for index,relation_tail in enumerate(relations_tails):
-                    relation,tail = relation_tail
-                    composed_rule = back_to_sen(text_pair,relation,tail)
-                    composed_rules[group].append(composed_rule)
-                    group += 1
-
-            return composed_rules
-
-        else:
-            original_composed_rules = ddict(list)
-            group = 0
-            for index,relation_tail in enumerate(relations_tails):
-                relation,tail = relation_tail
-                composed_rule = back_to_sen(query,relation,tail)
-                original_composed_rules[group].append(composed_rule)
-                group += 1
-            return original_composed_rules
-
-
-
-    def select_composed_rules(self,query,composed_p,top_k_ratio = 0.73):
-        composed_rules = self.query_relation_tail_ppl(query,composed_p)
-        composed_rules_ppl_low = self.gptppl.have_ppl(composed_rules,top_k_ratio = top_k_ratio)
-
-        return composed_rules_ppl_low
-
-
-    def masked_composed_rules(self,original_composed_rules,composed_rules):
-        original_composed_rules_mask = ddict(list)
-        composed_rules_mask = ddict(list)
-
-        # TODO
-        # Just mask the last token here which is not reasonable. May need to identify which part should be mask.
-        mask_token = self.decoder.tokenizer.mask_token
-        for key in original_composed_rules.keys():
-            tmps = original_composed_rules[key]
-            mask_sens = [tmp.rsplit(' ',1)[0] + ' ' + mask_token for tmp in tmps]
-            original_composed_rules_mask[key] = mask_sens
-
-        for key in composed_rules.keys():
-            tmps = composed_rules[key]
-            mask_sens = [tmp.rsplit(' ',1)[0] + ' ' + mask_token for tmp in tmps]
-            composed_rules_mask[key] = mask_sens
-
-        original_composed_rules_mask_softmaxs = self.decoder(original_composed_rules_mask)
-        composed_rules_mask_softmaxs = self.decoder(composed_rules_mask)
-
-
-        original_composed_rules_top_indices = self.decoder.top_k_for_jaccard(original_composed_rules_mask_softmaxs,top_k = 5)
-        composed_rules_top_indices = self.decoder.top_k_for_jaccard(composed_rules_mask_softmaxs,top_k = 5)
-
-
-        original_composed_rules_decoded_words = self.decoder.decode_to_word(original_composed_rules_top_indices)
-        composed_rules_decoded_words = self.decoder.decode_to_word(composed_rules_top_indices)
-        jaccard_result = self.decoder.jaccard(original_composed_rules_top_indices,composed_rules_top_indices)
-        KL_result = self.decoder.KL_divergence(original_composed_rules_mask_softmaxs,composed_rules_mask_softmaxs)
-
-        return jaccard_result,KL_result,original_composed_rules_decoded_words,composed_rules_decoded_words
-
-if __name__ == '__main__':
-
-    file_path = '/home/wangchunshu/preprocessed/all_heads'
-    save_embedding_path = './data/embeddings_all_heads.npy'
-    all_tuples_file = './data/all_tuples.csv'
-    device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    device = 'cpu'
-
-
-    retrieve = Retrieve(file_path,save_embedding_path,all_tuples_file,device)
-
-    query = 'PersonX loses his father'
+    top_k_retrieval = args.top_k_retrieval
+    threshold_retrieval = args.threshold_retrieval
+    combine_order= args.combine_order
+    top_k_composed_p = args.top_k_composed_p
+    keep_attr_react = args.keep_attr_react
+    top_k_jaccard = args.top_k_jaccard
 
 
 # 1.
     # retrieve all relevant sentence
     # filter out those whose label is not neutral in both direction
-    neutral_texts = retrieve.query_neutral(query,top_k = 200, threshold = 0.2)
+    neutral_texts = retrieve.query_neutral(query,top_k = top_k_retrieval, threshold = threshold_retrieval)
 
 # 2.
     # select neutral texts with high ppl when combining with query in a 'normal' order or 'reverse' order
     # named them composed p
-    combine_order= 'reverse'
-    selected_neutral_texts = retrieve.select_highppl_neutral(query,neutral_texts,top_k = 10,combine_order = combine_order)
+
+    selected_neutral_texts = retrieve.select_highppl_neutral(query,neutral_texts,top_k = top_k_composed_p,combine_order = combine_order)
     composed_p = generate_composed_p(query,selected_neutral_texts,combine_order)
 
 # 3.
     # select composed rules with low ppl
-    composed_rules_ppl_low = retrieve.select_composed_rules(query,composed_p,top_k_ratio = 0.73)
+    # maybe useful in the future
+    # composed_rules_ppl_low = retrieve.select_composed_rules(query,composed_p,top_k_ratio = 0.73)
 
 # 4.
-    original_composed_rules = retrieve.query_relation_tail_mask(query,keep_attr_react = True)
-    composed_rules = retrieve.query_relation_tail_mask(query,composed_p,keep_attr_react = True)
+    original_composed_rules = retrieve.query_relation_tail_mask(query,keep_attr_react = keep_attr_react)
+    composed_rules = retrieve.query_relation_tail_mask(query,composed_p,keep_attr_react = keep_attr_react)
 
-    jaccard_result,KL_result,original_composed_rules_decoded_words,composed_rules_decoded_words = retrieve.masked_composed_rules(original_composed_rules,composed_rules)
-
-
-
+    jaccard_result,KL_result,original_composed_rules_decoded_words,composed_rules_decoded_words = retrieve.masked_composed_rules(original_composed_rules,composed_rules,top_k_jaccard)
 
 
 
     nl = '\n'
     file_path = f'./file_{combine_order}.txt'
-    with open(file_path,'w') as f:
-        # f.write(nl)
-        # f.write('We also probe the GPT-J model with composed rules and the RHS score is perplexity, where the lower perplexity means the higher liklihood. ')
-        # f.write(nl)
-        # f.write('Note: When we generate composed p(instead of composed rules), we should rank the composed p by unliklihood, which means less plausible to model')
-        # f.write(nl)
-        # f.write(nl)
-        # f.write(nl)
-        # for item in composed_rules_ppl_low.items():
-        #     f.write(item[0])
-        #     f.write(f'         ppl:{item[1]}')
-        #     f.write(nl)
+    with open(file_path,'a+') as f:
+
+        f.write("Query:")
+        f.write(nl)
+        f.write(query)
+        f.write(nl)
+
+
+        f.write('Intermediate results whose are neutral in both direction and has high PPL')
+        f.write(nl)
+        for text in composed_p:
+            f.write(text)
+            f.write(nl)
+
+
+        f.write('********************')
 
 
         f.write(nl)
-        f.write('mask the last word of composed rules and compute Jaccard , KL score compared to the original rules')
+        f.write('Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules')
         f.write(nl)
         for key in original_composed_rules.keys():
             f.write(f'Rule{key}0(original):')
@@ -222,5 +94,44 @@ if __name__ == '__main__':
                 f.write(nl)
                 f.write(nl)
             f.write(nl)
-            f.write('*******************************')
+            f.write('***********************************************')
             f.write(nl)
+        f.write(nl)
+        f.write(nl)
+        f.write('*************************************************************************************')
+
+
+def main(args):
+    all_heads_path = args.all_heads_path
+    save_embedding_path = args.save_embedding_path
+    all_tuples_path = args.all_tuples_path
+    query_path = args.query_path
+
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    device = 'cpu'
+
+    retrieve = Retrieve(all_heads_path,save_embedding_path,all_tuples_path,device)
+    with open(query_path,'r') as f:
+        reader = csv.reader(f)
+        for query in tqdm(reader):
+            query = query[0]
+            print(f'Process for {query}')
+            main_process(args,query,retrieve)
+
+
+if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser(description='Longtailed project')
+    parser.add_argument('--all_heads_path', default= './data/all_heads')
+    parser.add_argument('--save_embedding_path', default= './data/embeddings_all_heads.npy')
+    parser.add_argument('--all_tuples_path', default='./data/all_tuples.csv')
+    parser.add_argument('--query_path',help=" A file save the queries", default= './query.csv')
+    parser.add_argument('--top_k_retrieval', help= 'Select top_k during retrieval', default = 400)
+    parser.add_argument('--threshold_retrieval', help = 'Threshold for retrieval', default= 0.2)
+    parser.add_argument('--combine_order', help = "Combine the p and p' in two order", choices= ['normal','reverse'])
+    parser.add_argument('--top_k_composed_p', help = 'Select top_k composed_p from top to end which are not that plausible',default=10)
+    parser.add_argument('--keep_attr_react', help = 'Only focus on the xAttr and xReact relations', action = 'store_false')
+    parser.add_argument('--top_k_jaccard', help= 'Select top_k decoded words for jaccard', default = 3)
+
+    args = parser.parse_args()
+    main(args)

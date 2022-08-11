@@ -10,3 +10,6 @@ from argparse import ArgumentParser
 from simcse import SimCSE
 import math
 import torch.nn.functional as F
+import argparse
+from argparse import ArgumentParser
+from tqdm import tqdm

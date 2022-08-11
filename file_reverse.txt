@@ -1,552 +1,251 @@
+Query:
+PersonX loses his father
+Intermediate results whose are neutral in both direction and has high PPL
+PersonX died unexpectedly and PersonX loses his father
+PersonX's children die and PersonX loses his father
+PersonX eventually dies and PersonX loses his father
+PersonX loses heart and PersonX loses his father
+PersonX ultimately dies and PersonX loses his father
+PersonX hates Father and PersonX loses his father
+PersonX unexpectedly passed away and PersonX loses his father
+PersonX blames her son and PersonX loses his father
+PersonX abandons his family and PersonX loses his father
+PersonX's father criticizes him and PersonX loses his father
+********************
+Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
+Rule00(original):PersonX loses his father, So PersonX is seen as sad
+Decoded words:   weak gay evil
 
-mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
-Rule00(original):PersonX loses his father, So PersonX is seen as lonely
-Decoded words:   weak gay evil sad…
+Rule01(composed):PersonX died unexpectedly and PersonX loses his father, So PersonX is seen as sad
+Jaccard score: 0.2
+KL score: 7.534282758570043e-06
+Decoded words:   dead weak...
 
-Rule01(composed):PersonX blames her son and PersonX loses his father, So PersonX is seen as lonely
-Jaccard score: 0.1111111111111111
+Rule02(composed):PersonX's children die and PersonX loses his father, So PersonX is seen as sad
+Jaccard score: 0.2
+KL score: 5.639855316985631e-06
+Decoded words:   weak selfish...
+
+Rule03(composed):PersonX eventually dies and PersonX loses his father, So PersonX is seen as sad
+Jaccard score: 0.0
+KL score: 1.813856761145871e-05
+Decoded words:  ... a…
+
+Rule04(composed):PersonX loses heart and PersonX loses his father, So PersonX is seen as sad
+Jaccard score: 0.2
+KL score: 6.788524842704646e-06
+Decoded words:   weak...…
+
+Rule05(composed):PersonX ultimately dies and PersonX loses his father, So PersonX is seen as sad
+Jaccard score: 0.0
+KL score: 1.2457182492653374e-05
+Decoded words:  ...… a
+
+Rule06(composed):PersonX hates Father and PersonX loses his father, So PersonX is seen as sad
+Jaccard score: 0.2
+KL score: 1.8129356249119155e-05
+Decoded words:   evil Father father
+
+Rule07(composed):PersonX unexpectedly passed away and PersonX loses his father, So PersonX is seen as sad
+Jaccard score: 0.0
+KL score: 1.1391980478947517e-05
+Decoded words:  ...… a
+
+Rule08(composed):PersonX blames her son and PersonX loses his father, So PersonX is seen as sad
+Jaccard score: 0.2
 KL score: 1.9292998331366107e-05
-Decoded words:   guilty evil responsible selfish victim
+Decoded words:   guilty evil responsible
 
-Rule02(composed):PersonX abandons his family and PersonX loses his father, So PersonX is seen as lonely
-Jaccard score: 0.25
+Rule09(composed):PersonX abandons his family and PersonX loses his father, So PersonX is seen as sad
+Jaccard score: 0.5
 KL score: 9.254789802071173e-06
-Decoded words:   selfish weak evil a...
+Decoded words:   selfish weak evil
 
-Rule03(composed):PersonX's father gets sick and PersonX loses his father, So PersonX is seen as lonely
-Jaccard score: 0.25
-KL score: 7.62976924306713e-06
-Decoded words:  ... weak… a selfish
-
-Rule04(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX is seen as lonely
-Jaccard score: 0.42857142857142855
-KL score: 7.061659744067583e-06
-Decoded words:   weak evil...… selfish
-
-Rule05(composed):PersonX's father has cancer and PersonX loses his father, So PersonX is seen as lonely
-Jaccard score: 0.25
-KL score: 8.101594175968785e-06
-Decoded words:   weak...… a dying
-
-Rule06(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX is seen as lonely
-Jaccard score: 0.25
-KL score: 6.2351373344426975e-06
-Decoded words:  ... weak… selfish a
-
-Rule07(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX is seen as lonely
-Jaccard score: 0.25
-KL score: 1.505578893556958e-05
-Decoded words:   a... weak… the
-
-Rule08(composed):PersonX's father gets angry and PersonX loses his father, So PersonX is seen as lonely
-Jaccard score: 0.25
-KL score: 1.11816971184453e-05
-Decoded words:   evil a... weak bad
-
-Rule09(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX is seen as lonely
-Jaccard score: 0.25
-KL score: 1.1049357453885023e-05
-Decoded words:   weak... selfish… a
-
-Rule010(composed):PersonX ends the family and PersonX loses his father, So PersonX is seen as lonely
-Jaccard score: 0.25
-KL score: 1.4954868674976751e-05
-Decoded words:   a evil weak selfish...
+Rule010(composed):PersonX's father criticizes him and PersonX loses his father, So PersonX is seen as sad
+Jaccard score: 0.5
+KL score: 5.8574751164997e-06
+Decoded words:   weak evil...
 
 
-*******************************
-Rule10(original):PersonX loses his father, So PersonX is seen as sad
-Decoded words:   weak gay evil sad…
+***********************************************
+Rule10(original):PersonX loses his father, So PersonX feels upset
+Decoded words:   guilty alone sad
 
-Rule11(composed):PersonX blames her son and PersonX loses his father, So PersonX is seen as sad
-Jaccard score: 0.1111111111111111
-KL score: 1.9292998331366107e-05
-Decoded words:   guilty evil responsible selfish victim
+Rule11(composed):PersonX died unexpectedly and PersonX loses his father, So PersonX feels upset
+Jaccard score: 0.5
+KL score: 2.124237198586343e-06
+Decoded words:   guilty sad lonely
 
-Rule12(composed):PersonX abandons his family and PersonX loses his father, So PersonX is seen as sad
-Jaccard score: 0.25
-KL score: 9.254789802071173e-06
-Decoded words:   selfish weak evil a...
+Rule12(composed):PersonX's children die and PersonX loses his father, So PersonX feels upset
+Jaccard score: 0.5
+KL score: 1.768166498550272e-06
+Decoded words:   guilty lonely alone
 
-Rule13(composed):PersonX's father gets sick and PersonX loses his father, So PersonX is seen as sad
-Jaccard score: 0.25
-KL score: 7.62976924306713e-06
-Decoded words:  ... weak… a selfish
+Rule13(composed):PersonX eventually dies and PersonX loses his father, So PersonX feels upset
+Jaccard score: 0.5
+KL score: 3.48513185599586e-06
+Decoded words:   sad guilty lonely
 
-Rule14(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX is seen as sad
-Jaccard score: 0.42857142857142855
-KL score: 7.061659744067583e-06
-Decoded words:   weak evil...… selfish
+Rule14(composed):PersonX loses heart and PersonX loses his father, So PersonX feels upset
+Jaccard score: 0.2
+KL score: 6.329136795102386e-06
+Decoded words:   guilty lost...
 
-Rule15(composed):PersonX's father has cancer and PersonX loses his father, So PersonX is seen as sad
-Jaccard score: 0.25
-KL score: 8.101594175968785e-06
-Decoded words:   weak...… a dying
+Rule15(composed):PersonX ultimately dies and PersonX loses his father, So PersonX feels upset
+Jaccard score: 0.5
+KL score: 2.766872739812243e-06
+Decoded words:   guilty sad lost
 
-Rule16(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX is seen as sad
-Jaccard score: 0.25
-KL score: 6.2351373344426975e-06
-Decoded words:  ... weak… selfish a
+Rule16(composed):PersonX hates Father and PersonX loses his father, So PersonX feels upset
+Jaccard score: 0.5
+KL score: 7.457883839379065e-06
+Decoded words:   guilty bad sad
 
-Rule17(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX is seen as sad
-Jaccard score: 0.25
-KL score: 1.505578893556958e-05
-Decoded words:   a... weak… the
+Rule17(composed):PersonX unexpectedly passed away and PersonX loses his father, So PersonX feels upset
+Jaccard score: 0.5
+KL score: 4.4668654481938574e-06
+Decoded words:   guilty sad lonely
 
-Rule18(composed):PersonX's father gets angry and PersonX loses his father, So PersonX is seen as sad
-Jaccard score: 0.25
-KL score: 1.11816971184453e-05
-Decoded words:   evil a... weak bad
-
-Rule19(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX is seen as sad
-Jaccard score: 0.25
-KL score: 1.1049357453885023e-05
-Decoded words:   weak... selfish… a
-
-Rule110(composed):PersonX ends the family and PersonX loses his father, So PersonX is seen as sad
-Jaccard score: 0.25
-KL score: 1.4954868674976751e-05
-Decoded words:   a evil weak selfish...
-
-
-*******************************
-Rule20(original):PersonX loses his father, So PersonX is seen as strong
-Decoded words:   weak gay evil sad…
-
-Rule21(composed):PersonX blames her son and PersonX loses his father, So PersonX is seen as strong
-Jaccard score: 0.1111111111111111
-KL score: 1.9292998331366107e-05
-Decoded words:   guilty evil responsible selfish victim
-
-Rule22(composed):PersonX abandons his family and PersonX loses his father, So PersonX is seen as strong
-Jaccard score: 0.25
-KL score: 9.254789802071173e-06
-Decoded words:   selfish weak evil a...
-
-Rule23(composed):PersonX's father gets sick and PersonX loses his father, So PersonX is seen as strong
-Jaccard score: 0.25
-KL score: 7.62976924306713e-06
-Decoded words:  ... weak… a selfish
-
-Rule24(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX is seen as strong
-Jaccard score: 0.42857142857142855
-KL score: 7.061659744067583e-06
-Decoded words:   weak evil...… selfish
-
-Rule25(composed):PersonX's father has cancer and PersonX loses his father, So PersonX is seen as strong
-Jaccard score: 0.25
-KL score: 8.101594175968785e-06
-Decoded words:   weak...… a dying
-
-Rule26(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX is seen as strong
-Jaccard score: 0.25
-KL score: 6.2351373344426975e-06
-Decoded words:  ... weak… selfish a
-
-Rule27(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX is seen as strong
-Jaccard score: 0.25
-KL score: 1.505578893556958e-05
-Decoded words:   a... weak… the
-
-Rule28(composed):PersonX's father gets angry and PersonX loses his father, So PersonX is seen as strong
-Jaccard score: 0.25
-KL score: 1.11816971184453e-05
-Decoded words:   evil a... weak bad
-
-Rule29(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX is seen as strong
-Jaccard score: 0.25
-KL score: 1.1049357453885023e-05
-Decoded words:   weak... selfish… a
-
-Rule210(composed):PersonX ends the family and PersonX loses his father, So PersonX is seen as strong
-Jaccard score: 0.25
-KL score: 1.4954868674976751e-05
-Decoded words:   a evil weak selfish...
-
-
-*******************************
-Rule30(original):PersonX loses his father, So PersonX is seen as vulnerable
-Decoded words:   weak gay evil sad…
-
-Rule31(composed):PersonX blames her son and PersonX loses his father, So PersonX is seen as vulnerable
-Jaccard score: 0.1111111111111111
-KL score: 1.9292998331366107e-05
-Decoded words:   guilty evil responsible selfish victim
-
-Rule32(composed):PersonX abandons his family and PersonX loses his father, So PersonX is seen as vulnerable
-Jaccard score: 0.25
-KL score: 9.254789802071173e-06
-Decoded words:   selfish weak evil a...
-
-Rule33(composed):PersonX's father gets sick and PersonX loses his father, So PersonX is seen as vulnerable
-Jaccard score: 0.25
-KL score: 7.62976924306713e-06
-Decoded words:  ... weak… a selfish
-
-Rule34(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX is seen as vulnerable
-Jaccard score: 0.42857142857142855
-KL score: 7.061659744067583e-06
-Decoded words:   weak evil...… selfish
-
-Rule35(composed):PersonX's father has cancer and PersonX loses his father, So PersonX is seen as vulnerable
-Jaccard score: 0.25
-KL score: 8.101594175968785e-06
-Decoded words:   weak...… a dying
-
-Rule36(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX is seen as vulnerable
-Jaccard score: 0.25
-KL score: 6.2351373344426975e-06
-Decoded words:  ... weak… selfish a
-
-Rule37(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX is seen as vulnerable
-Jaccard score: 0.25
-KL score: 1.505578893556958e-05
-Decoded words:   a... weak… the
-
-Rule38(composed):PersonX's father gets angry and PersonX loses his father, So PersonX is seen as vulnerable
-Jaccard score: 0.25
-KL score: 1.11816971184453e-05
-Decoded words:   evil a... weak bad
-
-Rule39(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX is seen as vulnerable
-Jaccard score: 0.25
-KL score: 1.1049357453885023e-05
-Decoded words:   weak... selfish… a
-
-Rule310(composed):PersonX ends the family and PersonX loses his father, So PersonX is seen as vulnerable
-Jaccard score: 0.25
-KL score: 1.4954868674976751e-05
-Decoded words:   a evil weak selfish...
-
-
-*******************************
-Rule40(original):PersonX loses his father, So PersonX is seen as sensitive
-Decoded words:   weak gay evil sad…
-
-Rule41(composed):PersonX blames her son and PersonX loses his father, So PersonX is seen as sensitive
-Jaccard score: 0.1111111111111111
-KL score: 1.9292998331366107e-05
-Decoded words:   guilty evil responsible selfish victim
-
-Rule42(composed):PersonX abandons his family and PersonX loses his father, So PersonX is seen as sensitive
-Jaccard score: 0.25
-KL score: 9.254789802071173e-06
-Decoded words:   selfish weak evil a...
-
-Rule43(composed):PersonX's father gets sick and PersonX loses his father, So PersonX is seen as sensitive
-Jaccard score: 0.25
-KL score: 7.62976924306713e-06
-Decoded words:  ... weak… a selfish
-
-Rule44(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX is seen as sensitive
-Jaccard score: 0.42857142857142855
-KL score: 7.061659744067583e-06
-Decoded words:   weak evil...… selfish
-
-Rule45(composed):PersonX's father has cancer and PersonX loses his father, So PersonX is seen as sensitive
-Jaccard score: 0.25
-KL score: 8.101594175968785e-06
-Decoded words:   weak...… a dying
-
-Rule46(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX is seen as sensitive
-Jaccard score: 0.25
-KL score: 6.2351373344426975e-06
-Decoded words:  ... weak… selfish a
-
-Rule47(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX is seen as sensitive
-Jaccard score: 0.25
-KL score: 1.505578893556958e-05
-Decoded words:   a... weak… the
-
-Rule48(composed):PersonX's father gets angry and PersonX loses his father, So PersonX is seen as sensitive
-Jaccard score: 0.25
-KL score: 1.11816971184453e-05
-Decoded words:   evil a... weak bad
-
-Rule49(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX is seen as sensitive
-Jaccard score: 0.25
-KL score: 1.1049357453885023e-05
-Decoded words:   weak... selfish… a
-
-Rule410(composed):PersonX ends the family and PersonX loses his father, So PersonX is seen as sensitive
-Jaccard score: 0.25
-KL score: 1.4954868674976751e-05
-Decoded words:   a evil weak selfish...
-
-
-*******************************
-Rule50(original):PersonX loses his father, So PersonX feels upset
-Decoded words:   guilty alone sad lonely lost
-
-Rule51(composed):PersonX blames her son and PersonX loses his father, So PersonX feels upset
-Jaccard score: 0.1111111111111111
+Rule18(composed):PersonX blames her son and PersonX loses his father, So PersonX feels upset
+Jaccard score: 0.2
 KL score: 1.621898263692856e-05
-Decoded words:   guilty guilt bad responsible betrayed
+Decoded words:   guilty guilt bad
 
-Rule52(composed):PersonX abandons his family and PersonX loses his father, So PersonX feels upset
-Jaccard score: 0.42857142857142855
+Rule19(composed):PersonX abandons his family and PersonX loses his father, So PersonX feels upset
+Jaccard score: 0.2
 KL score: 4.3495774662005715e-06
-Decoded words:   guilty betrayed abandoned lonely lost
+Decoded words:   guilty betrayed abandoned
 
-Rule53(composed):PersonX's father gets sick and PersonX loses his father, So PersonX feels upset
-Jaccard score: 0.25
-KL score: 3.672545062727295e-06
-Decoded words:   guilty sad... depressed bad
-
-Rule54(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX feels upset
-Jaccard score: 0.25
-KL score: 6.055362973711453e-06
-Decoded words:   guilty...… bad sad
-
-Rule55(composed):PersonX's father has cancer and PersonX loses his father, So PersonX feels upset
-Jaccard score: 0.42857142857142855
-KL score: 5.997577318339609e-06
-Decoded words:   guilty...… sad lonely
-
-Rule56(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX feels upset
-Jaccard score: 0.42857142857142855
-KL score: 3.4705919915722916e-06
-Decoded words:   guilty sad bad... lonely
-
-Rule57(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX feels upset
-Jaccard score: 0.42857142857142855
-KL score: 4.51463620265713e-06
-Decoded words:   guilty lonely sad...…
-
-Rule58(composed):PersonX's father gets angry and PersonX loses his father, So PersonX feels upset
-Jaccard score: 0.25
-KL score: 6.345184374367818e-06
-Decoded words:   sad guilty angry bad betrayed
-
-Rule59(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX feels upset
-Jaccard score: 0.25
-KL score: 5.502599833562272e-06
-Decoded words:   guilty sad betrayed depressed bad
-
-Rule510(composed):PersonX ends the family and PersonX loses his father, So PersonX feels upset
-Jaccard score: 0.42857142857142855
-KL score: 3.8623306863883045e-06
-Decoded words:   guilty sad lonely bad guilt
+Rule110(composed):PersonX's father criticizes him and PersonX loses his father, So PersonX feels upset
+Jaccard score: 0.2
+KL score: 5.07563208884676e-06
+Decoded words:   guilty betrayed lost
 
 
-*******************************
-Rule60(original):PersonX loses his father, So PersonX is seen as brave
-Decoded words:   weak gay evil sad…
+***********************************************
+Rule20(original):PersonX loses his father, So PersonX feels sad
+Decoded words:   guilty alone sad
 
-Rule61(composed):PersonX blames her son and PersonX loses his father, So PersonX is seen as brave
-Jaccard score: 0.1111111111111111
-KL score: 1.9292998331366107e-05
-Decoded words:   guilty evil responsible selfish victim
+Rule21(composed):PersonX died unexpectedly and PersonX loses his father, So PersonX feels sad
+Jaccard score: 0.5
+KL score: 2.124237198586343e-06
+Decoded words:   guilty sad lonely
 
-Rule62(composed):PersonX abandons his family and PersonX loses his father, So PersonX is seen as brave
-Jaccard score: 0.25
-KL score: 9.254789802071173e-06
-Decoded words:   selfish weak evil a...
+Rule22(composed):PersonX's children die and PersonX loses his father, So PersonX feels sad
+Jaccard score: 0.5
+KL score: 1.768166498550272e-06
+Decoded words:   guilty lonely alone
 
-Rule63(composed):PersonX's father gets sick and PersonX loses his father, So PersonX is seen as brave
-Jaccard score: 0.25
-KL score: 7.62976924306713e-06
-Decoded words:  ... weak… a selfish
+Rule23(composed):PersonX eventually dies and PersonX loses his father, So PersonX feels sad
+Jaccard score: 0.5
+KL score: 3.48513185599586e-06
+Decoded words:   sad guilty lonely
 
-Rule64(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX is seen as brave
-Jaccard score: 0.42857142857142855
-KL score: 7.061659744067583e-06
-Decoded words:   weak evil...… selfish
+Rule24(composed):PersonX loses heart and PersonX loses his father, So PersonX feels sad
+Jaccard score: 0.2
+KL score: 6.329136795102386e-06
+Decoded words:   guilty lost...
 
-Rule65(composed):PersonX's father has cancer and PersonX loses his father, So PersonX is seen as brave
-Jaccard score: 0.25
-KL score: 8.101594175968785e-06
-Decoded words:   weak...… a dying
+Rule25(composed):PersonX ultimately dies and PersonX loses his father, So PersonX feels sad
+Jaccard score: 0.5
+KL score: 2.766872739812243e-06
+Decoded words:   guilty sad lost
 
-Rule66(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX is seen as brave
-Jaccard score: 0.25
-KL score: 6.2351373344426975e-06
-Decoded words:  ... weak… selfish a
+Rule26(composed):PersonX hates Father and PersonX loses his father, So PersonX feels sad
+Jaccard score: 0.5
+KL score: 7.457883839379065e-06
+Decoded words:   guilty bad sad
 
-Rule67(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX is seen as brave
-Jaccard score: 0.25
-KL score: 1.505578893556958e-05
-Decoded words:   a... weak… the
+Rule27(composed):PersonX unexpectedly passed away and PersonX loses his father, So PersonX feels sad
+Jaccard score: 0.5
+KL score: 4.4668654481938574e-06
+Decoded words:   guilty sad lonely
 
-Rule68(composed):PersonX's father gets angry and PersonX loses his father, So PersonX is seen as brave
-Jaccard score: 0.25
-KL score: 1.11816971184453e-05
-Decoded words:   evil a... weak bad
-
-Rule69(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX is seen as brave
-Jaccard score: 0.25
-KL score: 1.1049357453885023e-05
-Decoded words:   weak... selfish… a
-
-Rule610(composed):PersonX ends the family and PersonX loses his father, So PersonX is seen as brave
-Jaccard score: 0.25
-KL score: 1.4954868674976751e-05
-Decoded words:   a evil weak selfish...
-
-
-*******************************
-Rule70(original):PersonX loses his father, So PersonX feels devastated
-Decoded words:   guilty alone sad lonely lost
-
-Rule71(composed):PersonX blames her son and PersonX loses his father, So PersonX feels devastated
-Jaccard score: 0.1111111111111111
+Rule28(composed):PersonX blames her son and PersonX loses his father, So PersonX feels sad
+Jaccard score: 0.2
 KL score: 1.621898263692856e-05
-Decoded words:   guilty guilt bad responsible betrayed
+Decoded words:   guilty guilt bad
 
-Rule72(composed):PersonX abandons his family and PersonX loses his father, So PersonX feels devastated
-Jaccard score: 0.42857142857142855
+Rule29(composed):PersonX abandons his family and PersonX loses his father, So PersonX feels sad
+Jaccard score: 0.2
 KL score: 4.3495774662005715e-06
-Decoded words:   guilty betrayed abandoned lonely lost
+Decoded words:   guilty betrayed abandoned
 
-Rule73(composed):PersonX's father gets sick and PersonX loses his father, So PersonX feels devastated
-Jaccard score: 0.25
-KL score: 3.672545062727295e-06
-Decoded words:   guilty sad... depressed bad
-
-Rule74(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX feels devastated
-Jaccard score: 0.25
-KL score: 6.055362973711453e-06
-Decoded words:   guilty...… bad sad
-
-Rule75(composed):PersonX's father has cancer and PersonX loses his father, So PersonX feels devastated
-Jaccard score: 0.42857142857142855
-KL score: 5.997577318339609e-06
-Decoded words:   guilty...… sad lonely
-
-Rule76(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX feels devastated
-Jaccard score: 0.42857142857142855
-KL score: 3.4705919915722916e-06
-Decoded words:   guilty sad bad... lonely
-
-Rule77(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX feels devastated
-Jaccard score: 0.42857142857142855
-KL score: 4.51463620265713e-06
-Decoded words:   guilty lonely sad...…
-
-Rule78(composed):PersonX's father gets angry and PersonX loses his father, So PersonX feels devastated
-Jaccard score: 0.25
-KL score: 6.345184374367818e-06
-Decoded words:   sad guilty angry bad betrayed
-
-Rule79(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX feels devastated
-Jaccard score: 0.25
-KL score: 5.502599833562272e-06
-Decoded words:   guilty sad betrayed depressed bad
-
-Rule710(composed):PersonX ends the family and PersonX loses his father, So PersonX feels devastated
-Jaccard score: 0.42857142857142855
-KL score: 3.8623306863883045e-06
-Decoded words:   guilty sad lonely bad guilt
+Rule210(composed):PersonX's father criticizes him and PersonX loses his father, So PersonX feels sad
+Jaccard score: 0.2
+KL score: 5.07563208884676e-06
+Decoded words:   guilty betrayed lost
 
 
-*******************************
-Rule80(original):PersonX loses his father, So PersonX feels sad
-Decoded words:   guilty alone sad lonely lost
-
-Rule81(composed):PersonX blames her son and PersonX loses his father, So PersonX feels sad
-Jaccard score: 0.1111111111111111
-KL score: 1.621898263692856e-05
-Decoded words:   guilty guilt bad responsible betrayed
-
-Rule82(composed):PersonX abandons his family and PersonX loses his father, So PersonX feels sad
-Jaccard score: 0.42857142857142855
-KL score: 4.3495774662005715e-06
-Decoded words:   guilty betrayed abandoned lonely lost
-
-Rule83(composed):PersonX's father gets sick and PersonX loses his father, So PersonX feels sad
-Jaccard score: 0.25
-KL score: 3.672545062727295e-06
-Decoded words:   guilty sad... depressed bad
-
-Rule84(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX feels sad
-Jaccard score: 0.25
-KL score: 6.055362973711453e-06
-Decoded words:   guilty...… bad sad
-
-Rule85(composed):PersonX's father has cancer and PersonX loses his father, So PersonX feels sad
-Jaccard score: 0.42857142857142855
-KL score: 5.997577318339609e-06
-Decoded words:   guilty...… sad lonely
-
-Rule86(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX feels sad
-Jaccard score: 0.42857142857142855
-KL score: 3.4705919915722916e-06
-Decoded words:   guilty sad bad... lonely
-
-Rule87(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX feels sad
-Jaccard score: 0.42857142857142855
-KL score: 4.51463620265713e-06
-Decoded words:   guilty lonely sad...…
-
-Rule88(composed):PersonX's father gets angry and PersonX loses his father, So PersonX feels sad
-Jaccard score: 0.25
-KL score: 6.345184374367818e-06
-Decoded words:   sad guilty angry bad betrayed
-
-Rule89(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX feels sad
-Jaccard score: 0.25
-KL score: 5.502599833562272e-06
-Decoded words:   guilty sad betrayed depressed bad
-
-Rule810(composed):PersonX ends the family and PersonX loses his father, So PersonX feels sad
-Jaccard score: 0.42857142857142855
-KL score: 3.8623306863883045e-06
-Decoded words:   guilty sad lonely bad guilt
+***********************************************
 
 
-*******************************
-Rule90(original):PersonX loses his father, So PersonX feels lonely
-Decoded words:   guilty alone sad lonely lost
-
-Rule91(composed):PersonX blames her son and PersonX loses his father, So PersonX feels lonely
-Jaccard score: 0.1111111111111111
-KL score: 1.621898263692856e-05
-Decoded words:   guilty guilt bad responsible betrayed
-
-Rule92(composed):PersonX abandons his family and PersonX loses his father, So PersonX feels lonely
-Jaccard score: 0.42857142857142855
-KL score: 4.3495774662005715e-06
-Decoded words:   guilty betrayed abandoned lonely lost
-
-Rule93(composed):PersonX's father gets sick and PersonX loses his father, So PersonX feels lonely
-Jaccard score: 0.25
-KL score: 3.672545062727295e-06
-Decoded words:   guilty sad... depressed bad
-
-Rule94(composed):PersonX's son was hospitalized and PersonX loses his father, So PersonX feels lonely
-Jaccard score: 0.25
-KL score: 6.055362973711453e-06
-Decoded words:   guilty...… bad sad
-
-Rule95(composed):PersonX's father has cancer and PersonX loses his father, So PersonX feels lonely
-Jaccard score: 0.42857142857142855
-KL score: 5.997577318339609e-06
-Decoded words:   guilty...… sad lonely
-
-Rule96(composed):PersonX's dad gets sick and PersonX loses his father, So PersonX feels lonely
-Jaccard score: 0.42857142857142855
-KL score: 3.4705919915722916e-06
-Decoded words:   guilty sad bad... lonely
-
-Rule97(composed):PersonX's father becomes ill and PersonX loses his father, So PersonX feels lonely
-Jaccard score: 0.42857142857142855
-KL score: 4.51463620265713e-06
-Decoded words:   guilty lonely sad...…
-
-Rule98(composed):PersonX's father gets angry and PersonX loses his father, So PersonX feels lonely
-Jaccard score: 0.25
-KL score: 6.345184374367818e-06
-Decoded words:   sad guilty angry bad betrayed
-
-Rule99(composed):PersonX loses PersonX's inheritance and PersonX loses his father, So PersonX feels lonely
-Jaccard score: 0.25
-KL score: 5.502599833562272e-06
-Decoded words:   guilty sad betrayed depressed bad
-
-Rule910(composed):PersonX ends the family and PersonX loses his father, So PersonX feels lonely
-Jaccard score: 0.42857142857142855
-KL score: 3.8623306863883045e-06
-Decoded words:   guilty sad lonely bad guilt
+*************************************************************************************Query:
+PersonX talks with his boss
+Intermediate results whose are neutral in both direction and has high PPL
+PersonX's boss complains and PersonX talks with his boss
+PersonX overhears the conversation and PersonX talks with his boss
+PersonX serves his boss and PersonX talks with his boss
+PersonX is PersonY's boss and PersonX talks with his boss
+PersonX starts the conversation and PersonX talks with his boss
+PersonX opens the conversation and PersonX talks with his boss
+PersonX begins the conversation and PersonX talks with his boss
+PersonX is your boss and PersonX talks with his boss
+PersonX likes his boss and PersonX talks with his boss
+PersonX talks and talks and PersonX talks with his boss
+********************
+Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
 
 
-*******************************
+*************************************************************************************Query:
+PersonX publicly defends the position
+Intermediate results whose are neutral in both direction and has high PPL
+PersonX denies allegations and PersonX publicly defends the position
+PersonX opposes injustice and PersonX publicly defends the position
+PersonX is impolite and PersonX publicly defends the position
+PersonX supports freedom and PersonX publicly defends the position
+PersonX gains support and PersonX publicly defends the position
+PersonX is defiant and PersonX publicly defends the position
+PersonX denies wrongdoing and PersonX publicly defends the position
+PersonX receives criticism and PersonX publicly defends the position
+PersonX claims self-defense and PersonX publicly defends the position
+PersonX discusses honesty and PersonX publicly defends the position
+********************
+Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
+
+
+*************************************************************************************Query:
+PersonX is owned by PersonY
+Intermediate results whose are neutral in both direction and has high PPL
+PersonX provides and PersonX is owned by PersonY
+PersonX sells photos and PersonX is owned by PersonY
+PersonX sells items and PersonX is owned by PersonY
+PersonX is well-known and PersonX is owned by PersonY
+PersonX sells products and PersonX is owned by PersonY
+PersonX advertises PersonY's brand and PersonX is owned by PersonY
+PersonX sells some items and PersonX is owned by PersonY
+PersonX advertises for PersonY and PersonX is owned by PersonY
+PersonX sells personal effects and PersonX is owned by PersonY
+PersonX offers PersonX's purpose and PersonX is owned by PersonY
+********************
+Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
+
+
+*************************************************************************************Query:
+PersonX seems to stay well
+Intermediate results whose are neutral in both direction and has high PPL
+PersonX isn't annoying and PersonX seems to stay well
+PersonX keeps PersonY and PersonX seems to stay well
+PersonX is happier and PersonX seems to stay well
+PersonX doesn’t mind and PersonX seems to stay well
+PersonX stays busy and PersonX seems to stay well
+PersonX is very friendly and PersonX seems to stay well
+PersonX keeps PersonY close and PersonX seems to stay well
+PersonX is generally charming and PersonX seems to stay well
+PersonX keeps PersonY's word and PersonX seems to stay well
+PersonX treats personY nicely and PersonX seems to stay well
+********************
+Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
+
+
+*************************************************************************************
