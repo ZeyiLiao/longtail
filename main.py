@@ -1,4 +1,3 @@
-
 from helper import *
 from retrieve import Retrieve
 
@@ -58,9 +57,13 @@ def main_process(args,query,retrieve):
         f.write(nl)
         f.write(query)
         f.write(nl)
+        f.write(nl)
+        f.write(nl)
 
 
         f.write('Intermediate results whose are neutral in both direction and has high PPL')
+        f.write(nl)
+        f.write(nl)
         f.write(nl)
         for text in composed_p:
             f.write(text)
