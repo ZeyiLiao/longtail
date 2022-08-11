@@ -14,7 +14,7 @@ def generate_composed_p(query,text_pairs,combine_order):
     return ans
 
 
-def main_process(args,query,retrieve):
+def main_process(args,query,retrieve: Retrieve):
 
     top_k_retrieval = args.top_k_retrieval
     threshold_retrieval = args.threshold_retrieval
@@ -121,7 +121,6 @@ def main(args):
             print(f'Process for {query}')
             main_process(args,query,retrieve)
 
-
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Longtailed project')
@@ -132,7 +131,7 @@ if __name__ == '__main__':
     parser.add_argument('--top_k_retrieval', help= 'Select top_k during retrieval', default = 400)
     parser.add_argument('--threshold_retrieval', help = 'Threshold for retrieval', default= 0.2)
     parser.add_argument('--combine_order', help = "Combine the p and p' in two order", choices= ['normal','reverse'])
-    parser.add_argument('--top_k_composed_p', help = 'Select top_k composed_p from top to end which are not that plausible',default=10)
+    parser.add_argument('--top_k_composed_p', help = 'Select top_k composed_p from top to end which are not that plausible',default=40)
     parser.add_argument('--keep_attr_react', help = 'Only focus on the xAttr and xReact relations', action = 'store_false')
     parser.add_argument('--top_k_jaccard', help= 'Select top_k decoded words for jaccard', default = 3)
 

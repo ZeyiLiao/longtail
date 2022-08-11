@@ -68,9 +68,23 @@ class Retrieve():
         df_selected = self.df.loc[query]
         relations = list(df_selected['relation'])
         tails = list(df_selected['tail'])
+        attr_react_set = {'xAttr','xReact'}
+        relations_set = list(set(relations) & attr_react_set)
+        relations_tails = []
+        count = 0
         if keep_attr_react:
-            relations_tails = [(relation,tails[index]) for index,relation in enumerate(relations) if (relation =='xReact' or relation == 'xAttr')]
-            relations_tails = [(item[0],item[1]) for item in relations_tails if (item[1] == 'sad' or item[1] == 'upset')]
+            for index,relation in enumerate(relations):
+                if relation in relations_set:
+                    relations_tails.append((relation,tails[index]))
+                    count += 1;
+                    relations_set.remove(relation)
+
+                if count == 2:
+                    break
+                if len(relations_set) == 0:
+                    break
+
+
         if composed_p is not None:
             composed_rules = ddict(list)
             for text_pair in composed_p:
