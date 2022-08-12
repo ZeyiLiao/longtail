@@ -15,7 +15,7 @@ Plz add a code at Simcse/tool.py for not reloading the whole dataset with differ
 
 
 
-Plz create a symbolic path to the follow path and here are the path I used.
+Plz create a symbolic path to the following path and here are the path I used.
 
 ```
 file_path = '/home/wangchunshu/preprocessed/all_heads'
