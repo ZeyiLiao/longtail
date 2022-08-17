@@ -29,5 +29,5 @@ Sample command at `sample_command.sh`
 
 
 #TODO
-1. I didn't set device = gpu and it may cause some running out of memory problem.
-2. Mask which word should be implemented at `masked_composed_rules()`
+
+1. Mask which word should be implemented at `masked_composed_rules()`
