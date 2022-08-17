@@ -204,7 +204,7 @@ def main(args):
 
     print(f'We are using {device}')
 
-
+# This is test
 
     retrieve = Retrieve(all_heads_path,save_embedding_path,all_tuples_path,device,save)
     with open(query_path,'r') as f:
