@@ -52,6 +52,22 @@ def plot(original_composed_rules_masked_likelihood,composed_rules_masked_likelih
     fig.savefig(f'./figure/{masked_word}.png')
 
 
+def plot(original_composed_rules_masked_likelihood,composed_rules_masked_likelihood,composed_rules_masked_word):
+    original_composed_rules_masked_likelihood = torch.squeeze(original_composed_rules_masked_likelihood[0],dim=-1).cpu().tolist()
+    composed_rules_masked_likelihood = torch.squeeze(composed_rules_masked_likelihood[0],dim=-1).cpu().tolist()
+    masked_word = composed_rules_masked_word[0]
+
+    fig, ax = plt.subplots(figsize=(14,7))
+    ax.plot(range(len(composed_rules_masked_likelihood)),composed_rules_masked_likelihood,label='Expanded rule',color = 'r')
+    ax.plot(range(len(composed_rules_masked_likelihood)),original_composed_rules_masked_likelihood * len(composed_rules_masked_likelihood),label = 'Original rule',linestyle = '--', color = 'blue')
+    ax.legend()
+    ax.set_xlabel('Indice')
+    ax.set_ylabel(f'Likelihood')
+    ax.set_ylim((0,1))
+    ax.set_title(f'Likelihood for {masked_word}')
+    fig.savefig(f'./figure/{masked_word}.png')
+
+
 def main_process(args,query,retrieve: Retrieve,query_order):
 
     top_k_retrieval = args.top_k_retrieval
@@ -188,6 +204,7 @@ def main(args):
     print(f'We are using {device}')
 
 
+
     retrieve = Retrieve(all_heads_path,save_embedding_path,all_tuples_path,device,save)
     with open(query_path,'r') as f:
         reader = csv.reader(f)
@@ -196,7 +213,6 @@ def main(args):
         num_queries = 0
         for index,query in enumerate(reader):
             query = query[0]
-
             print(f'Process for {query}')
             jaccard, kl =  main_process(args,query,retrieve,index+1)
             jaccard_all += jaccard
@@ -208,6 +224,7 @@ def main(args):
         f.write(f'Final Averaged Jaccard Result for {args.num_conjunctions} conjunctions: {jaccard_all/num_queries} ')
         f.write(nl)
         f.write(f'Final Averaged KL Divergence for {args.num_conjunctions} conjunctions: {kl_all/num_queries} ')
+
 
 
 
@@ -224,6 +241,7 @@ if __name__ == '__main__':
     parser.add_argument('--combine_order', help = "Combine the p and p' in two order", choices= ['normal','reverse'])
     parser.add_argument('--top_k_composed_p',  type =int, help = 'Select top_k composed_p from top to end which are not that plausible',default=40)
     parser.add_argument('--keep_attr_react', help = 'Only focus on the xAttr and xReact relations', action = 'store_false')
+
     parser.add_argument('--top_k_jaccard', type =int, help= 'Select top_k decoded words for jaccard', default = 10)
     parser.add_argument('--num_conjunctions', type =int, help= 'Select the number of conjunctions', default = 1)
 
