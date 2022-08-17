@@ -15,7 +15,7 @@ Plz add a code at Simcse/tool.py for not reloading the whole dataset with differ
 
 
 
-Plz create a symbolic path to the follow path and here are the path I used.
+Plz create a symbolic path to the following path and here are the path I used.
 
 ```
 file_path = '/home/wangchunshu/preprocessed/all_heads'
@@ -29,5 +29,5 @@ Sample command at `sample_command.sh`
 
 
 #TODO
-1. I didn't set device = gpu and it may cause some run our of memory problem.
+1. I didn't set device = gpu and it may cause some running out of memory problem.
 2. Mask which word should be implemented at `masked_composed_rules()`
