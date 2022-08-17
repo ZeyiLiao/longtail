@@ -1,7 +1,7 @@
 from helper import *
 
 class NLI:
-    def __init__(self,device = 'cpu'):
+    def __init__(self,device):
         self.label_mapping = {'roberta-large-mnli':['contradiction', 'neutral','entailment'],'cross-encoder/nli-distilroberta-base':['contradiction', 'entailment', 'neutral']}
         self.model = AutoModelForSequenceClassification.from_pretrained('roberta-large-mnli')
         self.tokenizer = AutoTokenizer.from_pretrained('roberta-large-mnli')

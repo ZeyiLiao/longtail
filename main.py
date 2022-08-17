@@ -52,20 +52,6 @@ def plot(original_composed_rules_masked_likelihood,composed_rules_masked_likelih
     fig.savefig(f'./figure/{masked_word}.png')
 
 
-def plot(original_composed_rules_masked_likelihood,composed_rules_masked_likelihood,composed_rules_masked_word):
-    original_composed_rules_masked_likelihood = torch.squeeze(original_composed_rules_masked_likelihood[0],dim=-1).cpu().tolist()
-    composed_rules_masked_likelihood = torch.squeeze(composed_rules_masked_likelihood[0],dim=-1).cpu().tolist()
-    masked_word = composed_rules_masked_word[0]
-
-    fig, ax = plt.subplots(figsize=(14,7))
-    ax.plot(range(len(composed_rules_masked_likelihood)),composed_rules_masked_likelihood,label='Expanded rule',color = 'r')
-    ax.plot(range(len(composed_rules_masked_likelihood)),original_composed_rules_masked_likelihood * len(composed_rules_masked_likelihood),label = 'Original rule',linestyle = '--', color = 'blue')
-    ax.legend()
-    ax.set_xlabel('Indice')
-    ax.set_ylabel(f'Likelihood')
-    ax.set_ylim((0,1))
-    ax.set_title(f'Likelihood for {masked_word}')
-    fig.savefig(f'./figure/{masked_word}.png')
 
 
 def main_process(args,query,retrieve: Retrieve,query_order):
@@ -204,10 +190,6 @@ def main(args):
 
     print(f'We are using {device}')
 
-# This is test
-
-
-
 
     retrieve = Retrieve(all_heads_path,save_embedding_path,all_tuples_path,device,save)
     with open(query_path,'r') as f:
@@ -224,6 +206,7 @@ def main(args):
             num_queries += 1
 
     file_path = f'./file_{args.combine_order}_{args.num_conjunctions}.txt'
+    nl = '\n'
     with open(file_path,'a+') as f:
         f.write(f'Final Averaged Jaccard Result for {args.num_conjunctions} conjunctions: {jaccard_all/num_queries} ')
         f.write(nl)
