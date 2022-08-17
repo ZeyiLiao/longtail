@@ -1,2764 +1,1337 @@
-Query:
-PersonX loses his father
 
 
-Intermediate results whose are neutral in both direction and has high PPL
+1
+***Query:
+PersonX succeeds at the speech
 
 
-PersonX loses his father and PersonX died unexpectedly
-PersonX loses his father and PersonX's children die
-PersonX loses his father and PersonX eventually dies
-PersonX loses his father and PersonX loses heart
-PersonX loses his father and PersonX ultimately dies
-PersonX loses his father and PersonX hates Father
-PersonX loses his father and PersonX unexpectedly passed away
-PersonX loses his father and PersonX abandons his family
-PersonX loses his father and PersonX dislikes his family
-PersonX loses his father and PersonX's father gets sick
-PersonX loses his father and PersonX's dad gets sick
-PersonX loses his father and PersonX's parents are sick
-PersonX loses his father and PersonX blames her son
-PersonX loses his father and PersonX lost his humanity
-PersonX loses his father and PersonX's father gets angry
-PersonX loses his father and PersonX leaves PersonY's family
-PersonX loses his father and PersonX's father criticizes him
-PersonX loses his father and PersonX blames his brother
-PersonX loses his father and PersonX eventually passes away
-PersonX loses his father and PersonX's father becomes ill
-PersonX loses his father and PersonX's son was hospitalized
-PersonX loses his father and PersonX's father has cancer
-PersonX loses his father and PersonX’s parents abandon PersonX
-PersonX loses his father and PersonX dies from heartbreak
-PersonX loses his father and PersonX ends the family
-PersonX loses his father and PersonX's father becomes sick
-PersonX loses his father and PersonX's father is angry
-PersonX loses his father and PersonX dies of grief
-PersonX loses his father and PersonX loses PersonX's inheritance
-PersonX loses his father and PersonX dies from neglect
-PersonX loses his father and PersonX quarrels with his parents
-PersonX loses his father and PersonX fights with his family
-PersonX loses his father and PersonX and PersonY's son quarrels
-PersonX loses his father and PersonX loses a beloved one
-PersonX loses his father and PersonX thinks about his father
-PersonX loses his father and PersonX's past ruined his life
-PersonX loses his father and PersonX dies in an accident
-PersonX loses his father and PersonX thinks of his father
-PersonX loses his father and PersonX fights with his father
-PersonX loses his father and PersonX gets his heart broken
+***Intermediate results whose are neutral in both direction and has high PPL***
+
+
+PersonX succeeds at the speech and a public speaking has public benefits
+PersonX succeeds at the speech and a campaign should have speech
+PersonX succeeds at the speech and a campaign may have speechwriter
+PersonX succeeds at the speech and a public speaking should include speech
+PersonX succeeds at the speech and a public speaking is confidence builder
+PersonX succeeds at the speech and a public speaking can publicize
+PersonX succeeds at the speech and a campaign should use speech
+PersonX succeeds at the speech and a public speaking is confidence inspiring
+PersonX succeeds at the speech and a public speaking should involve speech
+PersonX succeeds at the speech and a diction may have correct pronunciation
+PersonX succeeds at the speech and a multilingualism has language proficiency
+PersonX succeeds at the speech and an enunciation will have pronunciation
+PersonX succeeds at the speech and a public has political speech
+PersonX succeeds at the speech and a campaign should include speech
+PersonX succeeds at the speech and an enunciation should have pronunciation
+PersonX succeeds at the speech and a multilingualism has communication skills
+PersonX succeeds at the speech and an enunciation should contain pronunciation
+PersonX succeeds at the speech and an accent can place emphasis
+PersonX succeeds at the speech and a public speaking is considered public
+PersonX succeeds at the speech and a public speaking is confidence building
+PersonX succeeds at the speech and a public speaking may be done speech
+PersonX succeeds at the speech and a multilingualism has language skills
+PersonX succeeds at the speech and an enunciation should include pronunciation
+PersonX succeeds at the speech and a public speaking engagement requires speech
+PersonX succeeds at the speech and a public speaking engagement requires confidence
+PersonX succeeds at the speech and Eloquents can be speech
+PersonX succeeds at the speech and a poetic device has a clear metaphor
+PersonX succeeds at the speech and Eloquents can be speech acts
+PersonX succeeds at the speech and Eloquents should be in speech
+PersonX succeeds at the speech and a narrator should use voice
+PersonX succeeds at the speech and a public speaking is defined by speech
+PersonX succeeds at the speech and a public speaking is an event
+PersonX succeeds at the speech and a sir should use gentlemanly speech
+PersonX succeeds at the speech and monologues have solo speech
+PersonX succeeds at the speech and a political slogan is political speech
+PersonX succeeds at the speech and an inflection is accenting
+PersonX succeeds at the speech and an enunciation may be language specific
+PersonX succeeds at the speech and a speaker should have voice
+PersonX succeeds at the speech and a political slogan produces a response
+PersonX succeeds at the speech and an idiomatic English speaker uses metaphor
+
 ********************
-Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
-Rule00(original):PersonX loses his father, So PersonX is seen as lonely
-Decoded words:   weak gay evil
-
-Rule01(composed):PersonX loses his father and PersonX died unexpectedly, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 6.330699761747383e-06
-Decoded words:   dead weak depressed
-
-Rule02(composed):PersonX loses his father and PersonX's children die, So PersonX is seen as lonely
-Jaccard score: 0.5
-KL score: 6.370333267113892e-06
-Decoded words:   weak selfish evil
-
-Rule03(composed):PersonX loses his father and PersonX eventually dies, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 9.363749995827675e-06
-Decoded words:   dead... weak
-
-Rule04(composed):PersonX loses his father and PersonX loses heart, So PersonX is seen as lonely
-Jaccard score: 0.5
-KL score: 5.0772518989106175e-06
-Decoded words:   weak evil dead
-
-Rule05(composed):PersonX loses his father and PersonX ultimately dies, So PersonX is seen as lonely
-Jaccard score: 0.5
-KL score: 9.025324288813863e-06
-Decoded words:   dead evil weak
-
-Rule06(composed):PersonX loses his father and PersonX hates Father, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 2.0869503714493476e-05
-Decoded words:   evil Father father
-
-Rule07(composed):PersonX loses his father and PersonX unexpectedly passed away, So PersonX is seen as lonely
-Jaccard score: 0.0
-KL score: 1.0660271072993055e-05
-Decoded words:   depressed…...
-
-Rule08(composed):PersonX loses his father and PersonX abandons his family, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 9.3457056209445e-06
-Decoded words:   weak selfish...
-
-Rule09(composed):PersonX loses his father and PersonX dislikes his family, So PersonX is seen as lonely
-Jaccard score: 0.0
-KL score: 1.3826712347508874e-05
-Decoded words:   a... selfish
-
-Rule010(composed):PersonX loses his father and PersonX's father gets sick, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 8.77663023857167e-06
-Decoded words:  ... weak…
-
-Rule011(composed):PersonX loses his father and PersonX's dad gets sick, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 8.307111784233712e-06
-Decoded words:  ... weak…
-
-Rule012(composed):PersonX loses his father and PersonX's parents are sick, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 6.7493797359929886e-06
-Decoded words:   weak selfish...
-
-Rule013(composed):PersonX loses his father and PersonX blames her son, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 1.1565979548322503e-05
-Decoded words:   evil guilty selfish
-
-Rule014(composed):PersonX loses his father and PersonX lost his humanity, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 1.8344100681133568e-05
-Decoded words:   evil...…
-
-Rule015(composed):PersonX loses his father and PersonX's father gets angry, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 1.0721455510065425e-05
-Decoded words:   evil angry...
-
-Rule016(composed):PersonX loses his father and PersonX leaves PersonY's family, So PersonX is seen as lonely
-Jaccard score: 0.5
-KL score: 9.430467798665632e-06
-Decoded words:   selfish weak evil
-
-Rule017(composed):PersonX loses his father and PersonX's father criticizes him, So PersonX is seen as lonely
-Jaccard score: 0.5
-KL score: 5.245470674708486e-06
-Decoded words:   weak evil selfish
-
-Rule018(composed):PersonX loses his father and PersonX blames his brother, So PersonX is seen as lonely
-Jaccard score: 0.5
-KL score: 6.040841071808245e-06
-Decoded words:   weak evil selfish
-
-Rule019(composed):PersonX loses his father and PersonX eventually passes away, So PersonX is seen as lonely
-Jaccard score: 0.0
-KL score: 2.2953699954086915e-05
-Decoded words:   a...…
-
-Rule020(composed):PersonX loses his father and PersonX's father becomes ill, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 8.844182957545854e-06
-Decoded words:   weak dying...
-
-Rule021(composed):PersonX loses his father and PersonX's son was hospitalized, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 6.981873411859851e-06
-Decoded words:   weak…...
-
-Rule022(composed):PersonX loses his father and PersonX's father has cancer, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 6.520032002299558e-06
-Decoded words:   weak selfish depressed
-
-Rule023(composed):PersonX loses his father and PersonX’s parents abandon PersonX, So PersonX is seen as lonely
-Jaccard score: 0.5
-KL score: 8.809513929008972e-06
-Decoded words:  … weak evil
-
-Rule024(composed):PersonX loses his father and PersonX dies from heartbreak, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 9.012660484586377e-06
-Decoded words:   tragic sad weak
-
-Rule025(composed):PersonX loses his father and PersonX ends the family, So PersonX is seen as lonely
-Jaccard score: 0.0
-KL score: 1.578833871462848e-05
-Decoded words:   a...…
-
-Rule026(composed):PersonX loses his father and PersonX's father becomes sick, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 9.396575478604063e-06
-Decoded words:   weak... dying
-
-Rule027(composed):PersonX loses his father and PersonX's father is angry, So PersonX is seen as lonely
-Jaccard score: 0.5
-KL score: 9.073521141544916e-06
-Decoded words:   evil weak angry
-
-Rule028(composed):PersonX loses his father and PersonX dies of grief, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 5.285157385515049e-06
-Decoded words:   weak sad dead
-
-Rule029(composed):PersonX loses his father and PersonX loses PersonX's inheritance, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 1.1097165042883717e-05
-Decoded words:   weak…...
-
-Rule030(composed):PersonX loses his father and PersonX dies from neglect, So PersonX is seen as lonely
-Jaccard score: 0.5
-KL score: 8.579559107602108e-06
-Decoded words:   weak worthless evil
-
-Rule031(composed):PersonX loses his father and PersonX quarrels with his parents, So PersonX is seen as lonely
-Jaccard score: 0.0
-KL score: 8.677947334945202e-06
-Decoded words:  ... a selfish
-
-Rule032(composed):PersonX loses his father and PersonX fights with his family, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 8.781196811469272e-06
-Decoded words:   weak... a
-
-Rule033(composed):PersonX loses his father and PersonX and PersonY's son quarrels, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 8.019647793844342e-06
-Decoded words:   weak selfish...
-
-Rule034(composed):PersonX loses his father and PersonX loses a beloved one, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 6.084855158405844e-06
-Decoded words:   weak…...
-
-Rule035(composed):PersonX loses his father and PersonX thinks about his father, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 8.03438979346538e-06
-Decoded words:   sad selfish weak
-
-Rule036(composed):PersonX loses his father and PersonX's past ruined his life, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 1.1602482118178159e-05
-Decoded words:   weak... a
-
-Rule037(composed):PersonX loses his father and PersonX dies in an accident, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 7.261216978804441e-06
-Decoded words:   weak dead doomed
-
-Rule038(composed):PersonX loses his father and PersonX thinks of his father, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 6.857855169073446e-06
-Decoded words:   weak… sad
-
-Rule039(composed):PersonX loses his father and PersonX fights with his father, So PersonX is seen as lonely
-Jaccard score: 0.5
-KL score: 9.778465027920902e-06
-Decoded words:   evil weak a
-
-Rule040(composed):PersonX loses his father and PersonX gets his heart broken, So PersonX is seen as lonely
-Jaccard score: 0.2
-KL score: 1.2745793355861679e-05
-Decoded words:   a... weak
-
-
-***********************************************
-Rule10(original):PersonX loses his father, So PersonX feels upset
-Decoded words:   guilty alone sad
-
-Rule11(composed):PersonX loses his father and PersonX died unexpectedly, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 2.6149659788643476e-06
-Decoded words:   lonely guilty alone
-
-Rule12(composed):PersonX loses his father and PersonX's children die, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 2.905429937527515e-06
-Decoded words:   guilty alone lonely
-
-Rule13(composed):PersonX loses his father and PersonX eventually dies, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 1.8321183006264619e-06
-Decoded words:   sad guilty lonely
-
-Rule14(composed):PersonX loses his father and PersonX loses heart, So PersonX feels upset
-Jaccard score: 1.0
-KL score: 3.372578703420004e-06
-Decoded words:   guilty alone sad
-
-Rule15(composed):PersonX loses his father and PersonX ultimately dies, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 2.403081680313335e-06
-Decoded words:   guilty sad lost
-
-Rule16(composed):PersonX loses his father and PersonX hates Father, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 6.078399110265309e-06
-Decoded words:   guilty betrayed sad
-
-Rule17(composed):PersonX loses his father and PersonX unexpectedly passed away, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 3.924413704226026e-06
-Decoded words:   guilty sad lost
-
-Rule18(composed):PersonX loses his father and PersonX abandons his family, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 6.019878583174432e-06
-Decoded words:   guilty betrayed abandoned
-
-Rule19(composed):PersonX loses his father and PersonX dislikes his family, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 6.113818926678505e-06
-Decoded words:   guilty betrayed lonely
-
-Rule110(composed):PersonX loses his father and PersonX's father gets sick, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 5.188640898268204e-06
-Decoded words:   guilty bad sick
-
-Rule111(composed):PersonX loses his father and PersonX's dad gets sick, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 5.470961696119048e-06
-Decoded words:   guilty bad sick
-
-Rule112(composed):PersonX loses his father and PersonX's parents are sick, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 4.82774521515239e-06
-Decoded words:   guilty lonely alone
-
-Rule113(composed):PersonX loses his father and PersonX blames her son, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 1.0846414625120815e-05
-Decoded words:   guilty bad betrayed
-
-Rule114(composed):PersonX loses his father and PersonX lost his humanity, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 6.687553195661167e-06
-Decoded words:   lost guilty...
-
-Rule115(composed):PersonX loses his father and PersonX's father gets angry, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 1.1553411241038702e-05
-Decoded words:   angry guilty bad
-
-Rule116(composed):PersonX loses his father and PersonX leaves PersonY's family, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 8.597616215411108e-06
-Decoded words:   alone lonely abandoned
-
-Rule117(composed):PersonX loses his father and PersonX's father criticizes him, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 7.356152309512254e-06
-Decoded words:   guilty betrayed bad
-
-Rule118(composed):PersonX loses his father and PersonX blames his brother, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 5.980292371532414e-06
-Decoded words:   guilty betrayed bad
-
-Rule119(composed):PersonX loses his father and PersonX eventually passes away, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 5.212765245232731e-06
-Decoded words:   sad guilty lost
-
-Rule120(composed):PersonX loses his father and PersonX's father becomes ill, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 3.3041701499314513e-06
-Decoded words:   guilty lonely depressed
-
-Rule121(composed):PersonX loses his father and PersonX's son was hospitalized, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 6.498586117231753e-06
-Decoded words:   guilty responsible helpless
-
-Rule122(composed):PersonX loses his father and PersonX's father has cancer, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 3.0937724204704864e-06
-Decoded words:   guilty lonely alone
-
-Rule123(composed):PersonX loses his father and PersonX’s parents abandon PersonX, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 1.143382723967079e-05
-Decoded words:   abandoned alone lonely
-
-Rule124(composed):PersonX loses his father and PersonX dies from heartbreak, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 3.040176579816034e-06
-Decoded words:   guilty sad pain
-
-Rule125(composed):PersonX loses his father and PersonX ends the family, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 3.2019570426200517e-06
-Decoded words:   guilty lonely alone
-
-Rule126(composed):PersonX loses his father and PersonX's father becomes sick, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 4.4982907638768665e-06
-Decoded words:   guilty lonely depressed
-
-Rule127(composed):PersonX loses his father and PersonX's father is angry, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 9.466538358537946e-06
-Decoded words:   guilty angry sad
-
-Rule128(composed):PersonX loses his father and PersonX dies of grief, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 4.238059318595333e-06
-Decoded words:   guilty guilt sad
-
-Rule129(composed):PersonX loses his father and PersonX loses PersonX's inheritance, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 5.594502908934373e-06
-Decoded words:   guilty betrayed sad
-
-Rule130(composed):PersonX loses his father and PersonX dies from neglect, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 5.610036623693304e-06
-Decoded words:   guilty abandoned responsible
-
-Rule131(composed):PersonX loses his father and PersonX quarrels with his parents, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 4.120326138945529e-06
-Decoded words:   guilty lonely sad
-
-Rule132(composed):PersonX loses his father and PersonX fights with his family, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 4.557760803436395e-06
-Decoded words:   guilty betrayed alone
-
-Rule133(composed):PersonX loses his father and PersonX and PersonY's son quarrels, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 6.2456228988594376e-06
-Decoded words:   lonely guilty betrayed
-
-Rule134(composed):PersonX loses his father and PersonX loses a beloved one, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 3.985223884228617e-06
-Decoded words:   guilty lonely sad
-
-Rule135(composed):PersonX loses his father and PersonX thinks about his father, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 7.855463081796188e-06
-Decoded words:   sad guilty depressed
-
-Rule136(composed):PersonX loses his father and PersonX's past ruined his life, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 5.087287718197331e-06
-Decoded words:   guilty lost betrayed
-
-Rule137(composed):PersonX loses his father and PersonX dies in an accident, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 1.591683258084231e-06
-Decoded words:   guilty lonely sad
-
-Rule138(composed):PersonX loses his father and PersonX thinks of his father, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 8.88133672560798e-06
-Decoded words:   sad guilty depressed
-
-Rule139(composed):PersonX loses his father and PersonX fights with his father, So PersonX feels upset
-Jaccard score: 0.2
-KL score: 5.215334113017889e-06
-Decoded words:   guilty betrayed bad
-
-Rule140(composed):PersonX loses his father and PersonX gets his heart broken, So PersonX feels upset
-Jaccard score: 0.5
-KL score: 5.029901785746915e-06
-Decoded words:   guilty sad bad
+
+***Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules***
+Rule00(original):PersonX succeeds at the speech, so PersonX feels confident.
+Decoded words:   good better accomplished happy great
+
+For box plot KL 
+6.4446835494891275e-06,5.221589617576683e-06,2.6236235498799942e-05,4.647000878321705e-06,1.1409570106479805e-05,4.519876256381394e-06,6.41135602563736e-06,8.509086910635233e-06,4.160485786997015e-06,6.499778010038426e-06,7.423678653140087e-06,3.739085514098406e-06,6.963822670513764e-06,9.56549138209084e-06,5.3308885981095955e-06,8.589807293901686e-06,1.0169578672503121e-05,1.8211758288089186e-05,6.772688720957376e-06,1.1255596291448455e-05,3.656278749986086e-06,1.1260058272455353e-05,9.779086212802213e-06,8.072945092862938e-06,1.295139009016566e-05,4.908608843834372e-06,1.1655620255623944e-05,5.395443167799385e-06,3.929302238248056e-06,4.216294200887205e-06,8.843620889820158e-06,1.0147297871299088e-05,1.0746353837021161e-05,1.2346315998001955e-05,1.080145921150688e-05,6.707904049108038e-06,1.8709788491833024e-05,4.51285632152576e-06,1.0218495845037978e-05,6.254321760934545e-06,
+For box plot Jaccard
+0.42857142857142855,0.42857142857142855,0.25,0.42857142857142855,0.42857142857142855,0.42857142857142855,0.42857142857142855,0.42857142857142855,0.42857142857142855,0.25,0.42857142857142855,0.42857142857142855,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.42857142857142855,0.42857142857142855,0.25,0.25,0.42857142857142855,0.42857142857142855,0.6666666666666666,0.25,0.42857142857142855,0.25,0.42857142857142855,0.25,0.25,0.42857142857142855,0.42857142857142855,0.25,0.42857142857142855,0.25,0.42857142857142855,0.25,0.25,
+
+
+Rule01(composed):PersonX succeeds at the speech and a public speaking has public benefits, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 6.4446835494891275e-06
+Decoded words:   good accomplished successful better validated
+
+Rule02(composed):PersonX succeeds at the speech and a campaign should have speech, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 5.221589617576683e-06
+Decoded words:   good validated great happy successful
+
+Rule03(composed):PersonX succeeds at the speech and a campaign may have speechwriter, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 2.6236235498799942e-05
+Decoded words:   empowered better validated superior good
+
+Rule04(composed):PersonX succeeds at the speech and a public speaking should include speech, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 4.647000878321705e-06
+Decoded words:   good satisfied happy successful better
+
+Rule05(composed):PersonX succeeds at the speech and a public speaking is confidence builder, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 1.1409570106479805e-05
+Decoded words:   good better confident great successful
+
+Rule06(composed):PersonX succeeds at the speech and a public speaking can publicize, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 4.519876256381394e-06
+Decoded words:   good successful better validated happy
+
+Rule07(composed):PersonX succeeds at the speech and a campaign should use speech, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 6.41135602563736e-06
+Decoded words:   good great validated happy successful
+
+Rule08(composed):PersonX succeeds at the speech and a public speaking is confidence inspiring, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 8.509086910635233e-06
+Decoded words:   good better great confident empowered
+
+Rule09(composed):PersonX succeeds at the speech and a public speaking should involve speech, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 4.160485786997015e-06
+Decoded words:   good happy successful satisfied better
+
+Rule010(composed):PersonX succeeds at the speech and a diction may have correct pronunciation, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 6.499778010038426e-06
+Decoded words:   good better satisfied validated successful
+
+Rule011(composed):PersonX succeeds at the speech and a multilingualism has language proficiency, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 7.423678653140087e-06
+Decoded words:   good successful accomplished better confident
+
+Rule012(composed):PersonX succeeds at the speech and an enunciation will have pronunciation, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 3.739085514098406e-06
+Decoded words:   good happy better successful validated
+
+Rule013(composed):PersonX succeeds at the speech and a public has political speech, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 6.963822670513764e-06
+Decoded words:   good empowered validated happy successful
+
+Rule014(composed):PersonX succeeds at the speech and a campaign should include speech, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 9.56549138209084e-06
+Decoded words:   good validated successful empowered great
+
+Rule015(composed):PersonX succeeds at the speech and an enunciation should have pronunciation, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 5.3308885981095955e-06
+Decoded words:   good satisfied happy validated successful
+
+Rule016(composed):PersonX succeeds at the speech and a multilingualism has communication skills, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 8.589807293901686e-06
+Decoded words:   happy successful good confident empowered
+
+Rule017(composed):PersonX succeeds at the speech and an enunciation should contain pronunciation, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 1.0169578672503121e-05
+Decoded words:   good satisfied successful happy validated
+
+Rule018(composed):PersonX succeeds at the speech and an accent can place emphasis, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 1.8211758288089186e-05
+Decoded words:   confident better accomplished successful proud
+
+Rule019(composed):PersonX succeeds at the speech and a public speaking is considered public, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 6.772688720957376e-06
+Decoded words:   good validated better proud successful
+
+Rule020(composed):PersonX succeeds at the speech and a public speaking is confidence building, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 1.1255596291448455e-05
+Decoded words:   good better confident great successful
+
+Rule021(composed):PersonX succeeds at the speech and a public speaking may be done speech, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 3.656278749986086e-06
+Decoded words:   good successful accomplished better satisfied
+
+Rule022(composed):PersonX succeeds at the speech and a multilingualism has language skills, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 1.1260058272455353e-05
+Decoded words:   successful good happy confident empowered
+
+Rule023(composed):PersonX succeeds at the speech and an enunciation should include pronunciation, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 9.779086212802213e-06
+Decoded words:   good satisfied validated happy successful
+
+Rule024(composed):PersonX succeeds at the speech and a public speaking engagement requires speech, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 8.072945092862938e-06
+Decoded words:   accomplished good validated successful better
+
+Rule025(composed):PersonX succeeds at the speech and a public speaking engagement requires confidence, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 1.295139009016566e-05
+Decoded words:   confident good better great empowered
+
+Rule026(composed):PersonX succeeds at the speech and Eloquents can be speech, so PersonX feels confident.
+Jaccard score: 0.6666666666666666
+KL score: 4.908608843834372e-06
+Decoded words:   happy good better successful accomplished
+
+Rule027(composed):PersonX succeeds at the speech and a poetic device has a clear metaphor, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 1.1655620255623944e-05
+Decoded words:   good satisfied validated accomplished fulfilled
+
+Rule028(composed):PersonX succeeds at the speech and Eloquents can be speech acts, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 5.395443167799385e-06
+Decoded words:   successful happy good accomplished satisfied
+
+Rule029(composed):PersonX succeeds at the speech and Eloquents should be in speech, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 3.929302238248056e-06
+Decoded words:   happy good rewarded satisfied validated
+
+Rule030(composed):PersonX succeeds at the speech and a narrator should use voice, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 4.216294200887205e-06
+Decoded words:   good better validated satisfied happy
+
+Rule031(composed):PersonX succeeds at the speech and a public speaking is defined by speech, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 8.843620889820158e-06
+Decoded words:   successful good validated accomplished success
+
+Rule032(composed):PersonX succeeds at the speech and a public speaking is an event, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 1.0147297871299088e-05
+Decoded words:   good successful accomplished validated important
+
+Rule033(composed):PersonX succeeds at the speech and a sir should use gentlemanly speech, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 1.0746353837021161e-05
+Decoded words:   good proud better happy satisfied
+
+Rule034(composed):PersonX succeeds at the speech and monologues have solo speech, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 1.2346315998001955e-05
+Decoded words:   good alone better successful happy
+
+Rule035(composed):PersonX succeeds at the speech and a political slogan is political speech, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 1.080145921150688e-05
+Decoded words:   good validated empowered victorious happy
+
+Rule036(composed):PersonX succeeds at the speech and an inflection is accenting, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 6.707904049108038e-06
+Decoded words:   better good successful confident happy
+
+Rule037(composed):PersonX succeeds at the speech and an enunciation may be language specific, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 1.8709788491833024e-05
+Decoded words:   comfortable confident better good validated
+
+Rule038(composed):PersonX succeeds at the speech and a speaker should have voice, so PersonX feels confident.
+Jaccard score: 0.42857142857142855
+KL score: 4.51285632152576e-06
+Decoded words:   good happy better validated proud
+
+Rule039(composed):PersonX succeeds at the speech and a political slogan produces a response, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 1.0218495845037978e-05
+Decoded words:   successful good validated accomplished rewarded
+
+Rule040(composed):PersonX succeeds at the speech and an idiomatic English speaker uses metaphor, so PersonX feels confident.
+Jaccard score: 0.25
+KL score: 6.254321760934545e-06
+Decoded words:   successful validated good accomplished proud
 
 
 ***********************************************
 
 
-*************************************************************************************Query:
-PersonX gets an advance
+*************************************************************************************
 
 
-Intermediate results whose are neutral in both direction and has high PPL
+2
+***Query:
+PersonX wears formal clothing
 
 
-PersonX gets an advance and PersonX buys
-PersonX gets an advance and PersonX wants
-PersonX gets an advance and PersonX bought
-PersonX gets an advance and PersonX is requested
-PersonX gets an advance and PersonX buys something
-PersonX gets an advance and PersonX buys person
-PersonX gets an advance and PersonX requests cash
-PersonX gets an advance and PersonX buys it
-PersonX gets an advance and PersonX wants money
-PersonX gets an advance and PersonX wants it
-PersonX gets an advance and PersonX provides money
-PersonX gets an advance and PersonX wants PersonX
-PersonX gets an advance and PersonX orders in
-PersonX gets an advance and PersonX purchases it
-PersonX gets an advance and PersonX takes it
-PersonX gets an advance and PersonX asks for
-PersonX gets an advance and PersonX uses coupons
-PersonX gets an advance and PersonX purchases something
-PersonX gets an advance and PersonX buys some items
-PersonX gets an advance and PersonX offers to pay
-PersonX gets an advance and PersonX buys the ticket
-PersonX gets an advance and PersonX buys some time
-PersonX gets an advance and PersonX buys this ticket
-PersonX gets an advance and PersonX buys PersonY's order
-PersonX gets an advance and PersonX buys PersonY's demands
-PersonX gets an advance and PersonX places an order
-PersonX gets an advance and PersonX buys another ticket
-PersonX gets an advance and PersonX takes this opportunity
-PersonX gets an advance and PersonX suggests getting one
-PersonX gets an advance and PersonX buys a paper
-PersonX gets an advance and PersonX asks for change
-PersonX gets an advance and PersonX is accepted at
-PersonX gets an advance and PersonX buys an item
-PersonX gets an advance and PersonX buys the answer
-PersonX gets an advance and PersonX offers to sell
-PersonX gets an advance and PersonX wants the money
-PersonX gets an advance and PersonX needs some money
-PersonX gets an advance and PersonX places the order
-PersonX gets an advance and PersonX buys something new
-PersonX gets an advance and PersonX purchases a scale
+***Intermediate results whose are neutral in both direction and has high PPL***
+
+
+PersonX wears formal clothing and gowns formalize
+PersonX wears formal clothing and attires should fit clothes
+PersonX wears formal clothing and a formal wear has skirt lengths
+PersonX wears formal clothing and formal attires have suits worn
+PersonX wears formal clothing and attires are outfit pieces
+PersonX wears formal clothing and a formal wear is skirt
+PersonX wears formal clothing and gowns have formal styles
+PersonX wears formal clothing and formal attires have dress styles
+PersonX wears formal clothing and attires are outfit items
+PersonX wears formal clothing and a traditional dress has traditional details
+PersonX wears formal clothing and a formal wear should include dress
+PersonX wears formal clothing and formal attires have suits
+PersonX wears formal clothing and a traditional dress is worn elegant
+PersonX wears formal clothing and a dignified is elegant person
+PersonX wears formal clothing and formal attires are tailor designed
+PersonX wears formal clothing and a formal wear has dress codes
+PersonX wears formal clothing and a traditional dress is elegant clothing
+PersonX wears formal clothing and a formal attire should have tailor
+PersonX wears formal clothing and a formal wear should be dress
+PersonX wears formal clothing and a traditional dress has formal elements
+PersonX wears formal clothing and a traditional dress has elegant details
+PersonX wears formal clothing and formal attires have a tailor
+PersonX wears formal clothing and formal attires are suits
+PersonX wears formal clothing and a traditional dress has traditional features
+PersonX wears formal clothing and a traditional dress has elegant features
+PersonX wears formal clothing and a traditional dress has elegant lines
+PersonX wears formal clothing and a formal wear has dress code
+PersonX wears formal clothing and a traditional dress has formal wear
+PersonX wears formal clothing and a traditional dress is elegant
+PersonX wears formal clothing and formal attires are tailormade
+PersonX wears formal clothing and a formal wear has gowns
+PersonX wears formal clothing and formal attires have formalities
+PersonX wears formal clothing and attires should fit the wearer
+PersonX wears formal clothing and outfits are made to fit clothing
+PersonX wears formal clothing and a formal wear has skirt or dress
+PersonX wears formal clothing and formal attires have dress code
+PersonX wears formal clothing and a costume is fancy dress; a character
+PersonX wears formal clothing and bowties are formal attire
+PersonX wears formal clothing and a formal wear can be dress
+PersonX wears formal clothing and a formal wear may have dress code
+
 ********************
-Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
-Rule00(original):PersonX gets an advance, So PersonX feels proud
-Decoded words:   cheated betrayed bad
 
-Rule01(composed):PersonX gets an advance and PersonX buys, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 8.400298611377366e-06
-Decoded words:   cheated bad guilty
+***Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules***
+Rule00(original):PersonX wears formal clothing, so PersonX feels important.
+Decoded words:   formal official fancy professional sophisticated
 
-Rule02(composed):PersonX gets an advance and PersonX wants, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 2.551786337789963e-06
-Decoded words:   cheated guilty bad
+For box plot KL 
+4.014783371530939e-06,2.4094199034152552e-05,1.0727869266702328e-05,2.1558294065471273e-06,9.527737347525544e-06,1.0493139598111156e-05,5.951796538283816e-06,4.618388175003929e-06,1.3655283510161098e-05,3.295808710390702e-05,3.5013996239285916e-05,1.6814135506137973e-06,3.0574748961953446e-05,3.443349851295352e-05,3.005071084771771e-05,2.4201815904234536e-05,3.410985300433822e-05,3.357501918799244e-05,1.7868342183646746e-05,8.619699656264856e-06,3.5307821235619485e-05,2.4543749532313086e-05,6.396077878889628e-06,4.284403257770464e-05,2.9774622817058116e-05,3.135531733278185e-05,2.043873791990336e-05,7.887247193139046e-06,2.8583614039234817e-05,1.0218090210400987e-05,7.991343409230467e-06,1.2677527593041304e-05,4.652369534596801e-05,2.319962550245691e-05,1.1794102647399995e-05,2.2906391677679494e-05,2.6892217647400685e-05,3.422632744332077e-06,1.2910712939628866e-05,5.2760125981876627e-05,
+For box plot Jaccard
+0.42857142857142855,0.1111111111111111,0.1111111111111111,0.6666666666666666,0.42857142857142855,0.25,0.6666666666666666,0.42857142857142855,0.1111111111111111,0.1111111111111111,0.0,1.0,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.25,0.0,0.1111111111111111,0.42857142857142855,0.1111111111111111,0.1111111111111111,0.25,0.0,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.42857142857142855,0.1111111111111111,0.25,0.42857142857142855,0.42857142857142855,0.0,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.6666666666666666,0.25,0.0,
 
-Rule03(composed):PersonX gets an advance and PersonX bought, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 7.3011487984331325e-06
-Decoded words:   cheated betrayed robbed
 
-Rule04(composed):PersonX gets an advance and PersonX is requested, So PersonX feels proud
-Jaccard score: 0.2
-KL score: 6.301527264440665e-06
-Decoded words:   betrayed pressured guilty
+Rule01(composed):PersonX wears formal clothing and gowns formalize, so PersonX feels important.
+Jaccard score: 0.42857142857142855
+KL score: 4.014783371530939e-06
+Decoded words:   formal official elegant important fancy
 
-Rule05(composed):PersonX gets an advance and PersonX buys something, So PersonX feels proud
+Rule02(composed):PersonX wears formal clothing and attires should fit clothes, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 2.4094199034152552e-05
+Decoded words:   comfortable good uncomfortable better fancy
+
+Rule03(composed):PersonX wears formal clothing and a formal wear has skirt lengths, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 1.0727869266702328e-05
+Decoded words:   formal tall taller elegant feminine
+
+Rule04(composed):PersonX wears formal clothing and formal attires have suits worn, so PersonX feels important.
+Jaccard score: 0.6666666666666666
+KL score: 2.1558294065471273e-06
+Decoded words:   formal professional elegant official sophisticated
+
+Rule05(composed):PersonX wears formal clothing and attires are outfit pieces, so PersonX feels important.
+Jaccard score: 0.42857142857142855
+KL score: 9.527737347525544e-06
+Decoded words:   formal professional dressed different fancy
+
+Rule06(composed):PersonX wears formal clothing and a formal wear is skirt, so PersonX feels important.
+Jaccard score: 0.25
+KL score: 1.0493139598111156e-05
+Decoded words:   formal feminine sexy fancy good
+
+Rule07(composed):PersonX wears formal clothing and gowns have formal styles, so PersonX feels important.
+Jaccard score: 0.6666666666666666
+KL score: 5.951796538283816e-06
+Decoded words:   formal official fancy elegant professional
+
+Rule08(composed):PersonX wears formal clothing and formal attires have dress styles, so PersonX feels important.
+Jaccard score: 0.42857142857142855
+KL score: 4.618388175003929e-06
+Decoded words:   formal sophisticated fancy elegant dressed
+
+Rule09(composed):PersonX wears formal clothing and attires are outfit items, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 1.3655283510161098e-05
+Decoded words:   formal important different comfortable dressed
+
+Rule010(composed):PersonX wears formal clothing and a traditional dress has traditional details, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 3.295808710390702e-05
+Decoded words:   traditional authentic elegant comfortable formal
+
+Rule011(composed):PersonX wears formal clothing and a formal wear should include dress, so PersonX feels important.
 Jaccard score: 0.0
-KL score: 2.8429865778889507e-05
-Decoded words:   good happy better
+KL score: 3.5013996239285916e-05
+Decoded words:   comfortable good important special respected
 
-Rule06(composed):PersonX gets an advance and PersonX buys person, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 6.828369350841967e-06
-Decoded words:   cheated guilty bad
-
-Rule07(composed):PersonX gets an advance and PersonX requests cash, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 4.898117367702071e-06
-Decoded words:   cheated guilty betrayed
-
-Rule08(composed):PersonX gets an advance and PersonX buys it, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 1.09001166492817e-05
-Decoded words:   bad cheated guilty
-
-Rule09(composed):PersonX gets an advance and PersonX wants money, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 4.302938123146305e-06
-Decoded words:   guilty cheated bad
-
-Rule010(composed):PersonX gets an advance and PersonX wants it, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 4.242029717715923e-06
-Decoded words:   guilty cheated bad
-
-Rule011(composed):PersonX gets an advance and PersonX provides money, So PersonX feels proud
-Jaccard score: 0.2
-KL score: 1.2704012988251634e-05
-Decoded words:   guilty cheated good
-
-Rule012(composed):PersonX gets an advance and PersonX wants PersonX, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 5.830486315971939e-06
-Decoded words:   betrayed cheated guilty
-
-Rule013(composed):PersonX gets an advance and PersonX orders in, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 4.565344625007128e-06
-Decoded words:   cheated bad guilty
-
-Rule014(composed):PersonX gets an advance and PersonX purchases it, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 1.0662573004083242e-05
-Decoded words:   cheated bad guilty
-
-Rule015(composed):PersonX gets an advance and PersonX takes it, So PersonX feels proud
+Rule012(composed):PersonX wears formal clothing and formal attires have suits, so PersonX feels important.
 Jaccard score: 1.0
-KL score: 4.716688181360951e-06
-Decoded words:   betrayed bad cheated
+KL score: 1.6814135506137973e-06
+Decoded words:   formal professional official fancy sophisticated
 
-Rule016(composed):PersonX gets an advance and PersonX asks for, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 3.875605216308031e-06
-Decoded words:   cheated bad guilty
+Rule013(composed):PersonX wears formal clothing and a traditional dress is worn elegant, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 3.0574748961953446e-05
+Decoded words:   elegant sophisticated beautiful comfortable cultured
 
-Rule017(composed):PersonX gets an advance and PersonX uses coupons, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 8.878270818968304e-06
-Decoded words:   cheated guilty bad
+Rule014(composed):PersonX wears formal clothing and a dignified is elegant person, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 3.443349851295352e-05
+Decoded words:   elegant classy important superior sophisticated
 
-Rule018(composed):PersonX gets an advance and PersonX purchases something, So PersonX feels proud
+Rule015(composed):PersonX wears formal clothing and formal attires are tailor designed, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 3.005071084771771e-05
+Decoded words:   comfortable professional special polished elegant
+
+Rule016(composed):PersonX wears formal clothing and a formal wear has dress codes, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 2.4201815904234536e-05
+Decoded words:   uncomfortable awkward formal different inhibited
+
+Rule017(composed):PersonX wears formal clothing and a traditional dress is elegant clothing, so PersonX feels important.
+Jaccard score: 0.25
+KL score: 3.410985300433822e-05
+Decoded words:   elegant fancy comfortable sophisticated classy
+
+Rule018(composed):PersonX wears formal clothing and a formal attire should have tailor, so PersonX feels important.
 Jaccard score: 0.0
-KL score: 2.6025940314866602e-05
-Decoded words:   good happy better
+KL score: 3.357501918799244e-05
+Decoded words:   comfortable good important confident special
 
-Rule019(composed):PersonX gets an advance and PersonX buys some items, So PersonX feels proud
+Rule019(composed):PersonX wears formal clothing and a formal wear should be dress, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 1.7868342183646746e-05
+Decoded words:   good comfortable fancy elegant sexy
+
+Rule020(composed):PersonX wears formal clothing and a traditional dress has formal elements, so PersonX feels important.
+Jaccard score: 0.42857142857142855
+KL score: 8.619699656264856e-06
+Decoded words:   formal traditional official professional proper
+
+Rule021(composed):PersonX wears formal clothing and a traditional dress has elegant details, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 3.5307821235619485e-05
+Decoded words:   elegant sophisticated refined beautiful classy
+
+Rule022(composed):PersonX wears formal clothing and formal attires have a tailor, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 2.4543749532313086e-05
+Decoded words:   comfortable good professional elegant special
+
+Rule023(composed):PersonX wears formal clothing and formal attires are suits, so PersonX feels important.
+Jaccard score: 0.25
+KL score: 6.396077878889628e-06
+Decoded words:   formal stiff comfortable professional uncomfortable
+
+Rule024(composed):PersonX wears formal clothing and a traditional dress has traditional features, so PersonX feels important.
 Jaccard score: 0.0
-KL score: 2.7956517442362383e-05
-Decoded words:   good better happy
+KL score: 4.284403257770464e-05
+Decoded words:   traditional authentic comfortable different familiar
 
-Rule020(composed):PersonX gets an advance and PersonX offers to pay, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 8.50422748044366e-06
-Decoded words:   guilty bad cheated
+Rule025(composed):PersonX wears formal clothing and a traditional dress has elegant features, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 2.9774622817058116e-05
+Decoded words:   elegant sophisticated refined comfortable beautiful
 
-Rule021(composed):PersonX gets an advance and PersonX buys the ticket, So PersonX feels proud
+Rule026(composed):PersonX wears formal clothing and a traditional dress has elegant lines, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 3.135531733278185e-05
+Decoded words:   elegant sophisticated beautiful comfortable classy
+
+Rule027(composed):PersonX wears formal clothing and a formal wear has dress code, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 2.043873791990336e-05
+Decoded words:   uncomfortable formal awkward embarrassed different
+
+Rule028(composed):PersonX wears formal clothing and a traditional dress has formal wear, so PersonX feels important.
+Jaccard score: 0.42857142857142855
+KL score: 7.887247193139046e-06
+Decoded words:   formal traditional official proper professional
+
+Rule029(composed):PersonX wears formal clothing and a traditional dress is elegant, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 2.8583614039234817e-05
+Decoded words:   elegant comfortable sophisticated beautiful good
+
+Rule030(composed):PersonX wears formal clothing and formal attires are tailormade, so PersonX feels important.
+Jaccard score: 0.25
+KL score: 1.0218090210400987e-05
+Decoded words:   formal comfortable elegant good professional
+
+Rule031(composed):PersonX wears formal clothing and a formal wear has gowns, so PersonX feels important.
+Jaccard score: 0.42857142857142855
+KL score: 7.991343409230467e-06
+Decoded words:   formal fancy elegant official special
+
+Rule032(composed):PersonX wears formal clothing and formal attires have formalities, so PersonX feels important.
+Jaccard score: 0.42857142857142855
+KL score: 1.2677527593041304e-05
+Decoded words:   formal official proper formally professional
+
+Rule033(composed):PersonX wears formal clothing and attires should fit the wearer, so PersonX feels important.
 Jaccard score: 0.0
-KL score: 1.4753852155990899e-05
-Decoded words:   good guilty better
+KL score: 4.652369534596801e-05
+Decoded words:   comfortable good confident beautiful important
 
-Rule022(composed):PersonX gets an advance and PersonX buys some time, So PersonX feels proud
+Rule034(composed):PersonX wears formal clothing and outfits are made to fit clothing, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 2.319962550245691e-05
+Decoded words:   comfortable uncomfortable good formal dressed
+
+Rule035(composed):PersonX wears formal clothing and a formal wear has skirt or dress, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 1.1794102647399995e-05
+Decoded words:   formal feminine elegant sexy pretty
+
+Rule036(composed):PersonX wears formal clothing and formal attires have dress code, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 2.2906391677679494e-05
+Decoded words:   uncomfortable inhibited formal embarrassed awkward
+
+Rule037(composed):PersonX wears formal clothing and a costume is fancy dress; a character, so PersonX feels important.
+Jaccard score: 0.1111111111111111
+KL score: 2.6892217647400685e-05
+Decoded words:   different special real important fancy
+
+Rule038(composed):PersonX wears formal clothing and bowties are formal attire, so PersonX feels important.
+Jaccard score: 0.6666666666666666
+KL score: 3.422632744332077e-06
+Decoded words:   formal official fancy classy professional
+
+Rule039(composed):PersonX wears formal clothing and a formal wear can be dress, so PersonX feels important.
+Jaccard score: 0.25
+KL score: 1.2910712939628866e-05
+Decoded words:   formal elegant dressed comfortable fancy
+
+Rule040(composed):PersonX wears formal clothing and a formal wear may have dress code, so PersonX feels important.
 Jaccard score: 0.0
-KL score: 3.093702616752125e-05
-Decoded words:   better good safe
-
-Rule023(composed):PersonX gets an advance and PersonX buys this ticket, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 8.046169568842743e-06
-Decoded words:   guilty bad cheated
-
-Rule024(composed):PersonX gets an advance and PersonX buys PersonY's order, So PersonX feels proud
-Jaccard score: 0.2
-KL score: 1.3484037481248379e-05
-Decoded words:   guilty bad good
-
-Rule025(composed):PersonX gets an advance and PersonX buys PersonY's demands, So PersonX feels proud
-Jaccard score: 0.2
-KL score: 1.2414218872436322e-05
-Decoded words:   guilty good cheated
-
-Rule026(composed):PersonX gets an advance and PersonX places an order, So PersonX feels proud
-Jaccard score: 0.2
-KL score: 1.327789323113393e-05
-Decoded words:   good bad guilty
-
-Rule027(composed):PersonX gets an advance and PersonX buys another ticket, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 7.039138381514931e-06
-Decoded words:   cheated guilty bad
-
-Rule028(composed):PersonX gets an advance and PersonX takes this opportunity, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 7.489727522624889e-06
-Decoded words:   betrayed guilty bad
-
-Rule029(composed):PersonX gets an advance and PersonX suggests getting one, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 8.807790436549112e-06
-Decoded words:   guilty bad betrayed
-
-Rule030(composed):PersonX gets an advance and PersonX buys a paper, So PersonX feels proud
-Jaccard score: 0.0
-KL score: 2.2653317500953563e-05
-Decoded words:   good better guilty
-
-Rule031(composed):PersonX gets an advance and PersonX asks for change, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 6.675885742879473e-06
-Decoded words:   betrayed bad threatened
-
-Rule032(composed):PersonX gets an advance and PersonX is accepted at, So PersonX feels proud
-Jaccard score: 0.2
-KL score: 1.0580071830190718e-05
-Decoded words:   rejected good bad
-
-Rule033(composed):PersonX gets an advance and PersonX buys an item, So PersonX feels proud
-Jaccard score: 0.0
-KL score: 3.14480384986382e-05
-Decoded words:   good happy better
-
-Rule034(composed):PersonX gets an advance and PersonX buys the answer, So PersonX feels proud
-Jaccard score: 0.2
-KL score: 1.3158609363017604e-05
-Decoded words:   cheated good guilty
-
-Rule035(composed):PersonX gets an advance and PersonX offers to sell, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 6.99056772646145e-06
-Decoded words:   guilty bad betrayed
-
-Rule036(composed):PersonX gets an advance and PersonX wants the money, So PersonX feels proud
-Jaccard score: 0.5
-KL score: 6.90006618242478e-06
-Decoded words:   guilty cheated betrayed
-
-Rule037(composed):PersonX gets an advance and PersonX needs some money, So PersonX feels proud
-Jaccard score: 0.2
-KL score: 1.1922966223210096e-05
-Decoded words:   guilty bad pressured
-
-Rule038(composed):PersonX gets an advance and PersonX places the order, So PersonX feels proud
-Jaccard score: 0.2
-KL score: 1.6972784578683786e-05
-Decoded words:   good guilty bad
-
-Rule039(composed):PersonX gets an advance and PersonX buys something new, So PersonX feels proud
-Jaccard score: 0.0
-KL score: 2.3200254872790538e-05
-Decoded words:   happy better good
-
-Rule040(composed):PersonX gets an advance and PersonX purchases a scale, So PersonX feels proud
-Jaccard score: 0.0
-KL score: 2.9265116609167308e-05
-Decoded words:   good better happy
-
-
-***********************************************
-Rule10(original):PersonX gets an advance, So PersonX is seen as intelligent
-Decoded words:   bad evil good
-
-Rule11(composed):PersonX gets an advance and PersonX buys, So PersonX is seen as intelligent
-Jaccard score: 0.2
-KL score: 1.6879597751540132e-05
-Decoded words:   greedy winner bad
-
-Rule12(composed):PersonX gets an advance and PersonX wants, So PersonX is seen as intelligent
-Jaccard score: 0.2
-KL score: 1.1693085070874076e-05
-Decoded words:   greedy selfish bad
-
-Rule13(composed):PersonX gets an advance and PersonX bought, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 8.59169722389197e-06
-Decoded words:   worthless valuable successful
-
-Rule14(composed):PersonX gets an advance and PersonX is requested, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 1.4882532923365943e-05
-Decoded words:   a: important
-
-Rule15(composed):PersonX gets an advance and PersonX buys something, So PersonX is seen as intelligent
-Jaccard score: 0.2
-KL score: 1.474820510338759e-05
-Decoded words:   successful greedy good
-
-Rule16(composed):PersonX gets an advance and PersonX buys person, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 1.4548654689860996e-05
-Decoded words:   greedy rich successful
-
-Rule17(composed):PersonX gets an advance and PersonX requests cash, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.8554459277074784e-05
-Decoded words:   greedy cheating dishonest
-
-Rule18(composed):PersonX gets an advance and PersonX buys it, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 1.5470021025976166e-05
-Decoded words:   successful greedy a
-
-Rule19(composed):PersonX gets an advance and PersonX wants money, So PersonX is seen as intelligent
-Jaccard score: 0.2
-KL score: 2.627745379868429e-05
-Decoded words:   greedy evil selfish
-
-Rule110(composed):PersonX gets an advance and PersonX wants it, So PersonX is seen as intelligent
-Jaccard score: 0.2
-KL score: 2.911967567342799e-05
-Decoded words:   greedy selfish evil
-
-Rule111(composed):PersonX gets an advance and PersonX provides money, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.2421971152652986e-05
-Decoded words:   greedy trustworthy responsible
-
-Rule112(composed):PersonX gets an advance and PersonX wants PersonX, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 1.635256012377795e-05
-Decoded words:   a the...
-
-Rule113(composed):PersonX gets an advance and PersonX orders in, So PersonX is seen as intelligent
-Jaccard score: 0.2
-KL score: 1.3056629541097209e-05
-Decoded words:   greedy bad successful
-
-Rule114(composed):PersonX gets an advance and PersonX purchases it, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.0526378648355603e-05
-Decoded words:   a the successful
-
-Rule115(composed):PersonX gets an advance and PersonX takes it, So PersonX is seen as intelligent
-Jaccard score: 0.2
-KL score: 1.4075953004066832e-05
-Decoded words:   greedy a bad
-
-Rule116(composed):PersonX gets an advance and PersonX asks for, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.765287172223907e-05
-Decoded words:   a greedy the
-
-Rule117(composed):PersonX gets an advance and PersonX uses coupons, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.0227515051374212e-05
-Decoded words:   cheating greedy successful
-
-Rule118(composed):PersonX gets an advance and PersonX purchases something, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 1.751246782077942e-05
-Decoded words:   successful a greedy
-
-Rule119(composed):PersonX gets an advance and PersonX buys some items, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 1.9619546947069466e-05
-Decoded words:   a successful:
-
-Rule120(composed):PersonX gets an advance and PersonX offers to pay, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.061359009530861e-05
-Decoded words:   greedy trustworthy a
-
-Rule121(composed):PersonX gets an advance and PersonX buys the ticket, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.2976004402153194e-05
-Decoded words:   a successful:
-
-Rule122(composed):PersonX gets an advance and PersonX buys some time, So PersonX is seen as intelligent
-Jaccard score: 0.2
-KL score: 1.8881088180933148e-05
-Decoded words:   a successful good
-
-Rule123(composed):PersonX gets an advance and PersonX buys this ticket, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 1.9735087334993295e-05
-Decoded words:   a greedy:
-
-Rule124(composed):PersonX gets an advance and PersonX buys PersonY's order, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 1.8906481273006648e-05
-Decoded words:   successful greedy winner
-
-Rule125(composed):PersonX gets an advance and PersonX buys PersonY's demands, So PersonX is seen as intelligent
-Jaccard score: 0.2
-KL score: 1.5592069757985882e-05
-Decoded words:   greedy successful evil
-
-Rule126(composed):PersonX gets an advance and PersonX places an order, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.383070568612311e-05
-Decoded words:   successful a:
-
-Rule127(composed):PersonX gets an advance and PersonX buys another ticket, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 1.9987346604466438e-05
-Decoded words:   a cheating greedy
-
-Rule128(composed):PersonX gets an advance and PersonX takes this opportunity, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 1.93046907952521e-05
-Decoded words:   a: successful
-
-Rule129(composed):PersonX gets an advance and PersonX suggests getting one, So PersonX is seen as intelligent
-Jaccard score: 0.2
-KL score: 1.5027238987386227e-05
-Decoded words:   greedy evil a
-
-Rule130(composed):PersonX gets an advance and PersonX buys a paper, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.4913890229072422e-05
-Decoded words:   successful a:
-
-Rule131(composed):PersonX gets an advance and PersonX asks for change, So PersonX is seen as intelligent
-Jaccard score: 0.2
-KL score: 1.9326502297190018e-05
-Decoded words:   greedy bad selfish
-
-Rule132(composed):PersonX gets an advance and PersonX is accepted at, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 1.7808140910346992e-05
-Decoded words:   a successful the
-
-Rule133(composed):PersonX gets an advance and PersonX buys an item, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.4038967239903286e-05
-Decoded words:   successful a:
-
-Rule134(composed):PersonX gets an advance and PersonX buys the answer, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 1.904604687297251e-05
-Decoded words:   a: the
-
-Rule135(composed):PersonX gets an advance and PersonX offers to sell, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.0096995285712183e-05
-Decoded words:   greedy selling a
-
-Rule136(composed):PersonX gets an advance and PersonX wants the money, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 3.883694080286659e-05
-Decoded words:   greedy selfish a
-
-Rule137(composed):PersonX gets an advance and PersonX needs some money, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.41169491346227e-05
-Decoded words:   a: the
-
-Rule138(composed):PersonX gets an advance and PersonX places the order, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.65065591520397e-05
-Decoded words:   a successful:
-
-Rule139(composed):PersonX gets an advance and PersonX buys something new, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 1.579694071551785e-05
-Decoded words:   successful rich happy
-
-Rule140(composed):PersonX gets an advance and PersonX purchases a scale, So PersonX is seen as intelligent
-Jaccard score: 0.0
-KL score: 2.565218528616242e-05
-Decoded words:   successful a:
+KL score: 5.2760125981876627e-05
+Decoded words:   uncomfortable inhibited different obligated embarrassed
 
 
 ***********************************************
 
 
-*************************************************************************************Query:
-PersonX publicly defends the position
+*************************************************************************************
 
 
-Intermediate results whose are neutral in both direction and has high PPL
+3
+***Query:
+PersonX is deeply wounded
 
 
-PersonX publicly defends the position and PersonX denies allegations
-PersonX publicly defends the position and PersonX opposes injustice
-PersonX publicly defends the position and PersonX supports freedom
-PersonX publicly defends the position and PersonX is defiant
-PersonX publicly defends the position and PersonX receives criticism
-PersonX publicly defends the position and PersonX is impolite
-PersonX publicly defends the position and PersonX gains support
-PersonX publicly defends the position and PersonX discusses honesty
-PersonX publicly defends the position and PersonX denies wrongdoing
-PersonX publicly defends the position and PersonX becomes defiant
-PersonX publicly defends the position and PersonX claims self-defense
-PersonX publicly defends the position and PersonX claims innocence
-PersonX publicly defends the position and PersonX argues about fairness
-PersonX publicly defends the position and PersonX supports PersonY's decision
-PersonX publicly defends the position and PersonX supports PersonY's ambitions
-PersonX publicly defends the position and PersonX denies PersonY's protest
-PersonX publicly defends the position and PersonX supports PersonY’s decision
-PersonX publicly defends the position and PersonX believes PersonY's protestations
-PersonX publicly defends the position and PersonX opposes PersonY's criticism
-PersonX publicly defends the position and PersonX denies PersonY's criticism
-PersonX publicly defends the position and PersonX denies PersonY's accusation
-PersonX publicly defends the position and PersonX supports PersonY's position
-PersonX publicly defends the position and PersonX supports PersonY's ideas
-PersonX publicly defends the position and PersonX fights for rights
-PersonX publicly defends the position and PersonX protests PersonY's oppression
-PersonX publicly defends the position and PersonX supports the struggle
-PersonX publicly defends the position and PersonX supports PersonY’s position
-PersonX publicly defends the position and PersonX speaks an aphorism
-PersonX publicly defends the position and PersonX protests with PersonY
-PersonX publicly defends the position and PersonX describes PersonY’s stance
-PersonX publicly defends the position and PersonX supports PersonY's cause
-PersonX publicly defends the position and PersonX refutes PersonY's assumptions
-PersonX publicly defends the position and PersonX argues about politics
-PersonX publicly defends the position and PersonX claims PersonY's rights
-PersonX publicly defends the position and PersonX asserts that PersonY
-PersonX publicly defends the position and PersonX resists PersonY’s propaganda
-PersonX publicly defends the position and PersonX supports PersonY's view
-PersonX publicly defends the position and PersonX values PersonY’s views
-PersonX publicly defends the position and PersonX supports PersonY's claim
-PersonX publicly defends the position and PersonX supports PersonY’s views
+***Intermediate results whose are neutral in both direction and has high PPL***
+
+
+PersonX is deeply wounded and a grief has painful symptoms
+PersonX is deeply wounded and a grief has a mourning
+PersonX is deeply wounded and an assault produces pain
+PersonX is deeply wounded and a pain should cause suffering
+PersonX is deeply wounded and a pain is considered agony
+PersonX is deeply wounded and a hurt can damage tissue
+PersonX is deeply wounded and a broken arm has injury risk
+PersonX is deeply wounded and a grief has painful effects
+PersonX is deeply wounded and a chronic illness has disability
+PersonX is deeply wounded and causing bleeding
+PersonX is deeply wounded and a grief has painful consequences
+PersonX is deeply wounded and a regret has remorseful intent
+PersonX is deeply wounded and a chronic pain can have disability
+PersonX is deeply wounded and Hurts are part of injury
+PersonX is deeply wounded and an angina produces pain
+PersonX is deeply wounded and a hurt may be damage caused
+PersonX is deeply wounded and a medical condition has injuries
+PersonX is deeply wounded and a chronic illness has suffering
+PersonX is deeply wounded and a grief is sad
+PersonX is deeply wounded and a ptsd is an individual struggle
+PersonX is deeply wounded and scar tissues are formed in injury
+PersonX is deeply wounded and a terminal illness has one suffering
+PersonX is deeply wounded and a pain have its root in suffering
+PersonX is deeply wounded and a pain can be agony
+PersonX is deeply wounded and a constipation produces pain
+PersonX is deeply wounded and a grief has been painful
+PersonX is deeply wounded and Hurts may have been injury
+PersonX is deeply wounded and an accidental injury produces pain
+PersonX is deeply wounded and a pain may have started in agony
+PersonX is deeply wounded and a grief is painful
+PersonX is deeply wounded and a terminal illness has suffering
+PersonX is deeply wounded and a terminal illness has suffering or pain
+PersonX is deeply wounded and a terminal illness has suffering or loss
+PersonX is deeply wounded and blood clots produce pain
+PersonX is deeply wounded and a broken bone produces pain
+PersonX is deeply wounded and a bruised wound is red
+PersonX is deeply wounded and a hurt can be pain
+PersonX is deeply wounded and a savagery produces pain
+PersonX is deeply wounded and an internal bleeding occurs after trauma
+PersonX is deeply wounded and cataracts have clouded an individual
+
 ********************
-Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
-Rule00(original):PersonX publicly defends the position, So PersonX feels pleased
-Decoded words:   guilty bad betrayed
-
-Rule01(composed):PersonX publicly defends the position and PersonX denies allegations, So PersonX feels pleased
-Jaccard score: 0.5
-KL score: 3.1715617296868004e-06
-Decoded words:   guilty betrayed better
-
-Rule02(composed):PersonX publicly defends the position and PersonX opposes injustice, So PersonX feels pleased
-Jaccard score: 0.5
-KL score: 1.202686871693004e-05
-Decoded words:   guilty justified bad
-
-Rule03(composed):PersonX publicly defends the position and PersonX supports freedom, So PersonX feels pleased
-Jaccard score: 0.2
-KL score: 1.259356940863654e-05
-Decoded words:   guilty safe good
-
-Rule04(composed):PersonX publicly defends the position and PersonX is defiant, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 6.187655344547238e-06
-Decoded words:   betrayed guilty bad
-
-Rule05(composed):PersonX publicly defends the position and PersonX receives criticism, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 4.132083176955348e-06
-Decoded words:   guilty betrayed bad
-
-Rule06(composed):PersonX publicly defends the position and PersonX is impolite, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 5.1219030865468085e-06
-Decoded words:   guilty bad betrayed
-
-Rule07(composed):PersonX publicly defends the position and PersonX gains support, So PersonX feels pleased
-Jaccard score: 0.2
-KL score: 7.162125257309526e-06
-Decoded words:   better guilty good
-
-Rule08(composed):PersonX publicly defends the position and PersonX discusses honesty, So PersonX feels pleased
-Jaccard score: 0.5
-KL score: 8.85994995769579e-06
-Decoded words:   guilty betrayed better
-
-Rule09(composed):PersonX publicly defends the position and PersonX denies wrongdoing, So PersonX feels pleased
-Jaccard score: 0.5
-KL score: 5.392961611505598e-06
-Decoded words:   guilty betrayed better
-
-Rule010(composed):PersonX publicly defends the position and PersonX becomes defiant, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 5.0415401346981525e-06
-Decoded words:   betrayed guilty bad
-
-Rule011(composed):PersonX publicly defends the position and PersonX claims self-defense, So PersonX feels pleased
-Jaccard score: 0.5
-KL score: 8.725201951165218e-06
-Decoded words:   guilty better bad
-
-Rule012(composed):PersonX publicly defends the position and PersonX claims innocence, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 8.630713637103327e-06
-Decoded words:   guilty betrayed bad
-
-Rule013(composed):PersonX publicly defends the position and PersonX argues about fairness, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 1.0452577953401487e-05
-Decoded words:   guilty bad betrayed
-
-Rule014(composed):PersonX publicly defends the position and PersonX supports PersonY's decision, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 6.919294719409663e-06
-Decoded words:   betrayed guilty bad
-
-Rule015(composed):PersonX publicly defends the position and PersonX supports PersonY's ambitions, So PersonX feels pleased
-Jaccard score: 0.5
-KL score: 9.348073035653215e-06
-Decoded words:   betrayed guilty good
-
-Rule016(composed):PersonX publicly defends the position and PersonX denies PersonY's protest, So PersonX feels pleased
-Jaccard score: 0.5
-KL score: 5.265404979581945e-06
-Decoded words:   guilty better betrayed
-
-Rule017(composed):PersonX publicly defends the position and PersonX supports PersonY’s decision, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 8.287805030704476e-06
-Decoded words:   guilty betrayed bad
-
-Rule018(composed):PersonX publicly defends the position and PersonX believes PersonY's protestations, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 6.654637672909303e-06
-Decoded words:   betrayed guilty bad
-
-Rule019(composed):PersonX publicly defends the position and PersonX opposes PersonY's criticism, So PersonX feels pleased
-Jaccard score: 0.5
-KL score: 1.2140933904447593e-05
-Decoded words:  : betrayed guilty
-
-Rule020(composed):PersonX publicly defends the position and PersonX denies PersonY's criticism, So PersonX feels pleased
-Jaccard score: 0.5
-KL score: 4.711498604592634e-06
-Decoded words:   guilty better bad
-
-Rule021(composed):PersonX publicly defends the position and PersonX denies PersonY's accusation, So PersonX feels pleased
-Jaccard score: 0.5
-KL score: 5.588393833022565e-06
-Decoded words:   guilty better betrayed
-
-Rule022(composed):PersonX publicly defends the position and PersonX supports PersonY's position, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 5.980276000627782e-06
-Decoded words:   betrayed guilty bad
-
-Rule023(composed):PersonX publicly defends the position and PersonX supports PersonY's ideas, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 7.067237675073557e-06
-Decoded words:   guilty betrayed bad
-
-Rule024(composed):PersonX publicly defends the position and PersonX fights for rights, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 4.624916527973255e-06
-Decoded words:   guilty betrayed bad
-
-Rule025(composed):PersonX publicly defends the position and PersonX protests PersonY's oppression, So PersonX feels pleased
-Jaccard score: 0.0
-KL score: 1.681925823504571e-05
-Decoded words:   oppressed empowered good
-
-Rule026(composed):PersonX publicly defends the position and PersonX supports the struggle, So PersonX feels pleased
-Jaccard score: 0.5
-KL score: 1.3823357221554033e-05
-Decoded words:   guilty good betrayed
-
-Rule027(composed):PersonX publicly defends the position and PersonX supports PersonY’s position, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 8.2853548519779e-06
-Decoded words:   guilty betrayed bad
-
-Rule028(composed):PersonX publicly defends the position and PersonX speaks an aphorism, So PersonX feels pleased
-Jaccard score: 0.2
-KL score: 1.6003925338736735e-05
-Decoded words:   better good guilty
-
-Rule029(composed):PersonX publicly defends the position and PersonX protests with PersonY, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 4.7926578190526925e-06
-Decoded words:   betrayed guilty bad
-
-Rule030(composed):PersonX publicly defends the position and PersonX describes PersonY’s stance, So PersonX feels pleased
-Jaccard score: 0.2
-KL score: 2.5986775654018857e-05
-Decoded words:  : betrayed like
-
-Rule031(composed):PersonX publicly defends the position and PersonX supports PersonY's cause, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 6.587049028894398e-06
-Decoded words:   guilty betrayed bad
-
-Rule032(composed):PersonX publicly defends the position and PersonX refutes PersonY's assumptions, So PersonX feels pleased
-Jaccard score: 0.2
-KL score: 1.1883944353030529e-05
-Decoded words:   better betrayed good
-
-Rule033(composed):PersonX publicly defends the position and PersonX argues about politics, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 4.836105290451087e-06
-Decoded words:   betrayed guilty bad
-
-Rule034(composed):PersonX publicly defends the position and PersonX claims PersonY's rights, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 3.5405980725045083e-06
-Decoded words:   betrayed guilty bad
-
-Rule035(composed):PersonX publicly defends the position and PersonX asserts that PersonY, So PersonX feels pleased
-Jaccard score: 0.5
-KL score: 2.472790401952807e-05
-Decoded words:  : betrayed guilty
-
-Rule036(composed):PersonX publicly defends the position and PersonX resists PersonY’s propaganda, So PersonX feels pleased
-Jaccard score: 0.2
-KL score: 1.615450491954107e-05
-Decoded words:   good betrayed better
-
-Rule037(composed):PersonX publicly defends the position and PersonX supports PersonY's view, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 5.33361480847816e-06
-Decoded words:   betrayed guilty bad
-
-Rule038(composed):PersonX publicly defends the position and PersonX values PersonY’s views, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 7.752893907309044e-06
-Decoded words:   guilty betrayed bad
-
-Rule039(composed):PersonX publicly defends the position and PersonX supports PersonY's claim, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 5.1641350182762835e-06
-Decoded words:   betrayed guilty bad
-
-Rule040(composed):PersonX publicly defends the position and PersonX supports PersonY’s views, So PersonX feels pleased
-Jaccard score: 1.0
-KL score: 5.473611508932663e-06
-Decoded words:   betrayed guilty bad
-
-
-***********************************************
-Rule10(original):PersonX publicly defends the position, So PersonX is seen as courageous
-Decoded words:   weak racist hypocritical
-
-Rule11(composed):PersonX publicly defends the position and PersonX denies allegations, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.3158769434085116e-05
-Decoded words:   guilty victim a
-
-Rule12(composed):PersonX publicly defends the position and PersonX opposes injustice, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.4114235455053858e-05
-Decoded words:   a… righteous
-
-Rule13(composed):PersonX publicly defends the position and PersonX supports freedom, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.4271251529862639e-05
-Decoded words:   a…...
-
-Rule14(composed):PersonX publicly defends the position and PersonX is defiant, So PersonX is seen as courageous
-Jaccard score: 0.2
-KL score: 1.2641797184187453e-05
-Decoded words:   a weak:
-
-Rule15(composed):PersonX publicly defends the position and PersonX receives criticism, So PersonX is seen as courageous
-Jaccard score: 0.2
-KL score: 8.010637429833878e-06
-Decoded words:   weak a guilty
-
-Rule16(composed):PersonX publicly defends the position and PersonX is impolite, So PersonX is seen as courageous
-Jaccard score: 0.5
-KL score: 7.186114089563489e-06
-Decoded words:   racist weak evil
-
-Rule17(composed):PersonX publicly defends the position and PersonX gains support, So PersonX is seen as courageous
-Jaccard score: 0.2
-KL score: 1.0662548447726294e-05
-Decoded words:   a trustworthy weak
-
-Rule18(composed):PersonX publicly defends the position and PersonX discusses honesty, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 2.2318279661703855e-05
-Decoded words:   trustworthy dishonest honest
-
-Rule19(composed):PersonX publicly defends the position and PersonX denies wrongdoing, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.7116040908149444e-05
-Decoded words:   guilty innocent a
-
-Rule110(composed):PersonX publicly defends the position and PersonX becomes defiant, So PersonX is seen as courageous
-Jaccard score: 0.2
-KL score: 1.759342194418423e-05
-Decoded words:   a weak the
-
-Rule111(composed):PersonX publicly defends the position and PersonX claims self-defense, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 2.3594562662765384e-05
-Decoded words:   victim guilty innocent
-
-Rule112(composed):PersonX publicly defends the position and PersonX claims innocence, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 3.4766620956361294e-05
-Decoded words:   guilty innocent a
-
-Rule113(composed):PersonX publicly defends the position and PersonX argues about fairness, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.2153591342212167e-05
-Decoded words:   biased a:
-
-Rule114(composed):PersonX publicly defends the position and PersonX supports PersonY's decision, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.2061797860951629e-05
-Decoded words:   a: biased
-
-Rule115(composed):PersonX publicly defends the position and PersonX supports PersonY's ambitions, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.5544223060715012e-05
-Decoded words:   a: the
-
-Rule116(composed):PersonX publicly defends the position and PersonX denies PersonY's protest, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 9.957638212654274e-06
-Decoded words:   right the guilty
-
-Rule117(composed):PersonX publicly defends the position and PersonX supports PersonY’s decision, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.5064449144119862e-05
-Decoded words:  : a…
-
-Rule118(composed):PersonX publicly defends the position and PersonX believes PersonY's protestations, So PersonX is seen as courageous
-Jaccard score: 0.2
-KL score: 7.548443136329297e-06
-Decoded words:   weak a guilty
-
-Rule119(composed):PersonX publicly defends the position and PersonX opposes PersonY's criticism, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.2390592928568367e-05
-Decoded words:   a the:
-
-Rule120(composed):PersonX publicly defends the position and PersonX denies PersonY's criticism, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 7.3173264354409184e-06
-Decoded words:   a the right
-
-Rule121(composed):PersonX publicly defends the position and PersonX denies PersonY's accusation, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.640037226025015e-05
-Decoded words:   guilty victim innocent
-
-Rule122(composed):PersonX publicly defends the position and PersonX supports PersonY's position, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.3564730579673778e-05
-Decoded words:  : a supportive
-
-Rule123(composed):PersonX publicly defends the position and PersonX supports PersonY's ideas, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.1236295904382132e-05
-Decoded words:   a: the
-
-Rule124(composed):PersonX publicly defends the position and PersonX fights for rights, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.6079262422863394e-05
-Decoded words:   progressive heroic hero
-
-Rule125(composed):PersonX publicly defends the position and PersonX protests PersonY's oppression, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 2.16279204323655e-05
-Decoded words:   oppressed a progressive
-
-Rule126(composed):PersonX publicly defends the position and PersonX supports the struggle, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.551055356685538e-05
-Decoded words:   a:…
-
-Rule127(composed):PersonX publicly defends the position and PersonX supports PersonY’s position, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.5264891771948896e-05
-Decoded words:   a: the
-
-Rule128(composed):PersonX publicly defends the position and PersonX speaks an aphorism, So PersonX is seen as courageous
-Jaccard score: 0.2
-KL score: 8.687681656738278e-06
-Decoded words:   a: weak
-
-Rule129(composed):PersonX publicly defends the position and PersonX protests with PersonY, So PersonX is seen as courageous
-Jaccard score: 0.2
-KL score: 6.42433951725252e-06
-Decoded words:   a weak guilty
-
-Rule130(composed):PersonX publicly defends the position and PersonX describes PersonY’s stance, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.6699154002708383e-05
-Decoded words:  : a the
-
-Rule131(composed):PersonX publicly defends the position and PersonX supports PersonY's cause, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.1527701644808985e-05
-Decoded words:   a: the
-
-Rule132(composed):PersonX publicly defends the position and PersonX refutes PersonY's assumptions, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 2.0834664610447362e-05
-Decoded words:   correct right the
-
-Rule133(composed):PersonX publicly defends the position and PersonX argues about politics, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 6.302318070083857e-06
-Decoded words:   a: progressive
-
-Rule134(composed):PersonX publicly defends the position and PersonX claims PersonY's rights, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.1996598004770931e-05
-Decoded words:   wrong guilty right
-
-Rule135(composed):PersonX publicly defends the position and PersonX asserts that PersonY, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 2.3741642507957295e-05
-Decoded words:   a the:
-
-Rule136(composed):PersonX publicly defends the position and PersonX resists PersonY’s propaganda, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.8771803297568113e-05
-Decoded words:   a…:
-
-Rule137(composed):PersonX publicly defends the position and PersonX supports PersonY's view, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 9.38291304919403e-06
-Decoded words:   biased: a
-
-Rule138(composed):PersonX publicly defends the position and PersonX values PersonY’s views, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.366600099572679e-05
-Decoded words:   a… supportive
-
-Rule139(composed):PersonX publicly defends the position and PersonX supports PersonY's claim, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.0392251169832889e-05
-Decoded words:   biased a guilty
-
-Rule140(composed):PersonX publicly defends the position and PersonX supports PersonY’s views, So PersonX is seen as courageous
-Jaccard score: 0.0
-KL score: 1.3453660358209163e-05
-Decoded words:  :… a
+
+***Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules***
+Rule00(original):PersonX is deeply wounded, so PersonX feels angry.
+Decoded words:   pain wounded vulnerable betrayed alone
+
+For box plot KL 
+1.8059548892779276e-05,3.653939347714186e-05,3.2719668524805456e-05,5.275394141790457e-05,3.6574183468474075e-05,1.9081768186879344e-05,2.7713853341992944e-05,1.0004897376347799e-05,1.1790539247158449e-05,1.2523128134489525e-05,8.837772838887759e-06,3.94689486711286e-05,1.442960729036713e-05,3.612161526689306e-05,3.485305933281779e-05,1.9343926396686584e-05,8.343373337993398e-06,7.824681233614683e-06,6.117801240179688e-05,3.308946543256752e-05,2.7283300369163044e-05,2.0012117602163926e-05,2.629115988384001e-05,3.084928903263062e-05,2.1858266336494125e-05,7.649597137060482e-06,1.1166688636876643e-05,2.9437633202178404e-05,2.4065766410785727e-05,1.0790295164042618e-05,1.198670179292094e-05,2.539269917178899e-05,2.3577351385029033e-05,4.8313875595340505e-05,2.9955697755212896e-05,3.310237661935389e-05,7.270991773111746e-05,2.985733408422675e-05,1.6402203982579522e-05,1.3881247468816582e-05,
+For box plot Jaccard
+0.42857142857142855,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.25,0.42857142857142855,0.25,0.25,0.1111111111111111,0.25,0.1111111111111111,0.25,0.25,0.42857142857142855,0.25,0.1111111111111111,0.25,0.25,0.25,0.1111111111111111,0.1111111111111111,0.25,0.42857142857142855,0.42857142857142855,0.25,0.1111111111111111,0.25,0.25,0.25,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.25,0.25,0.25,
+
+
+Rule01(composed):PersonX is deeply wounded and a grief has painful symptoms, so PersonX feels angry.
+Jaccard score: 0.42857142857142855
+KL score: 1.8059548892779276e-05
+Decoded words:   pain wounded hurt it alone
+
+Rule02(composed):PersonX is deeply wounded and a grief has a mourning, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 3.653939347714186e-05
+Decoded words:   grief mourning sad it pain
+
+Rule03(composed):PersonX is deeply wounded and an assault produces pain, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 3.2719668524805456e-05
+Decoded words:   pain attacked threatened assaulted violated
+
+Rule04(composed):PersonX is deeply wounded and a pain should cause suffering, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 5.275394141790457e-05
+Decoded words:   pain suffering it agony sorrow
+
+Rule05(composed):PersonX is deeply wounded and a pain is considered agony, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 3.6574183468474075e-05
+Decoded words:   pain agony it tortured anguish
+
+Rule06(composed):PersonX is deeply wounded and a hurt can damage tissue, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 1.9081768186879344e-05
+Decoded words:   pain sick hurt bruised weak
+
+Rule07(composed):PersonX is deeply wounded and a broken arm has injury risk, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 2.7713853341992944e-05
+Decoded words:   vulnerable safe unsafe trapped threatened
+
+Rule08(composed):PersonX is deeply wounded and a grief has painful effects, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 1.0004897376347799e-05
+Decoded words:   pain alone guilty sad helpless
+
+Rule09(composed):PersonX is deeply wounded and a chronic illness has disability, so PersonX feels angry.
+Jaccard score: 0.42857142857142855
+KL score: 1.1790539247158449e-05
+Decoded words:   alone trapped powerless pain vulnerable
+
+Rule010(composed):PersonX is deeply wounded and causing bleeding, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 1.2523128134489525e-05
+Decoded words:   pain guilty bad helpless betrayed
+
+Rule011(composed):PersonX is deeply wounded and a grief has painful consequences, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 8.837772838887759e-06
+Decoded words:   pain guilty alone helpless sad
+
+Rule012(composed):PersonX is deeply wounded and a regret has remorseful intent, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 3.94689486711286e-05
+Decoded words:   remorse regret guilty pain guilt
+
+Rule013(composed):PersonX is deeply wounded and a chronic pain can have disability, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 1.442960729036713e-05
+Decoded words:   pain vulnerable trapped disabled helpless
+
+Rule014(composed):PersonX is deeply wounded and Hurts are part of injury, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 3.612161526689306e-05
+Decoded words:   hurt pain Hurt them Pain
+
+Rule015(composed):PersonX is deeply wounded and an angina produces pain, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 3.485305933281779e-05
+Decoded words:   pain it wounded hurt that
+
+Rule016(composed):PersonX is deeply wounded and a hurt may be damage caused, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 1.9343926396686584e-05
+Decoded words:   pain hurt responsible damaged betrayed
+
+Rule017(composed):PersonX is deeply wounded and a medical condition has injuries, so PersonX feels angry.
+Jaccard score: 0.42857142857142855
+KL score: 8.343373337993398e-06
+Decoded words:   pain vulnerable helpless trapped alone
+
+Rule018(composed):PersonX is deeply wounded and a chronic illness has suffering, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 7.824681233614683e-06
+Decoded words:   pain alone helpless guilty powerless
+
+Rule019(composed):PersonX is deeply wounded and a grief is sad, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 6.117801240179688e-05
+Decoded words:   sad sadness pain depressed sorrow
+
+Rule020(composed):PersonX is deeply wounded and a ptsd is an individual struggle, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 3.308946543256752e-05
+Decoded words:   alone isolated alienated lonely vulnerable
+
+Rule021(composed):PersonX is deeply wounded and scar tissues are formed in injury, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 2.7283300369163044e-05
+Decoded words:   pain wounded scars bruised healed
+
+Rule022(composed):PersonX is deeply wounded and a terminal illness has one suffering, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 2.0012117602163926e-05
+Decoded words:   alone lonely trapped helpless pain
+
+Rule023(composed):PersonX is deeply wounded and a pain have its root in suffering, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 2.629115988384001e-05
+Decoded words:   pain it suffering helpless hurt
+
+Rule024(composed):PersonX is deeply wounded and a pain can be agony, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 3.084928903263062e-05
+Decoded words:   pain it agony tortured anguish
+
+Rule025(composed):PersonX is deeply wounded and a constipation produces pain, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 2.1858266336494125e-05
+Decoded words:   pain sick violated guilty betrayed
+
+Rule026(composed):PersonX is deeply wounded and a grief has been painful, so PersonX feels angry.
+Jaccard score: 0.42857142857142855
+KL score: 7.649597137060482e-06
+Decoded words:   alone vulnerable guilty pain lonely
+
+Rule027(composed):PersonX is deeply wounded and Hurts may have been injury, so PersonX feels angry.
+Jaccard score: 0.42857142857142855
+KL score: 1.1166688636876643e-05
+Decoded words:   betrayed guilty pain vulnerable violated
+
+Rule028(composed):PersonX is deeply wounded and an accidental injury produces pain, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 2.9437633202178404e-05
+Decoded words:   pain it betrayed guilty hurt
+
+Rule029(composed):PersonX is deeply wounded and a pain may have started in agony, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 2.4065766410785727e-05
+Decoded words:   pain it hurt agony guilty
+
+Rule030(composed):PersonX is deeply wounded and a grief is painful, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 1.0790295164042618e-05
+Decoded words:   pain alone guilty sad angry
+
+Rule031(composed):PersonX is deeply wounded and a terminal illness has suffering, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 1.198670179292094e-05
+Decoded words:   pain suffering helpless alone guilty
+
+Rule032(composed):PersonX is deeply wounded and a terminal illness has suffering or pain, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 2.539269917178899e-05
+Decoded words:   pain it that empathy wounded
+
+Rule033(composed):PersonX is deeply wounded and a terminal illness has suffering or loss, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 2.3577351385029033e-05
+Decoded words:   pain it loss that suffering
+
+Rule034(composed):PersonX is deeply wounded and blood clots produce pain, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 4.8313875595340505e-05
+Decoded words:   pain sick it terrible ill
+
+Rule035(composed):PersonX is deeply wounded and a broken bone produces pain, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 2.9955697755212896e-05
+Decoded words:   pain it hurt bad terrible
+
+Rule036(composed):PersonX is deeply wounded and a bruised wound is red, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 3.310237661935389e-05
+Decoded words:   pain red bruised it angry
+
+Rule037(composed):PersonX is deeply wounded and a hurt can be pain, so PersonX feels angry.
+Jaccard score: 0.1111111111111111
+KL score: 7.270991773111746e-05
+Decoded words:   pain it hurt that sad
+
+Rule038(composed):PersonX is deeply wounded and a savagery produces pain, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 2.985733408422675e-05
+Decoded words:   pain it wounded rage vengeance
+
+Rule039(composed):PersonX is deeply wounded and an internal bleeding occurs after trauma, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 1.6402203982579522e-05
+Decoded words:   pain trapped vulnerable violated sick
+
+Rule040(composed):PersonX is deeply wounded and cataracts have clouded an individual, so PersonX feels angry.
+Jaccard score: 0.25
+KL score: 1.3881247468816582e-05
+Decoded words:   lost alone isolated vulnerable alienated
 
 
 ***********************************************
 
 
-*************************************************************************************Query:
-PersonX talks with his boss
+*************************************************************************************
 
 
-Intermediate results whose are neutral in both direction and has high PPL
+4
+***Query:
+PersonX and PersonY agree to take a trip
 
 
-PersonX talks with his boss and PersonX's boss complains
-PersonX talks with his boss and PersonX overhears the conversation
-PersonX talks with his boss and PersonX starts the conversation
-PersonX talks with his boss and PersonX opens the conversation
-PersonX talks with his boss and PersonX begins the conversation
-PersonX talks with his boss and PersonX's boss gets angry
-PersonX talks with his boss and PersonX continues the conversation
-PersonX talks with his boss and PersonX is PersonY's boss
-PersonX talks with his boss and PersonX’s boss is PersonY
-PersonX talks with his boss and PersonX serves his boss
-PersonX talks with his boss and PersonX is your boss
-PersonX talks with his boss and PersonX likes his boss
-PersonX talks with his boss and PersonX talks and talks
-PersonX talks with his boss and PersonX wants to talk
-PersonX talks with his boss and PersonX wants to chat
-PersonX talks with his boss and PersonX starts talking again
-PersonX talks with his boss and PersonX leads a talk
-PersonX talks with his boss and PersonX needs to talk
-PersonX talks with his boss and PersonX wants to speak
-PersonX talks with his boss and PersonX initiates the chat
-PersonX talks with his boss and PersonX's boss has an affair
-PersonX talks with his boss and PersonX’s boss is not happy
-PersonX talks with his boss and PersonX tells about his conversation
-PersonX talks with his boss and PersonX has an interesting conversation
-PersonX talks with his boss and PersonX interrupts some private talk
-PersonX talks with his boss and PersonX returns to the conversation
-PersonX talks with his boss and PersonX is convinced to talk
-PersonX talks with his boss and PersonX has a private conversation
-PersonX talks with his boss and PersonX is talked into it
-PersonX talks with his boss and PersonX talks over the phone
-PersonX talks with his boss and PersonX speaks over the phone
-PersonX talks with his boss and PersonX learns the boss's name
-PersonX talks with his boss and PersonX talks on the phone
-PersonX talks with his boss and PersonX speaks to the executives
-PersonX talks with his boss and PersonX reports for his boss
-PersonX talks with his boss and PersonX talks to the staff
-PersonX talks with his boss and PersonX talks to PersonY about
-PersonX talks with his boss and PersonX continues talking to PersonY
-PersonX talks with his boss and PersonX talks through his problems
-PersonX talks with his boss and PersonX tells PersonY to talk
+***Intermediate results whose are neutral in both direction and has high PPL***
+
+
+PersonX and PersonY agree to take a trip and a backpackers are traveler's
+PersonX and PersonY agree to take a trip and Travellings should be flight booked
+PersonX and PersonY agree to take a trip and Travelings may be booked through tour
+PersonX and PersonY agree to take a trip and a package holiday is getaway time
+PersonX and PersonY agree to take a trip and solo travels are solo adventures
+PersonX and PersonY agree to take a trip and Travellings may be flight booked
+PersonX and PersonY agree to take a trip and road trips have trip plans
+PersonX and PersonY agree to take a trip and safaris have travel plans
+PersonX and PersonY agree to take a trip and a package holiday is getaway weekend
+PersonX and PersonY agree to take a trip and Travellings may have flight plans
+PersonX and PersonY agree to take a trip and pre-planned vacations have travel times
+PersonX and PersonY agree to take a trip and solo travelers have solo accommodations
+PersonX and PersonY agree to take a trip and an interstellar travel should have crew
+PersonX and PersonY agree to take a trip and an itinerant may have traveler expenses
+PersonX and PersonY agree to take a trip and solo travelers have individual goals
+PersonX and PersonY agree to take a trip and a package holiday may have getaway options
+PersonX and PersonY agree to take a trip and pre-planned vacations have vacation package ideas
+PersonX and PersonY agree to take a trip and solo travelers are individualists
+PersonX and PersonY agree to take a trip and solo travelers are individualistic
+PersonX and PersonY agree to take a trip and pre-planned vacations have vacation package plans
+PersonX and PersonY agree to take a trip and a package holiday may be trip related
+PersonX and PersonY agree to take a trip and Travelers have accommodation options
+PersonX and PersonY agree to take a trip and a package holiday may have getaway or weekend travel
+PersonX and PersonY agree to take a trip and pre-planned vacations have vacation package deals
+PersonX and PersonY agree to take a trip and Travellings should be booked
+PersonX and PersonY agree to take a trip and Travellers may be in vacation
+PersonX and PersonY agree to take a trip and Travels may be vacation time
+PersonX and PersonY agree to take a trip and business trips have trip expenses
+PersonX and PersonY agree to take a trip and a solo travel may have some solo activities
+PersonX and PersonY agree to take a trip and a kayaking trip with friends involves excitement
+PersonX and PersonY agree to take a trip and Destinations are journey plans
+PersonX and PersonY agree to take a trip and a destination should be vacation
+PersonX and PersonY agree to take a trip and Companions are fellow traveler types
+PersonX and PersonY agree to take a trip and outfits are worn to travel
+PersonX and PersonY agree to take a trip and a solo traveler has individual needs
+PersonX and PersonY agree to take a trip and a solo traveler may have solo accommodations
+PersonX and PersonY agree to take a trip and a road trip has trip goals
+PersonX and PersonY agree to take a trip and a safari has travel plans
+PersonX and PersonY agree to take a trip and a road trip has trip plans
+PersonX and PersonY agree to take a trip and solo travels are done by solo adventurers
+
 ********************
-Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
-Rule00(original):PersonX talks with his boss, So PersonX is seen as polite
-Decoded words:   evil weak bad
 
-Rule01(composed):PersonX talks with his boss and PersonX's boss complains, So PersonX is seen as polite
-Jaccard score: 0.5
-KL score: 1.6657293599564582e-05
-Decoded words:   evil bad stupid
+***Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules***
+Rule00(original):PersonX and PersonY agree to take a trip, so PersonX feels happy.
+Decoded words:   better good happy happier special
 
-Rule02(composed):PersonX talks with his boss and PersonX overhears the conversation, So PersonX is seen as polite
+For box plot KL 
+2.7274811145616695e-05,6.949152975721518e-06,4.50276565970853e-05,1.798950688680634e-05,2.9005856049479917e-05,1.947478267538827e-05,1.8336351786274463e-05,2.255190884170588e-05,1.9199822418158874e-05,2.5523528165649623e-05,3.0675411835545674e-05,3.0569721275242046e-05,1.5024746971903369e-05,3.0842169508105144e-05,2.351965849811677e-05,2.2224952772376128e-05,2.1942330931778997e-05,3.262662357883528e-05,3.070100137847476e-05,2.7303123715682887e-05,1.977198371605482e-05,3.4465701901353896e-05,2.6807840185938403e-05,2.7454487280920148e-05,4.13281259170617e-06,2.9891418307670392e-05,1.2187450920464471e-05,3.416106483200565e-05,2.0831603251281194e-05,3.8789716199971735e-05,2.099241282849107e-05,1.0958056918752845e-05,3.9735710743116215e-05,2.290684096806217e-05,2.924420914496295e-05,3.258963624830358e-05,1.7726637452142313e-05,2.2881584300193936e-05,1.771741699485574e-05,3.13310265482869e-05,
+For box plot Jaccard
+0.1111111111111111,0.42857142857142855,0.0,0.25,0.1111111111111111,0.25,0.25,0.1111111111111111,0.25,0.25,0.0,0.1111111111111111,0.25,0.1111111111111111,0.1111111111111111,0.25,0.1111111111111111,0.0,0.0,0.1111111111111111,0.42857142857142855,0.0,0.1111111111111111,0.1111111111111111,0.42857142857142855,0.1111111111111111,0.42857142857142855,0.0,0.25,0.1111111111111111,0.25,0.42857142857142855,0.1111111111111111,0.6666666666666666,0.0,0.0,0.42857142857142855,0.25,0.42857142857142855,0.1111111111111111,
+
+
+Rule01(composed):PersonX and PersonY agree to take a trip and a backpackers are traveler's, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 2.7274811145616695e-05
+Decoded words:   comfortable safe good confident safer
+
+Rule02(composed):PersonX and PersonY agree to take a trip and Travellings should be flight booked, so PersonX feels happy.
+Jaccard score: 0.42857142857142855
+KL score: 6.949152975721518e-06
+Decoded words:   better good safe comfortable happy
+
+Rule03(composed):PersonX and PersonY agree to take a trip and Travelings may be booked through tour, so PersonX feels happy.
 Jaccard score: 0.0
-KL score: 3.183069929946214e-05
-Decoded words:   a the:
+KL score: 4.50276565970853e-05
+Decoded words:   safe comfortable protected secure safer
 
-Rule03(composed):PersonX talks with his boss and PersonX starts the conversation, So PersonX is seen as polite
+Rule04(composed):PersonX and PersonY agree to take a trip and a package holiday is getaway time, so PersonX feels happy.
+Jaccard score: 0.25
+KL score: 1.798950688680634e-05
+Decoded words:   good happy comfortable guilty safe
+
+Rule05(composed):PersonX and PersonY agree to take a trip and solo travels are solo adventures, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 2.9005856049479917e-05
+Decoded words:   safe comfortable free good confident
+
+Rule06(composed):PersonX and PersonY agree to take a trip and Travellings may be flight booked, so PersonX feels happy.
+Jaccard score: 0.25
+KL score: 1.947478267538827e-05
+Decoded words:   safe comfortable good better confident
+
+Rule07(composed):PersonX and PersonY agree to take a trip and road trips have trip plans, so PersonX feels happy.
+Jaccard score: 0.25
+KL score: 1.8336351786274463e-05
+Decoded words:   good safe comfortable cheated happy
+
+Rule08(composed):PersonX and PersonY agree to take a trip and safaris have travel plans, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 2.255190884170588e-05
+Decoded words:   safe comfortable good bad free
+
+Rule09(composed):PersonX and PersonY agree to take a trip and a package holiday is getaway weekend, so PersonX feels happy.
+Jaccard score: 0.25
+KL score: 1.9199822418158874e-05
+Decoded words:   good comfortable safe happy guilty
+
+Rule010(composed):PersonX and PersonY agree to take a trip and Travellings may have flight plans, so PersonX feels happy.
+Jaccard score: 0.25
+KL score: 2.5523528165649623e-05
+Decoded words:   safe comfortable good better confident
+
+Rule011(composed):PersonX and PersonY agree to take a trip and pre-planned vacations have travel times, so PersonX feels happy.
 Jaccard score: 0.0
-KL score: 2.2396116037270986e-05
-Decoded words:   the a:
+KL score: 3.0675411835545674e-05
+Decoded words:   safe comfortable rushed prepared cheated
 
-Rule04(composed):PersonX talks with his boss and PersonX opens the conversation, So PersonX is seen as polite
+Rule012(composed):PersonX and PersonY agree to take a trip and solo travelers have solo accommodations, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 3.0569721275242046e-05
+Decoded words:   safe comfortable alone safer better
+
+Rule013(composed):PersonX and PersonY agree to take a trip and an interstellar travel should have crew, so PersonX feels happy.
+Jaccard score: 0.25
+KL score: 1.5024746971903369e-05
+Decoded words:   safe better comfortable good safer
+
+Rule014(composed):PersonX and PersonY agree to take a trip and an itinerant may have traveler expenses, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 3.0842169508105144e-05
+Decoded words:   obligated comfortable safe guilty better
+
+Rule015(composed):PersonX and PersonY agree to take a trip and solo travelers have individual goals, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 2.351965849811677e-05
+Decoded words:   comfortable good confident empowered safe
+
+Rule016(composed):PersonX and PersonY agree to take a trip and a package holiday may have getaway options, so PersonX feels happy.
+Jaccard score: 0.25
+KL score: 2.2224952772376128e-05
+Decoded words:   comfortable good safe confident better
+
+Rule017(composed):PersonX and PersonY agree to take a trip and pre-planned vacations have vacation package ideas, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 2.1942330931778997e-05
+Decoded words:   comfortable good safe prepared confident
+
+Rule018(composed):PersonX and PersonY agree to take a trip and solo travelers are individualists, so PersonX feels happy.
 Jaccard score: 0.0
-KL score: 2.3898583094705828e-05
-Decoded words:   the: a
+KL score: 3.262662357883528e-05
+Decoded words:   comfortable alone free lonely confident
 
-Rule05(composed):PersonX talks with his boss and PersonX begins the conversation, So PersonX is seen as polite
+Rule019(composed):PersonX and PersonY agree to take a trip and solo travelers are individualistic, so PersonX feels happy.
 Jaccard score: 0.0
-KL score: 3.07933623844292e-05
-Decoded words:   a the:
+KL score: 3.070100137847476e-05
+Decoded words:   comfortable alone lonely safe confident
 
-Rule06(composed):PersonX talks with his boss and PersonX's boss gets angry, So PersonX is seen as polite
-Jaccard score: 0.5
-KL score: 1.4758897123101633e-05
-Decoded words:   stupid evil bad
+Rule020(composed):PersonX and PersonY agree to take a trip and pre-planned vacations have vacation package plans, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 2.7303123715682887e-05
+Decoded words:   comfortable safe cheated good prepared
 
-Rule07(composed):PersonX talks with his boss and PersonX continues the conversation, So PersonX is seen as polite
+Rule021(composed):PersonX and PersonY agree to take a trip and a package holiday may be trip related, so PersonX feels happy.
+Jaccard score: 0.42857142857142855
+KL score: 1.977198371605482e-05
+Decoded words:   good comfortable safe happy better
+
+Rule022(composed):PersonX and PersonY agree to take a trip and Travelers have accommodation options, so PersonX feels happy.
 Jaccard score: 0.0
-KL score: 2.146057886420749e-05
-Decoded words:   a: the
+KL score: 3.4465701901353896e-05
+Decoded words:   safe comfortable secure confident safer
 
-Rule08(composed):PersonX talks with his boss and PersonX is PersonY's boss, So PersonX is seen as polite
+Rule023(composed):PersonX and PersonY agree to take a trip and a package holiday may have getaway or weekend travel, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 2.6807840185938403e-05
+Decoded words:   comfortable safe good included protected
+
+Rule024(composed):PersonX and PersonY agree to take a trip and pre-planned vacations have vacation package deals, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 2.7454487280920148e-05
+Decoded words:   comfortable safe good cheated prepared
+
+Rule025(composed):PersonX and PersonY agree to take a trip and Travellings should be booked, so PersonX feels happy.
+Jaccard score: 0.42857142857142855
+KL score: 4.13281259170617e-06
+Decoded words:   better good safe comfortable happy
+
+Rule026(composed):PersonX and PersonY agree to take a trip and Travellers may be in vacation, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 2.9891418307670392e-05
+Decoded words:   safe comfortable safer free good
+
+Rule027(composed):PersonX and PersonY agree to take a trip and Travels may be vacation time, so PersonX feels happy.
+Jaccard score: 0.42857142857142855
+KL score: 1.2187450920464471e-05
+Decoded words:   good safe better comfortable happy
+
+Rule028(composed):PersonX and PersonY agree to take a trip and business trips have trip expenses, so PersonX feels happy.
 Jaccard score: 0.0
-KL score: 1.8681375877349637e-05
-Decoded words:   boss a the
+KL score: 3.416106483200565e-05
+Decoded words:   guilty obligated bad cheated comfortable
 
-Rule09(composed):PersonX talks with his boss and PersonX’s boss is PersonY, So PersonX is seen as polite
-Jaccard score: 0.2
-KL score: 1.3386576938501094e-05
-Decoded words:   a… evil
+Rule029(composed):PersonX and PersonY agree to take a trip and a solo travel may have some solo activities, so PersonX feels happy.
+Jaccard score: 0.25
+KL score: 2.0831603251281194e-05
+Decoded words:   comfortable safe good free better
 
-Rule010(composed):PersonX talks with his boss and PersonX serves his boss, So PersonX is seen as polite
-Jaccard score: 0.2
-KL score: 1.3612951079267077e-05
-Decoded words:  … evil trustworthy
+Rule030(composed):PersonX and PersonY agree to take a trip and a kayaking trip with friends involves excitement, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 3.8789716199971735e-05
+Decoded words:   excited good safe comfortable excitement
 
-Rule011(composed):PersonX talks with his boss and PersonX is your boss, So PersonX is seen as polite
+Rule031(composed):PersonX and PersonY agree to take a trip and Destinations are journey plans, so PersonX feels happy.
+Jaccard score: 0.25
+KL score: 2.099241282849107e-05
+Decoded words:   good safe comfortable empowered happy
+
+Rule032(composed):PersonX and PersonY agree to take a trip and a destination should be vacation, so PersonX feels happy.
+Jaccard score: 0.42857142857142855
+KL score: 1.0958056918752845e-05
+Decoded words:   good comfortable happy better safe
+
+Rule033(composed):PersonX and PersonY agree to take a trip and Companions are fellow traveler types, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 3.9735710743116215e-05
+Decoded words:   comfortable safe good safer confident
+
+Rule034(composed):PersonX and PersonY agree to take a trip and outfits are worn to travel, so PersonX feels happy.
+Jaccard score: 0.6666666666666666
+KL score: 2.290684096806217e-05
+Decoded words:   comfortable good special happy better
+
+Rule035(composed):PersonX and PersonY agree to take a trip and a solo traveler has individual needs, so PersonX feels happy.
 Jaccard score: 0.0
-KL score: 1.704040914773941e-05
-Decoded words:   boss… important
+KL score: 2.924420914496295e-05
+Decoded words:   comfortable alone lonely safe excluded
 
-Rule012(composed):PersonX talks with his boss and PersonX likes his boss, So PersonX is seen as polite
+Rule036(composed):PersonX and PersonY agree to take a trip and a solo traveler may have solo accommodations, so PersonX feels happy.
 Jaccard score: 0.0
-KL score: 1.972032623598352e-05
-Decoded words:   trustworthy good competent
-
-Rule013(composed):PersonX talks with his boss and PersonX talks and talks, So PersonX is seen as polite
-Jaccard score: 0.2
-KL score: 9.561616025166586e-06
-Decoded words:  … stupid weak
-
-Rule014(composed):PersonX talks with his boss and PersonX wants to talk, So PersonX is seen as polite
-Jaccard score: 0.5
-KL score: 8.662934305903036e-06
-Decoded words:   evil bad stupid
-
-Rule015(composed):PersonX talks with his boss and PersonX wants to chat, So PersonX is seen as polite
-Jaccard score: 0.2
-KL score: 1.2800985132344067e-05
-Decoded words:   evil rude suspicious
-
-Rule016(composed):PersonX talks with his boss and PersonX starts talking again, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 1.4791698049521074e-05
-Decoded words:   a stupid…
-
-Rule017(composed):PersonX talks with his boss and PersonX leads a talk, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 1.7237600332009606e-05
-Decoded words:   boss leader competent
-
-Rule018(composed):PersonX talks with his boss and PersonX needs to talk, So PersonX is seen as polite
-Jaccard score: 0.5
-KL score: 1.299783161812229e-05
-Decoded words:   stupid weak bad
-
-Rule019(composed):PersonX talks with his boss and PersonX wants to speak, So PersonX is seen as polite
-Jaccard score: 0.5
-KL score: 1.1197695130249485e-05
-Decoded words:   stupid evil weak
-
-Rule020(composed):PersonX talks with his boss and PersonX initiates the chat, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 1.4660491615359206e-05
-Decoded words:   the trustworthy a
-
-Rule021(composed):PersonX talks with his boss and PersonX's boss has an affair, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 1.7583715816726908e-05
-Decoded words:   guilty gay betrayed
-
-Rule022(composed):PersonX talks with his boss and PersonX’s boss is not happy, So PersonX is seen as polite
-Jaccard score: 0.5
-KL score: 1.2842555406678002e-05
-Decoded words:   bad evil a
-
-Rule023(composed):PersonX talks with his boss and PersonX tells about his conversation, So PersonX is seen as polite
-Jaccard score: 0.2
-KL score: 8.819828508421779e-06
-Decoded words:   trustworthy evil unreliable
-
-Rule024(composed):PersonX talks with his boss and PersonX has an interesting conversation, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 2.0793149815290235e-05
-Decoded words:   interesting a smart
-
-Rule025(composed):PersonX talks with his boss and PersonX interrupts some private talk, So PersonX is seen as polite
-Jaccard score: 0.2
-KL score: 1.821634577936493e-05
-Decoded words:   evil rude disruptive
-
-Rule026(composed):PersonX talks with his boss and PersonX returns to the conversation, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 2.743076765909791e-05
-Decoded words:   a the:
-
-Rule027(composed):PersonX talks with his boss and PersonX is convinced to talk, So PersonX is seen as polite
-Jaccard score: 0.2
-KL score: 8.732809874345548e-06
-Decoded words:   guilty evil stupid
-
-Rule028(composed):PersonX talks with his boss and PersonX has a private conversation, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 1.6148514987435192e-05
-Decoded words:   a selfish:
-
-Rule029(composed):PersonX talks with his boss and PersonX is talked into it, So PersonX is seen as polite
-Jaccard score: 0.5
-KL score: 1.0355945960327517e-05
-Decoded words:   stupid evil weak
-
-Rule030(composed):PersonX talks with his boss and PersonX talks over the phone, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 1.350693764834432e-05
-Decoded words:   a…...
-
-Rule031(composed):PersonX talks with his boss and PersonX speaks over the phone, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 1.4542923963745125e-05
-Decoded words:   a…...
-
-Rule032(composed):PersonX talks with his boss and PersonX learns the boss's name, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 2.40007047977997e-05
-Decoded words:   a the...
-
-Rule033(composed):PersonX talks with his boss and PersonX talks on the phone, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 1.3170611964596901e-05
-Decoded words:  … a...
-
-Rule034(composed):PersonX talks with his boss and PersonX speaks to the executives, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 1.9588253053370863e-05
-Decoded words:   a:…
-
-Rule035(composed):PersonX talks with his boss and PersonX reports for his boss, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 1.5051403352117632e-05
-Decoded words:   trustworthy important subordinate
-
-Rule036(composed):PersonX talks with his boss and PersonX talks to the staff, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 1.7766917153494433e-05
-Decoded words:   a…:
-
-Rule037(composed):PersonX talks with his boss and PersonX talks to PersonY about, So PersonX is seen as polite
-Jaccard score: 0.0
-KL score: 2.4676273824297823e-05
-Decoded words:   a the:
-
-Rule038(composed):PersonX talks with his boss and PersonX continues talking to PersonY, So PersonX is seen as polite
-Jaccard score: 0.2
-KL score: 1.0551595551078208e-05
-Decoded words:   a suspicious evil
-
-Rule039(composed):PersonX talks with his boss and PersonX talks through his problems, So PersonX is seen as polite
-Jaccard score: 0.2
-KL score: 1.4318585272121709e-05
-Decoded words:   successful weak normal
-
-Rule040(composed):PersonX talks with his boss and PersonX tells PersonY to talk, So PersonX is seen as polite
-Jaccard score: 0.5
-KL score: 7.5193706834397744e-06
-Decoded words:   evil bad guilty
-
-
-***********************************************
-Rule10(original):PersonX talks with his boss, So PersonX feels embarrassed
-Decoded words:   better bad guilty
-
-Rule11(composed):PersonX talks with his boss and PersonX's boss complains, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.5265588444890454e-05
-Decoded words:   bad guilty betrayed
-
-Rule12(composed):PersonX talks with his boss and PersonX overhears the conversation, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.7503502022009343e-05
-Decoded words:   guilty bad uncomfortable
-
-Rule13(composed):PersonX talks with his boss and PersonX starts the conversation, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 8.450407221971545e-06
-Decoded words:   bad uncomfortable guilty
-
-Rule14(composed):PersonX talks with his boss and PersonX opens the conversation, So PersonX feels embarrassed
-Jaccard score: 0.2
-KL score: 7.727577212790493e-06
-Decoded words:   bad uncomfortable good
-
-Rule15(composed):PersonX talks with his boss and PersonX begins the conversation, So PersonX feels embarrassed
-Jaccard score: 0.0
-KL score: 1.9747913029277697e-05
-Decoded words:   uncomfortable: comfortable
-
-Rule16(composed):PersonX talks with his boss and PersonX's boss gets angry, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.362662351311883e-05
-Decoded words:   bad guilty betrayed
-
-Rule17(composed):PersonX talks with his boss and PersonX continues the conversation, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 9.895284165395424e-06
-Decoded words:   better bad like
-
-Rule18(composed):PersonX talks with his boss and PersonX is PersonY's boss, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.1748352335416712e-05
-Decoded words:   bad guilty uncomfortable
-
-Rule19(composed):PersonX talks with his boss and PersonX’s boss is PersonY, So PersonX feels embarrassed
-Jaccard score: 0.2
-KL score: 1.1670765161397867e-05
-Decoded words:   bad betrayed like
-
-Rule110(composed):PersonX talks with his boss and PersonX serves his boss, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.3659704563906416e-05
-Decoded words:   good guilty bad
-
-Rule111(composed):PersonX talks with his boss and PersonX is your boss, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.0142695828108117e-05
-Decoded words:   bad guilty betrayed
-
-Rule112(composed):PersonX talks with his boss and PersonX likes his boss, So PersonX feels embarrassed
-Jaccard score: 0.2
-KL score: 1.426697872375371e-05
-Decoded words:   good better happy
-
-Rule113(composed):PersonX talks with his boss and PersonX talks and talks, So PersonX feels embarrassed
-Jaccard score: 0.2
-KL score: 9.228665476257447e-06
-Decoded words:   bad frustrated like
-
-Rule114(composed):PersonX talks with his boss and PersonX wants to talk, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.0752140951808542e-05
-Decoded words:   guilty bad uncomfortable
-
-Rule115(composed):PersonX talks with his boss and PersonX wants to chat, So PersonX feels embarrassed
-Jaccard score: 0.2
-KL score: 1.8059256035485305e-05
-Decoded words:   guilty uncomfortable awkward
-
-Rule116(composed):PersonX talks with his boss and PersonX starts talking again, So PersonX feels embarrassed
-Jaccard score: 1.0
-KL score: 6.007846877764678e-06
-Decoded words:   better guilty bad
-
-Rule117(composed):PersonX talks with his boss and PersonX leads a talk, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 6.419029887183569e-06
-Decoded words:   bad good better
-
-Rule118(composed):PersonX talks with his boss and PersonX needs to talk, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 9.682064955995884e-06
-Decoded words:   guilty bad uncomfortable
-
-Rule119(composed):PersonX talks with his boss and PersonX wants to speak, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.27238481582026e-05
-Decoded words:   guilty uncomfortable bad
-
-Rule120(composed):PersonX talks with his boss and PersonX initiates the chat, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 8.42249755805824e-06
-Decoded words:   guilty bad good
-
-Rule121(composed):PersonX talks with his boss and PersonX's boss has an affair, So PersonX feels embarrassed
-Jaccard score: 0.2
-KL score: 3.665464828372933e-05
-Decoded words:   betrayed guilty cheated
-
-Rule122(composed):PersonX talks with his boss and PersonX’s boss is not happy, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.315120971412398e-05
-Decoded words:   bad guilty betrayed
-
-Rule123(composed):PersonX talks with his boss and PersonX tells about his conversation, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.064830030372832e-05
-Decoded words:   guilty bad betrayed
-
-Rule124(composed):PersonX talks with his boss and PersonX has an interesting conversation, So PersonX feels embarrassed
-Jaccard score: 0.2
-KL score: 1.4475466741714627e-05
-Decoded words:   good better like
-
-Rule125(composed):PersonX talks with his boss and PersonX interrupts some private talk, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.5222752153931651e-05
-Decoded words:   bad guilty uncomfortable
-
-Rule126(composed):PersonX talks with his boss and PersonX returns to the conversation, So PersonX feels embarrassed
-Jaccard score: 1.0
-KL score: 7.255509899550816e-06
-Decoded words:   better guilty bad
-
-Rule127(composed):PersonX talks with his boss and PersonX is convinced to talk, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.5465484466403723e-05
-Decoded words:   guilty betrayed bad
-
-Rule128(composed):PersonX talks with his boss and PersonX has a private conversation, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 8.698427336639725e-06
-Decoded words:   guilty better comfortable
-
-Rule129(composed):PersonX talks with his boss and PersonX is talked into it, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.3273103832034394e-05
-Decoded words:   guilty bad betrayed
-
-Rule130(composed):PersonX talks with his boss and PersonX talks over the phone, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.1231027201574761e-05
-Decoded words:   like better guilty
-
-Rule131(composed):PersonX talks with his boss and PersonX speaks over the phone, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.1385322977730539e-05
-Decoded words:   better like guilty
-
-Rule132(composed):PersonX talks with his boss and PersonX learns the boss's name, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.268663618247956e-05
-Decoded words:   bad guilty betrayed
-
-Rule133(composed):PersonX talks with his boss and PersonX talks on the phone, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.2754987437801901e-05
-Decoded words:   like better guilty
-
-Rule134(composed):PersonX talks with his boss and PersonX speaks to the executives, So PersonX feels embarrassed
-Jaccard score: 0.2
-KL score: 1.4866820492898114e-05
-Decoded words:   better good comfortable
-
-Rule135(composed):PersonX talks with his boss and PersonX reports for his boss, So PersonX feels embarrassed
-Jaccard score: 0.2
-KL score: 1.1864712178066839e-05
-Decoded words:   pressure guilty pressured
-
-Rule136(composed):PersonX talks with his boss and PersonX talks to the staff, So PersonX feels embarrassed
-Jaccard score: 0.2
-KL score: 9.189124284603167e-06
-Decoded words:   better like good
-
-Rule137(composed):PersonX talks with his boss and PersonX talks to PersonY about, So PersonX feels embarrassed
-Jaccard score: 0.2
-KL score: 1.850961234595161e-05
-Decoded words:   like bad:
-
-Rule138(composed):PersonX talks with his boss and PersonX continues talking to PersonY, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.0222471246379428e-05
-Decoded words:   guilty betrayed bad
-
-Rule139(composed):PersonX talks with his boss and PersonX talks through his problems, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 5.847849479323486e-06
-Decoded words:   better good bad
-
-Rule140(composed):PersonX talks with his boss and PersonX tells PersonY to talk, So PersonX feels embarrassed
-Jaccard score: 0.5
-KL score: 1.0087249393109232e-05
-Decoded words:   guilty bad betrayed
+KL score: 3.258963624830358e-05
+Decoded words:   safe comfortable safer alone secure
+
+Rule037(composed):PersonX and PersonY agree to take a trip and a road trip has trip goals, so PersonX feels happy.
+Jaccard score: 0.42857142857142855
+KL score: 1.7726637452142313e-05
+Decoded words:   good happy better great fulfilled
+
+Rule038(composed):PersonX and PersonY agree to take a trip and a safari has travel plans, so PersonX feels happy.
+Jaccard score: 0.25
+KL score: 2.2881584300193936e-05
+Decoded words:   safe bad good comfortable better
+
+Rule039(composed):PersonX and PersonY agree to take a trip and a road trip has trip plans, so PersonX feels happy.
+Jaccard score: 0.42857142857142855
+KL score: 1.771741699485574e-05
+Decoded words:   good cheated happy safe better
+
+Rule040(composed):PersonX and PersonY agree to take a trip and solo travels are done by solo adventurers, so PersonX feels happy.
+Jaccard score: 0.1111111111111111
+KL score: 3.13310265482869e-05
+Decoded words:   safe comfortable good confident justified
 
 
 ***********************************************
 
 
-*************************************************************************************Query:
-PersonX finds PersonY in his office
+*************************************************************************************
 
 
-Intermediate results whose are neutral in both direction and has high PPL
+5
+***Query:
+PersonX sneaks into PersonX's room
 
 
-PersonX finds PersonY in his office and PersonX's new boss
-PersonX finds PersonY in his office and PersonX meets with boss
-PersonX finds PersonY in his office and PersonX tells PersonY's boss
-PersonX finds PersonY in his office and PersonX meets his boss
-PersonX finds PersonY in his office and PersonX asks PersonY's boss
-PersonX finds PersonY in his office and PersonX searches PersonY's desk
-PersonX finds PersonY in his office and PersonX’s boss is PersonY
-PersonX finds PersonY in his office and PersonX is PersonY's boss
-PersonX finds PersonY in his office and PersonX sees PersonY's boss
-PersonX finds PersonY in his office and PersonX is a secretary
-PersonX finds PersonY in his office and PersonX describes PersonY's job
-PersonX finds PersonY in his office and PersonX organizes PersonY's desk
-PersonX finds PersonY in his office and PersonX becomes PersonY's boss
-PersonX finds PersonY in his office and PersonX's boss calls PersonY
-PersonX finds PersonY in his office and PersonX's boss backs PersonY
-PersonX finds PersonY in his office and PersonX meets PersonY’s boss
-PersonX finds PersonY in his office and PersonX visits his boss
-PersonX finds PersonY in his office and PersonX finds PersonY's papers
-PersonX finds PersonY in his office and PersonX calls PersonY's boss
-PersonX finds PersonY in his office and PersonX cleans PersonY’s desk
-PersonX finds PersonY in his office and PersonX likes his secretary
-PersonX finds PersonY in his office and PersonX searches the desk
-PersonX finds PersonY in his office and PersonX has a boss
-PersonX finds PersonY in his office and PersonX gets into work
-PersonX finds PersonY in his office and PersonX opens PersonY's file
-PersonX finds PersonY in his office and PersonX gets PersonY's job
-PersonX finds PersonY in his office and PersonX pulls PersonY's file
-PersonX finds PersonY in his office and PersonX opens his desk
-PersonX finds PersonY in his office and PersonX becomes an assistant
-PersonX finds PersonY in his office and PersonX becomes PersonY’s supervisor
-PersonX finds PersonY in his office and PersonX returns to work
-PersonX finds PersonY in his office and PersonX goes into work
-PersonX finds PersonY in his office and PersonX is PersonY's assistant
-PersonX finds PersonY in his office and PersonX is PersonY's employee
-PersonX finds PersonY in his office and PersonX becomes an employee
-PersonX finds PersonY in his office and PersonX is an employee
-PersonX finds PersonY in his office and PersonX meets with the boss
-PersonX finds PersonY in his office and PersonX discovers PersonY's new job
-PersonX finds PersonY in his office and PersonX is also PersonY's boss
-PersonX finds PersonY in his office and PersonX works as an administrator
+***Intermediate results whose are neutral in both direction and has high PPL***
+
+
+PersonX sneaks into PersonX's room and a mattress has bedroom dimensions
+PersonX sneaks into PersonX's room and a cloakroom has closet spaces
+PersonX sneaks into PersonX's room and a cloakroom has closet space
+PersonX sneaks into PersonX's room and a sleeper cell has secret place
+PersonX sneaks into PersonX's room and a cloakroom has closet doors
+PersonX sneaks into PersonX's room and a dormer window is installed in bedroom
+PersonX sneaks into PersonX's room and an escape room produces an escape thriller for guests
+PersonX sneaks into PersonX's room and a sleeper cell is secret place
+PersonX sneaks into PersonX's room and an intruder may have thief skills
+PersonX sneaks into PersonX's room and a sleeper agent produces spy material
+PersonX sneaks into PersonX's room and a mattress is bedroom furniture
+PersonX sneaks into PersonX's room and a devious have sneaky abilities
+PersonX sneaks into PersonX's room and a cloakroom is cloak room
+PersonX sneaks into PersonX's room and a cloakroom can be considered cloak room
+PersonX sneaks into PersonX's room and a devious have sneaky skills
+PersonX sneaks into PersonX's room and escape rooms have adventure games set inside rooms
+PersonX sneaks into PersonX's room and a shared space is bedroom
+PersonX sneaks into PersonX's room and a child's bedrooms are bedroom areas
+PersonX sneaks into PersonX's room and a sleeper agent has spy credentials
+PersonX sneaks into PersonX's room and a room has closet spaces
+PersonX sneaks into PersonX's room and a safe house has secret passages
+PersonX sneaks into PersonX's room and a child's bedrooms are bedroom
+PersonX sneaks into PersonX's room and a devious have sneaky tricks
+PersonX sneaks into PersonX's room and a devious have sneaky ways
+PersonX sneaks into PersonX's room and doorways are used in room
+PersonX sneaks into PersonX's room and a safe house has secret rooms
+PersonX sneaks into PersonX's room and a child's bedrooms are considered bedroom
+PersonX sneaks into PersonX's room and a safe house has hideout rooms
+PersonX sneaks into PersonX's room and an intruder can be thief
+PersonX sneaks into PersonX's room and cloakrooms are room with a door
+PersonX sneaks into PersonX's room and a sleeper cell is hideaway
+PersonX sneaks into PersonX's room and an intruder may have burglar tools
+PersonX sneaks into PersonX's room and a room has closet space
+PersonX sneaks into PersonX's room and a sleeper agent will spy
+PersonX sneaks into PersonX's room and a thief burglar
+PersonX sneaks into PersonX's room and a sleeper agent is spy
+PersonX sneaks into PersonX's room and an intruder can burglarize homes through entry
+PersonX sneaks into PersonX's room and doorways are located in room
+PersonX sneaks into PersonX's room and a sleeper agent can be spy
+PersonX sneaks into PersonX's room and a sleeper agent has been spy
+
 ********************
-Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
-Rule00(original):PersonX finds PersonY in his office, So PersonX feels frustrated
-Decoded words:   betrayed guilty bad
 
-Rule01(composed):PersonX finds PersonY in his office and PersonX's new boss, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 1.6922025452004164e-06
-Decoded words:   betrayed guilty bad
+***Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules***
+Rule00(original):PersonX sneaks into PersonX's room, so PersonX feels nervous.
+Decoded words:   guilty bad betrayed uncomfortable trapped
 
-Rule02(composed):PersonX finds PersonY in his office and PersonX meets with boss, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 2.4731955363677116e-06
-Decoded words:   guilty betrayed bad
-
-Rule03(composed):PersonX finds PersonY in his office and PersonX tells PersonY's boss, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 6.545031283167191e-06
-Decoded words:   guilty bad betrayed
-
-Rule04(composed):PersonX finds PersonY in his office and PersonX meets his boss, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 7.758510037092492e-06
-Decoded words:   bad guilty uncomfortable
-
-Rule05(composed):PersonX finds PersonY in his office and PersonX asks PersonY's boss, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 7.426978299918119e-06
-Decoded words:   guilty bad betrayed
-
-Rule06(composed):PersonX finds PersonY in his office and PersonX searches PersonY's desk, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 4.89215108245844e-06
-Decoded words:   guilty betrayed bad
-
-Rule07(composed):PersonX finds PersonY in his office and PersonX’s boss is PersonY, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 1.4466805623669643e-05
-Decoded words:   like bad betrayed
-
-Rule08(composed):PersonX finds PersonY in his office and PersonX is PersonY's boss, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 4.83297753817169e-06
-Decoded words:   betrayed threatened guilty
-
-Rule09(composed):PersonX finds PersonY in his office and PersonX sees PersonY's boss, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 2.8562553779920563e-06
-Decoded words:   betrayed bad guilty
-
-Rule010(composed):PersonX finds PersonY in his office and PersonX is a secretary, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 7.705916686973069e-06
-Decoded words:   betrayed bad guilty
-
-Rule011(composed):PersonX finds PersonY in his office and PersonX describes PersonY's job, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 8.161633559211623e-06
-Decoded words:   guilty uncomfortable bad
-
-Rule012(composed):PersonX finds PersonY in his office and PersonX organizes PersonY's desk, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 2.1546989955822937e-05
-Decoded words:   guilty bad better
-
-Rule013(composed):PersonX finds PersonY in his office and PersonX becomes PersonY's boss, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 5.882491223019315e-06
-Decoded words:   betrayed guilty bad
-
-Rule014(composed):PersonX finds PersonY in his office and PersonX's boss calls PersonY, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 2.2181598069437314e-06
-Decoded words:   guilty betrayed bad
-
-Rule015(composed):PersonX finds PersonY in his office and PersonX's boss backs PersonY, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 7.243916115839966e-06
-Decoded words:   betrayed bad guilty
-
-Rule016(composed):PersonX finds PersonY in his office and PersonX meets PersonY’s boss, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 1.2001165487163235e-05
-Decoded words:   bad guilty betrayed
-
-Rule017(composed):PersonX finds PersonY in his office and PersonX visits his boss, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 5.567012067331234e-06
-Decoded words:   guilty bad betrayed
-
-Rule018(composed):PersonX finds PersonY in his office and PersonX finds PersonY's papers, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 4.061083473061444e-06
-Decoded words:   guilty betrayed bad
-
-Rule019(composed):PersonX finds PersonY in his office and PersonX calls PersonY's boss, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 5.963292551314225e-06
-Decoded words:   guilty bad betrayed
-
-Rule020(composed):PersonX finds PersonY in his office and PersonX cleans PersonY’s desk, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 1.8930559235741384e-05
-Decoded words:   guilty bad better
-
-Rule021(composed):PersonX finds PersonY in his office and PersonX likes his secretary, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 9.620589480618946e-06
-Decoded words:   guilty bad uncomfortable
-
-Rule022(composed):PersonX finds PersonY in his office and PersonX searches the desk, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 1.2974473065696657e-05
-Decoded words:   guilty bad like
-
-Rule023(composed):PersonX finds PersonY in his office and PersonX has a boss, So PersonX feels frustrated
-Jaccard score: 0.2
-KL score: 5.352033895178465e-06
-Decoded words:   guilty awkward uncomfortable
-
-Rule024(composed):PersonX finds PersonY in his office and PersonX gets into work, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 1.4010790437168907e-05
-Decoded words:   guilty bad better
-
-Rule025(composed):PersonX finds PersonY in his office and PersonX opens PersonY's file, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 5.587435225606896e-06
-Decoded words:   guilty betrayed bad
-
-Rule026(composed):PersonX finds PersonY in his office and PersonX gets PersonY's job, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 9.016059266286902e-06
-Decoded words:   bad betrayed guilty
-
-Rule027(composed):PersonX finds PersonY in his office and PersonX pulls PersonY's file, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 6.642055723204976e-06
-Decoded words:   guilty bad betrayed
-
-Rule028(composed):PersonX finds PersonY in his office and PersonX opens his desk, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 1.5223383343254682e-05
-Decoded words:   guilty bad betrayed
-
-Rule029(composed):PersonX finds PersonY in his office and PersonX becomes an assistant, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 1.184249504149193e-05
-Decoded words:   guilty betrayed bad
-
-Rule030(composed):PersonX finds PersonY in his office and PersonX becomes PersonY’s supervisor, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 1.997652361751534e-05
-Decoded words:   guilty bad like
-
-Rule031(composed):PersonX finds PersonY in his office and PersonX returns to work, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 6.285946710704593e-06
-Decoded words:   guilty betrayed bad
-
-Rule032(composed):PersonX finds PersonY in his office and PersonX goes into work, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 6.247744749998674e-06
-Decoded words:   guilty bad betrayed
-
-Rule033(composed):PersonX finds PersonY in his office and PersonX is PersonY's assistant, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 6.460363238147693e-06
-Decoded words:   uncomfortable betrayed guilty
-
-Rule034(composed):PersonX finds PersonY in his office and PersonX is PersonY's employee, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 3.6669805467681726e-06
-Decoded words:   betrayed guilty uncomfortable
-
-Rule035(composed):PersonX finds PersonY in his office and PersonX becomes an employee, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 6.116322765592486e-06
-Decoded words:   guilty betrayed uncomfortable
-
-Rule036(composed):PersonX finds PersonY in his office and PersonX is an employee, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 4.409069788380293e-06
-Decoded words:   betrayed guilty uncomfortable
-
-Rule037(composed):PersonX finds PersonY in his office and PersonX meets with the boss, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 1.063815852830885e-05
-Decoded words:   guilty bad betrayed
-
-Rule038(composed):PersonX finds PersonY in his office and PersonX discovers PersonY's new job, So PersonX feels frustrated
-Jaccard score: 1.0
-KL score: 5.376258741307538e-06
-Decoded words:   betrayed guilty bad
-
-Rule039(composed):PersonX finds PersonY in his office and PersonX is also PersonY's boss, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 5.922175205341773e-06
-Decoded words:   betrayed guilty threatened
-
-Rule040(composed):PersonX finds PersonY in his office and PersonX works as an administrator, So PersonX feels frustrated
-Jaccard score: 0.5
-KL score: 6.646585006819805e-06
-Decoded words:   guilty uncomfortable betrayed
+For box plot KL 
+1.8109400116372854e-05,5.158275234862231e-05,5.773877273895778e-05,1.2375460755720269e-05,4.8798388888826594e-05,3.301728065707721e-05,1.4617035958508495e-05,9.631829016143456e-06,2.61382319877157e-05,2.1384817955549806e-05,1.2225759746797848e-05,1.1396191439416725e-05,2.2721951609128155e-05,2.4317465431522578e-05,1.0607771400827914e-05,5.418457658379339e-05,5.481573225551983e-06,2.5510269551887177e-05,1.6718555343686603e-05,2.6409690690343268e-05,4.9419410061091185e-05,8.201476703106891e-06,7.21090236766031e-06,7.497480055462802e-06,1.3161696188035421e-05,3.485776323941536e-05,9.069861334864981e-06,5.090495687909424e-05,1.0178219781664666e-05,3.221348379156552e-05,1.9906159650417976e-05,2.4750072043389082e-05,3.435214966884814e-05,1.231098849530099e-05,5.18397564519546e-06,9.312818292528391e-06,2.1103847757331096e-05,2.175893314415589e-05,1.535112278361339e-05,9.748278898769058e-06,
+For box plot Jaccard
+0.25,0.0,0.0,0.42857142857142855,0.1111111111111111,0.1111111111111111,0.6666666666666666,0.42857142857142855,0.0,0.42857142857142855,0.25,0.25,0.25,0.1111111111111111,0.42857142857142855,0.1111111111111111,0.42857142857142855,0.1111111111111111,0.42857142857142855,0.1111111111111111,0.1111111111111111,0.25,0.6666666666666666,0.6666666666666666,0.42857142857142855,0.1111111111111111,0.42857142857142855,0.1111111111111111,0.25,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.1111111111111111,0.42857142857142855,0.42857142857142855,0.42857142857142855,0.0,0.25,0.42857142857142855,0.6666666666666666,
 
 
-***********************************************
-Rule10(original):PersonX finds PersonY in his office, So PersonX is seen as competent
-Decoded words:   evil hero guilty
+Rule01(composed):PersonX sneaks into PersonX's room and a mattress has bedroom dimensions, so PersonX feels nervous.
+Jaccard score: 0.25
+KL score: 1.8109400116372854e-05
+Decoded words:   trapped comfortable safe uncomfortable cramped
 
-Rule11(composed):PersonX finds PersonY in his office and PersonX's new boss, So PersonX is seen as competent
+Rule02(composed):PersonX sneaks into PersonX's room and a cloakroom has closet spaces, so PersonX feels nervous.
 Jaccard score: 0.0
-KL score: 1.932846862473525e-05
-Decoded words:   a the...
+KL score: 5.158275234862231e-05
+Decoded words:   comfortable safe safer secure better
 
-Rule12(composed):PersonX finds PersonY in his office and PersonX meets with boss, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 1.0430858310428448e-05
-Decoded words:   boss hero villain
-
-Rule13(composed):PersonX finds PersonY in his office and PersonX tells PersonY's boss, So PersonX is seen as competent
-Jaccard score: 0.5
-KL score: 8.262621122412384e-06
-Decoded words:   evil guilty suspicious
-
-Rule14(composed):PersonX finds PersonY in his office and PersonX meets his boss, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 1.7550535631016828e-05
-Decoded words:   a the hero
-
-Rule15(composed):PersonX finds PersonY in his office and PersonX asks PersonY's boss, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 7.930307219794486e-06
-Decoded words:   a evil boss
-
-Rule16(composed):PersonX finds PersonY in his office and PersonX searches PersonY's desk, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 7.631737389601767e-06
-Decoded words:   evil suspicious the
-
-Rule17(composed):PersonX finds PersonY in his office and PersonX’s boss is PersonY, So PersonX is seen as competent
+Rule03(composed):PersonX sneaks into PersonX's room and a cloakroom has closet space, so PersonX feels nervous.
 Jaccard score: 0.0
-KL score: 2.8758026019204408e-05
-Decoded words:   a the…
+KL score: 5.773877273895778e-05
+Decoded words:   comfortable safe safer secure better
 
-Rule18(composed):PersonX finds PersonY in his office and PersonX is PersonY's boss, So PersonX is seen as competent
+Rule04(composed):PersonX sneaks into PersonX's room and a sleeper cell has secret place, so PersonX feels nervous.
+Jaccard score: 0.42857142857142855
+KL score: 1.2375460755720269e-05
+Decoded words:   safe trapped safer guilty bad
+
+Rule05(composed):PersonX sneaks into PersonX's room and a cloakroom has closet doors, so PersonX feels nervous.
+Jaccard score: 0.1111111111111111
+KL score: 4.8798388888826594e-05
+Decoded words:   safe safer comfortable trapped secure
+
+Rule06(composed):PersonX sneaks into PersonX's room and a dormer window is installed in bedroom, so PersonX feels nervous.
+Jaccard score: 0.1111111111111111
+KL score: 3.301728065707721e-05
+Decoded words:   safe safer trapped protected alone
+
+Rule07(composed):PersonX sneaks into PersonX's room and an escape room produces an escape thriller for guests, so PersonX feels nervous.
+Jaccard score: 0.6666666666666666
+KL score: 1.4617035958508495e-05
+Decoded words:   trapped guilty safe betrayed bad
+
+Rule08(composed):PersonX sneaks into PersonX's room and a sleeper cell is secret place, so PersonX feels nervous.
+Jaccard score: 0.42857142857142855
+KL score: 9.631829016143456e-06
+Decoded words:   safe trapped guilty scared bad
+
+Rule09(composed):PersonX sneaks into PersonX's room and an intruder may have thief skills, so PersonX feels nervous.
 Jaccard score: 0.0
-KL score: 1.4987485883466434e-05
-Decoded words:   boss the a
+KL score: 2.61382319877157e-05
+Decoded words:   threatened vulnerable unsafe scared safe
 
-Rule19(composed):PersonX finds PersonY in his office and PersonX sees PersonY's boss, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 7.856543561501894e-06
-Decoded words:   evil a boss
+Rule010(composed):PersonX sneaks into PersonX's room and a sleeper agent produces spy material, so PersonX feels nervous.
+Jaccard score: 0.42857142857142855
+KL score: 2.1384817955549806e-05
+Decoded words:   betrayed guilty threatened exposed bad
 
-Rule110(composed):PersonX finds PersonY in his office and PersonX is a secretary, So PersonX is seen as competent
+Rule011(composed):PersonX sneaks into PersonX's room and a mattress is bedroom furniture, so PersonX feels nervous.
+Jaccard score: 0.25
+KL score: 1.2225759746797848e-05
+Decoded words:   trapped safe comfortable uncomfortable violated
+
+Rule012(composed):PersonX sneaks into PersonX's room and a devious have sneaky abilities, so PersonX feels nervous.
+Jaccard score: 0.25
+KL score: 1.1396191439416725e-05
+Decoded words:   betrayed trapped threatened scared helpless
+
+Rule013(composed):PersonX sneaks into PersonX's room and a cloakroom is cloak room, so PersonX feels nervous.
+Jaccard score: 0.25
+KL score: 2.2721951609128155e-05
+Decoded words:   safe comfortable trapped safer bad
+
+Rule014(composed):PersonX sneaks into PersonX's room and a cloakroom can be considered cloak room, so PersonX feels nervous.
+Jaccard score: 0.1111111111111111
+KL score: 2.4317465431522578e-05
+Decoded words:   safe safer comfortable trapped protected
+
+Rule015(composed):PersonX sneaks into PersonX's room and a devious have sneaky skills, so PersonX feels nervous.
+Jaccard score: 0.42857142857142855
+KL score: 1.0607771400827914e-05
+Decoded words:   betrayed threatened trapped bad helpless
+
+Rule016(composed):PersonX sneaks into PersonX's room and escape rooms have adventure games set inside rooms, so PersonX feels nervous.
+Jaccard score: 0.1111111111111111
+KL score: 5.418457658379339e-05
+Decoded words:   trapped safe confined lost stuck
+
+Rule017(composed):PersonX sneaks into PersonX's room and a shared space is bedroom, so PersonX feels nervous.
+Jaccard score: 0.42857142857142855
+KL score: 5.481573225551983e-06
+Decoded words:   trapped safe uncomfortable betrayed alone
+
+Rule018(composed):PersonX sneaks into PersonX's room and a child's bedrooms are bedroom areas, so PersonX feels nervous.
+Jaccard score: 0.1111111111111111
+KL score: 2.5510269551887177e-05
+Decoded words:   safe safer trapped comfortable protected
+
+Rule019(composed):PersonX sneaks into PersonX's room and a sleeper agent has spy credentials, so PersonX feels nervous.
+Jaccard score: 0.42857142857142855
+KL score: 1.6718555343686603e-05
+Decoded words:   betrayed threatened exposed trapped guilty
+
+Rule020(composed):PersonX sneaks into PersonX's room and a room has closet spaces, so PersonX feels nervous.
+Jaccard score: 0.1111111111111111
+KL score: 2.6409690690343268e-05
+Decoded words:   trapped safe comfortable naked better
+
+Rule021(composed):PersonX sneaks into PersonX's room and a safe house has secret passages, so PersonX feels nervous.
+Jaccard score: 0.1111111111111111
+KL score: 4.9419410061091185e-05
+Decoded words:   safe safer trapped secure protected
+
+Rule022(composed):PersonX sneaks into PersonX's room and a child's bedrooms are bedroom, so PersonX feels nervous.
+Jaccard score: 0.25
+KL score: 8.201476703106891e-06
+Decoded words:   safe trapped violated guilty safer
+
+Rule023(composed):PersonX sneaks into PersonX's room and a devious have sneaky tricks, so PersonX feels nervous.
+Jaccard score: 0.6666666666666666
+KL score: 7.21090236766031e-06
+Decoded words:   betrayed trapped threatened guilty bad
+
+Rule024(composed):PersonX sneaks into PersonX's room and a devious have sneaky ways, so PersonX feels nervous.
+Jaccard score: 0.6666666666666666
+KL score: 7.497480055462802e-06
+Decoded words:   betrayed trapped threatened guilty bad
+
+Rule025(composed):PersonX sneaks into PersonX's room and doorways are used in room, so PersonX feels nervous.
+Jaccard score: 0.42857142857142855
+KL score: 1.3161696188035421e-05
+Decoded words:   trapped safe betrayed threatened uncomfortable
+
+Rule026(composed):PersonX sneaks into PersonX's room and a safe house has secret rooms, so PersonX feels nervous.
+Jaccard score: 0.1111111111111111
+KL score: 3.485776323941536e-05
+Decoded words:   safe safer trapped protected secure
+
+Rule027(composed):PersonX sneaks into PersonX's room and a child's bedrooms are considered bedroom, so PersonX feels nervous.
+Jaccard score: 0.42857142857142855
+KL score: 9.069861334864981e-06
+Decoded words:   violated guilty betrayed safe bad
+
+Rule028(composed):PersonX sneaks into PersonX's room and a safe house has hideout rooms, so PersonX feels nervous.
+Jaccard score: 0.1111111111111111
+KL score: 5.090495687909424e-05
+Decoded words:   safe safer protected trapped secure
+
+Rule029(composed):PersonX sneaks into PersonX's room and an intruder can be thief, so PersonX feels nervous.
+Jaccard score: 0.25
+KL score: 1.0178219781664666e-05
+Decoded words:   threatened scared safe guilty bad
+
+Rule030(composed):PersonX sneaks into PersonX's room and cloakrooms are room with a door, so PersonX feels nervous.
+Jaccard score: 0.1111111111111111
+KL score: 3.221348379156552e-05
+Decoded words:   trapped safe safer alone protected
+
+Rule031(composed):PersonX sneaks into PersonX's room and a sleeper cell is hideaway, so PersonX feels nervous.
+Jaccard score: 0.1111111111111111
+KL score: 1.9906159650417976e-05
+Decoded words:   safe safer trapped better comfortable
+
+Rule032(composed):PersonX sneaks into PersonX's room and an intruder may have burglar tools, so PersonX feels nervous.
+Jaccard score: 0.1111111111111111
+KL score: 2.4750072043389082e-05
+Decoded words:   threatened trapped vulnerable unsafe scared
+
+Rule033(composed):PersonX sneaks into PersonX's room and a room has closet space, so PersonX feels nervous.
+Jaccard score: 0.1111111111111111
+KL score: 3.435214966884814e-05
+Decoded words:   safe comfortable trapped better secure
+
+Rule034(composed):PersonX sneaks into PersonX's room and a sleeper agent will spy, so PersonX feels nervous.
+Jaccard score: 0.42857142857142855
+KL score: 1.231098849530099e-05
+Decoded words:   betrayed threatened exposed guilty trapped
+
+Rule035(composed):PersonX sneaks into PersonX's room and a thief burglar, so PersonX feels nervous.
+Jaccard score: 0.42857142857142855
+KL score: 5.18397564519546e-06
+Decoded words:   guilty betrayed bad threatened violated
+
+Rule036(composed):PersonX sneaks into PersonX's room and a sleeper agent is spy, so PersonX feels nervous.
+Jaccard score: 0.42857142857142855
+KL score: 9.312818292528391e-06
+Decoded words:   betrayed threatened guilty bad scared
+
+Rule037(composed):PersonX sneaks into PersonX's room and an intruder can burglarize homes through entry, so PersonX feels nervous.
 Jaccard score: 0.0
-KL score: 3.574016591301188e-05
-Decoded words:   a the an
-
-Rule111(composed):PersonX finds PersonY in his office and PersonX describes PersonY's job, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 1.939601315825712e-05
-Decoded words:   a: the
-
-Rule112(composed):PersonX finds PersonY in his office and PersonX organizes PersonY's desk, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 2.1147794541320764e-05
-Decoded words:   helpful responsible boss
-
-Rule113(composed):PersonX finds PersonY in his office and PersonX becomes PersonY's boss, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 1.0055108759843279e-05
-Decoded words:   evil boss a
-
-Rule114(composed):PersonX finds PersonY in his office and PersonX's boss calls PersonY, So PersonX is seen as competent
-Jaccard score: 0.5
-KL score: 6.611590379179688e-06
-Decoded words:   evil guilty suspicious
-
-Rule115(composed):PersonX finds PersonY in his office and PersonX's boss backs PersonY, So PersonX is seen as competent
-Jaccard score: 0.5
-KL score: 1.2173747563792858e-05
-Decoded words:   guilty evil weak
-
-Rule116(composed):PersonX finds PersonY in his office and PersonX meets PersonY’s boss, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 2.9182281650719233e-05
-Decoded words:   a the…
-
-Rule117(composed):PersonX finds PersonY in his office and PersonX visits his boss, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 1.526408777863253e-05
-Decoded words:   a the...
-
-Rule118(composed):PersonX finds PersonY in his office and PersonX finds PersonY's papers, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 8.82812400959665e-06
-Decoded words:   evil a the
-
-Rule119(composed):PersonX finds PersonY in his office and PersonX calls PersonY's boss, So PersonX is seen as competent
-Jaccard score: 0.5
-KL score: 4.93405696033733e-06
-Decoded words:   evil suspicious guilty
-
-Rule120(composed):PersonX finds PersonY in his office and PersonX cleans PersonY’s desk, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 2.45597620960325e-05
-Decoded words:   a the…
-
-Rule121(composed):PersonX finds PersonY in his office and PersonX likes his secretary, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 1.0000246220442932e-05
-Decoded words:   evil a suspicious
-
-Rule122(composed):PersonX finds PersonY in his office and PersonX searches the desk, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 2.4410792320850305e-05
-Decoded words:   the a:
-
-Rule123(composed):PersonX finds PersonY in his office and PersonX has a boss, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 1.2802860510419123e-05
-Decoded words:   a boss evil
-
-Rule124(composed):PersonX finds PersonY in his office and PersonX gets into work, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 2.1528992874664254e-05
-Decoded words:   a the hero
-
-Rule125(composed):PersonX finds PersonY in his office and PersonX opens PersonY's file, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 1.2434290511009749e-05
-Decoded words:   a the evil
-
-Rule126(composed):PersonX finds PersonY in his office and PersonX gets PersonY's job, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 1.1629400432866532e-05
-Decoded words:   evil successful superior
-
-Rule127(composed):PersonX finds PersonY in his office and PersonX pulls PersonY's file, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 1.1257053301960696e-05
-Decoded words:   evil a the
-
-Rule128(composed):PersonX finds PersonY in his office and PersonX opens his desk, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 1.0999757250829134e-05
-Decoded words:   the a evil
-
-Rule129(composed):PersonX finds PersonY in his office and PersonX becomes an assistant, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 3.120526162092574e-05
-Decoded words:   a the important
-
-Rule130(composed):PersonX finds PersonY in his office and PersonX becomes PersonY’s supervisor, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 3.73138245777227e-05
-Decoded words:   a the…
-
-Rule131(composed):PersonX finds PersonY in his office and PersonX returns to work, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 1.3036960808676668e-05
-Decoded words:   a the hero
-
-Rule132(composed):PersonX finds PersonY in his office and PersonX goes into work, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 1.655893174756784e-05
-Decoded words:   a the...
-
-Rule133(composed):PersonX finds PersonY in his office and PersonX is PersonY's assistant, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 3.0083849196671508e-05
-Decoded words:   a the...
-
-Rule134(composed):PersonX finds PersonY in his office and PersonX is PersonY's employee, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 2.130623033735901e-05
-Decoded words:   a the evil
-
-Rule135(composed):PersonX finds PersonY in his office and PersonX becomes an employee, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 2.9136330340406857e-05
-Decoded words:   a... the
-
-Rule136(composed):PersonX finds PersonY in his office and PersonX is an employee, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 2.140683682227973e-05
-Decoded words:   a the evil
-
-Rule137(composed):PersonX finds PersonY in his office and PersonX meets with the boss, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 3.364883014000952e-05
-Decoded words:   a the an
-
-Rule138(composed):PersonX finds PersonY in his office and PersonX discovers PersonY's new job, So PersonX is seen as competent
-Jaccard score: 0.2
-KL score: 9.795810910873115e-06
-Decoded words:   evil a the
-
-Rule139(composed):PersonX finds PersonY in his office and PersonX is also PersonY's boss, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 2.6592313588480465e-05
-Decoded words:   a boss the
-
-Rule140(composed):PersonX finds PersonY in his office and PersonX works as an administrator, So PersonX is seen as competent
-Jaccard score: 0.0
-KL score: 2.3091941329766996e-05
-Decoded words:   a the...
-
-
-***********************************************
-
-
-*************************************************************************************Query:
-PersonX seems to stay well
-
-
-Intermediate results whose are neutral in both direction and has high PPL
-
-
-PersonX seems to stay well and PersonX isn't annoying
-PersonX seems to stay well and PersonX keeps PersonY
-PersonX seems to stay well and PersonX is happier
-PersonX seems to stay well and PersonX doesn’t mind
-PersonX seems to stay well and PersonX stays busy
-PersonX seems to stay well and PersonX is very friendly
-PersonX seems to stay well and PersonX keeps PersonY's word
-PersonX seems to stay well and PersonX is generally charming
-PersonX seems to stay well and PersonX treats personY nicely
-PersonX seems to stay well and PersonX treats PersonY kindly
-PersonX seems to stay well and PersonX treats PersonY nicely
-PersonX seems to stay well and PersonX keeps PersonY close
-PersonX seems to stay well and PersonX actually stays put
-PersonX seems to stay well and PersonX keeps PersonY company
-PersonX seems to stay well and PersonX is loving PersonY
-PersonX seems to stay well and PersonX remains PersonY's friend
-PersonX seems to stay well and PersonX keeps PersonY’s company
-PersonX seems to stay well and PersonX stays with PersonY
-PersonX seems to stay well and PersonX stays near PersonY
-PersonX seems to stay well and PersonX sticks to PersonY
-PersonX seems to stay well and PersonX has been kind
-PersonX seems to stay well and PersonX stays in PersonY
-PersonX seems to stay well and PersonX treats PersonY very nicely
-PersonX seems to stay well and PersonX is friendly to PersonY
-PersonX seems to stay well and PersonX is well-liked by PersonY
-PersonX seems to stay well and PersonX keeps it for PersonY
-PersonX seems to stay well and PersonX keeps in with PersonY
-PersonX seems to stay well and PersonX thinks PersonY will stay
-PersonX seems to stay well and PersonX keeps up with PersonY
-PersonX seems to stay well and PersonX continually stays with PersonY
-PersonX seems to stay well and PersonX is still with PersonY
-PersonX seems to stay well and PersonX is pleased with PersonY
-PersonX seems to stay well and PersonX has a nice personality
-PersonX seems to stay well and PersonX realizes PersonY is okay
-PersonX seems to stay well and PersonX still hasn't given up
-PersonX seems to stay well and PersonX gets PersonY to stay
-PersonX seems to stay well and PersonX keeps company with PersonY
-PersonX seems to stay well and PersonX is staying with PersonY
-PersonX seems to stay well and PersonX and PersonY stay together
-PersonX seems to stay well and PersonX has a good personality
-********************
-Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules
-Rule00(original):PersonX seems to stay well, So PersonX feels okay
-Decoded words:   better good bad
-
-Rule01(composed):PersonX seems to stay well and PersonX isn't annoying, So PersonX feels okay
-Jaccard score: 0.2
-KL score: 2.9462549719028175e-05
-Decoded words:   good great okay
-
-Rule02(composed):PersonX seems to stay well and PersonX keeps PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.260643512068782e-05
-Decoded words:   good better happy
-
-Rule03(composed):PersonX seems to stay well and PersonX is happier, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 9.554994903737679e-06
-Decoded words:   better good happy
-
-Rule04(composed):PersonX seems to stay well and PersonX doesn’t mind, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 7.406565600831527e-06
-Decoded words:   better good happy
-
-Rule05(composed):PersonX seems to stay well and PersonX stays busy, So PersonX feels okay
-Jaccard score: 0.2
-KL score: 1.5192075807135552e-05
-Decoded words:   better lonely busy
-
-Rule06(composed):PersonX seems to stay well and PersonX is very friendly, So PersonX feels okay
-Jaccard score: 0.2
-KL score: 2.1684671082766727e-05
-Decoded words:   good safe happy
-
-Rule07(composed):PersonX seems to stay well and PersonX keeps PersonY's word, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.4422826097870711e-05
-Decoded words:   better safe good
-
-Rule08(composed):PersonX seems to stay well and PersonX is generally charming, So PersonX feels okay
-Jaccard score: 0.2
-KL score: 3.291398752480745e-05
-Decoded words:   good like great
-
-Rule09(composed):PersonX seems to stay well and PersonX treats personY nicely, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.773836265783757e-05
-Decoded words:   good better happy
-
-Rule010(composed):PersonX seems to stay well and PersonX treats PersonY kindly, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.1807246664830018e-05
-Decoded words:   better good happy
-
-Rule011(composed):PersonX seems to stay well and PersonX treats PersonY nicely, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.9699393305927515e-05
-Decoded words:   good better safe
-
-Rule012(composed):PersonX seems to stay well and PersonX keeps PersonY close, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.8464221284375526e-05
-Decoded words:   safe good better
-
-Rule013(composed):PersonX seems to stay well and PersonX actually stays put, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.6050647900556214e-05
-Decoded words:   good better safe
-
-Rule014(composed):PersonX seems to stay well and PersonX keeps PersonY company, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.7456881323596463e-05
-Decoded words:   good better happy
-
-Rule015(composed):PersonX seems to stay well and PersonX is loving PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.0466093954164535e-05
-Decoded words:   better good happy
-
-Rule016(composed):PersonX seems to stay well and PersonX remains PersonY's friend, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.2468432942114305e-05
-Decoded words:   good better happy
-
-Rule017(composed):PersonX seems to stay well and PersonX keeps PersonY’s company, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.460384919482749e-05
-Decoded words:   good better happy
-
-Rule018(composed):PersonX seems to stay well and PersonX stays with PersonY, So PersonX feels okay
-Jaccard score: 0.2
-KL score: 1.5466979675693437e-05
-Decoded words:   lonely betrayed better
-
-Rule019(composed):PersonX seems to stay well and PersonX stays near PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.6075466191978194e-05
-Decoded words:   safe good better
-
-Rule020(composed):PersonX seems to stay well and PersonX sticks to PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 9.547999070491642e-06
-Decoded words:   better good lonely
-
-Rule021(composed):PersonX seems to stay well and PersonX has been kind, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.4617385204473976e-05
-Decoded words:   good better safe
-
-Rule022(composed):PersonX seems to stay well and PersonX stays in PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 8.684700333105866e-06
-Decoded words:   better good lonely
-
-Rule023(composed):PersonX seems to stay well and PersonX treats PersonY very nicely, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.9605571651482023e-05
-Decoded words:   good better happy
-
-Rule024(composed):PersonX seems to stay well and PersonX is friendly to PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.7216019841725938e-05
-Decoded words:   good safe better
-
-Rule025(composed):PersonX seems to stay well and PersonX is well-liked by PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.9535165847628377e-05
-Decoded words:   good happy better
-
-Rule026(composed):PersonX seems to stay well and PersonX keeps it for PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 9.384691111335997e-06
-Decoded words:   better good happy
-
-Rule027(composed):PersonX seems to stay well and PersonX keeps in with PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.44236410051235e-05
-Decoded words:   good better happy
-
-Rule028(composed):PersonX seems to stay well and PersonX thinks PersonY will stay, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 9.861105354502797e-06
-Decoded words:   good better happy
-
-Rule029(composed):PersonX seems to stay well and PersonX keeps up with PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.4591954823117703e-05
-Decoded words:   good better happy
-
-Rule030(composed):PersonX seems to stay well and PersonX continually stays with PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.6909167243284173e-05
-Decoded words:   good like better
-
-Rule031(composed):PersonX seems to stay well and PersonX is still with PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.477068417443661e-05
-Decoded words:   good happy better
-
-Rule032(composed):PersonX seems to stay well and PersonX is pleased with PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.3738769666815642e-05
-Decoded words:   good better happy
-
-Rule033(composed):PersonX seems to stay well and PersonX has a nice personality, So PersonX feels okay
-Jaccard score: 0.2
-KL score: 2.51314377237577e-05
-Decoded words:   good happy safe
-
-Rule034(composed):PersonX seems to stay well and PersonX realizes PersonY is okay, So PersonX feels okay
-Jaccard score: 1.0
-KL score: 7.2543543865322135e-06
-Decoded words:   better bad good
-
-Rule035(composed):PersonX seems to stay well and PersonX still hasn't given up, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.5000117855379358e-05
-Decoded words:   good better great
-
-Rule036(composed):PersonX seems to stay well and PersonX gets PersonY to stay, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 9.201347893394995e-06
-Decoded words:   better good happy
-
-Rule037(composed):PersonX seems to stay well and PersonX keeps company with PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.1731959602911957e-05
-Decoded words:   better good happy
-
-Rule038(composed):PersonX seems to stay well and PersonX is staying with PersonY, So PersonX feels okay
-Jaccard score: 0.5
-KL score: 1.3059365301160142e-05
-Decoded words:   good better happy
-
-Rule039(composed):PersonX seems to stay well and PersonX and PersonY stay together, So PersonX feels okay
-Jaccard score: 0.2
-KL score: 1.78316913661547e-05
-Decoded words:   betrayed lonely better
-
-Rule040(composed):PersonX seems to stay well and PersonX has a good personality, So PersonX feels okay
-Jaccard score: 0.2
-KL score: 2.0903700715280138e-05
-Decoded words:   good happy safe
-
-
-***********************************************
-Rule10(original):PersonX seems to stay well, So PersonX is seen as responsible
-Decoded words:   good bad well
-
-Rule11(composed):PersonX seems to stay well and PersonX isn't annoying, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.529686232970562e-05
-Decoded words:   good a desirable
-
-Rule12(composed):PersonX seems to stay well and PersonX keeps PersonY, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 8.25721235742094e-06
-Decoded words:   good happy successful
-
-Rule13(composed):PersonX seems to stay well and PersonX is happier, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.1045899555028882e-05
-Decoded words:   good happy successful
-
-Rule14(composed):PersonX seems to stay well and PersonX doesn’t mind, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.2017247172479983e-05
-Decoded words:   a good…
-
-Rule15(composed):PersonX seems to stay well and PersonX stays busy, So PersonX is seen as responsible
-Jaccard score: 0.0
-KL score: 1.4809538697591051e-05
-Decoded words:  …... a
-
-Rule16(composed):PersonX seems to stay well and PersonX is very friendly, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 2.212478830188047e-05
-Decoded words:   a trustworthy good
-
-Rule17(composed):PersonX seems to stay well and PersonX keeps PersonY's word, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.876072201412171e-05
-Decoded words:   trustworthy a good
-
-Rule18(composed):PersonX seems to stay well and PersonX is generally charming, So PersonX is seen as responsible
-Jaccard score: 0.0
-KL score: 2.163937097066082e-05
-Decoded words:   a trustworthy desirable
-
-Rule19(composed):PersonX seems to stay well and PersonX treats personY nicely, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 2.0287694496801123e-05
-Decoded words:   trustworthy good nice
-
-Rule110(composed):PersonX seems to stay well and PersonX treats PersonY kindly, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.6264446458080783e-05
-Decoded words:   good trustworthy a
-
-Rule111(composed):PersonX seems to stay well and PersonX treats PersonY nicely, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 2.2856602299725637e-05
-Decoded words:   a trustworthy good
-
-Rule112(composed):PersonX seems to stay well and PersonX keeps PersonY close, So PersonX is seen as responsible
-Jaccard score: 0.0
-KL score: 1.3725117241847329e-05
-Decoded words:   a the trustworthy
-
-Rule113(composed):PersonX seems to stay well and PersonX actually stays put, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.3789680451736785e-05
-Decoded words:   a being good
-
-Rule114(composed):PersonX seems to stay well and PersonX keeps PersonY company, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.075952695828164e-05
-Decoded words:   good a important
-
-Rule115(composed):PersonX seems to stay well and PersonX is loving PersonY, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.1330728739267215e-05
-Decoded words:   happy good a
-
-Rule116(composed):PersonX seems to stay well and PersonX remains PersonY's friend, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 9.629771739128046e-06
-Decoded words:   a good successful
-
-Rule117(composed):PersonX seems to stay well and PersonX keeps PersonY’s company, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.6063107977970503e-05
-Decoded words:   a… good
-
-Rule118(composed):PersonX seems to stay well and PersonX stays with PersonY, So PersonX is seen as responsible
-Jaccard score: 0.0
-KL score: 1.222501123265829e-05
-Decoded words:   a... the
-
-Rule119(composed):PersonX seems to stay well and PersonX stays near PersonY, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 7.864363396947738e-06
-Decoded words:   good a weak
-
-Rule120(composed):PersonX seems to stay well and PersonX sticks to PersonY, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.071921633410966e-05
-Decoded words:   a the bad
-
-Rule121(composed):PersonX seems to stay well and PersonX has been kind, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.9968139895354398e-05
-Decoded words:   trustworthy good a
-
-Rule122(composed):PersonX seems to stay well and PersonX stays in PersonY, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 9.203485205944162e-06
-Decoded words:   a... good
-
-Rule123(composed):PersonX seems to stay well and PersonX treats PersonY very nicely, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 2.564207898103632e-05
-Decoded words:   a trustworthy good
-
-Rule124(composed):PersonX seems to stay well and PersonX is friendly to PersonY, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.9475966837489977e-05
-Decoded words:   a good trustworthy
-
-Rule125(composed):PersonX seems to stay well and PersonX is well-liked by PersonY, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.8820348486769944e-05
-Decoded words:   a good the
-
-Rule126(composed):PersonX seems to stay well and PersonX keeps it for PersonY, So PersonX is seen as responsible
-Jaccard score: 0.0
-KL score: 1.8388627722742967e-05
-Decoded words:   a the...
-
-Rule127(composed):PersonX seems to stay well and PersonX keeps in with PersonY, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.6783609680715017e-05
-Decoded words:   a the good
-
-Rule128(composed):PersonX seems to stay well and PersonX thinks PersonY will stay, So PersonX is seen as responsible
-Jaccard score: 0.0
-KL score: 1.8048713172902353e-05
-Decoded words:   happy safe a
-
-Rule129(composed):PersonX seems to stay well and PersonX keeps up with PersonY, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.978236650757026e-05
-Decoded words:   a the good
-
-Rule130(composed):PersonX seems to stay well and PersonX continually stays with PersonY, So PersonX is seen as responsible
-Jaccard score: 0.0
-KL score: 1.8857970644603483e-05
-Decoded words:   a the being
-
-Rule131(composed):PersonX seems to stay well and PersonX is still with PersonY, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.8922397430287674e-05
-Decoded words:   a the good
-
-Rule132(composed):PersonX seems to stay well and PersonX is pleased with PersonY, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.939905632752925e-05
-Decoded words:   happy a good
-
-Rule133(composed):PersonX seems to stay well and PersonX has a nice personality, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 2.2729185729986057e-05
-Decoded words:   a good nice
-
-Rule134(composed):PersonX seems to stay well and PersonX realizes PersonY is okay, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.6321999282808974e-05
-Decoded words:   a okay good
-
-Rule135(composed):PersonX seems to stay well and PersonX still hasn't given up, So PersonX is seen as responsible
-Jaccard score: 0.0
-KL score: 2.522544855310116e-05
-Decoded words:   a...:
-
-Rule136(composed):PersonX seems to stay well and PersonX gets PersonY to stay, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.1487509254948236e-05
-Decoded words:   good successful a
-
-Rule137(composed):PersonX seems to stay well and PersonX keeps company with PersonY, So PersonX is seen as responsible
-Jaccard score: 0.0
-KL score: 1.671223435550928e-05
-Decoded words:   a the...
-
-Rule138(composed):PersonX seems to stay well and PersonX is staying with PersonY, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 1.3560943443735596e-05
-Decoded words:   a good the
-
-Rule139(composed):PersonX seems to stay well and PersonX and PersonY stay together, So PersonX is seen as responsible
-Jaccard score: 0.0
-KL score: 1.7846330592874438e-05
-Decoded words:   a the...
-
-Rule140(composed):PersonX seems to stay well and PersonX has a good personality, So PersonX is seen as responsible
-Jaccard score: 0.2
-KL score: 2.0089835743419826e-05
-Decoded words:   a good trustworthy
+KL score: 2.1103847757331096e-05
+Decoded words:   safe threatened safer violated vulnerable
+
+Rule038(composed):PersonX sneaks into PersonX's room and doorways are located in room, so PersonX feels nervous.
+Jaccard score: 0.25
+KL score: 2.175893314415589e-05
+Decoded words:   trapped safe safer betrayed comfortable
+
+Rule039(composed):PersonX sneaks into PersonX's room and a sleeper agent can be spy, so PersonX feels nervous.
+Jaccard score: 0.42857142857142855
+KL score: 1.535112278361339e-05
+Decoded words:   betrayed threatened guilty bad paranoid
+
+Rule040(composed):PersonX sneaks into PersonX's room and a sleeper agent has been spy, so PersonX feels nervous.
+Jaccard score: 0.6666666666666666
+KL score: 9.748278898769058e-06
+Decoded words:   betrayed threatened guilty trapped bad
 
 
 ***********************************************

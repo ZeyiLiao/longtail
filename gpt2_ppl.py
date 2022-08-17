@@ -5,8 +5,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 class GPTppl():
     def __init__(self,device = 'cpu'):
 
-        self.model = AutoModelForCausalLM.from_pretrained("hf-internal-testing/tiny-random-gptj")
-        self.tokenizer = AutoTokenizer.from_pretrained("hf-internal-testing/tiny-random-gptj")
+        self.model = AutoModelForCausalLM.from_pretrained("gpt2-large")
+        self.tokenizer = AutoTokenizer.from_pretrained("gpt2-large")
         self.device = torch.device(device)
         self.model.to(self.device)
 
@@ -34,7 +34,8 @@ class GPTppl():
                     feature,
                     labels = feature
                 ).loss
-                selected_text_ppl[text_pair[index]] = round(math.exp(loss.item())/(length_text + lenght_text_pair[index]),2)
+                # selected_text_ppl[text_pair[index]] = round(math.exp(loss.item())/(length_text + lenght_text_pair[index]),2)
+                selected_text_ppl[text_pair[index]] = math.exp(loss.item())
         # note: here we want to select high ppl which means the sentence is less plausible
         selected_text_ppl = sorted(selected_text_ppl.items(), key= lambda item:item[1],reverse=True)[:top_k]
         selected_text_ppl = [l[0] for l in selected_text_ppl]

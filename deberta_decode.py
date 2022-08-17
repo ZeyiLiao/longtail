@@ -30,7 +30,6 @@ class Decoder:
             # retrieve index of <mask>
             mask_token_index = (inputs.input_ids == self.tokenizer.mask_token_id).nonzero(as_tuple=True)
             row_indexs, column_indexs = mask_token_index
-            # column_indexs = column_indexs.numpy().tolist()
 
             decoder_result[key] = get_mask_logits(softmaxs,column_indexs)
 
@@ -42,7 +41,8 @@ class Decoder:
             l1 = original_composed_rules_logits[key][0]
             l1 = torch.log(l1)
             for index,l2 in enumerate(composed_rules_logits[key]):
-                result = F.kl_div(l1,l2).item()
+                l2 = torch.log(l2)
+                result = F.kl_div(l2,l1,log_target=True).item()
                 KL_result[key][index] = result
 
         return KL_result
@@ -53,9 +53,9 @@ class Decoder:
         jaccard_result = ddict(lambda : ddict(list))
         for key in original_composed_rules_top_indices.keys():
             l1 = original_composed_rules_top_indices[key][0]
-            l1 = l1.numpy().tolist()
+            l1 = l1.cpu().numpy().tolist()
             for index,l2 in enumerate(composed_rules_top_indices[key]):
-                l2 = l2.numpy().tolist()
+                l2 = l2.cpu().numpy().tolist()
                 intersection = len(list(set(l1).intersection(l2)))
                 union = (len(l1) + len(l2)) - intersection
                 result = float(intersection) / union
@@ -79,3 +79,12 @@ class Decoder:
             tmp = indices[key]
             words[key] = self.tokenizer.batch_decode(indices[key])
         return words
+
+    def mask_word_likelihood(self,softmax,masked_wrod):
+        mask_word_likelihood_dict = ddict(list)
+
+        for key in softmax.keys():
+            masked_word_id = self.tokenizer.convert_tokens_to_ids(self.tokenizer.tokenize(masked_wrod[key]))
+            logtis = softmax[key]
+            mask_word_likelihood_dict[key] = logtis[:,masked_word_id]
+        return mask_word_likelihood_dict

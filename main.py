@@ -1,3 +1,4 @@
+from turtle import color
 from helper import *
 from retrieve import Retrieve
 
@@ -35,6 +36,22 @@ def generate_composed_p(query,text_pairs,combine_order,num_conjunction):
         return ans
 
 
+def plot(original_composed_rules_masked_likelihood,composed_rules_masked_likelihood,composed_rules_masked_word):
+    original_composed_rules_masked_likelihood = torch.squeeze(original_composed_rules_masked_likelihood[0],dim=-1).cpu().tolist()
+    composed_rules_masked_likelihood = torch.squeeze(composed_rules_masked_likelihood[0],dim=-1).cpu().tolist()
+    masked_word = composed_rules_masked_word[0]
+
+    fig, ax = plt.subplots(figsize=(14,7))
+    ax.plot(range(len(composed_rules_masked_likelihood)),composed_rules_masked_likelihood,label='Expanded rule',color = 'r')
+    ax.plot(range(len(composed_rules_masked_likelihood)),original_composed_rules_masked_likelihood * len(composed_rules_masked_likelihood),label = 'Original rule',linestyle = '--', color = 'blue')
+    ax.legend()
+    ax.set_xlabel('Indice')
+    ax.set_ylabel(f'Likelihood')
+    ax.set_ylim((0,1))
+    ax.set_title(f'Likelihood for {masked_word}')
+    fig.savefig(f'./figure/{masked_word}.png')
+
+
 def main_process(args,query,retrieve: Retrieve,query_order):
 
     top_k_retrieval = args.top_k_retrieval
@@ -66,9 +83,15 @@ def main_process(args,query,retrieve: Retrieve,query_order):
     original_composed_rules = retrieve.query_relation_tail_mask(query,keep_attr_react = keep_attr_react)
     composed_rules = retrieve.query_relation_tail_mask(query,composed_p,keep_attr_react = keep_attr_react)
 
-    jaccard_result,KL_result,original_composed_rules_decoded_words,composed_rules_decoded_words = retrieve.masked_composed_rules(original_composed_rules,composed_rules,top_k_jaccard)
+    result,decoded_words,likelihood,composed_rules_masked_word = retrieve.masked_composed_rules(original_composed_rules,composed_rules,top_k_jaccard)
+
+    jaccard_result,KL_result = result[0],result[1]
+    original_composed_rules_decoded_words,composed_rules_decoded_words = decoded_words[0],decoded_words[1]
+    original_composed_rules_masked_likelihood,composed_rules_masked_likelihood = likelihood[0],likelihood[1]
 
 
+
+    plot(original_composed_rules_masked_likelihood,composed_rules_masked_likelihood,composed_rules_masked_word)
     nl = '\n'
     file_path = f'./file_{combine_order}_{num_conjunction}.txt'
     with open(file_path,'a+') as f:
@@ -111,6 +134,20 @@ def main_process(args,query,retrieve: Retrieve,query_order):
             f.write(original_composed_rules_decoded_words[key][0])
             f.write(nl)
             f.write(nl)
+            f.write('For box plot KL ')
+            f.write(nl)
+            for index,sen in enumerate(composed_rules[key]):
+                f.write(f'{KL_result[key][index]},')
+            f.write(nl)
+
+            f.write('For box plot Jaccard')
+            f.write(nl)
+            for index,sen in enumerate(composed_rules[key]):
+                f.write(f'{jaccard_result[key][index]},')
+            f.write(nl)
+
+            f.write(nl)
+            f.write(nl)
             for index,sen in enumerate(composed_rules[key]):
                 f.write(f'Rule{key}{index+1}(composed):')
                 f.write(sen)
@@ -144,12 +181,14 @@ def main(args):
     save_embedding_path = args.save_embedding_path
     all_tuples_path = args.all_tuples_path
     query_path = args.query_path
+    save = args.save_embedding
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    device = 'cpu'
-    nl = '\n'
 
-    retrieve = Retrieve(all_heads_path,save_embedding_path,all_tuples_path,device)
+    print(f'We are using {device}')
+
+
+    retrieve = Retrieve(all_heads_path,save_embedding_path,all_tuples_path,device,save)
     with open(query_path,'r') as f:
         reader = csv.reader(f)
         jaccard_all = 0
@@ -157,12 +196,13 @@ def main(args):
         num_queries = 0
         for index,query in enumerate(reader):
             query = query[0]
+
             print(f'Process for {query}')
             jaccard, kl =  main_process(args,query,retrieve,index+1)
             jaccard_all += jaccard
             kl_all += kl
             num_queries += 1
-    
+
     file_path = f'./file_{args.combine_order}_{args.num_conjunctions}.txt'
     with open(file_path,'a+') as f:
         f.write(f'Final Averaged Jaccard Result for {args.num_conjunctions} conjunctions: {jaccard_all/num_queries} ')
@@ -170,9 +210,11 @@ def main(args):
         f.write(f'Final Averaged KL Divergence for {args.num_conjunctions} conjunctions: {kl_all/num_queries} ')
 
 
+
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Longtailed project')
+    parser.add_argument('--save_embedding',action = 'store_true',help = 'whether save the embedding')
     parser.add_argument('--all_heads_path', default= './data/all_heads')
     parser.add_argument('--save_embedding_path', default= './data/embeddings_all_heads.npy')
     parser.add_argument('--all_tuples_path', default='./data/all_tuples.csv')

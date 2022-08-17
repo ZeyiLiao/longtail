@@ -7,30 +7,34 @@ from deberta_decode import Decoder
 
 def back_to_sen(head,relation,tail):
     if relation == 'xAttr':
-        content = head + ', So PersonX is seen as ' + tail
+        content = head + ', as a result, PersonX is seen as ' + tail + '.'
     elif relation == 'xReact':
-        content = head + ', So PersonX feels ' + tail
+        content = head + ', so PersonX feels ' + tail + '.'
     elif relation == 'xNeed':
-        content = 'Before ' + head + ', PersonX has ' + tail
+        content = 'Before ' + head + ', PersonX has ' + tail + '.'
     elif relation == 'xWant':
-        content = head + ', So PersonX wants ' + tail
+        content = head + ', so PersonX wants ' + tail + '.'
     elif relation == 'xIntent':
-        content = head + ', Because PersonX intents ' + tail
+        content = head + ', because PersonX intents ' + tail + '.'
     elif relation == 'xEffect':
-        content = head + ', As a result, PersonX ' + tail
+        content = head + ', as a result, PersonX ' + tail + '.'
     elif relation == 'HinderedBy':
-        content =  head + ', This is hindered if ' + tail
+        content =  head + ', this is hindered if ' + tail + '.'
     return content
 
 
 
 
 class Retrieve():
-    def __init__(self,file_path,save_embedding_path,all_tuples_file,device):
+    def __init__(self,file_path,save_embedding_path,all_tuples_file,device,save = False):
         self.device = device
         self.embedder = SimCSE('princeton-nlp/sup-simcse-bert-base-uncased',device = device)
-        # embedder.build_index(file_path,device=device,batch_size=64,save_path=save_embedding_path)
-        self.embedder.load_embeddings(file_path,save_embedding_path)
+
+        if save and not os.path.exists(save_embedding_path):
+            print(f'{save_embedding_path} does not exists and save the embedding first')
+            self.embedder.build_index(file_path,device=device,batch_size=64,save_path=save_embedding_path)
+        else:
+            self.embedder.load_embeddings(file_path,save_embedding_path)
         self.nli = NLI(device)
         self.gptppl = GPTppl(device)
         self.decoder = Decoder(device)
@@ -41,8 +45,8 @@ class Retrieve():
 
         text_pair = [text[0] for text in results]
         neutral_text_pair = self.nli(query,text_pair)
+        neutral_text_pair = [text.replace('PersonX','PersonY') for text in neutral_text_pair]
         return neutral_text_pair
-
 
 
     def select_highppl_neutral(self,query,neutral_text_pair,top_k,combine_order):
@@ -68,7 +72,7 @@ class Retrieve():
         df_selected = self.df.loc[query]
         relations = list(df_selected['relation'])
         tails = list(df_selected['tail'])
-        attr_react_set = {'xAttr','xReact'}
+        attr_react_set = {'xReact'}
         relations_set = list(set(relations) & attr_react_set)
         relations_tails = []
         count = 0
@@ -118,7 +122,9 @@ class Retrieve():
 
     def masked_composed_rules(self,original_composed_rules,composed_rules,top_k_jaccard):
         original_composed_rules_mask = ddict(list)
+        original_composed_rules_mask_word = ddict(list)
         composed_rules_mask = ddict(list)
+        composed_rules_mask_word = ddict(list)
 
         # TODO
         # Just mask the last token here which is not reasonable. May need to identify which part should be mask.
@@ -127,14 +133,18 @@ class Retrieve():
             tmps = original_composed_rules[key]
             mask_sens = [tmp.rsplit(' ',1)[0] + ' ' + mask_token + '.' for tmp in tmps]
             original_composed_rules_mask[key] = mask_sens
-
+            original_composed_rules_mask_word[key] = ' ' + tmps[0].rsplit(' ',1)[1][:-1]
         for key in composed_rules.keys():
             tmps = composed_rules[key]
             mask_sens = [tmp.rsplit(' ',1)[0] + ' ' + mask_token + '.' for tmp in tmps]
             composed_rules_mask[key] = mask_sens
+            composed_rules_mask_word[key] = ' ' + tmps[0].rsplit(' ',1)[1][:-1]
 
         original_composed_rules_mask_softmaxs = self.decoder(original_composed_rules_mask)
         composed_rules_mask_softmaxs = self.decoder(composed_rules_mask)
+
+        original_composed_rules_masked_likelihood = self.decoder.mask_word_likelihood(original_composed_rules_mask_softmaxs,original_composed_rules_mask_word)
+        composed_rules_masked_likelihood = self.decoder.mask_word_likelihood(composed_rules_mask_softmaxs,composed_rules_mask_word)
 
 
         original_composed_rules_top_indices = self.decoder.top_k_for_jaccard(original_composed_rules_mask_softmaxs,top_k = top_k_jaccard)
@@ -146,4 +156,4 @@ class Retrieve():
         jaccard_result = self.decoder.jaccard(original_composed_rules_top_indices,composed_rules_top_indices)
         KL_result = self.decoder.KL_divergence(original_composed_rules_mask_softmaxs,composed_rules_mask_softmaxs)
 
-        return jaccard_result,KL_result,original_composed_rules_decoded_words,composed_rules_decoded_words
+        return (jaccard_result,KL_result),(original_composed_rules_decoded_words,composed_rules_decoded_words),(original_composed_rules_masked_likelihood,composed_rules_masked_likelihood),composed_rules_mask_word
