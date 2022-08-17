@@ -10,6 +10,7 @@ from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_se
 from argparse import ArgumentParser
 from simcse import SimCSE
 import math
+import random
 import torch.nn.functional as F
 import argparse
 from argparse import ArgumentParser

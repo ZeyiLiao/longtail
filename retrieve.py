@@ -125,12 +125,12 @@ class Retrieve():
         mask_token = self.decoder.tokenizer.mask_token
         for key in original_composed_rules.keys():
             tmps = original_composed_rules[key]
-            mask_sens = [tmp.rsplit(' ',1)[0] + ' ' + mask_token for tmp in tmps]
+            mask_sens = [tmp.rsplit(' ',1)[0] + ' ' + mask_token + '.' for tmp in tmps]
             original_composed_rules_mask[key] = mask_sens
 
         for key in composed_rules.keys():
             tmps = composed_rules[key]
-            mask_sens = [tmp.rsplit(' ',1)[0] + ' ' + mask_token for tmp in tmps]
+            mask_sens = [tmp.rsplit(' ',1)[0] + ' ' + mask_token + '.' for tmp in tmps]
             composed_rules_mask[key] = mask_sens
 
         original_composed_rules_mask_softmaxs = self.decoder(original_composed_rules_mask)
