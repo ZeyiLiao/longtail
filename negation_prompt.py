@@ -61,10 +61,9 @@ class PromptWrapper:
                f"A: {proposition}\n" \
                f"B: The statement is false."
 
-def negation_process(query,query_path,negation_wrapper):
-    save_path = query_path[:-4] + '_pair_' + '.csv'
-    with open(save_path,'a+') as f:
+def negation_process(query,NEP_pair_path,negation_wrapper):
+
+    with open(NEP_pair_path,'a+') as f:
         tmp = negation_wrapper.prompt_negation(query)
         f.write(tmp)
         f.write('\n')
-    

@@ -293,6 +293,8 @@ def main(args: Namespace):
 
 
     elif task == 'NEP':
+        NEP_pair_path = args.NEP_pair_path
+
         demonstration = "Given a statement, negate it to create a new sentence.\n"\
         "A: To see stars at night, it is better to turn on the lights.\n"\
         "B: The statement is false. To see stars at night, it is better not to turn on the lights.\n"\
@@ -302,11 +304,11 @@ def main(args: Namespace):
         "B: The statement is false. People do not put a number before their names."
         negation_wrapper = PromptWrapper(demonstration)
 
-
-        with open(query_path,'r') as f:
-            reader = csv.reader(f)
-            for query in reader:
-                negation_process(query,query_path,negation_wrapper)
+        if not os.path.exists(NEP_pair_path):
+            with open(query_path,'r') as f:
+                reader = csv.reader(f)
+                for query in reader:
+                    negation_process(query,NEP_pair_path,negation_wrapper)
 
         with open(query_path, 'r') as f:
             reader = csv.reader(f)
@@ -360,6 +362,6 @@ if __name__ == '__main__':
                         help='Select the number of conjunctions',
                         default=1)
     parser.add_argument('--task',help = 'Do CPE or NPE probing', choices=['NEP','CPE'])
-    parser.add_argument('--NEP_pair_path',help = 'the negation of the query_NEP.csv',default=)
+    parser.add_argument('--NEP_pair_path',help = 'the negation of the query_NEP.csv',default= './query_NEP_pair.csv')
     args = parser.parse_args()
     main(args)
