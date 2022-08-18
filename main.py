@@ -132,33 +132,10 @@ def main_CPE(args: Namespace, query, retrieve: Retrieve, query_order, output_fil
     plot(original_rule_results['likelihood'],
          composed_rule_results['likelihood'], original_composed_rules)
 
-    # for json file, for future use
-
-    # secondary_dict = ddict(list)
-    # composed_p_dict = ddict(list)
-    # for index,text in enumerate(composed_p):
-    #     composed_p_dict[index] = text
-
-    # # secondary_dict['composed p'] = composed_p_dict
-    # secondary_dict['composed p'] = composed_p
-
-    # original_rules_dict = dict()
-    # tmp = dict()
-    # for i,key in enumerate(original_composed_rules.keys()):
-    #     kl_jaccard_rule_dict = dict()
-
-    #     for index,text in enumerate(composed_rules[key]):
-    #         kl_jaccard_rule_dict = {'composed_rule':text,'kl':KL_result[key][index],'jaccard':jaccard_result[key][index]}
-    #         tmp[index] = kl_jaccard_rule_dict
-
-    #     original_rules_dict[i] = {'original_rule':original_composed_rules[key][0],'result':tmp}
-
-    # secondary_dict['original_rules'] = original_rules_dict
-    # query_dict[query] = secondary_dict
-
 
     nl = '\n'
-    file_path = f'.{output_file}/file_{combine_order}_{num_conjunction}.txt'
+    Path(f'./{output_file}').mkdir(parents=True, exist_ok=True)
+    file_path = f'./{output_file}/file_{combine_order}_{num_conjunction}.txt'
     with open(file_path, 'a+') as f:
 
         f.write(nl)
@@ -280,7 +257,7 @@ def main(args: Namespace):
                 num_queries += 1
 
 
-        file_path = f'.{output_file}/file_{args.combine_order}_{args.num_conjunctions}.txt'
+        file_path = f'./{output_file}/file_{args.combine_order}_{args.num_conjunctions}.txt'
         nl = '\n'
         with open(file_path, 'a+') as f:
             f.write(
@@ -331,13 +308,13 @@ if __name__ == '__main__':
     parser.add_argument('--all_tuples_path', default='./data/all_tuples.csv')
     parser.add_argument('--query_path',
                         help=" A file save the queries",
-                        default='.input_file/query_CPE.csv')
+                        default='./input_file/query_CPE.csv')
     parser.add_argument('--task',
                         help='Do CPE or NPE probing',
                         choices=['NEP', 'CPE'])
     parser.add_argument('--NEP_pair_path',
                         help='the negation of the query_NEP.csv',
-                        default='.input_file/query_NEP_pair.csv')
+                        default='./input_file/query_NEP_pair.csv')
     parser.add_argument('--output_file',
                         help='where to output',
                         default='./output_file')

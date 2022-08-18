@@ -17,6 +17,8 @@ from argparse import ArgumentParser
 from tqdm import tqdm
 import os
 import matplotlib.pyplot as plt
+from pathlib import Path
+
 import openai
 
 with open('./key.txt') as f:
