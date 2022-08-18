@@ -17,3 +17,8 @@ from argparse import ArgumentParser
 from tqdm import tqdm
 import os
 import matplotlib.pyplot as plt
+import openai
+
+with open('./key.txt') as f:
+    key = f.read()
+openai.api_key = key
