@@ -254,10 +254,7 @@ def main(args: Namespace):
     query_path = args.query_path
     save = args.save_embedding
 
-    CPE = args.CPE
-    NEP = args.NEP
-    assert (CPE and NEP) == 0
-    task = 'CPE' if CPE else 'NEP'
+    task = args.task
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
@@ -266,7 +263,7 @@ def main(args: Namespace):
     retrieve = Retrieve(all_heads_path, save_embedding_path, all_tuples_path,
                         device, task, save)
 
-    if CPE:
+    if task == 'CPE':
         query_dict = ddict(list)
 
         with open(query_path, 'r') as f:
@@ -295,7 +292,7 @@ def main(args: Namespace):
             )
 
 
-    elif NEP:
+    elif task == 'NEP':
         demonstration = "Given a statement, negate it to create a new sentence.\n"\
         "A: To see stars at night, it is better to turn on the lights.\n"\
         "B: The statement is false. To see stars at night, it is better not to turn on the lights.\n"\
@@ -304,6 +301,13 @@ def main(args: Namespace):
         "A: People put a number before their names.\n"\
         "B: The statement is false. People do not put a number before their names."
         negation_wrapper = PromptWrapper(demonstration)
+
+
+        with open(query_path,'r') as f:
+            reader = csv.reader(f)
+            for query in reader:
+                negation_process(query,query_path,negation_wrapper)
+
         with open(query_path, 'r') as f:
             reader = csv.reader(f)
             for index, query in enumerate(reader):
@@ -355,8 +359,7 @@ if __name__ == '__main__':
                         type=int,
                         help='Select the number of conjunctions',
                         default=1)
-    parser.add_argument('--CPE',help = 'Do CPE probing',action = 'store_true')
-    parser.add_argument('--NEP',help = 'Do NPE probing',action = 'store_true')
-
+    parser.add_argument('--task',help = 'Do CPE or NPE probing', choices=['NEP','CPE'])
+    parser.add_argument('--NEP_pair_path',help = 'the negation of the query_NEP.csv',default=)
     args = parser.parse_args()
     main(args)

@@ -2,10 +2,6 @@ from dataclasses import dataclass
 from typing import List
 from helper import *
 
-with open('./key.txt') as f:
-    key = f.read()
-openai.api_key = key
-
 
 @dataclass
 class PromptConfig:
@@ -65,15 +61,10 @@ class PromptWrapper:
                f"A: {proposition}\n" \
                f"B: The statement is false."
 
-demonstration_1 = "Given a statement, negate it to create a new sentence.\n"\
-"A: To see stars at night, it is better to turn on the lights.\n"\
-"B: The statement is false. To see stars at night, it is better not to turn on the lights.\n"\
-"A: Falling objects cannot accelerate beyond a certain speed.\n"\
-"B: The statement is false. Falling objects can accelerate beyond a certain speed.\n"\
-"A: People put a number before their names.\n"\
-"B: The statement is false. People do not put a number before their names."
-
-
-wrapper = PromptWrapper(demonstration_1)
-tmp = wrapper.prompt_negation('PersonX is seen as confident')
-print(tmp)
+def negation_process(query,query_path,negation_wrapper):
+    save_path = query_path[:-4] + '_pair_' + '.csv'
+    with open(save_path,'a+') as f:
+        tmp = negation_wrapper.prompt_negation(query)
+        f.write(tmp)
+        f.write('\n')
+    
