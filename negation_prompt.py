@@ -64,6 +64,6 @@ class PromptWrapper:
 def negation_process(query,NEP_pair_path,negation_wrapper):
 
     with open(NEP_pair_path,'a+') as f:
-        tmp = negation_wrapper.prompt_negation(query)
+        tmp = negation_wrapper.prompt_negation(query)[:-1]
         f.write(tmp)
         f.write('\n')

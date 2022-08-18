@@ -77,7 +77,7 @@ def main_NEP(args: Namespace, query, retrieve: Retrieve, negation_wrapper: Promp
     negated_composed_rules = retrieve.query_relation_tail_mask(query, keep_attr_react=keep_attr_react,negation_wrapper = negation_wrapper)
     print(negated_composed_rules)
 
-def main_CPE(args: Namespace, query, retrieve: Retrieve, query_order, query_dict):
+def main_CPE(args: Namespace, query, retrieve: Retrieve, query_order, output_file):
 
     top_k_retrieval = args.top_k_retrieval
     threshold_retrieval = args.threshold_retrieval
@@ -132,7 +132,7 @@ def main_CPE(args: Namespace, query, retrieve: Retrieve, query_order, query_dict
     plot(original_rule_results['likelihood'],
          composed_rule_results['likelihood'], original_composed_rules)
 
-    # for json file
+    # for json file, for future use
 
     # secondary_dict = ddict(list)
     # composed_p_dict = ddict(list)
@@ -158,7 +158,7 @@ def main_CPE(args: Namespace, query, retrieve: Retrieve, query_order, query_dict
 
 
     nl = '\n'
-    file_path = f'./file_{combine_order}_{num_conjunction}.txt'
+    file_path = f'.{output_file}/file_{combine_order}_{num_conjunction}.txt'
     with open(file_path, 'a+') as f:
 
         f.write(nl)
@@ -253,6 +253,7 @@ def main(args: Namespace):
     all_tuples_path = args.all_tuples_path
     query_path = args.query_path
     save = args.save_embedding
+    output_file = args.output_file
 
     task = args.task
 
@@ -264,7 +265,6 @@ def main(args: Namespace):
                         device, task, save)
 
     if task == 'CPE':
-        query_dict = ddict(list)
 
         with open(query_path, 'r') as f:
             reader = csv.reader(f)
@@ -274,13 +274,13 @@ def main(args: Namespace):
             for index, query in enumerate(reader):
                 query = query[0]
                 print(f'Process for {query}')
-                jaccard, kl = main_CPE(args, query, retrieve, index + 1,query_dict)
+                jaccard, kl = main_CPE(args, query, retrieve, index + 1,output_file)
                 jaccard_all += jaccard
                 kl_all += kl
                 num_queries += 1
 
 
-        file_path = f'./file_{args.combine_order}_{args.num_conjunctions}.txt'
+        file_path = f'.{output_file}/file_{args.combine_order}_{args.num_conjunctions}.txt'
         nl = '\n'
         with open(file_path, 'a+') as f:
             f.write(
@@ -308,7 +308,7 @@ def main(args: Namespace):
             with open(query_path,'r') as f:
                 reader = csv.reader(f)
                 for query in reader:
-                    negation_process(query,NEP_pair_path,negation_wrapper)
+                    negation_process(query[0],NEP_pair_path,negation_wrapper)
 
         with open(query_path, 'r') as f:
             reader = csv.reader(f)
@@ -316,7 +316,6 @@ def main(args: Namespace):
                 query = query[0]
                 print(f'Process for {query}')
                 main_NEP(args, query, retrieve, negation_wrapper, index + 1)
-
 
 
 
@@ -332,7 +331,16 @@ if __name__ == '__main__':
     parser.add_argument('--all_tuples_path', default='./data/all_tuples.csv')
     parser.add_argument('--query_path',
                         help=" A file save the queries",
-                        default='./query_CPE.csv')
+                        default='.input_file/query_CPE.csv')
+    parser.add_argument('--task',
+                        help='Do CPE or NPE probing',
+                        choices=['NEP', 'CPE'])
+    parser.add_argument('--NEP_pair_path',
+                        help='the negation of the query_NEP.csv',
+                        default='.input_file/query_NEP_pair.csv')
+    parser.add_argument('--output_file',
+                        help='where to output',
+                        default='./output_file')
     parser.add_argument('--top_k_retrieval',
                         type=int,
                         help='Select top_k during retrieval',
@@ -344,11 +352,12 @@ if __name__ == '__main__':
     parser.add_argument('--combine_order',
                         help="Combine the p and p' in two order",
                         choices=['normal', 'reverse'])
-    parser.add_argument('--top_k_composed_p',
-                        type=int,
-                        help=
-                        'Select top_k composed_p from top to end which are not that plausible',
-                        default=5)
+    parser.add_argument(
+        '--top_k_composed_p',
+        type=int,
+        help=
+        'Select top_k composed_p from top to end which are not that plausible',
+        default=5)
     parser.add_argument('--keep_attr_react',
                         help='Only focus on the xAttr and xReact relations',
                         action='store_false')
@@ -361,7 +370,6 @@ if __name__ == '__main__':
                         type=int,
                         help='Select the number of conjunctions',
                         default=1)
-    parser.add_argument('--task',help = 'Do CPE or NPE probing', choices=['NEP','CPE'])
-    parser.add_argument('--NEP_pair_path',help = 'the negation of the query_NEP.csv',default= './query_NEP_pair.csv')
+
     args = parser.parse_args()
     main(args)

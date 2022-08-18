@@ -3,3 +3,4 @@ data/
 __pycache__/
 figure/
 key.txt
+output_file/
