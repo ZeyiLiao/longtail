@@ -3,6 +3,8 @@ from turtle import color
 from helper import *
 from retrieve import Retrieve
 from negation_prompt import *
+from write_plot import *
+
 
 
 def generate_composed_p(query, text_pairs, combine_order, num_conjunction, negated = False):
@@ -38,44 +40,62 @@ def generate_composed_p(query, text_pairs, combine_order, num_conjunction, negat
         return ans
 
 
-def plot(original_composed_rules_masked_likelihood,
-         composed_rules_masked_likelihood, original_composed_rules):
-    original_composed_rules_masked_likelihood = torch.squeeze(
-        original_composed_rules_masked_likelihood[0], dim=-1).cpu().tolist()
-    composed_rules_masked_likelihood = torch.squeeze(
-        composed_rules_masked_likelihood[0], dim=-1).cpu().tolist()
-    masked_word = original_composed_rules[0]
+def main_NEP_data_process(args: Namespace, query, retrieve: Retrieve, negation_wrapper: PromptWrapper, NEP_rules_path: str):
 
-    fig, ax = plt.subplots(figsize=(14, 7))
-    ax.plot(range(len(composed_rules_masked_likelihood)),
-            composed_rules_masked_likelihood,
-            label='Expanded rule',
-            color='r')
-    ax.plot(range(len(composed_rules_masked_likelihood)),
-            original_composed_rules_masked_likelihood *
-            len(composed_rules_masked_likelihood),
-            label='Original rule',
-            linestyle='--',
-            color='blue')
-    ax.legend()
-    ax.set_xlabel('Indice')
-    ax.set_ylabel(f'Likelihood')
-    # ax.set_ylim((0, 1))
-    ax.set_title(f'Likelihood for {masked_word}')
-    fig.savefig(f'./figure/{masked_word}.png')
-
-def main_NEP(args: Namespace, query, retrieve: Retrieve, negation_wrapper: PromptWrapper, query_order):
-    top_k_retrieval = args.top_k_retrieval
-    threshold_retrieval = args.threshold_retrieval
-    combine_order = args.combine_order
-    top_k_composed_p = args.top_k_composed_p
     keep_attr_react = args.keep_attr_react
-    top_k_jaccard = args.top_k_jaccard
-    num_conjunction = args.num_conjunctions
+
 
     original_composed_rules = retrieve.query_relation_tail_mask(query, keep_attr_react=keep_attr_react)
     negated_composed_rules = retrieve.query_relation_tail_mask(query, keep_attr_react=keep_attr_react,negation_wrapper = negation_wrapper)
-    print(negated_composed_rules)
+
+    with open(f'./{NEP_rules_path}','a+') as f:
+        for key in negated_composed_rules.keys():
+            f.write(query)
+            f.write('\t')
+            f.write(original_composed_rules[key][0])
+            f.write('\t')
+            f.write(negated_composed_rules[key][0])
+            f.write('\n')
+
+
+            
+
+def main_NEP(args,query,all_query,retrieve:Retrieve,query_order,output_file):
+    top_k_jaccard = args.top_k_jaccard
+
+    original_rule_dict = ddict(list)
+    negated_rule_dict = ddict(list)
+
+    for index,_ in enumerate(all_query[query]):
+        original_rule_dict[index].append(_['original_rule'])
+        negated_rule_dict[index].append(_['negated_rule'])
+
+    original_results = retrieve.masked_composed_rules(original_rule_dict,top_k_jaccard)
+    negated_results = retrieve.masked_composed_rules(negated_rule_dict,top_k_jaccard,split_from_mid = True)
+    jaccard_result = retrieve.decoder.jaccard(original_results['top_indices'],negated_results['top_indices'])
+    KL_result = retrieve.decoder.KL_divergence(original_results['softmaxs'],negated_results['softmaxs'])
+
+    def return_None():
+        return None
+
+    final_output = ddict(return_None)
+    final_output['jaccard'] = jaccard_result
+    final_output['KL_div'] = KL_result
+    final_output['original_results'] = original_results
+    final_output['composed_results'] = negated_results
+    final_output['original_rules'] = original_rule_dict
+    final_output['composed_rules'] = negated_rule_dict
+
+    file_info = dict()
+    file_info['order'] = query_order
+    file_info['output_file'] = output_file
+    file_info['args'] = args
+    file_info['query'] = query
+    final_output['info'] = file_info
+
+    jaccard, kl = plot_and_write(final_output,True)
+
+
 
 def main_CPE(args: Namespace, query, retrieve: Retrieve, query_order, output_file):
 
@@ -129,100 +149,28 @@ def main_CPE(args: Namespace, query, retrieve: Retrieve, query_order, output_fil
     KL_result = retrieve.decoder.KL_divergence(original_rule_results['softmaxs'],composed_rule_results['softmaxs'])
 
 
-    plot(original_rule_results['likelihood'],
-         composed_rule_results['likelihood'], original_composed_rules)
+    def return_None():
+        return None
 
+    final_output = ddict(return_None)
 
-    nl = '\n'
-    Path(f'./{output_file}').mkdir(parents=True, exist_ok=True)
-    file_path = f'./{output_file}/file_{combine_order}_{num_conjunction}.txt'
-    with open(file_path, 'a+') as f:
+    final_output['jaccard'] = jaccard_result
+    final_output['KL_div'] = KL_result
+    final_output['original_results'] = original_rule_results
+    final_output['composed_results'] = composed_rule_results
+    final_output['original_rules'] = original_composed_rules
+    final_output['composed_rules'] = composed_rules
+    final_output['composed_p'] = composed_p
 
-        f.write(nl)
-        f.write(nl)
-        f.write(f'{query_order}')
-        f.write(nl)
-        f.write("***Query:")
-        f.write(nl)
-        f.write(query)
-        f.write(nl)
-        f.write(nl)
-        f.write(nl)
+    file_info = dict()
+    file_info['order'] = query_order
+    file_info['output_file'] = output_file
+    file_info['args'] = args
+    file_info['query'] = query
+    final_output['info'] = file_info
 
-        f.write(
-            '***Intermediate results whose are neutral in both direction and has high PPL***'
-        )
-        f.write(nl)
-        f.write(nl)
-        f.write(nl)
-        for text in composed_p:
-            f.write(text)
-            f.write(nl)
-
-        f.write(nl)
-        f.write('********************')
-        f.write(nl)
-
-        f.write(nl)
-        f.write(
-            '***Mask the last word of composed rules and compute Jaccard , KL score compared to the original rules***'
-        )
-        f.write(nl)
-        jaccard_composed = 0
-        kl_div = 0
-        num_composed = 0
-        for key in original_composed_rules.keys():
-            f.write(f'Rule{key}0(original):')
-            f.write(original_composed_rules[key][0])
-            f.write(nl)
-            f.write(f'Decoded words:  ')
-            f.write(original_rule_results['decoded_words'][key][0])
-            f.write(nl)
-            f.write(nl)
-            f.write('For box plot KL ')
-            f.write(nl)
-            for index, sen in enumerate(composed_rules[key]):
-                f.write(f'{KL_result[key][index]},')
-            f.write(nl)
-
-            f.write('For box plot Jaccard')
-            f.write(nl)
-            for index, sen in enumerate(composed_rules[key]):
-                f.write(f'{jaccard_result[key][index]},')
-            f.write(nl)
-
-            f.write(nl)
-            f.write(nl)
-            for index, sen in enumerate(composed_rules[key]):
-                f.write(f'Rule{key}{index+1}(composed):')
-                f.write(sen)
-                f.write(nl)
-                f.write(f'Jaccard score: {jaccard_result[key][index]}')
-                jaccard_composed += jaccard_result[key][index]
-                kl_div += KL_result[key][index]
-                num_composed += 1
-                f.write(nl)
-                f.write(f'KL score: {KL_result[key][index]}')
-                f.write(nl)
-                f.write(f'Decoded words:  ')
-                f.write(composed_rule_results['decoded_words'][key][index])
-                f.write(nl)
-                f.write(nl)
-            f.write(nl)
-            f.write('***********************************************')
-            f.write(nl)
-        f.write(nl)
-        f.write(nl)
-        f.write(
-            f'Averaged Jaccard Result for {num_conjunction} conjunctions: {jaccard_composed/num_composed} '
-        )
-        f.write(nl)
-        f.write(
-            f'Averaged KL Divergence for {num_conjunction} conjunctions: {kl_div/num_composed} '
-        )
-        f.write(nl)
-        return jaccard_composed / num_composed, kl_div / num_composed
-
+    jaccard, kl = plot_and_write(final_output)
+    return jaccard, kl
 
 def main(args: Namespace):
     all_heads_path = args.all_heads_path
@@ -230,9 +178,14 @@ def main(args: Namespace):
     all_tuples_path = args.all_tuples_path
     query_path = args.query_path
     save = args.save_embedding
+    task = args.task
+    if task == 'CPE':
+        args.output_file = args.output_file + '/CPE'
+    elif task == 'NEP':
+        args.output_file = args.output_file + '/NEP'
     output_file = args.output_file
 
-    task = args.task
+
 
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
@@ -270,29 +223,42 @@ def main(args: Namespace):
 
 
     elif task == 'NEP':
-        NEP_pair_path = args.NEP_pair_path
 
-        demonstration = "Given a statement, negate it to create a new sentence.\n"\
-        "A: To see stars at night, it is better to turn on the lights.\n"\
-        "B: The statement is false. To see stars at night, it is better not to turn on the lights.\n"\
-        "A: Falling objects cannot accelerate beyond a certain speed.\n"\
-        "B: The statement is false. Falling objects can accelerate beyond a certain speed.\n"\
-        "A: People put a number before their names.\n"\
-        "B: The statement is false. People do not put a number before their names."
-        negation_wrapper = PromptWrapper(demonstration)
+        NEP_rules_path = args.NEP_rules_path
+        top_k_jaccard = args.top_k_jaccard
 
-        if not os.path.exists(NEP_pair_path):
+        if not os.path.exists(NEP_rules_path):
+            demonstration = "Given a statement, negate it to create a new sentence.\n"\
+            "A: To see stars at night, it is better to turn on the lights.\n"\
+            "B: The statement is false. To see stars at night, it is better not to turn on the lights.\n"\
+            "A: Falling objects cannot accelerate beyond a certain speed.\n"\
+            "B: The statement is false. Falling objects can accelerate beyond a certain speed.\n"\
+            "A: People put a number before their names.\n"\
+            "B: The statement is false. People do not put a number before their names."
+            negation_wrapper = PromptWrapper(demonstration)
             with open(query_path,'r') as f:
                 reader = csv.reader(f)
-                for query in reader:
-                    negation_process(query[0],NEP_pair_path,negation_wrapper)
+                for index, query in enumerate(reader):
+                    query = query[0]
+                    print(f'Process for {query}')
+                    main_NEP_data_process(args, query, retrieve, negation_wrapper, NEP_rules_path)
 
-        with open(query_path, 'r') as f:
-            reader = csv.reader(f)
-            for index, query in enumerate(reader):
-                query = query[0]
-                print(f'Process for {query}')
-                main_NEP(args, query, retrieve, negation_wrapper, index + 1)
+        all_query = ddict(list)
+        with open(f'{NEP_rules_path}') as f:
+            reader = csv.reader(f,delimiter="\t")
+            for line in reader:
+                query = line[0]
+                original_rule = line[1]
+                negated_rule = line[2]
+                tmp = dict()
+                tmp['original_rule'] = original_rule
+                tmp['negated_rule'] = negated_rule
+                all_query[query].append(tmp)
+
+
+        for index,query in enumerate(all_query.keys()):
+            main_NEP(args,query,all_query,retrieve,index+1,output_file)
+
 
 
 
@@ -312,9 +278,9 @@ if __name__ == '__main__':
     parser.add_argument('--task',
                         help='Do CPE or NPE probing',
                         choices=['NEP', 'CPE'])
-    parser.add_argument('--NEP_pair_path',
+    parser.add_argument('--NEP_rules_path',
                         help='the negation of the query_NEP.csv',
-                        default='./input_file/query_NEP_pair.csv')
+                        default='./input_file/query_NEP_rules.tsv')
     parser.add_argument('--output_file',
                         help='where to output',
                         default='./output_file')
@@ -330,11 +296,11 @@ if __name__ == '__main__':
                         help="Combine the p and p' in two order",
                         choices=['normal', 'reverse'])
     parser.add_argument(
-        '--top_k_composed_p',
-        type=int,
-        help=
-        'Select top_k composed_p from top to end which are not that plausible',
-        default=5)
+                        '--top_k_composed_p',
+                        type=int,
+                        help=
+                        'Select top_k composed_p from top to end which are not that plausible',
+                        default=5)
     parser.add_argument('--keep_attr_react',
                         help='Only focus on the xAttr and xReact relations',
                         action='store_false')

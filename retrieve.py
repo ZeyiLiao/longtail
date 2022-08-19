@@ -50,8 +50,8 @@ class Retrieve():
 
             self.nli = NLI(device)
             self.gptppl = GPTppl(device)
-            self.decoder = Decoder(device)
 
+        self.decoder = Decoder(device)
         self.df = pd.read_csv(all_tuples_file,names = ['head','relation','tail'],index_col='head')
 
     def query_neutral(self,query,top_k ,threshold ):
@@ -148,7 +148,7 @@ class Retrieve():
         return composed_rules_ppl_low
 
 
-    def masked_composed_rules(self,composed_rules,top_k_jaccard):
+    def masked_composed_rules(self,composed_rules,top_k_jaccard,split_from_mid = False):
 
         composed_rules_mask = ddict(list)
         composed_rules_mask_word = ddict(list)
@@ -156,12 +156,25 @@ class Retrieve():
         # TODO
         # Just mask the last token here which is not reasonable. May need to identify which part should be mask.
         mask_token = self.decoder.tokenizer.mask_token
+        if not split_from_mid:
+            for key in composed_rules.keys():
+                tmps = composed_rules[key]
+                mask_texts = [tmp.rsplit(' ',1)[0] + ' ' + mask_token + '.' for tmp in tmps]
+                composed_rules_mask[key] = mask_texts
+                composed_rules_mask_word[key] = ' ' + tmps[0].rsplit(' ',1)[1][:-1]
+        else:
+            for key in composed_rules.keys():
+                tmps = composed_rules[key]
+                mask_texts = []
 
-        for key in composed_rules.keys():
-            tmps = composed_rules[key]
-            mask_sens = [tmp.rsplit(' ',1)[0] + ' ' + mask_token + '.' for tmp in tmps]
-            composed_rules_mask[key] = mask_sens
-            composed_rules_mask_word[key] = ' ' + tmps[0].rsplit(' ',1)[1][:-1]
+                for tmp in tmps:
+                    head,tail = tmp.rsplit(', ',1)[0], tmp.rsplit(', ',1)[1]
+                    be_masked_word = head.rsplit(' ',1)[1]
+                    head = head.rsplit(' ',1)[0] + ' ' + mask_token
+                    mask_texts.append(head + ', ' +tail)
+                composed_rules_mask[key] = mask_texts
+                composed_rules_mask_word[key] = ' ' + be_masked_word
+
 
         composed_rules_mask_softmaxs = self.decoder(composed_rules_mask)
 
