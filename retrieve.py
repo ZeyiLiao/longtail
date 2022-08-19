@@ -86,7 +86,7 @@ class Retrieve():
         df_selected = self.df.loc[query]
         relations = list(df_selected['relation'])
         tails = list(df_selected['tail'])
-        attr_react_set = {'xReact','xAttr'}
+        attr_react_set = {'xReact'}
         relations_set = list(set(relations) & attr_react_set)
         relations_tails = []
         count = 0

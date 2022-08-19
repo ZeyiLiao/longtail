@@ -3,7 +3,7 @@ from helper import *
 
 
 def plot(original_composed_rules_masked_likelihood,
-         composed_rules_masked_likelihood, original_composed_rules,output_file):
+         composed_rules_masked_likelihood, original_composed_rules,output_file,num_conjunctions):
 
 
     for key in original_composed_rules.keys():
@@ -30,8 +30,8 @@ def plot(original_composed_rules_masked_likelihood,
         ax.set_ylabel(f'Likelihood')
         # ax.set_ylim((0, 1))
         ax.set_title(f"Likelihood for '{masked_word}'")
-        Path(f'./{output_file}/figure').mkdir(parents=True, exist_ok=True)
-        fig.savefig(f'./{output_file}/figure/{masked_word}.png')
+        Path(f'./{output_file}/figure_{num_conjunctions}').mkdir(parents=True, exist_ok=True)
+        fig.savefig(f'./{output_file}/figure_{num_conjunctions}/{masked_word}.png')
 
 
 
@@ -48,7 +48,7 @@ def plot_and_write(final_output,negated = False):
 
     if not negated:
         plot(final_output['original_results']['likelihood'],
-            final_output['composed_results']['likelihood'], final_output['original_rules'],file_info['output_file'])
+            final_output['composed_results']['likelihood'], final_output['original_rules'],file_info['output_file'],args.num_conjunctions)
 
 
     nl = '\n'
