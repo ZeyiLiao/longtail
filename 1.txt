@@ -1,0 +1,104 @@
+Use model to get embedding and calcaute similarity by distance
+
+Premise is PersonX sneaks into PersonX's room
+top_k :20 high simiar words are:
+mausoleum,athenaeum,surreptitious,accommodation,torture_chamber,gymnasium,anechoic_chamber,opportunity,auditorium,operating_theatre,telephone_exchange,cubic,calefactory,closet,laboratory,potpourri,trojan_horse,furniture,dastard,chapel
+***********************************************************
+Premise is PersonX succeeds at speech
+top_k :20 high simiar words are:
+wernicke's_area,ankyloglossia,receptive_aphasia,ecobabble,jeremiad,glossolalia,phonetician,plagiarize,manner_of_speaking,gibberish,panegyric,grandiloquence,broca's_area,freudian_slip,duplicitous,dyslogia,disfluency,valedictory,hoopla,illiterate
+***********************************************************
+Premise is My flower have sunlights
+top_k :20 high simiar words are:
+fritillaria_meleagris,lilium_columbianum,calochortus_nuttallii,blue-eyed_african_daisy,spathiphyllum,queen_anne's_lace,hypericum_calycinum,florest's_cineraria,protea_cynaroides,tartarian_honeysuckle,primula_auricula,chrysanthemum,xeranthemum,boutonniere,tradescantia,schizopetalon,noctilucent,bougainvillea,streptocarpus,viola_tricolor
+***********************************************************
+
+
+Use model to get embedding and calcaute similarity by cos
+
+Premise is PersonX sneaks into PersonX's room
+top_k :20 high simiar words are:
+sickbay,sauna,sitting,moor,house,way,sudatorium,u,hake,fink,den,parking,bath,desk,book,walk,prowler,salon,annex,dormer
+***********************************************************
+Premise is PersonX succeeds at speech
+top_k :20 high simiar words are:
+succeed,sedition,sputter,talk,talking,verbal,address,reply,say,language,question,voice,big,conference,public,touch,communication,writing,scream,make
+***********************************************************
+Premise is My flower have sunlights
+top_k :20 high simiar words are:
+light,sun,small,sunlit,dream,flake,morning,pretty,food,make,want,sunburst,spring,fly,yellow,cake,take,second,eye,star
+***********************************************************
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+Use numbatch to get embedding and calcaute similarity by distance
+
+Premise is PersonX sneaks into PersonX's room
+top_k :20 high simiar words are:
+party,contained,privy,vestry,alcove,lamp,corridor,vault,laundry,furniture,side,post,always,accommodation,sleep,reside,closed,building,pilfer,parking
+***********************************************************
+Premise is PersonX succeeds at speech
+top_k :20 high simiar words are:
+paralanguage,hoopla,plagiarize,english,speaker,quotability,duplicitous,scream,clanging,listener,babble,phonetician,pronoun,filler,transmitter,touch,word,verb,transcription,effusion
+***********************************************************
+Premise is My flower have sunlights
+top_k :20 high simiar words are:
+monkshood,proceeding,noctilucent,cernuous,gypsophila,aware,sleep,butterfly,filament,command,food,visible,remain,schizopetalon,possession,sheep,shell,decoration,petaled,inferior
+***********************************************************
+
+
+
+Use numbatch to get embedding and calcaute similarity by cos
+
+Premise is PersonX sneaks into PersonX's room
+top_k :20 high simiar words are:
+sickbay,judge,torture_chamber,class,quarter,position,study,cave,lamp,toilet,post,calefactory,locker,tent,compartment,dark,dais,movie,bath,dormer
+***********************************************************
+Premise is PersonX succeeds at speech
+top_k :20 high simiar words are:
+sedition,gesture,filler,clanging,festination,auditory_communication,listen,vocal,communicator,pep_talk,panegyric,address,verb,phonetician,tonic,stenography,hustings,harangue,question,gibberish
+***********************************************************
+Premise is My flower have sunlights
+top_k :20 high simiar words are:
+sky,tuberose,bouquet,sublimation,nelumbo_lutea,tree,sex,dog's_mercury,rampion,participate,insect,solar_radiation,enough,shell,calla_lily,interact,distrust,racemose,feature,grape_hyacinth
+***********************************************************
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+Use glove to get embedding and calcaute similarity by distance
+
+Premise is PersonX sneaks into PersonX's room
+top_k :20 high simiar words are:
+lobby,committee,parlor,porch,school,opportunity,operation,floor,library,dining,dark,ream,informer,carpeting,checkout,decorating,auditorium,many,camera,hill
+***********************************************************
+Premise is PersonX succeeds at speech
+top_k :20 high simiar words are:
+valedictory,treacle,illiterate,phraseology,hoopla,communication,digression,conversation,vowel,reply,scream,treacly,testimony,pronounceable,hustings,mute,long,lisp,noun,gesture
+***********************************************************
+Premise is My flower have sunlights
+top_k :20 high simiar words are:
+au,petal,sunburst,oxeye,carry,bisexual,peony,ovary,perfect,brooklime,opaque,nest,schedule,bed,shaft,toadflax,conquer,leadplant,puberty,aphotic
+***********************************************************
+
+
+Use glove to get embedding and calcaute similarity by cos
+
+Premise is PersonX sneaks into PersonX's room
+top_k :20 high simiar words are:
+decorating,eating,lobby,gatehouse,hide,salon,building,sun_parlor,creep,outside,nursery,vault,lavabo,pantry,belfry,athenaeum,contained,peek,door,cramped
+***********************************************************
+Premise is PersonX succeeds at speech
+top_k :20 high simiar words are:
+reply,ghostwrite,conjunction,wandering,presentation,transcribe,digression,orating,oration,lisp,platform,freudian_slip,prologue,mention,gesture,cockney,allocution,hereinbefore,epilogue,stump
+***********************************************************
+Premise is My flower have sunlights
+top_k :20 high simiar words are:
+opaque,plant_organ,drink,bread,story,deceive,turtlehead,color,halesia,lantana,rosebud,valerian,object,pedal,scent,visible,warmth,commelina,flake,top
+***********************************************************

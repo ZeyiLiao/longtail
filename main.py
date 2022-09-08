@@ -58,7 +58,7 @@ def main_NEP_data_process(args: Namespace, query, retrieve: Retrieve, negation_w
             f.write('\n')
 
 
-            
+
 
 def main_NEP(args,query,all_query,retrieve:Retrieve,query_order,output_file):
     top_k_jaccard = args.top_k_jaccard
@@ -300,7 +300,7 @@ if __name__ == '__main__':
                         type=int,
                         help=
                         'Select top_k composed_p from top to end which are not that plausible',
-                        default=5)
+                        default=3)
     parser.add_argument('--keep_attr_react',
                         help='Only focus on the xAttr and xReact relations',
                         action='store_false')

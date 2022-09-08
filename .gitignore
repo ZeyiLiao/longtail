@@ -2,5 +2,9 @@ data/
 .vscode/
 __pycache__/
 figure/
+counter_fit_embedding/
+glove_embeddings/
+numbatch_embeddings/
+.vector_cache/
 key.txt
 output_file/

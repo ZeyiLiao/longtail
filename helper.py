@@ -1,10 +1,12 @@
 import csv
+import imp
 import jsonlines
 import json
 from collections import defaultdict as ddict,Counter
 import pandas as pd
 import numpy as np
-from transformers import AutoTokenizer, AutoModelForSequenceClassification,AutoModelForMaskedLM
+from transformers import AutoTokenizer, AutoModelForSequenceClassification,AutoModelForMaskedLM,AutoModel
+import transformers
 import torch
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_sequence
 from argparse import ArgumentParser
@@ -20,7 +22,12 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 import pandas as pd
 import openai
+from allennlp.predictors.predictor import Predictor
+import allennlp_models.tagging
+import nltk
+from nltk.corpus import wordnet
+from nltk.stem import WordNetLemmatizer
 
-with open('./key.txt') as f:
-    key = f.read()
-openai.api_key = key
+# with open('./key.txt') as f:
+#     key = f.read()
+# openai.api_key = key
