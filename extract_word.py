@@ -500,6 +500,8 @@ def global_counter_fitting(result_dict,sim_method,reverse):
 # cos, distance
 
 # method_input,sim_input = 'counter_fitted','cos'
+# use glove for global_glove
+# use counter_fitted for global_counter_fitted
 method_input,sim_input = sys.argv[1], sys.argv[2]
 
 
