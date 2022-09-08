@@ -499,7 +499,7 @@ def global_counter_fitting(result_dict,sim_method,reverse):
 # glove,numbatch,model,counter_fitted
 # cos, distance
 
-# method_input,sim_input = 'glove','cos'
+# method_input,sim_input = 'counter_fitted','cos'
 method_input,sim_input = sys.argv[1], sys.argv[2]
 
 
