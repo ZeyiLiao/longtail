@@ -3,6 +3,7 @@ from helper import *
 import requests
 import time
 import sys
+import spacy
 from nli import NLI
 from nltk.stem import WordNetLemmatizer
 import torchtext
@@ -12,6 +13,22 @@ from nltk.corpus import wordnet
 
 
 lemmatizer = WordNetLemmatizer()
+
+nlp = spacy.load('en_core_web_sm')
+
+def pos_keyword_extraction(inputs):
+    #assert sent_path.endswith(".txt")
+    for sent in inputs:
+        doc = nlp(str(sent))
+        keywords = []
+        for token in doc:
+            if (token.pos_.startswith('V') or token.pos_.startswith('PROP')) and token.is_alpha and not token.is_stop:
+                keywords.append(token.lemma_)
+        for noun_chunk in doc.noun_chunks:
+            root_noun = noun_chunk[-1]
+            if root_noun.pos_ == "NOUN":
+                keywords.append(root_noun.lemma_)
+    return keywords
 
 def dependency_parse(predictor,inputs):
 
