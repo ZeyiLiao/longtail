@@ -25,8 +25,7 @@ import openai
 from allennlp.predictors.predictor import Predictor
 import allennlp_models.tagging
 import nltk
-from nltk.corpus import wordnet
-from nltk.stem import WordNetLemmatizer
+
 
 # with open('./key.txt') as f:
 #     key = f.read()

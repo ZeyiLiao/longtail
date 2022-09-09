@@ -8,12 +8,14 @@ from nltk.stem import WordNetLemmatizer
 import torchtext
 import torch.nn.functional as F
 import pickle
+from nltk.corpus import wordnet
+
 
 lemmatizer = WordNetLemmatizer()
 
 def dependency_parse(predictor,inputs):
 
-    result_dict = dict()
+    premise_extraction = dict()
     for input in inputs:
         dp = predictor.predict(sentence=input)
         words = dp['words']
@@ -27,8 +29,86 @@ def dependency_parse(predictor,inputs):
             elif _ == 'VERB':
                 tmp['verb'].append(lemmatizer.lemmatize(words[index]))
 
-        result_dict[input] = tmp
-    return result_dict
+        premise_extraction[input] = tmp
+    return premise_extraction
+
+
+def filter_lemma_premise(premise_words,premise_extraction):
+
+    for premise in premise_words.keys():
+        query_words = []
+        for key in list(premise_extraction[premise].keys()):
+            query_words.extend(premise_extraction[premise][key])
+
+        lemma_filter = []
+
+        for word in query_words:
+            lemma_filter.append(lemmatizer.lemmatize(word))
+
+        tmp = []
+        for word in premise_words[premise]:
+
+            if lemmatizer.lemmatize(word) not in lemma_filter:
+                tmp.append(word)
+        premise_words[premise] = tmp
+
+    return premise_words
+
+
+
+def filter_syn_premise(premise_words,premise_extraction):
+
+    for premise in premise_words.keys():
+        query_words = []
+        for key in list(premise_extraction[premise].keys()):
+            query_words.extend(premise_extraction[premise][key])
+
+        syn_filter = synonym(query_words)
+
+        tmp = []
+        for word in premise_words[premise]:
+
+            if lemmatizer.lemmatize(word) not in syn_filter and word not in syn_filter:
+                tmp.append(word)
+        premise_words[premise] = tmp
+
+
+    return premise_words
+
+
+def filter_hyper_premise(premise_words,premise_extraction):
+
+    for premise in premise_words.keys():
+        query_words = []
+        for key in list(premise_extraction[premise].keys()):
+            query_words.extend(premise_extraction[premise][key])
+
+        hyper_filter = []
+        for query in query_words:
+            hyper_filter.extend(wordnet.synsets(query))
+        hyper_filter = set(hyper_filter)
+
+        tmp = []
+        for word in premise_words[premise]:
+
+            if len(set(wordnet.synsets(word)) & hyper_filter) == 0 :
+                tmp.append(word)
+            else:
+                pass
+        premise_words[premise] = tmp
+
+
+    return premise_words
+
+def filter_noun_verb(premise_words):
+
+    for premise in premise_words.keys():
+
+        words = nltk.pos_tag(premise_words[premise])
+        tmp = [word[0] for word in words if word[1][0] in ['N','V']]
+        premise_words[premise] = tmp
+    
+    return premise_words
 
 def filter_lemma(premise_words):
 
@@ -46,6 +126,8 @@ def filter_lemma(premise_words):
         premise_words[premise] = tmp
 
     return premise_words
+
+
 
 # def filter_hyper(premise_words):
 #     for premise in premise_words.keys():
@@ -110,15 +192,15 @@ def filter_hyper(premise_words):
     return premise_words
 
 
-def metric(l1,l2,sim_method):
-    if sim_method == 'cos':
+def metric(l1,l2,similarity_method):
+    if similarity_method == 'cos':
         return F.cosine_similarity(l1, l2)
-    elif sim_method == 'distance':
+    elif similarity_method == 'distance':
 
         return torch.norm(l1-l2,dim=1)
 
 
-def glove_based(query,words,glove,dim,device,sim_method):
+def glove_based(query,words,glove,dim,device,similarity_method):
 
     all_zero = torch.zeros(dim)
     query_emb = glove[query]
@@ -146,7 +228,7 @@ def glove_based(query,words,glove,dim,device,sim_method):
     query_emb = query_emb.to(device)
     words_emb = words_emb.to(device)
 
-    score = metric(query_emb,words_emb,sim_method).cpu().numpy()
+    score = metric(query_emb,words_emb,similarity_method).cpu().numpy()
 
     for id in bad_ids:
         score[id] -= 9999
@@ -155,7 +237,7 @@ def glove_based(query,words,glove,dim,device,sim_method):
 
 
 
-def numbatch_based(query,words,numbatch,dim,device,sim_method):
+def numbatch_based(query,words,numbatch,dim,device,similarity_method):
     prepend = '/c/en/'
 
     all_zero = torch.zeros(dim)
@@ -185,7 +267,7 @@ def numbatch_based(query,words,numbatch,dim,device,sim_method):
     query_emb = query_emb.to(device)
     words_emb = words_emb.to(device)
 
-    score = metric(query_emb,words_emb,sim_method).cpu().numpy()
+    score = metric(query_emb,words_emb,similarity_method).cpu().numpy()
 
     for id in bad_ids:
         score[id] -= 9999
@@ -195,7 +277,7 @@ def numbatch_based(query,words,numbatch,dim,device,sim_method):
 
 
 
-def counter_based(query,words,counter_fitted,dim,device,sim_method):
+def counter_based(query,words,counter_fitted,dim,device,similarity_method):
 
     all_zero = torch.zeros(dim)
     query_emb = torch.tensor(list(counter_fitted[query]))
@@ -224,7 +306,7 @@ def counter_based(query,words,counter_fitted,dim,device,sim_method):
     query_emb = query_emb.to(device)
     words_emb = words_emb.to(device)
 
-    score = metric(query_emb,words_emb,sim_method).cpu().numpy()
+    score = metric(query_emb,words_emb,similarity_method).cpu().numpy()
 
     for id in bad_ids:
         score[id] -= 9999
@@ -233,116 +315,150 @@ def counter_based(query,words,counter_fitted,dim,device,sim_method):
 
 
 
-def model_based(query,words,tokenizer,embedding,dim,device,sim_method):
-
-    query_id = torch.tensor(tokenizer.convert_tokens_to_ids(tokenizer.tokenize(query))).unsqueeze(0).to(device)
-
+def model_based(query,words,tokenizer,embedding,dim,device,similarity_method):
+    embedding.to(device)
     with torch.no_grad():
+        query_id = torch.tensor(tokenizer.convert_tokens_to_ids(tokenizer.tokenize(query))).unsqueeze(0).to(device)
+
         query_emb = torch.sum(embedding(query_id).squeeze(0),dim=0)/len(query_id)
         query_emb = query_emb.expand(len(words),dim)
 
         words_emb = []
 
-        for index,word in enumerate(words):
+        for word in words:
             word = word.replace('_',' ')
 
             word_id = torch.tensor(tokenizer.convert_tokens_to_ids(tokenizer.tokenize(word))).unsqueeze(0).to(device)
             word_emb = torch.sum(embedding(word_id).squeeze(0),dim=0)/len(word_id)
             words_emb.append(word_emb)
 
+
     words_emb = torch.stack(words_emb,dim = 0)
     assert words_emb.shape == query_emb.shape
     assert words_emb.device == query_emb.device
 
-    score = metric(query_emb,words_emb,sim_method).cpu().numpy()
+    score = metric(query_emb,words_emb,similarity_method).cpu().numpy()
 
     return score
 
 
+def union_related(top_k_union,similarity_method,premise_score,premise_words):
+
+
+
+    reverse = reverse_state(similarity_method)
+    for premise in premise_score.keys():
+        scores = premise_score[premise]
+
+        tmp = set(range(len(scores[0])))
+
+        for score in scores:
+            sorted_id = set(sorted(range(len(score)), key=lambda k: score[k],reverse= reverse)[:top_k_union])
+            tmp = tmp & sorted_id
+
+        premise_score[premise] = list(tmp)
+
+    def retrieve_word(id):
+        return premise_words[premise][id]
+
+    for premise in premise_score.keys():
+        premise_words[premise] = list(map(retrieve_word,premise_score[premise]))
+
+    return premise_words
 
 
 
 
-def calculate_sim(result_dict,premise_words,method,sim_method):
+def calculate_sim(premise_extraction,premise_words,embedding_source,similarity_method):
     premise_score = dict()
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-    if method == 'glove':
+
+    if embedding_source == 'glove':
         dim = 300
         glove = torchtext.vocab.GloVe(name="840B",dim=dim)
 
         for premise in premise_words.keys():
             query_words = []
-            for key in list(result_dict[premise].keys()):
-                query_words.extend(result_dict[premise][key])
+            for key in list(premise_extraction[premise].keys()):
+                query_words.extend(premise_extraction[premise][key])
             words = premise_words[premise]
             score_all = np.zeros(len(words))
+
+            tmp = []
+
             for query in query_words:
-                score = glove_based(query,words,glove,dim,device,sim_method)
+                score = glove_based(query,words,glove,dim,device,similarity_method)
                 score_all += score
-            premise_score[premise] = score_all
+                tmp.append(score)
+            premise_score[premise] = tmp
 
 
-    elif method == 'numbatch':
+    elif embedding_source == 'numbatch':
         dim = 300
         numbatch = pd.read_hdf('numbatch_embeddings/mini.h5')
         for premise in premise_words.keys():
             query_words = []
-            for key in list(result_dict[premise].keys()):
-                query_words.extend(result_dict[premise][key])
+            for key in list(premise_extraction[premise].keys()):
+                query_words.extend(premise_extraction[premise][key])
             words = premise_words[premise]
             score_all = np.zeros(len(words))
+
+            tmp = []
+
             for query in query_words:
-                score = numbatch_based(query,words,numbatch,dim,device,sim_method)
+                score = numbatch_based(query,words,numbatch,dim,device,similarity_method)
+                tmp.append(score)
                 score_all += score
-            premise_score[premise] = score_all
+            premise_score[premise] = tmp
 
 
-    elif method == 'counter_fitted':
+    elif embedding_source == 'counter_fitted':
         dim = 300
         with open('./counter_fit_embedding/counter_dict.pkl', 'rb') as f:
             counter_fitted = pickle.load(f)
 
         for premise in premise_words.keys():
             query_words = []
-            for key in list(result_dict[premise].keys()):
-                query_words.extend(result_dict[premise][key])
+            for key in list(premise_extraction[premise].keys()):
+                query_words.extend(premise_extraction[premise][key])
             words = premise_words[premise]
             score_all = np.zeros(len(words))
+
+            tmp = []
+
             for query in query_words:
-                score = counter_based(query,words,counter_fitted,dim,device,sim_method)
+                score = counter_based(query,words,counter_fitted,dim,device,similarity_method)
+                tmp.append(score)
                 score_all += score
-            premise_score[premise] = score_all
+            premise_score[premise] = tmp
 
 
 
-    elif method == 'model':
+    elif embedding_source == 'model':
         tokenizer = AutoTokenizer.from_pretrained('roberta-large')
         model = AutoModel.from_pretrained('roberta-large')
         embedding = model.embeddings
         dim = model.config.hidden_size
-        embedding.to(device)
-        # ids = tokenizer('I want to go',return_tensors='pt')
-        # model(**ids)
+
 
         for premise in premise_words.keys():
             query_words = []
-            for key in list(result_dict[premise].keys()):
-                query_words.extend(result_dict[premise][key])
+            for key in list(premise_extraction[premise].keys()):
+                query_words.extend(premise_extraction[premise][key])
             words = premise_words[premise]
             score_all = np.zeros(len(words))
+
+            tmp = []
+
             for query in query_words:
-                score = model_based(query,words,tokenizer,embedding,dim,device,sim_method)
+                score = model_based(query,words,tokenizer,embedding,dim,device,similarity_method)
+                tmp.append(score)
                 score_all += score
-            premise_score[premise] = score_all
+            premise_score[premise] = tmp
 
 
     return premise_score
-
-
-
-
-
 
 
 def synonym(inputs):
@@ -351,18 +467,20 @@ def synonym(inputs):
         for syn in wordnet.synsets(input):
             for l in syn.lemmas():
                 synonyms.append(l.name())
-    overlap = set(synonyms)&set(inputs)
-    return list(set(synonyms) - overlap)
+
+    # overlap = set(synonyms)&set(inputs)
+
+    return list(set(synonyms) | set(inputs))
 
 
 
 
 
 
-def nltk_based(result_dict):
+def nltk_based(premise_extraction):
     premise_words = dict()
-    for premise in result_dict.keys():
-        words_dict = result_dict[premise]
+    for premise in premise_extraction.keys():
+        words_dict = premise_extraction[premise]
         candidates = []
         for pos in words_dict.keys():
             candidates += words_dict[pos]
@@ -372,12 +490,12 @@ def nltk_based(result_dict):
 
 
 
-def conceptnet_based(result_dict):
+def conceptnet_based(premise_extraction):
     prepend = 'http://api.conceptnet.io/c/en'
     premise_words = dict()
-    for premise in result_dict.keys():
+    for premise in premise_extraction.keys():
 
-        words_dict = result_dict[premise]
+        words_dict = premise_extraction[premise]
         candidates = []
         for pos in words_dict.keys():
             candidates += words_dict[pos]
@@ -401,10 +519,8 @@ def conceptnet_based(result_dict):
 
                 for edge in tqdm(edges):
                     rel = edge['rel']['label']
-                    score = edge['weight']
                     if rel not in excluded_rel:
-                        # if score > 2:
-                        #     continue
+
                         if edge['start']['language'] != 'en' or edge['end']['language'] != 'en':
                             continue
                         start = edge['start']['label'].lower()
@@ -431,35 +547,37 @@ def conceptnet_based(result_dict):
     return premise_words
 
 
-def global_glove(result_dict,sim_method,reverse):
+def global_glove(premise_extraction,similarity_method):
+    reverse = reverse_state(similarity_method)
     premise_words = ddict(list)
     top_k = 10000
     dim = 300
     glove = torchtext.vocab.GloVe(name="840B",dim=dim)
 
-    for premise in result_dict.keys():
+    for premise in premise_extraction.keys():
         query_words = []
-        for key in list(result_dict[premise].keys()):
-            query_words.extend(result_dict[premise][key])
+        for key in list(premise_extraction[premise].keys()):
+            query_words.extend(premise_extraction[premise][key])
 
         score_total = torch.zeros(glove.vectors.shape[0])
 
         for query in query_words:
             query = glove[query].expand(glove.vectors.shape[0],dim)
-            score_tmp = metric(query,glove.vectors,sim_method)
+            score_tmp = metric(query,glove.vectors,similarity_method)
             score_total += score_tmp
 
-        dists = sorted(enumerate(score_total) , key = lambda i: i[1], reverse= reverse)
+        dists = sorted(range(len(score_total)) , key = lambda i: score_total[i], reverse= reverse)
 
         for i in range(top_k):
-            tmp = glove.itos[dists[i][0]]
+            tmp = glove.itos[dists[i]]
             if (tmp not in query_words) and (tmp not in premise):
                 premise_words[premise].append(tmp)
 
     return premise_words
 
 
-def global_counter_fitting(result_dict,sim_method,reverse):
+def global_counter_fitted(premise_extraction,similarity_method):
+    reverse = reverse_state(similarity_method)
     premise_words = ddict(list)
     top_k = 10000
     dim = 300
@@ -473,99 +591,121 @@ def global_counter_fitting(result_dict,sim_method,reverse):
 
     all_embeddings = torch.tensor(np.vstack(all_embeddings))
 
-    for premise in result_dict.keys():
+    for premise in premise_extraction.keys():
         query_words = []
-        for key in list(result_dict[premise].keys()):
-            query_words.extend(result_dict[premise][key])
+        for key in list(premise_extraction[premise].keys()):
+            query_words.extend(premise_extraction[premise][key])
 
         score_total = torch.zeros(all_embeddings.shape[0])
         for query in query_words:
             query = torch.tensor(counter_fitted[query]).expand(all_embeddings.shape[0],dim)
-            score_tmp = metric(query,all_embeddings,sim_method)
+            score_tmp = metric(query,all_embeddings,similarity_method)
             score_total += score_tmp
 
-        dists = sorted(enumerate(score_total) , key = lambda i: i[1], reverse= reverse)
+        dists = sorted(range(len(score_total)) , key = lambda i: score_total[i], reverse= reverse)
 
         for i in range(top_k):
-            tmp = all_words[dists[i][0]]
+            tmp = all_words[dists[i]]
             if (tmp not in query_words) and (tmp not in premise):
                 premise_words[premise].append(tmp)
 
     return premise_words
 
 
+def reverse_state(similarity_method):
+    if similarity_method == 'cos':
+        reverse = True
+    elif similarity_method == 'distance':
+        reverse = False
+    return reverse
+
+def get_candidates(candidate_method,similarity_method,premise_extraction):
+    if candidate_method == 'nltk':
+        premise_words = nltk_based(premise_extraction)
+    elif candidate_method == 'conceptnet':
+        premise_words = conceptnet_based(premise_extraction)
+    elif candidate_method == 'global_glove':
+        premise_words = global_glove(premise_extraction,similarity_method)
+    elif candidate_method == 'global_counter_fitted':
+        premise_words = global_counter_fitted(premise_extraction,similarity_method)
+
+    return premise_words
+
+def filter_process(premise_words,premise_extraction):
+
+    premise_words = filter_lemma(premise_words)
+
+    premise_words = filter_lemma_premise(premise_words,premise_extraction)
+
+    premise_words = filter_syn_premise(premise_words,premise_extraction)
+
+    premise_words = filter_hyper_premise(premise_words,premise_extraction)
+
+    premise_words = filter_hyper(premise_words)
 
 
-# glove,numbatch,model,counter_fitted
-# cos, distance
-
-# method_input,sim_input = 'counter_fitted','cos'
-# use glove for global_glove
-# use counter_fitted for global_counter_fitted
-method_input,sim_input = sys.argv[1], sys.argv[2]
-
-
-sim_method = sim_input
-method = method_input
-
-if sim_method == 'cos':
-    reverse = True
-elif sim_method == 'distance':
-    reverse = False
-
-
-os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"]="8"
-
-
-
-# sens = ["PersonX sneaks into PersonX's room","PersonX succeeds at speech","My flower have sunlights"]
-sens = ["My flower sunlights"]
-
-predictor = Predictor.from_path("https://storage.googleapis.com/allennlp-public-models/biaffine-dependency-parser-ptb-2020.04.06.tar.gz")
-result_dict = dependency_parse(predictor,sens)
-print(result_dict)
-
-
-# premise_words = nltk_based(result_dict)
-
-# premise_words = conceptnet_based(result_dict)
-
-# premise_words = global_glove(result_dict,sim_method,reverse)
-
-premise_words = global_counter_fitting(result_dict,sim_method,reverse)
+    return premise_words
 
 
 
 
+def main():
 
 
-premise_words = filter_lemma(premise_words)
-
-premise_words = filter_hyper(premise_words)
-
-
-
-
-premise_score = calculate_sim(result_dict,premise_words,method,sim_method)
-
-
-for premise in premise_score.keys():
-    score = premise_score[premise]
-    sorted_id = sorted(range(len(score)), key=lambda k: score[k],reverse= reverse)
-    premise_score[premise] = sorted_id
-
-top_k = 30
+    # candidate_method :[nltk,conceptnet,global_glove,global_counter_fitted]
+    # embedding_source: [glove,numbatch,model,counter_fitted]
+    # similarity_method: [cos,distance]
+    # candidate_method,embedding_source,similarity_method = sys.argv[1], sys.argv[2], sys.argv[3]
+    candidate_method,embedding_source,similarity_method = 'conceptnet', 'model', 'cos'
+    if candidate_method == 'global_glove':
+        embedding_source = 'glove'
+    elif candidate_method == 'global_counter_fitted':
+        embedding_source = 'counter_fitted'
 
 
-print(f' Use {method} to get embedding and calcaute similarity by {sim_method}')
-print(f'       ')
-for premise in premise_score.keys():
 
-    print(f'Premise is {premise}')
-    print(f'top_k :{top_k} high simiar words are:')
-    str = ''
-    for id in premise_score[premise][:top_k]:
-        str += ',' + premise_words[premise][id]
-    print(str[1:])
-    print('***********************************************************')
+
+    # sens = ["PersonX sneaks into PersonX's room","PersonX succeeds at speech","My flower have sunlights"]
+    sens = ["My flowers sunlight","PersonX sneaks into room"]
+
+    predictor = Predictor.from_path("https://storage.googleapis.com/allennlp-public-models/biaffine-dependency-parser-ptb-2020.04.06.tar.gz")
+    premise_extraction = dependency_parse(predictor,sens)
+    print(premise_extraction)
+
+
+    premise_words = get_candidates(candidate_method,similarity_method,premise_extraction)
+    premise_words = filter_noun_verb(premise_words)
+
+
+
+    premise_score = calculate_sim(premise_extraction,premise_words,embedding_source,similarity_method)
+
+    top_k_union = 400
+    premise_words = union_related(top_k_union,similarity_method,premise_score,premise_words)
+
+    premise_words = filter_process(premise_words,premise_extraction)
+
+    premise_score = calculate_sim(premise_extraction,premise_words,embedding_source,similarity_method)
+
+
+
+
+    top_k = 50
+    for premise in premise_score.keys():
+        score_total = np.zeros(len(premise_score[premise][0]))
+        for score in premise_score[premise]:
+            score_total += np.array(score)
+        sorted_id = sorted(range(len(score_total)),key = lambda i: score_total[i], reverse= reverse_state(similarity_method))[:top_k]
+        premise_score[premise] = sorted_id
+
+
+    for premise in premise_words:
+        tmp = []
+        sorted_id = premise_score[premise]
+        for id in sorted_id:
+            tmp.append(premise_words[premise][id])
+        print(f'premise : {premise}')
+        print(f'related words: {tmp}')
+
+if __name__ == '__main__':
+    main()
