@@ -17,18 +17,28 @@ lemmatizer = WordNetLemmatizer()
 nlp = spacy.load('en_core_web_sm')
 
 def pos_keyword_extraction(inputs):
-    #assert sent_path.endswith(".txt")
+    premise_extraction = dict()
+    keywords = []
     for sent in inputs:
+        tmp =ddict(list)
         doc = nlp(str(sent))
         keywords = []
         for token in doc:
-            if (token.pos_.startswith('V') or token.pos_.startswith('PROP')) and token.is_alpha and not token.is_stop:
-                keywords.append(token.lemma_)
+            if (token.pos_.startswith('V')) and token.is_alpha and not token.is_stop:
+                tmp['verb'].append(token.lemma_)
+
+            if (token.tag_.startswith('N')) and token.is_alpha and not token.is_stop:
+                tmp['noun'].append(token.lemma_)
+
         for noun_chunk in doc.noun_chunks:
             root_noun = noun_chunk[-1]
             if root_noun.pos_ == "NOUN":
-                keywords.append(root_noun.lemma_)
-    return keywords
+                tmp['noun'].append(root_noun.lemma_)
+
+        tmp['noun'] = list(set(tmp['noun']) - {'PersonX','PersonY'})
+        tmp['verb'] = list(set(tmp['verb']))
+        premise_extraction[sent] = tmp
+    return premise_extraction
 
 def dependency_parse(predictor,inputs):
 
@@ -124,7 +134,7 @@ def filter_noun_verb(premise_words):
         words = nltk.pos_tag(premise_words[premise])
         tmp = [word[0] for word in words if word[1][0] in ['N','V']]
         premise_words[premise] = tmp
-    
+
     return premise_words
 
 def filter_lemma(premise_words):
@@ -680,15 +690,19 @@ def main():
         embedding_source = 'counter_fitted'
 
 
-
-
+    sens = []
+    with open('input_file/query_CPE.csv') as f:
+        for _ in f:
+            sens.append(_)
     # sens = ["PersonX sneaks into PersonX's room","PersonX succeeds at speech","My flower have sunlights"]
-    sens = ["My flowers sunlight","PersonX sneaks into room"]
+    print(sens)
 
-    predictor = Predictor.from_path("https://storage.googleapis.com/allennlp-public-models/biaffine-dependency-parser-ptb-2020.04.06.tar.gz")
-    premise_extraction = dependency_parse(predictor,sens)
+    # predictor = Predictor.from_path("https://storage.googleapis.com/allennlp-public-models/biaffine-dependency-parser-ptb-2020.04.06.tar.gz")
+    # premise_extraction = dependency_parse(predictor,sens)
+
+    premise_extraction = pos_keyword_extraction(sens)
+
     print(premise_extraction)
-
 
     premise_words = get_candidates(candidate_method,similarity_method,premise_extraction)
     premise_words = filter_noun_verb(premise_words)
@@ -722,6 +736,7 @@ def main():
         for id in sorted_id:
             tmp.append(premise_words[premise][id])
         print(f'premise : {premise}')
+        print(f'extracted words: {premise_extraction[premise]}')
         print(f'related words: {tmp}')
 
 if __name__ == '__main__':
