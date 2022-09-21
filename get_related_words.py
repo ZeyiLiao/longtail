@@ -1,4 +1,3 @@
-from tracemalloc import start
 from helper import *
 import requests
 import time
@@ -30,13 +29,29 @@ def pos_keyword_extraction(inputs):
             if (token.tag_.startswith('N')) and token.is_alpha and not token.is_stop:
                 tmp['noun'].append(token.lemma_)
 
+            if (token.pos_.startswith('ADJ') and token.is_alpha and not token.is_stop):
+                tmp['adj'].append(token.lemma_)
+
+
         for noun_chunk in doc.noun_chunks:
             root_noun = noun_chunk[-1]
             if root_noun.pos_ == "NOUN":
                 tmp['noun'].append(root_noun.lemma_)
 
-        tmp['noun'] = list(set(tmp['noun']) - {'PersonX','PersonY'})
+
+        tmp['noun'] = list(set(tmp['noun']) - {'PersonX','PersonY','personY','personX','persony','personx'})
         tmp['verb'] = list(set(tmp['verb']))
+        tmp['adj'] = list(set(tmp['adj']) - {'PersonX','PersonY','personY','personX','persony','personx'})
+
+
+        if len(tmp['noun']) != 0:
+            tmp['verb'] = []
+            tmp['adj'] = []
+        elif len(tmp['adj']) != 0:
+            tmp['verb'] = []
+
+        assert(len(tmp['noun']) * len(tmp['verb'] * len(tmp['adj'])) == 0)
+
         premise_extraction[sent] = tmp
     return premise_extraction
 
@@ -59,6 +74,49 @@ def dependency_parse(predictor,inputs):
         premise_extraction[input] = tmp
     return premise_extraction
 
+def filter_empty(premise_words):
+    filtered_premise = []
+    for premise in premise_words.keys():
+        if len(premise_words[premise]) == 0:
+            filtered_premise.append(premise)
+
+    for premise in filtered_premise:
+        premise_words.pop(premise)
+    return premise_words
+
+def filter_uncommon(premise_words):
+
+    for premise in premise_words.keys():
+
+        tmp = []
+        for word in premise_words[premise]:
+            tmp_syn = wordnet.synsets(word)
+            if len(tmp_syn) == 0 and '_' in word:
+                continue
+            else:
+                tmp.append(word)
+
+        premise_words[premise] = tmp
+
+    return premise_words
+
+def filter_common_verb(premise_words):
+    common_verbs = ["be","have","do","say","get","make","go","know","take","see","come","think","look","want","give","use","find","tell","ask","work","seem","feel","try","leave","call"]
+
+    for premise in premise_words.keys():
+
+        tmp = []
+        for word in premise_words[premise]:
+            if word not in common_verbs:
+                tmp.append(word)
+
+        premise_words[premise] = tmp
+
+    return premise_words
+
+
+
+
 
 def filter_lemma_premise(premise_words,premise_extraction):
 
@@ -75,7 +133,7 @@ def filter_lemma_premise(premise_words,premise_extraction):
         tmp = []
         for word in premise_words[premise]:
 
-            if lemmatizer.lemmatize(word) not in lemma_filter:
+            if word not in lemma_filter:
                 tmp.append(word)
         premise_words[premise] = tmp
 
@@ -124,18 +182,21 @@ def filter_hyper_premise(premise_words,premise_extraction):
                 pass
         premise_words[premise] = tmp
 
-
     return premise_words
+
 
 def filter_noun_verb(premise_words):
 
     for premise in premise_words.keys():
 
         words = nltk.pos_tag(premise_words[premise])
-        tmp = [word[0] for word in words if word[1][0] in ['N','V']]
-        premise_words[premise] = tmp
+        tmp = [word[0] for word in words if (word[1][0] in ['N','V']) and ('_' not in word[0])]
+        premise_words[premise] = list(set(tmp))
 
     return premise_words
+
+
+
 
 def filter_lemma(premise_words):
 
@@ -145,9 +206,11 @@ def filter_lemma(premise_words):
         lemma_filter = []
         tmp = []
         for word in words:
-            if lemmatizer.lemmatize(word) not in lemma_filter:
-                tmp.append(word)
-            lemma_filter.append(lemmatizer.lemmatize(word))
+            lemmatized_word = lemmatizer.lemmatize(word)
+            if lemmatized_word not in lemma_filter and len(word) != 1:
+                tmp.append(lemmatized_word)
+
+            lemma_filter.append(lemmatized_word)
             lemma_filter = list(set(lemma_filter))
 
         premise_words[premise] = tmp
@@ -182,12 +245,11 @@ def filter_hyper(premise_words):
         word_synsets_dict_final = dict()
 
         for word in premise_words[premise]:
-            word = word.replace(' ','_')
+
             tmp_syn = wordnet.synsets(word)
             # wordnet 找不到 我就认为是生僻词
             if len(tmp_syn) == 0:
                 continue
-
 
             key_filter = []
             insert = True
@@ -199,9 +261,11 @@ def filter_hyper(premise_words):
 
                     if len(tmp_syn) > len(synsets):
                         key_filter.append(key)
-                    elif tmp_syn == synsets:
+
+                    elif set(tmp_syn) == set(synsets):
                         insert = False
                         break
+
                     elif len(tmp_syn) < len(synsets):
                         insert = False
                         break
@@ -212,11 +276,12 @@ def filter_hyper(premise_words):
             if insert:
                 word_synsets_dict[word] = tmp_syn
 
-
-
         premise_words[premise] = list(word_synsets_dict.keys())
 
     return premise_words
+
+
+
 
 
 def metric(l1,l2,similarity_method):
@@ -368,22 +433,80 @@ def model_based(query,words,tokenizer,embedding,dim,device,similarity_method):
 
     return score
 
+def calculate(tmp,method,mid,sorted_ids):
+    if method == 'intersection':
+        for sorted_id in sorted_ids:
+            tmp = tmp & set(sorted_id[:mid])
+    elif method == 'union':
+        for sorted_id in sorted_ids:
+            tmp = tmp | set(sorted_id[:mid])
 
-def union_related(top_k_union,similarity_method,premise_score,premise_words):
+    return tmp
 
 
+def binary_search_topk(sorted_ids,top_k,method):
+
+    start = 0
+    end = len(sorted_ids[0])
+    length = end
+    while start <= end:
+
+        mid = int((start + end) /2)
+        if method == 'intersection':
+            tmp = set(range(length))
+
+        elif method == 'union':
+            tmp = set()
+
+        tmp = calculate(tmp,method,mid,sorted_ids)
+
+        count = len(tmp)
+
+        if count > top_k:
+            end = mid-1
+        elif count < top_k:
+            start = mid+1
+        else:
+            break
+
+    try:
+        assert len(tmp)==top_k
+    except:
+        tmp = calculate(tmp,method,mid+1,sorted_ids)
+
+    return list(tmp)
+
+
+
+
+def get_top_related(combine_method,top_k,similarity_method,premise_score,premise_words):
 
     reverse = reverse_state(similarity_method)
     for premise in premise_score.keys():
         scores = premise_score[premise]
 
-        tmp = set(range(len(scores[0])))
+
+
+        if combine_method == 'union':
+            tmp = set()
+        elif combine_method == 'intersection':
+            tmp = set(range(len(scores[0])))
 
         for score in scores:
-            sorted_id = set(sorted(range(len(score)), key=lambda k: score[k],reverse= reverse)[:top_k_union])
-            tmp = tmp & sorted_id
+            sorted_id = set(sorted(range(len(score)), key=lambda k: score[k],reverse= reverse)[:top_k])
+            if combine_method == 'union':
+                tmp = tmp | sorted_id
+            elif combine_method == 'intersection':
+                tmp = tmp & sorted_id
 
-        premise_score[premise] = list(tmp)
+        # sorted_ids = []
+        # for score in scores:
+        #     sorted_id = sorted(range(len(score)), key=lambda k: score[k],reverse= reverse)
+        #     sorted_ids.append(sorted_id)
+        # scores = binary_search_topk(sorted_ids,top_k,combine_method)
+
+
+        premise_score[premise] = tmp
 
     def retrieve_word(id):
         return premise_words[premise][id]
@@ -520,7 +643,7 @@ def nltk_based(premise_extraction):
 def conceptnet_based(premise_extraction):
     prepend = 'http://api.conceptnet.io/c/en'
     premise_words = dict()
-    for premise in premise_extraction.keys():
+    for premise in tqdm(premise_extraction.keys()):
 
         words_dict = premise_extraction[premise]
         candidates = []
@@ -544,7 +667,7 @@ def conceptnet_based(premise_extraction):
 
             while (len(edges) != 0):
 
-                for edge in tqdm(edges):
+                for edge in edges:
                     rel = edge['rel']['label']
                     if rel not in excluded_rel:
 
@@ -639,12 +762,17 @@ def global_counter_fitted(premise_extraction,similarity_method):
     return premise_words
 
 
+
+
 def reverse_state(similarity_method):
     if similarity_method == 'cos':
         reverse = True
     elif similarity_method == 'distance':
         reverse = False
     return reverse
+
+
+
 
 def get_candidates(candidate_method,similarity_method,premise_extraction):
     if candidate_method == 'nltk':
@@ -658,9 +786,13 @@ def get_candidates(candidate_method,similarity_method,premise_extraction):
 
     return premise_words
 
-def filter_process(premise_words,premise_extraction):
+
+def pre_filter_process(premise_words,premise_extraction):
+
+    premise_words = filter_noun_verb(premise_words)
 
     premise_words = filter_lemma(premise_words)
+
 
     premise_words = filter_lemma_premise(premise_words,premise_extraction)
 
@@ -668,7 +800,23 @@ def filter_process(premise_words,premise_extraction):
 
     premise_words = filter_hyper_premise(premise_words,premise_extraction)
 
+    premise_words = filter_uncommon(premise_words)
+
+    premise_words = filter_common_verb(premise_words)
+
+    premise_words = filter_empty(premise_words)
+
+    return premise_words
+
+
+
+
+
+def post_filter_process(premise_words):
+
+
     premise_words = filter_hyper(premise_words)
+    premise_words = filter_empty(premise_words)
 
 
     return premise_words
@@ -676,8 +824,13 @@ def filter_process(premise_words,premise_extraction):
 
 
 
-def main():
 
+
+
+
+
+def get_related_words(input_file,output_file):
+    print('Get related words start')
 
     # candidate_method :[nltk,conceptnet,global_glove,global_counter_fitted]
     # embedding_source: [glove,numbatch,model,counter_fitted]
@@ -691,37 +844,55 @@ def main():
 
 
     sens = []
-    with open('input_file/query_CPE.csv') as f:
-        for _ in f:
-            sens.append(_)
+    with open(input_file) as f:
+        reader = csv.reader(f)
+        for line in reader:
+            if len(line) != 0:
+                sens.append(line[0])
     # sens = ["PersonX sneaks into PersonX's room","PersonX succeeds at speech","My flower have sunlights"]
-    print(sens)
 
     # predictor = Predictor.from_path("https://storage.googleapis.com/allennlp-public-models/biaffine-dependency-parser-ptb-2020.04.06.tar.gz")
     # premise_extraction = dependency_parse(predictor,sens)
 
     premise_extraction = pos_keyword_extraction(sens)
+    with open('./extracted_words.pkl','wb') as f:
+        pickle.dump(premise_extraction,f)
 
     print(premise_extraction)
-
     premise_words = get_candidates(candidate_method,similarity_method,premise_extraction)
-    premise_words = filter_noun_verb(premise_words)
 
 
-
-    premise_score = calculate_sim(premise_extraction,premise_words,embedding_source,similarity_method)
-
-    top_k_union = 400
-    premise_words = union_related(top_k_union,similarity_method,premise_score,premise_words)
-
-    premise_words = filter_process(premise_words,premise_extraction)
+    premise_words = pre_filter_process(premise_words,premise_extraction)
 
     premise_score = calculate_sim(premise_extraction,premise_words,embedding_source,similarity_method)
 
 
 
+    combine_method = 'union'
+    if combine_method == 'intersection':
+        top_k = 400
+    elif combine_method == 'union':
+        top_k = 5
+    # top_k = 50
+    premise_words = get_top_related(combine_method,top_k,similarity_method,premise_score,premise_words)
 
-    top_k = 50
+    # for premise in premise_words:
+
+    #     print(f'premise : {premise}')
+    #     print(f'extracted words: {premise_extraction[premise]}')
+    #     print(f'related words: {premise_words[premise]}')
+
+
+    premise_words = post_filter_process(premise_words)
+
+
+
+    premise_score = calculate_sim(premise_extraction,premise_words,embedding_source,similarity_method)
+
+
+    # select top_k candidates by average similarity
+
+    top_k = 5
     for premise in premise_score.keys():
         score_total = np.zeros(len(premise_score[premise][0]))
         for score in premise_score[premise]:
@@ -730,6 +901,7 @@ def main():
         premise_score[premise] = sorted_id
 
 
+    print('after filtration')
     for premise in premise_words:
         tmp = []
         sorted_id = premise_score[premise]
@@ -738,6 +910,15 @@ def main():
         print(f'premise : {premise}')
         print(f'extracted words: {premise_extraction[premise]}')
         print(f'related words: {tmp}')
+        premise_words[premise] = tmp
+
+
+    with open(output_file,'wb') as tf:
+        pickle.dump(premise_words,tf)
+
 
 if __name__ == '__main__':
-    main()
+
+    query_file = 'input_file/query_CPE.csv'
+    related_words_save_file = './related_words_testtest.pkl'
+    get_related_words(query_file,related_words_save_file)

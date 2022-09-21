@@ -1,0 +1,3960 @@
+Original premise:PersonX asks what to do
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['ask'], 'noun': []})
+
+related words['ak', 'answer', 'seek', 'request', 'query']
+
+***********************
+
+Original premise:PersonX is disappointed by the Internet
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['internet']})
+
+related words['online', 'network', 'computer', 'community']
+
+***********************
+
+Original premise:PersonX makes sure PersonY is happy
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['happy', 'sure'], 'verb': [], 'noun': []})
+
+related words['love', 'secure', 'please', 'peace', 'holiday']
+
+***********************
+
+Original premise:PersonX plans to return to PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['plan'], 'verb': []})
+
+related words['plot', 'budget', 'chart', 'goal', 'dimension']
+
+***********************
+
+Original premise:PersonX stands still for a long time
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['time']})
+
+related words['year', 'term', 'month', 'day', 'minute']
+
+***********************
+
+Original premise:PersonX has a fight with his dad
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['dad', 'fight'], 'verb': []})
+
+related words['mom', 'father', 'attack', 'baby', 'daughter']
+
+***********************
+
+Original premise:PersonX wears his helmet
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['helmet', 'wear'], 'verb': []})
+
+related words['gear', 'suit', 'dress', 'shirt', 'fashion']
+
+***********************
+
+Original premise:PersonX spends time in the country
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['country', 'time']})
+
+related words['city', 'year', 'month', 'minute', 'term']
+
+***********************
+
+Original premise:PersonX's pants are too tight
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['pant'], 'verb': []})
+
+related words['palpitate', 'zipper', 'breath']
+
+***********************
+
+Original premise:PersonX falls down while skateboarding
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['skateboard', 'fall'], 'noun': []})
+
+related words['skate', 'break', 'winter', 'spring', 'blow']
+
+***********************
+
+Original premise:PersonX experiences the world
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['experience', 'world'], 'verb': []})
+
+related words['experient', 'life', 'planet', 'time', 'future']
+
+***********************
+
+Original premise:PersonX is chatting on the phone
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['phone']})
+
+related words['communication', 'device', 'voice', 'message', 'talk']
+
+***********************
+
+Original premise:PersonX hides a secret
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['secret']})
+
+related words['success', 'password', 'secure', 'knowledge', 'confidence']
+
+***********************
+
+Original premise:PersonX makes a modest proposal
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['proposal']})
+
+related words['proffer', 'proponent']
+
+***********************
+
+Original premise:PersonX doesn’t approve of personY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['approve'], 'noun': []})
+
+related words['prove', 'approval', 'vetted', 'disapproval']
+
+***********************
+
+Original premise:PersonX is out to have fun
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['fun'], 'verb': []})
+
+related words['cool', 'music', 'joy', 'buy', 'kid']
+
+***********************
+
+Original premise:PersonX mentions his recent work on the new distribution system
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['distribution', 'work', 'system']})
+
+related words['network', 'method', 'task', 'job', 'program']
+
+***********************
+
+Original premise:PersonX sees what’s going on
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['go', 'see'], 'noun': []})
+
+related words['known', 'home', 'time', 'game', 'show']
+
+***********************
+
+Original premise:PersonX becomes PersonY's surrogate father
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['father'], 'verb': []})
+
+related words['dad', 'daughter', 'husband', 'family', 'child']
+
+***********************
+
+Original premise:PersonX sells PersonY’s information
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['information']})
+
+related words['knowledge', 'evidence', 'intelligence', 'communication', 'message']
+
+***********************
+
+Original premise:PersonX does not dress properly
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['dress'], 'noun': []})
+
+related words['shirt', 'suit', 'fashion', 'tie', 'coat']
+
+***********************
+
+Original premise:PersonX gets over his loss
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['loss']})
+
+related words['lost', 'damage', 'death', 'gain', 'profit']
+
+***********************
+
+Original premise:PersonX invents the microscope
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['invent', 'microscope'], 'verb': []})
+
+related words['scope', 'micro', 'instrument', 'coiner', 'discover']
+
+***********************
+
+Original premise:PersonX has lots of children
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['child', 'lot'], 'verb': []})
+
+related words['father', 'girl', 'brother', 'mother', 'park']
+
+***********************
+
+Original premise:PersonX sends PersonY to his death
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['death']})
+
+related words['killing', 'birth', 'cancer', 'health', 'danger']
+
+***********************
+
+Original premise:PersonX believes in the cause
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['cause']})
+
+related words['purpose', 'source', 'event', 'create', 'result']
+
+***********************
+
+Original premise:PersonX takes PersonY to the dance
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['dance']})
+
+related words['trance', 'prance', 'romance']
+
+***********************
+
+Original premise:PersonX never knows where to find her
+
+extracted wordsdefaultdict(<class 'list'>, {'verb': ['find', 'know'], 'noun': [], 'adj': []})
+
+related words['learn', 'remember', 'seek', 'reason', 'result']
+
+***********************
+
+Original premise:PersonX convinces PersonY to write a book
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['convince', 'book'], 'verb': []})
+
+related words['prince', 'evince', 'card', 'sheet', 'writing']
+
+***********************
+
+Original premise:PersonX makes more trouble
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['trouble']})
+
+related words['tribulate', 'tribulation', 'turbulent', 'turbid']
+
+***********************
+
+Original premise:PersonX answers questions in class
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['answer', 'class', 'question'], 'verb': []})
+
+related words['reason', 'problem', 'method', 'attribute', 'truth']
+
+***********************
+
+Original premise:PersonX plays the music
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['music']})
+
+related words['sound', 'song', 'artist', 'album', 'radio']
+
+***********************
+
+Original premise:PersonX is glad to hear the news
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['news']})
+
+related words['story', 'report', 'article', 'morning', 'today']
+
+***********************
+
+Original premise:PersonX requests a break
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['request', 'break'], 'verb': []})
+
+related words['repair', 'require', 'remove', 'demand', 'reply']
+
+***********************
+
+Original premise:PersonX's team wins the contest
+
+extracted wordsdefaultdict(<class 'list'>, {'noun': ['team', 'contest'], 'verb': [], 'adj': []})
+
+related words['contention', 'game', 'group', 'club', 'player']
+
+***********************
+
+Original premise:PersonX is in charge of his life
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['life', 'charge'], 'verb': []})
+
+related words['world', 'time', 'power', 'attack', 'death']
+
+***********************
+
+Original premise:PersonX offers PersonY his seat
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['seat']})
+
+related words['bench', 'chair', 'home', 'swing', 'train']
+
+***********************
+
+Original premise:PersonX goes back to basics
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['basic']})
+
+related words['regular', 'foundation', 'framework', 'base', 'sound']
+
+***********************
+
+Original premise:PersonX moves a piece of furniture
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['move', 'furniture', 'piece'], 'verb': []})
+
+related words['turn', 'dress', 'kick', 'attack', 'task']
+
+***********************
+
+Original premise:PersonX and PersonY play in creek
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['creek'], 'verb': []})
+
+related words['crick', 'cove', 'busk', 'dock']
+
+***********************
+
+Original premise:PersonX creates a flamethrower
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['flamethrower']})
+
+related words['blowtorch', 'zippo', 'thrower']
+
+***********************
+
+Original premise:PersonX gives up on a diet
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['diet']})
+
+related words['brit', 'japan', 'recess']
+
+***********************
+
+Original premise:PersonX explores a new idea
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['idea', 'explore'], 'verb': []})
+
+related words['ideologue', 'ideology', 'exploration', 'exploratory']
+
+***********************
+
+Original premise:PersonX allows PersonY to examine his body
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['body']})
+
+related words['people', 'entity', 'frame', 'shape']
+
+***********************
+
+Original premise:PersonX has another beer
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['beer'], 'verb': []})
+
+related words['brew', 'alcohol', 'wine', 'bread', 'bear']
+
+***********************
+
+Original premise:PersonX welcomes the jubilee
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['jubilee']})
+
+related words['jubilation', 'indulgence', 'celebration', 'israelite', 'catholicism']
+
+***********************
+
+Original premise:PersonX acts as his or her own boss
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['boss', 'act'], 'verb': []})
+
+related words['fight', 'agent', 'manager', 'role', 'president']
+
+***********************
+
+Original premise:PersonX buys a tool
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['tool']})
+
+related words['weapon', 'device', 'knife', 'machine', 'software']
+
+***********************
+
+Original premise:PersonX continues the battle
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['battle']})
+
+related words['attack', 'enemy', 'fighting', 'trial', 'weapon']
+
+***********************
+
+Original premise:PersonX is red with anger
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['anger'], 'verb': []})
+
+related words['rage', 'harm', 'storm', 'rouse', 'fight']
+
+***********************
+
+Original premise:PersonX brings a log to the fireplace
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['log', 'fireplace']})
+
+related words['place', 'fire', 'firebox', 'firewood', 'block']
+
+***********************
+
+Original premise:PersonX's eyes roll back in his head
+
+extracted wordsdefaultdict(<class 'list'>, {'noun': ['head', 'eye'], 'verb': [], 'adj': []})
+
+related words['forehead', 'focus', 'sight', 'toe', 'watching']
+
+***********************
+
+Original premise:PersonX meets the right people
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['people']})
+
+related words['person', 'woman', 'men', 'family']
+
+***********************
+
+Original premise:PersonX has no plan
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['plan'], 'verb': []})
+
+related words['plot', 'budget', 'chart', 'goal', 'dimension']
+
+***********************
+
+Original premise:PersonX has been betrayed by PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['betray'], 'noun': []})
+
+related words['astray', 'tray', 'fraud']
+
+***********************
+
+Original premise:PersonX insists on driving
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['insist'], 'verb': []})
+
+related words['subsist', 'urge', 'postulate']
+
+***********************
+
+Original premise:PersonX makes a dirty joke
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['joke']})
+
+related words['juggle']
+
+***********************
+
+Original premise:PersonX goes out swimming
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['swimming']})
+
+related words['swimsuit', 'diving']
+
+***********************
+
+Original premise:PersonX sets his hopes high
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['hope', 'set'], 'verb': []})
+
+related words['hone', 'hull', 'game', 'box', 'rise']
+
+***********************
+
+Original premise:PersonX organizes the meeting
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['meeting']})
+
+related words['boring', 'briefing', 'proceeding']
+
+***********************
+
+Original premise:PersonX carries out a conversation
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['conversation']})
+
+related words['converse']
+
+***********************
+
+Original premise:PersonX fails to decide
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['decide', 'fail'], 'noun': []})
+
+related words['decision', 'success', 'decay', 'result', 'task']
+
+***********************
+
+Original premise:PersonX and PersonY have a family
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['family'], 'verb': []})
+
+related words['community', 'daughter', 'brother', 'mom', 'father']
+
+***********************
+
+Original premise:PersonX attends every class
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['class', 'attend'], 'verb': []})
+
+related words['tend', 'extend', 'attention', 'method', 'school']
+
+***********************
+
+Original premise:PersonX hurts for PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['hurt'], 'verb': []})
+
+related words['yelp', 'husk', 'gravel', 'helve', 'limp']
+
+***********************
+
+Original premise:PersonX makes mistakes when coding
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['mistake']})
+
+related words['outtake']
+
+***********************
+
+Original premise:PersonX writes a brief letter
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['letter']})
+
+related words['message', 'mail', 'office', 'type', 'note']
+
+***********************
+
+Original premise:PersonX has good advice for PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['advice'], 'verb': []})
+
+related words['advisor', 'unadvised', 'admonition', 'advisement']
+
+***********************
+
+Original premise:PersonX loses balance
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['balance']})
+
+related words['match', 'offset', 'weight', 'adjust', 'strike']
+
+***********************
+
+Original premise:PersonX thinks PersonY is doing a bad job
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['job']})
+
+related words['doctor', 'contract', 'trade', 'employment', 'student']
+
+***********************
+
+Original premise:PersonX purchases PersonY’s property
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['purchase', 'property'], 'verb': []})
+
+related words['possession', 'estate', 'location', 'device', 'pawnshop']
+
+***********************
+
+Original premise:PersonX tells PersonY that he is defeated
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['defeat', 'tell'], 'noun': []})
+
+related words['fail', 'share', 'show', 'event', 'story']
+
+***********************
+
+Original premise:PersonX sends the ambulance
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['ambulance']})
+
+related words['ambulate', 'ambulation']
+
+***********************
+
+Original premise:PersonX makes a complaint
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['complaint']})
+
+related words['plaint', 'complain', 'plaintiff', 'complainer']
+
+***********************
+
+Original premise:PersonX is scared of the dark
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['dark', 'scared'], 'noun': [], 'verb': []})
+
+related words['scream', 'blind', 'cloud', 'hidden', 'dim']
+
+***********************
+
+Original premise:PersonX gets on the floor
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['floor']})
+
+related words['tile', 'surface', 'ground', 'room', 'building']
+
+***********************
+
+Original premise:PersonX wins at the casino
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['casino', 'win'], 'verb': []})
+
+related words['wan', 'beer', 'game', 'success', 'good']
+
+***********************
+
+Original premise:PersonX builds a clubhouse
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['clubhouse']})
+
+related words['house', 'clubroom', 'clubby', 'building']
+
+***********************
+
+Original premise:PersonX agrees to take part in a course
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['part', 'course']})
+
+related words['service', 'school', 'member', 'half', 'week']
+
+***********************
+
+Original premise:PersonX swallows a grapefruit
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['grapefruit']})
+
+related words['grape', 'fruit']
+
+***********************
+
+Original premise:PersonX takes PersonY along for the ride
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['ride']})
+
+related words['bike', 'trip', 'roller', 'float', 'swing']
+
+***********************
+
+Original premise:PersonX expresses his love
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['love']})
+
+related words['hate', 'baby', 'peace', 'heart', 'marriage']
+
+***********************
+
+Original premise:PersonX drinks too much alcohol
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['alcohol', 'drink'], 'verb': []})
+
+related words['beer', 'food', 'energy', 'animal', 'drunkard']
+
+***********************
+
+Original premise:PersonX says he won't do that again
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['say'], 'noun': []})
+
+related words['pay', 'speak', 'agree', 'write', 'offer']
+
+***********************
+
+Original premise:PersonX flees the scene
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['flee', 'scene'], 'verb': []})
+
+related words['movie', 'location', 'stage', 'chapter', 'background']
+
+***********************
+
+Original premise:PersonX resorts to physical violence
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['violence', 'resort'], 'verb': []})
+
+related words['rescue', 'violent', 'terrorism', 'torture', 'weapon']
+
+***********************
+
+Original premise:PersonX stutters when answering
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['stutter'], 'verb': []})
+
+related words['mutter', 'slide']
+
+***********************
+
+Original premise:PersonX hates spending time with PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['hate', 'time'], 'verb': []})
+
+related words['love', 'year', 'month', 'minute', 'violence']
+
+***********************
+
+Original premise:PersonX finishes PersonY's work
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['work', 'finish'], 'verb': []})
+
+related words['finland', 'accomplish', 'job', 'time', 'task']
+
+***********************
+
+Original premise:PersonX crashes into a ditch
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['ditch', 'crash'], 'verb': []})
+
+related words['brash', 'crush', 'dike', 'dip', 'dummy']
+
+***********************
+
+Original premise:PersonX sees a new movie
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['movie']})
+
+related words['music', 'show', 'video', 'story', 'feature']
+
+***********************
+
+Original premise:PersonX finds the missing kitty
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['kitty']})
+
+related words['poker', 'pus']
+
+***********************
+
+Original premise:PersonX uses tools
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['tool']})
+
+related words['weapon', 'device', 'knife', 'machine', 'software']
+
+***********************
+
+Original premise:PersonX gives PersonY some good advice
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['advice']})
+
+related words['advisor', 'unadvised', 'admonition', 'advisement']
+
+***********************
+
+Original premise:PersonX blows it
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['blow'], 'noun': []})
+
+related words['push', 'stroke', 'strike', 'move', 'play']
+
+***********************
+
+Original premise:PersonX sheds light on the truth
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['truth', 'light']})
+
+related words['reality', 'focus', 'dark', 'reason', 'answer']
+
+***********************
+
+Original premise:PersonX hits a big shot
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['shot']})
+
+related words['fired', 'blow', 'drive', 'cast', 'gun']
+
+***********************
+
+Original premise:PersonX questions an axiom
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['axiom', 'question'], 'verb': []})
+
+related words['answer', 'problem', 'topic', 'truth', 'reply']
+
+***********************
+
+Original premise:PersonX feels judged by PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['feels'], 'verb': []})
+
+related words['emotion', 'pain', 'hot']
+
+***********************
+
+Original premise:PersonX accidentally spills something on PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['spill'], 'noun': []})
+
+related words['spile', 'slip', 'lath']
+
+***********************
+
+Original premise:PersonX attempts to be funny
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['attempt'], 'verb': []})
+
+related words['fawn', 'tinker', 'whack', 'contribution', 'chase']
+
+***********************
+
+Original premise:PersonX learns self-worth
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['self']})
+
+related words['confidence', 'body', 'auto', 'person', 'practice']
+
+***********************
+
+Original premise:PersonX helps PersonY with her French homework
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['homework']})
+
+related words['schoolwork', 'housework', 'classwork', 'home']
+
+***********************
+
+Original premise:PersonX watches a video
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['video']})
+
+related words['movie', 'review', 'radio', 'image']
+
+***********************
+
+Original premise:PersonX scolds the students
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['scold', 'student'], 'verb': []})
+
+related words['school', 'graduate', 'college', 'education', 'learning']
+
+***********************
+
+Original premise:PersonX has a long life
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['life'], 'verb': []})
+
+related words['world', 'time', 'people', 'death', 'reality']
+
+***********************
+
+Original premise:PersonX writes a journal entry
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['journal', 'entry']})
+
+related words['news', 'return', 'register', 'engineering', 'tree']
+
+***********************
+
+Original premise:PersonX gets an order
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['order']})
+
+related words['repair', 'command', 'demand', 'sequence', 'service']
+
+***********************
+
+Original premise:PersonX doesn't ask for help
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['help']})
+
+related words['support', 'harm', 'saving', 'save', 'benefit']
+
+***********************
+
+Original premise:PersonX helps PersonY out of a jam
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['jam']})
+
+related words['stuff', 'song', 'push', 'jar']
+
+***********************
+
+Original premise:PersonX believes that PersonY is hungry
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['hungry'], 'verb': [], 'noun': []})
+
+related words['hungriness', 'hunger', 'barren']
+
+***********************
+
+Original premise:PersonX completes another project
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['project']})
+
+related words['program', 'campaign', 'goal', 'report', 'show']
+
+***********************
+
+Original premise:PersonX suggests a compromise
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['compromise']})
+
+related words['promise', 'compound']
+
+***********************
+
+Original premise:PersonX receives confirmation
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['confirmation']})
+
+related words['confirming', 'confirmed']
+
+***********************
+
+Original premise:PersonX is unable to get along with personY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['unable'], 'noun': [], 'verb': []})
+
+related words['inability', 'ability', 'inert']
+
+***********************
+
+Original premise:PersonX gets up from the table
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['table']})
+
+related words['plate', 'header', 'book', 'floor', 'setting']
+
+***********************
+
+Original premise:PersonX takes things slowly
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['thing']})
+
+related words['stuff', 'being', 'person', 'living', 'job']
+
+***********************
+
+Original premise:PersonX is never asked back to the restaurant
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['restaurant']})
+
+related words['restaurateur']
+
+***********************
+
+Original premise:PersonX laughs at her previous joke
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['laugh', 'joke'], 'verb': []})
+
+related words['fun', 'cry', 'story', 'result']
+
+***********************
+
+Original premise:PersonX quits the company
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['company']})
+
+related words['business', 'office', 'service', 'team', 'group']
+
+***********************
+
+Original premise:PersonX becomes religious
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['religious'], 'noun': [], 'verb': []})
+
+related words['faith', 'holiday', 'community', 'church', 'cult']
+
+***********************
+
+Original premise:PersonX organizes the search party
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['party', 'search']})
+
+related words['group', 'family', 'politics', 'music', 'finding']
+
+***********************
+
+Original premise:PersonX waters PersonY's plants
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['plant', 'water'], 'verb': []})
+
+related words['watermelon', 'waterworks', 'boat', 'forest', 'flower']
+
+***********************
+
+Original premise:PersonX gives him just the right amount
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['amount']})
+
+related words['limit', 'cost', 'portion', 'mass', 'bill']
+
+***********************
+
+Original premise:PersonX avoids the gutter
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['gutter']})
+
+related words['gut', 'gout', 'gargoyle']
+
+***********************
+
+Original premise:PersonX organizes PersonY's possessions
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['possession']})
+
+related words['possessing', 'dispossess']
+
+***********************
+
+Original premise:PersonX fails at getting a degree
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['degree']})
+
+related words['minute', 'depth', 'intensity', 'resolution', 'location']
+
+***********************
+
+Original premise:PersonX gets ready for a date
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['date']})
+
+related words['month', 'year', 'day', 'movie', 'time']
+
+***********************
+
+Original premise:PersonX doubts PersonY’s ability
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['ability', 'doubt'], 'verb': []})
+
+related words['ness', 'tolerance', 'quality', 'intelligence']
+
+***********************
+
+Original premise:PersonX takes it easy
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['easy'], 'verb': [], 'noun': []})
+
+related words['simple', 'snap', 'fast', 'luck', 'move']
+
+***********************
+
+Original premise:PersonX has lunch with the children
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['child', 'lunch'], 'verb': []})
+
+related words['hunch', 'brunch', 'father', 'lump', 'girl']
+
+***********************
+
+Original premise:PersonX speaks out against PersonY's candidacy
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['candidacy']})
+
+related words['candidate']
+
+***********************
+
+Original premise:PersonX fails to confront PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['fail', 'confront'], 'noun': []})
+
+related words['front', 'success', 'task', 'result', 'progress']
+
+***********************
+
+Original premise:PersonX announces that it's a big day for her
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['announce', 'day'], 'verb': []})
+
+related words['denounce', 'renounce', 'month', 'week', 'hour']
+
+***********************
+
+Original premise:PersonX makes a huge sandwich
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['sandwich']})
+
+related words['foodstuff', 'honeycomb', 'hotdog', 'wrap']
+
+***********************
+
+Original premise:PersonX considers personY’s problem
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['problem']})
+
+related words['danger', 'question', 'answer', 'program', 'workshop']
+
+***********************
+
+Original premise:PersonX buys cheese from PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['cheese']})
+
+related words['cheesy']
+
+***********************
+
+Original premise:PersonX gets smarter
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['smart'], 'verb': [], 'noun': []})
+
+related words['science', 'wit', 'learn', 'technology', 'intelligence']
+
+***********************
+
+Original premise:PersonX looks for information about PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['look', 'information'], 'verb': []})
+
+related words['knowledge', 'message', 'evidence', 'intelligence', 'communication']
+
+***********************
+
+Original premise:PersonX weighs the pros and cons
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['pro', 'con']})
+
+related words['protest', 'pr', 'argument', 'gain', 'ken']
+
+***********************
+
+Original premise:PersonX throws the dishrag
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['dishrag']})
+
+related words['dishpan', 'rag', 'kitchenware', 'wash']
+
+***********************
+
+Original premise:PersonX falls over backwards
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['fall'], 'noun': []})
+
+related words['spring', 'break', 'blow', 'winter', 'rise']
+
+***********************
+
+Original premise:PersonX quietly visits PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'verb': ['visit', 'personx'], 'noun': [], 'adj': []})
+
+related words['bless', 'pilgrimage', 'outcall', 'medicine', 'chastise']
+
+***********************
+
+Original premise:PersonX goes to far
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['go'], 'noun': []})
+
+related words['gage', 'time', 'game', 'jump']
+
+***********************
+
+Original premise:PersonX gets a good mark on a test
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['test', 'mark']})
+
+related words['match', 'trace', 'spot', 'lab', 'post']
+
+***********************
+
+Original premise:PersonX is in the present
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['present'], 'verb': []})
+
+related words['future', 'project', 'existing', 'today', 'female']
+
+***********************
+
+Original premise:PersonX keeps in with PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['keep'], 'noun': []})
+
+related words['stay', 'protect', 'avoid', 'kill', 'raise']
+
+***********************
+
+Original premise:PersonX is very upset
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['upset'], 'noun': [], 'verb': []})
+
+related words['competing', 'brat']
+
+***********************
+
+Original premise:PersonX starts teaching PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['start'], 'verb': []})
+
+related words['stop', 'move', 'seed', 'boot', 'check']
+
+***********************
+
+Original premise:PersonX is patient with PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['patient'], 'noun': [], 'verb': []})
+
+related words['hospital', 'client', 'doctor', 'treatment', 'person']
+
+***********************
+
+Original premise:PersonX earns a new job
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['job']})
+
+related words['doctor', 'contract', 'trade', 'employment', 'student']
+
+***********************
+
+Original premise:PersonX has a weak heart
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['heart'], 'verb': []})
+
+related words['love', 'blood', 'mind', 'home', 'hart']
+
+***********************
+
+Original premise:PersonX listens to records
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['record']})
+
+related words['history', 'five', 'album', 'data', 'music']
+
+***********************
+
+Original premise:PersonX tends to PersonY's injuries
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['injury']})
+
+related words['injustice', 'uninjured']
+
+***********************
+
+Original premise:PersonX gets arrested for stealing
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['steal', 'arrest'], 'noun': []})
+
+related words['rest', 'stasis', 'bust', 'rescue']
+
+***********************
+
+Original premise:PersonX murders the prostitute
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['prostitute', 'murder'], 'verb': []})
+
+related words['prostitution', 'derogatory']
+
+***********************
+
+Original premise:PersonX offers to carry PersonY's backpack
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['backpack', 'offer'], 'verb': []})
+
+related words['deal', 'help', 'project', 'payment', 'contract']
+
+***********************
+
+Original premise:PersonX turns on light
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['turn', 'light'], 'verb': []})
+
+related words['focus', 'dark', 'throw', 'heavy', 'sign']
+
+***********************
+
+Original premise:PersonX replaces PersonY's belongings
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['belonging', 'replace'], 'verb': []})
+
+related words['relation', 'define', 'change', 'move', 'property']
+
+***********************
+
+Original premise:PersonX watches PersonY play poker
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['watch', 'poker'], 'verb': []})
+
+related words['stoker', 'poky', 'guard', 'show', 'puck']
+
+***********************
+
+Original premise:PersonX receives a mysterious phone call
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['call', 'phone']})
+
+related words['cellphone', 'message', 'tap', 'demand', 'caller']
+
+***********************
+
+Original premise:PersonX passes PersonY an object
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['object']})
+
+related words['attribute', 'method', 'instance', 'property', 'machine']
+
+***********************
+
+Original premise:PersonX is highly respected by PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['respect'], 'noun': []})
+
+related words['success', 'accept', 'trust', 'love', 'expression']
+
+***********************
+
+Original premise:PersonX invents a new technology
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['technology', 'invent'], 'verb': []})
+
+related words['tech', 'science', 'machine', 'nature', 'application']
+
+***********************
+
+Original premise:PersonX makes up for his mistakes
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['mistake']})
+
+related words['outtake']
+
+***********************
+
+Original premise:PersonX grew very rich
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['rich'], 'verb': [], 'noun': []})
+
+related words['value', 'class', 'rank', 'wealth']
+
+***********************
+
+Original premise:PersonX visits the place
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['place', 'visit'], 'verb': []})
+
+related words['reposit', 'maritimes', 'people', 'house', 'cubit']
+
+***********************
+
+Original premise:PersonX pursues a plan
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['pursue', 'plan'], 'verb': []})
+
+related words['pursuit', 'purchase', 'plot', 'chart', 'goal']
+
+***********************
+
+Original premise:PersonX learns about PersonY's actions
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['action', 'learn'], 'verb': []})
+
+related words['motion', 'acting', 'destroy', 'attack', 'improve']
+
+***********************
+
+Original premise:PersonX pays in time
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['pay', 'time'], 'verb': []})
+
+related words['year', 'money', 'month', 'price', 'cash']
+
+***********************
+
+Original premise:PersonX fixes the toilet
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['fix', 'toilet'], 'verb': []})
+
+related words['flush', 'design', 'move', 'change', 'problem']
+
+***********************
+
+Original premise:PersonX struggles for recognition
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['struggle', 'recognition'], 'verb': []})
+
+related words['recognized', 'scuffle', 'strife']
+
+***********************
+
+Original premise:PersonX starts to withdraw
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['start'], 'verb': []})
+
+related words['stop', 'move', 'seed', 'boot', 'check']
+
+***********************
+
+Original premise:PersonX hears what I am saying
+
+extracted wordsdefaultdict(<class 'list'>, {'verb': ['hear', 'say'], 'noun': [], 'adj': []})
+
+related words['agree', 'pay', 'sound', 'hark', 'write']
+
+***********************
+
+Original premise:PersonX finds the club secret
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['club', 'secret']})
+
+related words['school', 'team', 'group', 'party', 'success']
+
+***********************
+
+Original premise:PersonX buys PersonY a horse
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['horse']})
+
+related words['animal', 'dog', 'rider', 'girl', 'cow']
+
+***********************
+
+Original premise:PersonX thinks about her past
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['past'], 'verb': [], 'noun': []})
+
+related words['history', 'future', 'stuff', 'present', 'period']
+
+***********************
+
+Original premise:PersonX asks about an envelope
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['envelope']})
+
+related words['enwrap', 'enclosure']
+
+***********************
+
+Original premise:PersonX discusses her situation
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['situation']})
+
+related words['situated', 'fluctuation', 'sitcom']
+
+***********************
+
+Original premise:PersonX does not derive pleasure from her work
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['pleasure', 'work']})
+
+related words['pleasing', 'pleasingness', 'plea', 'treasurer', 'task']
+
+***********************
+
+Original premise:PersonX tells about his family
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['family']})
+
+related words['community', 'daughter', 'brother', 'mom', 'father']
+
+***********************
+
+Original premise:PersonX discovers PersonY's plan
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['discover', 'plan'], 'verb': []})
+
+related words['drip', 'dinosaur', 'diet', 'chart', 'plot']
+
+***********************
+
+Original premise:PersonX uses patience
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['patience']})
+
+related words['passivity', 'impatient', 'tolerance', 'reserve', 'passion']
+
+***********************
+
+Original premise:PersonX buys a new jacket
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['jacket']})
+
+related words['jumper', 'fiasco', 'pink']
+
+***********************
+
+Original premise:PersonX refuses to stop studying
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['refuse'], 'verb': []})
+
+related words['recuse', 'fuse', 'refusal', 'refund']
+
+***********************
+
+Original premise:PersonX listens to the news
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['news']})
+
+related words['story', 'report', 'article', 'morning', 'today']
+
+***********************
+
+Original premise:PersonX evades detection
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['detection', 'evade'], 'verb': []})
+
+related words['invade', 'evasion', 'detect', 'discovery', 'fence']
+
+***********************
+
+Original premise:PersonX pays a long visit
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['visit']})
+
+related words['chastise', 'bless', 'medicine']
+
+***********************
+
+Original premise:PersonX and PersonY exchange smiles
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['exchange'], 'verb': []})
+
+related words['counterchange', 'transaction']
+
+***********************
+
+Original premise:PersonX heals an injured PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['heal'], 'verb': []})
+
+related words['hull', 'recovery', 'salve', 'cicatrise']
+
+***********************
+
+Original premise:PersonX lost a ring in the couch
+
+extracted wordsdefaultdict(<class 'list'>, {'verb': [], 'noun': ['couch', 'ring'], 'adj': []})
+
+related words['couple', 'cater', 'handcuff', 'ding', 'cushion']
+
+***********************
+
+Original premise:PersonX's loving smile
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['smile']})
+
+related words['smirk', 'muscle']
+
+***********************
+
+Original premise:PersonX picks up a bill from the floor
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['bill', 'floor']})
+
+related words['ticket', 'shape', 'tile', 'paper', 'cash']
+
+***********************
+
+Original premise:PersonX replaces an entire staff
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['staff']})
+
+related words['crew', 'people', 'club', 'stick', 'management']
+
+***********************
+
+Original premise:PersonX discovers that someone is spying on him
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['discover'], 'verb': []})
+
+related words['dinosaur']
+
+***********************
+
+Original premise:PersonX does not take risks
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['risk'], 'verb': []})
+
+related words['park', 'event', 'harm', 'taking', 'secure']
+
+***********************
+
+Original premise:PersonX acts independently
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['act'], 'verb': []})
+
+related words['fight', 'role', 'effect', 'agent', 'part']
+
+***********************
+
+Original premise:PersonX lets things go
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['thing', 'let'], 'verb': []})
+
+related words['stuff', 'ting', 'house', 'book', 'person']
+
+***********************
+
+Original premise:PersonX initiates the activity
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['activity']})
+
+related words['behavior', 'growth', 'operation', 'activate', 'education']
+
+***********************
+
+Original premise:PersonX folds in shock
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['shock', 'fold'], 'verb': []})
+
+related words['fight', 'shell', 'shake', 'brain', 'danger']
+
+***********************
+
+Original premise:PersonX and PersonY attend a concert
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['concert'], 'verb': []})
+
+related words['music', 'song', 'event', 'show', 'artist']
+
+***********************
+
+Original premise:PersonX feels trapped by all the problems
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['problem']})
+
+related words['danger', 'question', 'answer', 'program', 'workshop']
+
+***********************
+
+Original premise:PersonX goes through a bad day
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['day']})
+
+related words['week', 'month', 'hour', 'year', 'night']
+
+***********************
+
+Original premise:PersonX's hidden secret was revealed
+
+extracted wordsdefaultdict(<class 'list'>, {'noun': ['secret'], 'adj': [], 'verb': []})
+
+related words['success', 'password', 'secure', 'knowledge', 'confidence']
+
+***********************
+
+Original premise:PersonX is led by the commander
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['commander']})
+
+related words['officer', 'headquarters', 'commodore', 'warder']
+
+***********************
+
+Original premise:PersonX lets PersonY use PersonX's computer
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['let', 'computer'], 'verb': []})
+
+related words['machine', 'controller', 'folder', 'processor', 'software']
+
+***********************
+
+Original premise:PersonX shows how safe he is
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['safe'], 'verb': [], 'noun': []})
+
+related words['protected', 'danger', 'protection', 'security']
+
+***********************
+
+Original premise:PersonX is at a loss because of someone's cunning
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['loss'], 'verb': []})
+
+related words['lost', 'damage', 'death', 'gain', 'profit']
+
+***********************
+
+Original premise:PersonX thinks it’s boring
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['think', 'bore'], 'noun': []})
+
+related words['write', 'dream', 'reason', 'start', 'talk']
+
+***********************
+
+Original premise:PersonX wants to shake hands with PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['hand']})
+
+related words['help', 'foot', 'stand', 'finger', 'eye']
+
+***********************
+
+Original premise:PersonX gets along with PersonY's parents
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['parent']})
+
+related words['mother', 'father', 'child', 'dad', 'daughter']
+
+***********************
+
+Original premise:PersonX tries to get PersonY to go out
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['try'], 'verb': []})
+
+related words['fight', 'goal', 'remember', 'trial', 'fail']
+
+***********************
+
+Original premise:PersonX finds PersonY’s mistake
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['mistake']})
+
+related words['outtake']
+
+***********************
+
+Original premise:PersonX states that he is interested in sailing
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['state'], 'verb': []})
+
+related words['city', 'region', 'government', 'health', 'live']
+
+***********************
+
+Original premise:PersonX goes to bed a little early
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['bed']})
+
+related words['sleep', 'made', 'story', 'seat', 'used']
+
+***********************
+
+Original premise:PersonX takes steps to bring back
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['step']})
+
+related words['walk', 'track', 'move', 'walking', 'stage']
+
+***********************
+
+Original premise:PersonX loses the source of his inspiration
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['source', 'inspiration']})
+
+related words['expiration', 'respiration', 'inspiring', 'spring', 'type']
+
+***********************
+
+Original premise:PersonX is frustrated by the people who criticize his writing
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['people', 'writing']})
+
+related words['writer', 'person', 'making', 'thinking', 'woman']
+
+***********************
+
+Original premise:PersonX makes a mean face
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['face']})
+
+related words['head', 'mouth', 'butt', 'stroke', 'plate']
+
+***********************
+
+Original premise:PersonX feels that someone is looking for PersonX
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['feel', 'look'], 'noun': []})
+
+related words['sound', 'texture', 'notice', 'match', 'cold']
+
+***********************
+
+Original premise:PersonX thinks about dropping out of college
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['college']})
+
+related words['school', 'campus', 'student', 'education', 'graduate']
+
+***********************
+
+Original premise:PersonX wants to help out
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['want', 'help'], 'noun': []})
+
+related words['support', 'hate', 'please', 'offer', 'someone']
+
+***********************
+
+Original premise:PersonX gives PersonY the telephone number
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['telephone', 'number']})
+
+related words['value', 'score', 'digit', 'majority', 'size']
+
+***********************
+
+Original premise:PersonX begins the meeting
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['meeting']})
+
+related words['boring', 'briefing', 'proceeding']
+
+***********************
+
+Original premise:PersonX is aware of the process
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['process'], 'verb': []})
+
+related words['method', 'product', 'program', 'development', 'task']
+
+***********************
+
+Original premise:PersonX gets a home loan
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['home', 'loan']})
+
+related words['love', 'bedroom', 'country', 'housing', 'office']
+
+***********************
+
+Original premise:PersonX agrees to perform a favor
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['favor']})
+
+related words['fond', 'gift', 'deed', 'beneficence']
+
+***********************
+
+Original premise:PersonX paints the wall again
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['paint', 'wall'], 'verb': []})
+
+related words['wallpaper', 'parget', 'poker', 'poster', 'podium']
+
+***********************
+
+Original premise:PersonX understands personY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['understand'], 'noun': []})
+
+related words['stand', 'ununderstood', 'fathom']
+
+***********************
+
+Original premise:PersonX invites him over
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['invite'], 'noun': []})
+
+related words['invitation', 'encourage', 'introduce', 'participation']
+
+***********************
+
+Original premise:PersonX gets jealous of PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['jealous'], 'verb': [], 'noun': []})
+
+related words['zeal', 'zealot']
+
+***********************
+
+Original premise:PersonX realizes he's a genius
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['genius']})
+
+related words['genie', 'idiot']
+
+***********************
+
+Original premise:PersonX is in a boat accident
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['accident', 'boat'], 'verb': []})
+
+related words['accidence', 'wreck', 'tub', 'water', 'ship']
+
+***********************
+
+Original premise:PersonX gets approval
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['approval']})
+
+related words['approve', 'disapprove', 'approbation', 'agreement']
+
+***********************
+
+Original premise:PersonX does not wish to give up fighting
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['wish', 'fight'], 'noun': []})
+
+related words['wrestling', 'attack', 'match', 'wound', 'argument']
+
+***********************
+
+Original premise:PersonX needs to show proof
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['need', 'proof'], 'verb': []})
+
+related words['evidence', 'danger', 'strength', 'meaning', 'getting']
+
+***********************
+
+Original premise:PersonX saves PersonY's career
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['career']})
+
+related words['bathos']
+
+***********************
+
+Original premise:PersonX takes out money
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['money']})
+
+related words['cash', 'dollar', 'budget', 'price', 'wallet']
+
+***********************
+
+Original premise:PersonX fixes a friend’s flat tire
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['tire', 'fix', 'friend'], 'verb': []})
+
+related words['girl', 'loving', 'move', 'school', 'talk']
+
+***********************
+
+Original premise:PersonX learns to draw
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['learn'], 'verb': []})
+
+related words['remember', 'improve', 'school', 'knowledge', 'student']
+
+***********************
+
+Original premise:PersonX crashes the plane
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['plane']})
+
+related words['boat', 'fly', 'flying', 'attack', 'bird']
+
+***********************
+
+Original premise:PersonX's promises are broken
+
+extracted wordsdefaultdict(<class 'list'>, {'noun': ['promise'], 'verb': [], 'adj': []})
+
+related words['promissory', 'renege', 'stipulate', 'pledge']
+
+***********************
+
+Original premise:PersonX gets a bike for PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['bike']})
+
+related words['ride', 'car', 'hog', 'handle']
+
+***********************
+
+Original premise:PersonX learns to cook pancakes
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['pancake', 'learn'], 'verb': []})
+
+related words['improve', 'knowledge', 'school', 'student', 'remember']
+
+***********************
+
+Original premise:PersonX visits a graveyard
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['graveyard', 'visit'], 'verb': []})
+
+related words['sexton', 'sport', 'mourner', 'churchyard', 'chastise']
+
+***********************
+
+Original premise:PersonX eats as much as he wants
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['want', 'eat'], 'noun': []})
+
+related words['hate', 'food', 'having', 'nutrition', 'stuff']
+
+***********************
+
+Original premise:PersonX rises early
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['rise'], 'verb': []})
+
+related words['shine', 'morning', 'set', 'warming', 'drop']
+
+***********************
+
+Original premise:PersonX cares for a baby
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['baby', 'care'], 'verb': []})
+
+related words['birth', 'love', 'daughter', 'health', 'support']
+
+***********************
+
+Original premise:PersonX starts to shoot
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['start'], 'verb': []})
+
+related words['stop', 'move', 'seed', 'boot', 'check']
+
+***********************
+
+Original premise:PersonX gives PersonY the chance
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['chance']})
+
+related words['choice', 'community', 'question', 'option', 'skill']
+
+***********************
+
+Original premise:PersonX buys a job application
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['application', 'job']})
+
+related words['apply', 'payment', 'driver', 'software', 'contract']
+
+***********************
+
+Original premise:PersonX trips on a pothole
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['trip', 'pothole'], 'verb': []})
+
+related words['pothunter', 'penny', 'ride', 'lift', 'distance']
+
+***********************
+
+Original premise:PersonX invites PersonY to the house
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['house']})
+
+related words['bedroom', 'man', 'building', 'store', 'school']
+
+***********************
+
+Original premise:PersonX thinks the couple are right for each other
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['couple']})
+
+related words['lancer']
+
+***********************
+
+Original premise:PersonX fears that PersonY will leave
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['fear'], 'verb': []})
+
+related words['funk', 'frighten']
+
+***********************
+
+Original premise:PersonX writes a nasty review
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['review']})
+
+related words['report', 'trial', 'study', 'examination', 'response']
+
+***********************
+
+Original premise:PersonX takes more lessons
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['lesson']})
+
+related words['teach']
+
+***********************
+
+Original premise:PersonX enjoys reading a good book
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['book']})
+
+related words['card', 'sheet', 'album', 'paper', 'writing']
+
+***********************
+
+Original premise:PersonX tells PersonY on the first date
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['date']})
+
+related words['month', 'year', 'day', 'movie', 'time']
+
+***********************
+
+Original premise:PersonX can cook
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['cook'], 'noun': []})
+
+related words['food', 'steam', 'music', 'dress', 'burn']
+
+***********************
+
+Original premise:PersonX throws PersonY's letter in the garbage
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['throw', 'letter', 'garbage'], 'verb': []})
+
+related words['dump', 'message', 'flash', 'move', 'catch']
+
+***********************
+
+Original premise:PersonX's car is towed
+
+extracted wordsdefaultdict(<class 'list'>, {'noun': ['car'], 'verb': [], 'adj': []})
+
+related words['driver', 'horse', 'rider', 'bike', 'train']
+
+***********************
+
+Original premise:PersonX decides to work out
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['decide', 'work'], 'noun': []})
+
+related words['decision', 'time', 'task', 'thinking', 'job']
+
+***********************
+
+Original premise:PersonX hides the facts
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['fact']})
+
+related words['reality', 'truth', 'effect', 'concept', 'history']
+
+***********************
+
+Original premise:PersonX looks for the lost dog
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['look', 'dog'], 'verb': []})
+
+related words['baby', 'watch', 'horse', 'wolf', 'shake']
+
+***********************
+
+Original premise:PersonX accepts PersonY's date
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['date']})
+
+related words['month', 'year', 'day', 'movie', 'time']
+
+***********************
+
+Original premise:PersonX stinks at his job
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['stink', 'job'], 'verb': []})
+
+related words['stitch', 'stint', 'trade', 'contract', 'doctor']
+
+***********************
+
+Original premise:PersonX is not too young
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['young'], 'noun': [], 'verb': []})
+
+related words['baby', 'child', 'girl', 'quality']
+
+***********************
+
+Original premise:PersonX really hits the spot
+
+extracted wordsdefaultdict(<class 'list'>, {'verb': [], 'noun': ['spot'], 'adj': []})
+
+related words['dot', 'location', 'club', 'dog', 'turn']
+
+***********************
+
+Original premise:PersonX has the time of his life
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['life', 'time'], 'verb': []})
+
+related words['year', 'world', 'month', 'day', 'term']
+
+***********************
+
+Original premise:PersonX tells PersonY a long story
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['story']})
+
+related words['movie', 'fiction', 'theme', 'episode', 'news']
+
+***********************
+
+Original premise:PersonX uses a few tactful words
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['word']})
+
+related words['language', 'name', 'spoken', 'talk']
+
+***********************
+
+Original premise:PersonX has no fever
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['fever'], 'verb': []})
+
+related words['fervor', 'fervent']
+
+***********************
+
+Original premise:PersonX has a beautiful smile
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['smile'], 'verb': []})
+
+related words['smirk', 'muscle']
+
+***********************
+
+Original premise:PersonX does someone a good turn
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['turn'], 'verb': []})
+
+related words['move', 'throw', 'moving', 'switch', 'spin']
+
+***********************
+
+Original premise:PersonX gets to the airport in time
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['airport', 'time']})
+
+related words['port', 'air', 'airfield', 'year', 'month']
+
+***********************
+
+Original premise:PersonX offers to treat PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['offer'], 'verb': []})
+
+related words['deal', 'project', 'help', 'contract', 'payment']
+
+***********************
+
+Original premise:PersonX trusts PersonY with responsibility
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['responsibility', 'trust'], 'verb': []})
+
+related words['trustworthiness', 'respect', 'success', 'faithfulness', 'accountability']
+
+***********************
+
+Original premise:PersonX defeats her rival
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['defeat'], 'verb': []})
+
+related words['surrender', 'fail', 'event', 'destroy']
+
+***********************
+
+Original premise:PersonX asks PersonY to go for a walk
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['walk']})
+
+related words['park', 'step', 'path', 'door', 'flight']
+
+***********************
+
+Original premise:PersonX is on a journey
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['journey'], 'verb': []})
+
+related words['jaunt', 'odyssey', 'adventure']
+
+***********************
+
+Original premise:PersonX helps everyone
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['help'], 'noun': []})
+
+related words['support', 'harm', 'saving', 'save', 'benefit']
+
+***********************
+
+Original premise:PersonX realizes he is not alone
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['realize'], 'noun': []})
+
+related words['realization', 'harmonize', 'realism']
+
+***********************
+
+Original premise:PersonX writes a news article
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['news', 'article']})
+
+related words['report', 'update', 'story', 'column', 'morning']
+
+***********************
+
+Original premise:PersonX loses belongings
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['belonging']})
+
+related words['closeness']
+
+***********************
+
+Original premise:PersonX wants to join a sports team
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['sport', 'team']})
+
+related words['afters', 'group', 'game', 'club', 'spar']
+
+***********************
+
+Original premise:PersonX shows him where it hurts
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['show', 'hurt'], 'noun': []})
+
+related words['movie', 'project', 'episode', 'performance', 'deal']
+
+***********************
+
+Original premise:PersonX learns to be quiet
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['learn'], 'verb': []})
+
+related words['remember', 'improve', 'school', 'knowledge', 'student']
+
+***********************
+
+Original premise:PersonX is excited about PersonY’s safety
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['safety'], 'verb': []})
+
+related words['protection', 'security', 'danger', 'health', 'protect']
+
+***********************
+
+Original premise:PersonX thinks he was followed
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['think', 'follow'], 'noun': []})
+
+related words['reason', 'learn', 'talk', 'travel', 'write']
+
+***********************
+
+Original premise:PersonX looks through the keyhole
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['keyhole']})
+
+related words['hole', 'door', 'drop']
+
+***********************
+
+Original premise:PersonX continues her journey
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['journey']})
+
+related words['jaunt', 'odyssey', 'adventure']
+
+***********************
+
+Original premise:PersonX visits your town
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['town', 'visit'], 'verb': []})
+
+related words['city', 'street', 'ton', 'market']
+
+***********************
+
+Original premise:PersonX only pretends to suffer
+
+extracted wordsdefaultdict(<class 'list'>, {'verb': [], 'noun': ['pretend'], 'adj': []})
+
+related words['pretension', 'pretense', 'pretentiousness']
+
+***********************
+
+Original premise:PersonX blows an opportunity
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['opportunity']})
+
+related words['opportunism', 'opportuneness', 'opportunist']
+
+***********************
+
+Original premise:PersonX reads the books to personY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['book']})
+
+related words['card', 'sheet', 'album', 'paper', 'writing']
+
+***********************
+
+Original premise:PersonX goes back to counseling
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['counseling']})
+
+related words['assistance']
+
+***********************
+
+Original premise:PersonX gives PersonY back his wallet
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['wallet']})
+
+related words['folder', 'pocket', 'money', 'storage', 'container']
+
+***********************
+
+Original premise:PersonX breaks in two
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['break'], 'verb': []})
+
+related words['repair', 'storm', 'wreck', 'play', 'damage']
+
+***********************
+
+Original premise:PersonX learns of God
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['God', 'learn'], 'verb': []})
+
+related words['remember', 'improve', 'school', 'student', 'knowledge']
+
+***********************
+
+Original premise:PersonX feels worse
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['bad'], 'verb': [], 'noun': []})
+
+related words['good', 'evil', 'danger', 'dirty', 'problem']
+
+***********************
+
+Original premise:PersonX manages to achieve it
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['manage'], 'verb': []})
+
+related words['menage', 'man', 'woodman', 'selectman', 'manus']
+
+***********************
+
+Original premise:PersonX volunteers for service
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['volunteer', 'service'], 'verb': []})
+
+related words['privateer', 'customer', 'program', 'company', 'office']
+
+***********************
+
+Original premise:PersonX gets lost on the way to the market
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['way', 'market']})
+
+related words['street', 'city', 'business', 'road', 'good']
+
+***********************
+
+Original premise:PersonX trains for 4 hours
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['hour', 'train'], 'verb': []})
+
+related words['year', 'mile', 'day', 'time', 'morning']
+
+***********************
+
+Original premise:PersonX decides to make an attempt
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['attempt']})
+
+related words['fawn', 'tinker', 'whack', 'contribution', 'chase']
+
+***********************
+
+Original premise:PersonX asks PersonY to stay home
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['stay', 'ask'], 'noun': []})
+
+related words['answer', 'wait', 'seek', 'sleep', 'request']
+
+***********************
+
+Original premise:PersonX says something ridiculous
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['ridiculous'], 'verb': [], 'noun': []})
+
+related words['ridicule', 'priceless', 'screwy']
+
+***********************
+
+Original premise:PersonX believes in the values of tolerance
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['value', 'tolerance']})
+
+related words['tissue', 'quality', 'tribute', 'price', 'attribute']
+
+***********************
+
+Original premise:PersonX searches for PersonY's recipe
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['search', 'recipe'], 'verb': []})
+
+related words['grope', 'google', 'food', 'debug', 'finding']
+
+***********************
+
+Original premise:PersonX admits to being afraid
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['admit'], 'verb': []})
+
+related words['permit', 'admission']
+
+***********************
+
+Original premise:PersonX is buried in the snow
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['snow']})
+
+related words['sugar', 'sled', 'salt', 'sledding']
+
+***********************
+
+Original premise:PersonX checks PersonY into the hospital
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['hospital', 'check'], 'verb': []})
+
+related words['doctor', 'health', 'attack', 'treatment', 'cash']
+
+***********************
+
+Original premise:PersonX scolds PersonY for looking like that
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['scold'], 'verb': []})
+
+related words['shrew', 'bounce', 'drib', 'praise']
+
+***********************
+
+Original premise:PersonX pours PersonY a glass of wine
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['wine', 'glass']})
+
+related words['beer', 'vine', 'water', 'lake', 'metal']
+
+***********************
+
+Original premise:PersonX understands the new instructions
+
+extracted wordsdefaultdict(<class 'list'>, {'verb': [], 'adj': [], 'noun': ['instruction']})
+
+related words['instruct', 'execution', 'predication', 'sufferance']
+
+***********************
+
+Original premise:PersonX leads and guides PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['lead'], 'verb': []})
+
+related words['target', 'steel', 'number', 'direction', 'metal']
+
+***********************
+
+Original premise:PersonX says something in anger
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['anger']})
+
+related words['rage', 'harm', 'storm', 'rouse', 'fight']
+
+***********************
+
+Original premise:PersonX asks her doctor a question
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['doctor', 'question']})
+
+related words['answer', 'problem', 'hospital', 'title', 'topic']
+
+***********************
+
+Original premise:PersonX talks to PersonY at length
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['talk', 'length'], 'verb': []})
+
+related words['height', 'language', 'hour', 'sound', 'size']
+
+***********************
+
+Original premise:PersonX competes in the elections
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['election', 'compete'], 'verb': []})
+
+related words['competition', 'poll', 'vote', 'president', 'elect']
+
+***********************
+
+Original premise:PersonX is snubbed by PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['snub'], 'noun': []})
+
+related words['snob', 'snuff', 'sob', 'rope']
+
+***********************
+
+Original premise:PersonX saves PersonY's wedding
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['wedding']})
+
+related words['dowry', 'hymeneal', 'carnation']
+
+***********************
+
+Original premise:PersonX creates an uncomfortable situation
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['situation']})
+
+related words['situated', 'fluctuation', 'sitcom']
+
+***********************
+
+Original premise:PersonX works out a problem
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['problem']})
+
+related words['danger', 'question', 'answer', 'program', 'workshop']
+
+***********************
+
+Original premise:PersonX kills someone else
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['kill'], 'noun': []})
+
+related words['death', 'attack', 'hit', 'shoot', 'keep']
+
+***********************
+
+Original premise:PersonX takes care of his own
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['care']})
+
+related words['repair', 'health', 'support', 'love', 'treatment']
+
+***********************
+
+Original premise:PersonX offers to buy PersonY dinner
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['offer', 'dinner'], 'verb': []})
+
+related words['dicker', 'deal', 'help', 'dining', 'project']
+
+***********************
+
+Original premise:PersonX gets the boot
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['boot']})
+
+related words['football', 'start', 'winter', 'device', 'shell']
+
+***********************
+
+Original premise:PersonX is a retired photographer
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['photographer'], 'verb': []})
+
+related words['photography', 'photograph']
+
+***********************
+
+Original premise:PersonX sits on PersonY's chair
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['chair']})
+
+related words['seat', 'boat', 'bench', 'floor', 'head']
+
+***********************
+
+Original premise:PersonX makes personY happy
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['happy'], 'verb': [], 'noun': []})
+
+related words['love', 'holiday', 'peace', 'gay']
+
+***********************
+
+Original premise:PersonX comes back to help PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['help', 'come'], 'noun': []})
+
+related words['start', 'support', 'bring', 'show', 'stay']
+
+***********************
+
+Original premise:PersonX studies for her test
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['test', 'study'], 'verb': []})
+
+related words['student', 'research', 'review', 'choice', 'example']
+
+***********************
+
+Original premise:PersonX searches for evidence
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['evidence', 'search'], 'verb': []})
+
+related words['trial', 'information', 'examination', 'argument', 'finding']
+
+***********************
+
+Original premise:PersonX worries about his daughter
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['worry', 'daughter'], 'verb': []})
+
+related words['mother', 'father', 'brother', 'child', 'woman']
+
+***********************
+
+Original premise:PersonX understands what PersonY wants
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['understand', 'want'], 'noun': []})
+
+related words['stand', 'ununderstood', 'hate', 'mean', 'please']
+
+***********************
+
+Original premise:PersonX brings back the gift
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['gift']})
+
+related words['beg', 'gelt', 'treat', 'favor', 'tribute']
+
+***********************
+
+Original premise:PersonX becomes the most powerful person
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['person'], 'verb': []})
+
+related words['woman', 'people', 'man', 'member', 'human']
+
+***********************
+
+Original premise:PersonX enjoys the day
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['day']})
+
+related words['week', 'month', 'hour', 'year', 'night']
+
+***********************
+
+Original premise:PersonX becomes a good skier
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['skier'], 'verb': []})
+
+related words['ullr', 'downhiller']
+
+***********************
+
+Original premise:PersonX drives PersonY to the park
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['drive', 'park'], 'verb': []})
+
+related words['walk', 'wheel', 'swing', 'attack', 'guide']
+
+***********************
+
+Original premise:PersonX learns how to hunt
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['hunt', 'learn'], 'noun': []})
+
+related words['seek', 'improve', 'remember', 'knowledge', 'fox']
+
+***********************
+
+Original premise:PersonX goes to the bed
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['bed']})
+
+related words['sleep', 'made', 'story', 'seat', 'used']
+
+***********************
+
+Original premise:PersonX smells a bad odor
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['odor']})
+
+related words['esteem', 'rank', 'quality', 'foul']
+
+***********************
+
+Original premise:PersonX investigates the crime
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['investigate', 'crime'], 'verb': []})
+
+related words['investigation', 'investigator', 'attack', 'city', 'security']
+
+***********************
+
+Original premise:PersonX considers being patriotic
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['consider'], 'verb': []})
+
+related words['reflect', 'esteem', 'account', 'example', 'choice']
+
+***********************
+
+Original premise:PersonX is going to see a movie
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['movie']})
+
+related words['music', 'show', 'video', 'story', 'feature']
+
+***********************
+
+Original premise:PersonX gives PersonY peace
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['peace']})
+
+related words['love', 'violence', 'security', 'joy', 'battle']
+
+***********************
+
+Original premise:PersonX eats the cantaloupe
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['cantaloupe']})
+
+related words['cucumis']
+
+***********************
+
+Original premise:PersonX fixes the drapes
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['drape', 'fix'], 'verb': []})
+
+related words['change', 'problem', 'design', 'move', 'patch']
+
+***********************
+
+Original premise:PersonX moves to see PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['move'], 'verb': []})
+
+related words['push', 'jump', 'turn', 'attack', 'transfer']
+
+***********************
+
+Original premise:PersonX goes to a hotel room
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['hotel', 'room']})
+
+related words['hostel', 'motel', 'floor']
+
+***********************
+
+Original premise:PersonX notices that the walls have started to go crazy
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['wall', 'notice'], 'verb': []})
+
+related words['warning', 'picture', 'message', 'floor', 'watch']
+
+***********************
+
+Original premise:PersonX prepares for the holidays
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['holiday', 'prepare'], 'verb': []})
+
+related words['prep', 'year', 'school', 'sale', 'season']
+
+***********************
+
+Original premise:PersonX is admitted to a university
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['university']})
+
+related words['multiversity', 'minnesota', 'varsity']
+
+***********************
+
+Original premise:PersonX turns off the heat at PersonY's house
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['heat', 'house']})
+
+related words['firehouse', 'greenhouse', 'bedroom', 'warming', 'cold']
+
+***********************
+
+Original premise:PersonX builds models
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['build', 'model'], 'verb': []})
+
+related words['design', 'prototype', 'create', 'develop', 'production']
+
+***********************
+
+Original premise:PersonX attends church on Sunday
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['church', 'Sunday', 'attend'], 'verb': []})
+
+related words['faith', 'christ', 'campus', 'marriage', 'nonchurchgoing']
+
+***********************
+
+Original premise:PersonX reads a chapter of War and Peace
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['War', 'chapter', 'Peace']})
+
+related words['paragraph', 'episode', 'argument', 'canon', 'assembly']
+
+***********************
+
+Original premise:PersonX follows her dreams
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['dream']})
+
+related words['sleep', 'reality', 'thinking', 'brain', 'cloud']
+
+***********************
+
+Original premise:PersonX agrees to come to party
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['party']})
+
+related words['club', 'group', 'family', 'people', 'politics']
+
+***********************
+
+Original premise:PersonX discusses the problem
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['problem']})
+
+related words['danger', 'question', 'answer', 'program', 'workshop']
+
+***********************
+
+Original premise:PersonX marries the other
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['marrie'], 'verb': []})
+
+related words['marry', 'archaic']
+
+***********************
+
+Original premise:PersonX tries to solve problem again
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['problem', 'try'], 'verb': []})
+
+related words['danger', 'answer', 'question', 'goal', 'program']
+
+***********************
+
+Original premise:PersonX breaks his own record
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['record', 'break'], 'verb': []})
+
+related words['five', 'focus', 'repair', 'history', 'damage']
+
+***********************
+
+Original premise:PersonX provides assistance
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['assistance']})
+
+related words['assistant', 'welfare', 'transition', 'invocation']
+
+***********************
+
+Original premise:PersonX buys PersonX a gift
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['gift', 'buy'], 'verb': []})
+
+related words['beg', 'price', 'pay', 'sale', 'gaining']
+
+***********************
+
+Original premise:PersonX lands safely
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['land'], 'verb': []})
+
+related words['field', 'house', 'water', 'lake', 'forest']
+
+***********************
+
+Original premise:PersonX decides to live a good life
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['life']})
+
+related words['world', 'time', 'people', 'death', 'reality']
+
+***********************
+
+Original premise:PersonX performs in a concert
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['perform', 'concert'], 'verb': []})
+
+related words['preform', 'concertize', 'music', 'event', 'conduct']
+
+***********************
+
+Original premise:PersonX worries about failing
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['worry'], 'verb': []})
+
+related words['wring', 'worrisome']
+
+***********************
+
+Original premise:PersonX brings the right change
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['change']})
+
+related words['shake', 'transform', 'revolution', 'development', 'relation']
+
+***********************
+
+Original premise:PersonX tries to defend their point of view
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['view', 'try', 'point'], 'verb': []})
+
+related words['goal', 'focus', 'fight', 'profile', 'start']
+
+***********************
+
+Original premise:PersonX is an interesting person
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['person'], 'verb': []})
+
+related words['woman', 'people', 'man', 'member', 'human']
+
+***********************
+
+Original premise:PersonX sees a bad show
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['show']})
+
+related words['movie', 'performance', 'project', 'episode', 'deal']
+
+***********************
+
+Original premise:PersonX is unable to forget about that meeting
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['meeting']})
+
+related words['boring', 'briefing', 'proceeding']
+
+***********************
+
+Original premise:PersonX and PersonY eat a cheese cake
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['cake', 'cheese'], 'verb': []})
+
+related words['cheesy', 'bread', 'pie', 'chef', 'cream']
+
+***********************
+
+Original premise:PersonX prays to god
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['pray'], 'verb': []})
+
+related words['hope', 'imprecate', 'kneeling']
+
+***********************
+
+Original premise:PersonX attacks the mountain lion
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['lion', 'mountain', 'attack'], 'verb': []})
+
+related words['lair', 'diversion', 'looting', 'loser', 'fight']
+
+***********************
+
+Original premise:PersonX attacks PersonY’s judgment
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['attack', 'judgment'], 'verb': []})
+
+related words['adjudication', 'judge', 'defense', 'fight', 'damage']
+
+***********************
+
+Original premise:PersonX puts flowers on PersonY's desk
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['flower', 'desk']})
+
+related words['silk', 'knee', 'flake', 'seed', 'rose']
+
+***********************
+
+Original premise:PersonX asks PersonY to go bowling
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['bowling']})
+
+related words['bowler', 'batsman', 'candlepin']
+
+***********************
+
+Original premise:PersonX is successful in giving an interview
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['interview']})
+
+related words['interaction', 'interrogation', 'reporter', 'exchange', 'recorder']
+
+***********************
+
+Original premise:PersonX makes a list of things to do
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['thing', 'list']})
+
+related words['person', 'stuff', 'menu', 'queue', 'group']
+
+***********************
+
+Original premise:PersonX likes summer
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['summer', 'like'], 'verb': []})
+
+related words['sum', 'type', 'love', 'size', 'heavy']
+
+***********************
+
+Original premise:PersonX tells her off
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['tell'], 'noun': []})
+
+related words['story', 'share', 'report', 'show', 'lie']
+
+***********************
+
+Original premise:PersonX wants to build a house
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['house']})
+
+related words['bedroom', 'man', 'building', 'store', 'school']
+
+***********************
+
+Original premise:PersonX writes a contract with a publisher
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['publisher', 'contract']})
+
+related words['pub', 'deal', 'package', 'job', 'document']
+
+***********************
+
+Original premise:PersonX is very attractive
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['attractive'], 'noun': [], 'verb': []})
+
+related words['attraction', 'attract', 'appealing']
+
+***********************
+
+Original premise:PersonX offers PersonY a trip to Italy
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['trip', 'Italy']})
+
+related words['distance', 'motion', 'flight', 'year', 'result']
+
+***********************
+
+Original premise:PersonX completes a perfect project
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['project']})
+
+related words['program', 'campaign', 'goal', 'report', 'show']
+
+***********************
+
+Original premise:PersonX finds PersonY's true love
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['love']})
+
+related words['hate', 'baby', 'peace', 'heart', 'marriage']
+
+***********************
+
+Original premise:PersonX sees someone in a burning building
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['building']})
+
+related words['builder', 'creation', 'housing', 'tower', 'people']
+
+***********************
+
+Original premise:PersonX describes the night sky
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['sky', 'night']})
+
+related words['morning', 'day', 'hour', 'blue', 'sun']
+
+***********************
+
+Original premise:PersonX tells all who'll listen
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['listen', 'tell'], 'noun': []})
+
+related words['list', 'hearken', 'enumerate', 'story', 'share']
+
+***********************
+
+Original premise:PersonX plays well in the band
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['band', 'play'], 'verb': []})
+
+related words['player', 'playlist', 'game', 'concert', 'group']
+
+***********************
+
+Original premise:PersonX owns a valuable piece of art
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['art', 'piece']})
+
+related words['masterpiece', 'artillery', 'shape', 'music', 'dress']
+
+***********************
+
+Original premise:PersonX understands the depth of PersonY's feeling
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['feeling', 'depth']})
+
+related words['modeling', 'intensity', 'gravity', 'height', 'dimension']
+
+***********************
+
+Original premise:PersonX agrees to write PersonY's book
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['book']})
+
+related words['card', 'sheet', 'album', 'paper', 'writing']
+
+***********************
+
+Original premise:PersonX looks forward to talking to PersonY again
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['look', 'talk'], 'noun': []})
+
+related words['sound', 'walk', 'watch', 'match', 'conference']
+
+***********************
+
+Original premise:PersonX argues with the police
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['police']})
+
+related words['government', 'protect', 'cop', 'security', 'politics']
+
+***********************
+
+Original premise:PersonX loses his train ticket
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['ticket', 'train']})
+
+related words['transfer', 'price', 'show', 'request', 'label']
+
+***********************
+
+Original premise:PersonX completes an agreement
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['agreement']})
+
+related words['agreeing', 'negotiation', 'compatibility']
+
+***********************
+
+Original premise:PersonX is quite upset
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['upset'], 'noun': [], 'verb': []})
+
+related words['competing', 'brat']
+
+***********************
+
+Original premise:PersonX believes that he is liked
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['like', 'believe'], 'noun': []})
+
+related words['disbelieving', 'unbelieving', 'misbelieving', 'belief', 'love']
+
+***********************
+
+Original premise:PersonX suggests the car ride
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['car', 'ride']})
+
+related words['rider', 'bike', 'driver', 'carousel', 'carriage']
+
+***********************
+
+Original premise:PersonX cannot bear it anymore
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['bear'], 'noun': []})
+
+related words['baby', 'horse', 'beer', 'mother', 'trap']
+
+***********************
+
+Original premise:PersonX pays his dues
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['due']})
+
+related words['cue', 'expected', 'needed', 'limit', 'title']
+
+***********************
+
+Original premise:PersonX speaks for a long time
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['speak', 'time'], 'verb': []})
+
+related words['year', 'minute', 'speech', 'month', 'day']
+
+***********************
+
+Original premise:PersonX considers his deeds
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['deed']})
+
+related words['hadith', 'owning']
+
+***********************
+
+Original premise:PersonX tells the truth
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['truth']})
+
+related words['reality', 'answer', 'fact', 'reason', 'justice']
+
+***********************
+
+Original premise:PersonX is in a difficult situation
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['situation'], 'verb': []})
+
+related words['situated', 'fluctuation', 'sitcom']
+
+***********************
+
+Original premise:PersonX returns the favour
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['return', 'favour'], 'verb': []})
+
+related words['answer', 'finance', 'turn', 'fawn', 'travel']
+
+***********************
+
+Original premise:PersonX refuses to listen to personY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['refuse'], 'verb': []})
+
+related words['recuse', 'fuse', 'refusal', 'refund']
+
+***********************
+
+Original premise:PersonX buys a new rug
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['rug']})
+
+related words['rag', 'wig', 'mud', 'design', 'cover']
+
+***********************
+
+Original premise:PersonX quits gambling
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['gamble', 'quit'], 'noun': []})
+
+related words['game', 'venture', 'pay', 'join', 'behave']
+
+***********************
+
+Original premise:PersonX gets back at someone
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['get'], 'noun': []})
+
+related words['buy', 'git', 'destroy', 'put', 'love']
+
+***********************
+
+Original premise:PersonX is almost too late
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['late'], 'noun': [], 'verb': []})
+
+related words['morning', 'night', 'lag', 'dead', 'shift']
+
+***********************
+
+Original premise:PersonX has won the match
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['match']})
+
+related words['game', 'fight', 'balance', 'answer', 'align']
+
+***********************
+
+Original premise:PersonX wears good clothes
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['wear', 'clothe'], 'verb': []})
+
+related words['coat', 'fashion', 'suit', 'clout', 'shirt']
+
+***********************
+
+Original premise:PersonX shows signs of renewed energy
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['energy', 'show', 'sign'], 'verb': []})
+
+related words['movie', 'message', 'fuel', 'project', 'performance']
+
+***********************
+
+Original premise:PersonX visits the great wall
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['wall', 'visit'], 'verb': []})
+
+related words['door', 'stone', 'glass', 'floor', 'layer']
+
+***********************
+
+Original premise:PersonX’s dad yells at him
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['dad'], 'verb': []})
+
+related words['father', 'mom', 'mother', 'daughter', 'baby']
+
+***********************
+
+Original premise:PersonX thinks about purchasing something
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['think', 'purchase'], 'noun': []})
+
+related words['ponder', 'write', 'start', 'dream', 'reason']
+
+***********************
+
+Original premise:PersonX helps PersonY shop
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['shop']})
+
+related words['buy', 'sale', 'office', 'selling', 'commerce']
+
+***********************
+
+Original premise:PersonX goes to a parade
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['parade']})
+
+related words['parry', 'pare', 'paddock', 'cavalcade']
+
+***********************
+
+Original premise:PersonX decides to approach PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['decide', 'approach'], 'noun': []})
+
+related words['decision', 'pitch', 'beacon']
+
+***********************
+
+Original premise:PersonX says "Thank you"
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['thank', 'say'], 'noun': []})
+
+related words['pay', 'agree', 'speak', 'reply', 'please']
+
+***********************
+
+Original premise:PersonX pulls out all the stops
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['stop']})
+
+related words['start', 'stuff', 'walk', 'spot', 'fast']
+
+***********************
+
+Original premise:PersonX visits her folks
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['visit', 'folk'], 'verb': []})
+
+related words['people', 'flower', 'home', 'culture', 'history']
+
+***********************
+
+Original premise:PersonX and PersonY have a discussion
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['discussion'], 'verb': []})
+
+related words['discus', 'negotiation']
+
+***********************
+
+Original premise:PersonX sings the wrong song
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['song']})
+
+related words['music', 'concert', 'album', 'story', 'slow']
+
+***********************
+
+Original premise:PersonX is a big man
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['man'], 'verb': []})
+
+related words['woman', 'person', 'son', 'people', 'house']
+
+***********************
+
+Original premise:PersonX and PersonY visit the circus
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['circus']})
+
+related words['flea', 'sideshow', 'acrobat', 'roustabout']
+
+***********************
+
+Original premise:PersonX receives a job offer
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['offer', 'job']})
+
+related words['project', 'deal', 'contract', 'trade', 'pay']
+
+***********************
+
+Original premise:PersonX leads an aimless life
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['life']})
+
+related words['world', 'time', 'people', 'death', 'reality']
+
+***********************
+
+Original premise:PersonX sees a doctor
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['doctor']})
+
+related words['hospital', 'health', 'worker', 'drug', 'patient']
+
+***********************
+
+Original premise:PersonX reaches out to a friend
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['friend']})
+
+related words['girl', 'enemy', 'member', 'loving', 'school']
+
+***********************
+
+Original premise:PersonX stands up for someone
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['stand'], 'noun': []})
+
+related words['walk', 'stop', 'hold', 'hand', 'turn']
+
+***********************
+
+Original premise:PersonX looks for alternatives
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['look', 'alternative'], 'verb': []})
+
+related words['alternating', 'sound', 'view', 'watch', 'match']
+
+***********************
+
+Original premise:PersonX gets a client
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['client']})
+
+related words['server', 'application', 'session', 'patient', 'agent']
+
+***********************
+
+Original premise:PersonX changes the way he uses it
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['change', 'way'], 'verb': []})
+
+related words['time', 'road', 'shake', 'bridge', 'mark']
+
+***********************
+
+Original premise:PersonX becomes PersonY's superior
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['superior'], 'noun': [], 'verb': []})
+
+related words['supervisor', 'superman', 'superpower']
+
+***********************
+
+Original premise:PersonX sings at the top of his voice
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['sing', 'top', 'voice'], 'verb': []})
+
+related words['song', 'music', 'speak', 'speech', 'message']
+
+***********************
+
+Original premise:PersonX picks up a call
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['call']})
+
+related words['tap', 'message', 'demand', 'invoke', 'talk']
+
+***********************
+
+Original premise:PersonX has five children
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['child'], 'verb': []})
+
+related words['father', 'brother', 'mother', 'girl']
+
+***********************
+
+Original premise:PersonX counts the change
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['change', 'count'], 'verb': []})
+
+related words['shake', 'return', 'mix', 'revolution', 'development']
+
+***********************
+
+Original premise:PersonX sits with PersonY at the parade
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['parade']})
+
+related words['parry', 'pare', 'paddock', 'cavalcade']
+
+***********************
+
+Original premise:PersonX pays his employees' salaries
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['employee', 'salary']})
+
+related words['employer', 'employ', 'unsalaried']
+
+***********************
+
+Original premise:PersonX makes an adjustment
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['adjustment']})
+
+related words['improvement', 'adjust', 'adjuster']
+
+***********************
+
+Original premise:PersonX makes a judgment
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['judgment']})
+
+related words['judge', 'adjudication']
+
+***********************
+
+Original premise:PersonX takes his chance
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['chance']})
+
+related words['choice', 'community', 'question', 'option', 'skill']
+
+***********************
+
+Original premise:PersonX is a scholar
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['scholar'], 'verb': []})
+
+related words['scholiast', 'goliard', 'kabbalist', 'mullah']
+
+***********************
+
+Original premise:PersonX is placed under sedation
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['sedation']})
+
+related words['sedative', 'sedate', 'administration']
+
+***********************
+
+Original premise:PersonX is a nice son-in-law
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['law', 'son'], 'verb': []})
+
+related words['man', 'daughter', 'brother', 'father', 'justice']
+
+***********************
+
+Original premise:PersonX becomes aware of a mistake
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['mistake'], 'verb': []})
+
+related words['outtake']
+
+***********************
+
+Original premise:PersonX comes close to winning
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': ['come', 'win'], 'noun': []})
+
+related words['income', 'bring', 'good', 'game', 'start']
+
+***********************
+
+Original premise:PersonX becomes cheerful
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['cheerful'], 'noun': [], 'verb': []})
+
+related words['cheer', 'cheery', 'lilting', 'sullen']
+
+***********************
+
+Original premise:PersonX listens to PersonY's favorite band
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['band']})
+
+related words['concert', 'group', 'strap', 'belt', 'camp']
+
+***********************
+
+Original premise:PersonX gives PersonY a makeover
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['makeover']})
+
+related words['maker', 'transformation', 'appearance']
+
+***********************
+
+Original premise:PersonX organizes the workers
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['worker']})
+
+related words['builder', 'founder', 'student', 'driver', 'doctor']
+
+***********************
+
+Original premise:PersonX sews the patch
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['patch']})
+
+related words['repair', 'batch', 'pat', 'hack', 'hole']
+
+***********************
+
+Original premise:PersonX searches for more
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['search'], 'verb': []})
+
+related words['finding', 'google', 'examination', 'debug', 'shop']
+
+***********************
+
+Original premise:PersonX studies the report
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['study', 'report'], 'verb': []})
+
+related words['research', 'review', 'analysis', 'student', 'project']
+
+***********************
+
+Original premise:PersonX gives her a kiss
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['kiss']})
+
+related words['touch', 'love', 'blow', 'sex', 'cross']
+
+***********************
+
+Original premise:PersonX reacts to
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['react'], 'verb': []})
+
+related words['accept', 'resist', 'return', 'software']
+
+***********************
+
+Original premise:PersonX walks through the mud
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['mud']})
+
+related words['sand', 'internet', 'water', 'seed', 'texture']
+
+***********************
+
+Original premise:PersonX declares to leave
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['declare'], 'verb': []})
+
+related words['prepare', 'declaration', 'declaratory']
+
+***********************
+
+Original premise:PersonX turns up at her place
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['place']})
+
+related words['house', 'location', 'time', 'people']
+
+***********************
+
+Original premise:PersonX comments
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['comment'], 'verb': []})
+
+related words['document', 'statement', 'behavior', 'note', 'software']
+
+***********************
+
+Original premise:PersonX lends PersonY his camera
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['camera', 'lend'], 'verb': []})
+
+related words['lens', 'picture', 'film', 'device', 'technology']
+
+***********************
+
+Original premise:PersonX checks how well PersonY is doing at work
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['work', 'check'], 'verb': []})
+
+related words['paycheck', 'attack', 'task', 'job', 'book']
+
+***********************
+
+Original premise:PersonX offers a proposal
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['proposal']})
+
+related words['proffer', 'proponent']
+
+***********************
+
+Original premise:PersonX helps PersonY with a science project
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['science', 'project']})
+
+related words['technology', 'research', 'program', 'planet', 'history']
+
+***********************
+
+Original premise:PersonX gets the rights to PersonY
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['right']})
+
+related words['left', 'conservative', 'command', 'reason', 'duty']
+
+***********************
+
+Original premise:PersonX and PersonY move to a new house
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['house'], 'verb': []})
+
+related words['bedroom', 'man', 'building', 'store', 'school']
+
+***********************
+
+Original premise:PersonX begins a self-help group
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['group', 'help', 'self']})
+
+related words['people', 'school', 'support', 'team', 'family']
+
+***********************
+
+Original premise:PersonX gets his brother back
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['brother']})
+
+related words['daughter', 'family', 'friend', 'uncle', 'child']
+
+***********************
+
+Original premise:PersonX visits an old classmate
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['classmate', 'visit'], 'verb': []})
+
+related words['workmate', 'mate', 'class', 'bless', 'chastise']
+
+***********************
+
+Original premise:PersonX moved back in with his mom
+
+extracted wordsdefaultdict(<class 'list'>, {'verb': [], 'noun': ['mom'], 'adj': []})
+
+related words['mother', 'dad', 'daughter', 'baby', 'family']
+
+***********************
+
+Original premise:PersonX being brave
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': ['brave'], 'noun': [], 'verb': []})
+
+related words['bravado', 'courage', 'prow']
+
+***********************
+
+Original premise:PersonX knows that the seats are uncomfortable
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['seat']})
+
+related words['bench', 'chair', 'home', 'swing', 'train']
+
+***********************
+
+Original premise:PersonX suggests doing something else
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['suggest'], 'verb': []})
+
+related words['offer', 'move', 'control', 'mint', 'recommend']
+
+***********************
+
+Original premise:PersonX accepts PersonY's gift
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['gift']})
+
+related words['beg', 'gelt', 'treat', 'favor', 'tribute']
+
+***********************
+
+Original premise:PersonX learns how to make money
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['money']})
+
+related words['cash', 'dollar', 'budget', 'price', 'wallet']
+
+***********************
+
+Original premise:PersonX robs the robbers
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['robber', 'rob'], 'verb': []})
+
+related words['bob', 'bobby', 'sandbagger', 'rip', 'fake']
+
+***********************
+
+Original premise:PersonX wins a track meet
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['meet', 'track']})
+
+related words['train', 'song', 'trace', 'channel', 'step']
+
+***********************
+
+Original premise:PersonX sees the consequences
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['consequence']})
+
+related words['con', 'consequent', 'conclusion', 'connote']
+
+***********************
+
+Original premise:PersonX discovers who has broken into his home
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['home', 'discover'], 'verb': []})
+
+related words['dinosaur', 'dwell', 'love', 'bedroom', 'country']
+
+***********************
+
+Original premise:PersonX draws the teacher
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['teacher']})
+
+related words['teach']
+
+***********************
+
+Original premise:PersonX gives PersonY a good deal
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['deal']})
+
+related words['contract', 'sale', 'buy', 'drug', 'show']
+
+***********************
+
+Original premise:PersonX makes the campfire
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['campfire']})
+
+related words['fire', 'bonfire', 'camp', 'campground', 'camping']
+
+***********************
+
+Original premise:PersonX reaches the summit
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'verb': [], 'noun': ['summit']})
+
+related words['sum', 'culminate', 'meeting', 'tor']
+
+***********************
+
+Original premise:PersonX stops by PersonY's table
+
+extracted wordsdefaultdict(<class 'list'>, {'adj': [], 'noun': ['table', 'stop'], 'verb': []})
+
+related words['start', 'plate', 'station', 'header', 'spot']
+
+***********************
+

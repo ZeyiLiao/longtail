@@ -1,12 +1,85 @@
+from ast import Break
 from dataclasses import dataclass
 from typing import List
+import os
 from helper import *
+
+
+
+class GPTppl():
+    def __init__(self,device):
+
+        self.model = AutoModelForCausalLM.from_pretrained("gpt2-large")
+        self.tokenizer = AutoTokenizer.from_pretrained("gpt2-large")
+        self.device = torch.device(device)
+        self.model.to(self.device)
+
+    def calculate_ppl(self,composed_rules):
+        composed_rules = list(set(composed_rules))
+        features = [torch.LongTensor(self.tokenizer.convert_tokens_to_ids(self.tokenizer.tokenize(composed_rule))) for composed_rule in composed_rules]
+        ppl_all = []
+
+        self.model.eval()
+
+        with torch.no_grad():
+            for index,feature in enumerate(features):
+                feature = feature.to(self.device)
+                loss = self.model(
+                    feature,
+                    labels = feature,
+                    return_dict = True
+                ).loss
+                ppl_all.append(math.exp(loss.item()))
+
+
+        return ppl_all
+
+
+
+def filter_by_format(input,outputs,constraint,mask = '[mask]'):
+    diff = 1
+    assert mask in input,'input format is wrong'
+    if ',' in input:
+        diff += 1
+    selected_pattern_outputs = []
+    index_mask = input.index(mask)
+    prefix_end = index_mask-1
+    suffix_start = len(input) - (index_mask + len(mask)) -diff
+
+    for output in outputs:
+    #   filter those not follow the mask pattern
+        if output[:prefix_end] == input[:prefix_end] and output[-suffix_start:] == input[-suffix_start:]:
+            # output_words = output.replace(',','').split(' ')
+            constraint_generation = output[prefix_end:-suffix_start]
+
+
+            clause_states = []
+            for concept in constraint.replace(' ','').split(','):
+
+    #  filter those not follow the constraints
+                clause_satisified = False
+                if concept in constraint_generation:
+                    clause_satisified = True
+
+
+                clause_states.append(clause_satisified)
+
+
+
+            if all(clause_states):
+                selected_pattern_outputs.append(output)
+
+
+
+
+    return selected_pattern_outputs
+
 
 
 @dataclass
 class PromptConfig:
     engine: str = "text-davinci-002"
-    max_tokens: int = 64
+    max_tokens: int = 128
     temperature: float = 1
     top_p: float = 1
     logprobs: int = 5
@@ -15,55 +88,63 @@ class PromptConfig:
 
 
 class PromptWrapper:
-    def __init__(self, negation_prefix: str):
-        self.negation_prefix = negation_prefix
-        self.negation_config = PromptConfig(
-            temperature=0,
-            top_p=1,
-            logprobs=0,
-            n =2
-        )
+    def __init__(self, prefix: str):
+        self.prefix = prefix
+        self.negation_config = PromptConfig(temperature=0.9,
+                                            top_p=1,
+                                            logprobs=0,
+                                            n=3)
+        self.ppl = GPTppl('cuda')
 
-    def prompt_negation(self, target: str):
-        """
-        Generate E_tilde given E
-        """
-        prompt_str = self.create_negation_prompt(target)
+    def prompt_generation(self, input: str, constraints: str):
+
+
+        prompt_str = self.create_prompt(input,constraints)
+
         response = openai.Completion.create(
             prompt=prompt_str,
             **self.negation_config.__dict__,
         )
-        neg_target = PromptWrapper.filter_generations(response.choices)[0]
-        return neg_target
+        target = self.filter_generations(response.choices,input,constraints)
+        return target
 
-    @staticmethod
-    def filter_generations(explanations: List):
+
+    def filter_generations(self,explanations: List,input,constraints):
         # Extract string explanations
-        filtered_explanations = [explanation.text.strip() for explanation in explanations]
+        try:
+            filtered_explanations = [
+                explanation.text.strip() for explanation in explanations
+            ]
+            filtered_explanations = list(set(filtered_explanations))
 
-        # Filter out empty string / those not ending with "."
-        filtered_explanations = list(filter(lambda exp: len(exp) > 0 and exp.endswith("."), filtered_explanations))
+            filtered_explanations = filter_by_format(input,filtered_explanations,constraints)
 
-        # Upper case the first letter
-        filtered_explanations = [explanation[0].upper() + explanation[1:] for explanation in filtered_explanations]
+            # Filter out empty string / those not ending with "."
+            filtered_explanations = list(
+                filter(lambda exp: len(exp) > 0 and exp.endswith("."),
+                    filtered_explanations))
 
-        # If there's none left, just add the first one
-        if len(filtered_explanations) == 0:
-            filtered_explanations.append(explanations[0].text.strip())
+            # Upper case the first letter
+            filtered_explanations = [
+                explanation[0].upper() + explanation[1:]
+                for explanation in filtered_explanations
+            ]
 
-        # Remove duplicates
-        filtered_explanations = list(dict.fromkeys(filtered_explanations))
+            if len(filtered_explanations) > 1:
+                filtered_explanations = filtered_explanations[sorted(range(len(filtered_explanations)), key= lambda i :self.ppl.calculate_ppl(filtered_explanations)[i])[0]]
 
-        return filtered_explanations
+            elif len(filtered_explanations) == 1:
+                filtered_explanations = filtered_explanations[0]
 
-    def create_negation_prompt(self, proposition: str):
-        return f"{self.negation_prefix}\n" \
-               f"A: {proposition}\n" \
-               f"B: The statement is false."
+            elif len(filtered_explanations) == 0:
+                filtered_explanations = ''
+            return filtered_explanations
 
-def negation_process(query,NEP_pair_path,negation_wrapper):
+        except:
+            return 'None'
 
-    with open(NEP_pair_path,'a+') as f:
-        tmp = negation_wrapper.prompt_negation(query)[:-1]
-        f.write(tmp)
-        f.write('\n')
+    def create_prompt(self, input: str, constraints: str):
+        return f"{self.prefix}\n" \
+               f"Input: {input}\n" \
+               f"Constraints: {constraints}\n"\
+               f"Output:"
