@@ -7,7 +7,6 @@ import pandas as pd
 import numpy as np
 from transformers import AutoTokenizer, AutoModelForSequenceClassification,AutoModelForMaskedLM,AutoModel,AutoModelForCausalLM
 import transformers
-from argparse import ArgumentParser
 from simcse import SimCSE
 import math
 import random

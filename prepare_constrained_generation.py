@@ -6,6 +6,9 @@ import os
 from lemminflect import getInflection, getAllInflections, getAllInflectionsOOV
 import nltk
 
+import argparse
+from argparse import ArgumentParser
+
 def back_to_sen(head,relation,tail):
     if relation == 'xAttr':
         content = head + ', so PersonX is seen as ' + tail + '.'
@@ -37,11 +40,12 @@ def back_to_sen_mask(head,relation,tail,model_name):
     return content
 
 
-def main(model_name):
+def main(args):
+
+    model_name = args.model_name
 
     premise_inputs = dict()
     premise_constraints = dict()
-
 
     generation_inputs_path = f'./generation_input_{model_name}.txt'
     generation_constraints_path = f'./generation_constraints_{model_name}.json'
@@ -57,12 +61,13 @@ def main(model_name):
         os.remove(generation_constraints_inflections_path)
 
 
-    query_file = 'input_file/query_CPE.csv'
-    related_words_save_file = './related_words.pkl'
-    # get_related_words(query_file,related_words_save_file)
+
+    if not os.path.exists(args.save_file) or args.force == True:
+
+        get_related_words(args.input_file,args.save_file)
 
 
-    with open(related_words_save_file,'rb') as f:
+    with open(args.save_file,'rb') as f:
         premise_words = pickle.load(f)
 
     with open('extracted_words.pkl','rb') as f:
@@ -88,7 +93,7 @@ def main(model_name):
 
 
 
-    all_tuples_file = './data/ATOMIC10X_filter.csv'
+    all_tuples_file = args.csv_file
 
     df = pd.read_csv(all_tuples_file,names = ['head','relation','tail'],index_col='head')
 
@@ -234,6 +239,11 @@ def main(model_name):
 
 
 if __name__ == '__main__':
-    model_name = 'bart'
-    print(f'For {model_name} version')
-    main(model_name)
+    parser = argparse.ArgumentParser(description='generate related word')
+    parser.add_argument('--input_file', default= 'input_file/query_CPE.csv')
+    parser.add_argument('--save_file', default= './related_words.pkl')
+    parser.add_argument('--model_name')
+    parser.add_argument('--force_generate', help='whether force to regenerate related words' ,action='store_true')
+    parser.add_argument('--csv_file', help='the file where we find the conclusion of the input',default='./data/ATOMIC10X_filter.csv')
+    arts = parser.parse_args()
+    main(arts)
