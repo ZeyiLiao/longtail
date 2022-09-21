@@ -8,3 +8,4 @@ numbatch_embeddings/
 .vector_cache/
 key.txt
 output_file/
+combine_results/
