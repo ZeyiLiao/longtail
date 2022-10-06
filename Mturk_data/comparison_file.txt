@@ -1,4 +1,10 @@
-input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless. ; Constraint: plot ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"]]
+
+
 gpt : PersonX has no plan and plots to take over the world, so PersonX feels clueless.
 neuro : PersonX has no plan and no plot, so PersonX feels clueless.
 vanilla : PersonX has no plan and no plot, so PersonX feels clueless.
@@ -6,15 +12,27 @@ vanilla : PersonX has no plan and no plot, so PersonX feels clueless.
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan and no plot, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless. ; Constraint: plot, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"], ["not", "no"]]
+
+
+gpt : PersonX has no plot and no plan, so PersonX feels clueless.
 neuro : PersonX has no plan and no plot, so PersonX feels clueless.
 vanilla : PersonX has no plan and no plot, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless. ; Constraint: goal ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"]]
+
+
 gpt : PersonX has no plan and no goal, so PersonX feels clueless.
 neuro : PersonX has no plan and no goal, so PersonX feels clueless.
 vanilla : PersonX has no plan and no goal, so PersonX feels clueless.
@@ -22,7 +40,13 @@ vanilla : PersonX has no plan and no goal, so PersonX feels clueless.
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless. ; Constraint: goal, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"], ["not", "no"]]
+
+
 gpt : PersonX has no plan and no goal, so PersonX feels clueless.
 neuro : PersonX has no plan and no goal, so PersonX feels clueless.
 vanilla : PersonX has no plan and no goal, so PersonX feels clueless.
@@ -30,31 +54,55 @@ vanilla : PersonX has no plan and no goal, so PersonX feels clueless.
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan and is in the third dimension, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless. ; Constraint: dimension ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"]]
+
+
+gpt : PersonX has no plan and falls into a higher dimensional space, so PersonX feels clueless.
 neuro : PersonX has no plan and no dimension, so PersonX feels clueless.
 vanilla : PersonX has no plan and no dimension, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan and no idea what to do, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless. ; Constraint: dimension, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"], ["not", "no"]]
+
+
+gpt : PersonX has no plan and no idea what to do next, so PersonX feels clueless.
 neuro : PersonX has no plan and no dimension, so PersonX feels clueless.
 vanilla : PersonX has no plan and no dimension, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan and charts the next steps, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless. ; Constraint: chart ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"]]
+
+
+gpt : PersonX has no plan and makes a chart, so PersonX feels clueless.
 neuro : PersonX has no plan and no chart, so PersonX feels clueless.
 vanilla : PersonX has no plan and no chart, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless. ; Constraint: chart, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"], ["not", "no"]]
+
+
 gpt : PersonX has no plan and no chart, so PersonX feels clueless.
 neuro : PersonX has no plan and no chart, so PersonX feels clueless.
 vanilla : PersonX has no plan and no chart, so PersonX feels clueless.
@@ -62,15 +110,27 @@ vanilla : PersonX has no plan and no chart, so PersonX feels clueless.
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan and a budget, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless. ; Constraint: budget ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"]]
+
+
+gpt : PersonX has no plan and budget, so PersonX feels clueless.
 neuro : PersonX has no plan and no budget, so PersonX feels clueless.
 vanilla : PersonX has no plan and no budget, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX feels clueless. ; Constraint: budget, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"], ["not", "no"]]
+
+
 gpt : PersonX has no plan and no budget, so PersonX feels clueless.
 neuro : PersonX has no plan and no budget, so PersonX feels clueless.
 vanilla : PersonX has no plan and no budget, so PersonX feels clueless.
@@ -78,111 +138,195 @@ vanilla : PersonX has no plan and no budget, so PersonX feels clueless.
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan while plotting, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless. ; Constraint: plot ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"]]
+
+
+gpt : PersonX has no plan while plotting, so PersonX feels unsure.
 neuro : PersonX has no plan while plotting, so PersonX feels clueless.
 vanilla : PersonX has no plan while plotting, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan while no one plot, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless. ; Constraint: plot, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"], ["not", "no"]]
+
+
+gpt : PersonX has no plan while <extra_id_0>, so PersonX feels clueless.
 neuro : PersonX has no plan while there is no plot, so PersonX feels clueless.
 vanilla : PersonX has no plan while there is no plot, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan while goal is not clear, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless. ; Constraint: goal ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"]]
+
+
+gpt : PersonX has no plan while working on the goal, so PersonX feels clueless.
 neuro : PersonX has no plan while the goal, so PersonX feels clueless.
 vanilla : PersonX has no plan while on vacation, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan while has no goal, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless. ; Constraint: goal, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"], ["not", "no"]]
+
+
+gpt : PersonX has no plan while no goal, so PersonX feels clueless.
 neuro : PersonX has no plan while no goal, so PersonX feels clueless.
 vanilla : PersonX has no plan while no goal, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan while in the third dimension, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless. ; Constraint: dimension ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"]]
+
+
+gpt : PersonX has no plan while in a three-dimensional space, so PersonX feels clueless.
 neuro : PersonX has no plan while in the dimension, so PersonX feels clueless.
 vanilla : PersonX has no plan while in the dimension, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan while no one dimensional, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless. ; Constraint: dimension, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"], ["not", "no"]]
+
+
+gpt : PersonX has no plan while no one enters the fourth dimension, so PersonX feels clueless.
 neuro : PersonX has no plan while no dimension, so PersonX feels clueless.
 vanilla : PersonX has no plan while no dimension, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan while charting the course, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless. ; Constraint: chart ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"]]
+
+
+gpt : PersonX has no plan while charting the progress, so PersonX feels clueless.
 neuro : PersonX has no plan while on the chart, so PersonX feels clueless.
 vanilla : PersonX has no plan while on the chart, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan while no chart, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless. ; Constraint: chart, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"], ["not", "no"]]
+
+
+gpt : PersonX has no plan while the chart is blank, so PersonX feels clueless.
 neuro : PersonX has no plan while there is no chart, so PersonX feels clueless.
 vanilla : PersonX has no plan while there is no chart, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no plan while budget is low, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless. ; Constraint: budget ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"]]
+
+
+gpt : PersonX has no plan while on a budget, so PersonX feels clueless.
 neuro : PersonX has no plan while budgeting, so PersonX feels clueless.
 vanilla : PersonX has no plan while budgeting, so PersonX feels clueless.
 
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless.
-gpt : PersonX has no budget while <extra_id_0>, so PersonX feels clueless.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX feels clueless. ; Constraint: budget, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"], ["not", "no"]]
+
+
+gpt : PersonX has no plan while budget is low, so PersonX feels clueless.
 neuro : PersonX has no plan while no budget, so PersonX feels clueless.
 vanilla : PersonX has no plan while no budget, so PersonX feels clueless.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless.
-gpt : PersonX has a great plot but PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless. ; Constraint: plot ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"]]
+
+
+gpt : PersonX has a secret plot but PersonX has no plan, so PersonX feels clueless.
 neuro : PersonX wants to plot but PersonX has no plan, so PersonX feels clueless.
 vanilla : PersonX wants to plot but PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless.
-gpt : PersonX does not have a plot but PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless. ; Constraint: plot, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"], ["not", "no"]]
+
+
+gpt : PersonX does not know what the plot is but PersonX has no plan, so PersonX feels clueless.
 neuro : PersonX does not plot but PersonX has no plan, so PersonX feels clueless.
 vanilla : PersonX does not plot but PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless.
-gpt : PersonX's goal is to <extra_id_0> but PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless. ; Constraint: goal ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"]]
+
+
+gpt : PersonX's goal is to find a plan but PersonX has no plan, so PersonX feels clueless.
 neuro : PersonX has a goal but PersonX has no plan, so PersonX feels clueless.
 vanilla : PersonX has a goal but PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless. ; Constraint: goal, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"], ["not", "no"]]
+
+
 gpt : PersonX has no goal but PersonX has no plan, so PersonX feels clueless.
 neuro : PersonX has no goal but PersonX has no plan, so PersonX feels clueless.
 vanilla : PersonX has no goal but PersonX has no plan, so PersonX feels clueless.
@@ -190,39 +334,69 @@ vanilla : PersonX has no goal but PersonX has no plan, so PersonX feels clueless
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless.
-gpt : PersonX is in a three dimensional world but PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless. ; Constraint: dimension ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"]]
+
+
+gpt : PersonX is in a different dimension but PersonX has no plan, so PersonX feels clueless.
 neuro : PersonX has dimension but PersonX has no plan, so PersonX feels clueless.
 vanilla : PersonX has dimension but PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless.
-gpt : PersonX is in a three dimensional world but PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless. ; Constraint: dimension, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"], ["not", "no"]]
+
+
+gpt : PersonX enters a new dimension but PersonX has no plan, so PersonX feels clueless.
 neuro : PersonX has no dimension but PersonX has no plan, so PersonX feels clueless.
 vanilla : PersonX has no dimension but PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless.
-gpt : Chart shows the result but PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless. ; Constraint: chart ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"]]
+
+
+gpt : PersonX looks at the chart but PersonX has no plan, so PersonX feels clueless.
 neuro : PersonX has a chart but PersonX has no plan, so PersonX feels clueless.
 vanilla : PersonX has a chart but PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless.
-gpt : PersonX does not have a chart but PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless. ; Constraint: chart, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"], ["not", "no"]]
+
+
+gpt : PersonX has no chart but PersonX has no plan, so PersonX feels clueless.
 neuro : PersonX does not have a chart but PersonX has no plan, so PersonX feels clueless.
 vanilla : PersonX does not have a chart but PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless. ; Constraint: budget ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"]]
+
+
 gpt : Although PersonX has no budget, PersonX has no plan, so PersonX feels clueless.
 neuro : PersonX has a budget but PersonX has no plan, so PersonX feels clueless.
 vanilla : PersonX has a budget but PersonX has no plan, so PersonX feels clueless.
@@ -230,7 +404,13 @@ vanilla : PersonX has a budget but PersonX has no plan, so PersonX feels clueles
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX feels clueless. ; Constraint: budget, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"], ["not", "no"]]
+
+
 gpt : PersonX does not have a budget but PersonX has no plan, so PersonX feels clueless.
 neuro : PersonX does not have a budget but PersonX has no plan, so PersonX feels clueless.
 vanilla : PersonX has no budget but PersonX has no plan, so PersonX feels clueless.
@@ -238,63 +418,111 @@ vanilla : PersonX has no budget but PersonX has no plan, so PersonX feels cluele
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless.
-gpt : Although PersonX has no friends, PersonX has no plot, so PersonX feels clueless.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless. ; Constraint: plot ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"]]
+
+
+gpt : Although PersonX has a plan, PersonX has no plan, so PersonX feels clueless.
 neuro : Although plot is important, PersonX has no plan, so PersonX feels clueless.
 vanilla : Although plot is important, PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless.
-gpt : Although PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless. ; Constraint: plot, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"], ["not", "no"]]
+
+
+gpt : Although PersonX has no <extra_id_0>, PersonX has no plan, so PersonX feels clueless.
 neuro : Although no plot, PersonX has no plan, so PersonX feels clueless.
 vanilla : Although no plot, PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless.
-gpt : Although PersonX's goal is to get an A in the class, PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless. ; Constraint: goal ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"]]
+
+
+gpt : Although PersonX's goal is to get an 'A', PersonX has no plan, so PersonX feels clueless.
 neuro : Although the goal is clear, PersonX has no plan, so PersonX feels clueless.
 vanilla : Although the goal is clear, PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless.
-gpt : Although PersonX has no goal, PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless. ; Constraint: goal, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"], ["not", "no"]]
+
+
+gpt : AlthoughPersonX has no goal, PersonX has no plan, so PersonX feels clueless.
 neuro : Although no goal is set, PersonX has no plan, so PersonX feels clueless.
 vanilla : Although no goal is set, PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless.
-gpt : Although PersonX enters another dimension, PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless. ; Constraint: dimension ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"]]
+
+
+gpt : Although PersonX has three dimensions, PersonX has no plan, so PersonX feels clueless.
 neuro : Although dimension is important, PersonX has no plan, so PersonX feels clueless.
 vanilla : Although dimension is important, PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless.
-gpt : Although PersonX has no idea about the other dimension, PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless. ; Constraint: dimension, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"], ["not", "no"]]
+
+
+gpt : Although PersonX has no idea of the dimension, PersonX has no plan, so PersonX feels clueless.
 neuro : Although no dimension, PersonX has no plan, so PersonX feels clueless.
 vanilla : Although no dimension, PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless.
-gpt : Although the chart is being created, PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless. ; Constraint: chart ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"]]
+
+
+gpt : Although the chart is useful, PersonX has no plan, so PersonX feels clueless.
 neuro : Although there is a chart, PersonX has no plan, so PersonX feels clueless.
 vanilla : Although there is a chart, PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless. ; Constraint: chart, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"], ["not", "no"]]
+
+
 gpt : Although PersonX has no chart, PersonX has no plan, so PersonX feels clueless.
 neuro : Although there is no chart, PersonX has no plan, so PersonX feels clueless.
 vanilla : Although there is no chart, PersonX has no plan, so PersonX feels clueless.
@@ -302,15 +530,27 @@ vanilla : Although there is no chart, PersonX has no plan, so PersonX feels clue
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless.
-gpt : Although PersonX has a budget, PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless. ; Constraint: budget ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"]]
+
+
+gpt : Although budget is limited, PersonX has no plan, so PersonX feels clueless.
 neuro : Although the budget is tight, PersonX has no plan, so PersonX feels clueless.
 vanilla : Although the budget is tight, PersonX has no plan, so PersonX feels clueless.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX feels clueless. ; Constraint: budget, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"], ["not", "no"]]
+
+
 gpt : Although PersonX has no budget, PersonX has no plan, so PersonX feels clueless.
 neuro : Although no budget, PersonX has no plan, so PersonX feels clueless.
 vanilla : Although no budget, PersonX has no plan, so PersonX feels clueless.
@@ -318,23 +558,41 @@ vanilla : Although no budget, PersonX has no plan, so PersonX feels clueless.
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared.
-gpt : PersonX has no plan and is not ready to make a move, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: plot ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"]]
+
+
+gpt : PersonX has no plan and is devising a plot, so PersonX is seen as unprepared.
 neuro : PersonX has no plan and no plot, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan and no plot, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared.
-gpt : PersonX has no plot and no plan, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: plot, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"], ["not", "no"]]
+
+
+gpt : PersonX has no plan and no plot, so PersonX is seen as unprepared.
 neuro : PersonX has no plan and no plot, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan and no plot, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: goal ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"]]
+
+
 gpt : PersonX has no plan and no goal, so PersonX is seen as unprepared.
 neuro : PersonX has no plan and no goal, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan and no goal, so PersonX is seen as unprepared.
@@ -342,7 +600,13 @@ vanilla : PersonX has no plan and no goal, so PersonX is seen as unprepared.
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: goal, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"], ["not", "no"]]
+
+
 gpt : PersonX has no plan and no goal, so PersonX is seen as unprepared.
 neuro : PersonX has no plan and no goal, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan and no goal, so PersonX is seen as unprepared.
@@ -350,31 +614,41 @@ vanilla : PersonX has no plan and no goal, so PersonX is seen as unprepared.
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared.
-gpt : PersonX has no plan and is in a three-dimensional space, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: dimension ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"]]
+
+
+gpt : PersonX has no plan and <extra_id_0> is in another dimension, so PersonX is seen as unprepared.
 neuro : PersonX has no plan and no dimension, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan and no dimension, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared.
-gpt : PersonX has no plan and no dimensions, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: dimension, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"], ["not", "no"]]
+
+
+gpt : PersonX has no plan and no idea, so PersonX is seen as unprepared.
 neuro : PersonX has no plan and no dimension, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan and no dimension, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared.
-gpt : PersonX has no plan and creates a chart, so PersonX is seen as unprepared.
-neuro : PersonX has no plan and no chart, so PersonX is seen as unprepared.
-vanilla : PersonX has no plan and no chart, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: chart ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"]]
 
 
-************************
-
-input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared.
 gpt : PersonX has no plan and no chart, so PersonX is seen as unprepared.
 neuro : PersonX has no plan and no chart, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan and no chart, so PersonX is seen as unprepared.
@@ -382,7 +656,27 @@ vanilla : PersonX has no plan and no chart, so PersonX is seen as unprepared.
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: chart, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"], ["not", "no"]]
+
+
+gpt : PersonX has no plan and no chart, so PersonX is seen as unprepared.
+neuro : PersonX has no plan and no chart, so PersonX is seen as unprepared.
+vanilla : PersonX has no plan and no chart, so PersonX is seen as unprepared.
+
+
+************************
+
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: budget ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"]]
+
+
 gpt : PersonX has no plan and no budget, so PersonX is seen as unprepared.
 neuro : PersonX has no plan and no budget, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan and no budget, so PersonX is seen as unprepared.
@@ -390,15 +684,27 @@ vanilla : PersonX has no plan and no budget, so PersonX is seen as unprepared.
 
 ************************
 
-input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared.
-gpt : PersonX has no plan and no budget, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan and <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: budget, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"], ["not", "no"]]
+
+
+gpt : PersonX has no budget and no plan, so PersonX is seen as unprepared.
 neuro : PersonX has no plan and no budget, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan and no budget, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: plot ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"]]
+
+
 gpt : PersonX has no plan while plotting, so PersonX is seen as unprepared.
 neuro : PersonX has no plan while plotting, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan while plotting, so PersonX is seen as unprepared.
@@ -406,7 +712,13 @@ vanilla : PersonX has no plan while plotting, so PersonX is seen as unprepared.
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: plot, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"], ["not", "no"]]
+
+
 gpt : PersonX has no plan while plotting, so PersonX is seen as unprepared.
 neuro : PersonX has no plan while there is no plot, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan while there is no plot, so PersonX is seen as unprepared.
@@ -414,15 +726,27 @@ vanilla : PersonX has no plan while there is no plot, so PersonX is seen as unpr
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared.
-gpt : PersonX has no plan while PersonX's goal is to seek a job, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: goal ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"]]
+
+
+gpt : PersonX has no plan while having no goal, so PersonX is seen as unprepared.
 neuro : PersonX has no plan while achieving the goal, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan while achieving the goal, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: goal, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"], ["not", "no"]]
+
+
 gpt : PersonX has no plan while no goal, so PersonX is seen as unprepared.
 neuro : PersonX has no plan while no goal is set, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan while no goal is set, so PersonX is seen as unprepared.
@@ -430,7 +754,13 @@ vanilla : PersonX has no plan while no goal is set, so PersonX is seen as unprep
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: dimension ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"]]
+
+
 gpt : PersonX has no plan while in a different dimension, so PersonX is seen as unprepared.
 neuro : PersonX has no plan while in dimension, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan while in dimension, so PersonX is seen as unprepared.
@@ -438,15 +768,27 @@ vanilla : PersonX has no plan while in dimension, so PersonX is seen as unprepar
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared.
-gpt : PersonX has no plan while in the three-dimensional world, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: dimension, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"], ["not", "no"]]
+
+
+gpt : PersonX has no plan while in the fourth dimension, so PersonX is seen as unprepared.
 neuro : PersonX has no plan while no dimension, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan while no dimension, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: chart ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"]]
+
+
 gpt : PersonX has no plan while charting a course, so PersonX is seen as unprepared.
 neuro : PersonX has no plan while charting, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan while on vacation, so PersonX is seen as unprepared.
@@ -454,7 +796,13 @@ vanilla : PersonX has no plan while on vacation, so PersonX is seen as unprepare
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: chart, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"], ["not", "no"]]
+
+
 gpt : PersonX has no plan while charting the stars, so PersonX is seen as unprepared.
 neuro : PersonX has no plan while there is no chart, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan while there is no chart, so PersonX is seen as unprepared.
@@ -462,39 +810,69 @@ vanilla : PersonX has no plan while there is no chart, so PersonX is seen as unp
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared.
-gpt : PersonX has no plan while budget is limited, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: budget ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"]]
+
+
+gpt : PersonX has no plan while budget is low, so PersonX is seen as unprepared.
 neuro : PersonX has no plan while budgeting, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan while budgeting, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared.
-gpt : PersonX has no budget while <extra_id_0>, so PersonX is seen as unprepared.
+input_format:
+Input: PersonX has no plan while <extra_id_0>, so PersonX is seen as unprepared. ; Constraint: budget, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"], ["not", "no"]]
+
+
+gpt : PersonX has no plan while no budget, so PersonX is seen as unprepared.
 neuro : PersonX has no plan while no budget, so PersonX is seen as unprepared.
 vanilla : PersonX has no plan while no budget, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared.
-gpt : PersonX has a plan but PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: plot ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"]]
+
+
+gpt : PersonX has a secret plot but PersonX has no plan, so PersonX is seen as unprepared.
 neuro : PersonX has a plot but PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : PersonX has a plot but PersonX has no plan, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared.
-gpt : PersonX has no plot but PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: plot, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"], ["not", "no"]]
+
+
+gpt : PersonX has no <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared.
 neuro : PersonX does not plot but PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : PersonX does not plot but PersonX has no plan, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: goal ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"]]
+
+
 gpt : PersonX's goal is to <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared.
 neuro : PersonX has a goal but PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : PersonX has a goal but PersonX has no plan, so PersonX is seen as unprepared.
@@ -502,7 +880,13 @@ vanilla : PersonX has a goal but PersonX has no plan, so PersonX is seen as unpr
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: goal, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"], ["not", "no"]]
+
+
 gpt : PersonX has no goal but PersonX has no plan, so PersonX is seen as unprepared.
 neuro : PersonX has no goal but PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : PersonX has a goal but PersonX has no plan, so PersonX is seen as unprepared.
@@ -510,47 +894,83 @@ vanilla : PersonX has a goal but PersonX has no plan, so PersonX is seen as unpr
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared.
-gpt : Other people have a plan but PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: dimension ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"]]
+
+
+gpt : PersonX is in a parallel dimension but PersonX has no plan, so PersonX is seen as unprepared.
 neuro : PersonX has dimension but PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : PersonX has dimension but PersonX has no plan, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared.
-gpt : PersonX is in a three-dimensional world but PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: dimension, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"], ["not", "no"]]
+
+
+gpt : PersonX's plan is two-dimensional but PersonX has no plan, so PersonX is seen as unprepared.
 neuro : PersonX has no dimension but PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : PersonX has no dimension but PersonX has no plan, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared.
-gpt : PersonX looks at the chart but PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: chart ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"]]
+
+
+gpt : PersonX has a chart but PersonX has no plan, so PersonX is seen as unprepared.
 neuro : PersonX has a chart but PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : PersonX has a chart but PersonX has no plan, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared.
-gpt : PersonX has no chart but PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: chart, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"], ["not", "no"]]
+
+
+gpt : PersonX does not have a chart but PersonX has no plan, so PersonX is seen as unprepared.
 neuro : PersonX does not have a chart but PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : PersonX has a chart but PersonX has no plan, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared.
-gpt : Although PersonX has a budget, PersonX has no plan, so PersonX is seen as unprepared
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: budget ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"]]
+
+
+gpt : Although PersonX has a budget, PersonX has no plan, so PersonX is seen as unprepared.
 neuro : PersonX has a budget but PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : PersonX has a budget but PersonX has no plan, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: <extra_id_0> but PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: budget, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"], ["not", "no"]]
+
+
 gpt : PersonX does not have a budget but PersonX has no plan, so PersonX is seen as unprepared.
 neuro : PersonX does not have a budget but PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : PersonX has no budget but PersonX has no plan, so PersonX is seen as unprepared.
@@ -558,31 +978,55 @@ vanilla : PersonX has no budget but PersonX has no plan, so PersonX is seen as u
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared.
-gpt : Although PersonX has no plan, PersonX is seen as unprepared.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: plot ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"]]
+
+
+gpt : Although PersonX has no previous experience, PersonX has no plan, so PersonX is seen as unprepared.
 neuro : Although plot is important, PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : Although plot is important, PersonX has no plan, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared.
-gpt : Although PersonX has no plot, PersonX is seen as unprepared.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: plot, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["plot", "plotting", "plots", "plotted"], ["not", "no"]]
+
+
+gpt : Although no one has a plan, PersonX has no plan, so PersonX is seen as unprepared.
 neuro : Although no plot, PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : Although no plot, PersonX has no plan, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared.
-gpt : Although PersonX's goal is to do well in the class, PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: goal ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"]]
+
+
+gpt : Although PersonX's goal is to become a CEO, PersonX has no plan, so PersonX is seen as unprepared.
 neuro : Although the goal is clear, PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : Although the goal is clear, PersonX has no plan, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: goal, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["goal", "goals"], ["not", "no"]]
+
+
 gpt : Although PersonX has no goal, PersonX is seen as unprepared.
 neuro : Although no goal is set, PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : Although no goal is set, PersonX has no plan, so PersonX is seen as unprepared.
@@ -590,15 +1034,27 @@ vanilla : Although no goal is set, PersonX has no plan, so PersonX is seen as un
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared.
-gpt : Although the dimension of the situation is unknown, PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: dimension ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"]]
+
+
+gpt : Although the extra-dimensional being is here, PersonX has no plan, so PersonX is seen as unprepared.
 neuro : Although dimension is important, PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : Although dimension is important, PersonX has no plan, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: dimension, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["dimension", "dimensions"], ["not", "no"]]
+
+
 gpt : Although PersonX has no extra dimension, PersonX has no plan, so PersonX is seen as unprepared.
 neuro : Although no dimension, PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : Although no dimension, PersonX has no plan, so PersonX is seen as unprepared.
@@ -606,15 +1062,27 @@ vanilla : Although no dimension, PersonX has no plan, so PersonX is seen as unpr
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared.
-gpt : Although there is a chart, PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: chart ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"]]
+
+
+gpt : Although PersonX has a detailed chart, PersonX has no plan, so PersonX is seen as unprepared.
 neuro : Although there is no chart, PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : Although there is no chart, PersonX has no plan, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: chart, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["charting", "charted", "charts", "chart"], ["not", "no"]]
+
+
 gpt : Although PersonX has no chart, PersonX has no plan, so PersonX is seen as unprepared.
 neuro : Although there is no chart, PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : Although there is no chart, PersonX has no plan, so PersonX is seen as unprepared.
@@ -622,7 +1090,13 @@ vanilla : Although there is no chart, PersonX has no plan, so PersonX is seen as
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared.
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: budget ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"]]
+
+
 gpt : Although PersonX has a budget, PersonX has no plan, so PersonX is seen as unprepared.
 neuro : Although the budget is tight, PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : Although the budget is tight, PersonX has no plan, so PersonX is seen as unprepared.
@@ -630,23 +1104,41 @@ vanilla : Although the budget is tight, PersonX has no plan, so PersonX is seen 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared.
-gpt : Although PersonX has no budget, PersonX has no plan, so PersonX is seen as unprepared
+input_format:
+Input: Although <extra_id_0>, PersonX has no plan, so PersonX is seen as unprepared. ; Constraint: budget, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["budget", "budgets", "budgeting", "budgeted"], ["not", "no"]]
+
+
+gpt : Although PersonX has no budget, PersonX has no plan, so PersonX is seen as unprepared.
 neuro : Although no budget is set, PersonX has no plan, so PersonX is seen as unprepared.
 vanilla : Although no budget is set, PersonX has no plan, so PersonX is seen as unprepared.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX feels betrayed.
-gpt : PersonX has been betrayed by PersonY and their trust, so PersonX feels betrayed.
+input_format:
+Input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX feels betrayed. ; Constraint: tray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"]]
+
+
+gpt : PersonX has been betrayed by PersonY and tried to trust again, so PersonX feels betrayed.
 neuro : PersonX has been betrayed by PersonY and PersonY has a tray, so PersonX feels betrayed.
 vanilla : PersonX has been betrayed by PersonY and PersonY has a tray, so PersonX feels betrayed.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX feels betrayed.
+input_format:
+Input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX feels betrayed. ; Constraint: tray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"], ["not", "no"]]
+
+
 gpt : PersonX has been betrayed by PersonY and no one, so PersonX feels betrayed.
 neuro : PersonX has been betrayed by PersonY and no tray, so PersonX feels betrayed.
 vanilla : PersonX has been betrayed by PersonY and no tray, so PersonX feels betrayed.
@@ -654,15 +1146,27 @@ vanilla : PersonX has been betrayed by PersonY and no tray, so PersonX feels bet
 
 ************************
 
-input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX feels betrayed.
-gpt : PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX feels betrayed.
+input_format:
+Input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX feels betrayed. ; Constraint: fraud ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"]]
+
+
+gpt : PersonX has been betrayed by PersonY and finds that PersonY has committed fraud, so PersonX feels betrayed.
 neuro : PersonX has been betrayed by PersonY and PersonY has committed fraud, so PersonX feels betrayed.
 vanilla : PersonX has been betrayed by PersonY and PersonY has committed fraud, so PersonX feels betrayed.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX feels betrayed.
+input_format:
+Input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX feels betrayed. ; Constraint: fraud, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"], ["not", "no"]]
+
+
 gpt : PersonX has been betrayed by PersonY and no one, so PersonX feels betrayed.
 neuro : PersonX has been betrayed by PersonY and PersonY has not committed fraud, so PersonX feels betrayed.
 vanilla : PersonX has been betrayed by PersonY and PersonY has not committed fraud, so PersonX feels betrayed.
@@ -670,7 +1174,13 @@ vanilla : PersonX has been betrayed by PersonY and PersonY has not committed fra
 
 ************************
 
-input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX feels betrayed.
+input_format:
+Input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX feels betrayed. ; Constraint: astray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"]]
+
+
 gpt : PersonX has been betrayed by PersonY and left astray, so PersonX feels betrayed.
 neuro : PersonX has been betrayed by PersonY and has gone astray, so PersonX feels betrayed.
 vanilla : PersonX has been betrayed by PersonY and has gone astray, so PersonX feels betrayed.
@@ -678,15 +1188,27 @@ vanilla : PersonX has been betrayed by PersonY and has gone astray, so PersonX f
 
 ************************
 
-input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX feels betrayed.
-gpt : PersonX has been betrayed by PersonY and left alone, so PersonX feels betrayed.
+input_format:
+Input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX feels betrayed. ; Constraint: astray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"], ["not", "no"]]
+
+
+gpt : PersonX has been betrayed by PersonY and no one, so PersonX feels betrayed.
 neuro : PersonX has been betrayed by PersonY and is not going astray, so PersonX feels betrayed.
 vanilla : PersonX has been betrayed by PersonY and has not been led astray, so PersonX feels betrayed.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX feels betrayed.
+input_format:
+Input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX feels betrayed. ; Constraint: tray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"]]
+
+
 gpt : PersonX has been betrayed by PersonY while trying to help, so PersonX feels betrayed.
 neuro : PersonX has been betrayed by PersonY while on a tray, so PersonX feels betrayed.
 vanilla : PersonX has been betrayed by PersonY while on a tray, so PersonX feels betrayed.
@@ -694,55 +1216,97 @@ vanilla : PersonX has been betrayed by PersonY while on a tray, so PersonX feels
 
 ************************
 
-input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX feels betrayed.
-gpt : PersonX has been betrayed by PersonY while no one betrays PersonX, so PersonX feels betrayed.
+input_format:
+Input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX feels betrayed. ; Constraint: tray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"], ["not", "no"]]
+
+
+gpt : PersonX has been betrayed by PersonY while PersonX serves PersonY a tray of food, so PersonX feels betrayed.
 neuro : PersonX has been betrayed by PersonY while no tray, so PersonX feels betrayed.
 vanilla : PersonX has been betrayed by PersonY while no tray, so PersonX feels betrayed.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX feels betrayed.
-gpt : PersonX has been betrayed by PersonY while under the guise of a business transaction, so PersonX feels betrayed.
+input_format:
+Input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX feels betrayed. ; Constraint: fraud ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"]]
+
+
+gpt : PersonX has been betrayed by PersonY while being defrauded, so PersonX feels betrayed
 neuro : PersonX has been betrayed by PersonY while PersonY has committed fraud, so PersonX feels betrayed.
 vanilla : PersonX has been betrayed by PersonY while PersonY has committed fraud, so PersonX feels betrayed.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX feels betrayed.
-gpt : PersonX has been betrayed by PersonY while no amount of money could help, so PersonX feels betrayed.
+input_format:
+Input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX feels betrayed. ; Constraint: fraud, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"], ["not", "no"]]
+
+
+gpt : PersonX has been betrayed by PersonY while being scammed, so PersonX feels betrayed.
 neuro : PersonX has been betrayed by PersonY while no fraud is committed, so PersonX feels betrayed.
 vanilla : PersonX has been betrayed by PersonY while no fraud is committed, so PersonX feels betrayed.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX feels betrayed.
-gpt : PersonX has been betrayed by PersonY while astray, so PersonX feels betrayed
+input_format:
+Input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX feels betrayed. ; Constraint: astray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"]]
+
+
+gpt : PersonX has been betrayed by PersonY while PersonY leads PersonX astray, so PersonX feels betrayed.
 neuro : PersonX has been betrayed by PersonY while going astray, so PersonX feels betrayed.
 vanilla : PersonX has been betrayed by PersonY while going astray, so PersonX feels betrayed.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX feels betrayed.
-gpt : PersonX has been betrayed by PersonY while PersonX trusted PersonY, so PersonX feels betrayed.
+input_format:
+Input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX feels betrayed. ; Constraint: astray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"], ["not", "no"]]
+
+
+gpt : PersonX has been betrayed by PersonY while PersonX is not looking, so PersonX feels betrayed.
 neuro : PersonX has been betrayed by PersonY while no one goes astray, so PersonX feels betrayed.
 vanilla : PersonX has been betrayed by PersonY while no one goes astray, so PersonX feels betrayed.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-gpt : PersonX sneaks into PersonY's room and sees a tray of food, so PersonX feels nervous.
+input_format:
+Input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX feels betrayed. ; Constraint: tray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"]]
+
+
+gpt : PersonX finds a tray of food but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 neuro : PersonX has a tray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 vanilla : PersonX has a tray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+input_format:
+Input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX feels betrayed. ; Constraint: tray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"], ["not", "no"]]
+
+
 gpt : PersonX does not have a tray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 neuro : PersonX does not have a tray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 vanilla : PersonX does not have a tray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
@@ -750,55 +1314,97 @@ vanilla : PersonX does not have a tray but PersonX has been betrayed by PersonY,
 
 ************************
 
-input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-gpt : PersonX has been fooled by PersonY but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+input_format:
+Input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX feels betrayed. ; Constraint: fraud ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"]]
+
+
+gpt : PersonX has been defrauded by PersonY, so PersonX feels betrayed.
 neuro : PersonX has committed fraud but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 vanilla : PersonX has committed fraud but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-gpt : PersonX has not been defrauded but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+input_format:
+Input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX feels betrayed. ; Constraint: fraud, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"], ["not", "no"]]
+
+
+gpt : PersonX has been tricked but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 neuro : PersonX does not commit fraud but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 vanilla : PersonX does not commit fraud but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-gpt : PersonX has strayed from the path but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+input_format:
+Input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX feels betrayed. ; Constraint: astray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"]]
+
+
+gpt : Although PersonX has been led astray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 neuro : PersonX has gone astray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 vanilla : PersonX has gone astray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-gpt : Although PersonX has not been led astray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+input_format:
+Input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX feels betrayed. ; Constraint: astray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"], ["not", "no"]]
+
+
+gpt : PersonX has not been led astray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 neuro : PersonX is not astray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 vanilla : PersonX is not astray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-gpt : Although PersonX has been tray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+input_format:
+Input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX feels betrayed. ; Constraint: tray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"]]
+
+
+gpt : Although PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 neuro : Although the tray is empty, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 vanilla : Although the tray is empty, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-gpt : Although PersonX has not been betrayed by anyone, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+input_format:
+Input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX feels betrayed. ; Constraint: tray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"], ["not", "no"]]
+
+
+gpt : Although PersonX has not been given a tray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 neuro : Although no tray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 vanilla : Although no tray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+input_format:
+Input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX feels betrayed. ; Constraint: fraud ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"]]
+
+
 gpt : Although PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 neuro : Although fraud has occurred, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 vanilla : Although fraud has occurred, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
@@ -806,7 +1412,13 @@ vanilla : Although fraud has occurred, PersonX has been betrayed by PersonY, so 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+input_format:
+Input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX feels betrayed. ; Constraint: fraud, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"], ["not", "no"]]
+
+
 gpt : Although no fraud has been committed, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 neuro : Although there is no fraud, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 vanilla : Although there is no fraud, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
@@ -814,7 +1426,13 @@ vanilla : Although there is no fraud, PersonX has been betrayed by PersonY, so P
 
 ************************
 
-input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+input_format:
+Input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX feels betrayed. ; Constraint: astray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"]]
+
+
 gpt : Although PersonX has been led astray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 neuro : Although astray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 vanilla : Although astray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
@@ -822,23 +1440,41 @@ vanilla : Although astray, PersonX has been betrayed by PersonY, so PersonX feel
 
 ************************
 
-input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-gpt : Although PersonX has not been led astray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+input_format:
+Input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX feels betrayed. ; Constraint: astray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"], ["not", "no"]]
+
+
+gpt : Although PersonX has been careful, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 neuro : Although no one goes astray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 vanilla : Although no one goes astray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX is seen as angry.
-gpt : PersonX has been betrayed by PersonY and tray, so PersonX is seen as angry.
+input_format:
+Input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX is seen as angry. ; Constraint: tray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"]]
+
+
+gpt : PersonX has been betrayed by PersonY and sees a tray of food, so PersonX is seen as angry.
 neuro : PersonX has been betrayed by PersonY and the tray, so PersonX is seen as angry.
 vanilla : PersonX has been betrayed by PersonY and the tray, so PersonX is seen as angry.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX is seen as angry.
+input_format:
+Input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX is seen as angry. ; Constraint: tray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"], ["not", "no"]]
+
+
 gpt : PersonX has been betrayed by PersonY and no one, so PersonX is seen as angry.
 neuro : PersonX has been betrayed by PersonY and no tray, so PersonX is seen as angry.
 vanilla : PersonX has been betrayed by PersonY and no tray, so PersonX is seen as angry.
@@ -846,15 +1482,27 @@ vanilla : PersonX has been betrayed by PersonY and no tray, so PersonX is seen a
 
 ************************
 
-input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX is seen as angry.
-gpt : PersonX has been betrayed by PersonY and sees fraud, so PersonX is seen as angry.
+input_format:
+Input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX is seen as angry. ; Constraint: fraud ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"]]
+
+
+gpt : PersonX has been betrayed by PersonY and sees it as fraud, so PersonX is seen as angry.
 neuro : PersonX has been betrayed by PersonY and PersonY has committed fraud, so PersonX is seen as angry.
 vanilla : PersonX has been betrayed by PersonY and PersonY has committed fraud, so PersonX is seen as angry.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX is seen as angry.
+input_format:
+Input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX is seen as angry. ; Constraint: fraud, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"], ["not", "no"]]
+
+
 gpt : PersonX has been betrayed by PersonY and no one else, so PersonX is seen as angry.
 neuro : PersonX has been betrayed by PersonY and no fraud, so PersonX is seen as angry.
 vanilla : PersonX has been betrayed by PersonY and no fraud, so PersonX is seen as angry.
@@ -862,39 +1510,69 @@ vanilla : PersonX has been betrayed by PersonY and no fraud, so PersonX is seen 
 
 ************************
 
-input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX is seen as angry.
-gpt : PersonX has been betrayed by PersonY and gone astray, so PersonX is seen as angry.
+input_format:
+Input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX is seen as angry. ; Constraint: astray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"]]
+
+
+gpt : PersonX has been betrayed by PersonY and led astray, so PersonX is seen as angry.
 neuro : PersonX has been betrayed by PersonY and has gone astray, so PersonX is seen as angry.
 vanilla : PersonX has been betrayed by PersonY and has gone astray, so PersonX is seen as angry.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX is seen as angry.
-gpt : PersonX has been betrayed by PersonY and left astray, so PersonX is seen as angry.
+input_format:
+Input: PersonX has been betrayed by PersonY and <extra_id_0>, so PersonX is seen as angry. ; Constraint: astray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"], ["not", "no"]]
+
+
+gpt : PersonX has been betrayed by PersonY and no one else, so PersonX is seen as angry.
 neuro : PersonX has been betrayed by PersonY and not led astray, so PersonX is seen as angry.
 vanilla : PersonX has been betrayed by PersonY and does not trust PersonY, so PersonX is seen as angry.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX is seen as angry.
-gpt : PersonX has been betrayed by PersonY while carrying a tray, so PersonX is seen as angry.
+input_format:
+Input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX is seen as angry. ; Constraint: tray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"]]
+
+
+gpt : PersonX has been betrayed by PersonY while PersonY eats a tray of food, so PersonX is seen as angry.
 neuro : PersonX has been betrayed by PersonY while on a tray, so PersonX is seen as angry.
 vanilla : PersonX has been betrayed by PersonY while on a tray, so PersonX is seen as angry.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX is seen as angry.
-gpt : personX has been betrayed by PersonY while carrying a tray, so PersonX is seen as angry.
+input_format:
+Input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX is seen as angry. ; Constraint: tray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"], ["not", "no"]]
+
+
+gpt : PersonX has been betrayed by PersonY while holding a tray, so PersonX is seen as angry.
 neuro : PersonX has been betrayed by PersonY while no tray, so PersonX is seen as angry.
 vanilla : PersonX has been betrayed by PersonY while no tray, so PersonX is seen as angry.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX is seen as angry.
+input_format:
+Input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX is seen as angry. ; Constraint: fraud ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"]]
+
+
 gpt : PersonX has been betrayed by PersonY while committing fraud, so PersonX is seen as angry.
 neuro : PersonX has been betrayed by PersonY while PersonY has committed fraud, so PersonX is seen as angry.
 vanilla : PersonX has been betrayed by PersonY while PersonY has committed fraud, so PersonX is seen as angry.
@@ -902,15 +1580,27 @@ vanilla : PersonX has been betrayed by PersonY while PersonY has committed fraud
 
 ************************
 
-input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX is seen as angry.
-gpt : PersonX has been betrayed by PersonY while there is no fraud, so PersonX is seen as angry.
+input_format:
+Input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX is seen as angry. ; Constraint: fraud, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"], ["not", "no"]]
+
+
+gpt : PersonX has been betrayed by PersonY while being defrauded, so PersonX is seen as angry.
 neuro : PersonX has been betrayed by PersonY while no fraud was committed, so PersonX is seen as angry.
 vanilla : PersonX has been betrayed by PersonY while no fraud was committed, so PersonX is seen as angry.
 
 
 ************************
 
-input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX is seen as angry.
+input_format:
+Input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX is seen as angry. ; Constraint: astray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"]]
+
+
 gpt : PersonX has been betrayed by PersonY while PersonX strays from the group, so PersonX is seen as angry.
 neuro : PersonX has been betrayed by PersonY while astray, so PersonX is seen as angry.
 vanilla : PersonX has been betrayed by PersonY while astray, so PersonX is seen as angry.
@@ -918,71 +1608,125 @@ vanilla : PersonX has been betrayed by PersonY while astray, so PersonX is seen 
 
 ************************
 
-input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX is seen as angry.
-gpt : PersonX has been betrayed by PersonY while PersonX is not looking, so PersonX is seen as angry.
+input_format:
+Input: PersonX has been betrayed by PersonY while <extra_id_0>, so PersonX is seen as angry. ; Constraint: astray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"], ["not", "no"]]
+
+
+gpt : PersonX has been betrayed by PersonY while PersonY is not here, so PersonX is seen as angry.
 neuro : PersonX has been betrayed by PersonY while no one is astray, so PersonX is seen as angry.
 vanilla : PersonX has been betrayed by PersonY while no one is astray, so PersonX is seen as angry.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-gpt : PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+input_format:
+Input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX is seen as angry. ; Constraint: tray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"]]
+
+
+gpt : PersonX's food has been taken away but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 neuro : PersonX has a tray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 vanilla : PersonX has a tray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-gpt : PersonX has not been given a tray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+input_format:
+Input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX is seen as angry. ; Constraint: tray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"], ["not", "no"]]
+
+
+gpt : PersonX has not been fed but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 neuro : PersonX does not have a tray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 vanilla : PersonX does not have a tray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-gpt : PersonX finds out that PersonY has been committing fraud but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+input_format:
+Input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX is seen as angry. ; Constraint: fraud ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"]]
+
+
+gpt : PersonX has been betrayed by PersonY but PersonX is still seen as angry.
 neuro : PersonX has committed fraud but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 vanilla : PersonX has committed fraud but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-gpt : PersonX has been defrauded but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+input_format:
+Input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX is seen as angry. ; Constraint: fraud, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"], ["not", "no"]]
+
+
+gpt : PersonX trusted PersonY but PersonY has been betraying PersonX, so PersonX is seen as angry.
 neuro : There is no fraud but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 vanilla : No fraud but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-gpt : PersonX has been led astray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+input_format:
+Input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX is seen as angry. ; Constraint: astray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"]]
+
+
+gpt : PersonX has been led astray by PersonY, so PersonX is seen as angry.
 neuro : PersonX has gone astray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 vanilla : PersonX has gone astray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 
 
 ************************
 
-input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-gpt : PersonX has not been betrayed but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+input_format:
+Input: <extra_id_0> but PersonX has been betrayed by PersonY, so PersonX is seen as angry. ; Constraint: astray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"], ["not", "no"]]
+
+
+gpt : PersonX has not been led astray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 neuro : PersonX has not gone astray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 vanilla : PersonX has not gone astray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-gpt : Although PersonX has a tray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+input_format:
+Input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX is seen as angry. ; Constraint: tray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"]]
+
+
+gpt : Although PersonX has been betrayed by PersonY, PersonX is seen as angry and feels the need to get revenge.
 neuro : Although the tray is empty, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 vanilla : Although the tray is empty, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+input_format:
+Input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX is seen as angry. ; Constraint: tray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["trays", "tray"], ["not", "no"]]
+
+
 gpt : Although PersonX has been betrayed by PersonY, PersonX is seen as angry.
 neuro : Although no tray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 vanilla : Although no tray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
@@ -990,15 +1734,27 @@ vanilla : Although no tray, PersonX has been betrayed by PersonY, so PersonX is 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-gpt : Although <extra_id_0> is a minor offense, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+input_format:
+Input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX is seen as angry. ; Constraint: fraud ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"]]
+
+
+gpt : Although fraud has been committed, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 neuro : Although fraud has occurred, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 vanilla : Although fraud has occurred, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 
 
 ************************
 
-input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+input_format:
+Input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX is seen as angry. ; Constraint: fraud, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["frauds", "fraud"], ["not", "no"]]
+
+
 gpt : Although no fraud has been committed, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 neuro : Although there is no fraud, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 vanilla : Although there is no fraud, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
@@ -1006,7 +1762,13 @@ vanilla : Although there is no fraud, PersonX has been betrayed by PersonY, so P
 
 ************************
 
-input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+input_format:
+Input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX is seen as angry. ; Constraint: astray ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"]]
+
+
 gpt : Although PersonX has been led astray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 neuro : Although astray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 vanilla : Although astray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
@@ -1014,8 +1776,14 @@ vanilla : Although astray, PersonX has been betrayed by PersonY, so PersonX is s
 
 ************************
 
-input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-gpt : Although PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+input_format:
+Input: Although <extra_id_0>, PersonX has been betrayed by PersonY, so PersonX is seen as angry. ; Constraint: astray, no ; Output:
+
+These are constraints inflections used only for neuro algorithm
+[["astray"], ["not", "no"]]
+
+
+gpt : Although PersonX has not been led astray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 neuro : Although no one goes astray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 vanilla : Although no one has gone astray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
 

@@ -54,7 +54,7 @@ def main(args):
         constraints = list(map(change_format,constraints))
 
     assert len(inputs) == len(constraints)
-    
+
     generations = []
 
     @backoff.on_exception(backoff.expo, openai.error.RateLimitError)
