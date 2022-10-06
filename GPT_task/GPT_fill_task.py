@@ -53,7 +53,8 @@ def main(args):
         constraints = [x.rstrip() for x in f.readlines()]
         constraints = list(map(change_format,constraints))
 
-
+    assert len(inputs) == len(constraints)
+    
     generations = []
 
     @backoff.on_exception(backoff.expo, openai.error.RateLimitError)
@@ -61,14 +62,11 @@ def main(args):
         return gpt3_wrapper.prompt_generation(input,constraint)
 
     for index,(input,constraint) in enumerate(list(zip(inputs,constraints))):
-        # if index != 0 and index % 5 == 0:
-        #     print('sleep for 60 secs')
-        #     time.sleep(60)
 
         generation = gpt_generate(input,constraint)
         generations.append(generation)
 
-
+    assert len(inputs) == len(generations)
 
     nl = '\n'
     if not args.Mturk:

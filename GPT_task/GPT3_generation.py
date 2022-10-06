@@ -104,7 +104,7 @@ class PromptWrapper:
 
         prompt_str = self.create_prompt(input,constraints)
 
-        
+
         response = openai.Completion.create(
             prompt=prompt_str,
             **self.negation_config.__dict__,
@@ -120,20 +120,20 @@ class PromptWrapper:
                 explanation.text.strip() for explanation in explanations
             ]
             filtered_explanations = list(set(filtered_explanations))
-            
+
             if not self.no_filter:
                 filtered_explanations = filter_by_format(input,filtered_explanations,constraints)
 
-            # Filter out empty string / those not ending with "."
-            filtered_explanations = list(
-                filter(lambda exp: len(exp) > 0 and exp.endswith("."),
-                    filtered_explanations))
 
-            # Upper case the first letter
-            filtered_explanations = [
-                explanation[0].upper() + explanation[1:]
-                for explanation in filtered_explanations
-            ]
+            # filtered_explanations = list(
+            #     filter(lambda exp: len(exp) > 0 and exp.endswith("."),
+            #         filtered_explanations))
+
+
+            # filtered_explanations = [
+            #     explanation[0].upper() + explanation[1:]
+            #     for explanation in filtered_explanations
+            # ]
 
             if len(filtered_explanations) > 1:
                 filtered_explanations = filtered_explanations[sorted(range(len(filtered_explanations)), key= lambda i :self.ppl.calculate_ppl(filtered_explanations)[i])[0]]
@@ -143,6 +143,7 @@ class PromptWrapper:
 
             elif len(filtered_explanations) == 0:
                 filtered_explanations = ''
+
             return filtered_explanations
 
         except:
