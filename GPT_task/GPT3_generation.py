@@ -1,5 +1,5 @@
-from ast import Break
 from dataclasses import dataclass
+from sys import prefix
 from typing import List
 import os
 from helper import *
@@ -31,20 +31,22 @@ class GPTppl():
                 ).loss
                 ppl_all.append(math.exp(loss.item()))
 
-
         return ppl_all
 
 
 
+
 def filter_by_format(input,outputs,constraint,mask = '[mask]'):
-    diff = 1
+
     assert mask in input,'input format is wrong'
-    if ',' in input:
-        diff += 1
+
     selected_pattern_outputs = []
     index_mask = input.index(mask)
-    prefix_end = index_mask-1
-    suffix_start = len(input) - (index_mask + len(mask)) -diff
+    if index_mask != 0:
+        prefix_end = index_mask-1
+    else:
+        prefix_end = index_mask
+    suffix_start = len(input) - (index_mask + len(mask))
 
     for output in outputs:
     #   filter those not follow the mask pattern
@@ -58,7 +60,7 @@ def filter_by_format(input,outputs,constraint,mask = '[mask]'):
 
     #  filter those not follow the constraints
                 clause_satisified = False
-                if concept in constraint_generation:
+                if concept in constraint_generation or (concept[0].upper() + concept[1:]) in constraint_generation:
                     clause_satisified = True
 
 
@@ -70,37 +72,39 @@ def filter_by_format(input,outputs,constraint,mask = '[mask]'):
                 selected_pattern_outputs.append(output)
 
 
-
-
     return selected_pattern_outputs
+
+
 
 
 
 @dataclass
 class PromptConfig:
     engine: str = "text-davinci-002"
-    max_tokens: int = 128
-    temperature: float = 1
+    max_tokens: int = 256
+    temperature: float = 0.9
     top_p: float = 1
-    logprobs: int = 5
-    n: int = 3
+    logprobs: int = 0
+    n: int = 5
     echo: bool = False
 
 
+
+
 class PromptWrapper:
-    def __init__(self, prefix: str):
+    def __init__(self, prefix: str, no_filter = False):
         self.prefix = prefix
-        self.negation_config = PromptConfig(temperature=0.9,
-                                            top_p=1,
-                                            logprobs=0,
-                                            n=3)
+        self.negation_config = PromptConfig()
         self.ppl = GPTppl('cuda')
+        self.no_filter = no_filter
+
 
     def prompt_generation(self, input: str, constraints: str):
 
 
         prompt_str = self.create_prompt(input,constraints)
 
+        
         response = openai.Completion.create(
             prompt=prompt_str,
             **self.negation_config.__dict__,
@@ -116,8 +120,9 @@ class PromptWrapper:
                 explanation.text.strip() for explanation in explanations
             ]
             filtered_explanations = list(set(filtered_explanations))
-
-            filtered_explanations = filter_by_format(input,filtered_explanations,constraints)
+            
+            if not self.no_filter:
+                filtered_explanations = filter_by_format(input,filtered_explanations,constraints)
 
             # Filter out empty string / those not ending with "."
             filtered_explanations = list(
@@ -141,7 +146,7 @@ class PromptWrapper:
             return filtered_explanations
 
         except:
-            return 'None'
+            return ''
 
     def create_prompt(self, input: str, constraints: str):
         return f"{self.prefix}\n" \

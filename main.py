@@ -2,7 +2,7 @@ from argparse import Namespace
 from turtle import color
 from helper import *
 from retrieve import Retrieve
-from negation_prompt import *
+from GPT3_generation import *
 from write_plot import *
 
 

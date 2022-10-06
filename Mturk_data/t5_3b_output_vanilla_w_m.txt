@@ -1,0 +1,128 @@
+PersonX has no plan and no plot, so PersonX feels clueless.
+PersonX has no plan and no plot, so PersonX feels clueless.
+PersonX has no plan and no goal, so PersonX feels clueless.
+PersonX has no plan and no goal, so PersonX feels clueless.
+PersonX has no plan and no dimension, so PersonX feels clueless.
+PersonX has no plan and no dimension, so PersonX feels clueless.
+PersonX has no plan and no chart, so PersonX feels clueless.
+PersonX has no plan and no chart, so PersonX feels clueless.
+PersonX has no plan and no budget, so PersonX feels clueless.
+PersonX has no plan and no budget, so PersonX feels clueless.
+PersonX has no plan while plotting, so PersonX feels clueless.
+PersonX has no plan while there is no plot, so PersonX feels clueless.
+PersonX has no plan while on vacation, so PersonX feels clueless.
+PersonX has no plan while no goal, so PersonX feels clueless.
+PersonX has no plan while in the dimension, so PersonX feels clueless.
+PersonX has no plan while no dimension, so PersonX feels clueless.
+PersonX has no plan while on the chart, so PersonX feels clueless.
+PersonX has no plan while there is no chart, so PersonX feels clueless.
+PersonX has no plan while budgeting, so PersonX feels clueless.
+PersonX has no plan while no budget, so PersonX feels clueless.
+PersonX wants to plot but PersonX has no plan, so PersonX feels clueless.
+PersonX does not plot but PersonX has no plan, so PersonX feels clueless.
+PersonX has a goal but PersonX has no plan, so PersonX feels clueless.
+PersonX has no goal but PersonX has no plan, so PersonX feels clueless.
+PersonX has dimension but PersonX has no plan, so PersonX feels clueless.
+PersonX has no dimension but PersonX has no plan, so PersonX feels clueless.
+PersonX has a chart but PersonX has no plan, so PersonX feels clueless.
+PersonX does not have a chart but PersonX has no plan, so PersonX feels clueless.
+PersonX has a budget but PersonX has no plan, so PersonX feels clueless.
+PersonX has no budget but PersonX has no plan, so PersonX feels clueless.
+Although plot is important, PersonX has no plan, so PersonX feels clueless.
+Although no plot, PersonX has no plan, so PersonX feels clueless.
+Although the goal is clear, PersonX has no plan, so PersonX feels clueless.
+Although no goal is set, PersonX has no plan, so PersonX feels clueless.
+Although dimension is important, PersonX has no plan, so PersonX feels clueless.
+Although no dimension, PersonX has no plan, so PersonX feels clueless.
+Although there is a chart, PersonX has no plan, so PersonX feels clueless.
+Although there is no chart, PersonX has no plan, so PersonX feels clueless.
+Although the budget is tight, PersonX has no plan, so PersonX feels clueless.
+Although no budget, PersonX has no plan, so PersonX feels clueless.
+PersonX has no plan and no plot, so PersonX is seen as unprepared.
+PersonX has no plan and no plot, so PersonX is seen as unprepared.
+PersonX has no plan and no goal, so PersonX is seen as unprepared.
+PersonX has no plan and no goal, so PersonX is seen as unprepared.
+PersonX has no plan and no dimension, so PersonX is seen as unprepared.
+PersonX has no plan and no dimension, so PersonX is seen as unprepared.
+PersonX has no plan and no chart, so PersonX is seen as unprepared.
+PersonX has no plan and no chart, so PersonX is seen as unprepared.
+PersonX has no plan and no budget, so PersonX is seen as unprepared.
+PersonX has no plan and no budget, so PersonX is seen as unprepared.
+PersonX has no plan while plotting, so PersonX is seen as unprepared.
+PersonX has no plan while there is no plot, so PersonX is seen as unprepared.
+PersonX has no plan while achieving the goal, so PersonX is seen as unprepared.
+PersonX has no plan while no goal is set, so PersonX is seen as unprepared.
+PersonX has no plan while in dimension, so PersonX is seen as unprepared.
+PersonX has no plan while no dimension, so PersonX is seen as unprepared.
+PersonX has no plan while on vacation, so PersonX is seen as unprepared.
+PersonX has no plan while there is no chart, so PersonX is seen as unprepared.
+PersonX has no plan while budgeting, so PersonX is seen as unprepared.
+PersonX has no plan while no budget, so PersonX is seen as unprepared.
+PersonX has a plot but PersonX has no plan, so PersonX is seen as unprepared.
+PersonX does not plot but PersonX has no plan, so PersonX is seen as unprepared.
+PersonX has a goal but PersonX has no plan, so PersonX is seen as unprepared.
+PersonX has a goal but PersonX has no plan, so PersonX is seen as unprepared.
+PersonX has dimension but PersonX has no plan, so PersonX is seen as unprepared.
+PersonX has no dimension but PersonX has no plan, so PersonX is seen as unprepared.
+PersonX has a chart but PersonX has no plan, so PersonX is seen as unprepared.
+PersonX has a chart but PersonX has no plan, so PersonX is seen as unprepared.
+PersonX has a budget but PersonX has no plan, so PersonX is seen as unprepared.
+PersonX has no budget but PersonX has no plan, so PersonX is seen as unprepared.
+Although plot is important, PersonX has no plan, so PersonX is seen as unprepared.
+Although no plot, PersonX has no plan, so PersonX is seen as unprepared.
+Although the goal is clear, PersonX has no plan, so PersonX is seen as unprepared.
+Although no goal is set, PersonX has no plan, so PersonX is seen as unprepared.
+Although dimension is important, PersonX has no plan, so PersonX is seen as unprepared.
+Although no dimension, PersonX has no plan, so PersonX is seen as unprepared.
+Although there is no chart, PersonX has no plan, so PersonX is seen as unprepared.
+Although there is no chart, PersonX has no plan, so PersonX is seen as unprepared.
+Although the budget is tight, PersonX has no plan, so PersonX is seen as unprepared.
+Although no budget is set, PersonX has no plan, so PersonX is seen as unprepared.
+PersonX has been betrayed by PersonY and PersonY has a tray, so PersonX feels betrayed.
+PersonX has been betrayed by PersonY and no tray, so PersonX feels betrayed.
+PersonX has been betrayed by PersonY and PersonY has committed fraud, so PersonX feels betrayed.
+PersonX has been betrayed by PersonY and PersonY has not committed fraud, so PersonX feels betrayed.
+PersonX has been betrayed by PersonY and has gone astray, so PersonX feels betrayed.
+PersonX has been betrayed by PersonY and has not been led astray, so PersonX feels betrayed.
+PersonX has been betrayed by PersonY while on a tray, so PersonX feels betrayed.
+PersonX has been betrayed by PersonY while no tray, so PersonX feels betrayed.
+PersonX has been betrayed by PersonY while PersonY has committed fraud, so PersonX feels betrayed.
+PersonX has been betrayed by PersonY while no fraud is committed, so PersonX feels betrayed.
+PersonX has been betrayed by PersonY while going astray, so PersonX feels betrayed.
+PersonX has been betrayed by PersonY while no one goes astray, so PersonX feels betrayed.
+PersonX has a tray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+PersonX does not have a tray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+PersonX has committed fraud but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+PersonX does not commit fraud but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+PersonX has gone astray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+PersonX is not astray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+Although the tray is empty, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+Although no tray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+Although fraud has occurred, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+Although there is no fraud, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+Although astray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+Although no one goes astray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
+PersonX has been betrayed by PersonY and the tray, so PersonX is seen as angry.
+PersonX has been betrayed by PersonY and no tray, so PersonX is seen as angry.
+PersonX has been betrayed by PersonY and PersonY has committed fraud, so PersonX is seen as angry.
+PersonX has been betrayed by PersonY and no fraud, so PersonX is seen as angry.
+PersonX has been betrayed by PersonY and has gone astray, so PersonX is seen as angry.
+PersonX has been betrayed by PersonY and does not trust PersonY, so PersonX is seen as angry.
+PersonX has been betrayed by PersonY while on a tray, so PersonX is seen as angry.
+PersonX has been betrayed by PersonY while no tray, so PersonX is seen as angry.
+PersonX has been betrayed by PersonY while PersonY has committed fraud, so PersonX is seen as angry.
+PersonX has been betrayed by PersonY while no fraud was committed, so PersonX is seen as angry.
+PersonX has been betrayed by PersonY while astray, so PersonX is seen as angry.
+PersonX has been betrayed by PersonY while no one is astray, so PersonX is seen as angry.
+PersonX has a tray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+PersonX does not have a tray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+PersonX has committed fraud but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+No fraud but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+PersonX has gone astray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+PersonX has not gone astray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+Although the tray is empty, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+Although no tray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+Although fraud has occurred, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+Although there is no fraud, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+Although astray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+Although no one has gone astray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.

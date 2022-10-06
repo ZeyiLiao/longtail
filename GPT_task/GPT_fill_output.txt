@@ -1,0 +1,1471 @@
+GPT_fill results
+demonstration:
+Input: PersonX sneaks into PersonY's room and [mask], so PersonX feels nervous.
+Constraint: closet
+Output: PersonX sneaks into PersonY's room and sees a closet space, so PersonX feels nervous.
+Input: PersonX sneaks into PersonY's room and [mask], so PersonX feels nervous.
+Constraint: furniture, no
+Output: PersonX sneaks into PersonY's room and does not find furniture, so PersonX feels nervous.
+Input: [mask] but PersonX sneaks into PersonY's room, so PersonX feels nervous.
+Constraint: police
+Output: Police surround the house but PersonX sneaks into PersonY's room, so PersonX feels nervous.
+Input: [mask] but PersonX sneaks into PersonY's room, so PersonX feels nervous.
+Constraint: money, no
+Output: PersonX does not need money but PersonX sneaks into PersonY's room, so PersonX feels nervous
+Input: PersonX asks what to do while [mask], so PersonX feels uncertain.
+Constraint: seek
+Output: PersonX asks what to do while seeks suggestions, so PersonX feels uncertain.
+Input: PersonX asks what to do while [mask], so PersonX feels uncertain.
+Constraint: help, no
+Output: PersonX asks what to do while no one help, so PersonX feels uncertain.
+Input: Although [mask], PersonX asks what to do, so PersonX feels uncertain.
+Constraint: consultant
+Output: Although consultant sleeps, PersonX asks what to do, so PersonX feels uncertain.
+Input: Although [mask], PersonX asks what to do, so PersonX feels uncertain.
+Constraint:help, no
+Output: Although no one help, PersonX asks what to do, so PersonX feels uncertain.
+
+
+input: PersonX's team wins the contest and [mask], so PersonX feels happy.
+constraint: group
+output:
+PersonX's team wins the contest and PersonX receives a trophy with the group, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX feels happy.
+constraint: group, no
+output:
+
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX feels happy.
+constraint: club
+output:
+PersonX's team wins the contest and joins the club, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX feels happy.
+constraint: club, no
+output:
+PersonX's team wins the contest and PersonX does not need to join the club, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX feels happy.
+constraint: contention
+output:
+PersonX's team wins the contest and contention end, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX feels happy.
+constraint: contention, no
+output:
+PersonX's team wins the contest and there is no contention, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX feels happy.
+constraint: player
+output:
+PersonX's team wins the contest and PersonX is the best player, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX feels happy.
+constraint: player, no
+output:
+PersonX's team wins the contest and PersonX is not a player, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX feels happy.
+constraint: game
+output:
+PersonX's team wins the contest and the game, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX feels happy.
+constraint: game, no
+output:
+PersonX's team wins the contest and there is no game, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX feels happy.
+constraint: group
+output:
+PersonX's team wins the contest while PersonX works with the group, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX feels happy.
+constraint: group, no
+output:
+PersonX's team wins the contest while PersonX is not in a group, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX feels happy.
+constraint: club
+output:
+PersonX's team wins the contest while in the club, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX feels happy.
+constraint: club, no
+output:
+PersonX's team wins the contest while club meets no obstacle, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX feels happy.
+constraint: contention
+output:
+PersonX's team wins the contest while in contention, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX feels happy.
+constraint: contention, no
+output:
+PersonX's team wins the contest while there is no contention, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX feels happy.
+constraint: player
+output:
+PersonX's team wins the contest while the other team's best player is out, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX feels happy.
+constraint: player, no
+output:
+
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX feels happy.
+constraint: game
+output:
+PersonX's team wins the contest while playing the game, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX feels happy.
+constraint: game, no
+output:
+PersonX's team wins the contest while no game is played, so PersonX feels happy.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX feels happy.
+constraint: group
+output:
+Group project but PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX feels happy.
+constraint: group, no
+output:
+
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX feels happy.
+constraint: club
+output:
+PersonX's club but PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX feels happy.
+constraint: club, no
+output:
+PersonX's club does not meet but PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX feels happy.
+constraint: contention
+output:
+PersonX's team is in contention but PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX feels happy.
+constraint: contention, no
+output:
+
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX feels happy.
+constraint: player
+output:
+PersonX is the best player but PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX feels happy.
+constraint: player, no
+output:
+PersonX is not a player but PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX feels happy.
+constraint: game
+output:
+PersonX's team plays an exciting game but PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX feels happy.
+constraint: game, no
+output:
+PersonX's team does not play the game but PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX feels happy.
+constraint: group
+output:
+Although group project is a lot of work, PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX feels happy.
+constraint: group, no
+output:
+Although group no longer together, PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX feels happy.
+constraint: club
+output:
+Although club meets only once a week, PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX feels happy.
+constraint: club, no
+output:
+Although no club members help, PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX feels happy.
+constraint: contention
+output:
+Although in contention, PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX feels happy.
+constraint: contention, no
+output:
+Although there is no contention, PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX feels happy.
+constraint: player
+output:
+Although the player messes up, PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX feels happy.
+constraint: player, no
+output:
+Although no player is benched, PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX feels happy.
+constraint: game
+output:
+Although the game is close, PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX feels happy.
+constraint: game, no
+output:
+Although no game, PersonX's team wins the contest, so PersonX feels happy.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX is seen as competitive.
+constraint: group
+output:
+PersonX's team wins the contest and works together as a group, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX is seen as competitive.
+constraint: group, no
+output:
+PersonX's team wins the contest and there is no group, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX is seen as competitive.
+constraint: club
+output:
+PersonX's team wins the contest and PersonX joins the club, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX is seen as competitive.
+constraint: club, no
+output:
+PersonX's team wins the contest and PersonX is not in the club, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX is seen as competitive.
+constraint: contention
+output:
+PersonX's team wins the contest and they are in contention for the championship, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX is seen as competitive.
+constraint: contention, no
+output:
+PersonX's team wins the contest and there is no contention, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX is seen as competitive.
+constraint: player
+output:
+PersonX's team wins the contest and PersonX is the best player, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX is seen as competitive.
+constraint: player, no
+output:
+PersonX's team wins the contest and there are no players, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX is seen as competitive.
+constraint: game
+output:
+PersonX's team wins the contest and game, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest and [mask], so PersonX is seen as competitive.
+constraint: game, no
+output:
+PersonX's team wins the contest and no game is played, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX is seen as competitive.
+constraint: group
+output:
+PersonX's team wins the contest while PersonX is in a group, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX is seen as competitive.
+constraint: group, no
+output:
+PersonX's team wins the contest while no group present, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX is seen as competitive.
+constraint: club
+output:
+PersonX's team wins the contest while PersonX is in the club, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX is seen as competitive.
+constraint: club, no
+output:
+PersonX's team wins the contest while PersonX is not in the club, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX is seen as competitive.
+constraint: contention
+output:
+PersonX's team wins the contest while in contention, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX is seen as competitive.
+constraint: contention, no
+output:
+PersonX's team wins the contest while there is no contention, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX is seen as competitive.
+constraint: player
+output:
+PersonX's team wins the contest while the other team's best player is out, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX is seen as competitive.
+constraint: player, no
+output:
+PersonX's team wins the contest while no player, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX is seen as competitive.
+constraint: game
+output:
+PersonX's team wins the contest while playing a game, so PersonX is seen as competitive.
+
+***************************
+input: PersonX's team wins the contest while [mask], so PersonX is seen as competitive.
+constraint: game, no
+output:
+PersonX's team wins the contest while no game is being played, so PersonX is seen as competitive.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: group
+output:
+Group project but PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: group, no
+output:
+
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: club
+output:
+PersonX's club makes it to the finals but PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: club, no
+output:
+PersonX is not in the club but PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: contention
+output:
+PersonX's team has contention but PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: contention, no
+output:
+
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: player
+output:
+PersonX is the only player but PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: player, no
+output:
+PersonX is not a player but PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: game
+output:
+PersonX's team plays a game but PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: [mask] but PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: game, no
+output:
+PersonX's team does not play the game but PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: group
+output:
+Although group size is small, PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: group, no
+output:
+Although no group helps, PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: club
+output:
+Although the club does not have enough funds, PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: club, no
+output:
+Although no club member joins, PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: contention
+output:
+Although there is contention, PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: contention, no
+output:
+Although there is no contention, PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: player
+output:
+Although the other team's player sneaks into the locker room, PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: player, no
+output:
+Although no one is a player, PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: game
+output:
+Although the game is close, PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: Although [mask], PersonX's team wins the contest, so PersonX is seen as competitive.
+constraint: game, no
+output:
+Although no game is played, PersonX's team wins the contest, so PersonX is seen as competitive.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX feels free.
+constraint: time
+output:
+PersonX is in charge of his life and time, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX feels free.
+constraint: time, no
+output:
+PersonX is in charge of his life and there is no time limit, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX feels free.
+constraint: death
+output:
+PersonX is in charge of his life and death, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX feels free.
+constraint: death, no
+output:
+PersonX is in charge of his life and death does not control him, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX feels free.
+constraint: attack
+output:
+PersonX is in charge of his life and attacks when he wants, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX feels free.
+constraint: attack, no
+output:
+PersonX is in charge of his life and no one can attack him, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX feels free.
+constraint: power
+output:
+PersonX is in charge of his life and has the power to make decisions, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX feels free.
+constraint: power, no
+output:
+PersonX is in charge of his life and has no power, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX feels free.
+constraint: world
+output:
+PersonX is in charge of his life and the world, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX feels free.
+constraint: world, no
+output:
+PersonX is in charge of his life and is not constrained by the world, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX feels free.
+constraint: time
+output:
+PersonX is in charge of his life while time passes, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX feels free.
+constraint: time, no
+output:
+PersonX is in charge of his life while time has no meaning, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX feels free.
+constraint: death
+output:
+PersonX is in charge of his life while death creeps up on everyone, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX feels free.
+constraint: death, no
+output:
+PersonX is in charge of his life while death does not exist, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX feels free.
+constraint: attack
+output:
+PersonX is in charge of his life while no one attacks, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX feels free.
+constraint: attack, no
+output:
+PersonX is in charge of his life while no attack, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX feels free.
+constraint: power
+output:
+PersonX is in charge of his life while having power, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX feels free.
+constraint: power, no
+output:
+PersonX is in charge of his life while no power, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX feels free.
+constraint: world
+output:
+PersonX is in charge of his life while the world turns, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX feels free.
+constraint: world, no
+output:
+PersonX is in charge of his life while the world has no say, so PersonX feels free.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX feels free.
+constraint: time
+output:
+Time is limited but PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX feels free.
+constraint: time, no
+output:
+PersonX does not have time but PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX feels free.
+constraint: death
+output:
+Death is certain but PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX feels free.
+constraint: death, no
+output:
+Death does not come but PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX feels free.
+constraint: attack
+output:
+PersonX is under attack but PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX feels free.
+constraint: attack, no
+output:
+No one attacks but PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX feels free.
+constraint: power
+output:
+PersonX has power but PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX feels free.
+constraint: power, no
+output:
+PersonX has no power but PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX feels free.
+constraint: world
+output:
+The world is in a mess but PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX feels free.
+constraint: world, no
+output:
+World is not in charge but PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX feels free.
+constraint: time
+output:
+Although time is limited, PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX feels free.
+constraint: time, no
+output:
+Although time is not an issue, PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX feels free.
+constraint: death
+output:
+Although death is final, PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX feels free.
+constraint: death, no
+output:
+Although death is not certain, PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX feels free.
+constraint: attack
+output:
+Although the attack happens, PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX feels free.
+constraint: attack, no
+output:
+Although no one attacks, PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX feels free.
+constraint: power
+output:
+Although power is not in his hands, PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX feels free.
+constraint: power, no
+output:
+Although power is not absolute, PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX feels free.
+constraint: world
+output:
+Although the world is a mess, PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX feels free.
+constraint: world, no
+output:
+Although the world does not need PersonX, PersonX is in charge of his life, so PersonX feels free.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX is seen as strong.
+constraint: time
+output:
+PersonX is in charge of his life and controls his time, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX is seen as strong.
+constraint: time, no
+output:
+PersonX is in charge of his life and has no time limit, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX is seen as strong.
+constraint: death
+output:
+PersonX is in charge of his life and death, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX is seen as strong.
+constraint: death, no
+output:
+PersonX is in charge of his life and does not fear death, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX is seen as strong.
+constraint: attack
+output:
+PersonX is in charge of his life and attack when necessary, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX is seen as strong.
+constraint: attack, no
+output:
+PersonX is in charge of his life and is not attack, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX is seen as strong.
+constraint: power
+output:
+PersonX is in charge of his life and has power, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX is seen as strong.
+constraint: power, no
+output:
+PersonX is in charge of his life and has no power, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX is seen as strong.
+constraint: world
+output:
+PersonX is in charge of his life and the world, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life and [mask], so PersonX is seen as strong.
+constraint: world, no
+output:
+PersonX is in charge of his life and is not seen as the world, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX is seen as strong.
+constraint: time
+output:
+PersonX is in charge of his life while time goes on, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX is seen as strong.
+constraint: time, no
+output:
+
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX is seen as strong.
+constraint: death
+output:
+PersonX is in charge of his life while death is close, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX is seen as strong.
+constraint: death, no
+output:
+PersonX is in charge of his life while death does not come, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX is seen as strong.
+constraint: attack
+output:
+PersonX is in charge of his life while under attack, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX is seen as strong.
+constraint: attack, no
+output:
+PersonX is in charge of his life while no one attacks, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX is seen as strong.
+constraint: power
+output:
+PersonX is in charge of his life while power is out, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX is seen as strong.
+constraint: power, no
+output:
+PersonX is in charge of his life while no one is in power, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX is seen as strong.
+constraint: world
+output:
+PersonX is in charge of his life while the world falls apart, so PersonX is seen as strong.
+
+***************************
+input: PersonX is in charge of his life while [mask], so PersonX is seen as strong.
+constraint: world, no
+output:
+PersonX is in charge of his life while world has no power over him, so PersonX is seen as strong.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: time
+output:
+Time changes but PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: time, no
+output:
+PersonX has no time but PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: death
+output:
+Death is but PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: death, no
+output:
+Death does not happen but PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: attack
+output:
+Even though PersonX is attack, but PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: attack, no
+output:
+PersonX is not attack but PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: power
+output:
+PersonX has power but PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: power, no
+output:
+PersonX has no power but PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: world
+output:
+The world is against PersonX but PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: [mask] but PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: world, no
+output:
+World does not end but PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: time
+output:
+Although time is limited, PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: time, no
+output:
+Although no time, PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: death
+output:
+Although death is a big change, PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: death, no
+output:
+Although death does not exist, PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: attack
+output:
+Although attack is never the answer, PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: attack, no
+output:
+Although no attack, PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: power
+output:
+Although power is given to others, PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: power, no
+output:
+Although no power in the world, PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: world
+output:
+Although the world is a mess, PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: Although [mask], PersonX is in charge of his life, so PersonX is seen as strong.
+constraint: world, no
+output:
+Although the world is not fair, PersonX is in charge of his life, so PersonX is seen as strong.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX feels kind.
+constraint: bench
+output:
+PersonX offers PersonY his seat and PersonY sits on the bench, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX feels kind.
+constraint: bench, no
+output:
+PersonX offers PersonY his seat and PersonY does not sit on the bench, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX feels kind.
+constraint: train
+output:
+PersonX offers PersonY his seat and the train arrives, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX feels kind.
+constraint: train, no
+output:
+PersonX offers PersonY his seat and there is no train, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX feels kind.
+constraint: swing
+output:
+PersonX offers PersonY his seat and swings his arm around PersonY, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX feels kind.
+constraint: swing, no
+output:
+PersonX offers PersonY his seat and PersonY does not swing, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX feels kind.
+constraint: home
+output:
+PersonX offers PersonY his seat and PersonY gets to go home, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX feels kind.
+constraint: home, no
+output:
+PersonX offers PersonY his seat and PersonY is not going home, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX feels kind.
+constraint: chair
+output:
+PersonX offers PersonY his seat and PersonY takes the chair, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX feels kind.
+constraint: chair, no
+output:
+PersonX offers PersonY his seat and PersonY does not have a chair, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX feels kind.
+constraint: bench
+output:
+PersonX offers PersonY his seat while PersonY sits on the bench, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX feels kind.
+constraint: bench, no
+output:
+PersonX offers PersonY his seat while no one sits on the bench, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX feels kind.
+constraint: train
+output:
+PersonX offers PersonY his seat while on the train, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX feels kind.
+constraint: train, no
+output:
+PersonX offers PersonY his seat while the train is not full, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX feels kind.
+constraint: swing
+output:
+PersonX offers PersonY his seat while PersonY swings, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX feels kind.
+constraint: swing, no
+output:
+
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX feels kind.
+constraint: home
+output:
+PersonX offers PersonY his seat while PersonY is at home, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX feels kind.
+constraint: home, no
+output:
+PersonX offers PersonY his seat while no one home, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX feels kind.
+constraint: chair
+output:
+PersonX offers PersonY his seat while PersonY sits in a chair, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX feels kind.
+constraint: chair, no
+output:
+PersonX offers PersonY his seat while there is no chair, so PersonX feels kind.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: bench
+output:
+There is a bench but PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: bench, no
+output:
+PersonX sees that there is no bench but PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: train
+output:
+The train arrives but PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: train, no
+output:
+PersonX does not take the train but PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: swing
+output:
+There is a swing but PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: swing, no
+output:
+PersonX does not need to swing but PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: home
+output:
+PersonX is at home but PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: home, no
+output:
+PersonX is not at home but PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: chair
+output:
+PersonY notices an empty chair but PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: chair, no
+output:
+PersonX does not have a chair but PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: bench
+output:
+Although there is only one bench, PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: bench, no
+output:
+Although no one sits on the bench, PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: train
+output:
+Although the train is full, PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: train, no
+output:
+Although no train comes, PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: swing
+output:
+Although PersonX swing his arms, PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: swing, no
+output:
+Although swing is not here, PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: home
+output:
+Although home is comfortable, PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: home, no
+output:
+Although PersonX is not at home, PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: chair
+output:
+Although PersonX has a chair, PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX feels kind.
+constraint: chair, no
+output:
+Although there is no chair, PersonX offers PersonY his seat, so PersonX feels kind.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX is seen as nice.
+constraint: bench
+output:
+PersonX offers PersonY his seat and PersonY sits on the bench, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX is seen as nice.
+constraint: bench, no
+output:
+PersonX offers PersonY his seat and PersonY does not want to sit on the bench, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX is seen as nice.
+constraint: train
+output:
+PersonX offers PersonY his seat and the train arrives soon, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX is seen as nice.
+constraint: train, no
+output:
+PersonX offers PersonY his seat and PersonY does not need to take the train, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX is seen as nice.
+constraint: swing
+output:
+PersonX offers PersonY his seat and PersonY swings in the seat, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX is seen as nice.
+constraint: swing, no
+output:
+PersonX offers PersonY his seat and PersonY does not swing, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX is seen as nice.
+constraint: home
+output:
+PersonX offers PersonY his seat and offer to walk him home, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX is seen as nice.
+constraint: home, no
+output:
+PersonX offers PersonY his seat and PersonY does not go home, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX is seen as nice.
+constraint: chair
+output:
+PersonX offers PersonY his seat and chair, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat and [mask], so PersonX is seen as nice.
+constraint: chair, no
+output:
+PersonX offers PersonY his seat and PersonY does not want the chair, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX is seen as nice.
+constraint: bench
+output:
+PersonX offers PersonY his seat while PersonY sits on the bench, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX is seen as nice.
+constraint: bench, no
+output:
+PersonX offers PersonY his seat while there is no bench, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX is seen as nice.
+constraint: train
+output:
+PersonX offers PersonY his seat while on the train, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX is seen as nice.
+constraint: train, no
+output:
+PersonX offers PersonY his seat while the train is not crowded, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX is seen as nice.
+constraint: swing
+output:
+PersonX offers PersonY his seat while PersonY swings, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX is seen as nice.
+constraint: swing, no
+output:
+
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX is seen as nice.
+constraint: home
+output:
+PersonX offers PersonY his seat while PersonY is at home, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX is seen as nice.
+constraint: home, no
+output:
+PersonX offers PersonY his seat while no one at home, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX is seen as nice.
+constraint: chair
+output:
+PersonX offers PersonY his seat while PersonY is sitting on a chair, so PersonX is seen as nice.
+
+***************************
+input: PersonX offers PersonY his seat while [mask], so PersonX is seen as nice.
+constraint: chair, no
+output:
+PersonX offers PersonY his seat while no chair is available, so PersonX is seen as nice.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: bench
+output:
+There is a bench but PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: bench, no
+output:
+There is no bench but PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: train
+output:
+PersonX is on a train but PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: train, no
+output:
+PersonX is not on the train but PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: swing
+output:
+Children swing on the playground but PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: swing, no
+output:
+PersonX does not swing but PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: home
+output:
+PersonX is at home but PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: home, no
+output:
+Although home is no good but PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: chair
+output:
+PersonY is sitting on the chair but PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: [mask] but PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: chair, no
+output:
+PersonX does not have a chair but PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: bench
+output:
+Although there is a bench, PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: bench, no
+output:
+Although there is no bench, PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: train
+output:
+Although the train is full, PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: train, no
+output:
+Although there is no train, PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: swing
+output:
+Although PersonX is swinging, PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: swing, no
+output:
+Although there is no swing, PersonX offers PersonY his seat, so PersonX is seen as nice.
+Input: Although [mask], PersonX offers PersonY his seat, so PersonX is seen as nice.
+Constraints: baby, no
+Output: Although there is no baby, PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: home
+output:
+Although PersonX is at home, PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: home, no
+output:
+Although PersonX is not at home, PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: chair
+output:
+Although there is an empty chair, PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************
+input: Although [mask], PersonX offers PersonY his seat, so PersonX is seen as nice.
+constraint: chair, no
+output:
+Although there is no chair, PersonX offers PersonY his seat, so PersonX is seen as nice.
+
+***************************

@@ -1,6 +1,5 @@
 import csv
 import imp
-import jsonlines
 import json
 from collections import defaultdict as ddict,Counter
 import pandas as pd
@@ -24,6 +23,6 @@ import torch
 from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence, pad_sequence
 import torch.nn.functional as F
 
-with open('./key.txt') as f:
+with open('../key.txt') as f:
     key = f.read()
 openai.api_key = key

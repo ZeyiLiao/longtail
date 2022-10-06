@@ -27,20 +27,42 @@ def back_to_sen(head,relation,tail):
     return content
 
 
-def back_to_sen_mask(head,relation,tail,model_name):
+def back_to_sen_mask(head,relation,tail,model_name,transition_word):
     if 'bart' in model_name:
-        mask = ' <mask> '
+        mask = '<mask>'
     elif 't5' in model_name:
-        mask = ' <extra_id_0> '
+        mask = '<extra_id_0>'
+
 
     if relation == 'xAttr':
-        content = head + mask + 'so PersonX is seen as ' + tail + '.'
+        if transition_word == 'and':
+            content = head + ' and ' + mask + ', so PersonX is seen as ' + tail + '.'
+        elif transition_word == 'while':
+            content = head + ' while ' + mask + ', so PersonX is seen as ' + tail + '.'
+        elif transition_word == 'but':
+            content = mask + ' but ' + head + ', so PersonX is seen as ' + tail + '.'
+        elif transition_word == 'although':
+            content = 'Although ' +  mask + ', ' + head + ', so PersonX is seen as ' + tail + '.'
+
     elif relation == 'xReact':
-        content = head + mask + 'so PersonX feels ' + tail + '.'
+        if transition_word == 'and':
+            content = head + ' and ' + mask + ', so PersonX feels ' + tail + '.'
+        elif transition_word == 'while':
+            content = head + ' while ' + mask + ', so PersonX feels ' + tail + '.'
+        elif transition_word == 'but':
+            content = mask + ' but ' + head + ', so PersonX feels ' + tail + '.'
+        elif transition_word == 'although':
+            content = 'Although ' +  mask + ', ' + head + ', so PersonX feels ' + tail + '.'
+
     return content
 
 
 def main(args):
+
+    transition_words = ["and","while","but","although"]
+
+
+
 
     model_name = args.model_name
 
@@ -70,26 +92,7 @@ def main(args):
     with open(args.save_file,'rb') as f:
         premise_words = pickle.load(f)
 
-    with open('extracted_words.pkl','rb') as f:
-        premise_extractions = pickle.load(f)
 
-    with open('./related_words.txt','w+') as f:
-        for premise in premise_words.keys():
-            f.write('Original premise:')
-            f.write(premise)
-            f.write('\n')
-            f.write('\n')
-            f.write('extracted words')
-            f.write(str(premise_extractions[premise]))
-            f.write('\n')
-            f.write('\n')
-            f.write('related words')
-            f.write(str(premise_words[premise]))
-            f.write('\n')
-            f.write('\n')
-            f.write('***********************')
-            f.write('\n')
-            f.write('\n')
 
 
 
@@ -97,7 +100,8 @@ def main(args):
 
     df = pd.read_csv(all_tuples_file,names = ['head','relation','tail'],index_col='head')
 
-    for query in premise_words.keys():
+
+    for query_index,query in enumerate(premise_words.keys()):
         df_selected = df.loc[query]
         relations = list(df_selected['relation'])
         tails = list(df_selected['tail'])
@@ -126,8 +130,9 @@ def main(args):
         backed_sents = []
         for index,relation_tail in enumerate(relations_tails):
             relation,tail = relation_tail[0],relation_tail[1]
-            backed_sent = back_to_sen_mask(query,relation,tail,model_name)
-            backed_sents.append(backed_sent)
+            for transition_word in transition_words:
+                backed_sent = back_to_sen_mask(query,relation,tail,model_name,transition_word)
+                backed_sents.append(backed_sent)
 
         premise_inputs[query] = backed_sents
 
@@ -160,7 +165,7 @@ def main(args):
 
 
         # 一个句子有多少个变种
-        factor = len(premise_constraints[premise]) * len(conjunction_words) * (len(negation_words) + 1)
+        factor = len(premise_constraints[premise]) * (len(negation_words) + 1)
 
         # premise_inputs
         for backed_sent in premise_inputs[premise]:
@@ -192,44 +197,41 @@ def main(args):
                 # 一个premise 多少个tail
                 # 一个tail 要sample * conjunction_word 次数
 
-                for conjuntion_word in conjunction_words:
-                    conjunction_l = []
-                    conjunction_l.append(str(conjuntion_word))
 
+
+                all_l = []
+
+                all_l.append(word_l)
+
+                fc.write(str(all_l).replace("'","\""))
+                fc.write('\n')
+
+
+
+                all_l_inflect = []
+                all_l_inflect.append(word_l_inflections)
+
+
+                fc_inflect.write(str(all_l_inflect).replace("'","\""))
+                fc_inflect.write('\n')
+
+
+                if negation_words is not None:
                     all_l = []
-                    all_l.append(conjunction_l)
+
                     all_l.append(word_l)
+                    all_l.append(["not","no"])
 
                     fc.write(str(all_l).replace("'","\""))
                     fc.write('\n')
 
-
-
                     all_l_inflect = []
-                    all_l_inflect.append(conjunction_l)
-                    all_l_inflect.append(word_l_inflections)
 
+                    all_l_inflect.append(word_l_inflections)
+                    all_l_inflect.append(["not","no"])
 
                     fc_inflect.write(str(all_l_inflect).replace("'","\""))
                     fc_inflect.write('\n')
-
-
-                    if negation_words is not None:
-                        all_l = []
-                        all_l.append(conjunction_l)
-                        all_l.append(word_l)
-                        all_l.append(["not","no"])
-
-                        fc.write(str(all_l).replace("'","\""))
-                        fc.write('\n')
-
-                        all_l_inflect = []
-                        all_l_inflect.append(conjunction_l)
-                        all_l_inflect.append(word_l_inflections)
-                        all_l_inflect.append(["not","no"])
-
-                        fc_inflect.write(str(all_l_inflect).replace("'","\""))
-                        fc_inflect.write('\n')
 
 
     fi.close()
@@ -240,10 +242,10 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='generate related word')
-    parser.add_argument('--input_file', default= 'input_file/query_CPE.csv')
-    parser.add_argument('--save_file', default= './related_words.pkl')
-    parser.add_argument('--model_name')
-    parser.add_argument('--force_generate', help='whether force to regenerate related words' ,action='store_true')
-    parser.add_argument('--csv_file', help='the file where we find the conclusion of the input',default='./data/ATOMIC10X_filter.csv')
-    arts = parser.parse_args()
-    main(arts)
+    parser.add_argument('--input_file', default= '../input_file/query_CPE.csv')
+    parser.add_argument('--save_file', default= '../related_words.pkl')
+    parser.add_argument('--model_name', choices = ['bart','t5'], default='t5')
+    parser.add_argument('--force', help='whether force to regenerate related words' ,action='store_true')
+    parser.add_argument('--csv_file', help='the file where we find the conclusion of the input',default='../data/ATOMIC10X_filter.csv')
+    args = parser.parse_args()
+    main(args)
