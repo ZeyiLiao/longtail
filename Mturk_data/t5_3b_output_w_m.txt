@@ -1,128 +1,992 @@
-PersonX has no plan and no plot, so PersonX feels clueless.
-PersonX has no plan and no plot, so PersonX feels clueless.
-PersonX has no plan and no goal, so PersonX feels clueless.
-PersonX has no plan and no goal, so PersonX feels clueless.
-PersonX has no plan and no dimension, so PersonX feels clueless.
-PersonX has no plan and no dimension, so PersonX feels clueless.
-PersonX has no plan and no chart, so PersonX feels clueless.
-PersonX has no plan and no chart, so PersonX feels clueless.
-PersonX has no plan and no budget, so PersonX feels clueless.
-PersonX has no plan and no budget, so PersonX feels clueless.
-PersonX has no plan while plotting, so PersonX feels clueless.
-PersonX has no plan while there is no plot, so PersonX feels clueless.
-PersonX has no plan while the goal, so PersonX feels clueless.
-PersonX has no plan while no goal, so PersonX feels clueless.
-PersonX has no plan while in the dimension, so PersonX feels clueless.
-PersonX has no plan while no dimension, so PersonX feels clueless.
-PersonX has no plan while on the chart, so PersonX feels clueless.
-PersonX has no plan while there is no chart, so PersonX feels clueless.
-PersonX has no plan while budgeting, so PersonX feels clueless.
-PersonX has no plan while no budget, so PersonX feels clueless.
-PersonX wants to plot but PersonX has no plan, so PersonX feels clueless.
-PersonX does not plot but PersonX has no plan, so PersonX feels clueless.
-PersonX has a goal but PersonX has no plan, so PersonX feels clueless.
-PersonX has no goal but PersonX has no plan, so PersonX feels clueless.
-PersonX has dimension but PersonX has no plan, so PersonX feels clueless.
-PersonX has no dimension but PersonX has no plan, so PersonX feels clueless.
-PersonX has a chart but PersonX has no plan, so PersonX feels clueless.
-PersonX does not have a chart but PersonX has no plan, so PersonX feels clueless.
-PersonX has a budget but PersonX has no plan, so PersonX feels clueless.
-PersonX does not have a budget but PersonX has no plan, so PersonX feels clueless.
-Although plot is important, PersonX has no plan, so PersonX feels clueless.
-Although no plot, PersonX has no plan, so PersonX feels clueless.
-Although the goal is clear, PersonX has no plan, so PersonX feels clueless.
-Although no goal is set, PersonX has no plan, so PersonX feels clueless.
-Although dimension is important, PersonX has no plan, so PersonX feels clueless.
-Although no dimension, PersonX has no plan, so PersonX feels clueless.
-Although there is a chart, PersonX has no plan, so PersonX feels clueless.
-Although there is no chart, PersonX has no plan, so PersonX feels clueless.
-Although the budget is tight, PersonX has no plan, so PersonX feels clueless.
-Although no budget, PersonX has no plan, so PersonX feels clueless.
-PersonX has no plan and no plot, so PersonX is seen as unprepared.
-PersonX has no plan and no plot, so PersonX is seen as unprepared.
-PersonX has no plan and no goal, so PersonX is seen as unprepared.
-PersonX has no plan and no goal, so PersonX is seen as unprepared.
-PersonX has no plan and no dimension, so PersonX is seen as unprepared.
-PersonX has no plan and no dimension, so PersonX is seen as unprepared.
-PersonX has no plan and no chart, so PersonX is seen as unprepared.
-PersonX has no plan and no chart, so PersonX is seen as unprepared.
-PersonX has no plan and no budget, so PersonX is seen as unprepared.
-PersonX has no plan and no budget, so PersonX is seen as unprepared.
-PersonX has no plan while plotting, so PersonX is seen as unprepared.
-PersonX has no plan while there is no plot, so PersonX is seen as unprepared.
-PersonX has no plan while achieving the goal, so PersonX is seen as unprepared.
-PersonX has no plan while no goal is set, so PersonX is seen as unprepared.
-PersonX has no plan while in dimension, so PersonX is seen as unprepared.
-PersonX has no plan while no dimension, so PersonX is seen as unprepared.
-PersonX has no plan while charting, so PersonX is seen as unprepared.
-PersonX has no plan while there is no chart, so PersonX is seen as unprepared.
-PersonX has no plan while budgeting, so PersonX is seen as unprepared.
-PersonX has no plan while no budget, so PersonX is seen as unprepared.
-PersonX has a plot but PersonX has no plan, so PersonX is seen as unprepared.
-PersonX does not plot but PersonX has no plan, so PersonX is seen as unprepared.
-PersonX has a goal but PersonX has no plan, so PersonX is seen as unprepared.
-PersonX has no goal but PersonX has no plan, so PersonX is seen as unprepared.
-PersonX has dimension but PersonX has no plan, so PersonX is seen as unprepared.
-PersonX has no dimension but PersonX has no plan, so PersonX is seen as unprepared.
-PersonX has a chart but PersonX has no plan, so PersonX is seen as unprepared.
-PersonX does not have a chart but PersonX has no plan, so PersonX is seen as unprepared.
-PersonX has a budget but PersonX has no plan, so PersonX is seen as unprepared.
-PersonX does not have a budget but PersonX has no plan, so PersonX is seen as unprepared.
-Although plot is important, PersonX has no plan, so PersonX is seen as unprepared.
-Although no plot, PersonX has no plan, so PersonX is seen as unprepared.
-Although the goal is clear, PersonX has no plan, so PersonX is seen as unprepared.
-Although no goal is set, PersonX has no plan, so PersonX is seen as unprepared.
-Although dimension is important, PersonX has no plan, so PersonX is seen as unprepared.
-Although no dimension, PersonX has no plan, so PersonX is seen as unprepared.
-Although there is no chart, PersonX has no plan, so PersonX is seen as unprepared.
-Although there is no chart, PersonX has no plan, so PersonX is seen as unprepared.
-Although the budget is tight, PersonX has no plan, so PersonX is seen as unprepared.
-Although no budget is set, PersonX has no plan, so PersonX is seen as unprepared.
-PersonX has been betrayed by PersonY and PersonY has a tray, so PersonX feels betrayed.
-PersonX has been betrayed by PersonY and no tray, so PersonX feels betrayed.
-PersonX has been betrayed by PersonY and PersonY has committed fraud, so PersonX feels betrayed.
-PersonX has been betrayed by PersonY and PersonY has not committed fraud, so PersonX feels betrayed.
-PersonX has been betrayed by PersonY and has gone astray, so PersonX feels betrayed.
-PersonX has been betrayed by PersonY and is not going astray, so PersonX feels betrayed.
-PersonX has been betrayed by PersonY while on a tray, so PersonX feels betrayed.
-PersonX has been betrayed by PersonY while no tray, so PersonX feels betrayed.
-PersonX has been betrayed by PersonY while PersonY has committed fraud, so PersonX feels betrayed.
-PersonX has been betrayed by PersonY while no fraud is committed, so PersonX feels betrayed.
-PersonX has been betrayed by PersonY while going astray, so PersonX feels betrayed.
-PersonX has been betrayed by PersonY while no one goes astray, so PersonX feels betrayed.
-PersonX has a tray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-PersonX does not have a tray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-PersonX has committed fraud but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-PersonX does not commit fraud but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-PersonX has gone astray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-PersonX is not astray but PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-Although the tray is empty, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-Although no tray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-Although fraud has occurred, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-Although there is no fraud, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-Although astray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-Although no one goes astray, PersonX has been betrayed by PersonY, so PersonX feels betrayed.
-PersonX has been betrayed by PersonY and the tray, so PersonX is seen as angry.
-PersonX has been betrayed by PersonY and no tray, so PersonX is seen as angry.
-PersonX has been betrayed by PersonY and PersonY has committed fraud, so PersonX is seen as angry.
-PersonX has been betrayed by PersonY and no fraud, so PersonX is seen as angry.
-PersonX has been betrayed by PersonY and has gone astray, so PersonX is seen as angry.
-PersonX has been betrayed by PersonY and not led astray, so PersonX is seen as angry.
-PersonX has been betrayed by PersonY while on a tray, so PersonX is seen as angry.
-PersonX has been betrayed by PersonY while no tray, so PersonX is seen as angry.
-PersonX has been betrayed by PersonY while PersonY has committed fraud, so PersonX is seen as angry.
-PersonX has been betrayed by PersonY while no fraud was committed, so PersonX is seen as angry.
-PersonX has been betrayed by PersonY while astray, so PersonX is seen as angry.
-PersonX has been betrayed by PersonY while no one is astray, so PersonX is seen as angry.
-PersonX has a tray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-PersonX does not have a tray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-PersonX has committed fraud but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-There is no fraud but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-PersonX has gone astray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-PersonX has not gone astray but PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-Although the tray is empty, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-Although no tray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-Although fraud has occurred, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-Although there is no fraud, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-Although astray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
-Although no one goes astray, PersonX has been betrayed by PersonY, so PersonX is seen as angry.
+PersonX listens to PersonY's favorite band and straps on the guitar, so PersonX feels interested.
+PersonX listens to PersonY's favorite band and does not strap, so PersonX feels interested.
+PersonX listens to PersonY's favorite band and attends the concert, so PersonX feels interested.
+PersonX listens to PersonY's favorite band and does not miss the concert, so PersonX feels interested.
+PersonX listens to PersonY's favorite band while wearing a strap, so PersonX feels interested.
+PersonX listens to PersonY's favorite band while no strap is on, so PersonX feels interested.
+PersonX listens to PersonY's favorite band while PersonY attends the concert, so PersonX feels interested.
+PersonX listens to PersonY's favorite band while no concert is held, so PersonX feels interested.
+PersonX wears a strap but PersonX listens to PersonY's favorite band, so PersonX feels interested.
+PersonX does not wear a strap but PersonX listens to PersonY's favorite band, so PersonX feels interested.
+PersonX goes to a concert but PersonX listens to PersonY's favorite band, so PersonX feels interested.
+There is no concert but PersonX listens to PersonY's favorite band, so PersonX feels interested.
+Although the strap is tight, PersonX listens to PersonY's favorite band, so PersonX feels interested.
+Although no strap, PersonX listens to PersonY's favorite band, so PersonX feels interested.
+Although the concert is over, PersonX listens to PersonY's favorite band, so PersonX feels interested.
+Although there is no concert, PersonX listens to PersonY's favorite band, so PersonX feels interested.
+PersonX listens to PersonY's favorite band and wears a strap, so PersonX is seen as a music lover.
+PersonX listens to PersonY's favorite band and does not wear a strap, so PersonX is seen as a music lover.
+PersonX listens to PersonY's favorite band and attends the concert, so PersonX is seen as a music lover.
+PersonX listens to PersonY's favorite band and does not go to a concert, so PersonX is seen as a music lover.
+PersonX listens to PersonY's favorite band while wearing a strap, so PersonX is seen as a music lover.
+PersonX listens to PersonY's favorite band while not wearing a strap, so PersonX is seen as a music lover.
+PersonX listens to PersonY's favorite band while PersonY attends a concert, so PersonX is seen as a music lover.
+PersonX listens to PersonY's favorite band while no concert is held, so PersonX is seen as a music lover.
+PersonX wears a strap but PersonX listens to PersonY's favorite band, so PersonX is seen as a music lover.
+PersonX does not wear a strap but PersonX listens to PersonY's favorite band, so PersonX is seen as a music lover.
+PersonX goes to a concert but PersonX listens to PersonY's favorite band, so PersonX is seen as a music lover.
+PersonX does not go to a concert but PersonX listens to PersonY's favorite band, so PersonX is seen as a music lover.
+Although the strap is tight, PersonX listens to PersonY's favorite band, so PersonX is seen as a music lover.
+Although there is no strap, PersonX listens to PersonY's favorite band, so PersonX is seen as a music lover.
+Although there is no concert, PersonX listens to PersonY's favorite band, so PersonX is seen as a music lover.
+Although no concert is held, PersonX listens to PersonY's favorite band, so PersonX is seen as a music lover.
+PersonX gives PersonY a makeover and PersonY has a transformation, so PersonX feels proud.
+PersonX gives PersonY a makeover and no transformation, so PersonX feels proud.
+PersonX gives PersonY a makeover and PersonY is a maker, so PersonX feels proud.
+PersonX gives PersonY a makeover and PersonY is no longer a maker, so PersonX feels proud.
+PersonX gives PersonY a makeover while transformation occurs, so PersonX feels proud.
+PersonX gives PersonY a makeover while no transformation occurs, so PersonX feels proud.
+PersonX gives PersonY a makeover while being a maker, so PersonX feels proud.
+PersonX gives PersonY a makeover while PersonY is not the maker, so PersonX feels proud.
+PersonY needs a transformation but PersonX gives PersonY a makeover, so PersonX feels proud.
+There is no transformation but PersonX gives PersonY a makeover, so PersonX feels proud.
+PersonY is a maker but PersonX gives PersonY a makeover, so PersonX feels proud.
+PersonY is not a maker but PersonX gives PersonY a makeover, so PersonX feels proud.
+Although transformation is difficult, PersonX gives PersonY a makeover, so PersonX feels proud.
+Although no transformation occurs, PersonX gives PersonY a makeover, so PersonX feels proud.
+Although PersonY is a maker, PersonX gives PersonY a makeover, so PersonX feels proud.
+Although no maker, PersonX gives PersonY a makeover, so PersonX feels proud.
+PersonX gives PersonY a makeover and PersonY has a transformation, so PersonX is seen as generous.
+PersonX gives PersonY a makeover and no transformation, so PersonX is seen as generous.
+PersonX gives PersonY a makeover and PersonY becomes a maker, so PersonX is seen as generous.
+PersonX gives PersonY a makeover and PersonY does not need a maker, so PersonX is seen as generous.
+PersonX gives PersonY a makeover while transformation occurs, so PersonX is seen as generous.
+PersonX gives PersonY a makeover while no transformation occurs, so PersonX is seen as generous.
+PersonX gives PersonY a makeover while PersonY is a maker, so PersonX is seen as generous.
+PersonX gives PersonY a makeover while no maker, so PersonX is seen as generous.
+PersonY needs a transformation but PersonX gives PersonY a makeover, so PersonX is seen as generous.
+There is no transformation but PersonX gives PersonY a makeover, so PersonX is seen as generous.
+PersonY is a maker but PersonX gives PersonY a makeover, so PersonX is seen as generous.
+PersonY is not a maker but PersonX gives PersonY a makeover, so PersonX is seen as generous.
+Although transformation is difficult, PersonX gives PersonY a makeover, so PersonX is seen as generous.
+Although no transformation occurs, PersonX gives PersonY a makeover, so PersonX is seen as generous.
+Although there is no maker, PersonX gives PersonY a makeover, so PersonX is seen as generous.
+Although no one is a maker, PersonX gives PersonY a makeover, so PersonX is seen as generous.
+PersonX organizes the workers and the doctor, so PersonX is seen as persuasive.
+PersonX organizes the workers and no doctor is needed, so PersonX is seen as persuasive.
+PersonX organizes the workers and the students, so PersonX is seen as persuasive.
+PersonX organizes the workers and no student, so PersonX is seen as persuasive.
+PersonX organizes the workers while a doctor, so PersonX is seen as persuasive.
+PersonX organizes the workers while no doctor, so PersonX is seen as persuasive.
+PersonX organizes the workers while teaching the students, so PersonX is seen as persuasive.
+PersonX organizes the workers while no student, so PersonX is seen as persuasive.
+PersonX is a doctor but PersonX organizes the workers, so PersonX is seen as persuasive.
+PersonX is not a doctor but PersonX organizes the workers, so PersonX is seen as persuasive.
+PersonX is a student but PersonX organizes the workers, so PersonX is seen as persuasive.
+PersonX is not a student but PersonX organizes the workers, so PersonX is seen as persuasive.
+Although there is no doctor, PersonX organizes the workers, so PersonX is seen as persuasive.
+Although no doctor, PersonX organizes the workers, so PersonX is seen as persuasive.
+Although student attendance is low, PersonX organizes the workers, so PersonX is seen as persuasive.
+Although no student, PersonX organizes the workers, so PersonX is seen as persuasive.
+PersonX organizes the workers and is a doctor, so PersonX feels competent.
+PersonX organizes the workers and no doctor is needed, so PersonX feels competent.
+PersonX organizes the workers and the students, so PersonX feels competent.
+PersonX organizes the workers and no student, so PersonX feels competent.
+PersonX organizes the workers while being a doctor, so PersonX feels competent.
+PersonX organizes the workers while no doctor, so PersonX feels competent.
+PersonX organizes the workers while being a student, so PersonX feels competent.
+PersonX organizes the workers while no student, so PersonX feels competent.
+PersonX is a doctor but PersonX organizes the workers, so PersonX feels competent.
+PersonX is not a doctor but PersonX organizes the workers, so PersonX feels competent.
+PersonX is a student but PersonX organizes the workers, so PersonX feels competent.
+PersonX is not a student but PersonX organizes the workers, so PersonX feels competent.
+Although a doctor, PersonX organizes the workers, so PersonX feels competent.
+Although no doctor, PersonX organizes the workers, so PersonX feels competent.
+Although a student, PersonX organizes the workers, so PersonX feels competent.
+Although no student, PersonX organizes the workers, so PersonX feels competent.
+PersonX sews the patch and makes a batch, so PersonX feels good.
+PersonX sews the patch and no batch, so PersonX feels good.
+PersonX sews the patch and pats himself, so PersonX feels good.
+PersonX sews the patch and no one pats, so PersonX feels good.
+PersonX sews the patch while making a batch, so PersonX feels good.
+PersonX sews the patch while no batch, so PersonX feels good.
+PersonX sews the patch while patting himself, so PersonX feels good.
+PersonX sews the patch while no one pats, so PersonX feels good.
+PersonX makes a batch but PersonX sews the patch, so PersonX feels good.
+PersonX does not batch but PersonX sews the patch, so PersonX feels good.
+PersonX pats the patch but PersonX sews the patch, so PersonX feels good.
+PersonX does not pat but PersonX sews the patch, so PersonX feels good.
+Although the batch is small, PersonX sews the patch, so PersonX feels good.
+Although no batch, PersonX sews the patch, so PersonX feels good.
+Although no one pats, PersonX sews the patch, so PersonX feels good.
+Although no one pats, PersonX sews the patch, so PersonX feels good.
+PersonX sews the patch and makes a batch, so PersonX is seen as crafty.
+PersonX sews the patch and does not batch, so PersonX is seen as crafty.
+PersonX sews the patch and pats it, so PersonX is seen as crafty.
+PersonX sews the patch and no one pats it, so PersonX is seen as crafty.
+PersonX sews the patch while making a batch, so PersonX is seen as crafty.
+PersonX sews the patch while no batch, so PersonX is seen as crafty.
+PersonX sews the patch while patting, so PersonX is seen as crafty.
+PersonX sews the patch while no one pats, so PersonX is seen as crafty.
+PersonX makes a batch but PersonX sews the patch, so PersonX is seen as crafty.
+PersonX does not batch but PersonX sews the patch, so PersonX is seen as crafty.
+PersonX pats the patch but PersonX sews the patch, so PersonX is seen as crafty.
+PersonX does not pat but PersonX sews the patch, so PersonX is seen as crafty.
+Although the batch is small, PersonX sews the patch, so PersonX is seen as crafty.
+Although no batch, PersonX sews the patch, so PersonX is seen as crafty.
+Although the pat, PersonX sews the patch, so PersonX is seen as crafty.
+Although no one pats, PersonX sews the patch, so PersonX is seen as crafty.
+PersonX searches for more and more examination, so PersonX is seen as persistent.
+PersonX searches for more and no examination, so PersonX is seen as persistent.
+PersonX searches for more and more shops, so PersonX is seen as persistent.
+PersonX searches for more and does not shop, so PersonX is seen as persistent.
+PersonX searches for more while under examination, so PersonX is seen as persistent.
+PersonX searches for more while no examination, so PersonX is seen as persistent.
+PersonX searches for more while they shop, so PersonX is seen as persistent.
+PersonX searches for more while no one shops, so PersonX is seen as persistent.
+PersonX is under examination but PersonX searches for more, so PersonX is seen as persistent.
+There is no examination but PersonX searches for more, so PersonX is seen as persistent.
+PersonX shops but PersonX searches for more, so PersonX is seen as persistent.
+PersonX does not shop but PersonX searches for more, so PersonX is seen as persistent.
+Although examination is important, PersonX searches for more, so PersonX is seen as persistent.
+Although no examination, PersonX searches for more, so PersonX is seen as persistent.
+Although there are many shops, PersonX searches for more, so PersonX is seen as persistent.
+Although no one shops, PersonX searches for more, so PersonX is seen as persistent.
+PersonX searches for more and more examination, so PersonX feels curious.
+PersonX searches for more and no examination, so PersonX feels curious.
+PersonX searches for more and more shops, so PersonX feels curious.
+PersonX searches for more and no one shops, so PersonX feels curious.
+PersonX searches for more while under examination, so PersonX feels curious.
+PersonX searches for more while no examination, so PersonX feels curious.
+PersonX searches for more while in the shop, so PersonX feels curious.
+PersonX searches for more while no one shops, so PersonX feels curious.
+PersonX does an examination but PersonX searches for more, so PersonX feels curious.
+There is no examination but PersonX searches for more, so PersonX feels curious.
+PersonX shops but PersonX searches for more, so PersonX feels curious.
+PersonX does not shop but PersonX searches for more, so PersonX feels curious.
+Although examination is important, PersonX searches for more, so PersonX feels curious.
+Although no examination, PersonX searches for more, so PersonX feels curious.
+Although shopping is fun, PersonX searches for more, so PersonX feels curious.
+Although no one shops, PersonX searches for more, so PersonX feels curious.
+PersonX studies the report and analyses it, so PersonX feels satisfied.
+PersonX studies the report and no analysis is needed, so PersonX feels satisfied.
+PersonX studies the report and reviews it, so PersonX feels satisfied.
+PersonX studies the report and does not review it, so PersonX feels satisfied.
+PersonX studies the report while making an analysis, so PersonX feels satisfied.
+PersonX studies the report while no analysis is required, so PersonX feels satisfied.
+PersonX studies the report while reviewing it, so PersonX feels satisfied.
+PersonX studies the report while no one reviews it, so PersonX feels satisfied.
+PersonX analyses the report but PersonX studies the report, so PersonX feels satisfied.
+There is no analysis but PersonX studies the report, so PersonX feels satisfied.
+PersonX reviews the report but PersonX studies the report, so PersonX feels satisfied.
+PersonX does not review the report but PersonX studies the report, so PersonX feels satisfied.
+Although analysis is difficult, PersonX studies the report, so PersonX feels satisfied.
+Although no analysis is required, PersonX studies the report, so PersonX feels satisfied.
+Although reviewing the report, PersonX studies the report, so PersonX feels satisfied.
+Although no review, PersonX studies the report, so PersonX feels satisfied.
+PersonX studies the report and analyses it, so PersonX is seen as smart.
+PersonX studies the report and no analysis is needed, so PersonX is seen as smart.
+PersonX studies the report and reviews it, so PersonX is seen as smart.
+PersonX studies the report and does not review it, so PersonX is seen as smart.
+PersonX studies the report while making an analysis, so PersonX is seen as smart.
+PersonX studies the report while no analysis is needed, so PersonX is seen as smart.
+PersonX studies the report while reviewing it, so PersonX is seen as smart.
+PersonX studies the report while no one reviews it, so PersonX is seen as smart.
+PersonX analyses the report but PersonX studies the report, so PersonX is seen as smart.
+There is no analysis but PersonX studies the report, so PersonX is seen as smart.
+PersonX reviews the report but PersonX studies the report, so PersonX is seen as smart.
+PersonX does not review the report but PersonX studies the report, so PersonX is seen as smart.
+Although analysis is important, PersonX studies the report, so PersonX is seen as smart.
+Although no analysis is required, PersonX studies the report, so PersonX is seen as smart.
+Although reviewing the report, PersonX studies the report, so PersonX is seen as smart.
+Although no review, PersonX studies the report, so PersonX is seen as smart.
+PersonX gives her a kiss and crosses the road, so PersonX is seen as romantic.
+PersonX gives her a kiss and does not cross, so PersonX is seen as romantic.
+PersonX gives her a kiss and touches her, so PersonX is seen as romantic.
+PersonX gives her a kiss and does not touch her, so PersonX is seen as romantic.
+PersonX gives her a kiss while crossing the road, so PersonX is seen as romantic.
+PersonX gives her a kiss while not crossing, so PersonX is seen as romantic.
+PersonX gives her a kiss while touching her, so PersonX is seen as romantic.
+PersonX gives her a kiss while no one touches, so PersonX is seen as romantic.
+PersonX crosses the road but PersonX gives her a kiss, so PersonX is seen as romantic.
+PersonX does not cross but PersonX gives her a kiss, so PersonX is seen as romantic.
+PersonX touches her but PersonX gives her a kiss, so PersonX is seen as romantic.
+PersonX does not touch her but PersonX gives her a kiss, so PersonX is seen as romantic.
+Although the cross, PersonX gives her a kiss, so PersonX is seen as romantic.
+Although no cross, PersonX gives her a kiss, so PersonX is seen as romantic.
+Although there is no touch, PersonX gives her a kiss, so PersonX is seen as romantic.
+Although no one touches, PersonX gives her a kiss, so PersonX is seen as romantic.
+PersonX gives her a kiss and they cross, so PersonX feels romantic.
+PersonX gives her a kiss and does not cross, so PersonX feels romantic.
+PersonX gives her a kiss and touches her, so PersonX feels romantic.
+PersonX gives her a kiss and does not touch her, so PersonX feels romantic.
+PersonX gives her a kiss while they cross, so PersonX feels romantic.
+PersonX gives her a kiss while no one crosses, so PersonX feels romantic.
+PersonX gives her a kiss while touching her, so PersonX feels romantic.
+PersonX gives her a kiss while no one touches, so PersonX feels romantic.
+PersonX crosses but PersonX gives her a kiss, so PersonX feels romantic.
+PersonX is not cross but PersonX gives her a kiss, so PersonX feels romantic.
+PersonX touches PersonX but PersonX gives her a kiss, so PersonX feels romantic.
+PersonX does not touch her but PersonX gives her a kiss, so PersonX feels romantic.
+Although the cross, PersonX gives her a kiss, so PersonX feels romantic.
+Although no one is cross, PersonX gives her a kiss, so PersonX feels romantic.
+Although there is no touch, PersonX gives her a kiss, so PersonX feels romantic.
+Although no one touches, PersonX gives her a kiss, so PersonX feels romantic.
+PersonX reacts to and accepts criticism, so PersonX is seen as angry.
+PersonX reacts to and does not accept, so PersonX is seen as angry.
+PersonX reacts to and does not return, so PersonX is seen as angry.
+PersonX reacts to and does not return, so PersonX is seen as angry.
+PersonX reacts to while accepting it, so PersonX is seen as angry.
+PersonX reacts to while not accepting, so PersonX is seen as angry.
+PersonX reacts to while returning home, so PersonX is seen as angry.
+PersonX reacts to while not returning, so PersonX is seen as angry.
+PersonX accepts but PersonX reacts to, so PersonX is seen as angry.
+PersonX does not accept but PersonX reacts to, so PersonX is seen as angry.
+PersonX returns but PersonX reacts to, so PersonX is seen as angry.
+PersonX does not return but PersonX reacts to, so PersonX is seen as angry.
+Although anger cannot be accepted, PersonX reacts to, so PersonX is seen as angry.
+Although no one accepts, PersonX reacts to, so PersonX is seen as angry.
+Although the return, PersonX reacts to, so PersonX is seen as angry.
+Although no one returns, PersonX reacts to, so PersonX is seen as angry.
+PersonX reacts to and accepts, so PersonX feels irritated.
+PersonX reacts to and does not accept, so PersonX feels irritated.
+PersonX reacts to and does not return, so PersonX feels irritated.
+PersonX reacts to and does not return, so PersonX feels irritated.
+PersonX reacts to while not accepting, so PersonX feels irritated.
+PersonX reacts to while not accepting, so PersonX feels irritated.
+PersonX reacts to while returning home, so PersonX feels irritated.
+PersonX reacts to while not returning, so PersonX feels irritated.
+PersonX accepts but PersonX reacts to, so PersonX feels irritated.
+PersonX does not accept but PersonX reacts to, so PersonX feels irritated.
+PersonX returns but PersonX reacts to, so PersonX feels irritated.
+PersonX does not return but PersonX reacts to, so PersonX feels irritated.
+Although it is difficult to accept, PersonX reacts to, so PersonX feels irritated.
+Although no one accepts, PersonX reacts to, so PersonX feels irritated.
+Although the return, PersonX reacts to, so PersonX feels irritated.
+Although no one returns, PersonX reacts to, so PersonX feels irritated.
+PersonX walks through the mud and the water, so PersonX feels wet.
+PersonX walks through the mud and no water, so PersonX feels wet.
+PersonX walks through the mud and plants a seed, so PersonX feels wet.
+PersonX walks through the mud and no seed, so PersonX feels wet.
+PersonX walks through the mud while there is water, so PersonX feels wet.
+PersonX walks through the mud while no water, so PersonX feels wet.
+PersonX walks through the mud while the seed falls, so PersonX feels wet.
+PersonX walks through the mud while no seed, so PersonX feels wet.
+There is water but PersonX walks through the mud, so PersonX feels wet.
+There is no water but PersonX walks through the mud, so PersonX feels wet.
+PersonX plants a seed but PersonX walks through the mud, so PersonX feels wet.
+PersonX does not plant a seed but PersonX walks through the mud, so PersonX feels wet.
+Although there is water, PersonX walks through the mud, so PersonX feels wet.
+Although there is no water, PersonX walks through the mud, so PersonX feels wet.
+Although there is a seed, PersonX walks through the mud, so PersonX feels wet.
+Although there is no seed, PersonX walks through the mud, so PersonX feels wet.
+PersonX declares to leave and prepares, so PersonX is seen as courageous.
+PersonX declares to leave and does not prepare, so PersonX is seen as courageous.
+PersonX declares to leave and make a declaration, so PersonX is seen as courageous.
+PersonX declares to leave and no declaration, so PersonX is seen as courageous.
+PersonX declares to leave while preparing, so PersonX is seen as courageous.
+PersonX declares to leave while no one prepares, so PersonX is seen as courageous.
+PersonX declares to leave while declaration is made, so PersonX is seen as courageous.
+PersonX declares to leave while no declaration is made, so PersonX is seen as courageous.
+PersonX prepares but PersonX declares to leave, so PersonX is seen as courageous.
+PersonX does not prepare but PersonX declares to leave, so PersonX is seen as courageous.
+A declaration is made but PersonX declares to leave, so PersonX is seen as courageous.
+PersonX does not make a declaration but PersonX declares to leave, so PersonX is seen as courageous.
+Although preparing, PersonX declares to leave, so PersonX is seen as courageous.
+Although no one prepares, PersonX declares to leave, so PersonX is seen as courageous.
+Although it is a declaration, PersonX declares to leave, so PersonX is seen as courageous.
+Although no declaration is made, PersonX declares to leave, so PersonX is seen as courageous.
+PersonX turns up at her place and knows the location, so PersonX is seen as reliable.
+PersonX turns up at her place and does not change location, so PersonX is seen as reliable.
+PersonX turns up at her place and cleans the house, so PersonX is seen as reliable.
+PersonX turns up at her place and no one is in the house, so PersonX is seen as reliable.
+PersonX turns up at her place while on location, so PersonX is seen as reliable.
+PersonX turns up at her place while no one is in the location, so PersonX is seen as reliable.
+PersonX turns up at her place while the house is empty, so PersonX is seen as reliable.
+PersonX turns up at her place while no one is in the house, so PersonX is seen as reliable.
+PersonX's location but PersonX turns up at her place, so PersonX is seen as reliable.
+PersonX has no location but PersonX turns up at her place, so PersonX is seen as reliable.
+PersonX's house but PersonX turns up at her place, so PersonX is seen as reliable.
+PersonX does not have a house but PersonX turns up at her place, so PersonX is seen as reliable.
+Although location is important, PersonX turns up at her place, so PersonX is seen as reliable.
+Although no location is given, PersonX turns up at her place, so PersonX is seen as reliable.
+Although the house is empty, PersonX turns up at her place, so PersonX is seen as reliable.
+Although no house, PersonX turns up at her place, so PersonX is seen as reliable.
+PersonX turns up at her place and finds her location, so PersonX feels at home.
+PersonX turns up at her place and there is no location, so PersonX feels at home.
+PersonX turns up at her place and enters the house, so PersonX feels at home.
+PersonX turns up at her place and no one is in the house, so PersonX feels at home.
+PersonX turns up at her place while the location is familiar, so PersonX feels at home.
+PersonX turns up at her place while no location, so PersonX feels at home.
+PersonX turns up at her place while the house is empty, so PersonX feels at home.
+PersonX turns up at her place while no one is in the house, so PersonX feels at home.
+PersonX’s location but PersonX turns up at her place, so PersonX feels at home.
+PersonX does not have a location but PersonX turns up at her place, so PersonX feels at home.
+PersonX lives in a house but PersonX turns up at her place, so PersonX feels at home.
+PersonX does not have a house but PersonX turns up at her place, so PersonX feels at home.
+Although location is important, PersonX turns up at her place, so PersonX feels at home.
+Although there is no location, PersonX turns up at her place, so PersonX feels at home.
+Although the house is empty, PersonX turns up at her place, so PersonX feels at home.
+Although no house, PersonX turns up at her place, so PersonX feels at home.
+PersonX comments and documents his opinion, so PersonX is seen as opinionated.
+PersonX comments and does not document, so PersonX is seen as opinionated.
+PersonX comments and makes a note, so PersonX is seen as opinionated.
+PersonX comments and no one notes, so PersonX is seen as opinionated.
+PersonX comments while documenting, so PersonX is seen as opinionated.
+PersonX comments while no document, so PersonX is seen as opinionated.
+PersonX comments while noting, so PersonX is seen as opinionated.
+PersonX comments while no one notes, so PersonX is seen as opinionated.
+PersonX documents but PersonX comments, so PersonX is seen as opinionated.
+PersonX does not document but PersonX comments, so PersonX is seen as opinionated.
+PersonX notes but PersonX comments, so PersonX is seen as opinionated.
+PersonX does not note but PersonX comments, so PersonX is seen as opinionated.
+Although the document, PersonX comments, so PersonX is seen as opinionated.
+Although no document, PersonX comments, so PersonX is seen as opinionated.
+Although note is made, PersonX comments, so PersonX is seen as opinionated.
+Although no note is made, PersonX comments, so PersonX is seen as opinionated.
+PersonX lends PersonY his camera and PersonY uses the device, so PersonX is seen as helpful.
+PersonX lends PersonY his camera and PersonY does not use the device, so PersonX is seen as helpful.
+PersonX lends PersonY his camera and PersonY takes a picture, so PersonX is seen as helpful.
+PersonX lends PersonY his camera and PersonY does not take a picture, so PersonX is seen as helpful.
+PersonX lends PersonY his camera while PersonY uses the device, so PersonX is seen as helpful.
+PersonX lends PersonY his camera while PersonY does not use the device, so PersonX is seen as helpful.
+PersonX lends PersonY his camera while PersonY takes a picture, so PersonX is seen as helpful.
+PersonX lends PersonY his camera while no picture is taken, so PersonX is seen as helpful.
+PersonX has a device but PersonX lends PersonY his camera, so PersonX is seen as helpful.
+PersonX does not have a device but PersonX lends PersonY his camera, so PersonX is seen as helpful.
+PersonX takes a picture but PersonX lends PersonY his camera, so PersonX is seen as helpful.
+PersonX does not take a picture but PersonX lends PersonY his camera, so PersonX is seen as helpful.
+Although there is no device, PersonX lends PersonY his camera, so PersonX is seen as helpful.
+Although no device is available, PersonX lends PersonY his camera, so PersonX is seen as helpful.
+Although no picture is taken, PersonX lends PersonY his camera, so PersonX is seen as helpful.
+Although no picture is taken, PersonX lends PersonY his camera, so PersonX is seen as helpful.
+PersonX lends PersonY his camera and PersonY uses the device, so PersonX feels kind.
+PersonX lends PersonY his camera and PersonY does not use the device, so PersonX feels kind.
+PersonX lends PersonY his camera and PersonY takes a picture, so PersonX feels kind.
+PersonX lends PersonY his camera and PersonY does not take a picture, so PersonX feels kind.
+PersonX lends PersonY his camera while PersonY uses the device, so PersonX feels kind.
+PersonX lends PersonY his camera while PersonY does not use the device, so PersonX feels kind.
+PersonX lends PersonY his camera while PersonY takes a picture, so PersonX feels kind.
+PersonX lends PersonY his camera while PersonY does not take a picture, so PersonX feels kind.
+PersonX has a device but PersonX lends PersonY his camera, so PersonX feels kind.
+PersonX does not have a device but PersonX lends PersonY his camera, so PersonX feels kind.
+PersonX takes a picture but PersonX lends PersonY his camera, so PersonX feels kind.
+PersonX does not take a picture but PersonX lends PersonY his camera, so PersonX feels kind.
+Although there is no device, PersonX lends PersonY his camera, so PersonX feels kind.
+Although no device, PersonX lends PersonY his camera, so PersonX feels kind.
+Although no picture is taken, PersonX lends PersonY his camera, so PersonX feels kind.
+Although no picture is taken, PersonX lends PersonY his camera, so PersonX feels kind.
+PersonX checks how well PersonY is doing at work and completes the task, so PersonX is seen as responsible.
+PersonX checks how well PersonY is doing at work and PersonY does not complete the task, so PersonX is seen as responsible.
+PersonX checks how well PersonY is doing at work and PersonY does a good job, so PersonX is seen as responsible.
+PersonX checks how well PersonY is doing at work and no job, so PersonX is seen as responsible.
+PersonX checks how well PersonY is doing at work while doing the task, so PersonX is seen as responsible.
+PersonX checks how well PersonY is doing at work while no task is completed, so PersonX is seen as responsible.
+PersonX checks how well PersonY is doing at work while PersonY is on the job, so PersonX is seen as responsible.
+PersonX checks how well PersonY is doing at work while no job, so PersonX is seen as responsible.
+PersonX has a task but PersonX checks how well PersonY is doing at work, so PersonX is seen as responsible.
+There is no task but PersonX checks how well PersonY is doing at work, so PersonX is seen as responsible.
+PersonX has a job but PersonX checks how well PersonY is doing at work, so PersonX is seen as responsible.
+PersonX does not have a job but PersonX checks how well PersonY is doing at work, so PersonX is seen as responsible.
+Although it is a task, PersonX checks how well PersonY is doing at work, so PersonX is seen as responsible.
+Although no task is assigned, PersonX checks how well PersonY is doing at work, so PersonX is seen as responsible.
+Although job is important, PersonX checks how well PersonY is doing at work, so PersonX is seen as responsible.
+Although no job, PersonX checks how well PersonY is doing at work, so PersonX is seen as responsible.
+PersonX checks how well PersonY is doing at work and PersonY is not doing the task, so PersonX feels concerned.
+PersonX checks how well PersonY is doing at work and PersonY does not complete the task, so PersonX feels concerned.
+PersonX checks how well PersonY is doing at work and PersonY is not doing a good job, so PersonX feels concerned.
+PersonX checks how well PersonY is doing at work and PersonY does not have a job, so PersonX feels concerned.
+PersonX checks how well PersonY is doing at work while doing the task, so PersonX feels concerned.
+PersonX checks how well PersonY is doing at work while no task is completed, so PersonX feels concerned.
+PersonX checks how well PersonY is doing at work while PersonY is on the job, so PersonX feels concerned.
+PersonX checks how well PersonY is doing at work while no job, so PersonX feels concerned.
+PersonY has a task but PersonX checks how well PersonY is doing at work, so PersonX feels concerned.
+PersonX does not do the task but PersonX checks how well PersonY is doing at work, so PersonX feels concerned.
+PersonY has a job but PersonX checks how well PersonY is doing at work, so PersonX feels concerned.
+PersonY does not have a job but PersonX checks how well PersonY is doing at work, so PersonX feels concerned.
+Although the task is difficult, PersonX checks how well PersonY is doing at work, so PersonX feels concerned.
+Although no task is assigned, PersonX checks how well PersonY is doing at work, so PersonX feels concerned.
+Although the job is demanding, PersonX checks how well PersonY is doing at work, so PersonX feels concerned.
+Although no job, PersonX checks how well PersonY is doing at work, so PersonX feels concerned.
+PersonX offers a proposal and PersonX is the proponent, so PersonX is seen as persuasive.
+PersonX offers a proposal and the proponent does not accept it, so PersonX is seen as persuasive.
+PersonX offers a proposal and PersonX proffers, so PersonX is seen as persuasive.
+PersonX offers a proposal and PersonX does not proffer, so PersonX is seen as persuasive.
+PersonX offers a proposal while a proponent, so PersonX is seen as persuasive.
+PersonX offers a proposal while no one is proponent, so PersonX is seen as persuasive.
+PersonX offers a proposal while proffering, so PersonX is seen as persuasive.
+PersonX offers a proposal while no one will proffer, so PersonX is seen as persuasive.
+PersonX is a proponent but PersonX offers a proposal, so PersonX is seen as persuasive.
+PersonX is not a proponent but PersonX offers a proposal, so PersonX is seen as persuasive.
+PersonX proffers but PersonX offers a proposal, so PersonX is seen as persuasive.
+PersonX does not proffer but PersonX offers a proposal, so PersonX is seen as persuasive.
+Although a proponent, PersonX offers a proposal, so PersonX is seen as persuasive.
+Although no one is a proponent, PersonX offers a proposal, so PersonX is seen as persuasive.
+Although proffer, PersonX offers a proposal, so PersonX is seen as persuasive.
+Although no one will proffer, PersonX offers a proposal, so PersonX is seen as persuasive.
+PersonX offers a proposal and PersonX is the proponent, so PersonX feels excited.
+PersonX offers a proposal and the proponent is not rejected, so PersonX feels excited.
+PersonX offers a proposal and PersonX will proffer, so PersonX feels excited.
+PersonX offers a proposal and PersonX does not proffer, so PersonX feels excited.
+PersonX offers a proposal while being a proponent, so PersonX feels excited.
+PersonX offers a proposal while no one is proponent, so PersonX feels excited.
+PersonX offers a proposal while proffering, so PersonX feels excited.
+PersonX offers a proposal while no one does not proffer, so PersonX feels excited.
+PersonX is a proponent but PersonX offers a proposal, so PersonX feels excited.
+PersonX is not a proponent but PersonX offers a proposal, so PersonX feels excited.
+PersonX offers to proffer but PersonX offers a proposal, so PersonX feels excited.
+PersonX does not proffer but PersonX offers a proposal, so PersonX feels excited.
+Although a proponent, PersonX offers a proposal, so PersonX feels excited.
+Although no one is a proponent, PersonX offers a proposal, so PersonX feels excited.
+Although proffer, PersonX offers a proposal, so PersonX feels excited.
+Although no one proffers, PersonX offers a proposal, so PersonX feels excited.
+PersonX helps PersonY with a science project and PersonY learns history, so PersonX is seen as intelligent.
+PersonX helps PersonY with a science project and no history, so PersonX is seen as intelligent.
+PersonX helps PersonY with a science project and PersonY does research, so PersonX is seen as intelligent.
+PersonX helps PersonY with a science project and PersonY does not research, so PersonX is seen as intelligent.
+PersonX helps PersonY with a science project while learning history, so PersonX is seen as intelligent.
+PersonX helps PersonY with a science project while no history is taught, so PersonX is seen as intelligent.
+PersonX helps PersonY with a science project while doing research, so PersonX is seen as intelligent.
+PersonX helps PersonY with a science project while no research is done, so PersonX is seen as intelligent.
+PersonX does not know history but PersonX helps PersonY with a science project, so PersonX is seen as intelligent.
+PersonX does not know history but PersonX helps PersonY with a science project, so PersonX is seen as intelligent.
+PersonX does not do research but PersonX helps PersonY with a science project, so PersonX is seen as intelligent.
+PersonX does not do research but PersonX helps PersonY with a science project, so PersonX is seen as intelligent.
+Although history is important, PersonX helps PersonY with a science project, so PersonX is seen as intelligent.
+Although history is not important, PersonX helps PersonY with a science project, so PersonX is seen as intelligent.
+Although research is difficult, PersonX helps PersonY with a science project, so PersonX is seen as intelligent.
+Although no research is done, PersonX helps PersonY with a science project, so PersonX is seen as intelligent.
+PersonX helps PersonY with a science project and PersonY learns history, so PersonX feels competent.
+PersonX helps PersonY with a science project and no history, so PersonX feels competent.
+PersonX helps PersonY with a science project and PersonY does the research, so PersonX feels competent.
+PersonX helps PersonY with a science project and PersonY does not need to do any research, so PersonX feels competent.
+PersonX helps PersonY with a science project while learning history, so PersonX feels competent.
+PersonX helps PersonY with a science project while no history is taught, so PersonX feels competent.
+PersonX helps PersonY with a science project while doing research, so PersonX feels competent.
+PersonX helps PersonY with a science project while no research is done, so PersonX feels competent.
+PersonX does not know history but PersonX helps PersonY with a science project, so PersonX feels competent.
+PersonX does not know history but PersonX helps PersonY with a science project, so PersonX feels competent.
+PersonX does not do research but PersonX helps PersonY with a science project, so PersonX feels competent.
+PersonX does not do research but PersonX helps PersonY with a science project, so PersonX feels competent.
+Although history is important, PersonX helps PersonY with a science project, so PersonX feels competent.
+Although history is not important, PersonX helps PersonY with a science project, so PersonX feels competent.
+Although research is difficult, PersonX helps PersonY with a science project, so PersonX feels competent.
+Although no research is done, PersonX helps PersonY with a science project, so PersonX feels competent.
+PersonX gets the rights to PersonY and does his duty, so PersonX feels excited.
+PersonX gets the rights to PersonY and no duty, so PersonX feels excited.
+PersonX gets the rights to PersonY and PersonY obeys the command, so PersonX feels excited.
+PersonX gets the rights to PersonY and no command, so PersonX feels excited.
+PersonX gets the rights to PersonY while PersonY is on duty, so PersonX feels excited.
+PersonX gets the rights to PersonY while no duty, so PersonX feels excited.
+PersonX gets the rights to PersonY while commanding, so PersonX feels excited.
+PersonX gets the rights to PersonY while no one commands, so PersonX feels excited.
+PersonX has a duty but PersonX gets the rights to PersonY, so PersonX feels excited.
+PersonX has no duty but PersonX gets the rights to PersonY, so PersonX feels excited.
+PersonX commands but PersonX gets the rights to PersonY, so PersonX feels excited.
+PersonX does not command but PersonX gets the rights to PersonY, so PersonX feels excited.
+Although duty calls, PersonX gets the rights to PersonY, so PersonX feels excited.
+Although no duty, PersonX gets the rights to PersonY, so PersonX feels excited.
+Although command is given, PersonX gets the rights to PersonY, so PersonX feels excited.
+Although no command is given, PersonX gets the rights to PersonY, so PersonX feels excited.
+PersonX gets the rights to PersonY and does his duty, so PersonX is seen as fair.
+PersonX gets the rights to PersonY and no duty, so PersonX is seen as fair.
+PersonX gets the rights to PersonY and PersonY obeys the command, so PersonX is seen as fair.
+PersonX gets the rights to PersonY and does not command, so PersonX is seen as fair.
+PersonX gets the rights to PersonY while doing his duty, so PersonX is seen as fair.
+PersonX gets the rights to PersonY while no duty, so PersonX is seen as fair.
+PersonX gets the rights to PersonY while commanding, so PersonX is seen as fair.
+PersonX gets the rights to PersonY while no command is given, so PersonX is seen as fair.
+PersonX has a duty but PersonX gets the rights to PersonY, so PersonX is seen as fair.
+PersonX has no duty but PersonX gets the rights to PersonY, so PersonX is seen as fair.
+PersonX commands but PersonX gets the rights to PersonY, so PersonX is seen as fair.
+PersonX does not command but PersonX gets the rights to PersonY, so PersonX is seen as fair.
+Although duty calls, PersonX gets the rights to PersonY, so PersonX is seen as fair.
+Although no duty, PersonX gets the rights to PersonY, so PersonX is seen as fair.
+Although command is given, PersonX gets the rights to PersonY, so PersonX is seen as fair.
+Although no command is given, PersonX gets the rights to PersonY, so PersonX is seen as fair.
+PersonX and PersonY move to a new house and open a store, so PersonX feels pleased.
+PersonX and PersonY move to a new house and no store, so PersonX feels pleased.
+PersonX and PersonY move to a new house and PersonY becomes a man, so PersonX feels pleased.
+PersonX and PersonY move to a new house and no man, so PersonX feels pleased.
+PersonX and PersonY move to a new house while keeping the store, so PersonX feels pleased.
+PersonX and PersonY move to a new house while no store, so PersonX feels pleased.
+PersonX and PersonY move to a new house while a man, so PersonX feels pleased.
+PersonX and PersonY move to a new house while no man, so PersonX feels pleased.
+PersonX has a store but PersonX and PersonY move to a new house, so PersonX feels pleased.
+There is no store but PersonX and PersonY move to a new house, so PersonX feels pleased.
+PersonX is a man but PersonX and PersonY move to a new house, so PersonX feels pleased.
+PersonX is not a man but PersonX and PersonY move to a new house, so PersonX feels pleased.
+Although there is a store, PersonX and PersonY move to a new house, so PersonX feels pleased.
+Although there is no store, PersonX and PersonY move to a new house, so PersonX feels pleased.
+Although a man, PersonX and PersonY move to a new house, so PersonX feels pleased.
+Although no man, PersonX and PersonY move to a new house, so PersonX feels pleased.
+PersonX begins a self-help group and goes to school, so PersonX feels excited.
+PersonX begins a self-help group and does not have to go to school, so PersonX feels excited.
+PersonX begins a self-help group and receives support, so PersonX feels excited.
+PersonX begins a self-help group and receives no support, so PersonX feels excited.
+PersonX begins a self-help group while in school, so PersonX feels excited.
+PersonX begins a self-help group while school is not in session, so PersonX feels excited.
+PersonX begins a self-help group while receiving support, so PersonX feels excited.
+PersonX begins a self-help group while no support, so PersonX feels excited.
+PersonX goes to school but PersonX begins a self-help group, so PersonX feels excited.
+PersonX does not go to school but PersonX begins a self-help group, so PersonX feels excited.
+PersonX needs support but PersonX begins a self-help group, so PersonX feels excited.
+PersonX does not need support but PersonX begins a self-help group, so PersonX feels excited.
+Although school is difficult, PersonX begins a self-help group, so PersonX feels excited.
+Although no school, PersonX begins a self-help group, so PersonX feels excited.
+Although support is needed, PersonX begins a self-help group, so PersonX feels excited.
+Although no support is available, PersonX begins a self-help group, so PersonX feels excited.
+PersonX begins a self-help group and goes to school, so PersonX is seen as helpful.
+PersonX begins a self-help group and no longer attends school, so PersonX is seen as helpful.
+PersonX begins a self-help group and provides support, so PersonX is seen as helpful.
+PersonX begins a self-help group and does not need support, so PersonX is seen as helpful.
+PersonX begins a self-help group while in school, so PersonX is seen as helpful.
+PersonX begins a self-help group while school is not in session, so PersonX is seen as helpful.
+PersonX begins a self-help group while receiving support, so PersonX is seen as helpful.
+PersonX begins a self-help group while no support is provided, so PersonX is seen as helpful.
+PersonX goes to school but PersonX begins a self-help group, so PersonX is seen as helpful.
+PersonX does not go to school but PersonX begins a self-help group, so PersonX is seen as helpful.
+PersonX needs support but PersonX begins a self-help group, so PersonX is seen as helpful.
+There is no support but PersonX begins a self-help group, so PersonX is seen as helpful.
+Although school is difficult, PersonX begins a self-help group, so PersonX is seen as helpful.
+Although no school, PersonX begins a self-help group, so PersonX is seen as helpful.
+Although support is needed, PersonX begins a self-help group, so PersonX is seen as helpful.
+Although no support is provided, PersonX begins a self-help group, so PersonX is seen as helpful.
+PersonX gets his brother back and they become friends, so PersonX feels proud.
+PersonX gets his brother back and no friend, so PersonX feels proud.
+PersonX gets his brother back and the child is happy, so PersonX feels proud.
+PersonX gets his brother back and no child, so PersonX feels proud.
+PersonX gets his brother back while being a good friend, so PersonX feels proud.
+PersonX gets his brother back while no friend, so PersonX feels proud.
+PersonX gets his brother back while being a child, so PersonX feels proud.
+PersonX gets his brother back while no child, so PersonX feels proud.
+PersonX is a friend but PersonX gets his brother back, so PersonX feels proud.
+PersonX does not have a friend but PersonX gets his brother back, so PersonX feels proud.
+PersonX is a child but PersonX gets his brother back, so PersonX feels proud.
+PersonX does not have a child but PersonX gets his brother back, so PersonX feels proud.
+Although a friend, PersonX gets his brother back, so PersonX feels proud.
+Although no friend, PersonX gets his brother back, so PersonX feels proud.
+Although a child, PersonX gets his brother back, so PersonX feels proud.
+Although no child, PersonX gets his brother back, so PersonX feels proud.
+PersonX gets his brother back and becomes his friend, so PersonX is seen as courageous.
+PersonX gets his brother back and no friend, so PersonX is seen as courageous.
+PersonX gets his brother back and saves the child, so PersonX is seen as courageous.
+PersonX gets his brother back and no child, so PersonX is seen as courageous.
+PersonX gets his brother back while being a friend, so PersonX is seen as courageous.
+PersonX gets his brother back while no friend, so PersonX is seen as courageous.
+PersonX gets his brother back while the child is crying, so PersonX is seen as courageous.
+PersonX gets his brother back while no child, so PersonX is seen as courageous.
+PersonX is a friend but PersonX gets his brother back, so PersonX is seen as courageous.
+PersonX does not have a friend but PersonX gets his brother back, so PersonX is seen as courageous.
+PersonX has a child but PersonX gets his brother back, so PersonX is seen as courageous.
+PersonX does not have a child but PersonX gets his brother back, so PersonX is seen as courageous.
+Although a friend, PersonX gets his brother back, so PersonX is seen as courageous.
+Although no friend, PersonX gets his brother back, so PersonX is seen as courageous.
+Although a child, PersonX gets his brother back, so PersonX is seen as courageous.
+Although no child, PersonX gets his brother back, so PersonX is seen as courageous.
+PersonX visits an old classmate and workmate, so PersonX is seen as a good friend.
+PersonX visits an old classmate and no workmate, so PersonX is seen as a good friend.
+PersonX visits an old classmate and chastises him, so PersonX is seen as a good friend.
+PersonX visits an old classmate and does not chastise him, so PersonX is seen as a good friend.
+PersonX visits an old classmate while a workmate, so PersonX is seen as a good friend.
+PersonX visits an old classmate while no workmate is present, so PersonX is seen as a good friend.
+PersonX visits an old classmate while chastising him, so PersonX is seen as a good friend.
+PersonX visits an old classmate while no one chastises, so PersonX is seen as a good friend.
+PersonX is a workmate but PersonX visits an old classmate, so PersonX is seen as a good friend.
+PersonX does not have a workmate but PersonX visits an old classmate, so PersonX is seen as a good friend.
+PersonX chastises but PersonX visits an old classmate, so PersonX is seen as a good friend.
+PersonX does not chastise but PersonX visits an old classmate, so PersonX is seen as a good friend.
+Although workmate, PersonX visits an old classmate, so PersonX is seen as a good friend.
+Although no workmate, PersonX visits an old classmate, so PersonX is seen as a good friend.
+Although chastised, PersonX visits an old classmate, so PersonX is seen as a good friend.
+Although no one chastises, PersonX visits an old classmate, so PersonX is seen as a good friend.
+PersonX visits an old classmate and workmate, so PersonX feels nostalgic.
+PersonX visits an old classmate and no workmate, so PersonX feels nostalgic.
+PersonX visits an old classmate and chastises him, so PersonX feels nostalgic.
+PersonX visits an old classmate and no one chastises, so PersonX feels nostalgic.
+PersonX visits an old classmate while the workmate is at work, so PersonX feels nostalgic.
+PersonX visits an old classmate while no workmate, so PersonX feels nostalgic.
+PersonX visits an old classmate while chastising her, so PersonX feels nostalgic.
+PersonX visits an old classmate while no one chastises, so PersonX feels nostalgic.
+PersonX has a workmate but PersonX visits an old classmate, so PersonX feels nostalgic.
+PersonX does not have a workmate but PersonX visits an old classmate, so PersonX feels nostalgic.
+PersonX chastises but PersonX visits an old classmate, so PersonX feels nostalgic.
+PersonX does not chastise but PersonX visits an old classmate, so PersonX feels nostalgic.
+Although workmate, PersonX visits an old classmate, so PersonX feels nostalgic.
+Although no workmate, PersonX visits an old classmate, so PersonX feels nostalgic.
+Although chastised, PersonX visits an old classmate, so PersonX feels nostalgic.
+Although no one chastises, PersonX visits an old classmate, so PersonX feels nostalgic.
+PersonX moved back in with his mom and his mother, so PersonX feels loved.
+PersonX moved back in with his mom and no longer lives with his mother, so PersonX feels loved.
+PersonX moved back in with his mom and her daughter, so PersonX feels loved.
+PersonX moved back in with his mom and no longer has a daughter, so PersonX feels loved.
+PersonX moved back in with his mom while his mother cares for him, so PersonX feels loved.
+PersonX moved back in with his mom while no mother, so PersonX feels loved.
+PersonX moved back in with his mom while her daughter, so PersonX feels loved.
+PersonX moved back in with his mom while no daughter, so PersonX feels loved.
+PersonX’s mother but PersonX moved back in with his mom, so PersonX feels loved.
+PersonX no longer lives with his mother but PersonX moved back in with his mom, so PersonX feels loved.
+PersonX has a daughter but PersonX moved back in with his mom, so PersonX feels loved.
+PersonX is not a daughter but PersonX moved back in with his mom, so PersonX feels loved.
+Although mother is busy, PersonX moved back in with his mom, so PersonX feels loved.
+Although no mother, PersonX moved back in with his mom, so PersonX feels loved.
+Although a daughter, PersonX moved back in with his mom, so PersonX feels loved.
+Although no daughter, PersonX moved back in with his mom, so PersonX feels loved.
+PersonX being brave and bravado, so PersonX feels confident.
+PersonX being brave and bravado is not necessary, so PersonX feels confident.
+PersonX being brave and prow, so PersonX feels confident.
+PersonX being brave and not prowling, so PersonX feels confident.
+PersonX being brave while he is bravado, so PersonX feels confident.
+PersonX being brave while no one sees bravado, so PersonX feels confident.
+PersonX being brave while prow, so PersonX feels confident.
+PersonX being brave while no one prowls, so PersonX feels confident.
+PersonX is bravado but PersonX being brave, so PersonX feels confident.
+PersonX is not bravado but PersonX being brave, so PersonX feels confident.
+prow but PersonX being brave, so PersonX feels confident.
+There is no prow but PersonX being brave, so PersonX feels confident.
+Although bravado, PersonX being brave, so PersonX feels confident.
+Although there is no bravado, PersonX being brave, so PersonX feels confident.
+Although prow, PersonX being brave, so PersonX feels confident.
+Although no prow, PersonX being brave, so PersonX feels confident.
+PersonX knows that the seats are uncomfortable and they swing, so PersonX feels uncomfortable.
+PersonX knows that the seats are uncomfortable and does not swing, so PersonX feels uncomfortable.
+PersonX knows that the seats are uncomfortable and there is a bench, so PersonX feels uncomfortable.
+PersonX knows that the seats are uncomfortable and there is no bench, so PersonX feels uncomfortable.
+PersonX knows that the seats are uncomfortable while swinging, so PersonX feels uncomfortable.
+PersonX knows that the seats are uncomfortable while no swing, so PersonX feels uncomfortable.
+PersonX knows that the seats are uncomfortable while sitting on the bench, so PersonX feels uncomfortable.
+PersonX knows that the seats are uncomfortable while there is no bench, so PersonX feels uncomfortable.
+PersonX swings but PersonX knows that the seats are uncomfortable, so PersonX feels uncomfortable.
+PersonX does not swing but PersonX knows that the seats are uncomfortable, so PersonX feels uncomfortable.
+PersonX sits on a bench but PersonX knows that the seats are uncomfortable, so PersonX feels uncomfortable.
+PersonX does not sit on the bench but PersonX knows that the seats are uncomfortable, so PersonX feels uncomfortable.
+Although swinging, PersonX knows that the seats are uncomfortable, so PersonX feels uncomfortable.
+Although there is no swing, PersonX knows that the seats are uncomfortable, so PersonX feels uncomfortable.
+Although there is a bench, PersonX knows that the seats are uncomfortable, so PersonX feels uncomfortable.
+Although there is no bench, PersonX knows that the seats are uncomfortable, so PersonX feels uncomfortable.
+PersonX suggests doing something else and offers to do it, so PersonX is seen as persuasive.
+PersonX suggests doing something else and PersonX does not offer, so PersonX is seen as persuasive.
+PersonX suggests doing something else and PersonX moves, so PersonX is seen as persuasive.
+PersonX suggests doing something else and no one moves, so PersonX is seen as persuasive.
+PersonX suggests doing something else while offering to do it, so PersonX is seen as persuasive.
+PersonX suggests doing something else while no offer is made, so PersonX is seen as persuasive.
+PersonX suggests doing something else while you move, so PersonX is seen as persuasive.
+PersonX suggests doing something else while not moving, so PersonX is seen as persuasive.
+PersonX offers to do something but PersonX suggests doing something else, so PersonX is seen as persuasive.
+PersonX does not offer but PersonX suggests doing something else, so PersonX is seen as persuasive.
+PersonX wants to move but PersonX suggests doing something else, so PersonX is seen as persuasive.
+PersonX does not move but PersonX suggests doing something else, so PersonX is seen as persuasive.
+Although an offer is made, PersonX suggests doing something else, so PersonX is seen as persuasive.
+Although no offer is made, PersonX suggests doing something else, so PersonX is seen as persuasive.
+Although everyone wants to move, PersonX suggests doing something else, so PersonX is seen as persuasive.
+Although no one moves, PersonX suggests doing something else, so PersonX is seen as persuasive.
+PersonX accepts PersonY's gift and PersonY treats PersonX, so PersonX feels happy.
+PersonX accepts PersonY's gift and PersonY does not treat, so PersonX feels happy.
+PersonX accepts PersonY's gift and PersonY begs, so PersonX feels happy.
+PersonX accepts PersonY's gift and does not beg, so PersonX feels happy.
+PersonX accepts PersonY's gift while PersonY treats him, so PersonX feels happy.
+PersonX accepts PersonY's gift while no treat is given, so PersonX feels happy.
+PersonX accepts PersonY's gift while PersonY begs, so PersonX feels happy.
+PersonX accepts PersonY's gift while not begging, so PersonX feels happy.
+PersonX treats PersonY but PersonX accepts PersonY's gift, so PersonX feels happy.
+PersonX does not treat but PersonX accepts PersonY's gift, so PersonX feels happy.
+PersonX begs but PersonX accepts PersonY's gift, so PersonX feels happy.
+PersonX does not beg but PersonX accepts PersonY's gift, so PersonX feels happy.
+Although the treat is expensive, PersonX accepts PersonY's gift, so PersonX feels happy.
+Although no treat is given, PersonX accepts PersonY's gift, so PersonX feels happy.
+Although beg, PersonX accepts PersonY's gift, so PersonX feels happy.
+Although no one begs, PersonX accepts PersonY's gift, so PersonX feels happy.
+PersonX accepts PersonY's gift and treats PersonY, so PersonX is seen as considerate.
+PersonX accepts PersonY's gift and does not treat, so PersonX is seen as considerate.
+PersonX accepts PersonY's gift and begs, so PersonX is seen as considerate.
+PersonX accepts PersonY's gift and does not beg, so PersonX is seen as considerate.
+PersonX accepts PersonY's gift while PersonY treats, so PersonX is seen as considerate.
+PersonX accepts PersonY's gift while not treating PersonY, so PersonX is seen as considerate.
+PersonX accepts PersonY's gift while PersonY begs, so PersonX is seen as considerate.
+PersonX accepts PersonY's gift while not begging, so PersonX is seen as considerate.
+PersonX treats PersonY but PersonX accepts PersonY's gift, so PersonX is seen as considerate.
+PersonX does not treat but PersonX accepts PersonY's gift, so PersonX is seen as considerate.
+PersonX begs but PersonX accepts PersonY's gift, so PersonX is seen as considerate.
+PersonX does not beg but PersonX accepts PersonY's gift, so PersonX is seen as considerate.
+Although it is a treat, PersonX accepts PersonY's gift, so PersonX is seen as considerate.
+Although no treat is given, PersonX accepts PersonY's gift, so PersonX is seen as considerate.
+Although beg, PersonX accepts PersonY's gift, so PersonX is seen as considerate.
+Although no one begs, PersonX accepts PersonY's gift, so PersonX is seen as considerate.
+PersonX learns how to make money and set a price, so PersonX feels successful.
+PersonX learns how to make money and no price, so PersonX feels successful.
+PersonX learns how to make money and has a wallet, so PersonX feels successful.
+PersonX learns how to make money and does not need a wallet, so PersonX feels successful.
+PersonX learns how to make money while price goes up, so PersonX feels successful.
+PersonX learns how to make money while no price, so PersonX feels successful.
+PersonX learns how to make money while carrying a wallet, so PersonX feels successful.
+PersonX learns how to make money while not carrying a wallet, so PersonX feels successful.
+The price is high but PersonX learns how to make money, so PersonX feels successful.
+There is no price but PersonX learns how to make money, so PersonX feels successful.
+PersonX has a wallet but PersonX learns how to make money, so PersonX feels successful.
+PersonX does not carry a wallet but PersonX learns how to make money, so PersonX feels successful.
+Although the price is high, PersonX learns how to make money, so PersonX feels successful.
+Although no price, PersonX learns how to make money, so PersonX feels successful.
+Although there is no wallet, PersonX learns how to make money, so PersonX feels successful.
+Although no wallet, PersonX learns how to make money, so PersonX feels successful.
+PersonX learns how to make money and price things, so PersonX is seen as clever.
+PersonX learns how to make money and no price, so PersonX is seen as clever.
+PersonX learns how to make money and has a wallet, so PersonX is seen as clever.
+PersonX learns how to make money and does not need a wallet, so PersonX is seen as clever.
+PersonX learns how to make money while the price is high, so PersonX is seen as clever.
+PersonX learns how to make money while no price, so PersonX is seen as clever.
+PersonX learns how to make money while carrying a wallet, so PersonX is seen as clever.
+PersonX learns how to make money while not carrying a wallet, so PersonX is seen as clever.
+The price is high but PersonX learns how to make money, so PersonX is seen as clever.
+There is no price but PersonX learns how to make money, so PersonX is seen as clever.
+PersonX has a wallet but PersonX learns how to make money, so PersonX is seen as clever.
+PersonX does not carry a wallet but PersonX learns how to make money, so PersonX is seen as clever.
+Although the price is high, PersonX learns how to make money, so PersonX is seen as clever.
+Although no price is set, PersonX learns how to make money, so PersonX is seen as clever.
+Although there is no wallet, PersonX learns how to make money, so PersonX is seen as clever.
+Although no wallet, PersonX learns how to make money, so PersonX is seen as clever.
+PersonX robs the robbers and fakes it, so PersonX feels triumphant.
+PersonX robs the robbers and no one is fake, so PersonX feels triumphant.
+PersonX robs the robbers and rips them, so PersonX feels triumphant.
+PersonX robs the robbers and no one rips, so PersonX feels triumphant.
+PersonX robs the robbers while they are fake, so PersonX feels triumphant.
+PersonX robs the robbers while no one is fake, so PersonX feels triumphant.
+PersonX robs the robbers while they rip, so PersonX feels triumphant.
+PersonX robs the robbers while no one rips, so PersonX feels triumphant.
+PersonX fakes a robbery but PersonX robs the robbers, so PersonX feels triumphant.
+PersonX is not a fake but PersonX robs the robbers, so PersonX feels triumphant.
+PersonX rips but PersonX robs the robbers, so PersonX feels triumphant.
+PersonX does not rip but PersonX robs the robbers, so PersonX feels triumphant.
+Although it is fake, PersonX robs the robbers, so PersonX feels triumphant.
+Although no one is fake, PersonX robs the robbers, so PersonX feels triumphant.
+Although rip, PersonX robs the robbers, so PersonX feels triumphant.
+Although no one rips, PersonX robs the robbers, so PersonX feels triumphant.
+PersonX robs the robbers and fakes it, so PersonX is seen as clever.
+PersonX robs the robbers and does not fake, so PersonX is seen as clever.
+PersonX robs the robbers and rips them off, so PersonX is seen as clever.
+PersonX robs the robbers and does not rip, so PersonX is seen as clever.
+PersonX robs the robbers while they are fake, so PersonX is seen as clever.
+PersonX robs the robbers while not being fake, so PersonX is seen as clever.
+PersonX robs the robbers while they rip, so PersonX is seen as clever.
+PersonX robs the robbers while no one rips, so PersonX is seen as clever.
+PersonX is a fake but PersonX robs the robbers, so PersonX is seen as clever.
+PersonX is not a fake but PersonX robs the robbers, so PersonX is seen as clever.
+PersonX rips but PersonX robs the robbers, so PersonX is seen as clever.
+PersonX does not rip but PersonX robs the robbers, so PersonX is seen as clever.
+Although the robbers are fake, PersonX robs the robbers, so PersonX is seen as clever.
+Although no one is fake, PersonX robs the robbers, so PersonX is seen as clever.
+Although rip, PersonX robs the robbers, so PersonX is seen as clever.
+Although no one rips, PersonX robs the robbers, so PersonX is seen as clever.
+PersonX wins a track meet and steps on the podium, so PersonX feels excited.
+PersonX wins a track meet and does not have to step, so PersonX feels excited.
+PersonX wins a track meet and traces, so PersonX feels excited.
+PersonX wins a track meet and does not have to trace, so PersonX feels excited.
+PersonX wins a track meet while taking a step, so PersonX feels excited.
+PersonX wins a track meet while no one steps, so PersonX feels excited.
+PersonX wins a track meet while tracing, so PersonX feels excited.
+PersonX wins a track meet while no trace, so PersonX feels excited.
+PersonX steps but PersonX wins a track meet, so PersonX feels excited.
+PersonX does not step but PersonX wins a track meet, so PersonX feels excited.
+PersonX traces but PersonX wins a track meet, so PersonX feels excited.
+PersonX does not trace but PersonX wins a track meet, so PersonX feels excited.
+Although step by step, PersonX wins a track meet, so PersonX feels excited.
+Although no step is taken, PersonX wins a track meet, so PersonX feels excited.
+Although there is no trace, PersonX wins a track meet, so PersonX feels excited.
+Although there is no trace, PersonX wins a track meet, so PersonX feels excited.
+PersonX wins a track meet and steps on the podium, so PersonX is seen as a great athlete.
+PersonX wins a track meet and does not step, so PersonX is seen as a great athlete.
+PersonX wins a track meet and traces, so PersonX is seen as a great athlete.
+PersonX wins a track meet and does not trace, so PersonX is seen as a great athlete.
+PersonX wins a track meet while taking a step, so PersonX is seen as a great athlete.
+PersonX wins a track meet while not taking a step, so PersonX is seen as a great athlete.
+PersonX wins a track meet while tracing, so PersonX is seen as a great athlete.
+PersonX wins a track meet while not tracing, so PersonX is seen as a great athlete.
+PersonX steps but PersonX wins a track meet, so PersonX is seen as a great athlete.
+PersonX does not step but PersonX wins a track meet, so PersonX is seen as a great athlete.
+PersonX traces but PersonX wins a track meet, so PersonX is seen as a great athlete.
+PersonX does not trace but PersonX wins a track meet, so PersonX is seen as a great athlete.
+Although step by step, PersonX wins a track meet, so PersonX is seen as a great athlete.
+Although no step is taken, PersonX wins a track meet, so PersonX is seen as a great athlete.
+Although there is no trace, PersonX wins a track meet, so PersonX is seen as a great athlete.
+Although there is no trace, PersonX wins a track meet, so PersonX is seen as a great athlete.
+PersonX sees the consequences and the con, so PersonX feels worried.
+PersonX sees the consequences and no con, so PersonX feels worried.
+PersonX sees the consequences and connotes, so PersonX feels worried.
+PersonX sees the consequences and does not want to connote, so PersonX feels worried.
+PersonX sees the consequences while being con, so PersonX feels worried.
+PersonX sees the consequences while no con, so PersonX feels worried.
+PersonX sees the consequences while connote, so PersonX feels worried.
+PersonX sees the consequences while no connote, so PersonX feels worried.
+PersonX is con but PersonX sees the consequences, so PersonX feels worried.
+PersonX does not like con but PersonX sees the consequences, so PersonX feels worried.
+PersonX connotes but PersonX sees the consequences, so PersonX feels worried.
+PersonX does not connote but PersonX sees the consequences, so PersonX feels worried.
+Although a con, PersonX sees the consequences, so PersonX feels worried.
+Although no con, PersonX sees the consequences, so PersonX feels worried.
+Although connote, PersonX sees the consequences, so PersonX feels worried.
+Although no connote, PersonX sees the consequences, so PersonX feels worried.
+PersonX sees the consequences and understands the con, so PersonX is seen as understanding.
+PersonX sees the consequences and does not make a con, so PersonX is seen as understanding.
+PersonX sees the consequences and connotes, so PersonX is seen as understanding.
+PersonX sees the consequences and does not connote, so PersonX is seen as understanding.
+PersonX sees the consequences while being con, so PersonX is seen as understanding.
+PersonX sees the consequences while no con, so PersonX is seen as understanding.
+PersonX sees the consequences while connoting, so PersonX is seen as understanding.
+PersonX sees the consequences while no connote, so PersonX is seen as understanding.
+PersonX makes a con but PersonX sees the consequences, so PersonX is seen as understanding.
+PersonX does not like con but PersonX sees the consequences, so PersonX is seen as understanding.
+PersonX connotes but PersonX sees the consequences, so PersonX is seen as understanding.
+PersonX does not connote but PersonX sees the consequences, so PersonX is seen as understanding.
+Although a con, PersonX sees the consequences, so PersonX is seen as understanding.
+Although no con, PersonX sees the consequences, so PersonX is seen as understanding.
+Although connote, PersonX sees the consequences, so PersonX is seen as understanding.
+Although no connote, PersonX sees the consequences, so PersonX is seen as understanding.
+PersonX discovers who has broken into his home and the dinosaur, so PersonX feels upset.
+PersonX discovers who has broken into his home and no dinosaur, so PersonX feels upset.
+PersonX discovers who has broken into his home and they love him, so PersonX feels upset.
+PersonX discovers who has broken into his home and no one loves him, so PersonX feels upset.
+PersonX discovers who has broken into his home while a dinosaur, so PersonX feels upset.
+PersonX discovers who has broken into his home while no dinosaur, so PersonX feels upset.
+PersonX discovers who has broken into his home while in love, so PersonX feels upset.
+PersonX discovers who has broken into his home while no one loves him, so PersonX feels upset.
+PersonX has a dinosaur but PersonX discovers who has broken into his home, so PersonX feels upset.
+There is no dinosaur but PersonX discovers who has broken into his home, so PersonX feels upset.
+PersonX is in love but PersonX discovers who has broken into his home, so PersonX feels upset.
+PersonX does not love but PersonX discovers who has broken into his home, so PersonX feels upset.
+Although dinosaurs are rare, PersonX discovers who has broken into his home, so PersonX feels upset.
+Although there is no dinosaur, PersonX discovers who has broken into his home, so PersonX feels upset.
+Although love is in the air, PersonX discovers who has broken into his home, so PersonX feels upset.
+Although no love, PersonX discovers who has broken into his home, so PersonX feels upset.
+PersonX discovers who has broken into his home and kills the dinosaur, so PersonX is seen as smart.
+PersonX discovers who has broken into his home and no dinosaur, so PersonX is seen as smart.
+PersonX discovers who has broken into his home and they love him, so PersonX is seen as smart.
+PersonX discovers who has broken into his home and does not love them, so PersonX is seen as smart.
+PersonX discovers who has broken into his home while watching a dinosaur, so PersonX is seen as smart.
+PersonX discovers who has broken into his home while no dinosaur, so PersonX is seen as smart.
+PersonX discovers who has broken into his home while in love, so PersonX is seen as smart.
+PersonX discovers who has broken into his home while no one loves him, so PersonX is seen as smart.
+There is a dinosaur but PersonX discovers who has broken into his home, so PersonX is seen as smart.
+There is no dinosaur but PersonX discovers who has broken into his home, so PersonX is seen as smart.
+PersonX is in love but PersonX discovers who has broken into his home, so PersonX is seen as smart.
+PersonX does not love but PersonX discovers who has broken into his home, so PersonX is seen as smart.
+Although dinosaurs are dangerous, PersonX discovers who has broken into his home, so PersonX is seen as smart.
+Although there is no dinosaur, PersonX discovers who has broken into his home, so PersonX is seen as smart.
+Although love is blind, PersonX discovers who has broken into his home, so PersonX is seen as smart.
+Although no love, PersonX discovers who has broken into his home, so PersonX is seen as smart.
+PersonX gives PersonY a good deal and PersonY buys, so PersonX is seen as generous.
+PersonX gives PersonY a good deal and PersonY does not buy, so PersonX is seen as generous.
+PersonX gives PersonY a good deal and PersonY makes a sale, so PersonX is seen as generous.
+PersonX gives PersonY a good deal and no sale, so PersonX is seen as generous.
+PersonX gives PersonY a good deal while PersonY buys, so PersonX is seen as generous.
+PersonX gives PersonY a good deal while no one buys, so PersonX is seen as generous.
+PersonX gives PersonY a good deal while on sale, so PersonX is seen as generous.
+PersonX gives PersonY a good deal while no sale, so PersonX is seen as generous.
+PersonX wants to buy but PersonX gives PersonY a good deal, so PersonX is seen as generous.
+PersonX does not buy but PersonX gives PersonY a good deal, so PersonX is seen as generous.
+PersonX makes a sale but PersonX gives PersonY a good deal, so PersonX is seen as generous.
+There is no sale but PersonX gives PersonY a good deal, so PersonX is seen as generous.
+Although buying is expensive, PersonX gives PersonY a good deal, so PersonX is seen as generous.
+Although no one buys, PersonX gives PersonY a good deal, so PersonX is seen as generous.
+Although the sale is over, PersonX gives PersonY a good deal, so PersonX is seen as generous.
+Although no sale, PersonX gives PersonY a good deal, so PersonX is seen as generous.
+PersonX gives PersonY a good deal and PersonY buys, so PersonX feels happy.
+PersonX gives PersonY a good deal and PersonY does not buy, so PersonX feels happy.
+PersonX gives PersonY a good deal and PersonY makes a sale, so PersonX feels happy.
+PersonX gives PersonY a good deal and PersonY does not make a sale, so PersonX feels happy.
+PersonX gives PersonY a good deal while PersonY buys, so PersonX feels happy.
+PersonX gives PersonY a good deal while PersonY does not buy, so PersonX feels happy.
+PersonX gives PersonY a good deal while PersonY makes a sale, so PersonX feels happy.
+PersonX gives PersonY a good deal while no sale, so PersonX feels happy.
+PersonX wants to buy but PersonX gives PersonY a good deal, so PersonX feels happy.
+PersonX does not buy but PersonX gives PersonY a good deal, so PersonX feels happy.
+PersonX makes a sale but PersonX gives PersonY a good deal, so PersonX feels happy.
+PersonX does not make a sale but PersonX gives PersonY a good deal, so PersonX feels happy.
+Although they buy, PersonX gives PersonY a good deal, so PersonX feels happy.
+Although no one buys, PersonX gives PersonY a good deal, so PersonX feels happy.
+Although the sale is final, PersonX gives PersonY a good deal, so PersonX feels happy.
+Although no sale, PersonX gives PersonY a good deal, so PersonX feels happy.
+PersonX makes the campfire and goes camping, so PersonX feels happy.
+PersonX makes the campfire and no one camp, so PersonX feels happy.
+PersonX makes the campfire and goes to the campground, so PersonX feels happy.
+PersonX makes the campfire and there is no campground, so PersonX feels happy.
+PersonX makes the campfire while the camp, so PersonX feels happy.
+PersonX makes the campfire while no one camp, so PersonX feels happy.
+PersonX makes the campfire while in the campground, so PersonX feels happy.
+PersonX makes the campfire while no campground, so PersonX feels happy.
+PersonX goes camping but PersonX makes the campfire, so PersonX feels happy.
+PersonX does not camp but PersonX makes the campfire, so PersonX feels happy.
+PersonX goes to the campground but PersonX makes the campfire, so PersonX feels happy.
+There is no campground but PersonX makes the campfire, so PersonX feels happy.
+Although camping is fun, PersonX makes the campfire, so PersonX feels happy.
+Although no campfire, PersonX makes the campfire, so PersonX feels happy.
+Although the campground is cold, PersonX makes the campfire, so PersonX feels happy.
+Although there is no campground, PersonX makes the campfire, so PersonX feels happy.
+PersonX makes the campfire and goes camping, so PersonX is seen as resourceful.
+PersonX makes the campfire and does not need to camp, so PersonX is seen as resourceful.
+PersonX makes the campfire and the campground, so PersonX is seen as resourceful.
+PersonX makes the campfire and does not need a campground, so PersonX is seen as resourceful.
+PersonX makes the campfire while at camp, so PersonX is seen as resourceful.
+PersonX makes the campfire while no one is camping, so PersonX is seen as resourceful.
+PersonX makes the campfire while in the campground, so PersonX is seen as resourceful.
+PersonX makes the campfire while there is no campground, so PersonX is seen as resourceful.
+PersonX goes camping but PersonX makes the campfire, so PersonX is seen as resourceful.
+PersonX does not camp but PersonX makes the campfire, so PersonX is seen as resourceful.
+A campground but PersonX makes the campfire, so PersonX is seen as resourceful.
+There is no campground but PersonX makes the campfire, so PersonX is seen as resourceful.
+Although there is no campfire, PersonX makes the campfire, so PersonX is seen as resourceful.
+Although no campfire, PersonX makes the campfire, so PersonX is seen as resourceful.
+Although there is no campground, PersonX makes the campfire, so PersonX is seen as resourceful.
+Although there is no campground, PersonX makes the campfire, so PersonX is seen as resourceful.
+PersonX reaches the summit and tor, so PersonX is seen as courageous.
+PersonX reaches the summit and does not fear tor, so PersonX is seen as courageous.
+PersonX reaches the summit and sums up, so PersonX is seen as courageous.
+PersonX reaches the summit and does not sum, so PersonX is seen as courageous.
+PersonX reaches the summit while tor, so PersonX is seen as courageous.
+PersonX reaches the summit while no tor, so PersonX is seen as courageous.
+PersonX reaches the summit while summing, so PersonX is seen as courageous.
+PersonX reaches the summit while no sum, so PersonX is seen as courageous.
+PersonX tor but PersonX reaches the summit, so PersonX is seen as courageous.
+PersonX does not tor but PersonX reaches the summit, so PersonX is seen as courageous.
+The sum is high but PersonX reaches the summit, so PersonX is seen as courageous.
+PersonX does not sum but PersonX reaches the summit, so PersonX is seen as courageous.
+Although tor, PersonX reaches the summit, so PersonX is seen as courageous.
+Although no tor, PersonX reaches the summit, so PersonX is seen as courageous.
+Although the sum is high, PersonX reaches the summit, so PersonX is seen as courageous.
+Although no sum, PersonX reaches the summit, so PersonX is seen as courageous.
+PersonX reaches the summit and tor, so PersonX feels triumphant.
+PersonX reaches the summit and does not have to tor, so PersonX feels triumphant.
+PersonX reaches the summit and sums up, so PersonX feels triumphant.
+PersonX reaches the summit and does not sum, so PersonX feels triumphant.
+PersonX reaches the summit while tor, so PersonX feels triumphant.
+PersonX reaches the summit while no tor, so PersonX feels triumphant.
+PersonX reaches the summit while summarizing, so PersonX feels triumphant.
+PersonX reaches the summit while no sum, so PersonX feels triumphant.
+PersonX tor but PersonX reaches the summit, so PersonX feels triumphant.
+PersonX does not tor but PersonX reaches the summit, so PersonX feels triumphant.
+PersonX sums up but PersonX reaches the summit, so PersonX feels triumphant.
+PersonX does not sum but PersonX reaches the summit, so PersonX feels triumphant.
+Although tor, PersonX reaches the summit, so PersonX feels triumphant.
+Although no tor, PersonX reaches the summit, so PersonX feels triumphant.
+Although the sum is high, PersonX reaches the summit, so PersonX feels triumphant.
+Although no sum, PersonX reaches the summit, so PersonX feels triumphant.
+PersonX stops by PersonY's table and PersonY starts eating, so PersonX is seen as friendly.
+PersonX stops by PersonY's table and PersonY does not start eating, so PersonX is seen as friendly.
+PersonX stops by PersonY's table and spots her, so PersonX is seen as friendly.
+PersonX stops by PersonY's table and does not spot, so PersonX is seen as friendly.
+PersonX stops by PersonY's table while PersonY starts eating, so PersonX is seen as friendly.
+PersonX stops by PersonY's table while no one starts, so PersonX is seen as friendly.
+PersonX stops by PersonY's table while PersonY spots, so PersonX is seen as friendly.
+PersonX stops by PersonY's table while no one spots, so PersonX is seen as friendly.
+PersonX starts eating but PersonX stops by PersonY's table, so PersonX is seen as friendly.
+PersonX does not start but PersonX stops by PersonY's table, so PersonX is seen as friendly.
+PersonX spots PersonY but PersonX stops by PersonY's table, so PersonX is seen as friendly.
+PersonX does not spot but PersonX stops by PersonY's table, so PersonX is seen as friendly.
+Although dinner is starting, PersonX stops by PersonY's table, so PersonX is seen as friendly.
+Although no one starts, PersonX stops by PersonY's table, so PersonX is seen as friendly.
+Although there is a spot, PersonX stops by PersonY's table, so PersonX is seen as friendly.
+Although there is no spot, PersonX stops by PersonY's table, so PersonX is seen as friendly.
+PersonX stops by PersonY's table and PersonY starts eating, so PersonX feels friendly.
+PersonX stops by PersonY's table and PersonY does not start eating, so PersonX feels friendly.
+PersonX stops by PersonY's table and spots PersonY, so PersonX feels friendly.
+PersonX stops by PersonY's table and PersonY does not spot, so PersonX feels friendly.
+PersonX stops by PersonY's table while PersonY starts eating, so PersonX feels friendly.
+PersonX stops by PersonY's table while PersonY does not start, so PersonX feels friendly.
+PersonX stops by PersonY's table while PersonY spots, so PersonX feels friendly.
+PersonX stops by PersonY's table while no one spots, so PersonX feels friendly.
+PersonX starts eating but PersonX stops by PersonY's table, so PersonX feels friendly.
+PersonX does not start but PersonX stops by PersonY's table, so PersonX feels friendly.
+PersonX spots PersonY but PersonX stops by PersonY's table, so PersonX feels friendly.
+PersonX does not spot but PersonX stops by PersonY's table, so PersonX feels friendly.
+Although it is time to start, PersonX stops by PersonY's table, so PersonX feels friendly.
+Although no one starts, PersonX stops by PersonY's table, so PersonX feels friendly.
+Although there is a spot, PersonX stops by PersonY's table, so PersonX feels friendly.
+Although there is no spot, PersonX stops by PersonY's table, so PersonX feels friendly.

@@ -1,7 +1,7 @@
 from helper import *
 from nli import NLI
 from gpt2_ppl import GPTppl
-from deberta_decode import Decoder
+from for_decode import Decoder
 from GPT3_generation import *
 
 

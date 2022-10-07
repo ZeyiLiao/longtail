@@ -15,42 +15,47 @@ lemmatizer = WordNetLemmatizer()
 
 nlp = spacy.load('en_core_web_sm')
 
+
+def _pos_keyword_extraction(sent):
+    doc = nlp(str(sent))
+    tmp =ddict(list)
+    keywords = []
+    for token in doc:
+        if (token.pos_.startswith('V')) and token.is_alpha and not token.is_stop:
+            tmp['verb'].append(token.lemma_)
+
+        if (token.tag_.startswith('N')) and token.is_alpha and not token.is_stop:
+            tmp['noun'].append(token.lemma_)
+
+        if (token.pos_.startswith('ADJ') and token.is_alpha and not token.is_stop):
+            tmp['adj'].append(token.lemma_)
+
+    for noun_chunk in doc.noun_chunks:
+        root_noun = noun_chunk[-1]
+        if root_noun.pos_ == "NOUN":
+            tmp['noun'].append(root_noun.lemma_)
+
+    tmp['noun'] = list(set(tmp['noun']) - {'PersonX','PersonY','personY','personX','persony','personx'})
+    tmp['verb'] = list(set(tmp['verb']) - {'PersonX','PersonY','personY','personX','persony','personx'})
+    tmp['adj'] = list(set(tmp['adj']) - {'PersonX','PersonY','personY','personX','persony','personx'})
+
+
+    if len(tmp['noun']) != 0:
+        tmp['verb'] = []
+        tmp['adj'] = []
+    elif len(tmp['adj']) != 0:
+        tmp['verb'] = []
+
+    assert(len(tmp['noun']) * len(tmp['verb'] * len(tmp['adj'])) == 0)
+    return tmp
+
+
+
 def pos_keyword_extraction(inputs):
     premise_extraction = dict()
     keywords = []
     for sent in inputs:
-        tmp =ddict(list)
-        doc = nlp(str(sent))
-        keywords = []
-        for token in doc:
-            if (token.pos_.startswith('V')) and token.is_alpha and not token.is_stop:
-                tmp['verb'].append(token.lemma_)
-
-            if (token.tag_.startswith('N')) and token.is_alpha and not token.is_stop:
-                tmp['noun'].append(token.lemma_)
-
-            if (token.pos_.startswith('ADJ') and token.is_alpha and not token.is_stop):
-                tmp['adj'].append(token.lemma_)
-
-
-        for noun_chunk in doc.noun_chunks:
-            root_noun = noun_chunk[-1]
-            if root_noun.pos_ == "NOUN":
-                tmp['noun'].append(root_noun.lemma_)
-
-
-        tmp['noun'] = list(set(tmp['noun']) - {'PersonX','PersonY','personY','personX','persony','personx'})
-        tmp['verb'] = list(set(tmp['verb']))
-        tmp['adj'] = list(set(tmp['adj']) - {'PersonX','PersonY','personY','personX','persony','personx'})
-
-
-        if len(tmp['noun']) != 0:
-            tmp['verb'] = []
-            tmp['adj'] = []
-        elif len(tmp['adj']) != 0:
-            tmp['verb'] = []
-
-        assert(len(tmp['noun']) * len(tmp['verb'] * len(tmp['adj'])) == 0)
+        tmp = _pos_keyword_extraction(sent)
 
         premise_extraction[sent] = tmp
     return premise_extraction
@@ -74,10 +79,10 @@ def dependency_parse(predictor,inputs):
         premise_extraction[input] = tmp
     return premise_extraction
 
-def filter_empty(premise_words):
+def filter_empty(premise_words,required_length = 5):
     filtered_premise = []
     for premise in premise_words.keys():
-        if len(premise_words[premise]) == 0:
+        if len(premise_words[premise]) < required_length:
             filtered_premise.append(premise)
 
     for premise in filtered_premise:
@@ -190,7 +195,7 @@ def filter_noun_verb(premise_words):
     for premise in premise_words.keys():
 
         words = nltk.pos_tag(premise_words[premise])
-        tmp = [word[0] for word in words if (word[1][0] in ['N','V']) and ('_' not in word[0])]
+        tmp = [word[0] for word in words if (word[1][0] in ['N','V']) and (' ' not in word[0])]
         premise_words[premise] = list(set(tmp))
 
     return premise_words
@@ -611,6 +616,7 @@ def calculate_sim(premise_extraction,premise_words,embedding_source,similarity_m
     return premise_score
 
 
+
 def synonym(inputs):
     synonyms = []
     for input in inputs:
@@ -621,9 +627,6 @@ def synonym(inputs):
     # overlap = set(synonyms)&set(inputs)
 
     return list(set(synonyms) | set(inputs))
-
-
-
 
 
 
@@ -679,9 +682,25 @@ def conceptnet_based(premise_extraction):
                             continue
                         else:
                             if query in start:
-                                related_words.append(end)
+                                if ' '  not in end:
+                                    related_words.append(end)
+                                else:
+                                    l = _pos_keyword_extraction(end)
+                                    l = list(dict(l).values())
+                                    end = []
+                                    for _ in l:
+                                        end += _
+                                    related_words.extend(end)
                             elif query in end:
-                                related_words.append(start)
+                                if ' '  not in start:
+                                    related_words.append(start)
+                                else:
+                                    l = _pos_keyword_extraction(start)
+                                    l = list(dict(l).values())
+                                    start = []
+                                    for _ in l:
+                                        start += _
+                                    related_words.extend(start)
                             else:
                                 raise 'Sth wrong'
                 premise_related_words += related_words
@@ -693,8 +712,11 @@ def conceptnet_based(premise_extraction):
                 edges = obj['edges']
 
 
-        premise_words[premise] = premise_related_words
+        premise_words[premise] = list(set(premise_related_words))
     return premise_words
+
+
+
 
 
 def global_glove(premise_extraction,similarity_method):
@@ -849,7 +871,7 @@ def get_related_words(input_file,output_file):
         for line in reader:
             if len(line) != 0:
                 sens.append(line[0])
-    # sens = ["PersonX sneaks into PersonX's room","PersonX succeeds at speech","My flower have sunlights"]
+
 
     # predictor = Predictor.from_path("https://storage.googleapis.com/allennlp-public-models/biaffine-dependency-parser-ptb-2020.04.06.tar.gz")
     # premise_extraction = dependency_parse(predictor,sens)
@@ -861,7 +883,7 @@ def get_related_words(input_file,output_file):
     print(premise_extraction)
     premise_words = get_candidates(candidate_method,similarity_method,premise_extraction)
 
-
+    # need delete those have several words and those less than 5
     premise_words = pre_filter_process(premise_words,premise_extraction)
 
     premise_score = calculate_sim(premise_extraction,premise_words,embedding_source,similarity_method)
@@ -873,19 +895,10 @@ def get_related_words(input_file,output_file):
         top_k = 400
     elif combine_method == 'union':
         top_k = 5
-    # top_k = 50
+
     premise_words = get_top_related(combine_method,top_k,similarity_method,premise_score,premise_words)
 
-    # for premise in premise_words:
-
-    #     print(f'premise : {premise}')
-    #     print(f'extracted words: {premise_extraction[premise]}')
-    #     print(f'related words: {premise_words[premise]}')
-
-
     premise_words = post_filter_process(premise_words)
-
-
 
     premise_score = calculate_sim(premise_extraction,premise_words,embedding_source,similarity_method)
 

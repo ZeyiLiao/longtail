@@ -1,38 +1,27 @@
+from curses import nl
+import json
 import numpy as np
 from pathlib import Path
-
+from process_t5_format import process_t5_format
 import jsonlines
 
-with open('./GPT_fill_output.txt') as f:
+root_dir = '../longtail_data/for_finetune'
+
+with jsonlines.jsonlines.open(f'{root_dir}/gpt_output.jsonl') as f:
     inputs = []
     constraints = []
     outputs = []
     bad_outputs_index = []
+    for index,line in enumerate(f):
 
-    group_index = -1
-    can_start = False
-    next_output = False
-    for line in f:
-        line = line.replace('\n','')
-        if line == '' or can_start:
-            can_start = True
-        else:
-             continue
+        inputs.append(line['input'])
+        constraints.append(line['constraint'])
+        output = line['generation']
+        outputs.append(output)
 
-        if line.startswith('input:'):
-            group_index += 1
-            inputs.append(line[7:].strip().replace('[mask]','<extra_id_0>'))
-        elif line.startswith('constraint:'):
-            constraints.append(line[12:])
-        elif line.startswith('output:'):
-            next_output = True
-        elif next_output:
-            outputs.append(line.strip())
+        if output == '' or output == 'None':
+            bad_outputs_index.append(index)
 
-            if line == '' or line == 'None':
-                bad_outputs_index.append(group_index)
-
-            next_output = False
 
 bad_outputs_index.sort(reverse=True)
 
@@ -44,6 +33,7 @@ for _ in bad_outputs_index:
 assert '' not in outputs
 assert len(inputs) == len(constraints) == len(outputs)
 
+inputs,outputs = process_t5_format(inputs,outputs)
 train_count = int(len(inputs)*0.75)
 train_index = np.random.choice(len(inputs),train_count,replace=False)
 
@@ -66,7 +56,7 @@ for index in range(len(inputs)):
         test_constraints.append(constraints[index])
         test_outputs.append(outputs[index])
 
-root_dir = '/home/zeyi/finetune/Data/raw'
+root_dir = f'{root_dir}/w_m_t5'
 train_dir = root_dir + '/train'
 test_dir = root_dir + '/test'
 dev_dir = root_dir + '/dev'
@@ -76,25 +66,33 @@ Path(f'{test_dir}').mkdir(exist_ok=True,parents=True)
 Path(f'{dev_dir}').mkdir(exist_ok=True,parents=True)
 
 
-with jsonlines.open(f'{train_dir}/inputs.jsonl', mode='w') as writer:
-    writer.write_all(train_inputs)
-with jsonlines.open(f'{train_dir}/constraints.jsonl', mode='w') as writer:
-    writer.write_all(train_constraints)
-with jsonlines.open(f'{train_dir}/outputs.jsonl', mode='w') as writer:
-    writer.write_all(train_outputs)
+nl = '\n'
+with jsonlines.open(f'{train_dir}/inputs.jsonl', mode='w') as f:
+    f.write_all(train_inputs)
+
+with jsonlines.open(f'{train_dir}/constraints.jsonl', mode='w') as f:
+    f.write_all(train_constraints)
+
+with jsonlines.open(f'{train_dir}/outputs.jsonl', mode='w') as f:
+    f.write_all(train_outputs)
 
 
-with jsonlines.open(f'{test_dir}/inputs.jsonl', mode='w') as writer:
-    writer.write_all(test_inputs)
-with jsonlines.open(f'{test_dir}/constraints.jsonl', mode='w') as writer:
-    writer.write_all(test_constraints)
-with jsonlines.open(f'{test_dir}/outputs.jsonl', mode='w') as writer:
-    writer.write_all(test_outputs)
+with jsonlines.open(f'{test_dir}/inputs.jsonl', mode='w') as f:
+    f.write_all(test_inputs)
+
+with jsonlines.open(f'{test_dir}/constraints.jsonl', mode='w') as f:
+    f.write_all(test_constraints)
+
+with jsonlines.open(f'{test_dir}/outputs.jsonl', mode='w') as f:
+    f.write_all(test_outputs)
 
 
-with jsonlines.open(f'{dev_dir}/inputs.jsonl', mode='w') as writer:
-    writer.write_all(test_inputs)
-with jsonlines.open(f'{dev_dir}/constraints.jsonl', mode='w') as writer:
-    writer.write_all(test_constraints)
-with jsonlines.open(f'{dev_dir}/outputs.jsonl', mode='w') as writer:
-    writer.write_all(test_outputs)
+
+with jsonlines.open(f'{dev_dir}/inputs.jsonl', mode='w') as f:
+    f.write_all(test_inputs)
+
+with jsonlines.open(f'{dev_dir}/constraints.jsonl', mode='w') as f:
+    f.write_all(test_constraints)
+
+with jsonlines.open(f'{dev_dir}/outputs.jsonl', mode='w') as f:
+    f.write_all(test_outputs)

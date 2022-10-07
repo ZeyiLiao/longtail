@@ -3,7 +3,10 @@ from sys import prefix
 from typing import List
 import os
 from helper import *
-
+import openai
+with open('../key.txt') as f:
+    key = f.read()
+openai.api_key = key
 
 
 class GPTppl():
@@ -81,11 +84,11 @@ def filter_by_format(input,outputs,constraint,mask = '[mask]'):
 @dataclass
 class PromptConfig:
     engine: str = "text-davinci-002"
-    max_tokens: int = 256
+    max_tokens: int = 128
     temperature: float = 0.9
     top_p: float = 1
     logprobs: int = 0
-    n: int = 5
+    n: int = 3
     echo: bool = False
 
 
@@ -115,39 +118,37 @@ class PromptWrapper:
 
     def filter_generations(self,explanations: List,input,constraints):
         # Extract string explanations
-        try:
-            filtered_explanations = [
-                explanation.text.strip() for explanation in explanations
-            ]
-            filtered_explanations = list(set(filtered_explanations))
 
-            if not self.no_filter:
-                filtered_explanations = filter_by_format(input,filtered_explanations,constraints)
+        filtered_explanations = [
+            explanation.text.strip() for explanation in explanations
+        ]
+        filtered_explanations = list(set(filtered_explanations))
 
-
-            # filtered_explanations = list(
-            #     filter(lambda exp: len(exp) > 0 and exp.endswith("."),
-            #         filtered_explanations))
+        if not self.no_filter:
+            filtered_explanations = filter_by_format(input,filtered_explanations,constraints)
 
 
-            # filtered_explanations = [
-            #     explanation[0].upper() + explanation[1:]
-            #     for explanation in filtered_explanations
-            # ]
+        # filtered_explanations = list(
+        #     filter(lambda exp: len(exp) > 0 and exp.endswith("."),
+        #         filtered_explanations))
 
-            if len(filtered_explanations) > 1:
-                filtered_explanations = filtered_explanations[sorted(range(len(filtered_explanations)), key= lambda i :self.ppl.calculate_ppl(filtered_explanations)[i])[0]]
 
-            elif len(filtered_explanations) == 1:
-                filtered_explanations = filtered_explanations[0]
+        # filtered_explanations = [
+        #     explanation[0].upper() + explanation[1:]
+        #     for explanation in filtered_explanations
+        # ]
 
-            elif len(filtered_explanations) == 0:
-                filtered_explanations = ''
+        if len(filtered_explanations) > 1:
+            filtered_explanations = filtered_explanations[sorted(range(len(filtered_explanations)), key= lambda i :self.ppl.calculate_ppl(filtered_explanations)[i])[0]]
 
-            return filtered_explanations
+        elif len(filtered_explanations) == 1:
+            filtered_explanations = filtered_explanations[0]
 
-        except:
-            return ''
+        elif len(filtered_explanations) == 0:
+            filtered_explanations = ''
+
+        return filtered_explanations
+
 
     def create_prompt(self, input: str, constraints: str):
         return f"{self.prefix}\n" \

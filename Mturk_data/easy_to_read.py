@@ -1,3 +1,6 @@
+import json
+
+
 inputs = []
 gpt_outputs = []
 neuro_outputs = []
@@ -34,27 +37,37 @@ assert len(inputs) == len(gpt_outputs) == len(neuro_outputs) == len(vanilla_outp
 
 
 nl = '\n'
-with open('./comparison_file.txt','w') as f:
-    for index in range(len(inputs)):
-        f.write(f'input_format:')
-        f.write(nl)
-        f.write(f'Input: {inputs[index]} ; Constraint: {lemmatized_cons[index]} ; Output:')
-        f.write(nl)
-        f.write(nl)
-        f.write(f'These are constraints inflections used only for neuro algorithm')
-        f.write(nl)
-        f.write(infection_cons[index])
-        f.write(nl)
-        f.write(nl)
-        f.write(nl)
-        f.write(f'gpt : {gpt_outputs[index]}')
-        f.write(nl)
-        f.write(f'neuro : {neuro_outputs[index]}')
-        f.write(nl)
-        f.write(f'vanilla : {vanilla_outputs[index]}')
-        f.write(nl)
-        f.write(nl)
-        f.write(nl)
-        f.write('************************')
-        f.write(nl)
-        f.write(nl)
+f = open('./comparison_file.txt','w')
+f_json = open('./comparison_file.json','w')
+
+for index in range(len(inputs)):
+    f.write(f'input_format:')
+    f.write(nl)
+    f.write(f'Input: {inputs[index]} ; Constraint: {lemmatized_cons[index]} ; Output:')
+    f.write(nl)
+    f.write(nl)
+    f.write(f'These are constraints inflections used only for neuro algorithm')
+    f.write(nl)
+    f.write(infection_cons[index])
+    f.write(nl)
+    f.write(nl)
+    f.write(nl)
+    f.write(f'gpt : {gpt_outputs[index]}')
+    f.write(nl)
+    f.write(f'neuro : {neuro_outputs[index]}')
+    f.write(nl)
+    f.write(f'vanilla : {vanilla_outputs[index]}')
+    f.write(nl)
+    f.write(nl)
+    f.write(nl)
+    f.write('************************')
+    f.write(nl)
+    f.write(nl)
+    tmp = dict()
+    tmp['input'] = f'Input: {inputs[index]} ; Constraint: {lemmatized_cons[index]} ; Output:'
+    tmp['cons'] = infection_cons[index]
+    tmp['gpt'] = gpt_outputs[index]
+    tmp['neuro'] = neuro_outputs[index]
+    tmp['vanilla'] = vanilla_outputs[index]
+    json.dump(tmp,f_json)
+    f_json.write(nl)

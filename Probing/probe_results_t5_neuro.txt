@@ -1,0 +1,601 @@
+Overall KL score is:
+1.986152856084574e-05
+
+Original rule:
+PersonX listens to PersonY's favorite band, so PersonX feels interested.
+
+average KL over corresponding new rules:
+2.7119782060935904e-05
+
+************************
+
+
+
+Original rule:
+PersonX listens to PersonY's favorite band, so PersonX is seen as a music lover.
+
+average KL over corresponding new rules:
+5.871042539240534e-06
+
+************************
+
+
+
+Original rule:
+PersonX gives PersonY a makeover, so PersonX feels proud.
+
+average KL over corresponding new rules:
+1.5185446756049714e-05
+
+************************
+
+
+
+Original rule:
+PersonX gives PersonY a makeover, so PersonX is seen as generous.
+
+average KL over corresponding new rules:
+1.9396901478785367e-05
+
+************************
+
+
+
+Original rule:
+PersonX organizes the workers, so PersonX is seen as persuasive.
+
+average KL over corresponding new rules:
+1.822048668032039e-05
+
+************************
+
+
+
+Original rule:
+PersonX organizes the workers, so PersonX feels competent.
+
+average KL over corresponding new rules:
+2.0531375383825434e-05
+
+************************
+
+
+
+Original rule:
+PersonX sews the patch, so PersonX feels good.
+
+average KL over corresponding new rules:
+2.3599752125846862e-05
+
+************************
+
+
+
+Original rule:
+PersonX sews the patch, so PersonX is seen as crafty.
+
+average KL over corresponding new rules:
+1.789629831705497e-05
+
+************************
+
+
+
+Original rule:
+PersonX searches for more, so PersonX is seen as persistent.
+
+average KL over corresponding new rules:
+1.7204647122071037e-05
+
+************************
+
+
+
+Original rule:
+PersonX searches for more, so PersonX feels curious.
+
+average KL over corresponding new rules:
+2.4683903745881253e-05
+
+************************
+
+
+
+Original rule:
+PersonX studies the report, so PersonX feels satisfied.
+
+average KL over corresponding new rules:
+1.539602037325949e-05
+
+************************
+
+
+
+Original rule:
+PersonX studies the report, so PersonX is seen as smart.
+
+average KL over corresponding new rules:
+1.8068639860757685e-05
+
+************************
+
+
+
+Original rule:
+PersonX gives her a kiss, so PersonX is seen as romantic.
+
+average KL over corresponding new rules:
+6.296572178143833e-05
+
+************************
+
+
+
+Original rule:
+PersonX reacts to, so PersonX is seen as angry.
+
+average KL over corresponding new rules:
+1.7944786122825462e-05
+
+************************
+
+
+
+Original rule:
+PersonX reacts to, so PersonX feels irritated.
+
+average KL over corresponding new rules:
+2.6958555906730908e-05
+
+************************
+
+
+
+Original rule:
+PersonX walks through the mud, so PersonX feels wet.
+
+average KL over corresponding new rules:
+2.864161936599885e-05
+
+************************
+
+
+
+Original rule:
+PersonX declares to leave, so PersonX is seen as courageous.
+
+average KL over corresponding new rules:
+1.531522229925031e-05
+
+************************
+
+
+
+Original rule:
+PersonX turns up at her place, so PersonX is seen as reliable.
+
+average KL over corresponding new rules:
+1.712922357910429e-05
+
+************************
+
+
+
+Original rule:
+PersonX turns up at her place, so PersonX feels at home.
+
+average KL over corresponding new rules:
+2.935429457284755e-06
+
+************************
+
+
+
+Original rule:
+PersonX comments, so PersonX is seen as opinionated.
+
+average KL over corresponding new rules:
+2.0093897830975038e-05
+
+************************
+
+
+
+Original rule:
+PersonX lends PersonY his camera, so PersonX is seen as helpful.
+
+average KL over corresponding new rules:
+1.8013342298672796e-05
+
+************************
+
+
+
+Original rule:
+PersonX lends PersonY his camera, so PersonX feels kind.
+
+average KL over corresponding new rules:
+1.8537716954369898e-05
+
+************************
+
+
+
+Original rule:
+PersonX checks how well PersonY is doing at work, so PersonX is seen as responsible.
+
+average KL over corresponding new rules:
+1.4496453815127097e-05
+
+************************
+
+
+
+Original rule:
+PersonX checks how well PersonY is doing at work, so PersonX feels concerned.
+
+average KL over corresponding new rules:
+3.1301691223006856e-05
+
+************************
+
+
+
+Original rule:
+PersonX offers a proposal, so PersonX is seen as persuasive.
+
+average KL over corresponding new rules:
+2.3848409739457566e-05
+
+************************
+
+
+
+Original rule:
+PersonX offers a proposal, so PersonX feels excited.
+
+average KL over corresponding new rules:
+1.399127418721946e-05
+
+************************
+
+
+
+Original rule:
+PersonX helps PersonY with a science project, so PersonX is seen as intelligent.
+
+average KL over corresponding new rules:
+1.9362944840395357e-05
+
+************************
+
+
+
+Original rule:
+PersonX helps PersonY with a science project, so PersonX feels competent.
+
+average KL over corresponding new rules:
+1.285856903621152e-05
+
+************************
+
+
+
+Original rule:
+PersonX gets the rights to PersonY, so PersonX feels excited.
+
+average KL over corresponding new rules:
+2.175984175778467e-05
+
+************************
+
+
+
+Original rule:
+PersonX gets the rights to PersonY, so PersonX is seen as fair.
+
+average KL over corresponding new rules:
+2.3546401195062572e-05
+
+************************
+
+
+
+Original rule:
+PersonX and PersonY move to a new house, so PersonX feels pleased.
+
+average KL over corresponding new rules:
+2.26091657964389e-05
+
+************************
+
+
+
+Original rule:
+PersonX begins a self-help group, so PersonX feels excited.
+
+average KL over corresponding new rules:
+3.084897802807518e-05
+
+************************
+
+
+
+Original rule:
+PersonX begins a self-help group, so PersonX is seen as helpful.
+
+average KL over corresponding new rules:
+2.0786270425787734e-05
+
+************************
+
+
+
+Original rule:
+PersonX gets his brother back, so PersonX feels proud.
+
+average KL over corresponding new rules:
+2.6084097846990062e-05
+
+************************
+
+
+
+Original rule:
+PersonX gets his brother back, so PersonX is seen as courageous.
+
+average KL over corresponding new rules:
+1.8633950276125688e-05
+
+************************
+
+
+
+Original rule:
+PersonX visits an old classmate, so PersonX is seen as a good friend.
+
+average KL over corresponding new rules:
+7.634182779270304e-06
+
+************************
+
+
+
+Original rule:
+PersonX visits an old classmate, so PersonX feels nostalgic.
+
+average KL over corresponding new rules:
+3.0213147496738202e-05
+
+************************
+
+
+
+Original rule:
+PersonX moved back in with his mom, so PersonX feels loved.
+
+average KL over corresponding new rules:
+2.317882800184634e-05
+
+************************
+
+
+
+Original rule:
+PersonX being brave, so PersonX feels confident.
+
+average KL over corresponding new rules:
+1.1800723868304885e-05
+
+************************
+
+
+
+Original rule:
+PersonX knows that the seats are uncomfortable, so PersonX feels uncomfortable.
+
+average KL over corresponding new rules:
+1.0344574285170438e-05
+
+************************
+
+
+
+Original rule:
+PersonX suggests doing something else, so PersonX is seen as persuasive.
+
+average KL over corresponding new rules:
+1.918693240554603e-05
+
+************************
+
+
+
+Original rule:
+PersonX accepts PersonY's gift, so PersonX feels happy.
+
+average KL over corresponding new rules:
+1.9694193099439872e-05
+
+************************
+
+
+
+Original rule:
+PersonX accepts PersonY's gift, so PersonX is seen as considerate.
+
+average KL over corresponding new rules:
+1.8165745217402218e-05
+
+************************
+
+
+
+Original rule:
+PersonX learns how to make money, so PersonX feels successful.
+
+average KL over corresponding new rules:
+1.449953390419978e-05
+
+************************
+
+
+
+Original rule:
+PersonX learns how to make money, so PersonX is seen as clever.
+
+average KL over corresponding new rules:
+1.4433748702913363e-05
+
+************************
+
+
+
+Original rule:
+PersonX robs the robbers, so PersonX feels triumphant.
+
+average KL over corresponding new rules:
+1.1410553369728405e-05
+
+************************
+
+
+
+Original rule:
+PersonX robs the robbers, so PersonX is seen as clever.
+
+average KL over corresponding new rules:
+2.345296522321405e-05
+
+************************
+
+
+
+Original rule:
+PersonX wins a track meet, so PersonX feels excited.
+
+average KL over corresponding new rules:
+5.830781113047578e-06
+
+************************
+
+
+
+Original rule:
+PersonX wins a track meet, so PersonX is seen as a great athlete.
+
+average KL over corresponding new rules:
+1.0102955393165303e-05
+
+************************
+
+
+
+Original rule:
+PersonX sees the consequences, so PersonX feels worried.
+
+average KL over corresponding new rules:
+1.1028323854134214e-05
+
+************************
+
+
+
+Original rule:
+PersonX sees the consequences, so PersonX is seen as understanding.
+
+average KL over corresponding new rules:
+1.2506428447522921e-05
+
+************************
+
+
+
+Original rule:
+PersonX discovers who has broken into his home, so PersonX feels upset.
+
+average KL over corresponding new rules:
+8.051833745525983e-06
+
+************************
+
+
+
+Original rule:
+PersonX discovers who has broken into his home, so PersonX is seen as smart.
+
+average KL over corresponding new rules:
+1.935804829145127e-05
+
+************************
+
+
+
+Original rule:
+PersonX gives PersonY a good deal, so PersonX is seen as generous.
+
+average KL over corresponding new rules:
+1.6541364857403096e-05
+
+************************
+
+
+
+Original rule:
+PersonX gives PersonY a good deal, so PersonX feels happy.
+
+average KL over corresponding new rules:
+2.168450739503669e-05
+
+************************
+
+
+
+Original rule:
+PersonX makes the campfire, so PersonX feels happy.
+
+average KL over corresponding new rules:
+2.279634978208378e-05
+
+************************
+
+
+
+Original rule:
+PersonX makes the campfire, so PersonX is seen as resourceful.
+
+average KL over corresponding new rules:
+2.5103318250785378e-05
+
+************************
+
+
+
+Original rule:
+PersonX reaches the summit, so PersonX is seen as courageous.
+
+average KL over corresponding new rules:
+1.9509186074628815e-05
+
+************************
+
+
+
+Original rule:
+PersonX reaches the summit, so PersonX feels triumphant.
+
+average KL over corresponding new rules:
+1.1090569614680135e-05
+
+************************
+
+
+
+Original rule:
+PersonX stops by PersonY's table, so PersonX is seen as friendly.
+
+average KL over corresponding new rules:
+7.223505826914334e-05
+
+************************
+
