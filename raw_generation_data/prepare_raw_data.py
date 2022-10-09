@@ -1,12 +1,12 @@
-from operator import is_
+import copy
 import pickle
 from helper import *
 from get_related_words import get_related_words
 import random
 import os
 from lemminflect import getInflection, getAllInflections, getAllInflectionsOOV
-import nltk
 import argparse
+from split_train_infer import split_train_infer
 
 
 def back_to_sen(head,relation,tail):
@@ -61,22 +61,12 @@ def main(args):
 
     transition_words = ["and","while","but","although"]
     needed_relations = {'xReact','xAttr'}
-
-
+    num_of_cons = 5
 
     model_name = args.model_name
 
     premise_inputs = dict()
     premise_constraints = dict()
-
-    # if os.path.exists(generation_constraints_lemmas_path):
-    #     os.remove(generation_constraints_lemmas_path)
-
-    # if os.path.exists(generation_inputs_path):
-    #     os.remove(generation_inputs_path)
-
-    # if os.path.exists(generation_constraints_inflections_path):
-    #     os.remove(generation_constraints_inflections_path)
 
 
 
@@ -130,17 +120,17 @@ def main(args):
                 backed_sent = back_to_sen_mask(query,relation,tail,model_name,transition_word)
                 backed_sents.append(backed_sent)
 
+
+
         premise_inputs[query] = backed_sents
-
-
 
         words_candidates = premise_words[query]
 
-        sample_times = 2
 
-        words_candidates = random.sample(words_candidates,sample_times)
 
-        assert len(words_candidates) == 2
+        words_candidates = random.sample(words_candidates,num_of_cons)
+
+        assert len(words_candidates) == num_of_cons
 
         premise_constraints[query] = words_candidates
 
@@ -150,30 +140,37 @@ def main(args):
     negation_words = ['no']
 
 
-
-
     fi_write = []
     fc_lemma_write = []
     fc_inflect_write = []
+
+    # dis short for disjunction
+
+    fi_write_dis = []
+    fc_lemma_write_dis = []
+    fc_inflect_write_dis = []
+
+
     for premise in premise_constraints.keys():
 
 
-        # 一个句子有多少个变种
         premise_constraints_length = len(premise_constraints[premise])
-        factor = premise_constraints_length * (len(negation_words) + 1)
 
         # premise_inputs
         for backed_sent in premise_inputs[premise]:
-            for _ in range(factor):
+            for _ in range(premise_constraints_length * (len(negation_words) + 1)):
                 fi_write.append(backed_sent)
 
-        # premise_inputs
-        # TODO: need to change this shit code
+            for _ in range(len(negation_words) + 1):
+                fi_write_dis.append(backed_sent)
+
+
         for _ in range(len(premise_inputs[premise])):
 
+            word_inflections_dis = []
+            word_lemmas_dis = []
+
             for word in premise_constraints[premise]:
-
-
 
                 word_inflections = getAllInflections(word)
                 if not word_inflections or len(word_inflections) == 0:
@@ -185,121 +182,78 @@ def main(args):
 
                 word_inflections = list(set(word_inflections_l))
                 word_lemmas = [word]
+                word_inflections_dis.append(word_inflections)
+                word_lemmas_dis.append(word_lemmas)
 
-                # 一个premise 多少个tail
-                # 一个tail 要sample * conjunction_word 次数
-
-
-
-                all_lemmas = []
-                all_lemmas.append(word_lemmas)
-
-                fc_lemma_write.append(all_lemmas)
-
-
-                all_inflects = []
-                all_inflects.append(word_inflections)
-
-                fc_inflect_write.append(all_inflects)
-
+                fc_lemma_write.append([word_lemmas])
+                fc_inflect_write.append([word_inflections])
 
                 if negation_words is not None:
-                    all_lemmas = []
+                    negation_inflections = ["not","no"]
+                    negation_lemmas = ["no"]
 
-                    all_lemmas.append(word_lemmas)
-                    all_lemmas.append(["not","no"])
+                    fc_lemma_write.append([word_lemmas,negation_lemmas])
+                    fc_inflect_write.append([word_inflections,negation_inflections])
 
-                    fc_lemma_write.append(all_lemmas)
+            tmp = []
+            for _ in word_lemmas_dis:
+                tmp += _
+            word_lemmas_dis = [tmp]
 
-                    all_inflects = []
+            word_lemmas_dis_copy = copy.deepcopy(word_lemmas_dis)
+            word_lemmas_dis.append(negation_lemmas)
 
-                    all_inflects.append(word_inflections)
-                    all_inflects.append(["not","no"])
+            tmp = []
+            for _ in word_inflections_dis:
+                tmp += _
+            word_inflections_dis = [tmp]
 
-                    fc_inflect_write.append(all_inflects)
+            word_inflections_dis_copy = copy.deepcopy(word_inflections_dis)
+            word_inflections_dis.append(negation_inflections)
+
+
+            fc_lemma_write_dis.append(word_lemmas_dis_copy)
+            fc_lemma_write_dis.append(word_lemmas_dis)
+
+            fc_inflect_write_dis.append(word_inflections_dis_copy)
+            fc_inflect_write_dis.append(word_inflections_dis)
 
 
 
-
+    len(fc_inflect_write_dis) == len(fc_lemma_write_dis) == len(fi_write_dis)
     len(fc_inflect_write) == len(fc_lemma_write) == len(fi_write)
+
     num_variations = (premise_constraints_length * (len(negation_words) + 1) * len(transition_words) * len(needed_relations))
+    num_variations_dis = ((len(negation_words) + 1) * len(transition_words) * len(needed_relations))
+
 
     total_groups_train = 6
+    total_groups_train_dis = 12
     groups_for_train = random.sample(range(int(len(fi_write)/num_variations)) ,total_groups_train)
+    groups_for_train_dis = random.sample(range(int(len(fi_write_dis)/num_variations_dis)) ,total_groups_train_dis)
 
 
-    train_inputs = []
-    infer_inputs = []
-    train_lemmas = []
-    infer_lemmas = []
-    train_inflections = []
-    infer_inflections = []
+    split_args = dict()
+    split_args_dis = dict()
 
+    split_args['fi_write'] = fi_write
+    split_args['fc_lemma_write'] = fc_lemma_write
+    split_args['fc_inflect_write'] = fc_inflect_write
+    split_args['num_variations'] = num_variations
+    split_args['groups_for_train'] = groups_for_train
+    split_args['output_file'] = args.output_file
+    split_args['model_name'] = model_name
 
-    for index in range(0,len(fc_inflect_write),num_variations):
-        if index//num_variations in groups_for_train:
-            train_inputs.extend(fi_write[index:index+num_variations])
-            train_lemmas.extend(fc_lemma_write[index:index+num_variations])
-            train_inflections.extend(fc_inflect_write[index:index+num_variations])
-        else:
-            infer_inputs.extend(fi_write[index:index+num_variations])
-            infer_lemmas.extend(fc_lemma_write[index:index+num_variations])
-            infer_inflections.extend(fc_inflect_write[index:index+num_variations])
+    split_args_dis['fi_write'] = fi_write_dis
+    split_args_dis['fc_lemma_write'] = fc_lemma_write_dis
+    split_args_dis['fc_inflect_write'] = fc_inflect_write_dis
+    split_args_dis['num_variations'] = num_variations_dis
+    split_args_dis['groups_for_train'] = groups_for_train_dis
+    split_args_dis['output_file'] = args.output_file
+    split_args_dis['model_name'] = model_name
 
-
-    root_dir = f'{args.output_file}/raw_data'
-    Path(root_dir).mkdir(parents= True,exist_ok=True)
-    root_dir = Path(root_dir)
-
-
-
-    train_or_infer = 'train'
-    nl = '\n'
-
-    generation_inputs_path = root_dir / f'generation_input_{model_name}_{train_or_infer}.txt'
-    generation_constraints_lemmas_path = root_dir / f'generation_constraints_lemmas_{model_name}_{train_or_infer}.json'
-    generation_constraints_inflections_path = root_dir / f'generation_constraints_inflections_{model_name}_{train_or_infer}.json'
-
-    fi = open(generation_inputs_path,'w')
-    fc_lemma = open(generation_constraints_lemmas_path,'w')
-    fc_inflect = open(generation_constraints_inflections_path,'w')
-
-    for index in range(len(train_inputs)):
-        fi.write(train_inputs[index])
-        fi.write(nl)
-        json.dump(train_lemmas[index],fc_lemma)
-        fc_lemma.write(nl)
-        json.dump(train_inflections[index],fc_inflect)
-        fc_inflect.write(nl)
-
-    fi.close()
-    fc_lemma.close()
-    fc_inflect.close()
-
-# **************************************************************************
-    train_or_infer = 'infer'
-    nl = '\n'
-
-    generation_inputs_path = root_dir / f'generation_input_{model_name}_{train_or_infer}.txt'
-    generation_constraints_lemmas_path = root_dir / f'generation_constraints_lemmas_{model_name}_{train_or_infer}.json'
-    generation_constraints_inflections_path = root_dir / f'generation_constraints_inflections_{model_name}_{train_or_infer}.json'
-
-    fi = open(generation_inputs_path,'w')
-    fc_lemma = open(generation_constraints_lemmas_path,'w')
-    fc_inflect = open(generation_constraints_inflections_path,'w')
-
-    for index in range(len(infer_inputs)):
-        fi.write(infer_inputs[index])
-        fi.write(nl)
-        json.dump(infer_lemmas[index],fc_lemma)
-        fc_lemma.write(nl)
-        json.dump(infer_inflections[index],fc_inflect)
-        fc_inflect.write(nl)
-
-    fi.close()
-    fc_lemma.close()
-    fc_inflect.close()
-
+    split_train_infer(split_args)
+    split_train_infer(split_args_dis,for_dis=True)
 
 
 if __name__ == '__main__':

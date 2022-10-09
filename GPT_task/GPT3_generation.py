@@ -39,16 +39,14 @@ class GPTppl():
 
 
 
-def filter_by_format(input,outputs,constraint,mask = '[mask]'):
+def filter_by_format(input,outputs,constraints,mask = '[mask]'):
 
     assert mask in input,'input format is wrong'
 
     selected_pattern_outputs = []
     index_mask = input.index(mask)
-    if index_mask != 0:
-        prefix_end = index_mask-1
-    else:
-        prefix_end = index_mask
+
+    prefix_end = index_mask
     suffix_start = len(input) - (index_mask + len(mask))
 
     for output in outputs:
@@ -59,12 +57,16 @@ def filter_by_format(input,outputs,constraint,mask = '[mask]'):
 
 
             clause_states = []
-            for concept in constraint.replace(' ','').split(','):
 
-    #  filter those not follow the constraints
+            for constraint in constraints:
+
+                #  filter those not follow the constraints
                 clause_satisified = False
-                if concept in constraint_generation or (concept[0].upper() + concept[1:]) in constraint_generation:
-                    clause_satisified = True
+
+                for concept in constraint:
+                    if concept in constraint_generation or (concept[0].upper() + concept[1:]) in constraint_generation:
+                        clause_satisified = True
+                        break
 
 
                 clause_states.append(clause_satisified)
@@ -84,11 +86,11 @@ def filter_by_format(input,outputs,constraint,mask = '[mask]'):
 @dataclass
 class PromptConfig:
     engine: str = "text-davinci-002"
-    max_tokens: int = 128
+    max_tokens: int = 256
     temperature: float = 0.9
     top_p: float = 1
     logprobs: int = 0
-    n: int = 3
+    n: int = 5
     echo: bool = False
 
 
@@ -102,17 +104,17 @@ class PromptWrapper:
         self.no_filter = no_filter
 
 
-    def prompt_generation(self, input: str, constraints: str):
+    def prompt_generation(self,input, inflection_constraint, lemma_constraint):
 
 
-        prompt_str = self.create_prompt(input,constraints)
+        prompt_str = self.create_prompt(input,lemma_constraint)
 
 
         response = openai.Completion.create(
             prompt=prompt_str,
             **self.negation_config.__dict__,
         )
-        target = self.filter_generations(response.choices,input,constraints)
+        target = self.filter_generations(response.choices,input,inflection_constraint)
         return target
 
 

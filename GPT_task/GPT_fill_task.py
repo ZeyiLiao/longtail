@@ -11,46 +11,53 @@ def main(args):
 
     demonstration = \
     "Input: PersonX sneaks into PersonY's room and [mask], so PersonX feels nervous.\n"\
-    "Constraint: closet\n"\
+    "Constraint: [closet, normal, place, plane, bed]\n"\
     "Output: PersonX sneaks into PersonY's room and sees a closet space, so PersonX feels nervous.\n"\
     "Input: PersonX sneaks into PersonY's room and [mask], so PersonX feels nervous.\n"\
-    "Constraint: furniture, no\n"\
-    "Output: PersonX sneaks into PersonY's room and does not find furniture, so PersonX feels nervous.\n"\
+    "Constraint: [furniture, mountain, water, disk, bowl], [no]\n"\
+    "Output: PersonX sneaks into PersonY's room and does not find furnitures, so PersonX feels nervous.\n"\
     "Input: [mask] but PersonX sneaks into PersonY's room, so PersonX feels nervous.\n"\
-    "Constraint: police\n"\
+    "Constraint: [police, computer, window, pen, mouse]\n"\
     "Output: Police surround the house but PersonX sneaks into PersonY's room, so PersonX feels nervous.\n"\
     "Input: [mask] but PersonX sneaks into PersonY's room, so PersonX feels nervous.\n"\
-    "Constraint: money, no\n"\
+    "Constraint: [money, water, medicine, cigarette, tissue], [no]\n"\
     "Output: PersonX does not need money but PersonX sneaks into PersonY's room, so PersonX feels nervous\n"\
     "Input: PersonX asks what to do while [mask], so PersonX feels uncertain.\n"\
-    "Constraint: seek\n"\
+    "Constraint: [suggestion, shoes, cloth, box, pillow]\n"\
     "Output: PersonX asks what to do while seeks suggestions, so PersonX feels uncertain.\n"\
     "Input: PersonX asks what to do while [mask], so PersonX feels uncertain.\n"\
-    "Constraint: help, no\n"\
+    "Constraint: [school, help, bus, rice, meat], [no]\n"\
     "Output: PersonX asks what to do while no one help, so PersonX feels uncertain.\n"\
     "Input: Although [mask], PersonX asks what to do, so PersonX feels uncertain.\n"\
-    "Constraint: consultant\n"\
+    "Constraint: [road, street, car, tree, consultant]\n"\
     "Output: Although consultant sleeps, PersonX asks what to do, so PersonX feels uncertain.\n"\
     "Input: Although [mask], PersonX asks what to do, so PersonX feels uncertain.\n"\
-    "Constraint: help, no\n"\
+    "Constraint: [help, grocery, hand, drug, skin], [no]\n"\
     "Output: Although no one help, PersonX asks what to do, so PersonX feels uncertain."
 
 
-    gpt3_wrapper = PromptWrapper(demonstration,args.no_filter)
-
-
     def change_format(x):
+        neg = []
+        if len(x) == 2:
+            neg = x[1]
+        cons = x[0]
         tmp = []
-        for _ in x:
-            tmp.extend(_)
-        try:
-            tmp.remove('not')
-        finally:
-            string = ', '.join(tmp)
-            return string
+        for _ in cons:
+            tmp.append(_)
+        random.shuffle(tmp)
+
+        cons_string = '[' + ', '.join(tmp) + ']'
+        if len(neg) != 0:
+            cons_string = cons_string + f', [{neg[0]}]'
+
+        return cons_string
 
 
-    with open (args.input) as f:
+    print(f'we load data from {args.inputs}')
+    print(f'we load lemma constraints from {args.lemma_constraints}')
+    print(f'we load inflection constraints from {args.inflection_constraints}')
+
+    with open (args.inputs) as f:
         if args.model_type == 't5':
             original_mask = '<extra_id_0>'
         else:
@@ -58,50 +65,62 @@ def main(args):
 
         inputs = [x.rstrip().replace(original_mask,'[mask]') for x in f.readlines()]
 
-    with open (args.constraint_lemma) as f:
-        constraints = [json.loads(x) for x in f.readlines()]
-        constraints = list(map(change_format,constraints))
+
+    with open (args.lemma_constraints) as f:
+        lemma_constraints = [json.loads(x) for x in f.readlines()]
+        lemma_constraints = list(map(change_format,lemma_constraints))
+
+    with open (args.inflection_constraints) as f:
+        inflection_constraints = [json.loads(x) for x in f.readlines()]
+
 
 
     if args.num_groups != -1:
-        inputs = inputs[:32 * args.num_groups]
-        constraints = constraints[:32 * args.num_groups]
-    assert len(inputs) == len(constraints)
+        if args.variations_per_group == -1:
+            raise NotImplementedError
+
+        inputs = inputs[:args.variations_per_group * args.num_groups]
+        inflection_constraints = inflection_constraints[:args.variations_per_group * args.num_groups]
+        lemma_constraints = lemma_constraints[:args.variations_per_group * args.num_groups]
+
+
+    assert len(inputs) == len(inflection_constraints) == len(lemma_constraints)
 
 
     generations = []
 
+
     @backoff.on_exception(backoff.expo, openai.error.RateLimitError)
-    def gpt_generate(input,constraint):
-        return gpt3_wrapper.prompt_generation(input,constraint)
+    def gpt_generate(input,inflection_constraint,lemma_constraint):
+        return gpt3_wrapper.prompt_generation(input,inflection_constraint,lemma_constraint)
 
-    for index,(input,constraint) in enumerate(tqdm(list(zip(inputs,constraints)))):
+    gpt3_wrapper = PromptWrapper(demonstration,args.no_filter)
+    for index,(input,inflection_constraint,lemma_constraint) in enumerate(tqdm(list(zip(inputs,inflection_constraints,lemma_constraints)))):
 
-        generation = gpt_generate(input,constraint)
+        generation = gpt_generate(input,inflection_constraint,lemma_constraint)
         generations.append(generation)
 
     assert len(inputs) == len(generations)
 
-    Path(args.output).mkdir(parents= True,exist_ok=True)
+    Path(args.outputs).mkdir(parents= True,exist_ok=True)
+
 
 
     nl = '\n'
     if not args.Mturk:
-        output = Path(args.output) / 'gpt_output.jsonl'
-        with jsonlines.open(output,'w') as f:
+        outputs = Path(args.outputs) / 'gpt_outputs.jsonl'
+        with jsonlines.open(outputs,'w') as f:
             for index in range(len(generations)):
                 tmp = dict()
                 tmp['input'] = str(inputs[index])
-                tmp['constraint'] = str(constraints[index])
+                tmp['constraint'] = str(lemma_constraints[index])
                 tmp['generation'] = str(generations[index])
                 f.write(tmp)
 
 
-
-
     else:
-        output = Path(args.output) / 'gpt_output.txt'
-        with open(output,'w') as f:
+        outputs = Path(args.outputs) / 'gpt_outputs.txt'
+        with open(outputs,'w') as f:
             for index in range(len(generations)):
                 generation = generations[index]
                 if 'Input' in generation and 'Constraint' in generation:
@@ -113,12 +132,14 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='gpt3 generation')
-    parser.add_argument('--input',default = '../longtail_data/raw_data/generation_input_t5_train.txt')
-    parser.add_argument('--constraint_lemma',default = '../longtail_data/raw_data/generation_constraints_lemmas_t5_train.json')
-    parser.add_argument('--output', default = 'GPT_fill_output.txt')
+    parser.add_argument('--inputs',default = '../longtail_data/raw_data/input_t5_train.txt')
+    parser.add_argument('--lemma_constraints',default = '../longtail_data/raw_data/lemma_constraints_t5_train.json')
+    parser.add_argument('--inflection_constraints',default = '../longtail_data/raw_data/inflection_constraints_t5_train.json')
+    parser.add_argument('--outputs', default = 'GPT_fill_output.txt')
     parser.add_argument('--model_type', choices = ['t5','bart'], default = 't5')
     parser.add_argument('--no_filter', action='store_true')
     parser.add_argument('--Mturk', action='store_true')
     parser.add_argument('--num_groups', default= -1, type=int)
+    parser.add_argument('--variations_per_group', default= -1, type=int)
     args = parser.parse_args()
     main(args)
