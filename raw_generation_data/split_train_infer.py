@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 import csv
 
-def split_train_infer(split_args,for_dis = False):
+def split_train_infer(split_args,sub_folder = None):
 
     fi_write = split_args['fi_write']
     fc_lemma_write = split_args['fc_lemma_write']
@@ -32,8 +32,8 @@ def split_train_infer(split_args,for_dis = False):
 
 
     root_dir = f'{output_file}/raw_data'
-    if for_dis:
-        root_dir += '/for_dis'
+    if sub_folder:
+        root_dir += f'/{sub_folder}'
 
     Path(root_dir).mkdir(parents= True,exist_ok=True)
     root_dir = Path(root_dir)

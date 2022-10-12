@@ -1,99 +1,35 @@
-"PersonX finishes writing a novel and <extra_id_0>, so PersonX feels accomplished.",16799_and
-"PersonX finishes writing a novel and <extra_id_0>, so PersonX feels accomplished.",16799_and_neg
-"PersonX finishes writing a novel while <extra_id_0>, so PersonX feels accomplished.",16799_while
-"PersonX finishes writing a novel while <extra_id_0>, so PersonX feels accomplished.",16799_while_neg
-"<extra_id_0> but PersonX finishes writing a novel, so PersonX feels accomplished.",16799_but
-"<extra_id_0> but PersonX finishes writing a novel, so PersonX feels accomplished.",16799_but_neg
-"Although <extra_id_0>, PersonX finishes writing a novel, so PersonX feels accomplished.",16799_although
-"Although <extra_id_0>, PersonX finishes writing a novel, so PersonX feels accomplished.",16799_although_neg
-"PersonX finishes writing a novel and <extra_id_0>, so PersonX is seen as talented.",31049_and
-"PersonX finishes writing a novel and <extra_id_0>, so PersonX is seen as talented.",31049_and_neg
-"PersonX finishes writing a novel while <extra_id_0>, so PersonX is seen as talented.",31049_while
-"PersonX finishes writing a novel while <extra_id_0>, so PersonX is seen as talented.",31049_while_neg
-"<extra_id_0> but PersonX finishes writing a novel, so PersonX is seen as talented.",31049_but
-"<extra_id_0> but PersonX finishes writing a novel, so PersonX is seen as talented.",31049_but_neg
-"Although <extra_id_0>, PersonX finishes writing a novel, so PersonX is seen as talented.",31049_although
-"Although <extra_id_0>, PersonX finishes writing a novel, so PersonX is seen as talented.",31049_although_neg
-"PersonX plays all day and <extra_id_0>, so PersonX feels exhausted.",101100_and
-"PersonX plays all day and <extra_id_0>, so PersonX feels exhausted.",101100_and_neg
-"PersonX plays all day while <extra_id_0>, so PersonX feels exhausted.",101100_while
-"PersonX plays all day while <extra_id_0>, so PersonX feels exhausted.",101100_while_neg
-"<extra_id_0> but PersonX plays all day, so PersonX feels exhausted.",101100_but
-"<extra_id_0> but PersonX plays all day, so PersonX feels exhausted.",101100_but_neg
-"Although <extra_id_0>, PersonX plays all day, so PersonX feels exhausted.",101100_although
-"Although <extra_id_0>, PersonX plays all day, so PersonX feels exhausted.",101100_although_neg
-"PersonX plays all day and <extra_id_0>, so PersonX is seen as athletic.",454459_and
-"PersonX plays all day and <extra_id_0>, so PersonX is seen as athletic.",454459_and_neg
-"PersonX plays all day while <extra_id_0>, so PersonX is seen as athletic.",454459_while
-"PersonX plays all day while <extra_id_0>, so PersonX is seen as athletic.",454459_while_neg
-"<extra_id_0> but PersonX plays all day, so PersonX is seen as athletic.",454459_but
-"<extra_id_0> but PersonX plays all day, so PersonX is seen as athletic.",454459_but_neg
-"Although <extra_id_0>, PersonX plays all day, so PersonX is seen as athletic.",454459_although
-"Although <extra_id_0>, PersonX plays all day, so PersonX is seen as athletic.",454459_although_neg
-"PersonX drinks lots of alcohol and <extra_id_0>, so PersonX feels inebriated.",236367_and
-"PersonX drinks lots of alcohol and <extra_id_0>, so PersonX feels inebriated.",236367_and_neg
-"PersonX drinks lots of alcohol while <extra_id_0>, so PersonX feels inebriated.",236367_while
-"PersonX drinks lots of alcohol while <extra_id_0>, so PersonX feels inebriated.",236367_while_neg
-"<extra_id_0> but PersonX drinks lots of alcohol, so PersonX feels inebriated.",236367_but
-"<extra_id_0> but PersonX drinks lots of alcohol, so PersonX feels inebriated.",236367_but_neg
-"Although <extra_id_0>, PersonX drinks lots of alcohol, so PersonX feels inebriated.",236367_although
-"Although <extra_id_0>, PersonX drinks lots of alcohol, so PersonX feels inebriated.",236367_although_neg
-"PersonX drinks lots of alcohol and <extra_id_0>, so PersonX is seen as a party animal.",240653_and
-"PersonX drinks lots of alcohol and <extra_id_0>, so PersonX is seen as a party animal.",240653_and_neg
-"PersonX drinks lots of alcohol while <extra_id_0>, so PersonX is seen as a party animal.",240653_while
-"PersonX drinks lots of alcohol while <extra_id_0>, so PersonX is seen as a party animal.",240653_while_neg
-"<extra_id_0> but PersonX drinks lots of alcohol, so PersonX is seen as a party animal.",240653_but
-"<extra_id_0> but PersonX drinks lots of alcohol, so PersonX is seen as a party animal.",240653_but_neg
-"Although <extra_id_0>, PersonX drinks lots of alcohol, so PersonX is seen as a party animal.",240653_although
-"Although <extra_id_0>, PersonX drinks lots of alcohol, so PersonX is seen as a party animal.",240653_although_neg
-"PersonX does her research and <extra_id_0>, so PersonX is seen as smart.",18960_and
-"PersonX does her research and <extra_id_0>, so PersonX is seen as smart.",18960_and_neg
-"PersonX does her research while <extra_id_0>, so PersonX is seen as smart.",18960_while
-"PersonX does her research while <extra_id_0>, so PersonX is seen as smart.",18960_while_neg
-"<extra_id_0> but PersonX does her research, so PersonX is seen as smart.",18960_but
-"<extra_id_0> but PersonX does her research, so PersonX is seen as smart.",18960_but_neg
-"Although <extra_id_0>, PersonX does her research, so PersonX is seen as smart.",18960_although
-"Although <extra_id_0>, PersonX does her research, so PersonX is seen as smart.",18960_although_neg
-"PersonX does her research and <extra_id_0>, so PersonX feels confident.",84207_and
-"PersonX does her research and <extra_id_0>, so PersonX feels confident.",84207_and_neg
-"PersonX does her research while <extra_id_0>, so PersonX feels confident.",84207_while
-"PersonX does her research while <extra_id_0>, so PersonX feels confident.",84207_while_neg
-"<extra_id_0> but PersonX does her research, so PersonX feels confident.",84207_but
-"<extra_id_0> but PersonX does her research, so PersonX feels confident.",84207_but_neg
-"Although <extra_id_0>, PersonX does her research, so PersonX feels confident.",84207_although
-"Although <extra_id_0>, PersonX does her research, so PersonX feels confident.",84207_although_neg
-"PersonX starts acting as PersonY wants him to and <extra_id_0>, so PersonX feels obedient.",113740_and
-"PersonX starts acting as PersonY wants him to and <extra_id_0>, so PersonX feels obedient.",113740_and_neg
-"PersonX starts acting as PersonY wants him to while <extra_id_0>, so PersonX feels obedient.",113740_while
-"PersonX starts acting as PersonY wants him to while <extra_id_0>, so PersonX feels obedient.",113740_while_neg
-"<extra_id_0> but PersonX starts acting as PersonY wants him to, so PersonX feels obedient.",113740_but
-"<extra_id_0> but PersonX starts acting as PersonY wants him to, so PersonX feels obedient.",113740_but_neg
-"Although <extra_id_0>, PersonX starts acting as PersonY wants him to, so PersonX feels obedient.",113740_although
-"Although <extra_id_0>, PersonX starts acting as PersonY wants him to, so PersonX feels obedient.",113740_although_neg
-"PersonX starts acting as PersonY wants him to and <extra_id_0>, so PersonX is seen as obedient.",188679_and
-"PersonX starts acting as PersonY wants him to and <extra_id_0>, so PersonX is seen as obedient.",188679_and_neg
-"PersonX starts acting as PersonY wants him to while <extra_id_0>, so PersonX is seen as obedient.",188679_while
-"PersonX starts acting as PersonY wants him to while <extra_id_0>, so PersonX is seen as obedient.",188679_while_neg
-"<extra_id_0> but PersonX starts acting as PersonY wants him to, so PersonX is seen as obedient.",188679_but
-"<extra_id_0> but PersonX starts acting as PersonY wants him to, so PersonX is seen as obedient.",188679_but_neg
-"Although <extra_id_0>, PersonX starts acting as PersonY wants him to, so PersonX is seen as obedient.",188679_although
-"Although <extra_id_0>, PersonX starts acting as PersonY wants him to, so PersonX is seen as obedient.",188679_although_neg
-"PersonX cites his sources and <extra_id_0>, so PersonX is seen as smart.",11342_and
-"PersonX cites his sources and <extra_id_0>, so PersonX is seen as smart.",11342_and_neg
-"PersonX cites his sources while <extra_id_0>, so PersonX is seen as smart.",11342_while
-"PersonX cites his sources while <extra_id_0>, so PersonX is seen as smart.",11342_while_neg
-"<extra_id_0> but PersonX cites his sources, so PersonX is seen as smart.",11342_but
-"<extra_id_0> but PersonX cites his sources, so PersonX is seen as smart.",11342_but_neg
-"Although <extra_id_0>, PersonX cites his sources, so PersonX is seen as smart.",11342_although
-"Although <extra_id_0>, PersonX cites his sources, so PersonX is seen as smart.",11342_although_neg
-"PersonX cites his sources and <extra_id_0>, so PersonX feels competent.",36486_and
-"PersonX cites his sources and <extra_id_0>, so PersonX feels competent.",36486_and_neg
-"PersonX cites his sources while <extra_id_0>, so PersonX feels competent.",36486_while
-"PersonX cites his sources while <extra_id_0>, so PersonX feels competent.",36486_while_neg
-"<extra_id_0> but PersonX cites his sources, so PersonX feels competent.",36486_but
-"<extra_id_0> but PersonX cites his sources, so PersonX feels competent.",36486_but_neg
-"Although <extra_id_0>, PersonX cites his sources, so PersonX feels competent.",36486_although
-"Although <extra_id_0>, PersonX cites his sources, so PersonX feels competent.",36486_although_neg
+"PersonX agrees to do as PersonY asks and <extra_id_0>, so PersonX is seen as obedient.",63086_and
+"PersonX agrees to do as PersonY asks and <extra_id_0>, so PersonX is seen as obedient.",63086_and_neg
+"PersonX agrees to do as PersonY asks while <extra_id_0>, so PersonX is seen as obedient.",63086_while
+"PersonX agrees to do as PersonY asks while <extra_id_0>, so PersonX is seen as obedient.",63086_while_neg
+"<extra_id_0> but PersonX agrees to do as PersonY asks, so PersonX is seen as obedient.",63086_but
+"<extra_id_0> but PersonX agrees to do as PersonY asks, so PersonX is seen as obedient.",63086_but_neg
+"Although <extra_id_0>, PersonX agrees to do as PersonY asks, so PersonX is seen as obedient.",63086_although
+"Although <extra_id_0>, PersonX agrees to do as PersonY asks, so PersonX is seen as obedient.",63086_although_neg
+"PersonX agrees to do as PersonY asks and <extra_id_0>, so PersonX feels compliant.",273902_and
+"PersonX agrees to do as PersonY asks and <extra_id_0>, so PersonX feels compliant.",273902_and_neg
+"PersonX agrees to do as PersonY asks while <extra_id_0>, so PersonX feels compliant.",273902_while
+"PersonX agrees to do as PersonY asks while <extra_id_0>, so PersonX feels compliant.",273902_while_neg
+"<extra_id_0> but PersonX agrees to do as PersonY asks, so PersonX feels compliant.",273902_but
+"<extra_id_0> but PersonX agrees to do as PersonY asks, so PersonX feels compliant.",273902_but_neg
+"Although <extra_id_0>, PersonX agrees to do as PersonY asks, so PersonX feels compliant.",273902_although
+"Although <extra_id_0>, PersonX agrees to do as PersonY asks, so PersonX feels compliant.",273902_although_neg
+"PersonX wins the respect of his parents and <extra_id_0>, so PersonX feels happy.",148165_and
+"PersonX wins the respect of his parents and <extra_id_0>, so PersonX feels happy.",148165_and_neg
+"PersonX wins the respect of his parents while <extra_id_0>, so PersonX feels happy.",148165_while
+"PersonX wins the respect of his parents while <extra_id_0>, so PersonX feels happy.",148165_while_neg
+"<extra_id_0> but PersonX wins the respect of his parents, so PersonX feels happy.",148165_but
+"<extra_id_0> but PersonX wins the respect of his parents, so PersonX feels happy.",148165_but_neg
+"Although <extra_id_0>, PersonX wins the respect of his parents, so PersonX feels happy.",148165_although
+"Although <extra_id_0>, PersonX wins the respect of his parents, so PersonX feels happy.",148165_although_neg
+"PersonX wins the respect of his parents and <extra_id_0>, so PersonX is seen as mature.",205856_and
+"PersonX wins the respect of his parents and <extra_id_0>, so PersonX is seen as mature.",205856_and_neg
+"PersonX wins the respect of his parents while <extra_id_0>, so PersonX is seen as mature.",205856_while
+"PersonX wins the respect of his parents while <extra_id_0>, so PersonX is seen as mature.",205856_while_neg
+"<extra_id_0> but PersonX wins the respect of his parents, so PersonX is seen as mature.",205856_but
+"<extra_id_0> but PersonX wins the respect of his parents, so PersonX is seen as mature.",205856_but_neg
+"Although <extra_id_0>, PersonX wins the respect of his parents, so PersonX is seen as mature.",205856_although
+"Although <extra_id_0>, PersonX wins the respect of his parents, so PersonX is seen as mature.",205856_although_neg
 "PersonX accidentally causes a fire and <extra_id_0>, so PersonX is seen as irresponsible.",250685_and
 "PersonX accidentally causes a fire and <extra_id_0>, so PersonX is seen as irresponsible.",250685_and_neg
 "PersonX accidentally causes a fire while <extra_id_0>, so PersonX is seen as irresponsible.",250685_while
@@ -110,83 +46,147 @@
 "<extra_id_0> but PersonX accidentally causes a fire, so PersonX feels guilty.",283858_but_neg
 "Although <extra_id_0>, PersonX accidentally causes a fire, so PersonX feels guilty.",283858_although
 "Although <extra_id_0>, PersonX accidentally causes a fire, so PersonX feels guilty.",283858_although_neg
-"PersonX listens to old stories and <extra_id_0>, so PersonX is seen as a good listener.",2457_and
-"PersonX listens to old stories and <extra_id_0>, so PersonX is seen as a good listener.",2457_and_neg
-"PersonX listens to old stories while <extra_id_0>, so PersonX is seen as a good listener.",2457_while
-"PersonX listens to old stories while <extra_id_0>, so PersonX is seen as a good listener.",2457_while_neg
-"<extra_id_0> but PersonX listens to old stories, so PersonX is seen as a good listener.",2457_but
-"<extra_id_0> but PersonX listens to old stories, so PersonX is seen as a good listener.",2457_but_neg
-"Although <extra_id_0>, PersonX listens to old stories, so PersonX is seen as a good listener.",2457_although
-"Although <extra_id_0>, PersonX listens to old stories, so PersonX is seen as a good listener.",2457_although_neg
-"PersonX listens to old stories and <extra_id_0>, so PersonX feels nostalgic.",41690_and
-"PersonX listens to old stories and <extra_id_0>, so PersonX feels nostalgic.",41690_and_neg
-"PersonX listens to old stories while <extra_id_0>, so PersonX feels nostalgic.",41690_while
-"PersonX listens to old stories while <extra_id_0>, so PersonX feels nostalgic.",41690_while_neg
-"<extra_id_0> but PersonX listens to old stories, so PersonX feels nostalgic.",41690_but
-"<extra_id_0> but PersonX listens to old stories, so PersonX feels nostalgic.",41690_but_neg
-"Although <extra_id_0>, PersonX listens to old stories, so PersonX feels nostalgic.",41690_although
-"Although <extra_id_0>, PersonX listens to old stories, so PersonX feels nostalgic.",41690_although_neg
-"PersonX looks at the difference and <extra_id_0>, so PersonX feels intrigued.",266527_and
-"PersonX looks at the difference and <extra_id_0>, so PersonX feels intrigued.",266527_and_neg
-"PersonX looks at the difference while <extra_id_0>, so PersonX feels intrigued.",266527_while
-"PersonX looks at the difference while <extra_id_0>, so PersonX feels intrigued.",266527_while_neg
-"<extra_id_0> but PersonX looks at the difference, so PersonX feels intrigued.",266527_but
-"<extra_id_0> but PersonX looks at the difference, so PersonX feels intrigued.",266527_but_neg
-"Although <extra_id_0>, PersonX looks at the difference, so PersonX feels intrigued.",266527_although
-"Although <extra_id_0>, PersonX looks at the difference, so PersonX feels intrigued.",266527_although_neg
-"PersonX looks at the difference and <extra_id_0>, so PersonX is seen as insightful.",354877_and
-"PersonX looks at the difference and <extra_id_0>, so PersonX is seen as insightful.",354877_and_neg
-"PersonX looks at the difference while <extra_id_0>, so PersonX is seen as insightful.",354877_while
-"PersonX looks at the difference while <extra_id_0>, so PersonX is seen as insightful.",354877_while_neg
-"<extra_id_0> but PersonX looks at the difference, so PersonX is seen as insightful.",354877_but
-"<extra_id_0> but PersonX looks at the difference, so PersonX is seen as insightful.",354877_but_neg
-"Although <extra_id_0>, PersonX looks at the difference, so PersonX is seen as insightful.",354877_although
-"Although <extra_id_0>, PersonX looks at the difference, so PersonX is seen as insightful.",354877_although_neg
-"PersonX confesses and apologizes and <extra_id_0>, so PersonX feels ashamed.",130765_and
-"PersonX confesses and apologizes and <extra_id_0>, so PersonX feels ashamed.",130765_and_neg
-"PersonX confesses and apologizes while <extra_id_0>, so PersonX feels ashamed.",130765_while
-"PersonX confesses and apologizes while <extra_id_0>, so PersonX feels ashamed.",130765_while_neg
-"<extra_id_0> but PersonX confesses and apologizes, so PersonX feels ashamed.",130765_but
-"<extra_id_0> but PersonX confesses and apologizes, so PersonX feels ashamed.",130765_but_neg
-"Although <extra_id_0>, PersonX confesses and apologizes, so PersonX feels ashamed.",130765_although
-"Although <extra_id_0>, PersonX confesses and apologizes, so PersonX feels ashamed.",130765_although_neg
-"PersonX confesses and apologizes and <extra_id_0>, so PersonX is seen as sincere.",423899_and
-"PersonX confesses and apologizes and <extra_id_0>, so PersonX is seen as sincere.",423899_and_neg
-"PersonX confesses and apologizes while <extra_id_0>, so PersonX is seen as sincere.",423899_while
-"PersonX confesses and apologizes while <extra_id_0>, so PersonX is seen as sincere.",423899_while_neg
-"<extra_id_0> but PersonX confesses and apologizes, so PersonX is seen as sincere.",423899_but
-"<extra_id_0> but PersonX confesses and apologizes, so PersonX is seen as sincere.",423899_but_neg
-"Although <extra_id_0>, PersonX confesses and apologizes, so PersonX is seen as sincere.",423899_although
-"Although <extra_id_0>, PersonX confesses and apologizes, so PersonX is seen as sincere.",423899_although_neg
-"PersonX learns a great deal and <extra_id_0>, so PersonX feels satisfied.",91298_and
-"PersonX learns a great deal and <extra_id_0>, so PersonX feels satisfied.",91298_and_neg
-"PersonX learns a great deal while <extra_id_0>, so PersonX feels satisfied.",91298_while
-"PersonX learns a great deal while <extra_id_0>, so PersonX feels satisfied.",91298_while_neg
-"<extra_id_0> but PersonX learns a great deal, so PersonX feels satisfied.",91298_but
-"<extra_id_0> but PersonX learns a great deal, so PersonX feels satisfied.",91298_but_neg
-"Although <extra_id_0>, PersonX learns a great deal, so PersonX feels satisfied.",91298_although
-"Although <extra_id_0>, PersonX learns a great deal, so PersonX feels satisfied.",91298_although_neg
-"PersonX learns a great deal and <extra_id_0>, so PersonX is seen as smart.",281072_and
-"PersonX learns a great deal and <extra_id_0>, so PersonX is seen as smart.",281072_and_neg
-"PersonX learns a great deal while <extra_id_0>, so PersonX is seen as smart.",281072_while
-"PersonX learns a great deal while <extra_id_0>, so PersonX is seen as smart.",281072_while_neg
-"<extra_id_0> but PersonX learns a great deal, so PersonX is seen as smart.",281072_but
-"<extra_id_0> but PersonX learns a great deal, so PersonX is seen as smart.",281072_but_neg
-"Although <extra_id_0>, PersonX learns a great deal, so PersonX is seen as smart.",281072_although
-"Although <extra_id_0>, PersonX learns a great deal, so PersonX is seen as smart.",281072_although_neg
-"PersonX wins PersonX's first trophy and <extra_id_0>, so PersonX feels proud.",9419_and
-"PersonX wins PersonX's first trophy and <extra_id_0>, so PersonX feels proud.",9419_and_neg
-"PersonX wins PersonX's first trophy while <extra_id_0>, so PersonX feels proud.",9419_while
-"PersonX wins PersonX's first trophy while <extra_id_0>, so PersonX feels proud.",9419_while_neg
-"<extra_id_0> but PersonX wins PersonX's first trophy, so PersonX feels proud.",9419_but
-"<extra_id_0> but PersonX wins PersonX's first trophy, so PersonX feels proud.",9419_but_neg
-"Although <extra_id_0>, PersonX wins PersonX's first trophy, so PersonX feels proud.",9419_although
-"Although <extra_id_0>, PersonX wins PersonX's first trophy, so PersonX feels proud.",9419_although_neg
-"PersonX wins PersonX's first trophy and <extra_id_0>, so PersonX is seen as good at sports.",420772_and
-"PersonX wins PersonX's first trophy and <extra_id_0>, so PersonX is seen as good at sports.",420772_and_neg
-"PersonX wins PersonX's first trophy while <extra_id_0>, so PersonX is seen as good at sports.",420772_while
-"PersonX wins PersonX's first trophy while <extra_id_0>, so PersonX is seen as good at sports.",420772_while_neg
-"<extra_id_0> but PersonX wins PersonX's first trophy, so PersonX is seen as good at sports.",420772_but
-"<extra_id_0> but PersonX wins PersonX's first trophy, so PersonX is seen as good at sports.",420772_but_neg
-"Although <extra_id_0>, PersonX wins PersonX's first trophy, so PersonX is seen as good at sports.",420772_although
-"Although <extra_id_0>, PersonX wins PersonX's first trophy, so PersonX is seen as good at sports.",420772_although_neg
+"PersonX has a chance to play music and <extra_id_0>, so PersonX feels excited.",95959_and
+"PersonX has a chance to play music and <extra_id_0>, so PersonX feels excited.",95959_and_neg
+"PersonX has a chance to play music while <extra_id_0>, so PersonX feels excited.",95959_while
+"PersonX has a chance to play music while <extra_id_0>, so PersonX feels excited.",95959_while_neg
+"<extra_id_0> but PersonX has a chance to play music, so PersonX feels excited.",95959_but
+"<extra_id_0> but PersonX has a chance to play music, so PersonX feels excited.",95959_but_neg
+"Although <extra_id_0>, PersonX has a chance to play music, so PersonX feels excited.",95959_although
+"Although <extra_id_0>, PersonX has a chance to play music, so PersonX feels excited.",95959_although_neg
+"PersonX has a chance to play music and <extra_id_0>, so PersonX is seen as talented.",432069_and
+"PersonX has a chance to play music and <extra_id_0>, so PersonX is seen as talented.",432069_and_neg
+"PersonX has a chance to play music while <extra_id_0>, so PersonX is seen as talented.",432069_while
+"PersonX has a chance to play music while <extra_id_0>, so PersonX is seen as talented.",432069_while_neg
+"<extra_id_0> but PersonX has a chance to play music, so PersonX is seen as talented.",432069_but
+"<extra_id_0> but PersonX has a chance to play music, so PersonX is seen as talented.",432069_but_neg
+"Although <extra_id_0>, PersonX has a chance to play music, so PersonX is seen as talented.",432069_although
+"Although <extra_id_0>, PersonX has a chance to play music, so PersonX is seen as talented.",432069_although_neg
+"PersonX learns to get along with PersonY and <extra_id_0>, so PersonX feels confident.",27528_and
+"PersonX learns to get along with PersonY and <extra_id_0>, so PersonX feels confident.",27528_and_neg
+"PersonX learns to get along with PersonY while <extra_id_0>, so PersonX feels confident.",27528_while
+"PersonX learns to get along with PersonY while <extra_id_0>, so PersonX feels confident.",27528_while_neg
+"<extra_id_0> but PersonX learns to get along with PersonY, so PersonX feels confident.",27528_but
+"<extra_id_0> but PersonX learns to get along with PersonY, so PersonX feels confident.",27528_but_neg
+"Although <extra_id_0>, PersonX learns to get along with PersonY, so PersonX feels confident.",27528_although
+"Although <extra_id_0>, PersonX learns to get along with PersonY, so PersonX feels confident.",27528_although_neg
+"PersonX learns to get along with PersonY and <extra_id_0>, so PersonX is seen as a good friend.",28665_and
+"PersonX learns to get along with PersonY and <extra_id_0>, so PersonX is seen as a good friend.",28665_and_neg
+"PersonX learns to get along with PersonY while <extra_id_0>, so PersonX is seen as a good friend.",28665_while
+"PersonX learns to get along with PersonY while <extra_id_0>, so PersonX is seen as a good friend.",28665_while_neg
+"<extra_id_0> but PersonX learns to get along with PersonY, so PersonX is seen as a good friend.",28665_but
+"<extra_id_0> but PersonX learns to get along with PersonY, so PersonX is seen as a good friend.",28665_but_neg
+"Although <extra_id_0>, PersonX learns to get along with PersonY, so PersonX is seen as a good friend.",28665_although
+"Although <extra_id_0>, PersonX learns to get along with PersonY, so PersonX is seen as a good friend.",28665_although_neg
+"PersonX cares for PersonY's relatives and <extra_id_0>, so PersonX is seen as generous.",30528_and
+"PersonX cares for PersonY's relatives and <extra_id_0>, so PersonX is seen as generous.",30528_and_neg
+"PersonX cares for PersonY's relatives while <extra_id_0>, so PersonX is seen as generous.",30528_while
+"PersonX cares for PersonY's relatives while <extra_id_0>, so PersonX is seen as generous.",30528_while_neg
+"<extra_id_0> but PersonX cares for PersonY's relatives, so PersonX is seen as generous.",30528_but
+"<extra_id_0> but PersonX cares for PersonY's relatives, so PersonX is seen as generous.",30528_but_neg
+"Although <extra_id_0>, PersonX cares for PersonY's relatives, so PersonX is seen as generous.",30528_although
+"Although <extra_id_0>, PersonX cares for PersonY's relatives, so PersonX is seen as generous.",30528_although_neg
+"PersonX cares for PersonY's relatives and <extra_id_0>, so PersonX feels protective.",47534_and
+"PersonX cares for PersonY's relatives and <extra_id_0>, so PersonX feels protective.",47534_and_neg
+"PersonX cares for PersonY's relatives while <extra_id_0>, so PersonX feels protective.",47534_while
+"PersonX cares for PersonY's relatives while <extra_id_0>, so PersonX feels protective.",47534_while_neg
+"<extra_id_0> but PersonX cares for PersonY's relatives, so PersonX feels protective.",47534_but
+"<extra_id_0> but PersonX cares for PersonY's relatives, so PersonX feels protective.",47534_but_neg
+"Although <extra_id_0>, PersonX cares for PersonY's relatives, so PersonX feels protective.",47534_although
+"Although <extra_id_0>, PersonX cares for PersonY's relatives, so PersonX feels protective.",47534_although_neg
+"PersonX is a student in PersonY's course and <extra_id_0>, so PersonX feels motivated.",84367_and
+"PersonX is a student in PersonY's course and <extra_id_0>, so PersonX feels motivated.",84367_and_neg
+"PersonX is a student in PersonY's course while <extra_id_0>, so PersonX feels motivated.",84367_while
+"PersonX is a student in PersonY's course while <extra_id_0>, so PersonX feels motivated.",84367_while_neg
+"<extra_id_0> but PersonX is a student in PersonY's course, so PersonX feels motivated.",84367_but
+"<extra_id_0> but PersonX is a student in PersonY's course, so PersonX feels motivated.",84367_but_neg
+"Although <extra_id_0>, PersonX is a student in PersonY's course, so PersonX feels motivated.",84367_although
+"Although <extra_id_0>, PersonX is a student in PersonY's course, so PersonX feels motivated.",84367_although_neg
+"PersonX is a student in PersonY's course and <extra_id_0>, so PersonX is seen as intelligent.",147037_and
+"PersonX is a student in PersonY's course and <extra_id_0>, so PersonX is seen as intelligent.",147037_and_neg
+"PersonX is a student in PersonY's course while <extra_id_0>, so PersonX is seen as intelligent.",147037_while
+"PersonX is a student in PersonY's course while <extra_id_0>, so PersonX is seen as intelligent.",147037_while_neg
+"<extra_id_0> but PersonX is a student in PersonY's course, so PersonX is seen as intelligent.",147037_but
+"<extra_id_0> but PersonX is a student in PersonY's course, so PersonX is seen as intelligent.",147037_but_neg
+"Although <extra_id_0>, PersonX is a student in PersonY's course, so PersonX is seen as intelligent.",147037_although
+"Although <extra_id_0>, PersonX is a student in PersonY's course, so PersonX is seen as intelligent.",147037_although_neg
+"PersonX is great at making friends and <extra_id_0>, so PersonX is seen as popular.",8046_and
+"PersonX is great at making friends and <extra_id_0>, so PersonX is seen as popular.",8046_and_neg
+"PersonX is great at making friends while <extra_id_0>, so PersonX is seen as popular.",8046_while
+"PersonX is great at making friends while <extra_id_0>, so PersonX is seen as popular.",8046_while_neg
+"<extra_id_0> but PersonX is great at making friends, so PersonX is seen as popular.",8046_but
+"<extra_id_0> but PersonX is great at making friends, so PersonX is seen as popular.",8046_but_neg
+"Although <extra_id_0>, PersonX is great at making friends, so PersonX is seen as popular.",8046_although
+"Although <extra_id_0>, PersonX is great at making friends, so PersonX is seen as popular.",8046_although_neg
+"PersonX is great at making friends and <extra_id_0>, so PersonX feels excited.",333869_and
+"PersonX is great at making friends and <extra_id_0>, so PersonX feels excited.",333869_and_neg
+"PersonX is great at making friends while <extra_id_0>, so PersonX feels excited.",333869_while
+"PersonX is great at making friends while <extra_id_0>, so PersonX feels excited.",333869_while_neg
+"<extra_id_0> but PersonX is great at making friends, so PersonX feels excited.",333869_but
+"<extra_id_0> but PersonX is great at making friends, so PersonX feels excited.",333869_but_neg
+"Although <extra_id_0>, PersonX is great at making friends, so PersonX feels excited.",333869_although
+"Although <extra_id_0>, PersonX is great at making friends, so PersonX feels excited.",333869_although_neg
+"PersonX fights for a cause and <extra_id_0>, so PersonX is seen as brave.",18274_and
+"PersonX fights for a cause and <extra_id_0>, so PersonX is seen as brave.",18274_and_neg
+"PersonX fights for a cause while <extra_id_0>, so PersonX is seen as brave.",18274_while
+"PersonX fights for a cause while <extra_id_0>, so PersonX is seen as brave.",18274_while_neg
+"<extra_id_0> but PersonX fights for a cause, so PersonX is seen as brave.",18274_but
+"<extra_id_0> but PersonX fights for a cause, so PersonX is seen as brave.",18274_but_neg
+"Although <extra_id_0>, PersonX fights for a cause, so PersonX is seen as brave.",18274_although
+"Although <extra_id_0>, PersonX fights for a cause, so PersonX is seen as brave.",18274_although_neg
+"PersonX fights for a cause and <extra_id_0>, so PersonX feels inspired.",33968_and
+"PersonX fights for a cause and <extra_id_0>, so PersonX feels inspired.",33968_and_neg
+"PersonX fights for a cause while <extra_id_0>, so PersonX feels inspired.",33968_while
+"PersonX fights for a cause while <extra_id_0>, so PersonX feels inspired.",33968_while_neg
+"<extra_id_0> but PersonX fights for a cause, so PersonX feels inspired.",33968_but
+"<extra_id_0> but PersonX fights for a cause, so PersonX feels inspired.",33968_but_neg
+"Although <extra_id_0>, PersonX fights for a cause, so PersonX feels inspired.",33968_although
+"Although <extra_id_0>, PersonX fights for a cause, so PersonX feels inspired.",33968_although_neg
+"PersonX lands the plane and <extra_id_0>, so PersonX is seen as a good pilot.",308804_and
+"PersonX lands the plane and <extra_id_0>, so PersonX is seen as a good pilot.",308804_and_neg
+"PersonX lands the plane while <extra_id_0>, so PersonX is seen as a good pilot.",308804_while
+"PersonX lands the plane while <extra_id_0>, so PersonX is seen as a good pilot.",308804_while_neg
+"<extra_id_0> but PersonX lands the plane, so PersonX is seen as a good pilot.",308804_but
+"<extra_id_0> but PersonX lands the plane, so PersonX is seen as a good pilot.",308804_but_neg
+"Although <extra_id_0>, PersonX lands the plane, so PersonX is seen as a good pilot.",308804_although
+"Although <extra_id_0>, PersonX lands the plane, so PersonX is seen as a good pilot.",308804_although_neg
+"PersonX lands the plane and <extra_id_0>, so PersonX feels accomplished.",341249_and
+"PersonX lands the plane and <extra_id_0>, so PersonX feels accomplished.",341249_and_neg
+"PersonX lands the plane while <extra_id_0>, so PersonX feels accomplished.",341249_while
+"PersonX lands the plane while <extra_id_0>, so PersonX feels accomplished.",341249_while_neg
+"<extra_id_0> but PersonX lands the plane, so PersonX feels accomplished.",341249_but
+"<extra_id_0> but PersonX lands the plane, so PersonX feels accomplished.",341249_but_neg
+"Although <extra_id_0>, PersonX lands the plane, so PersonX feels accomplished.",341249_although
+"Although <extra_id_0>, PersonX lands the plane, so PersonX feels accomplished.",341249_although_neg
+"PersonX creates a new story and <extra_id_0>, so PersonX feels happy.",543_and
+"PersonX creates a new story and <extra_id_0>, so PersonX feels happy.",543_and_neg
+"PersonX creates a new story while <extra_id_0>, so PersonX feels happy.",543_while
+"PersonX creates a new story while <extra_id_0>, so PersonX feels happy.",543_while_neg
+"<extra_id_0> but PersonX creates a new story, so PersonX feels happy.",543_but
+"<extra_id_0> but PersonX creates a new story, so PersonX feels happy.",543_but_neg
+"Although <extra_id_0>, PersonX creates a new story, so PersonX feels happy.",543_although
+"Although <extra_id_0>, PersonX creates a new story, so PersonX feels happy.",543_although_neg
+"PersonX creates a new story and <extra_id_0>, so PersonX is seen as talented.",325365_and
+"PersonX creates a new story and <extra_id_0>, so PersonX is seen as talented.",325365_and_neg
+"PersonX creates a new story while <extra_id_0>, so PersonX is seen as talented.",325365_while
+"PersonX creates a new story while <extra_id_0>, so PersonX is seen as talented.",325365_while_neg
+"<extra_id_0> but PersonX creates a new story, so PersonX is seen as talented.",325365_but
+"<extra_id_0> but PersonX creates a new story, so PersonX is seen as talented.",325365_but_neg
+"Although <extra_id_0>, PersonX creates a new story, so PersonX is seen as talented.",325365_although
+"Although <extra_id_0>, PersonX creates a new story, so PersonX is seen as talented.",325365_although_neg
+"PersonX and PersonY have some time off and <extra_id_0>, so PersonX is seen as relaxed.",133624_and
+"PersonX and PersonY have some time off and <extra_id_0>, so PersonX is seen as relaxed.",133624_and_neg
+"PersonX and PersonY have some time off while <extra_id_0>, so PersonX is seen as relaxed.",133624_while
+"PersonX and PersonY have some time off while <extra_id_0>, so PersonX is seen as relaxed.",133624_while_neg
+"<extra_id_0> but PersonX and PersonY have some time off, so PersonX is seen as relaxed.",133624_but
+"<extra_id_0> but PersonX and PersonY have some time off, so PersonX is seen as relaxed.",133624_but_neg
+"Although <extra_id_0>, PersonX and PersonY have some time off, so PersonX is seen as relaxed.",133624_although
+"Although <extra_id_0>, PersonX and PersonY have some time off, so PersonX is seen as relaxed.",133624_although_neg
+"PersonX and PersonY have some time off and <extra_id_0>, so PersonX feels free.",166737_and
+"PersonX and PersonY have some time off and <extra_id_0>, so PersonX feels free.",166737_and_neg
+"PersonX and PersonY have some time off while <extra_id_0>, so PersonX feels free.",166737_while
+"PersonX and PersonY have some time off while <extra_id_0>, so PersonX feels free.",166737_while_neg
+"<extra_id_0> but PersonX and PersonY have some time off, so PersonX feels free.",166737_but
+"<extra_id_0> but PersonX and PersonY have some time off, so PersonX feels free.",166737_but_neg
+"Although <extra_id_0>, PersonX and PersonY have some time off, so PersonX feels free.",166737_although
+"Although <extra_id_0>, PersonX and PersonY have some time off, so PersonX feels free.",166737_although_neg

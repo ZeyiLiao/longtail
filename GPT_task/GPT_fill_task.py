@@ -11,18 +11,32 @@ import jsonlines
 def main(args):
 
     demonstration_conti = \
-    "Input: PersonX feels creative, because PersonX writes poems in her diary and [mask].\n"\
+    "Input: PersonX feels creative because PersonX writes poems in her diary and [mask].\n"\
     "Constraint: [pillow, shoes, cloth, box, emotion]\n"\
-    "Output: PersonX feels creative, because PersonX writes poems in her diary and expresses her emotion.\n"\
+    "Output: PersonX feels creative because PersonX writes poems in her diary and expresses her emotion.\n"\
+    "Input: PersonX is seen as intelligent because PersonX is a student in PersonY's course and [mask].\n"\
+    "Constraint: [normal, grade, place, plane, bed], [no]\n"\
+    "Output: PersonX is seen as intelligent because PersonX is a student in PersonY's course and no one gets higher score than PersonX.\n"\
     "Input: PersonX is seen as fashionable because PersonX acquires an expensive shirt despite the fact that [mask].\n"\
     "Constraint: [mouse, computer, window, pen, house]\n"\
-    "Output: PersonX is seen as fashionable, because PersonX acquires an expensive shirt despite the fact that PersonX lives in a poor house.\n"\
-    "Input: PersonX feels uncertain, because PersonX asks what to do while [mask].\n"\
+    "Output: PersonX is seen as fashionable because PersonX acquires an expensive shirt despite the fact that PersonX lives in a poor house.\n"\
+    "Input: PersonX is seen as diligent because PersonX completes her paper despite the fact that [mask].\n"\
+    "Constraint: [mentor, grocery, hand, drug, skin], [no]\n"\
+    "Output: PersonX is seen as diligent because PersonX completes her paper despite the fact that no mentor guides PersonX.\n"\
+    "Input: PersonX feels uncertain because PersonX asks what to do while [mask].\n"\
     "Constraint: [busy, school, bus, rice, meat]\n"\
-    "Output:PersonX feels uncertain, because PersonX asks what to do while being busy with trivial stuff.\n"\
-    "Input: PersonX feels confident because PersonX tells the whole truth even though the fact that [mask].\n"\
-    "Constraint: [bottle, water, medicine, hard, tissue]\n"\
-    "Output: PersonX feels confident because PersonX tells the whole truth even though the fact that problem is hard.\n"\
+    "Output:PersonX feels uncertain because PersonX asks what to do while being busy with trivial stuff.\n"\
+    "Input: PersonX feels nervous because PersonX sneaks into PersonY's room while [mask].\n"\
+    "Constraint: [purse, mountain, water, disk, bowl], [no]\n"\
+    "Output: PersonX feels nervous because PersonX sneaks into PersonY's room while does not find purse.\n"\
+    "Input: PersonX feels pleased because PersonX gets a job at club even though [mask].\n"\
+    "Constraint: [road, team, car, tree, street]\n"\
+    "Output: PersonX feels pleased because PersonX gets a job at club even though PersonX dismissed the team.\n"\
+    "Input: PersonX feels confident because PersonX tells the whole truth even though [mask].\n"\
+    "Constraint: [bottle, water, medicine, easy, tissue], [no]\n"\
+    "Output: PersonX feels confident because PersonX tells the whole truth even though problem is not easy."
+
+
 
 
     demonstration = \
@@ -112,24 +126,34 @@ def main(args):
 
 
     generations = []
-    breakpoint()
+    needed_count = 3
+    inputs_new = []
+    inputs_order_new = []
+    lemma_constraints_new = []
 
 
     @backoff.on_exception(backoff.expo, openai.error.RateLimitError)
     def gpt_generate(input,inflection_constraint,lemma_constraint):
-        return gpt3_wrapper.prompt_generation(input,inflection_constraint,lemma_constraint)
+        return gpt3_wrapper.prompt_generation(input,inflection_constraint,lemma_constraint,needed_count)
+
 
     gpt3_wrapper = PromptWrapper(demonstration,args.no_filter)
     print('We use gpt3 to do generation')
     for index,(input,inflection_constraint,lemma_constraint) in enumerate(tqdm(list(zip(inputs,inflection_constraints,lemma_constraints)))):
 
         generation = gpt_generate(input,inflection_constraint,lemma_constraint)
-        generations.append(generation)
 
-    assert len(inputs) == len(generations) == len(inputs_order)
+        if len(generation) != 0:
+            
+            generations.extend(generation)
+            inputs_new.extend([input] * needed_count)
+            inputs_order_new.extend([inputs_order[index]] * needed_count)
+            lemma_constraints_new.extend([lemma_constraint] * needed_count)
+
+
+    assert len(inputs_new) == len(generations) == len(inputs_order_new) == len(lemma_constraints_new)
 
     Path(args.outputs).mkdir(parents= True,exist_ok=True)
-
 
 
     nl = '\n'
@@ -138,8 +162,8 @@ def main(args):
         with jsonlines.open(outputs,'w') as f:
             for index in range(len(generations)):
                 tmp = dict()
-                tmp['input'] = str(inputs[index])
-                tmp['constraint'] = str(lemma_constraints[index])
+                tmp['input'] = str(inputs_new[index])
+                tmp['constraint'] = str(lemma_constraints_new[index])
                 tmp['generation'] = str(generations[index])
                 f.write(tmp)
 

@@ -50,6 +50,7 @@ def filter_by_format(input,outputs,constraints,mask = '[mask]'):
     prefix_end = index_mask
     suffix_start = len(input) - (index_mask + len(mask))
 
+
     for output in outputs:
     #   filter those not follow the mask pattern
         if output[:prefix_end] == input[:prefix_end] and output[-suffix_start:] == input[-suffix_start:]:
@@ -105,7 +106,7 @@ class PromptWrapper:
         self.no_filter = no_filter
 
 
-    def prompt_generation(self,input, inflection_constraint, lemma_constraint):
+    def prompt_generation(self,input, inflection_constraint, lemma_constraint,needed_count):
 
 
         prompt_str = self.create_prompt(input,lemma_constraint)
@@ -115,42 +116,35 @@ class PromptWrapper:
             prompt=prompt_str,
             **self.negation_config.__dict__,
         )
-        target = self.filter_generations(response.choices,input,inflection_constraint)
+        target = self.filter_generations(response.choices,input,inflection_constraint,needed_count)
         return target
 
 
-    def filter_generations(self,explanations: List,input,constraints):
+    def filter_generations(self,explanations,input,constraints,needed_count):
         # Extract string explanations
 
-        filtered_explanations = [
-            explanation.text.strip() for explanation in explanations
-        ]
+        filtered_explanations = []
+        for explanation in explanations:
+            text = explanation.text
+            if text[-1] != '.':
+                text += '.'
+            filtered_explanations.append(text.strip())
+
+
         filtered_explanations = list(set(filtered_explanations))
 
         if not self.no_filter:
             filtered_explanations = filter_by_format(input,filtered_explanations,constraints)
 
 
-        # filtered_explanations = list(
-        #     filter(lambda exp: len(exp) > 0 and exp.endswith("."),
-        #         filtered_explanations))
+        if len(filtered_explanations) >= needed_count:
+            needed_indexs = sorted(range(len(filtered_explanations)), key= lambda i :self.ppl.calculate_ppl(filtered_explanations)[i])[:needed_count]
+            needed_explanations = [exp for (i,exp) in enumerate(filtered_explanations) if i in needed_indexs]
 
+        else:
+            needed_explanations = []
 
-        # filtered_explanations = [
-        #     explanation[0].upper() + explanation[1:]
-        #     for explanation in filtered_explanations
-        # ]
-
-        if len(filtered_explanations) > 1:
-            filtered_explanations = filtered_explanations[sorted(range(len(filtered_explanations)), key= lambda i :self.ppl.calculate_ppl(filtered_explanations)[i])[0]]
-
-        elif len(filtered_explanations) == 1:
-            filtered_explanations = filtered_explanations[0]
-
-        elif len(filtered_explanations) == 0:
-            filtered_explanations = ''
-
-        return filtered_explanations
+        return needed_explanations
 
 
     def create_prompt(self, input: str, constraints: str):

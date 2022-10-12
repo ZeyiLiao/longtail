@@ -6,6 +6,7 @@ import jsonlines
 dir_list = ['train','test','dev']
 mask = '<extra_id_0>'
 
+random.seed(42)
 
 def format(input,con,output):
     input_text = f'Input: {input} ; Constraint: {con} ; Output:'

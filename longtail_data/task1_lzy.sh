@@ -10,6 +10,13 @@ PYTHONPATH=. python GPT_task/GPT_fill_task.py --inputs longtail_data/raw_data/fo
 --inflection_constraints longtail_data/raw_data/for_dis/inflection_constraints_t5_train.json \
 --outputs longtail_data/for_finetune/for_dis
 
+# for continuation format
+PYTHONPATH=. python GPT_task/GPT_fill_task.py --inputs longtail_data/raw_data/conti/inputs_t5_train.csv \
+--lemma_constraints longtail_data/raw_data/conti/lemma_constraints_t5_train.json \
+--inflection_constraints longtail_data/raw_data/conti/inflection_constraints_t5_train.json \
+--outputs longtail_data/for_finetune/conti
+
+
 PYTHONPATH=. python longtail_data/splitting.py --gpt_outputs_dir longtail_data/for_finetune/for_dis
 
 

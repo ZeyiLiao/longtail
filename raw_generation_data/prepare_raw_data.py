@@ -9,6 +9,7 @@ from lemminflect import getInflection, getAllInflections, getAllInflectionsOOV
 import argparse
 from split_train_infer import split_train_infer
 
+random.seed(42)
 
 def back_to_sen(head,relation,tail):
     if relation == 'xAttr':
@@ -58,7 +59,7 @@ def back_to_sen_mask(head,relation,tail,model_name,transition_word):
     return content
 
 
-def back_to_sen_mask(head,relation,tail,model_name,transition_word):
+def back_to_sen_mask_continuation(head,relation,tail,model_name,transition_word):
     if 'bart' in model_name:
         mask = '<mask>'
     elif 't5' in model_name:
@@ -67,23 +68,23 @@ def back_to_sen_mask(head,relation,tail,model_name,transition_word):
 
     if relation == 'xAttr':
         if transition_word == 'and':
-            content = 'PersonX is seen as ' + tail + 'because' + head + '.'
+            content = 'PersonX is seen as ' + tail + ' because ' + head + ' and ' + mask + '.'
         elif transition_word == 'while':
-            content = head + ' while ' + mask + ', so PersonX is seen as ' + tail + '.'
+            content = 'PersonX is seen as ' + tail + ' because ' + head + ' while ' + mask + '.'
         elif transition_word == 'but':
-            content = mask + ' but ' + head + ', so PersonX is seen as ' + tail + '.'
+            content = 'PersonX is seen as ' + tail + ' because ' + head + ' despite the fact that ' + mask + '.'
         elif transition_word == 'although':
-            content = 'Although ' +  mask + ', ' + head + ', so PersonX is seen as ' + tail + '.'
+            content = 'PersonX is seen as ' + tail + ' because ' + head + ' even though ' + mask + '.'
 
     elif relation == 'xReact':
         if transition_word == 'and':
-            content = head + ' and ' + mask + ', so PersonX feels ' + tail + '.'
+            content = 'PersonX feels ' + tail + ' because ' + head + ' and ' + mask + '.'
         elif transition_word == 'while':
-            content = head + ' while ' + mask + ', so PersonX feels ' + tail + '.'
+            content = 'PersonX feels ' + tail + ' because ' + head + ' while ' + mask + '.'
         elif transition_word == 'but':
-            content = mask + ' but ' + head + ', so PersonX feels ' + tail + '.'
+            content = 'PersonX feels ' + tail + ' because ' + head + ' despite the fact that ' + mask + '.'
         elif transition_word == 'although':
-            content = 'Although ' +  mask + ', ' + head + ', so PersonX feels ' + tail + '.'
+            content = 'PersonX feels ' + tail + ' because ' + head + ' even though ' + mask + '.'
 
     return content
 
@@ -101,6 +102,9 @@ def main(args):
     model_name = args.model_name
 
     premise_inputs = dict()
+    premise_inputs_conti = dict()
+
+
     premise_orders = dict()
     premise_constraints = dict()
 
@@ -152,18 +156,24 @@ def main(args):
 
 
         backed_sents = []
+        backed_sents_conti = []
         bs_orders = []
         for index,relation_tail in enumerate(relations_tails):
             relation,tail = relation_tail[0],relation_tail[1]
 
             for transition_word in transition_words:
                 backed_sent = back_to_sen_mask(query,relation,tail,model_name,transition_word)
+                backed_sent_conti = back_to_sen_mask_continuation(query,relation,tail,model_name,transition_word)
+
                 backed_sents.append(backed_sent)
+                backed_sents_conti.append(backed_sent_conti)
 
                 bs_orders.append(f'{rt_orders[index]}_{transition_word}')
 
 
         premise_inputs[query] = backed_sents
+        premise_inputs_conti[query] = backed_sents_conti
+
         premise_orders[query] = bs_orders
 
 
@@ -183,13 +193,12 @@ def main(args):
     negation_words = ['no']
 
 
-    fi_write = []
-    fc_lemma_write = []
-    fc_inflect_write = []
 
     # dis short for disjunction
 
     fi_write_dis = []
+    fi_write_conti = []
+
     fc_lemma_write_dis = []
     fc_inflect_write_dis = []
 
@@ -200,15 +209,13 @@ def main(args):
         premise_constraints_length = len(premise_constraints[premise])
 
         # premise_inputs
-        for backed_sent,bs_order in zip(premise_inputs[premise],premise_orders[premise]):
-
-            for _ in range(premise_constraints_length):
-                fi_write.append((backed_sent,bs_order))
-                fi_write.append((backed_sent,f'{bs_order}_neg'))
+        for backed_sent,backed_sent_conti,bs_order in zip(premise_inputs[premise],premise_inputs_conti[premise],premise_orders[premise]):
 
 
             fi_write_dis.append((backed_sent,bs_order))
             fi_write_dis.append((backed_sent,f'{bs_order}_neg'))
+            fi_write_conti.append((backed_sent_conti,bs_order))
+            fi_write_conti.append((backed_sent_conti,f'{bs_order}_neg'))
 
 
         for _ in range(len(premise_inputs[premise])):
@@ -231,15 +238,10 @@ def main(args):
                 word_inflections_dis.append(word_inflections)
                 word_lemmas_dis.append(word_lemmas)
 
-                fc_lemma_write.append([word_lemmas])
-                fc_inflect_write.append([word_inflections])
 
                 if negation_words is not None:
                     negation_inflections = ["not","no"]
                     negation_lemmas = ["no"]
-
-                    fc_lemma_write.append([word_lemmas,negation_lemmas])
-                    fc_inflect_write.append([word_inflections,negation_inflections])
 
             tmp = []
             for _ in word_lemmas_dis:
@@ -267,29 +269,19 @@ def main(args):
 
 
     len(fc_inflect_write_dis) == len(fc_lemma_write_dis) == len(fi_write_dis)
-    len(fc_inflect_write) == len(fc_lemma_write) == len(fi_write)
 
 
-    num_variations = (premise_constraints_length * (len(negation_words) + 1) * len(transition_words) * len(needed_relations))
+
     num_variations_dis = ((len(negation_words) + 1) * len(transition_words) * len(needed_relations))
 
     total_groups_train = 6
     total_groups_train_dis = 12
 
-    groups_for_train = random.sample(range(int(len(fi_write)/num_variations)) ,total_groups_train)
     groups_for_train_dis = random.sample(range(int(len(fi_write_dis)/num_variations_dis)) ,total_groups_train_dis)
 
 
-    split_args = dict()
-    split_args_dis = dict()
 
-    split_args['fi_write'] = fi_write
-    split_args['fc_lemma_write'] = fc_lemma_write
-    split_args['fc_inflect_write'] = fc_inflect_write
-    split_args['num_variations'] = num_variations
-    split_args['groups_for_train'] = groups_for_train
-    split_args['output_file'] = args.output_file
-    split_args['model_name'] = model_name
+    split_args_dis = dict()
 
     split_args_dis['fi_write'] = fi_write_dis
     split_args_dis['fc_lemma_write'] = fc_lemma_write_dis
@@ -299,14 +291,18 @@ def main(args):
     split_args_dis['output_file'] = args.output_file
     split_args_dis['model_name'] = model_name
 
-    split_train_infer(split_args)
-    split_train_infer(split_args_dis,for_dis=True)
+    split_train_infer(split_args_dis,sub_folder='for_dis')
+
+
+    split_args_dis['fi_write'] = fi_write_conti
+    split_train_infer(split_args_dis,sub_folder='conti')
+
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='generate related word')
     parser.add_argument('--input_file', default= '../longtail_data/input.csv')
-    parser.add_argument('--save_file', default= './related_words.pkl')
+    parser.add_argument('--save_file', default= '../longtail_data/related_words.pkl')
     parser.add_argument('--model_name', choices = ['bart','t5'], default='t5')
     parser.add_argument('--force', help='whether force to regenerate related words' ,action='store_true')
     parser.add_argument('--csv_file', help='the file where we find the conclusion of the input',default='../longtail_data/ATOMIC10X_filter.csv')
