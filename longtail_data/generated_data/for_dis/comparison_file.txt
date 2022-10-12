@@ -1,11 +1,11 @@
 input_format:
-Input: PersonX eats lunch at the same restaurant every day and <extra_id_0>, so PersonX feels satisfied. ; Constraint: [midday, lump, lunchroom, munch, brunch] ; Output:
+Input: PersonX eats lunch at the same restaurant every day and <extra_id_0>, so PersonX feels satisfied. ; Constraint: [brunch, midday, lunchroom, lump, munch] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday']]
 
 
-gpt : PersonX eats lunch at the same restaurant every day and munch on the same food, so PersonX feels satisfied.
+gpt : PersonX eats lunch at the same restaurant every day and finds the food to be good, so PersonX feels satisfied.
 neuro : PersonX eats lunch at the same restaurant every day and has a lump of food, so PersonX feels satisfied.
 vanilla : PersonX eats lunch at the same restaurant every day and enjoys it, so PersonX feels satisfied.
 
@@ -13,13 +13,13 @@ vanilla : PersonX eats lunch at the same restaurant every day and enjoys it, so 
 ************************
 
 input_format:
-Input: PersonX eats lunch at the same restaurant every day and <extra_id_0>, so PersonX feels satisfied. ; Constraint: [brunch, midday, lump, lunchroom, munch], [no] ; Output:
+Input: PersonX eats lunch at the same restaurant every day and <extra_id_0>, so PersonX feels satisfied. ; Constraint: [lump, lunchroom, munch, midday, brunch], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday'], ['not', 'no']]
 
 
-gpt : PersonX eats lunch at the same restaurant every day and does not find any lump in the food, so PersonX feels satisfied.
+gpt : PersonX eats lunch at the same restaurant every day and enjoys the same munch, so PersonX feels satisfied.
 neuro : PersonX eats lunch at the same restaurant every day and does not munch, so PersonX feels satisfied.
 vanilla : PersonX eats lunch at the same restaurant every day and no one complains, so PersonX feels satisfied.
 
@@ -27,13 +27,13 @@ vanilla : PersonX eats lunch at the same restaurant every day and no one complai
 ************************
 
 input_format:
-Input: PersonX eats lunch at the same restaurant every day while <extra_id_0>, so PersonX feels satisfied. ; Constraint: [lunchroom, midday, brunch, lump, munch] ; Output:
+Input: PersonX eats lunch at the same restaurant every day while <extra_id_0>, so PersonX feels satisfied. ; Constraint: [munch, lump, lunchroom, midday, brunch] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday']]
 
 
-gpt : PersonX eats lunch at the same restaurant every day while munching on the same sandwich, so PersonX feels satisfied.
+gpt : PersonX eats lunch at the same restaurant every day while munching on the same dish, so PersonX feels satisfied.
 neuro : PersonX eats lunch at the same restaurant every day while working midday, so PersonX feels satisfied.
 vanilla : PersonX eats lunch at the same restaurant every day while watching television, so PersonX feels satisfied.
 
@@ -41,13 +41,13 @@ vanilla : PersonX eats lunch at the same restaurant every day while watching tel
 ************************
 
 input_format:
-Input: PersonX eats lunch at the same restaurant every day while <extra_id_0>, so PersonX feels satisfied. ; Constraint: [lunchroom, midday, munch, lump, brunch], [no] ; Output:
+Input: PersonX eats lunch at the same restaurant every day while <extra_id_0>, so PersonX feels satisfied. ; Constraint: [midday, lunchroom, brunch, lump, munch], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday'], ['not', 'no']]
 
 
-gpt : PersonX eats lunch at the same restaurant every day while None, so PersonX feels satisfied.
+gpt : PersonX eats lunch at the same restaurant every day while eating a variety of food, so PersonX feels satisfied.
 neuro : PersonX eats lunch at the same restaurant every day while not eating brunch, so PersonX feels satisfied.
 vanilla : PersonX eats lunch at the same restaurant every day while no one else is there, so PersonX feels satisfied.
 
@@ -55,13 +55,13 @@ vanilla : PersonX eats lunch at the same restaurant every day while no one else 
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied. ; Constraint: [lump, munch, midday, lunchroom, brunch] ; Output:
+Input: <extra_id_0> but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied. ; Constraint: [lump, brunch, midday, lunchroom, munch] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday']]
 
 
-gpt : PersonX has no munch at midday but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
+gpt : Although problem is not e but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
 neuro : PersonX eats lunch at midday but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
 vanilla : PersonX loves brunch but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
 
@@ -69,13 +69,13 @@ vanilla : PersonX loves brunch but PersonX eats lunch at the same restaurant eve
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied. ; Constraint: [lump, munch, brunch, midday, lunchroom], [no] ; Output:
+Input: <extra_id_0> but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied. ; Constraint: [midday, brunch, lump, munch, lunchroom], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday'], ['not', 'no']]
 
 
-gpt : No one eats brunch but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
+gpt : No one joins PersonX but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
 neuro : PersonX does not like brunch but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
 vanilla : PersonX does not eat lunch but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
 
@@ -83,13 +83,13 @@ vanilla : PersonX does not eat lunch but PersonX eats lunch at the same restaura
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied. ; Constraint: [brunch, munch, midday, lump, lunchroom] ; Output:
+Input: Although <extra_id_0>, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied. ; Constraint: [brunch, lunchroom, lump, munch, midday] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday']]
 
 
-gpt : Although PersonX has a lump on her lunch, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
+gpt : Although PersonX is not in the mood for a big lunch, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
 neuro : Although PersonX eats lunch at midday, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
 vanilla : Although PersonX eats lunch at midday, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
 
@@ -97,13 +97,13 @@ vanilla : Although PersonX eats lunch at midday, PersonX eats lunch at the same 
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied. ; Constraint: [brunch, midday, munch, lunchroom, lump], [no] ; Output:
+Input: Although <extra_id_0>, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied. ; Constraint: [lunchroom, brunch, munch, midday, lump], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday'], ['not', 'no']]
 
 
-gpt : Although there is no lump, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
+gpt : Although PersonX is not in the mood for eating, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
 neuro : Although PersonX does not have a lunchroom, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
 vanilla : Although PersonX does not have a lunchroom, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.
 
@@ -111,13 +111,13 @@ vanilla : Although PersonX does not have a lunchroom, PersonX eats lunch at the 
 ************************
 
 input_format:
-Input: PersonX eats lunch at the same restaurant every day and <extra_id_0>, so PersonX is seen as reliable. ; Constraint: [midday, brunch, munch, lump, lunchroom] ; Output:
+Input: PersonX eats lunch at the same restaurant every day and <extra_id_0>, so PersonX is seen as reliable. ; Constraint: [munch, lunchroom, lump, brunch, midday] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday']]
 
 
-gpt : PersonX eats lunch at the same restaurant every day and always arrives at midday, so PersonX is seen as reliable.
+gpt : PersonX eats lunch at the same restaurant every day and PersonX is always on time, so PersonX is seen as reliable.
 neuro : PersonX eats lunch at the same restaurant every day and eats midday, so PersonX is seen as reliable.
 vanilla : PersonX eats lunch at the same restaurant every day and never misses lunch, so PersonX is seen as reliable.
 
@@ -125,13 +125,13 @@ vanilla : PersonX eats lunch at the same restaurant every day and never misses l
 ************************
 
 input_format:
-Input: PersonX eats lunch at the same restaurant every day and <extra_id_0>, so PersonX is seen as reliable. ; Constraint: [brunch, lump, munch, midday, lunchroom], [no] ; Output:
+Input: PersonX eats lunch at the same restaurant every day and <extra_id_0>, so PersonX is seen as reliable. ; Constraint: [midday, lunchroom, munch, brunch, lump], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday'], ['not', 'no']]
 
 
-gpt : PersonX eats lunch at the same restaurant every day and None, so PersonX is seen as reliable.
+gpt : PersonX eats lunch at the same restaurant every day and always arrives at midday, so PersonX is seen as reliable.
 neuro : PersonX eats lunch at the same restaurant every day and does not munch, so PersonX is seen as reliable.
 vanilla : PersonX eats lunch at the same restaurant every day and never misses lunch, so PersonX is seen as reliable.
 
@@ -139,13 +139,13 @@ vanilla : PersonX eats lunch at the same restaurant every day and never misses l
 ************************
 
 input_format:
-Input: PersonX eats lunch at the same restaurant every day while <extra_id_0>, so PersonX is seen as reliable. ; Constraint: [lump, munch, lunchroom, brunch, midday] ; Output:
+Input: PersonX eats lunch at the same restaurant every day while <extra_id_0>, so PersonX is seen as reliable. ; Constraint: [lump, lunchroom, munch, brunch, midday] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday']]
 
 
-gpt : PersonX eats lunch at the same restaurant every day while munching on the same lump of food, so PersonX is seen as reliable.
+gpt : PersonX eats lunch at the same restaurant every day while munching on a lump of meat, so PersonX is seen as reliable.
 neuro : PersonX eats lunch at the same restaurant every day while eating midday, so PersonX is seen as reliable.
 vanilla : PersonX eats lunch at the same restaurant every day while eating lunch, so PersonX is seen as reliable.
 
@@ -153,13 +153,13 @@ vanilla : PersonX eats lunch at the same restaurant every day while eating lunch
 ************************
 
 input_format:
-Input: PersonX eats lunch at the same restaurant every day while <extra_id_0>, so PersonX is seen as reliable. ; Constraint: [midday, munch, brunch, lunchroom, lump], [no] ; Output:
+Input: PersonX eats lunch at the same restaurant every day while <extra_id_0>, so PersonX is seen as reliable. ; Constraint: [munch, brunch, midday, lunchroom, lump], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday'], ['not', 'no']]
 
 
-gpt : PersonX eats lunch at the same restaurant every day while None, so PersonX is seen as reliable.
+gpt : PersonX eats lunch at the same restaurant every day while PersonX is punctual, so PersonX is seen as reliable.
 neuro : PersonX eats lunch at the same restaurant every day while not having a lump, so PersonX is seen as reliable.
 vanilla : PersonX eats lunch at the same restaurant every day while no one else does, so PersonX is seen as reliable.
 
@@ -167,7 +167,7 @@ vanilla : PersonX eats lunch at the same restaurant every day while no one else 
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable. ; Constraint: [lump, lunchroom, brunch, munch, midday] ; Output:
+Input: <extra_id_0> but PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable. ; Constraint: [brunch, midday, munch, lunchroom, lump] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday']]
@@ -181,13 +181,13 @@ vanilla : PersonX eats lunch at noon but PersonX eats lunch at the same restaura
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable. ; Constraint: [munch, brunch, midday, lunchroom, lump], [no] ; Output:
+Input: <extra_id_0> but PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable. ; Constraint: [brunch, midday, lunchroom, lump, munch], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday'], ['not', 'no']]
 
 
-gpt : PersonX does not like to munch but PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.
+gpt : PersonX has no money but PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.
 neuro : PersonX does not munch but PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.
 vanilla : PersonX does not eat brunch but PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.
 
@@ -195,13 +195,13 @@ vanilla : PersonX does not eat brunch but PersonX eats lunch at the same restaur
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable. ; Constraint: [brunch, lump, midday, lunchroom, munch] ; Output:
+Input: Although <extra_id_0>, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable. ; Constraint: [lump, lunchroom, brunch, midday, munch] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday']]
 
 
-gpt : Although PersonX has lunch at midday, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.
+gpt : Although PersonX does not have much money, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.
 neuro : Although PersonX eats lunch at midday, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.
 vanilla : Although PersonX eats lunch at midday, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.
 
@@ -209,13 +209,13 @@ vanilla : Although PersonX eats lunch at midday, PersonX eats lunch at the same 
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable. ; Constraint: [munch, midday, brunch, lunchroom, lump], [no] ; Output:
+Input: Although <extra_id_0>, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable. ; Constraint: [brunch, lump, lunchroom, midday, munch], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['lunchrooms', 'lunchroom', 'lumped', 'lumping', 'lumps', 'lump', 'brunch', 'brunches', 'munching', 'munched', 'munch', 'munches', 'midday'], ['not', 'no']]
 
 
-gpt : Although munch is not brunch, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.
+gpt : Although PersonX is not in a good mood, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.
 neuro : Although PersonX does not eat lunch at midday, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.
 vanilla : Although PersonX does not have a lunchroom, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.
 
@@ -223,13 +223,13 @@ vanilla : Although PersonX does not have a lunchroom, PersonX eats lunch at the 
 ************************
 
 input_format:
-Input: PersonX promises to do anything for PersonY and <extra_id_0>, so PersonX feels happy. ; Constraint: [stipulate, promissory, renege, pledge, commitment] ; Output:
+Input: PersonX promises to do anything for PersonY and <extra_id_0>, so PersonX feels happy. ; Constraint: [renege, stipulate, pledge, commitment, promissory] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges']]
 
 
-gpt : PersonX promises to do anything for PersonY and does not renege on the promissory, so PersonX feels happy.
+gpt : PersonX promises to do anything for PersonY and PersonY keeps the promise, so PersonX feels happy.
 neuro : PersonX promises to do anything for PersonY and PersonY does not renege, so PersonX feels happy.
 vanilla : PersonX promises to do anything for PersonY and PersonY does not renege, so PersonX feels happy.
 
@@ -237,13 +237,13 @@ vanilla : PersonX promises to do anything for PersonY and PersonY does not reneg
 ************************
 
 input_format:
-Input: PersonX promises to do anything for PersonY and <extra_id_0>, so PersonX feels happy. ; Constraint: [stipulate, pledge, promissory, renege, commitment], [no] ; Output:
+Input: PersonX promises to do anything for PersonY and <extra_id_0>, so PersonX feels happy. ; Constraint: [stipulate, renege, pledge, promissory, commitment], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges'], ['not', 'no']]
 
 
-gpt : PersonX promises to do anything for PersonY and PersonY does not renege, so PersonX feels happy.
+gpt : PersonX promises to do anything for PersonY and PersonX does not renege on the promissory, so PersonX feels happy.
 neuro : PersonX promises to do anything for PersonY and PersonY does not renege, so PersonX feels happy.
 vanilla : PersonX promises to do anything for PersonY and PersonY does not renege, so PersonX feels happy.
 
@@ -251,13 +251,13 @@ vanilla : PersonX promises to do anything for PersonY and PersonY does not reneg
 ************************
 
 input_format:
-Input: PersonX promises to do anything for PersonY while <extra_id_0>, so PersonX feels happy. ; Constraint: [renege, commitment, stipulate, pledge, promissory] ; Output:
+Input: PersonX promises to do anything for PersonY while <extra_id_0>, so PersonX feels happy. ; Constraint: [stipulate, pledge, promissory, commitment, renege] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges']]
 
 
-gpt : PersonX promises to do anything for PersonY while making a commitment, so PersonX feels happy.
+gpt : PersonX promises to do anything for PersonY while PersonY is stipulate, so PersonX feels happy.
 neuro : PersonX promises to do anything for PersonY while PersonY does not renege, so PersonX feels happy.
 vanilla : PersonX promises to do anything for PersonY while PersonY does not renege, so PersonX feels happy.
 
@@ -265,13 +265,13 @@ vanilla : PersonX promises to do anything for PersonY while PersonY does not ren
 ************************
 
 input_format:
-Input: PersonX promises to do anything for PersonY while <extra_id_0>, so PersonX feels happy. ; Constraint: [renege, commitment, stipulate, pledge, promissory], [no] ; Output:
+Input: PersonX promises to do anything for PersonY while <extra_id_0>, so PersonX feels happy. ; Constraint: [stipulate, renege, commitment, promissory, pledge], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges'], ['not', 'no']]
 
 
-gpt : PersonX promises to do anything for PersonY while PersonX is not reneging on the pledge, so PersonX feels happy.
+gpt : PersonX promises to do anything for PersonY while PersonX does not renege on the promissory, so PersonX feels happy.
 neuro : PersonX promises to do anything for PersonY while PersonY does not stipulate, so PersonX feels happy.
 vanilla : PersonX promises to do anything for PersonY while PersonY does not stipulate, so PersonX feels happy.
 
@@ -279,13 +279,13 @@ vanilla : PersonX promises to do anything for PersonY while PersonY does not sti
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX promises to do anything for PersonY, so PersonX feels happy. ; Constraint: [stipulate, renege, pledge, commitment, promissory] ; Output:
+Input: <extra_id_0> but PersonX promises to do anything for PersonY, so PersonX feels happy. ; Constraint: [stipulate, pledge, commitment, promissory, renege] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges']]
 
 
-gpt : PersonX reneges on the promissory note but PersonX promises to do anything for PersonY, so PersonX feels happy.
+gpt : PersonX reneges on the promissory but PersonX promises to do anything for PersonY, so PersonX feels happy.
 neuro : PersonX does not renege but PersonX promises to do anything for PersonY, so PersonX feels happy.
 vanilla : PersonX is not committed but PersonX promises to do anything for PersonY, so PersonX feels happy.
 
@@ -293,13 +293,13 @@ vanilla : PersonX is not committed but PersonX promises to do anything for Perso
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX promises to do anything for PersonY, so PersonX feels happy. ; Constraint: [promissory, renege, commitment, stipulate, pledge], [no] ; Output:
+Input: <extra_id_0> but PersonX promises to do anything for PersonY, so PersonX feels happy. ; Constraint: [promissory, renege, stipulate, commitment, pledge], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges'], ['not', 'no']]
 
 
-gpt : PersonX stipulates no promissory pledge but PersonX promises to do anything for PersonY, so PersonX feels happy.
+gpt : PersonX stipulates conditions but PersonX promises to do anything for PersonY, so PersonX feels happy.
 neuro : PersonX does not pledge but PersonX promises to do anything for PersonY, so PersonX feels happy.
 vanilla : PersonX does not commit but PersonX promises to do anything for PersonY, so PersonX feels happy.
 
@@ -307,7 +307,7 @@ vanilla : PersonX does not commit but PersonX promises to do anything for Person
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX promises to do anything for PersonY, so PersonX feels happy. ; Constraint: [commitment, renege, stipulate, promissory, pledge] ; Output:
+Input: Although <extra_id_0>, PersonX promises to do anything for PersonY, so PersonX feels happy. ; Constraint: [stipulate, commitment, renege, pledge, promissory] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges']]
@@ -321,13 +321,13 @@ vanilla : Although PersonX is not committed, PersonX promises to do anything for
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX promises to do anything for PersonY, so PersonX feels happy. ; Constraint: [commitment, stipulate, renege, pledge, promissory], [no] ; Output:
+Input: Although <extra_id_0>, PersonX promises to do anything for PersonY, so PersonX feels happy. ; Constraint: [renege, stipulate, pledge, commitment, promissory], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges'], ['not', 'no']]
 
 
-gpt : Although PersonX is not a promissory person, PersonX promises to do anything for PersonY, so PersonX feels happy.
+gpt : Although PersonX reneges on the promissory note, PersonX promises to do anything for PersonY, so PersonX feels happy.
 neuro : Although PersonY does not pledge anything, PersonX promises to do anything for PersonY, so PersonX feels happy.
 vanilla : Although PersonX does not renege, PersonX promises to do anything for PersonY, so PersonX feels happy.
 
@@ -335,7 +335,7 @@ vanilla : Although PersonX does not renege, PersonX promises to do anything for 
 ************************
 
 input_format:
-Input: PersonX promises to do anything for PersonY and <extra_id_0>, so PersonX is seen as a good friend. ; Constraint: [stipulate, renege, commitment, pledge, promissory] ; Output:
+Input: PersonX promises to do anything for PersonY and <extra_id_0>, so PersonX is seen as a good friend. ; Constraint: [commitment, stipulate, promissory, pledge, renege] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges']]
@@ -349,13 +349,13 @@ vanilla : PersonX promises to do anything for PersonY and does not renege, so Pe
 ************************
 
 input_format:
-Input: PersonX promises to do anything for PersonY and <extra_id_0>, so PersonX is seen as a good friend. ; Constraint: [stipulate, commitment, pledge, promissory, renege], [no] ; Output:
+Input: PersonX promises to do anything for PersonY and <extra_id_0>, so PersonX is seen as a good friend. ; Constraint: [renege, promissory, stipulate, pledge, commitment], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges'], ['not', 'no']]
 
 
-gpt : PersonX promises to do anything for PersonY and does not renege, so PersonX is seen as a good friend.
+gpt : PersonX promises to do anything for PersonY and PersonX doesn't renege on the promissory, so PersonX is seen as a good friend.
 neuro : PersonX promises to do anything for PersonY and does not renege, so PersonX is seen as a good friend.
 vanilla : PersonX promises to do anything for PersonY and does not renege, so PersonX is seen as a good friend.
 
@@ -363,13 +363,13 @@ vanilla : PersonX promises to do anything for PersonY and does not renege, so Pe
 ************************
 
 input_format:
-Input: PersonX promises to do anything for PersonY while <extra_id_0>, so PersonX is seen as a good friend. ; Constraint: [renege, commitment, promissory, pledge, stipulate] ; Output:
+Input: PersonX promises to do anything for PersonY while <extra_id_0>, so PersonX is seen as a good friend. ; Constraint: [commitment, promissory, pledge, renege, stipulate] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges']]
 
 
-gpt : PersonX promises to do anything for PersonY while making a promissory pledge, so PersonX is seen as a good friend.
+gpt : PersonX promises to do anything for PersonY while making a promissory, so PersonX is seen as a good friend.
 neuro : PersonX promises to do anything for PersonY while PersonY does not renege, so PersonX is seen as a good friend.
 vanilla : PersonX promises to do anything for PersonY while PersonY does not renege, so PersonX is seen as a good friend.
 
@@ -377,13 +377,13 @@ vanilla : PersonX promises to do anything for PersonY while PersonY does not ren
 ************************
 
 input_format:
-Input: PersonX promises to do anything for PersonY while <extra_id_0>, so PersonX is seen as a good friend. ; Constraint: [promissory, pledge, commitment, stipulate, renege], [no] ; Output:
+Input: PersonX promises to do anything for PersonY while <extra_id_0>, so PersonX is seen as a good friend. ; Constraint: [commitment, renege, promissory, stipulate, pledge], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges'], ['not', 'no']]
 
 
-gpt : PersonX promises to do anything for PersonY while not reneging on the pledge, so PersonX is seen as a good friend.
+gpt : PersonX promises to do anything for PersonY while PersonX does not renege on the promissory, so PersonX is seen as a good friend.
 neuro : PersonX promises to do anything for PersonY while PersonY does not renege, so PersonX is seen as a good friend.
 vanilla : PersonX promises to do anything for PersonY while PersonY does not commit to anything, so PersonX is seen as a good friend.
 
@@ -391,7 +391,7 @@ vanilla : PersonX promises to do anything for PersonY while PersonY does not com
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX promises to do anything for PersonY, so PersonX is seen as a good friend. ; Constraint: [promissory, renege, pledge, commitment, stipulate] ; Output:
+Input: <extra_id_0> but PersonX promises to do anything for PersonY, so PersonX is seen as a good friend. ; Constraint: [pledge, commitment, promissory, renege, stipulate] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges']]
@@ -405,13 +405,13 @@ vanilla : PersonX is not committed but PersonX promises to do anything for Perso
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX promises to do anything for PersonY, so PersonX is seen as a good friend. ; Constraint: [renege, stipulate, promissory, commitment, pledge], [no] ; Output:
+Input: <extra_id_0> but PersonX promises to do anything for PersonY, so PersonX is seen as a good friend. ; Constraint: [renege, commitment, promissory, pledge, stipulate], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges'], ['not', 'no']]
 
 
-gpt : PersonX does not make a pledge but PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.
+gpt : PersonX reneges on the pledge but PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.
 neuro : PersonX does not stipulate but PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.
 vanilla : PersonX does not stipulate but PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.
 
@@ -419,13 +419,13 @@ vanilla : PersonX does not stipulate but PersonX promises to do anything for Per
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend. ; Constraint: [stipulate, commitment, promissory, pledge, renege] ; Output:
+Input: Although <extra_id_0>, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend. ; Constraint: [pledge, promissory, stipulate, commitment, renege] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges']]
 
 
-gpt : Although PersonX reneges on her commitment, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.
+gpt : Although PersonX reneges on her commitments, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.
 neuro : Although PersonY does not stipulate, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.
 vanilla : Although PersonY does not stipulate, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.
 
@@ -433,13 +433,13 @@ vanilla : Although PersonY does not stipulate, PersonX promises to do anything f
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend. ; Constraint: [commitment, pledge, stipulate, renege, promissory], [no] ; Output:
+Input: Although <extra_id_0>, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend. ; Constraint: [renege, promissory, pledge, commitment, stipulate], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['reneges', 'renege', 'reneging', 'reneged', 'commitments', 'commitment', 'stipulate', 'stipulated', 'stipulating', 'stipulates', 'promissory', 'pledged', 'pledge', 'pledging', 'pledges'], ['not', 'no']]
 
 
-gpt : Although None, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.
+gpt : Although PersonX reneges on her commitment, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.
 neuro : Although PersonY does not renege, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.
 vanilla : Although PersonY does not commit to anything, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.
 
@@ -447,13 +447,13 @@ vanilla : Although PersonY does not commit to anything, PersonX promises to do a
 ************************
 
 input_format:
-Input: PersonX finishes writing a novel and <extra_id_0>, so PersonX feels accomplished. ; Constraint: [fear, gavel, sherlock, newel, finland] ; Output:
+Input: PersonX finishes writing a novel and <extra_id_0>, so PersonX feels accomplished. ; Constraint: [fear, newel, sherlock, finland, gavel] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands']]
 
 
-gpt : PersonX finishes writing a novel and overcomes her fear, so PersonX feels accomplished.
+gpt : PersonX finishes writing a novel and overcomes her fears, so PersonX feels accomplished.
 neuro : PersonX finishes writing a novel and fears nothing, so PersonX feels accomplished.
 vanilla : PersonX finishes writing a novel and gets a newl, so PersonX feels accomplished.
 
@@ -461,13 +461,13 @@ vanilla : PersonX finishes writing a novel and gets a newl, so PersonX feels acc
 ************************
 
 input_format:
-Input: PersonX finishes writing a novel and <extra_id_0>, so PersonX feels accomplished. ; Constraint: [sherlock, fear, newel, gavel, finland], [no] ; Output:
+Input: PersonX finishes writing a novel and <extra_id_0>, so PersonX feels accomplished. ; Constraint: [finland, gavel, newel, sherlock, fear], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands'], ['not', 'no']]
 
 
-gpt : PersonX finishes writing a novel and no one finds any fear in it, so PersonX feels accomplished.
+gpt : PersonX finishes writing a novel and overcomes the fear of never being published, so PersonX feels accomplished.
 neuro : PersonX finishes writing a novel and no one fears Sherlock, so PersonX feels accomplished.
 vanilla : PersonX finishes writing a novel and no one reads it, so PersonX feels accomplished.
 
@@ -475,13 +475,13 @@ vanilla : PersonX finishes writing a novel and no one reads it, so PersonX feels
 ************************
 
 input_format:
-Input: PersonX finishes writing a novel while <extra_id_0>, so PersonX feels accomplished. ; Constraint: [gavel, newel, sherlock, finland, fear] ; Output:
+Input: PersonX finishes writing a novel while <extra_id_0>, so PersonX feels accomplished. ; Constraint: [gavel, fear, finland, newel, sherlock] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands']]
 
 
-gpt : PersonX finishes writing a novel while being in Finland, so PersonX feels accomplished.
+gpt : PersonX finishes writing a novel while holding a gavel, so PersonX feels accomplished.
 neuro : PersonX finishes writing a novel while sherlock is in Finland, so PersonX feels accomplished.
 vanilla : PersonX finishes writing a novel while living in Finland, so PersonX feels accomplished.
 
@@ -489,13 +489,13 @@ vanilla : PersonX finishes writing a novel while living in Finland, so PersonX f
 ************************
 
 input_format:
-Input: PersonX finishes writing a novel while <extra_id_0>, so PersonX feels accomplished. ; Constraint: [finland, gavel, fear, sherlock, newel], [no] ; Output:
+Input: PersonX finishes writing a novel while <extra_id_0>, so PersonX feels accomplished. ; Constraint: [finland, newel, fear, gavel, sherlock], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands'], ['not', 'no']]
 
 
-gpt : PersonX finishes writing a novel while None, so PersonX feels accomplished.
+gpt : PersonX finishes writing a novel while taking a break from work, so PersonX feels accomplished.
 neuro : PersonX finishes writing a novel while not fearing the gavel, so PersonX feels accomplished.
 vanilla : PersonX finishes writing a novel while in Finland, so PersonX feels accomplished.
 
@@ -503,13 +503,13 @@ vanilla : PersonX finishes writing a novel while in Finland, so PersonX feels ac
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX finishes writing a novel, so PersonX feels accomplished. ; Constraint: [newel, fear, finland, sherlock, gavel] ; Output:
+Input: <extra_id_0> but PersonX finishes writing a novel, so PersonX feels accomplished. ; Constraint: [finland, gavel, fear, sherlock, newel] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands']]
 
 
-gpt : PersonX is afraid of newel but PersonX finishes writing a novel, so PersonX feels accomplished.
+gpt : PersonX is afraid of writing a novel but PersonX finishes writing a novel, so PersonX feels accomplished.
 neuro : PersonX fears the gavel but PersonX finishes writing a novel, so PersonX feels accomplished.
 vanilla : PersonX is afraid but PersonX finishes writing a novel, so PersonX feels accomplished.
 
@@ -517,13 +517,13 @@ vanilla : PersonX is afraid but PersonX finishes writing a novel, so PersonX fee
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX finishes writing a novel, so PersonX feels accomplished. ; Constraint: [gavel, sherlock, newel, finland, fear], [no] ; Output:
+Input: <extra_id_0> but PersonX finishes writing a novel, so PersonX feels accomplished. ; Constraint: [sherlock, finland, gavel, newel, fear], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands'], ['not', 'no']]
 
 
-gpt : PersonX fears to write a novel but PersonX finishes writing a novel, so PersonX feels accomplished.
+gpt : No one buys PersonX's new book but PersonX finishes writing a novel, so PersonX feels accomplished.
 neuro : PersonX is not sherlock but PersonX finishes writing a novel, so PersonX feels accomplished.
 vanilla : PersonX is not in Finland but PersonX finishes writing a novel, so PersonX feels accomplished.
 
@@ -531,13 +531,13 @@ vanilla : PersonX is not in Finland but PersonX finishes writing a novel, so Per
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX finishes writing a novel, so PersonX feels accomplished. ; Constraint: [fear, gavel, newel, sherlock, finland] ; Output:
+Input: Although <extra_id_0>, PersonX finishes writing a novel, so PersonX feels accomplished. ; Constraint: [finland, newel, gavel, sherlock, fear] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands']]
 
 
-gpt : Although gavel is banged, PersonX finishes writing a novel, so PersonX feels accomplished.
+gpt : Although PersonX is afraid of writing a new novel, PersonX finishes writing a novel, so PersonX feels accomplished.
 neuro : Although PersonX is not a newel, PersonX finishes writing a novel, so PersonX feels accomplished.
 vanilla : Although PersonX is not Sherlock, PersonX finishes writing a novel, so PersonX feels accomplished.
 
@@ -545,13 +545,13 @@ vanilla : Although PersonX is not Sherlock, PersonX finishes writing a novel, so
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX finishes writing a novel, so PersonX feels accomplished. ; Constraint: [sherlock, gavel, finland, newel, fear], [no] ; Output:
+Input: Although <extra_id_0>, PersonX finishes writing a novel, so PersonX feels accomplished. ; Constraint: [fear, finland, newel, gavel, sherlock], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands'], ['not', 'no']]
 
 
-gpt : Although None, PersonX finishes writing a novel, so PersonX feels accomplished.
+gpt : Although PersonX is not a native English speaker, PersonX finishes writing a novel, so PersonX feels accomplished.
 neuro : Although PersonX is not a sherlock, PersonX finishes writing a novel, so PersonX feels accomplished.
 vanilla : Although PersonX is not in Finland, PersonX finishes writing a novel, so PersonX feels accomplished.
 
@@ -559,13 +559,13 @@ vanilla : Although PersonX is not in Finland, PersonX finishes writing a novel, 
 ************************
 
 input_format:
-Input: PersonX finishes writing a novel and <extra_id_0>, so PersonX is seen as talented. ; Constraint: [sherlock, newel, fear, gavel, finland] ; Output:
+Input: PersonX finishes writing a novel and <extra_id_0>, so PersonX is seen as talented. ; Constraint: [fear, finland, sherlock, newel, gavel] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands']]
 
 
-gpt : PersonX finishes writing a novel and becomes fearlessly confident, so PersonX is seen as talented.
+gpt : PersonX finishes writing a novel and submits it to the publisher, so PersonX is seen as talented.
 neuro : PersonX finishes writing a novel and gets a gavel, so PersonX is seen as talented.
 vanilla : PersonX finishes writing a novel and gets a newl, so PersonX is seen as talented.
 
@@ -573,13 +573,13 @@ vanilla : PersonX finishes writing a novel and gets a newl, so PersonX is seen a
 ************************
 
 input_format:
-Input: PersonX finishes writing a novel and <extra_id_0>, so PersonX is seen as talented. ; Constraint: [gavel, finland, sherlock, fear, newel], [no] ; Output:
+Input: PersonX finishes writing a novel and <extra_id_0>, so PersonX is seen as talented. ; Constraint: [newel, fear, finland, gavel, sherlock], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands'], ['not', 'no']]
 
 
-gpt : PersonX finishes writing a novel and None, so PersonX is seen as talented.
+gpt : PersonX finishes writing a novel and becomes a famous writer, so PersonX is seen as talented.
 neuro : PersonX finishes writing a novel and has no fear, so PersonX is seen as talented.
 vanilla : PersonX finishes writing a novel and no one is afraid of her, so PersonX is seen as talented.
 
@@ -587,13 +587,13 @@ vanilla : PersonX finishes writing a novel and no one is afraid of her, so Perso
 ************************
 
 input_format:
-Input: PersonX finishes writing a novel while <extra_id_0>, so PersonX is seen as talented. ; Constraint: [sherlock, fear, gavel, newel, finland] ; Output:
+Input: PersonX finishes writing a novel while <extra_id_0>, so PersonX is seen as talented. ; Constraint: [newel, finland, fear, gavel, sherlock] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands']]
 
 
-gpt : PersonX finishes writing a novel while being inspired by Sherlock Holmes, so PersonX is seen as talented.
+gpt : PersonX finishes writing a novel while being in fear, so PersonX is seen as talented.
 neuro : PersonX finishes writing a novel while fearing the gavel, so PersonX is seen as talented.
 vanilla : PersonX finishes writing a novel while living in Finland, so PersonX is seen as talented.
 
@@ -601,13 +601,13 @@ vanilla : PersonX finishes writing a novel while living in Finland, so PersonX i
 ************************
 
 input_format:
-Input: PersonX finishes writing a novel while <extra_id_0>, so PersonX is seen as talented. ; Constraint: [finland, sherlock, fear, gavel, newel], [no] ; Output:
+Input: PersonX finishes writing a novel while <extra_id_0>, so PersonX is seen as talented. ; Constraint: [sherlock, fear, newel, gavel, finland], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands'], ['not', 'no']]
 
 
-gpt : PersonX finishes writing a novel while None, so PersonX is seen as talented.
+gpt : PersonX finishes writing a novel while being in a foreign country, so PersonX is seen as talented.
 neuro : PersonX finishes writing a novel while having no fear, so PersonX is seen as talented.
 vanilla : PersonX finishes writing a novel while wearing a gavel, so PersonX is seen as talented.
 
@@ -615,13 +615,13 @@ vanilla : PersonX finishes writing a novel while wearing a gavel, so PersonX is 
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX finishes writing a novel, so PersonX is seen as talented. ; Constraint: [fear, newel, sherlock, finland, gavel] ; Output:
+Input: <extra_id_0> but PersonX finishes writing a novel, so PersonX is seen as talented. ; Constraint: [fear, gavel, sherlock, newel, finland] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands']]
 
 
-gpt : PersonX has never been to Finland but PersonX finishes writing a novel, so PersonX is seen as talented.
+gpt : PersonX is a new writer but PersonX finishes writing a novel, so PersonX is seen as talented.
 neuro : PersonX has no fear but PersonX finishes writing a novel, so PersonX is seen as talented.
 vanilla : PersonX is not Sherlock but PersonX finishes writing a novel, so PersonX is seen as talented.
 
@@ -629,13 +629,13 @@ vanilla : PersonX is not Sherlock but PersonX finishes writing a novel, so Perso
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX finishes writing a novel, so PersonX is seen as talented. ; Constraint: [newel, gavel, sherlock, finland, fear], [no] ; Output:
+Input: <extra_id_0> but PersonX finishes writing a novel, so PersonX is seen as talented. ; Constraint: [sherlock, newel, finland, fear, gavel], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands'], ['not', 'no']]
 
 
-gpt : No newel post is provided but PersonX finishes writing a novel, so PersonX is seen as talented.
+gpt : No one reads PersonX's novel but PersonX finishes writing a novel, so PersonX is seen as talented.
 neuro : PersonX does not fear Sherlock but PersonX finishes writing a novel, so PersonX is seen as talented.
 vanilla : PersonX has no fear but PersonX finishes writing a novel, so PersonX is seen as talented.
 
@@ -643,13 +643,13 @@ vanilla : PersonX has no fear but PersonX finishes writing a novel, so PersonX i
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX finishes writing a novel, so PersonX is seen as talented. ; Constraint: [sherlock, newel, fear, gavel, finland] ; Output:
+Input: Although <extra_id_0>, PersonX finishes writing a novel, so PersonX is seen as talented. ; Constraint: [newel, finland, gavel, fear, sherlock] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands']]
 
 
-gpt : Although None, PersonX finishes writing a novel, so PersonX is seen as talented.
+gpt : Although PersonX is not well-known in Finland, PersonX finishes writing a novel, so PersonX is seen as talented.
 neuro : Although PersonX fears Sherlock, PersonX finishes writing a novel, so PersonX is seen as talented.
 vanilla : Although PersonX is afraid of Sherlock, PersonX finishes writing a novel, so PersonX is seen as talented.
 
@@ -657,13 +657,13 @@ vanilla : Although PersonX is afraid of Sherlock, PersonX finishes writing a nov
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX finishes writing a novel, so PersonX is seen as talented. ; Constraint: [fear, newel, finland, gavel, sherlock], [no] ; Output:
+Input: Although <extra_id_0>, PersonX finishes writing a novel, so PersonX is seen as talented. ; Constraint: [finland, fear, newel, gavel, sherlock], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['sherlocks', 'sherlocking', 'sherlock', 'sherlocked', 'fearing', 'feared', 'fear', 'fears', 'gaveled', 'gavels', 'gaveling', 'gavel', 'neweling', 'newel', 'newels', 'neweled', 'finlanded', 'finlanding', 'finland', 'finlands'], ['not', 'no']]
 
 
-gpt : Although PersonX does not know finland, PersonX finishes writing a novel, so PersonX is seen as talented.
+gpt : Although PersonX has never written a novel before, PersonX finishes writing a novel, so PersonX is seen as talented.
 neuro : Although PersonX is not a sherlock, PersonX finishes writing a novel, so PersonX is seen as talented.
 vanilla : Although PersonX is not a newel, PersonX finishes writing a novel, so PersonX is seen as talented.
 
@@ -671,13 +671,13 @@ vanilla : Although PersonX is not a newel, PersonX finishes writing a novel, so 
 ************************
 
 input_format:
-Input: PersonX builds a small house for PersonY and <extra_id_0>, so PersonX is seen as a good builder. ; Constraint: [bedroom, store, building, school, man] ; Output:
+Input: PersonX builds a small house for PersonY and <extra_id_0>, so PersonX is seen as a good builder. ; Constraint: [store, school, man, building, bedroom] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing']]
 
 
-gpt : PersonX builds a small house for PersonY and the store, so PersonX is seen as a good builder.
+gpt : PersonX builds a small house for PersonY and the house is very cozy, so PersonX is seen as a good builder.
 neuro : PersonX builds a small house for PersonY and a store for PersonY, so PersonX is seen as a good builder.
 vanilla : PersonX builds a small house for PersonY and it has a bedroom, so PersonX is seen as a good builder.
 
@@ -685,13 +685,13 @@ vanilla : PersonX builds a small house for PersonY and it has a bedroom, so Pers
 ************************
 
 input_format:
-Input: PersonX builds a small house for PersonY and <extra_id_0>, so PersonX is seen as a good builder. ; Constraint: [man, school, store, bedroom, building], [no] ; Output:
+Input: PersonX builds a small house for PersonY and <extra_id_0>, so PersonX is seen as a good builder. ; Constraint: [bedroom, store, building, man, school], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing'], ['not', 'no']]
 
 
-gpt : PersonX builds a small house for PersonY and no one complains about the building, so PersonX is seen as a good builder.
+gpt : PersonX builds a small house for PersonY and the house looks good, so PersonX is seen as a good builder.
 neuro : PersonX builds a small house for PersonY and no man lives in it, so PersonX is seen as a good builder.
 vanilla : PersonX builds a small house for PersonY and no one uses it, so PersonX is seen as a good builder.
 
@@ -699,7 +699,7 @@ vanilla : PersonX builds a small house for PersonY and no one uses it, so Person
 ************************
 
 input_format:
-Input: PersonX builds a small house for PersonY while <extra_id_0>, so PersonX is seen as a good builder. ; Constraint: [bedroom, building, man, store, school] ; Output:
+Input: PersonX builds a small house for PersonY while <extra_id_0>, so PersonX is seen as a good builder. ; Constraint: [bedroom, building, man, school, store] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing']]
@@ -713,13 +713,13 @@ vanilla : PersonX builds a small house for PersonY while saving money, so Person
 ************************
 
 input_format:
-Input: PersonX builds a small house for PersonY while <extra_id_0>, so PersonX is seen as a good builder. ; Constraint: [bedroom, store, man, building, school], [no] ; Output:
+Input: PersonX builds a small house for PersonY while <extra_id_0>, so PersonX is seen as a good builder. ; Constraint: [school, store, man, bedroom, building], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing'], ['not', 'no']]
 
 
-gpt : PersonX builds a small house for PersonY while PersonX is not a man, so PersonX is seen as a good builder.
+gpt : PersonX builds a small house for PersonY while PersonX is the only man in the school, so PersonX is seen as a good builder.
 neuro : PersonX builds a small house for PersonY while PersonY does not have a bedroom, so PersonX is seen as a good builder.
 vanilla : PersonX builds a small house for PersonY while PersonY is not a man, so PersonX is seen as a good builder.
 
@@ -727,13 +727,13 @@ vanilla : PersonX builds a small house for PersonY while PersonY is not a man, s
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX builds a small house for PersonY, so PersonX is seen as a good builder. ; Constraint: [school, store, building, man, bedroom] ; Output:
+Input: <extra_id_0> but PersonX builds a small house for PersonY, so PersonX is seen as a good builder. ; Constraint: [school, store, man, building, bedroom] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing']]
 
 
-gpt : PersonX's school is a small building but PersonX builds a small house for PersonY, so PersonX is seen as a good builder.
+gpt : PersonX has no experience but PersonX builds a small house for PersonY, so PersonX is seen as a good builder.
 neuro : PersonX has no school but PersonX builds a small house for PersonY, so PersonX is seen as a good builder.
 vanilla : PersonX has no store but PersonX builds a small house for PersonY, so PersonX is seen as a good builder.
 
@@ -741,13 +741,13 @@ vanilla : PersonX has no store but PersonX builds a small house for PersonY, so 
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX builds a small house for PersonY, so PersonX is seen as a good builder. ; Constraint: [bedroom, building, store, school, man], [no] ; Output:
+Input: <extra_id_0> but PersonX builds a small house for PersonY, so PersonX is seen as a good builder. ; Constraint: [man, school, building, store, bedroom], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing'], ['not', 'no']]
 
 
-gpt : PersonX is not a man but PersonX builds a small house for PersonY, so PersonX is seen as a good builder.
+gpt : Although PersonX is not a  but PersonX builds a small house for PersonY, so PersonX is seen as a good builder.
 neuro : PersonX has no store but PersonX builds a small house for PersonY, so PersonX is seen as a good builder.
 vanilla : PersonX has no bedroom but PersonX builds a small house for PersonY, so PersonX is seen as a good builder.
 
@@ -755,7 +755,7 @@ vanilla : PersonX has no bedroom but PersonX builds a small house for PersonY, s
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX builds a small house for PersonY, so PersonX is seen as a good builder. ; Constraint: [store, school, bedroom, man, building] ; Output:
+Input: Although <extra_id_0>, PersonX builds a small house for PersonY, so PersonX is seen as a good builder. ; Constraint: [school, store, building, bedroom, man] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing']]
@@ -769,13 +769,13 @@ vanilla : Although PersonX is not a good builder, PersonX builds a small house f
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX builds a small house for PersonY, so PersonX is seen as a good builder. ; Constraint: [school, store, bedroom, man, building], [no] ; Output:
+Input: Although <extra_id_0>, PersonX builds a small house for PersonY, so PersonX is seen as a good builder. ; Constraint: [school, bedroom, store, man, building], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing'], ['not', 'no']]
 
 
-gpt : Although PersonX has no experience in building, PersonX builds a small house for PersonY, so PersonX is seen as a good builder.
+gpt : Although PersonX is not a man, PersonX builds a small house for PersonY, so PersonX is seen as a good builder.
 neuro : Although PersonX does not have a building, PersonX builds a small house for PersonY, so PersonX is seen as a good builder.
 vanilla : Although PersonX does not have a building, PersonX builds a small house for PersonY, so PersonX is seen as a good builder.
 
@@ -783,13 +783,13 @@ vanilla : Although PersonX does not have a building, PersonX builds a small hous
 ************************
 
 input_format:
-Input: PersonX builds a small house for PersonY and <extra_id_0>, so PersonX feels accomplished. ; Constraint: [store, man, building, school, bedroom] ; Output:
+Input: PersonX builds a small house for PersonY and <extra_id_0>, so PersonX feels accomplished. ; Constraint: [bedroom, school, store, building, man] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing']]
 
 
-gpt : PersonX builds a small house for PersonY and her man, so PersonX feels accomplished.
+gpt : PersonX builds a small house for PersonY and sees PersonY's happy face, so PersonX feels accomplished.
 neuro : PersonX builds a small house for PersonY and opens a store, so PersonX feels accomplished.
 vanilla : PersonX builds a small house for PersonY and sells it to a man, so PersonX feels accomplished.
 
@@ -797,13 +797,13 @@ vanilla : PersonX builds a small house for PersonY and sells it to a man, so Per
 ************************
 
 input_format:
-Input: PersonX builds a small house for PersonY and <extra_id_0>, so PersonX feels accomplished. ; Constraint: [man, bedroom, school, store, building], [no] ; Output:
+Input: PersonX builds a small house for PersonY and <extra_id_0>, so PersonX feels accomplished. ; Constraint: [school, building, bedroom, store, man], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing'], ['not', 'no']]
 
 
-gpt : PersonX builds a small house for PersonY and no one is absent from the building, so PersonX feels accomplished.
+gpt : PersonX builds a small house for PersonY and PersonY is a man, so PersonX feels accomplished.
 neuro : PersonX builds a small house for PersonY and has no bedroom, so PersonX feels accomplished.
 vanilla : PersonX builds a small house for PersonY and no one uses it, so PersonX feels accomplished.
 
@@ -811,13 +811,13 @@ vanilla : PersonX builds a small house for PersonY and no one uses it, so Person
 ************************
 
 input_format:
-Input: PersonX builds a small house for PersonY while <extra_id_0>, so PersonX feels accomplished. ; Constraint: [school, store, building, man, bedroom] ; Output:
+Input: PersonX builds a small house for PersonY while <extra_id_0>, so PersonX feels accomplished. ; Constraint: [bedroom, store, building, school, man] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing']]
 
 
-gpt : PersonX builds a small house for PersonY while PersonY is at school, so PersonX feels accomplished.
+gpt : PersonX builds a small house for PersonY while PersonX is in school, so PersonX feels accomplished.
 neuro : PersonX builds a small house for PersonY while going to school, so PersonX feels accomplished.
 vanilla : PersonX builds a small house for PersonY while going to school, so PersonX feels accomplished.
 
@@ -825,13 +825,13 @@ vanilla : PersonX builds a small house for PersonY while going to school, so Per
 ************************
 
 input_format:
-Input: PersonX builds a small house for PersonY while <extra_id_0>, so PersonX feels accomplished. ; Constraint: [building, school, man, store, bedroom], [no] ; Output:
+Input: PersonX builds a small house for PersonY while <extra_id_0>, so PersonX feels accomplished. ; Constraint: [man, school, bedroom, store, building], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing'], ['not', 'no']]
 
 
-gpt : PersonX builds a small house for PersonY while None, so PersonX feels accomplished.
+gpt : PersonX builds a small house for PersonY while PersonY is at school, so PersonX feels accomplished.
 neuro : PersonX builds a small house for PersonY while PersonY is not in school, so PersonX feels accomplished.
 vanilla : PersonX builds a small house for PersonY while PersonY is not a man, so PersonX feels accomplished.
 
@@ -839,13 +839,13 @@ vanilla : PersonX builds a small house for PersonY while PersonY is not a man, s
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX builds a small house for PersonY, so PersonX feels accomplished. ; Constraint: [store, building, school, bedroom, man] ; Output:
+Input: <extra_id_0> but PersonX builds a small house for PersonY, so PersonX feels accomplished. ; Constraint: [building, bedroom, man, store, school] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing']]
 
 
-gpt : PersonX is not a construction man but PersonX builds a small house for PersonY, so PersonX feels accomplished.
+gpt : PersonX is a man but PersonX builds a small house for PersonY, so PersonX feels accomplished.
 neuro : PersonX has no store but PersonX builds a small house for PersonY, so PersonX feels accomplished.
 vanilla : PersonX has no bedroom but PersonX builds a small house for PersonY, so PersonX feels accomplished.
 
@@ -853,13 +853,13 @@ vanilla : PersonX has no bedroom but PersonX builds a small house for PersonY, s
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX builds a small house for PersonY, so PersonX feels accomplished. ; Constraint: [bedroom, man, building, store, school], [no] ; Output:
+Input: <extra_id_0> but PersonX builds a small house for PersonY, so PersonX feels accomplished. ; Constraint: [building, school, man, store, bedroom], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing'], ['not', 'no']]
 
 
-gpt : PersonX is not a man but PersonX builds a small house for PersonY, so PersonX feels accomplished.
+gpt : Although PersonX is not a  but PersonX builds a small house for PersonY, so PersonX feels accomplished.
 neuro : PersonX has no building but PersonX builds a small house for PersonY, so PersonX feels accomplished.
 vanilla : PersonX is not a man but PersonX builds a small house for PersonY, so PersonX feels accomplished.
 
@@ -867,7 +867,7 @@ vanilla : PersonX is not a man but PersonX builds a small house for PersonY, so 
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX builds a small house for PersonY, so PersonX feels accomplished. ; Constraint: [school, bedroom, store, building, man] ; Output:
+Input: Although <extra_id_0>, PersonX builds a small house for PersonY, so PersonX feels accomplished. ; Constraint: [bedroom, man, store, school, building] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing']]
@@ -881,13 +881,13 @@ vanilla : Although PersonX is not in school, PersonX builds a small house for Pe
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX builds a small house for PersonY, so PersonX feels accomplished. ; Constraint: [bedroom, man, store, building, school], [no] ; Output:
+Input: Although <extra_id_0>, PersonX builds a small house for PersonY, so PersonX feels accomplished. ; Constraint: [bedroom, man, school, store, building], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['man', 'men', 'mans', 'manned', 'manning', 'schools', 'schooling', 'school', 'schooled', 'buildings', 'building', 'bedrooms', 'bedroom', 'store', 'stores', 'stored', 'storing'], ['not', 'no']]
 
 
-gpt : Although PersonX is not allowed to build on school property, PersonX builds a small house for PersonY, so PersonX feels accomplished.
+gpt : Although PersonX is not a construction worker, PersonX builds a small house for PersonY, so PersonX feels accomplished.
 neuro : Although PersonX does not have a bedroom, PersonX builds a small house for PersonY, so PersonX feels accomplished.
 vanilla : Although PersonX does not have a store, PersonX builds a small house for PersonY, so PersonX feels accomplished.
 
@@ -895,13 +895,13 @@ vanilla : Although PersonX does not have a store, PersonX builds a small house f
 ************************
 
 input_format:
-Input: PersonX cooks PersonY some food and <extra_id_0>, so PersonX feels good. ; Constraint: [menu, cookie, meat, fuel, cookfire] ; Output:
+Input: PersonX cooks PersonY some food and <extra_id_0>, so PersonX feels good. ; Constraint: [menu, fuel, cookfire, meat, cookie] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat']]
 
 
-gpt : PersonX cooks PersonY some food and menu, so PersonX feels good.
+gpt : PersonX cooks PersonY some food and PersonX uses the cookfire, so PersonX feels good.
 neuro : PersonX cooks PersonY some food and eats some meat, so PersonX feels good.
 vanilla : PersonX cooks PersonY some food and eats it, so PersonX feels good.
 
@@ -909,13 +909,13 @@ vanilla : PersonX cooks PersonY some food and eats it, so PersonX feels good.
 ************************
 
 input_format:
-Input: PersonX cooks PersonY some food and <extra_id_0>, so PersonX feels good. ; Constraint: [meat, fuel, menu, cookie, cookfire], [no] ; Output:
+Input: PersonX cooks PersonY some food and <extra_id_0>, so PersonX feels good. ; Constraint: [fuel, menu, cookfire, meat, cookie], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat'], ['not', 'no']]
 
 
-gpt : PersonX cooks PersonY some food and None, so PersonX feels good.
+gpt : PersonX cooks PersonY some food and PersonY likes it, so PersonX feels good.
 neuro : PersonX cooks PersonY some food and no meat is on the menu, so PersonX feels good.
 vanilla : PersonX cooks PersonY some food and no one eats it, so PersonX feels good.
 
@@ -923,13 +923,13 @@ vanilla : PersonX cooks PersonY some food and no one eats it, so PersonX feels g
 ************************
 
 input_format:
-Input: PersonX cooks PersonY some food while <extra_id_0>, so PersonX feels good. ; Constraint: [cookfire, fuel, menu, meat, cookie] ; Output:
+Input: PersonX cooks PersonY some food while <extra_id_0>, so PersonX feels good. ; Constraint: [cookie, meat, menu, cookfire, fuel] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat']]
 
 
-gpt : PersonX cooks PersonY some food while looking at the menu, so PersonX feels good.
+gpt : PersonX cooks PersonY some food while being in the kitchen, so PersonX feels good.
 neuro : PersonX cooks PersonY some food while eating a cookie, so PersonX feels good.
 vanilla : PersonX cooks PersonY some food while eating a cookie, so PersonX feels good.
 
@@ -937,13 +937,13 @@ vanilla : PersonX cooks PersonY some food while eating a cookie, so PersonX feel
 ************************
 
 input_format:
-Input: PersonX cooks PersonY some food while <extra_id_0>, so PersonX feels good. ; Constraint: [meat, cookfire, menu, cookie, fuel], [no] ; Output:
+Input: PersonX cooks PersonY some food while <extra_id_0>, so PersonX feels good. ; Constraint: [fuel, cookfire, menu, meat, cookie], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat'], ['not', 'no']]
 
 
-gpt : PersonX cooks PersonY some food while not using the menu, so PersonX feels good.
+gpt : PersonX cooks PersonY some food while PersonY is not looking, so PersonX feels good.
 neuro : PersonX cooks PersonY some food while PersonY has no cookie, so PersonX feels good.
 vanilla : PersonX cooks PersonY some food while PersonY is not hungry, so PersonX feels good.
 
@@ -951,13 +951,13 @@ vanilla : PersonX cooks PersonY some food while PersonY is not hungry, so Person
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX cooks PersonY some food, so PersonX feels good. ; Constraint: [meat, cookfire, fuel, cookie, menu] ; Output:
+Input: <extra_id_0> but PersonX cooks PersonY some food, so PersonX feels good. ; Constraint: [fuel, menu, cookie, cookfire, meat] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat']]
 
 
-gpt : PersonX does not have a cookfire but PersonX cooks PersonY some food, so PersonX feels good.
+gpt : PersonX has no menu but PersonX cooks PersonY some food, so PersonX feels good.
 neuro : PersonY has no menu but PersonX cooks PersonY some food, so PersonX feels good.
 vanilla : PersonY has no cookie but PersonX cooks PersonY some food, so PersonX feels good.
 
@@ -965,13 +965,13 @@ vanilla : PersonY has no cookie but PersonX cooks PersonY some food, so PersonX 
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX cooks PersonY some food, so PersonX feels good. ; Constraint: [cookfire, cookie, menu, fuel, meat], [no] ; Output:
+Input: <extra_id_0> but PersonX cooks PersonY some food, so PersonX feels good. ; Constraint: [meat, cookie, cookfire, fuel, menu], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat'], ['not', 'no']]
 
 
-gpt : PersonX has no meat but PersonX cooks PersonY some food, so PersonX feels good.
+gpt : Although there is no m but PersonX cooks PersonY some food, so PersonX feels good.
 neuro : PersonY does not have any meat but PersonX cooks PersonY some food, so PersonX feels good.
 vanilla : PersonY does not eat meat but PersonX cooks PersonY some food, so PersonX feels good.
 
@@ -979,13 +979,13 @@ vanilla : PersonY does not eat meat but PersonX cooks PersonY some food, so Pers
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX cooks PersonY some food, so PersonX feels good. ; Constraint: [fuel, menu, cookie, meat, cookfire] ; Output:
+Input: Although <extra_id_0>, PersonX cooks PersonY some food, so PersonX feels good. ; Constraint: [menu, meat, fuel, cookfire, cookie] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat']]
 
 
-gpt : Although PersonX has no meat, PersonX cooks PersonY some food, so PersonX feels good.
+gpt : Although PersonX uses meat in the menu, PersonX cooks PersonY some food, so PersonX feels good.
 neuro : Although PersonY has no cookfire, PersonX cooks PersonY some food, so PersonX feels good.
 vanilla : Although PersonY has no cookie, PersonX cooks PersonY some food, so PersonX feels good.
 
@@ -993,13 +993,13 @@ vanilla : Although PersonY has no cookie, PersonX cooks PersonY some food, so Pe
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX cooks PersonY some food, so PersonX feels good. ; Constraint: [menu, cookie, cookfire, meat, fuel], [no] ; Output:
+Input: Although <extra_id_0>, PersonX cooks PersonY some food, so PersonX feels good. ; Constraint: [cookie, fuel, cookfire, menu, meat], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat'], ['not', 'no']]
 
 
-gpt : Although PersonX cannot find the menu, PersonX cooks PersonY some food, so PersonX feels good.
+gpt : Although there is no cookie, PersonX cooks PersonY some food, so PersonX feels good.
 neuro : Although PersonY has no cookie, PersonX cooks PersonY some food, so PersonX feels good.
 vanilla : Although PersonY does not have any fuel, PersonX cooks PersonY some food, so PersonX feels good.
 
@@ -1007,13 +1007,13 @@ vanilla : Although PersonY does not have any fuel, PersonX cooks PersonY some fo
 ************************
 
 input_format:
-Input: PersonX cooks PersonY some food and <extra_id_0>, so PersonX is seen as a good cook. ; Constraint: [cookfire, menu, cookie, meat, fuel] ; Output:
+Input: PersonX cooks PersonY some food and <extra_id_0>, so PersonX is seen as a good cook. ; Constraint: [menu, fuel, cookfire, cookie, meat] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat']]
 
 
-gpt : PersonX cooks PersonY some food and uses a lot of fuel, so PersonX is seen as a good cook.
+gpt : PersonX cooks PersonY some food and PersonY loves it, so PersonX is seen as a good cook.
 neuro : PersonX cooks PersonY some food and the menu is good, so PersonX is seen as a good cook.
 vanilla : PersonX cooks PersonY some food and PersonY likes it, so PersonX is seen as a good cook.
 
@@ -1021,13 +1021,13 @@ vanilla : PersonX cooks PersonY some food and PersonY likes it, so PersonX is se
 ************************
 
 input_format:
-Input: PersonX cooks PersonY some food and <extra_id_0>, so PersonX is seen as a good cook. ; Constraint: [menu, cookie, cookfire, fuel, meat], [no] ; Output:
+Input: PersonX cooks PersonY some food and <extra_id_0>, so PersonX is seen as a good cook. ; Constraint: [menu, cookie, fuel, meat, cookfire], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat'], ['not', 'no']]
 
 
-gpt : PersonX cooks PersonY some food and None, so PersonX is seen as a good cook.
+gpt : PersonX cooks PersonY some food and PersonY likes it, so PersonX is seen as a good cook.
 neuro : PersonX cooks PersonY some food and PersonY does not use any fuel, so PersonX is seen as a good cook.
 vanilla : PersonX cooks PersonY some food and no one complains, so PersonX is seen as a good cook.
 
@@ -1035,13 +1035,13 @@ vanilla : PersonX cooks PersonY some food and no one complains, so PersonX is se
 ************************
 
 input_format:
-Input: PersonX cooks PersonY some food while <extra_id_0>, so PersonX is seen as a good cook. ; Constraint: [cookfire, menu, meat, cookie, fuel] ; Output:
+Input: PersonX cooks PersonY some food while <extra_id_0>, so PersonX is seen as a good cook. ; Constraint: [menu, cookie, fuel, meat, cookfire] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat']]
 
 
-gpt : PersonX cooks PersonY some food while using the right menu, so PersonX is seen as a good cook.
+gpt : PersonX cooks PersonY some food while following the menu, so PersonX is seen as a good cook.
 neuro : PersonX cooks PersonY some food while using a cookfire, so PersonX is seen as a good cook.
 vanilla : PersonX cooks PersonY some food while using a cookfire, so PersonX is seen as a good cook.
 
@@ -1049,13 +1049,13 @@ vanilla : PersonX cooks PersonY some food while using a cookfire, so PersonX is 
 ************************
 
 input_format:
-Input: PersonX cooks PersonY some food while <extra_id_0>, so PersonX is seen as a good cook. ; Constraint: [fuel, cookfire, menu, cookie, meat], [no] ; Output:
+Input: PersonX cooks PersonY some food while <extra_id_0>, so PersonX is seen as a good cook. ; Constraint: [meat, cookie, fuel, menu, cookfire], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat'], ['not', 'no']]
 
 
-gpt : PersonX cooks PersonY some food while not using any fancy menu, so PersonX is seen as a good cook.
+gpt : PersonX cooks PersonY some food while making sure the menu is complete, so PersonX is seen as a good cook.
 neuro : PersonX cooks PersonY some food while using no fuel, so PersonX is seen as a good cook.
 vanilla : PersonX cooks PersonY some food while PersonY has no cookie, so PersonX is seen as a good cook.
 
@@ -1063,13 +1063,13 @@ vanilla : PersonX cooks PersonY some food while PersonY has no cookie, so Person
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX cooks PersonY some food, so PersonX is seen as a good cook. ; Constraint: [cookfire, fuel, cookie, menu, meat] ; Output:
+Input: <extra_id_0> but PersonX cooks PersonY some food, so PersonX is seen as a good cook. ; Constraint: [menu, meat, cookfire, cookie, fuel] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat']]
 
 
-gpt : PersonX uses some meat but PersonX cooks PersonY some food, so PersonX is seen as a good cook.
+gpt : Even though PersonX is not a professional c but PersonX cooks PersonY some food, so PersonX is seen as a good cook.
 neuro : PersonX has no cookie but PersonX cooks PersonY some food, so PersonX is seen as a good cook.
 vanilla : PersonX has no cookfire but PersonX cooks PersonY some food, so PersonX is seen as a good cook.
 
@@ -1077,13 +1077,13 @@ vanilla : PersonX has no cookfire but PersonX cooks PersonY some food, so Person
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX cooks PersonY some food, so PersonX is seen as a good cook. ; Constraint: [meat, cookfire, fuel, cookie, menu], [no] ; Output:
+Input: <extra_id_0> but PersonX cooks PersonY some food, so PersonX is seen as a good cook. ; Constraint: [menu, meat, fuel, cookfire, cookie], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat'], ['not', 'no']]
 
 
-gpt : No meat is available but PersonX cooks PersonY some food, so PersonX is seen as a good cook.
+gpt : Although there is no m but PersonX cooks PersonY some food, so PersonX is seen as a good cook.
 neuro : PersonX does not cook meat but PersonX cooks PersonY some food, so PersonX is seen as a good cook.
 vanilla : PersonX does not cook meat but PersonX cooks PersonY some food, so PersonX is seen as a good cook.
 
@@ -1091,13 +1091,13 @@ vanilla : PersonX does not cook meat but PersonX cooks PersonY some food, so Per
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX cooks PersonY some food, so PersonX is seen as a good cook. ; Constraint: [meat, cookfire, cookie, fuel, menu] ; Output:
+Input: Although <extra_id_0>, PersonX cooks PersonY some food, so PersonX is seen as a good cook. ; Constraint: [cookfire, meat, fuel, cookie, menu] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat']]
 
 
-gpt : Although there is no menu, PersonX cooks PersonY some food, so PersonX is seen as a good cook.
+gpt : Although PersonX burns the cookie, PersonX cooks PersonY some food, so PersonX is seen as a good cook.
 neuro : Although PersonX has no menu, PersonX cooks PersonY some food, so PersonX is seen as a good cook.
 vanilla : Although PersonX is not a good cook, PersonX cooks PersonY some food, so PersonX is seen as a good cook.
 
@@ -1105,7 +1105,7 @@ vanilla : Although PersonX is not a good cook, PersonX cooks PersonY some food, 
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX cooks PersonY some food, so PersonX is seen as a good cook. ; Constraint: [meat, menu, fuel, cookie, cookfire], [no] ; Output:
+Input: Although <extra_id_0>, PersonX cooks PersonY some food, so PersonX is seen as a good cook. ; Constraint: [fuel, cookfire, meat, menu, cookie], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['fuelled', 'fuelling', 'fuels', 'fuel', 'fueled', 'fueling', 'cookie', 'cookies', 'cookfire', 'cookfired', 'cookfires', 'cookfiring', 'menu', 'menus', 'meats', 'meat'], ['not', 'no']]
@@ -1119,13 +1119,13 @@ vanilla : Although PersonX does not cook meat, PersonX cooks PersonY some food, 
 ************************
 
 input_format:
-Input: PersonX negotiates for a better salary and <extra_id_0>, so PersonX feels empowered. ; Constraint: [salaried, diplomacy, negotiation, bargain, negotiator] ; Output:
+Input: PersonX negotiates for a better salary and <extra_id_0>, so PersonX feels empowered. ; Constraint: [negotiation, salaried, negotiator, diplomacy, bargain] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained']]
 
 
-gpt : PersonX negotiates for a better salary and being a salaried worker, so PersonX feels empowered.
+gpt : PersonX negotiates for a better salary and bargain a better contract, so PersonX feels empowered.
 neuro : PersonX negotiates for a better salary and gets a better bargain, so PersonX feels empowered.
 vanilla : PersonX negotiates for a better salary and gets it, so PersonX feels empowered.
 
@@ -1133,7 +1133,7 @@ vanilla : PersonX negotiates for a better salary and gets it, so PersonX feels e
 ************************
 
 input_format:
-Input: PersonX negotiates for a better salary and <extra_id_0>, so PersonX feels empowered. ; Constraint: [negotiator, diplomacy, negotiation, salaried, bargain], [no] ; Output:
+Input: PersonX negotiates for a better salary and <extra_id_0>, so PersonX feels empowered. ; Constraint: [bargain, negotiator, diplomacy, salaried, negotiation], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained'], ['not', 'no']]
@@ -1147,13 +1147,13 @@ vanilla : PersonX negotiates for a better salary and gets it, so PersonX feels e
 ************************
 
 input_format:
-Input: PersonX negotiates for a better salary while <extra_id_0>, so PersonX feels empowered. ; Constraint: [negotiator, diplomacy, negotiation, bargain, salaried] ; Output:
+Input: PersonX negotiates for a better salary while <extra_id_0>, so PersonX feels empowered. ; Constraint: [bargain, salaried, negotiation, negotiator, diplomacy] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained']]
 
 
-gpt : PersonX negotiates for a better salary while being a salaried worker, so PersonX feels empowered.
+gpt : PersonX negotiates for a better salary while being the only salaried worker, so PersonX feels empowered.
 neuro : PersonX negotiates for a better salary while using diplomacy, so PersonX feels empowered.
 vanilla : PersonX negotiates for a better salary while using diplomacy, so PersonX feels empowered.
 
@@ -1161,13 +1161,13 @@ vanilla : PersonX negotiates for a better salary while using diplomacy, so Perso
 ************************
 
 input_format:
-Input: PersonX negotiates for a better salary while <extra_id_0>, so PersonX feels empowered. ; Constraint: [diplomacy, negotiator, negotiation, bargain, salaried], [no] ; Output:
+Input: PersonX negotiates for a better salary while <extra_id_0>, so PersonX feels empowered. ; Constraint: [salaried, negotiation, diplomacy, negotiator, bargain], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained'], ['not', 'no']]
 
 
-gpt : PersonX negotiates for a better salary while not being the primary negotiator, so PersonX feels empowered.
+gpt : PersonX negotiates for a better salary while working as a salaried worker, so PersonX feels empowered.
 neuro : PersonX negotiates for a better salary while not being salaried, so PersonX feels empowered.
 vanilla : PersonX negotiates for a better salary while not being salaried, so PersonX feels empowered.
 
@@ -1175,13 +1175,13 @@ vanilla : PersonX negotiates for a better salary while not being salaried, so Pe
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX negotiates for a better salary, so PersonX feels empowered. ; Constraint: [diplomacy, negotiation, bargain, negotiator, salaried] ; Output:
+Input: <extra_id_0> but PersonX negotiates for a better salary, so PersonX feels empowered. ; Constraint: [salaried, negotiator, diplomacy, negotiation, bargain] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained']]
 
 
-gpt : PersonX is not a professional negotiator but PersonX negotiates for a better salary, so PersonX feels empowered.
+gpt : Although PersonX is not a professional negotia but PersonX negotiates for a better salary, so PersonX feels empowered.
 neuro : PersonX is a negotiator but PersonX negotiates for a better salary, so PersonX feels empowered.
 vanilla : PersonX is salaried but PersonX negotiates for a better salary, so PersonX feels empowered.
 
@@ -1189,13 +1189,13 @@ vanilla : PersonX is salaried but PersonX negotiates for a better salary, so Per
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX negotiates for a better salary, so PersonX feels empowered. ; Constraint: [negotiator, bargain, salaried, diplomacy, negotiation], [no] ; Output:
+Input: <extra_id_0> but PersonX negotiates for a better salary, so PersonX feels empowered. ; Constraint: [salaried, negotiation, negotiator, bargain, diplomacy], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained'], ['not', 'no']]
 
 
-gpt : None but PersonX negotiates for a better salary, so PersonX feels empowered.
+gpt : PersonX is a salaried worker but PersonX negotiates for a better salary, so PersonX feels empowered.
 neuro : PersonX is not a bargainer but PersonX negotiates for a better salary, so PersonX feels empowered.
 vanilla : PersonX is not a bargainer but PersonX negotiates for a better salary, so PersonX feels empowered.
 
@@ -1203,7 +1203,7 @@ vanilla : PersonX is not a bargainer but PersonX negotiates for a better salary,
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX negotiates for a better salary, so PersonX feels empowered. ; Constraint: [bargain, diplomacy, negotiation, salaried, negotiator] ; Output:
+Input: Although <extra_id_0>, PersonX negotiates for a better salary, so PersonX feels empowered. ; Constraint: [negotiator, salaried, bargain, negotiation, diplomacy] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained']]
@@ -1217,13 +1217,13 @@ vanilla : Although PersonX is salaried, PersonX negotiates for a better salary, 
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX negotiates for a better salary, so PersonX feels empowered. ; Constraint: [bargain, salaried, diplomacy, negotiator, negotiation], [no] ; Output:
+Input: Although <extra_id_0>, PersonX negotiates for a better salary, so PersonX feels empowered. ; Constraint: [salaried, diplomacy, negotiator, bargain, negotiation], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained'], ['not', 'no']]
 
 
-gpt : Although PersonX is not a salaried worker, PersonX negotiates for a better salary, so PersonX feels empowered.
+gpt : Although PersonX is not a professional negotiator, PersonX negotiates for a better salary, so PersonX feels empowered.
 neuro : Although PersonX has no diplomacy, PersonX negotiates for a better salary, so PersonX feels empowered.
 vanilla : Although PersonX is not a diplomat, PersonX negotiates for a better salary, so PersonX feels empowered.
 
@@ -1231,13 +1231,13 @@ vanilla : Although PersonX is not a diplomat, PersonX negotiates for a better sa
 ************************
 
 input_format:
-Input: PersonX negotiates for a better salary and <extra_id_0>, so PersonX is seen as a good negotiator. ; Constraint: [diplomacy, salaried, negotiation, negotiator, bargain] ; Output:
+Input: PersonX negotiates for a better salary and <extra_id_0>, so PersonX is seen as a good negotiator. ; Constraint: [bargain, diplomacy, negotiation, negotiator, salaried] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained']]
 
 
-gpt : PersonX negotiates for a better salary and bargain for the same, so PersonX is seen as a good negotiator.
+gpt : PersonX negotiates for a better salary and is able to get what she wants, so PersonX is seen as a good negotiator.
 neuro : PersonX negotiates for a better salary and wins the bargain, so PersonX is seen as a good negotiator.
 vanilla : PersonX negotiates for a better salary and gets it, so PersonX is seen as a good negotiator.
 
@@ -1245,13 +1245,13 @@ vanilla : PersonX negotiates for a better salary and gets it, so PersonX is seen
 ************************
 
 input_format:
-Input: PersonX negotiates for a better salary and <extra_id_0>, so PersonX is seen as a good negotiator. ; Constraint: [negotiator, salaried, negotiation, bargain, diplomacy], [no] ; Output:
+Input: PersonX negotiates for a better salary and <extra_id_0>, so PersonX is seen as a good negotiator. ; Constraint: [negotiation, diplomacy, bargain, salaried, negotiator], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained'], ['not', 'no']]
 
 
-gpt : PersonX negotiates for a better salary and None, so PersonX is seen as a good negotiator.
+gpt : PersonX negotiates for a better salary and does not take no for an answer, so PersonX is seen as a good negotiator.
 neuro : PersonX negotiates for a better salary and does not bargain, so PersonX is seen as a good negotiator.
 vanilla : PersonX negotiates for a better salary and gets it, so PersonX is seen as a good negotiator.
 
@@ -1259,13 +1259,13 @@ vanilla : PersonX negotiates for a better salary and gets it, so PersonX is seen
 ************************
 
 input_format:
-Input: PersonX negotiates for a better salary while <extra_id_0>, so PersonX is seen as a good negotiator. ; Constraint: [diplomacy, negotiator, bargain, salaried, negotiation] ; Output:
+Input: PersonX negotiates for a better salary while <extra_id_0>, so PersonX is seen as a good negotiator. ; Constraint: [negotiator, salaried, bargain, diplomacy, negotiation] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained']]
 
 
-gpt : PersonX negotiates for a better salary while using diplomacy, so PersonX is seen as a good negotiator.
+gpt : PersonX negotiates for a better salary while maintaining a good relationship, so PersonX is seen as a good negotiator.
 neuro : PersonX negotiates for a better salary while using diplomacy, so PersonX is seen as a good negotiator.
 vanilla : PersonX negotiates for a better salary while bargaining, so PersonX is seen as a good negotiator.
 
@@ -1273,13 +1273,13 @@ vanilla : PersonX negotiates for a better salary while bargaining, so PersonX is
 ************************
 
 input_format:
-Input: PersonX negotiates for a better salary while <extra_id_0>, so PersonX is seen as a good negotiator. ; Constraint: [diplomacy, negotiation, negotiator, bargain, salaried], [no] ; Output:
+Input: PersonX negotiates for a better salary while <extra_id_0>, so PersonX is seen as a good negotiator. ; Constraint: [salaried, negotiator, diplomacy, negotiation, bargain], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained'], ['not', 'no']]
 
 
-gpt : PersonX negotiates for a better salary while None, so PersonX is seen as a good negotiator.
+gpt : PersonX negotiates for a better salary while maintaining good diplomacy, so PersonX is seen as a good negotiator.
 neuro : PersonX negotiates for a better salary while no one bargains, so PersonX is seen as a good negotiator.
 vanilla : PersonX negotiates for a better salary while not being salaried, so PersonX is seen as a good negotiator.
 
@@ -1287,7 +1287,7 @@ vanilla : PersonX negotiates for a better salary while not being salaried, so Pe
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX negotiates for a better salary, so PersonX is seen as a good negotiator. ; Constraint: [diplomacy, bargain, negotiator, salaried, negotiation] ; Output:
+Input: <extra_id_0> but PersonX negotiates for a better salary, so PersonX is seen as a good negotiator. ; Constraint: [negotiator, bargain, salaried, negotiation, diplomacy] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained']]
@@ -1301,13 +1301,13 @@ vanilla : PersonX is salaried but PersonX negotiates for a better salary, so Per
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX negotiates for a better salary, so PersonX is seen as a good negotiator. ; Constraint: [salaried, negotiation, negotiator, bargain, diplomacy], [no] ; Output:
+Input: <extra_id_0> but PersonX negotiates for a better salary, so PersonX is seen as a good negotiator. ; Constraint: [salaried, negotiator, negotiation, bargain, diplomacy], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained'], ['not', 'no']]
 
 
-gpt : PersonX has no experience in diplomacy but PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.
+gpt : PersonX has no experience in negotiation but PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.
 neuro : PersonX is not a bargainer but PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.
 vanilla : PersonX does not bargain but PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.
 
@@ -1315,13 +1315,13 @@ vanilla : PersonX does not bargain but PersonX negotiates for a better salary, s
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator. ; Constraint: [negotiator, salaried, diplomacy, negotiation, bargain] ; Output:
+Input: Although <extra_id_0>, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator. ; Constraint: [bargain, negotiation, diplomacy, negotiator, salaried] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained']]
 
 
-gpt : Although PersonX has no experience in diplomacy or negotiation, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.
+gpt : Although PersonX is not a diplomat, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.
 neuro : Although PersonX is salaried, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.
 vanilla : Although PersonX is salaried, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.
 
@@ -1329,13 +1329,13 @@ vanilla : Although PersonX is salaried, PersonX negotiates for a better salary, 
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator. ; Constraint: [diplomacy, negotiator, salaried, negotiation, bargain], [no] ; Output:
+Input: Although <extra_id_0>, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator. ; Constraint: [salaried, negotiator, diplomacy, negotiation, bargain], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['negotiator', 'negotiators', 'salaried', 'negotiations', 'negotiation', 'diplomacy', 'bargain', 'bargains', 'bargaining', 'bargained'], ['not', 'no']]
 
 
-gpt : Although PersonX is not a trained negotiator, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.
+gpt : Although PersonX is not a salaried negotiator, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.
 neuro : Although PersonX is not salaried, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.
 vanilla : Although PersonX is not a diplomat, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.
 
@@ -1343,13 +1343,13 @@ vanilla : Although PersonX is not a diplomat, PersonX negotiates for a better sa
 ************************
 
 input_format:
-Input: PersonX makes a mistake in front of PersonY and <extra_id_0>, so PersonX is seen as careless. ; Constraint: [profile, wrap, guard, door, side] ; Output:
+Input: PersonX makes a mistake in front of PersonY and <extra_id_0>, so PersonX is seen as careless. ; Constraint: [guard, door, profile, wrap, side] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door']]
 
 
-gpt : PersonX makes a mistake in front of PersonY and tries to hide it by pretending to check the door, so PersonX is seen as careless.
+gpt : PersonX makes a mistake in front of PersonY and escapes to the other side of the door, so PersonX is seen as careless.
 neuro : PersonX makes a mistake in front of PersonY and opens the door, so PersonX is seen as careless.
 vanilla : PersonX makes a mistake in front of PersonY and opens the door, so PersonX is seen as careless.
 
@@ -1357,13 +1357,13 @@ vanilla : PersonX makes a mistake in front of PersonY and opens the door, so Per
 ************************
 
 input_format:
-Input: PersonX makes a mistake in front of PersonY and <extra_id_0>, so PersonX is seen as careless. ; Constraint: [wrap, side, door, guard, profile], [no] ; Output:
+Input: PersonX makes a mistake in front of PersonY and <extra_id_0>, so PersonX is seen as careless. ; Constraint: [guard, side, profile, door, wrap], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door'], ['not', 'no']]
 
 
-gpt : PersonX makes a mistake in front of PersonY and does not wrap up the profile, so PersonX is seen as careless.
+gpt : PersonX makes a mistake in front of PersonY and no one sees it, so PersonX is seen as careless.
 neuro : PersonX makes a mistake in front of PersonY and there is no guard, so PersonX is seen as careless.
 vanilla : PersonX makes a mistake in front of PersonY and leaves the door open, so PersonX is seen as careless.
 
@@ -1371,13 +1371,13 @@ vanilla : PersonX makes a mistake in front of PersonY and leaves the door open, 
 ************************
 
 input_format:
-Input: PersonX makes a mistake in front of PersonY while <extra_id_0>, so PersonX is seen as careless. ; Constraint: [wrap, profile, guard, side, door] ; Output:
+Input: PersonX makes a mistake in front of PersonY while <extra_id_0>, so PersonX is seen as careless. ; Constraint: [guard, side, wrap, door, profile] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door']]
 
 
-gpt : PersonX makes a mistake in front of PersonY while PersonX is divided between the door and the guard, so PersonX is seen as careless.
+gpt : PersonX makes a mistake in front of PersonY while PersonX is not being cautious, so PersonX is seen as careless.
 neuro : PersonX makes a mistake in front of PersonY while opening the door, so PersonX is seen as careless.
 vanilla : PersonX makes a mistake in front of PersonY while opening the door, so PersonX is seen as careless.
 
@@ -1385,13 +1385,13 @@ vanilla : PersonX makes a mistake in front of PersonY while opening the door, so
 ************************
 
 input_format:
-Input: PersonX makes a mistake in front of PersonY while <extra_id_0>, so PersonX is seen as careless. ; Constraint: [door, profile, guard, side, wrap], [no] ; Output:
+Input: PersonX makes a mistake in front of PersonY while <extra_id_0>, so PersonX is seen as careless. ; Constraint: [door, wrap, side, profile, guard], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door'], ['not', 'no']]
 
 
-gpt : PersonX makes a mistake in front of PersonY while not being able to see the profile, so PersonX is seen as careless.
+gpt : PersonX makes a mistake in front of PersonY while not paying attention, so PersonX is seen as careless.
 neuro : PersonX makes a mistake in front of PersonY while PersonY does not wrap the door, so PersonX is seen as careless.
 vanilla : PersonX makes a mistake in front of PersonY while opening the door, so PersonX is seen as careless.
 
@@ -1399,13 +1399,13 @@ vanilla : PersonX makes a mistake in front of PersonY while opening the door, so
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless. ; Constraint: [wrap, guard, side, door, profile] ; Output:
+Input: <extra_id_0> but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless. ; Constraint: [profile, wrap, guard, door, side] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door']]
 
 
-gpt : PersonX is on the side but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
+gpt : PersonX is on guard but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
 neuro : PersonX has a profile but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
 vanilla : PersonX is a guard but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
 
@@ -1413,13 +1413,13 @@ vanilla : PersonX is a guard but PersonX makes a mistake in front of PersonY, so
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless. ; Constraint: [door, profile, guard, wrap, side], [no] ; Output:
+Input: <extra_id_0> but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless. ; Constraint: [wrap, guard, profile, door, side], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door'], ['not', 'no']]
 
 
-gpt : None but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
+gpt : PersonX is on the side of the door but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
 neuro : PersonX has no door but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
 vanilla : PersonX has no side guard but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
 
@@ -1427,13 +1427,13 @@ vanilla : PersonX has no side guard but PersonX makes a mistake in front of Pers
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless. ; Constraint: [side, profile, guard, wrap, door] ; Output:
+Input: Although <extra_id_0>, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless. ; Constraint: [guard, side, wrap, profile, door] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door']]
 
 
-gpt : Although PersonX's profile is good, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
+gpt : Although PersonX is careful with the door, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
 neuro : Although PersonX is a wrap, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
 vanilla : Although PersonX is a guard, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
 
@@ -1441,13 +1441,13 @@ vanilla : Although PersonX is a guard, PersonX makes a mistake in front of Perso
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless. ; Constraint: [guard, door, side, profile, wrap], [no] ; Output:
+Input: Although <extra_id_0>, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless. ; Constraint: [door, wrap, profile, side, guard], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door'], ['not', 'no']]
 
 
-gpt : Although None, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
+gpt : Although PersonX is very careful, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
 neuro : Although PersonX does not have a side door, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
 vanilla : Although PersonX is not a guard, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.
 
@@ -1455,13 +1455,13 @@ vanilla : Although PersonX is not a guard, PersonX makes a mistake in front of P
 ************************
 
 input_format:
-Input: PersonX makes a mistake in front of PersonY and <extra_id_0>, so PersonX feels ashamed. ; Constraint: [guard, door, side, wrap, profile] ; Output:
+Input: PersonX makes a mistake in front of PersonY and <extra_id_0>, so PersonX feels ashamed. ; Constraint: [door, guard, wrap, profile, side] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door']]
 
 
-gpt : PersonX makes a mistake in front of PersonY and PersonY's profile is seen by the guard, so PersonX feels ashamed.
+gpt : PersonX makes a mistake in front of PersonY and keeps a low profile, so PersonX feels ashamed.
 neuro : PersonX makes a mistake in front of PersonY and PersonY's profile is not good, so PersonX feels ashamed.
 vanilla : PersonX makes a mistake in front of PersonY and PersonY sees the mistake, so PersonX feels ashamed.
 
@@ -1469,13 +1469,13 @@ vanilla : PersonX makes a mistake in front of PersonY and PersonY sees the mista
 ************************
 
 input_format:
-Input: PersonX makes a mistake in front of PersonY and <extra_id_0>, so PersonX feels ashamed. ; Constraint: [guard, wrap, profile, door, side], [no] ; Output:
+Input: PersonX makes a mistake in front of PersonY and <extra_id_0>, so PersonX feels ashamed. ; Constraint: [guard, wrap, side, door, profile], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door'], ['not', 'no']]
 
 
-gpt : PersonX makes a mistake in front of PersonY and PersonY does not wrap up the situation, so PersonX feels ashamed.
+gpt : PersonX makes a mistake in front of PersonY and PersonY sees it from the side, so PersonX feels ashamed.
 neuro : PersonX makes a mistake in front of PersonY and does not wrap the door, so PersonX feels ashamed.
 vanilla : PersonX makes a mistake in front of PersonY and no one sees it, so PersonX feels ashamed.
 
@@ -1483,13 +1483,13 @@ vanilla : PersonX makes a mistake in front of PersonY and no one sees it, so Per
 ************************
 
 input_format:
-Input: PersonX makes a mistake in front of PersonY while <extra_id_0>, so PersonX feels ashamed. ; Constraint: [profile, door, wrap, side, guard] ; Output:
+Input: PersonX makes a mistake in front of PersonY while <extra_id_0>, so PersonX feels ashamed. ; Constraint: [profile, wrap, door, side, guard] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door']]
 
 
-gpt : PersonX makes a mistake in front of PersonY while PersonY is not guarding the door, so PersonX feels ashamed.
+gpt : PersonX makes a mistake in front of PersonY while being on guard, so PersonX feels ashamed.
 neuro : PersonX makes a mistake in front of PersonY while wrapping the door, so PersonX feels ashamed.
 vanilla : PersonX makes a mistake in front of PersonY while opening the door, so PersonX feels ashamed.
 
@@ -1497,13 +1497,13 @@ vanilla : PersonX makes a mistake in front of PersonY while opening the door, so
 ************************
 
 input_format:
-Input: PersonX makes a mistake in front of PersonY while <extra_id_0>, so PersonX feels ashamed. ; Constraint: [profile, wrap, side, door, guard], [no] ; Output:
+Input: PersonX makes a mistake in front of PersonY while <extra_id_0>, so PersonX feels ashamed. ; Constraint: [profile, guard, door, side, wrap], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door'], ['not', 'no']]
 
 
-gpt : PersonX makes a mistake in front of PersonY while PersonX is not guarding the door, so PersonX feels ashamed.
+gpt : PersonX makes a mistake in front of PersonY while seeing the person from the side, so PersonX feels ashamed.
 neuro : PersonX makes a mistake in front of PersonY while PersonY is not a guard, so PersonX feels ashamed.
 vanilla : PersonX makes a mistake in front of PersonY while opening the door, so PersonX feels ashamed.
 
@@ -1511,13 +1511,13 @@ vanilla : PersonX makes a mistake in front of PersonY while opening the door, so
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed. ; Constraint: [wrap, door, side, profile, guard] ; Output:
+Input: <extra_id_0> but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed. ; Constraint: [wrap, door, profile, side, guard] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door']]
 
 
-gpt : PersonX is not on the guard's side but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
+gpt : PersonX is on the good side of the door but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
 neuro : PersonX is a guard but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
 vanilla : PersonX is a good person but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
 
@@ -1525,13 +1525,13 @@ vanilla : PersonX is a good person but PersonX makes a mistake in front of Perso
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed. ; Constraint: [guard, side, profile, wrap, door], [no] ; Output:
+Input: <extra_id_0> but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed. ; Constraint: [door, side, guard, profile, wrap], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door'], ['not', 'no']]
 
 
-gpt : PersonX knocks on the door but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
+gpt : PersonX is well-prepared but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
 neuro : PersonX has no side profile but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
 vanilla : PersonX has no side guard but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
 
@@ -1539,13 +1539,13 @@ vanilla : PersonX has no side guard but PersonX makes a mistake in front of Pers
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed. ; Constraint: [side, guard, wrap, door, profile] ; Output:
+Input: Although <extra_id_0>, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed. ; Constraint: [profile, side, wrap, guard, door] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door']]
 
 
-gpt : Although PersonX is being wrapped in a duvet, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
+gpt : Although PersonX is well prepared, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
 neuro : Although PersonX has a good profile, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
 vanilla : Although PersonX is a good person, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
 
@@ -1553,13 +1553,13 @@ vanilla : Although PersonX is a good person, PersonX makes a mistake in front of
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed. ; Constraint: [wrap, side, guard, door, profile], [no] ; Output:
+Input: Although <extra_id_0>, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed. ; Constraint: [door, guard, wrap, side, profile], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['profile', 'profiles', 'profiling', 'profiled', 'wrap', 'wrapping', 'wrapped', 'wraps', 'sided', 'sides', 'side', 'siding', 'guards', 'guarded', 'guard', 'guarding', 'doors', 'door'], ['not', 'no']]
 
 
-gpt : Although PersonX's profile is not good, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
+gpt : Although PersonX's profile is good, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
 neuro : Although PersonX is not wrapped, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
 vanilla : Although PersonX is not wrapped, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.
 
@@ -1567,7 +1567,7 @@ vanilla : Although PersonX is not wrapped, PersonX makes a mistake in front of P
 ************************
 
 input_format:
-Input: PersonX saves the life of PersonY and <extra_id_0>, so PersonX feels happy. ; Constraint: [culture, world, death, people, time] ; Output:
+Input: PersonX saves the life of PersonY and <extra_id_0>, so PersonX feels happy. ; Constraint: [time, people, culture, world, death] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed']]
@@ -1581,13 +1581,13 @@ vanilla : PersonX saves the life of PersonY and PersonY is a good person, so Per
 ************************
 
 input_format:
-Input: PersonX saves the life of PersonY and <extra_id_0>, so PersonX feels happy. ; Constraint: [time, people, death, world, culture], [no] ; Output:
+Input: PersonX saves the life of PersonY and <extra_id_0>, so PersonX feels happy. ; Constraint: [death, culture, world, people, time], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed'], ['not', 'no']]
 
 
-gpt : PersonX saves the life of PersonY and None, so PersonX feels happy.
+gpt : PersonX saves the life of PersonY and PersonY is the only one in the world, so PersonX feels happy.
 neuro : PersonX saves the life of PersonY and no one dies in the world, so PersonX feels happy.
 vanilla : PersonX saves the life of PersonY and no one dies, so PersonX feels happy.
 
@@ -1595,13 +1595,13 @@ vanilla : PersonX saves the life of PersonY and no one dies, so PersonX feels ha
 ************************
 
 input_format:
-Input: PersonX saves the life of PersonY while <extra_id_0>, so PersonX feels happy. ; Constraint: [culture, death, time, world, people] ; Output:
+Input: PersonX saves the life of PersonY while <extra_id_0>, so PersonX feels happy. ; Constraint: [culture, death, world, people, time] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed']]
 
 
-gpt : PersonX saves the life of PersonY while death is a taboo in their culture, so PersonX feels happy.
+gpt : PersonX saves the life of PersonY while death is coming, so PersonX feels happy.
 neuro : PersonX saves the life of PersonY while being in a different culture, so PersonX feels happy.
 vanilla : PersonX saves the life of PersonY while being in the world, so PersonX feels happy.
 
@@ -1609,13 +1609,13 @@ vanilla : PersonX saves the life of PersonY while being in the world, so PersonX
 ************************
 
 input_format:
-Input: PersonX saves the life of PersonY while <extra_id_0>, so PersonX feels happy. ; Constraint: [time, people, culture, death, world], [no] ; Output:
+Input: PersonX saves the life of PersonY while <extra_id_0>, so PersonX feels happy. ; Constraint: [world, people, time, death, culture], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed'], ['not', 'no']]
 
 
-gpt : PersonX saves the life of PersonY while there is no time to hesitate, so PersonX feels happy.
+gpt : PersonX saves the life of PersonY while PersonY is about to die, so PersonX feels happy.
 neuro : PersonX saves the life of PersonY while there is no time, so PersonX feels happy.
 vanilla : PersonX saves the life of PersonY while no one else can, so PersonX feels happy.
 
@@ -1623,13 +1623,13 @@ vanilla : PersonX saves the life of PersonY while no one else can, so PersonX fe
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX saves the life of PersonY, so PersonX feels happy. ; Constraint: [world, time, culture, people, death] ; Output:
+Input: <extra_id_0> but PersonX saves the life of PersonY, so PersonX feels happy. ; Constraint: [time, death, world, culture, people] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed']]
 
 
-gpt : PersonX's culture values human life but PersonX saves the life of PersonY, so PersonX feels happy.
+gpt : Even though the world is full of de but PersonX saves the life of PersonY, so PersonX feels happy.
 neuro : PersonX is not a person of the world but PersonX saves the life of PersonY, so PersonX feels happy.
 vanilla : PersonX is not a good person but PersonX saves the life of PersonY, so PersonX feels happy.
 
@@ -1637,13 +1637,13 @@ vanilla : PersonX is not a good person but PersonX saves the life of PersonY, so
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX saves the life of PersonY, so PersonX feels happy. ; Constraint: [world, death, people, culture, time], [no] ; Output:
+Input: <extra_id_0> but PersonX saves the life of PersonY, so PersonX feels happy. ; Constraint: [time, culture, world, people, death], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed'], ['not', 'no']]
 
 
-gpt : No one knows the time of death but PersonX saves the life of PersonY, so PersonX feels happy.
+gpt : No one knows the time of PersonY's death but PersonX saves the life of PersonY, so PersonX feels happy.
 neuro : PersonX is not a person of the world but PersonX saves the life of PersonY, so PersonX feels happy.
 vanilla : No one dies but PersonX saves the life of PersonY, so PersonX feels happy.
 
@@ -1651,13 +1651,13 @@ vanilla : No one dies but PersonX saves the life of PersonY, so PersonX feels ha
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX saves the life of PersonY, so PersonX feels happy. ; Constraint: [culture, time, death, world, people] ; Output:
+Input: Although <extra_id_0>, PersonX saves the life of PersonY, so PersonX feels happy. ; Constraint: [time, death, people, culture, world] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed']]
 
 
-gpt : Although there are a lot of people in the world, PersonX saves the life of PersonY, so PersonX feels happy.
+gpt : Although many people around the world are dying every day, PersonX saves the life of PersonY, so PersonX feels happy.
 neuro : Although PersonX has no time, PersonX saves the life of PersonY, so PersonX feels happy.
 vanilla : Although the world is changing, PersonX saves the life of PersonY, so PersonX feels happy.
 
@@ -1665,13 +1665,13 @@ vanilla : Although the world is changing, PersonX saves the life of PersonY, so 
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX saves the life of PersonY, so PersonX feels happy. ; Constraint: [time, culture, world, people, death], [no] ; Output:
+Input: Although <extra_id_0>, PersonX saves the life of PersonY, so PersonX feels happy. ; Constraint: [people, world, death, time, culture], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed'], ['not', 'no']]
 
 
-gpt : Although None, PersonX saves the life of PersonY, so PersonX feels happy.
+gpt : Although time is running out, PersonX saves the life of PersonY, so PersonX feels happy.
 neuro : Although PersonX is not in the world, PersonX saves the life of PersonY, so PersonX feels happy.
 vanilla : Although there is no time, PersonX saves the life of PersonY, so PersonX feels happy.
 
@@ -1679,13 +1679,13 @@ vanilla : Although there is no time, PersonX saves the life of PersonY, so Perso
 ************************
 
 input_format:
-Input: PersonX saves the life of PersonY and <extra_id_0>, so PersonX is seen as brave. ; Constraint: [death, people, world, time, culture] ; Output:
+Input: PersonX saves the life of PersonY and <extra_id_0>, so PersonX is seen as brave. ; Constraint: [world, people, culture, death, time] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed']]
 
 
-gpt : PersonX saves the life of PersonY and many people in the world, so PersonX is seen as brave.
+gpt : PersonX saves the life of PersonY and becomes a hero to the people, so PersonX is seen as brave.
 neuro : PersonX saves the life of PersonY and saves the world, so PersonX is seen as brave.
 vanilla : PersonX saves the life of PersonY and saves the world, so PersonX is seen as brave.
 
@@ -1693,13 +1693,13 @@ vanilla : PersonX saves the life of PersonY and saves the world, so PersonX is s
 ************************
 
 input_format:
-Input: PersonX saves the life of PersonY and <extra_id_0>, so PersonX is seen as brave. ; Constraint: [time, culture, death, people, world], [no] ; Output:
+Input: PersonX saves the life of PersonY and <extra_id_0>, so PersonX is seen as brave. ; Constraint: [death, people, world, culture, time], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed'], ['not', 'no']]
 
 
-gpt : PersonX saves the life of PersonY and None, so PersonX is seen as brave.
+gpt : PersonX saves the life of PersonY and becomes the hero of the world, so PersonX is seen as brave.
 neuro : PersonX saves the life of PersonY and no one dies in the world, so PersonX is seen as brave.
 vanilla : PersonX saves the life of PersonY and no one dies, so PersonX is seen as brave.
 
@@ -1707,13 +1707,13 @@ vanilla : PersonX saves the life of PersonY and no one dies, so PersonX is seen 
 ************************
 
 input_format:
-Input: PersonX saves the life of PersonY while <extra_id_0>, so PersonX is seen as brave. ; Constraint: [world, death, people, culture, time] ; Output:
+Input: PersonX saves the life of PersonY while <extra_id_0>, so PersonX is seen as brave. ; Constraint: [time, death, people, culture, world] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed']]
 
 
-gpt : PersonX saves the life of PersonY while the world is at war, so PersonX is seen as brave.
+gpt : PersonX saves the life of PersonY while the world is collapsing, so PersonX is seen as brave.
 neuro : PersonX saves the life of PersonY while facing death, so PersonX is seen as brave.
 vanilla : PersonX saves the life of PersonY while facing death, so PersonX is seen as brave.
 
@@ -1721,13 +1721,13 @@ vanilla : PersonX saves the life of PersonY while facing death, so PersonX is se
 ************************
 
 input_format:
-Input: PersonX saves the life of PersonY while <extra_id_0>, so PersonX is seen as brave. ; Constraint: [time, culture, death, people, world], [no] ; Output:
+Input: PersonX saves the life of PersonY while <extra_id_0>, so PersonX is seen as brave. ; Constraint: [culture, time, people, world, death], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed'], ['not', 'no']]
 
 
-gpt : PersonX saves the life of PersonY while None, so PersonX is seen as brave.
+gpt : PersonX saves the life of PersonY while people around them are dying, so PersonX is seen as brave.
 neuro : PersonX saves the life of PersonY while there is no culture in the world, so PersonX is seen as brave.
 vanilla : PersonX saves the life of PersonY while no one else can, so PersonX is seen as brave.
 
@@ -1735,13 +1735,13 @@ vanilla : PersonX saves the life of PersonY while no one else can, so PersonX is
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX saves the life of PersonY, so PersonX is seen as brave. ; Constraint: [death, time, world, culture, people] ; Output:
+Input: <extra_id_0> but PersonX saves the life of PersonY, so PersonX is seen as brave. ; Constraint: [people, culture, world, time, death] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed']]
 
 
-gpt : PersonX kills many people but PersonX saves the life of PersonY, so PersonX is seen as brave.
+gpt : PersonX is in danger but PersonX saves the life of PersonY, so PersonX is seen as brave.
 neuro : PersonX lives in the world but PersonX saves the life of PersonY, so PersonX is seen as brave.
 vanilla : PersonX has no time but PersonX saves the life of PersonY, so PersonX is seen as brave.
 
@@ -1749,13 +1749,13 @@ vanilla : PersonX has no time but PersonX saves the life of PersonY, so PersonX 
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX saves the life of PersonY, so PersonX is seen as brave. ; Constraint: [world, culture, time, death, people], [no] ; Output:
+Input: <extra_id_0> but PersonX saves the life of PersonY, so PersonX is seen as brave. ; Constraint: [world, death, people, time, culture], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed'], ['not', 'no']]
 
 
-gpt : None but PersonX saves the life of PersonY, so PersonX is seen as brave.
+gpt : Although death may come at any t but PersonX saves the life of PersonY, so PersonX is seen as brave.
 neuro : PersonX is not from the world but PersonX saves the life of PersonY, so PersonX is seen as brave.
 vanilla : No culture but PersonX saves the life of PersonY, so PersonX is seen as brave.
 
@@ -1763,13 +1763,13 @@ vanilla : No culture but PersonX saves the life of PersonY, so PersonX is seen a
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX saves the life of PersonY, so PersonX is seen as brave. ; Constraint: [world, people, culture, time, death] ; Output:
+Input: Although <extra_id_0>, PersonX saves the life of PersonY, so PersonX is seen as brave. ; Constraint: [death, culture, time, world, people] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed']]
 
 
-gpt : Although many people die every day, PersonX saves the life of PersonY, so PersonX is seen as brave.
+gpt : Although the world is full of people who are different from PersonX, PersonX saves the life of PersonY, so PersonX is seen as brave.
 neuro : Although death is a part of culture, PersonX saves the life of PersonY, so PersonX is seen as brave.
 vanilla : Although time has passed, PersonX saves the life of PersonY, so PersonX is seen as brave.
 
@@ -1777,13 +1777,13 @@ vanilla : Although time has passed, PersonX saves the life of PersonY, so Person
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX saves the life of PersonY, so PersonX is seen as brave. ; Constraint: [people, culture, world, death, time], [no] ; Output:
+Input: Although <extra_id_0>, PersonX saves the life of PersonY, so PersonX is seen as brave. ; Constraint: [death, culture, people, time, world], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['world', 'worlds', 'peoples', 'peopled', 'peopling', 'people', 'deaths', 'death', 'culture', 'cultures', 'culturing', 'cultured', 'timing', 'times', 'time', 'timed'], ['not', 'no']]
 
 
-gpt : Although None, PersonX saves the life of PersonY, so PersonX is seen as brave.
+gpt : Although the world is full of death, PersonX saves the life of PersonY, so PersonX is seen as brave.
 neuro : Although there is no death in the world, PersonX saves the life of PersonY, so PersonX is seen as brave.
 vanilla : Although PersonX has no time, PersonX saves the life of PersonY, so PersonX is seen as brave.
 
@@ -1791,13 +1791,13 @@ vanilla : Although PersonX has no time, PersonX saves the life of PersonY, so Pe
 ************************
 
 input_format:
-Input: PersonX acts sensibly and <extra_id_0>, so PersonX is seen as responsible. ; Constraint: [fight, role, attack, agent, effect] ; Output:
+Input: PersonX acts sensibly and <extra_id_0>, so PersonX is seen as responsible. ; Constraint: [role, agent, effect, fight, attack] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack']]
 
 
-gpt : PersonX acts sensibly and effectively, so PersonX is seen as responsible.
+gpt : PersonX acts sensibly and takes charge of the situation, so PersonX is seen as responsible.
 neuro : PersonX acts sensibly and is a good agent, so PersonX is seen as responsible.
 vanilla : PersonX acts sensibly and does not fight, so PersonX is seen as responsible.
 
@@ -1805,7 +1805,7 @@ vanilla : PersonX acts sensibly and does not fight, so PersonX is seen as respon
 ************************
 
 input_format:
-Input: PersonX acts sensibly and <extra_id_0>, so PersonX is seen as responsible. ; Constraint: [effect, attack, agent, role, fight], [no] ; Output:
+Input: PersonX acts sensibly and <extra_id_0>, so PersonX is seen as responsible. ; Constraint: [effect, fight, agent, attack, role], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack'], ['not', 'no']]
@@ -1819,13 +1819,13 @@ vanilla : PersonX acts sensibly and does not fight, so PersonX is seen as respon
 ************************
 
 input_format:
-Input: PersonX acts sensibly while <extra_id_0>, so PersonX is seen as responsible. ; Constraint: [effect, role, fight, attack, agent] ; Output:
+Input: PersonX acts sensibly while <extra_id_0>, so PersonX is seen as responsible. ; Constraint: [role, effect, agent, fight, attack] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack']]
 
 
-gpt : PersonX acts sensibly while taking into account the effect of her action, so PersonX is seen as responsible.
+gpt : PersonX acts sensibly while taking care of her younger sister, so PersonX is seen as responsible.
 neuro : PersonX acts sensibly while in a fight, so PersonX is seen as responsible.
 vanilla : PersonX acts sensibly while being an agent, so PersonX is seen as responsible.
 
@@ -1833,13 +1833,13 @@ vanilla : PersonX acts sensibly while being an agent, so PersonX is seen as resp
 ************************
 
 input_format:
-Input: PersonX acts sensibly while <extra_id_0>, so PersonX is seen as responsible. ; Constraint: [agent, effect, attack, role, fight], [no] ; Output:
+Input: PersonX acts sensibly while <extra_id_0>, so PersonX is seen as responsible. ; Constraint: [attack, effect, fight, agent, role], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack'], ['not', 'no']]
 
 
-gpt : PersonX acts sensibly while the agent has no effect on the attack, so PersonX is seen as responsible.
+gpt : PersonX acts sensibly while taking care ofPersonY, so PersonX is seen as responsible.
 neuro : PersonX acts sensibly while not attacking, so PersonX is seen as responsible.
 vanilla : PersonX acts sensibly while not fighting, so PersonX is seen as responsible.
 
@@ -1847,13 +1847,13 @@ vanilla : PersonX acts sensibly while not fighting, so PersonX is seen as respon
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX acts sensibly, so PersonX is seen as responsible. ; Constraint: [effect, attack, role, fight, agent] ; Output:
+Input: <extra_id_0> but PersonX acts sensibly, so PersonX is seen as responsible. ; Constraint: [agent, effect, attack, role, fight] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack']]
 
 
-gpt : PersonX is not an agent but PersonX acts sensibly, so PersonX is seen as responsible.
+gpt : Agent provocateur provokes attack but PersonX acts sensibly, so PersonX is seen as responsible.
 neuro : PersonX is an agent but PersonX acts sensibly, so PersonX is seen as responsible.
 vanilla : PersonX is attacked but PersonX acts sensibly, so PersonX is seen as responsible.
 
@@ -1861,13 +1861,13 @@ vanilla : PersonX is attacked but PersonX acts sensibly, so PersonX is seen as r
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX acts sensibly, so PersonX is seen as responsible. ; Constraint: [attack, effect, fight, role, agent], [no] ; Output:
+Input: <extra_id_0> but PersonX acts sensibly, so PersonX is seen as responsible. ; Constraint: [effect, role, attack, agent, fight], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack'], ['not', 'no']]
 
 
-gpt : No agent provokes PersonX but PersonX acts sensibly, so PersonX is seen as responsible.
+gpt : PersonX is not an agent but PersonX acts sensibly, so PersonX is seen as responsible.
 neuro : PersonX is not an agent but PersonX acts sensibly, so PersonX is seen as responsible.
 vanilla : PersonX is not an agent but PersonX acts sensibly, so PersonX is seen as responsible.
 
@@ -1875,13 +1875,13 @@ vanilla : PersonX is not an agent but PersonX acts sensibly, so PersonX is seen 
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX acts sensibly, so PersonX is seen as responsible. ; Constraint: [fight, attack, effect, agent, role] ; Output:
+Input: Although <extra_id_0>, PersonX acts sensibly, so PersonX is seen as responsible. ; Constraint: [fight, agent, effect, role, attack] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack']]
 
 
-gpt : Although the effect of the attack is not seen immediately, PersonX acts sensibly, so PersonX is seen as responsible.
+gpt : Although the attack has no effect on the agent, PersonX acts sensibly, so PersonX is seen as responsible.
 neuro : Although PersonX fights, PersonX acts sensibly, so PersonX is seen as responsible.
 vanilla : Although PersonX is an agent, PersonX acts sensibly, so PersonX is seen as responsible.
 
@@ -1889,13 +1889,13 @@ vanilla : Although PersonX is an agent, PersonX acts sensibly, so PersonX is see
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX acts sensibly, so PersonX is seen as responsible. ; Constraint: [attack, effect, fight, role, agent], [no] ; Output:
+Input: Although <extra_id_0>, PersonX acts sensibly, so PersonX is seen as responsible. ; Constraint: [attack, agent, fight, effect, role], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack'], ['not', 'no']]
 
 
-gpt : Although the attack has no effect on the agent, PersonX acts sensibly, so PersonX is seen as responsible.
+gpt : Although the attack is not the agent's fault, PersonX acts sensibly, so PersonX is seen as responsible.
 neuro : Although PersonX is not an agent, PersonX acts sensibly, so PersonX is seen as responsible.
 vanilla : Although PersonX does not fight, PersonX acts sensibly, so PersonX is seen as responsible.
 
@@ -1903,13 +1903,13 @@ vanilla : Although PersonX does not fight, PersonX acts sensibly, so PersonX is 
 ************************
 
 input_format:
-Input: PersonX acts sensibly and <extra_id_0>, so PersonX feels relaxed. ; Constraint: [attack, role, agent, fight, effect] ; Output:
+Input: PersonX acts sensibly and <extra_id_0>, so PersonX feels relaxed. ; Constraint: [role, fight, agent, attack, effect] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack']]
 
 
-gpt : PersonX acts sensibly and takes the role of an agent, so PersonX feels relaxed.
+gpt : PersonX acts sensibly and plays an important role, so PersonX feels relaxed.
 neuro : PersonX acts sensibly and has no effect, so PersonX feels relaxed.
 vanilla : PersonX acts sensibly and does not attack, so PersonX feels relaxed.
 
@@ -1917,13 +1917,13 @@ vanilla : PersonX acts sensibly and does not attack, so PersonX feels relaxed.
 ************************
 
 input_format:
-Input: PersonX acts sensibly and <extra_id_0>, so PersonX feels relaxed. ; Constraint: [fight, role, attack, agent, effect], [no] ; Output:
+Input: PersonX acts sensibly and <extra_id_0>, so PersonX feels relaxed. ; Constraint: [fight, agent, effect, role, attack], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack'], ['not', 'no']]
 
 
-gpt : PersonX acts sensibly and has no effect on other people, so PersonX feels relaxed.
+gpt : PersonX acts sensibly and comes up with a good plan, so PersonX feels relaxed.
 neuro : PersonX acts sensibly and does not fight, so PersonX feels relaxed.
 vanilla : PersonX acts sensibly and does not fight, so PersonX feels relaxed.
 
@@ -1931,13 +1931,13 @@ vanilla : PersonX acts sensibly and does not fight, so PersonX feels relaxed.
 ************************
 
 input_format:
-Input: PersonX acts sensibly while <extra_id_0>, so PersonX feels relaxed. ; Constraint: [fight, role, agent, attack, effect] ; Output:
+Input: PersonX acts sensibly while <extra_id_0>, so PersonX feels relaxed. ; Constraint: [fight, effect, attack, agent, role] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack']]
 
 
-gpt : PersonX acts sensibly while taking on the role of an agent, so PersonX feels relaxed.
+gpt : PersonX acts sensibly while taking the role of an agent, so PersonX feels relaxed.
 neuro : PersonX acts sensibly while being an agent, so PersonX feels relaxed.
 vanilla : PersonX acts sensibly while being an agent, so PersonX feels relaxed.
 
@@ -1945,13 +1945,13 @@ vanilla : PersonX acts sensibly while being an agent, so PersonX feels relaxed.
 ************************
 
 input_format:
-Input: PersonX acts sensibly while <extra_id_0>, so PersonX feels relaxed. ; Constraint: [fight, attack, role, effect, agent], [no] ; Output:
+Input: PersonX acts sensibly while <extra_id_0>, so PersonX feels relaxed. ; Constraint: [effect, attack, fight, role, agent], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack'], ['not', 'no']]
 
 
-gpt : PersonX acts sensibly while there is no fight, so PersonX feels relaxed.
+gpt : PersonX acts sensibly while being an agent in a play, so PersonX feels relaxed.
 neuro : PersonX acts sensibly while no one attacks, so PersonX feels relaxed.
 vanilla : PersonX acts sensibly while no one attacks, so PersonX feels relaxed.
 
@@ -1959,13 +1959,13 @@ vanilla : PersonX acts sensibly while no one attacks, so PersonX feels relaxed.
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX acts sensibly, so PersonX feels relaxed. ; Constraint: [role, agent, attack, fight, effect] ; Output:
+Input: <extra_id_0> but PersonX acts sensibly, so PersonX feels relaxed. ; Constraint: [agent, attack, role, effect, fight] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack']]
 
 
-gpt : PersonX is not an agent but PersonX acts sensibly, so PersonX feels relaxed.
+gpt : The agent gives a role to PersonX but PersonX acts sensibly, so PersonX feels relaxed.
 neuro : PersonX fights but PersonX acts sensibly, so PersonX feels relaxed.
 vanilla : PersonX attacks but PersonX acts sensibly, so PersonX feels relaxed.
 
@@ -1973,13 +1973,13 @@ vanilla : PersonX attacks but PersonX acts sensibly, so PersonX feels relaxed.
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX acts sensibly, so PersonX feels relaxed. ; Constraint: [role, fight, attack, effect, agent], [no] ; Output:
+Input: <extra_id_0> but PersonX acts sensibly, so PersonX feels relaxed. ; Constraint: [agent, fight, attack, effect, role], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack'], ['not', 'no']]
 
 
-gpt : PersonX has no role but PersonX acts sensibly, so PersonX feels relaxed.
+gpt : Although the agent provokes Pers but PersonX acts sensibly, so PersonX feels relaxed.
 neuro : PersonX has no effect but PersonX acts sensibly, so PersonX feels relaxed.
 vanilla : PersonX is not an agent but PersonX acts sensibly, so PersonX feels relaxed.
 
@@ -1987,13 +1987,13 @@ vanilla : PersonX is not an agent but PersonX acts sensibly, so PersonX feels re
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX acts sensibly, so PersonX feels relaxed. ; Constraint: [fight, agent, attack, effect, role] ; Output:
+Input: Although <extra_id_0>, PersonX acts sensibly, so PersonX feels relaxed. ; Constraint: [effect, role, agent, attack, fight] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack']]
 
 
-gpt : Although PersonX is a secret agent, PersonX acts sensibly, so PersonX feels relaxed.
+gpt : Although the attack takes its toll on PersonX, PersonX acts sensibly, so PersonX feels relaxed.
 neuro : Although PersonX is an agent, PersonX acts sensibly, so PersonX feels relaxed.
 vanilla : Although PersonX is an agent, PersonX acts sensibly, so PersonX feels relaxed.
 
@@ -2001,13 +2001,13 @@ vanilla : Although PersonX is an agent, PersonX acts sensibly, so PersonX feels 
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX acts sensibly, so PersonX feels relaxed. ; Constraint: [role, effect, agent, fight, attack], [no] ; Output:
+Input: Although <extra_id_0>, PersonX acts sensibly, so PersonX feels relaxed. ; Constraint: [fight, agent, attack, role, effect], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['agent', 'agents', 'effects', 'effecting', 'effected', 'effect', 'fights', 'fighting', 'fight', 'fought', 'roles', 'role', 'attacking', 'attacked', 'attacks', 'attack'], ['not', 'no']]
 
 
-gpt : Although there is no agent, PersonX acts sensibly, so PersonX feels relaxed.
+gpt : Although PersonX is not an agent of change, PersonX acts sensibly, so PersonX feels relaxed.
 neuro : Although PersonX is not attacked, PersonX acts sensibly, so PersonX feels relaxed.
 vanilla : Although PersonX is not an agent, PersonX acts sensibly, so PersonX feels relaxed.
 
@@ -2015,13 +2015,13 @@ vanilla : Although PersonX is not an agent, PersonX acts sensibly, so PersonX fe
 ************************
 
 input_format:
-Input: PersonX invites the board members to his home and <extra_id_0>, so PersonX is seen as a good host. ; Constraint: [country, builder, profile, bedroom, person] ; Output:
+Input: PersonX invites the board members to his home and <extra_id_0>, so PersonX is seen as a good host. ; Constraint: [builder, profile, country, bedroom, person] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders']]
 
 
-gpt : PersonX invites the board members to his home and prepares the bedroom for them, so PersonX is seen as a good host.
+gpt : PersonX invites the board members to his home and serves them with the best food and wine, so PersonX is seen as a good host.
 neuro : PersonX invites the board members to his home and has a good profile, so PersonX is seen as a good host.
 vanilla : PersonX invites the board members to his home and shows them around, so PersonX is seen as a good host.
 
@@ -2029,13 +2029,13 @@ vanilla : PersonX invites the board members to his home and shows them around, s
 ************************
 
 input_format:
-Input: PersonX invites the board members to his home and <extra_id_0>, so PersonX is seen as a good host. ; Constraint: [bedroom, person, country, builder, profile], [no] ; Output:
+Input: PersonX invites the board members to his home and <extra_id_0>, so PersonX is seen as a good host. ; Constraint: [bedroom, person, profile, builder, country], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders'], ['not', 'no']]
 
 
-gpt : PersonX invites the board members to his home and None, so PersonX is seen as a good host.
+gpt : PersonX invites the board members to his home and provides them with a good bedroom, so PersonX is seen as a good host.
 neuro : PersonX invites the board members to his home and does not have a bedroom, so PersonX is seen as a good host.
 vanilla : PersonX invites the board members to his home and does not have a bedroom, so PersonX is seen as a good host.
 
@@ -2043,13 +2043,13 @@ vanilla : PersonX invites the board members to his home and does not have a bedr
 ************************
 
 input_format:
-Input: PersonX invites the board members to his home while <extra_id_0>, so PersonX is seen as a good host. ; Constraint: [profile, bedroom, builder, country, person] ; Output:
+Input: PersonX invites the board members to his home while <extra_id_0>, so PersonX is seen as a good host. ; Constraint: [bedroom, country, profile, person, builder] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders']]
 
 
-gpt : PersonX invites the board members to his home while PersonX's bedroom is being built, so PersonX is seen as a good host.
+gpt : PersonX invites the board members to his home while he is having a conversation in his bedroom, so PersonX is seen as a good host.
 neuro : PersonX invites the board members to his home while building their profile, so PersonX is seen as a good host.
 vanilla : PersonX invites the board members to his home while building his profile, so PersonX is seen as a good host.
 
@@ -2057,13 +2057,13 @@ vanilla : PersonX invites the board members to his home while building his profi
 ************************
 
 input_format:
-Input: PersonX invites the board members to his home while <extra_id_0>, so PersonX is seen as a good host. ; Constraint: [builder, bedroom, person, country, profile], [no] ; Output:
+Input: PersonX invites the board members to his home while <extra_id_0>, so PersonX is seen as a good host. ; Constraint: [bedroom, country, profile, builder, person], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders'], ['not', 'no']]
 
 
-gpt : PersonX invites the board members to his home while no one is in the bedroom, so PersonX is seen as a good host.
+gpt : PersonX invites the board members to his home while showing them his bedroom, so PersonX is seen as a good host.
 neuro : PersonX invites the board members to his home while not having a bedroom, so PersonX is seen as a good host.
 vanilla : PersonX invites the board members to his home while not having a profile, so PersonX is seen as a good host.
 
@@ -2071,13 +2071,13 @@ vanilla : PersonX invites the board members to his home while not having a profi
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX invites the board members to his home, so PersonX is seen as a good host. ; Constraint: [bedroom, profile, builder, country, person] ; Output:
+Input: <extra_id_0> but PersonX invites the board members to his home, so PersonX is seen as a good host. ; Constraint: [profile, country, person, builder, bedroom] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders']]
 
 
-gpt : PersonX's bedroom is not well-decorated but PersonX invites the board members to his home, so PersonX is seen as a good host.
+gpt : PersonX lives in a small bedroom but PersonX invites the board members to his home, so PersonX is seen as a good host.
 neuro : PersonX is a builder but PersonX invites the board members to his home, so PersonX is seen as a good host.
 vanilla : PersonX has no bedroom but PersonX invites the board members to his home, so PersonX is seen as a good host.
 
@@ -2085,7 +2085,7 @@ vanilla : PersonX has no bedroom but PersonX invites the board members to his ho
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX invites the board members to his home, so PersonX is seen as a good host. ; Constraint: [bedroom, profile, country, person, builder], [no] ; Output:
+Input: <extra_id_0> but PersonX invites the board members to his home, so PersonX is seen as a good host. ; Constraint: [builder, country, person, profile, bedroom], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders'], ['not', 'no']]
@@ -2099,13 +2099,13 @@ vanilla : PersonX does not have a bedroom but PersonX invites the board members 
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX invites the board members to his home, so PersonX is seen as a good host. ; Constraint: [bedroom, country, builder, person, profile] ; Output:
+Input: Although <extra_id_0>, PersonX invites the board members to his home, so PersonX is seen as a good host. ; Constraint: [builder, bedroom, country, profile, person] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders']]
 
 
-gpt : Although PersonX is from a poor country, PersonX invites the board members to his home, so PersonX is seen as a good host.
+gpt : Although PersonX is from a different country, PersonX invites the board members to his home, so PersonX is seen as a good host.
 neuro : Although PersonX is not a good builder, PersonX invites the board members to his home, so PersonX is seen as a good host.
 vanilla : Although PersonX is a builder, PersonX invites the board members to his home, so PersonX is seen as a good host.
 
@@ -2113,13 +2113,13 @@ vanilla : Although PersonX is a builder, PersonX invites the board members to hi
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX invites the board members to his home, so PersonX is seen as a good host. ; Constraint: [person, country, profile, bedroom, builder], [no] ; Output:
+Input: Although <extra_id_0>, PersonX invites the board members to his home, so PersonX is seen as a good host. ; Constraint: [country, bedroom, builder, profile, person], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders'], ['not', 'no']]
 
 
-gpt : Although no builder works at his home, PersonX invites the board members to his home, so PersonX is seen as a good host.
+gpt : Although PersonX is not a builder, PersonX invites the board members to his home, so PersonX is seen as a good host.
 neuro : Although PersonX does not have a bedroom, PersonX invites the board members to his home, so PersonX is seen as a good host.
 vanilla : Although PersonX is not a builder, PersonX invites the board members to his home, so PersonX is seen as a good host.
 
@@ -2127,13 +2127,13 @@ vanilla : Although PersonX is not a builder, PersonX invites the board members t
 ************************
 
 input_format:
-Input: PersonX invites the board members to his home and <extra_id_0>, so PersonX feels pleased. ; Constraint: [builder, profile, bedroom, person, country] ; Output:
+Input: PersonX invites the board members to his home and <extra_id_0>, so PersonX feels pleased. ; Constraint: [country, profile, person, builder, bedroom] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders']]
 
 
-gpt : PersonX invites the board members to his home and his bedroom is neatly cleaned, so PersonX feels pleased.
+gpt : PersonX invites the board members to his home and shows them his bedroom, so PersonX feels pleased.
 neuro : PersonX invites the board members to his home and they like his country, so PersonX feels pleased.
 vanilla : PersonX invites the board members to his home and they like it, so PersonX feels pleased.
 
@@ -2141,13 +2141,13 @@ vanilla : PersonX invites the board members to his home and they like it, so Per
 ************************
 
 input_format:
-Input: PersonX invites the board members to his home and <extra_id_0>, so PersonX feels pleased. ; Constraint: [builder, person, bedroom, profile, country], [no] ; Output:
+Input: PersonX invites the board members to his home and <extra_id_0>, so PersonX feels pleased. ; Constraint: [person, bedroom, country, profile, builder], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders'], ['not', 'no']]
 
 
-gpt : PersonX invites the board members to his home and None, so PersonX feels pleased.
+gpt : PersonX invites the board members to his home and shows them his bedroom, so PersonX feels pleased.
 neuro : PersonX invites the board members to his home and they are not builders, so PersonX feels pleased.
 vanilla : PersonX invites the board members to his home and no one complains, so PersonX feels pleased.
 
@@ -2155,13 +2155,13 @@ vanilla : PersonX invites the board members to his home and no one complains, so
 ************************
 
 input_format:
-Input: PersonX invites the board members to his home while <extra_id_0>, so PersonX feels pleased. ; Constraint: [country, bedroom, profile, person, builder] ; Output:
+Input: PersonX invites the board members to his home while <extra_id_0>, so PersonX feels pleased. ; Constraint: [profile, bedroom, person, country, builder] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders']]
 
 
-gpt : PersonX invites the board members to his home while his bedroom is being built, so PersonX feels pleased.
+gpt : PersonX invites the board members to his home while his bedroom is being built by the country's best builder, so PersonX feels pleased.
 neuro : PersonX invites the board members to his home while building his profile, so PersonX feels pleased.
 vanilla : PersonX invites the board members to his home while in his country, so PersonX feels pleased.
 
@@ -2169,13 +2169,13 @@ vanilla : PersonX invites the board members to his home while in his country, so
 ************************
 
 input_format:
-Input: PersonX invites the board members to his home while <extra_id_0>, so PersonX feels pleased. ; Constraint: [profile, bedroom, builder, country, person], [no] ; Output:
+Input: PersonX invites the board members to his home while <extra_id_0>, so PersonX feels pleased. ; Constraint: [country, builder, profile, person, bedroom], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders'], ['not', 'no']]
 
 
-gpt : PersonX invites the board members to his home while None, so PersonX feels pleased.
+gpt : PersonX invites the board members to his home while the house is still being built, so PersonX feels pleased.
 neuro : PersonX invites the board members to his home while there is no profile, so PersonX feels pleased.
 vanilla : PersonX invites the board members to his home while building his profile, so PersonX feels pleased.
 
@@ -2183,7 +2183,7 @@ vanilla : PersonX invites the board members to his home while building his profi
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX invites the board members to his home, so PersonX feels pleased. ; Constraint: [profile, person, bedroom, country, builder] ; Output:
+Input: <extra_id_0> but PersonX invites the board members to his home, so PersonX feels pleased. ; Constraint: [bedroom, person, builder, country, profile] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders']]
@@ -2197,13 +2197,13 @@ vanilla : PersonX is not a profile builder but PersonX invites the board members
 ************************
 
 input_format:
-Input: <extra_id_0> but PersonX invites the board members to his home, so PersonX feels pleased. ; Constraint: [person, builder, country, profile, bedroom], [no] ; Output:
+Input: <extra_id_0> but PersonX invites the board members to his home, so PersonX feels pleased. ; Constraint: [person, bedroom, country, builder, profile], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders'], ['not', 'no']]
 
 
-gpt : PersonX's profile is not good but PersonX invites the board members to his home, so PersonX feels pleased.
+gpt : Although PersonX's profile is not g but PersonX invites the board members to his home, so PersonX feels pleased.
 neuro : PersonX does not have a bedroom but PersonX invites the board members to his home, so PersonX feels pleased.
 vanilla : PersonX does not have a bedroom but PersonX invites the board members to his home, so PersonX feels pleased.
 
@@ -2211,13 +2211,13 @@ vanilla : PersonX does not have a bedroom but PersonX invites the board members 
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX invites the board members to his home, so PersonX feels pleased. ; Constraint: [bedroom, builder, country, person, profile] ; Output:
+Input: Although <extra_id_0>, PersonX invites the board members to his home, so PersonX feels pleased. ; Constraint: [builder, country, bedroom, person, profile] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders']]
 
 
-gpt : Although PersonX is not a board member, PersonX invites the board members to his home, so PersonX feels pleased.
+gpt : Although PersonX's profile is not good, PersonX invites the board members to his home, so PersonX feels pleased.
 neuro : Although PersonX is not a builder, PersonX invites the board members to his home, so PersonX feels pleased.
 vanilla : Although PersonX does not have a bedroom, PersonX invites the board members to his home, so PersonX feels pleased.
 
@@ -2225,13 +2225,13 @@ vanilla : Although PersonX does not have a bedroom, PersonX invites the board me
 ************************
 
 input_format:
-Input: Although <extra_id_0>, PersonX invites the board members to his home, so PersonX feels pleased. ; Constraint: [person, bedroom, profile, builder, country], [no] ; Output:
+Input: Although <extra_id_0>, PersonX invites the board members to his home, so PersonX feels pleased. ; Constraint: [country, profile, builder, person, bedroom], [no] ; Output:
 
 These are constraints inflections used only for neuro algorithm
 [['bedrooms', 'bedroom', 'country', 'countries', 'profile', 'profiles', 'profiling', 'profiled', 'person', 'persons', 'builder', 'builders'], ['not', 'no']]
 
 
-gpt : Although PersonX's profile is not good, PersonX invites the board members to his home, so PersonX feels pleased.
+gpt : Although PersonX is not from a wealthy family, PersonX invites the board members to his home, so PersonX feels pleased.
 neuro : Although PersonX does not have a bedroom, PersonX invites the board members to his home, so PersonX feels pleased.
 vanilla : Although PersonX does not have a profile, PersonX invites the board members to his home, so PersonX feels pleased.
 

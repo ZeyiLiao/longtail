@@ -5,7 +5,7 @@ import os
 from helper import *
 import openai
 
-with open('../key.txt') as f:
+with open('/home/zeyi/key.txt') as f:
     key = f.read()
 openai.api_key = key
 
@@ -40,7 +40,7 @@ class GPTppl():
 
 
 
-def filter_by_format(input,outputs,constraints,mask = '[mask]'):
+def filter_by_format(input,outputs,constraints,mask = '[mask]', no_filter = False):
 
     assert mask in input,'input format is wrong'
 
@@ -54,31 +54,36 @@ def filter_by_format(input,outputs,constraints,mask = '[mask]'):
 
     for output in outputs:
     #   filter those not follow the mask pattern
-        if output[:prefix_end] == input[:prefix_end] and output[-suffix_start:] == input[-suffix_start:]:
-            # output_words = output.replace(',','').split(' ')
+        if no_filter:
             constraint_generation = output[prefix_end:-suffix_start]
+            selected_pattern_outputs.append(output)
+            selected_pattern_outputs_part.append(constraint_generation)
+
+        else:
+
+            if output[:prefix_end] == input[:prefix_end] and output[-suffix_start:] == input[-suffix_start:]:
+                # output_words = output.replace(',','').split(' ')
+                constraint_generation = output[prefix_end:-suffix_start]
 
 
-            clause_states = []
+                clause_states = []
 
-            for constraint in constraints:
+                for constraint in constraints:
 
-                #  filter those not follow the constraints
-                clause_satisified = False
+                    #  filter those not follow the constraints
+                    clause_satisified = False
 
-                for concept in constraint:
-                    if concept in constraint_generation or (concept[0].upper() + concept[1:]) in constraint_generation:
-                        clause_satisified = True
-                        break
-
-
-                clause_states.append(clause_satisified)
+                    for concept in constraint:
+                        if concept in constraint_generation or (concept[0].upper() + concept[1:]) in constraint_generation:
+                            clause_satisified = True
+                            break
 
 
+                    clause_states.append(clause_satisified)
 
-            if all(clause_states):
-                selected_pattern_outputs.append(output)
-                selected_pattern_outputs_part.append(constraint_generation)
+                if all(clause_states):
+                    selected_pattern_outputs.append(output)
+                    selected_pattern_outputs_part.append(constraint_generation)
 
 
     return selected_pattern_outputs,selected_pattern_outputs_part
@@ -136,7 +141,7 @@ class PromptWrapper:
         _explanations = list(set(_explanations))
 
 
-        filtered_explanations,filtered_explanations_part = filter_by_format(input,_explanations,constraints)
+        filtered_explanations,filtered_explanations_part = filter_by_format(input,_explanations,constraints,no_filter = self.no_filter)
 
 
         if len(filtered_explanations) >= needed_count:
@@ -144,8 +149,9 @@ class PromptWrapper:
             needed_explanations = [exp for (i,exp) in enumerate(filtered_explanations) if i in needed_indexs]
             needed_explanations_part = [exp for (i,exp) in enumerate(filtered_explanations_part) if i in needed_indexs]
         else:
-            needed_explanations = ['None']
-            needed_explanations_part = ['None']
+
+            needed_explanations = []
+            needed_explanations_part = []
 
         return needed_explanations,needed_explanations_part
 

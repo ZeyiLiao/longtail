@@ -88,7 +88,9 @@ def main(args):
         for index,line in enumerate(reader):
             x,order = line[0],line[1]
             if 'but' in order:
+
                 x = x[0].upper() + x[1:]
+
             vanilla_outputs.append(inputs[index].replace(mask,x.replace('\n','')))
             order_vanilla.append(order)
 

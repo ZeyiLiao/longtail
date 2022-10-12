@@ -146,23 +146,20 @@ def main(args):
     for index,(input,inflection_constraint,lemma_constraint) in enumerate(tqdm(list(zip(inputs,inflection_constraints,lemma_constraints)))):
 
         generation,generation_part = gpt_generate(input,inflection_constraint,lemma_constraint)
+
         if args.no_filter:
+            assert len(generation) > 0
+            if generation_part == '':
+                generation_part = '[No infilling]'
+
+        if len(generation) != 0:
+
             generations.extend(generation)
             generations_part.extend(generation_part)
 
             inputs_new.extend([input] * needed_count)
             inputs_order_new.extend([inputs_order[index]] * needed_count)
             lemma_constraints_new.extend([lemma_constraint] * needed_count)
-            
-        else:
-            if len(generation) != 0:
-
-                generations.extend(generation)
-                generations_part.extend(generation_part)
-
-                inputs_new.extend([input] * needed_count)
-                inputs_order_new.extend([inputs_order[index]] * needed_count)
-                lemma_constraints_new.extend([lemma_constraint] * needed_count)
 
 
     assert len(inputs_new) == len(generations) == len(inputs_order_new) == len(lemma_constraints_new) == len(generations_part)
