@@ -72,6 +72,7 @@ def main(args):
 
 
 
+
     if not os.path.exists(args.save_file) or args.force == True:
 
         get_related_words(args.input_file,args.save_file)
