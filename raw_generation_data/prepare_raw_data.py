@@ -58,6 +58,40 @@ def back_to_sen_mask(head,relation,tail,model_name,transition_word):
     return content
 
 
+def back_to_sen_mask(head,relation,tail,model_name,transition_word):
+    if 'bart' in model_name:
+        mask = '<mask>'
+    elif 't5' in model_name:
+        mask = '<extra_id_0>'
+
+
+    if relation == 'xAttr':
+        if transition_word == 'and':
+            content = 'PersonX is seen as ' + tail + 'because' + head + '.'
+        elif transition_word == 'while':
+            content = head + ' while ' + mask + ', so PersonX is seen as ' + tail + '.'
+        elif transition_word == 'but':
+            content = mask + ' but ' + head + ', so PersonX is seen as ' + tail + '.'
+        elif transition_word == 'although':
+            content = 'Although ' +  mask + ', ' + head + ', so PersonX is seen as ' + tail + '.'
+
+    elif relation == 'xReact':
+        if transition_word == 'and':
+            content = head + ' and ' + mask + ', so PersonX feels ' + tail + '.'
+        elif transition_word == 'while':
+            content = head + ' while ' + mask + ', so PersonX feels ' + tail + '.'
+        elif transition_word == 'but':
+            content = mask + ' but ' + head + ', so PersonX feels ' + tail + '.'
+        elif transition_word == 'although':
+            content = 'Although ' +  mask + ', ' + head + ', so PersonX feels ' + tail + '.'
+
+    return content
+
+
+
+
+
+
 def main(args):
 
     transition_words = ["and","while","but","although"]
