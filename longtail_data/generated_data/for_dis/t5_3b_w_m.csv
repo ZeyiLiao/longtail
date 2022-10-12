@@ -1,0 +1,360 @@
+"PersonX eats lunch at the same restaurant every day and enjoys the lunchroom, so PersonX feels satisfied.",86396_and
+"PersonX eats lunch at the same restaurant every day and does not munch, so PersonX feels satisfied.",86396_and_neg
+"PersonX eats lunch at the same restaurant every day while eating a lump of bread, so PersonX feels satisfied.",86396_while
+"PersonX eats lunch at the same restaurant every day while not eating brunch, so PersonX feels satisfied.",86396_while_neg
+"It is midday but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.",86396_but
+"It is not midday but PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.",86396_but_neg
+"Although it is midday, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.",86396_although
+"Although it is not brunch, PersonX eats lunch at the same restaurant every day, so PersonX feels satisfied.",86396_although_neg
+"PersonX eats lunch at the same restaurant every day and never misses a midday meal, so PersonX is seen as reliable.",410260_and
+"PersonX eats lunch at the same restaurant every day and does not miss a midday meal, so PersonX is seen as reliable.",410260_and_neg
+"PersonX eats lunch at the same restaurant every day while in the lunchroom, so PersonX is seen as reliable.",410260_while
+"PersonX eats lunch at the same restaurant every day while not eating brunch, so PersonX is seen as reliable.",410260_while_neg
+"PersonX eats lunch at midday but PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.",410260_but
+"PersonX does not attend brunch but PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.",410260_but_neg
+"Although PersonX's lunch is a lump, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.",410260_although
+"Although PersonX does not have a lunchroom, PersonX eats lunch at the same restaurant every day, so PersonX is seen as reliable.",410260_although_neg
+"PersonX promises to do anything for PersonY and PersonY stipulates, so PersonX feels happy.",228553_and
+"PersonX promises to do anything for PersonY and does not renege, so PersonX feels happy.",228553_and_neg
+"PersonX promises to do anything for PersonY while PersonY stipulates, so PersonX feels happy.",228553_while
+"PersonX promises to do anything for PersonY while PersonY does not renege on her commitment, so PersonX feels happy.",228553_while_neg
+"PersonX reneges on his commitment but PersonX promises to do anything for PersonY, so PersonX feels happy.",228553_but
+"PersonX does not renege on his commitment but PersonX promises to do anything for PersonY, so PersonX feels happy.",228553_but_neg
+"Although PersonY reneges on her commitment, PersonX promises to do anything for PersonY, so PersonX feels happy.",228553_although
+"Although PersonX's commitment is not fulfilled, PersonX promises to do anything for PersonY, so PersonX feels happy.",228553_although_neg
+"PersonX promises to do anything for PersonY and does not renege, so PersonX is seen as a good friend.",310062_and
+"PersonX promises to do anything for PersonY and does not renege, so PersonX is seen as a good friend.",310062_and_neg
+"PersonX promises to do anything for PersonY while PersonY stipulates, so PersonX is seen as a good friend.",310062_while
+"PersonX promises to do anything for PersonY while stipulating no commitment, so PersonX is seen as a good friend.",310062_while_neg
+"PersonX reneges on his commitment but PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.",310062_but
+"PersonX does not renege on his commitment but PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.",310062_but_neg
+"Although PersonX reneges on his commitment, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.",310062_although
+"Although PersonX does not renege on his commitment, PersonX promises to do anything for PersonY, so PersonX is seen as a good friend.",310062_although_neg
+"PersonX builds a small house for PersonY and his school, so PersonX is seen as a good builder.",43650_and
+"PersonX builds a small house for PersonY and no one has a problem with the building, so PersonX is seen as a good builder.",43650_and_neg
+"PersonX builds a small house for PersonY while attending school, so PersonX is seen as a good builder.",43650_while
+"PersonX builds a small house for PersonY while not in school, so PersonX is seen as a good builder.",43650_while_neg
+"PersonX is a school teacher but PersonX builds a small house for PersonY, so PersonX is seen as a good builder.",43650_but
+"PersonX does not have a store but PersonX builds a small house for PersonY, so PersonX is seen as a good builder.",43650_but_neg
+"Although PersonX is a man, PersonX builds a small house for PersonY, so PersonX is seen as a good builder.",43650_although
+"Although PersonX is not in school, PersonX builds a small house for PersonY, so PersonX is seen as a good builder.",43650_although_neg
+"PersonX builds a small house for PersonY and his school, so PersonX feels accomplished.",201770_and
+"PersonX builds a small house for PersonY and does not go to school, so PersonX feels accomplished.",201770_and_neg
+"PersonX builds a small house for PersonY while attending school, so PersonX feels accomplished.",201770_while
+"PersonX builds a small house for PersonY while not in school, so PersonX feels accomplished.",201770_while_neg
+"PersonX's bedroom is small but PersonX builds a small house for PersonY, so PersonX feels accomplished.",201770_but
+"PersonX does not have a bedroom but PersonX builds a small house for PersonY, so PersonX feels accomplished.",201770_but_neg
+"Although PersonX is not good at building, PersonX builds a small house for PersonY, so PersonX feels accomplished.",201770_although
+"Although PersonX is not a man, PersonX builds a small house for PersonY, so PersonX feels accomplished.",201770_although_neg
+"PersonX cooks PersonY some food and a cookie, so PersonX feels good.",57980_and
+"PersonX cooks PersonY some food and no fuel burns, so PersonX feels good.",57980_and_neg
+"PersonX cooks PersonY some food while PersonY makes a cookie, so PersonX feels good.",57980_while
+"PersonX cooks PersonY some food while not using any fuel, so PersonX feels good.",57980_while_neg
+"PersonX's fuel runs out but PersonX cooks PersonY some food, so PersonX feels good.",57980_but
+"There is no fuel but PersonX cooks PersonY some food, so PersonX feels good.",57980_but_neg
+"Although PersonX does not have much fuel, PersonX cooks PersonY some food, so PersonX feels good.",57980_although
+"Although there is no fuel, PersonX cooks PersonY some food, so PersonX feels good.",57980_although_neg
+"PersonX cooks PersonY some food and a cookie, so PersonX is seen as a good cook.",334777_and
+"PersonX cooks PersonY some food and no fuel is needed, so PersonX is seen as a good cook.",334777_and_neg
+"PersonX cooks PersonY some food while using a cookfire, so PersonX is seen as a good cook.",334777_while
+"PersonX cooks PersonY some food while using no fuel, so PersonX is seen as a good cook.",334777_while_neg
+"PersonX does not have much fuel but PersonX cooks PersonY some food, so PersonX is seen as a good cook.",334777_but
+"PersonX does not have a cookfire but PersonX cooks PersonY some food, so PersonX is seen as a good cook.",334777_but_neg
+"Although PersonX is not on the menu, PersonX cooks PersonY some food, so PersonX is seen as a good cook.",334777_although
+"Although PersonX does not have a cookfire, PersonX cooks PersonY some food, so PersonX is seen as a good cook.",334777_although_neg
+"PersonX negotiates for a better salary and wins the bargain, so PersonX feels empowered.",71938_and
+"PersonX negotiates for a better salary and is not salaried, so PersonX feels empowered.",71938_and_neg
+"PersonX negotiates for a better salary while using diplomacy, so PersonX feels empowered.",71938_while
+"PersonX negotiates for a better salary while not bargaining, so PersonX feels empowered.",71938_while_neg
+"PersonX is salaried but PersonX negotiates for a better salary, so PersonX feels empowered.",71938_but
+"PersonX is not salaried but PersonX negotiates for a better salary, so PersonX feels empowered.",71938_but_neg
+"Although PersonX is salaried, PersonX negotiates for a better salary, so PersonX feels empowered.",71938_although
+"Although PersonX is not a negotiator, PersonX negotiates for a better salary, so PersonX feels empowered.",71938_although_neg
+"PersonX negotiates for a better salary and wins the bargain, so PersonX is seen as a good negotiator.",183209_and
+"PersonX negotiates for a better salary and is not salaried, so PersonX is seen as a good negotiator.",183209_and_neg
+"PersonX negotiates for a better salary while using diplomacy, so PersonX is seen as a good negotiator.",183209_while
+"PersonX negotiates for a better salary while not bargaining, so PersonX is seen as a good negotiator.",183209_while_neg
+"PersonX's diplomacy is not good but PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.",183209_but
+"PersonX's diplomacy is not good but PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.",183209_but_neg
+"Although PersonX is salaried, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.",183209_although
+"Although PersonX's diplomacy is not good, PersonX negotiates for a better salary, so PersonX is seen as a good negotiator.",183209_although_neg
+"PersonX makes a mistake in front of PersonY and the guard, so PersonX is seen as careless.",79978_and
+"PersonX makes a mistake in front of PersonY and does not wrap the mistake, so PersonX is seen as careless.",79978_and_neg
+"PersonX makes a mistake in front of PersonY while wrapping the door, so PersonX is seen as careless.",79978_while
+"PersonX makes a mistake in front of PersonY while not paying attention to the door, so PersonX is seen as careless.",79978_while_neg
+"PersonX is on the side but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.",79978_but
+"There is no door but PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.",79978_but_neg
+"Although PersonX has a good profile, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.",79978_although
+"Although PersonX does not have a guard, PersonX makes a mistake in front of PersonY, so PersonX is seen as careless.",79978_although_neg
+"PersonX makes a mistake in front of PersonY and the guard, so PersonX feels ashamed.",179500_and
+"PersonX makes a mistake in front of PersonY and does not take a guard, so PersonX feels ashamed.",179500_and_neg
+"PersonX makes a mistake in front of PersonY while guarding the door, so PersonX feels ashamed.",179500_while
+"PersonX makes a mistake in front of PersonY while not paying attention to the profile, so PersonX feels ashamed.",179500_while_neg
+"PersonX is on the side but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.",179500_but
+"The door is not wrapped but PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.",179500_but_neg
+"Although PersonX is a good guard, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.",179500_although
+"Although PersonX is not a guard, PersonX makes a mistake in front of PersonY, so PersonX feels ashamed.",179500_although_neg
+"PersonX saves the life of PersonY and the world, so PersonX feels happy.",147817_and
+"PersonX saves the life of PersonY and the world does not end, so PersonX feels happy.",147817_and_neg
+"PersonX saves the life of PersonY while in the culture, so PersonX feels happy.",147817_while
+"PersonX saves the life of PersonY while not in time, so PersonX feels happy.",147817_while_neg
+"It is not time but PersonX saves the life of PersonY, so PersonX feels happy.",147817_but
+"It is not time but PersonX saves the life of PersonY, so PersonX feels happy.",147817_but_neg
+"Although PersonX's culture is not good, PersonX saves the life of PersonY, so PersonX feels happy.",147817_although
+"Although it is not time, PersonX saves the life of PersonY, so PersonX feels happy.",147817_although_neg
+"PersonX saves the life of PersonY and the world, so PersonX is seen as brave.",182860_and
+"PersonX saves the life of PersonY and the world does not stop, so PersonX is seen as brave.",182860_and_neg
+"PersonX saves the life of PersonY while in the world, so PersonX is seen as brave.",182860_while
+"PersonX saves the life of PersonY while in no time, so PersonX is seen as brave.",182860_while_neg
+"PersonX's culture is not known but PersonX saves the life of PersonY, so PersonX is seen as brave.",182860_but
+"PersonX's culture is not known but PersonX saves the life of PersonY, so PersonX is seen as brave.",182860_but_neg
+"Although PersonX's culture is not very advanced, PersonX saves the life of PersonY, so PersonX is seen as brave.",182860_although
+"Although it is not time, PersonX saves the life of PersonY, so PersonX is seen as brave.",182860_although_neg
+"PersonX acts sensibly and does not attack, so PersonX is seen as responsible.",92491_and
+"PersonX acts sensibly and does not fight, so PersonX is seen as responsible.",92491_and_neg
+"PersonX acts sensibly while fighting an attack, so PersonX is seen as responsible.",92491_while
+"PersonX acts sensibly while not fighting, so PersonX is seen as responsible.",92491_while_neg
+"PersonX is attacked but PersonX acts sensibly, so PersonX is seen as responsible.",92491_but
+"PersonX's role is not clear but PersonX acts sensibly, so PersonX is seen as responsible.",92491_but_neg
+"Although PersonX is an agent, PersonX acts sensibly, so PersonX is seen as responsible.",92491_although
+"Although PersonX is not an agent, PersonX acts sensibly, so PersonX is seen as responsible.",92491_although_neg
+"PersonX acts sensibly and does not fight, so PersonX feels relaxed.",117456_and
+"PersonX acts sensibly and does not fight, so PersonX feels relaxed.",117456_and_neg
+"PersonX acts sensibly while playing the role of an agent, so PersonX feels relaxed.",117456_while
+"PersonX acts sensibly while not fighting, so PersonX feels relaxed.",117456_while_neg
+"PersonX's role is not clear but PersonX acts sensibly, so PersonX feels relaxed.",117456_but
+"PersonX's role is not clear but PersonX acts sensibly, so PersonX feels relaxed.",117456_but_neg
+"Although PersonX's role is not clear, PersonX acts sensibly, so PersonX feels relaxed.",117456_although
+"Although PersonX does not fight, PersonX acts sensibly, so PersonX feels relaxed.",117456_although_neg
+"PersonX invites the board members to his home and provides them with a comfortable bedroom, so PersonX is seen as a good host.",4055_and
+"PersonX invites the board members to his home and no builder declines, so PersonX is seen as a good host.",4055_and_neg
+"PersonX invites the board members to his home while building his profile, so PersonX is seen as a good host.",4055_while
+"PersonX invites the board members to his home while not building a profile, so PersonX is seen as a good host.",4055_while_neg
+"PersonX is a builder but PersonX invites the board members to his home, so PersonX is seen as a good host.",4055_but
+"PersonX is not a builder but PersonX invites the board members to his home, so PersonX is seen as a good host.",4055_but_neg
+"Although PersonX is not a builder, PersonX invites the board members to his home, so PersonX is seen as a good host.",4055_although
+"Although PersonX does not have a bedroom, PersonX invites the board members to his home, so PersonX is seen as a good host.",4055_although_neg
+"PersonX invites the board members to his home and they meet in his bedroom, so PersonX feels pleased.",190950_and
+"PersonX invites the board members to his home and no profile shows up, so PersonX feels pleased.",190950_and_neg
+"PersonX invites the board members to his home while building his profile, so PersonX feels pleased.",190950_while
+"PersonX invites the board members to his home while they are not in the country, so PersonX feels pleased.",190950_while_neg
+"PersonX is not a builder but PersonX invites the board members to his home, so PersonX feels pleased.",190950_but
+"PersonX is not a builder but PersonX invites the board members to his home, so PersonX feels pleased.",190950_but_neg
+"Although PersonX is not from the country, PersonX invites the board members to his home, so PersonX feels pleased.",190950_although
+"Although PersonX does not have a bedroom, PersonX invites the board members to his home, so PersonX feels pleased.",190950_although_neg
+"PersonX has a business and is successful in his trade, so PersonX is seen as successful.",94875_and
+"PersonX has a business and no office, so PersonX is seen as successful.",94875_and_neg
+"PersonX has a business while in the office, so PersonX is seen as successful.",94875_while
+"PersonX has a business while not in the office, so PersonX is seen as successful.",94875_while_neg
+"PersonX's success is not known but PersonX has a business, so PersonX is seen as successful.",94875_but
+"PersonX does not trade but PersonX has a business, so PersonX is seen as successful.",94875_but_neg
+"Although PersonX's office is small, PersonX has a business, so PersonX is seen as successful.",94875_although
+"Although PersonX does not have an office, PersonX has a business, so PersonX is seen as successful.",94875_although_neg
+"PersonX has a business and trade success, so PersonX feels happy.",417409_and
+"PersonX has a business and no success, so PersonX feels happy.",417409_and_neg
+"PersonX has a business while trading successfully, so PersonX feels happy.",417409_while
+"PersonX has a business while not in the office, so PersonX feels happy.",417409_while_neg
+"PersonX's trade is not successful but PersonX has a business, so PersonX feels happy.",417409_but
+"PersonX does not have much success but PersonX has a business, so PersonX feels happy.",417409_but_neg
+"Although PersonX is not successful in his trade, PersonX has a business, so PersonX feels happy.",417409_although
+"Although PersonX's office is not successful, PersonX has a business, so PersonX feels happy.",417409_although_neg
+"PersonX lays their life down for others and saves the world, so PersonX feels heroic.",131697_and
+"PersonX lays their life down for others and does not ask for food, so PersonX feels heroic.",131697_and_neg
+"PersonX lays their life down for others while saving the world, so PersonX feels heroic.",131697_while
+"PersonX lays their life down for others while eating no food, so PersonX feels heroic.",131697_while_neg
+"PersonX's family is hungry but PersonX lays their life down for others, so PersonX feels heroic.",131697_but
+"PersonX's family is not wealthy but PersonX lays their life down for others, so PersonX feels heroic.",131697_but_neg
+"Although PersonX does not have much food, PersonX lays their life down for others, so PersonX feels heroic.",131697_although
+"Although PersonX does not have much food, PersonX lays their life down for others, so PersonX feels heroic.",131697_although_neg
+"PersonX lays their life down for others and the world, so PersonX is seen as heroic.",211084_and
+"PersonX lays their life down for others and does not ask for food, so PersonX is seen as heroic.",211084_and_neg
+"PersonX lays their life down for others while saving the world, so PersonX is seen as heroic.",211084_while
+"PersonX lays their life down for others while eating no food, so PersonX is seen as heroic.",211084_while_neg
+"PersonX's family is not wealthy but PersonX lays their life down for others, so PersonX is seen as heroic.",211084_but
+"PersonX's family is not wealthy but PersonX lays their life down for others, so PersonX is seen as heroic.",211084_but_neg
+"Although PersonX's family is not wealthy, PersonX lays their life down for others, so PersonX is seen as heroic.",211084_although
+"Although PersonX does not have much food, PersonX lays their life down for others, so PersonX is seen as heroic.",211084_although_neg
+"PersonX talks to PersonY in person and completes the task, so PersonX is seen as friendly.",50411_and
+"PersonX talks to PersonY in person and does not interrupt her task, so PersonX is seen as friendly.",50411_and_neg
+"PersonX talks to PersonY in person while doing a task, so PersonX is seen as friendly.",50411_while
+"PersonX talks to PersonY in person while no human is present, so PersonX is seen as friendly.",50411_while_neg
+"PersonX is not a member but PersonX talks to PersonY in person, so PersonX is seen as friendly.",50411_but
+"PersonX is not a member but PersonX talks to PersonY in person, so PersonX is seen as friendly.",50411_but_neg
+"Although PersonX is not a member, PersonX talks to PersonY in person, so PersonX is seen as friendly.",50411_although
+"Although PersonX is not a member of the task, PersonX talks to PersonY in person, so PersonX is seen as friendly.",50411_although_neg
+"PersonX talks to PersonY in person and they complete the task, so PersonX feels connected.",73656_and
+"PersonX talks to PersonY in person and the task is not a problem, so PersonX feels connected.",73656_and_neg
+"PersonX talks to PersonY in person while doing a task, so PersonX feels connected.",73656_while
+"PersonX talks to PersonY in person while no member is present, so PersonX feels connected.",73656_while_neg
+"PersonX's task is not complete but PersonX talks to PersonY in person, so PersonX feels connected.",73656_but
+"PersonX is not a member but PersonX talks to PersonY in person, so PersonX feels connected.",73656_but_neg
+"Although PersonX is not a member, PersonX talks to PersonY in person, so PersonX feels connected.",73656_although
+"Although PersonX is not a member, PersonX talks to PersonY in person, so PersonX feels connected.",73656_although_neg
+"PersonX explains its purposes and its meaning, so PersonX feels knowledgeable.",187135_and
+"PersonX explains its purposes and does not miss the target, so PersonX feels knowledgeable.",187135_and_neg
+"PersonX explains its purposes while explaining its meaning, so PersonX feels knowledgeable.",187135_while
+"PersonX explains its purposes while giving no reason, so PersonX feels knowledgeable.",187135_while_neg
+"The project is not completed but PersonX explains its purposes, so PersonX feels knowledgeable.",187135_but
+"The project does not have a target but PersonX explains its purposes, so PersonX feels knowledgeable.",187135_but_neg
+"Although PersonX does not understand the project, PersonX explains its purposes, so PersonX feels knowledgeable.",187135_although
+"Although PersonX does not know the cause of the project, PersonX explains its purposes, so PersonX feels knowledgeable.",187135_although_neg
+"PersonX explains its purposes and its meaning, so PersonX is seen as knowledgeable.",204207_and
+"PersonX explains its purposes and that it has no meaning, so PersonX is seen as knowledgeable.",204207_and_neg
+"PersonX explains its purposes while explaining its meaning, so PersonX is seen as knowledgeable.",204207_while
+"PersonX explains its purposes while giving no reason, so PersonX is seen as knowledgeable.",204207_while_neg
+"PersonX's project is not completed but PersonX explains its purposes, so PersonX is seen as knowledgeable.",204207_but
+"The project does not have a target but PersonX explains its purposes, so PersonX is seen as knowledgeable.",204207_but_neg
+"Although PersonX's target is not clear, PersonX explains its purposes, so PersonX is seen as knowledgeable.",204207_although
+"Although PersonX's project does not have a target, PersonX explains its purposes, so PersonX is seen as knowledgeable.",204207_although_neg
+"PersonX satisfies PersonY's interests and trusts PersonY's information, so PersonX feels happy.",120563_and
+"PersonX satisfies PersonY's interests and does not waste energy, so PersonX feels happy.",120563_and_neg
+"PersonX satisfies PersonY's interests while following the policy, so PersonX feels happy.",120563_while
+"PersonX satisfies PersonY's interests while not compromising on information, so PersonX feels happy.",120563_while_neg
+"PersonX's business is not successful but PersonX satisfies PersonY's interests, so PersonX feels happy.",120563_but
+"PersonX's energy is not enough but PersonX satisfies PersonY's interests, so PersonX feels happy.",120563_but_neg
+"Although PersonX's business is not successful, PersonX satisfies PersonY's interests, so PersonX feels happy.",120563_although
+"Although PersonX's energy is not enough, PersonX satisfies PersonY's interests, so PersonX feels happy.",120563_although_neg
+"PersonX satisfies PersonY's interests and trusts PersonY, so PersonX is seen as considerate.",256641_and
+"PersonX satisfies PersonY's interests and does not violate PersonY's trust, so PersonX is seen as considerate.",256641_and_neg
+"PersonX satisfies PersonY's interests while maintaining trust, so PersonX is seen as considerate.",256641_while
+"PersonX satisfies PersonY's interests while not violating PersonY's trust, so PersonX is seen as considerate.",256641_while_neg
+"PersonX's business is not successful but PersonX satisfies PersonY's interests, so PersonX is seen as considerate.",256641_but
+"PersonX does not trust PersonY but PersonX satisfies PersonY's interests, so PersonX is seen as considerate.",256641_but_neg
+"Although PersonX's business is not successful, PersonX satisfies PersonY's interests, so PersonX is seen as considerate.",256641_although
+"Although PersonX does not trust PersonY, PersonX satisfies PersonY's interests, so PersonX is seen as considerate.",256641_although_neg
+"PersonX is announced as the next leader and the next president, so PersonX feels powerful.",157760_and
+"PersonX is announced as the next leader and no one else is leading, so PersonX feels powerful.",157760_and_neg
+"PersonX is announced as the next leader while being made president, so PersonX feels powerful.",157760_while
+"PersonX is announced as the next leader while the director is not present, so PersonX feels powerful.",157760_while_neg
+"PersonX is not the leading maker but PersonX is announced as the next leader, so PersonX feels powerful.",157760_but
+"PersonX is not the president but PersonX is announced as the next leader, so PersonX feels powerful.",157760_but_neg
+"Although PersonX is not a director, PersonX is announced as the next leader, so PersonX feels powerful.",157760_although
+"Although PersonX is not the president, PersonX is announced as the next leader, so PersonX feels powerful.",157760_although_neg
+"PersonX is announced as the next leader and director of the company, so PersonX is seen as strong.",221494_and
+"PersonX is announced as the next leader and no one else is leading, so PersonX is seen as strong.",221494_and_neg
+"PersonX is announced as the next leader while being president, so PersonX is seen as strong.",221494_while
+"PersonX is announced as the next leader while no one else is leading, so PersonX is seen as strong.",221494_while_neg
+"PersonX is not the director but PersonX is announced as the next leader, so PersonX is seen as strong.",221494_but
+"PersonX is not the president but PersonX is announced as the next leader, so PersonX is seen as strong.",221494_but_neg
+"Although PersonX is not leading, PersonX is announced as the next leader, so PersonX is seen as strong.",221494_although
+"Although PersonX is not the director, PersonX is announced as the next leader, so PersonX is seen as strong.",221494_although_neg
+"PersonX invites people to the party and the group has a good time, so PersonX is seen as a nice person.",26644_and
+"PersonX invites people to the party and the group does not complain, so PersonX is seen as a nice person.",26644_and_neg
+"PersonX invites people to the party while being a woman, so PersonX is seen as a nice person.",26644_while
+"PersonX invites people to the party while not in the club, so PersonX is seen as a nice person.",26644_while_neg
+"PersonX is a woman but PersonX invites people to the party, so PersonX is seen as a nice person.",26644_but
+"PersonX is not in the group but PersonX invites people to the party, so PersonX is seen as a nice person.",26644_but_neg
+"Although PersonX is not in the family, PersonX invites people to the party, so PersonX is seen as a nice person.",26644_although
+"Although PersonX is not a member of the club, PersonX invites people to the party, so PersonX is seen as a nice person.",26644_although_neg
+"PersonX invites people to the party and the group comes, so PersonX feels pleased.",369176_and
+"PersonX invites people to the party and the group does not show up, so PersonX feels pleased.",369176_and_neg
+"PersonX invites people to the party while being a woman, so PersonX feels pleased.",369176_while
+"PersonX invites people to the party while no woman comes, so PersonX feels pleased.",369176_while_neg
+"PersonX's family is not in the club but PersonX invites people to the party, so PersonX feels pleased.",369176_but
+"There is no club but PersonX invites people to the party, so PersonX feels pleased.",369176_but_neg
+"Although PersonX is not in the club, PersonX invites people to the party, so PersonX feels pleased.",369176_although
+"Although PersonX's family is not in the club, PersonX invites people to the party, so PersonX feels pleased.",369176_although_neg
+"PersonX does a good job with a new project and a campaign, so PersonX is seen as organized.",66551_and
+"PersonX does a good job with a new project and no student is left behind, so PersonX is seen as organized.",66551_and_neg
+"PersonX does a good job with a new project while a student, so PersonX is seen as organized.",66551_while
+"PersonX does a good job with a new project while under no contract, so PersonX is seen as organized.",66551_while_neg
+"PersonX is a student but PersonX does a good job with a new project, so PersonX is seen as organized.",66551_but
+"PersonX is not a doctor but PersonX does a good job with a new project, so PersonX is seen as organized.",66551_but_neg
+"Although PersonX is a student, PersonX does a good job with a new project, so PersonX is seen as organized.",66551_although
+"Although PersonX does not have a contract, PersonX does a good job with a new project, so PersonX is seen as organized.",66551_although_neg
+"PersonX does a good job with a new project and a new campaign, so PersonX feels accomplished.",143936_and
+"PersonX does a good job with a new project and no campaign, so PersonX feels accomplished.",143936_and_neg
+"PersonX does a good job with a new project while on a campaign, so PersonX feels accomplished.",143936_while
+"PersonX does a good job with a new project while not on a campaign, so PersonX feels accomplished.",143936_while_neg
+"PersonX is a student but PersonX does a good job with a new project, so PersonX feels accomplished.",143936_but
+"PersonX is not a doctor but PersonX does a good job with a new project, so PersonX feels accomplished.",143936_but_neg
+"Although PersonX is a student, PersonX does a good job with a new project, so PersonX feels accomplished.",143936_although
+"Although PersonX does not have a contract, PersonX does a good job with a new project, so PersonX feels accomplished.",143936_although_neg
+"PersonX puts it all out there and shuts the door, so PersonX is seen as sincere.",315437_and
+"PersonX puts it all out there and keeps no secrets, so PersonX is seen as sincere.",315437_and_neg
+"PersonX puts it all out there while shutting the door, so PersonX is seen as sincere.",315437_while
+"PersonX puts it all out there while not cutting any corners, so PersonX is seen as sincere.",315437_while_neg
+"PersonX does not shut up but PersonX puts it all out there, so PersonX is seen as sincere.",315437_but
+"PersonX does not keep his mouth shut but PersonX puts it all out there, so PersonX is seen as sincere.",315437_but_neg
+"Although PersonX's plant is not growing, PersonX puts it all out there, so PersonX is seen as sincere.",315437_although
+"Although PersonX does not keep a secret, PersonX puts it all out there, so PersonX is seen as sincere.",315437_although_neg
+"PersonX puts it all out there and keeps going, so PersonX feels courageous.",445884_and
+"PersonX puts it all out there and no one keeps it, so PersonX feels courageous.",445884_and_neg
+"PersonX puts it all out there while shutting the door, so PersonX feels courageous.",445884_while
+"PersonX puts it all out there while cutting no corners, so PersonX feels courageous.",445884_while_neg
+"PersonX plants the seed but PersonX puts it all out there, so PersonX feels courageous.",445884_but
+"PersonX does not keep anything back but PersonX puts it all out there, so PersonX feels courageous.",445884_but_neg
+"Although PersonX keeps cutting, PersonX puts it all out there, so PersonX feels courageous.",445884_although
+"Although PersonX does not keep any plants, PersonX puts it all out there, so PersonX feels courageous.",445884_although_neg
+"PersonX cooks for his wife and her mother, so PersonX is seen as considerate.",47205_and
+"PersonX cooks for his wife and does not ask for food, so PersonX is seen as considerate.",47205_and_neg
+"PersonX cooks for his wife while his girlfriend is away, so PersonX is seen as considerate.",47205_while
+"PersonX cooks for his wife while his girlfriend is not home, so PersonX is seen as considerate.",47205_while_neg
+"PersonX's mother is not well but PersonX cooks for his wife, so PersonX is seen as considerate.",47205_but
+"PersonX's girlfriend does not cook but PersonX cooks for his wife, so PersonX is seen as considerate.",47205_but_neg
+"Although PersonX's daughter is not well, PersonX cooks for his wife, so PersonX is seen as considerate.",47205_although
+"Although PersonX's daughter does not like food, PersonX cooks for his wife, so PersonX is seen as considerate.",47205_although_neg
+"PersonX cooks for his wife and her mother, so PersonX feels pleased.",231945_and
+"PersonX cooks for his wife and does not complain about the food, so PersonX feels pleased.",231945_and_neg
+"PersonX cooks for his wife while his daughter watches TV, so PersonX feels pleased.",231945_while
+"PersonX cooks for his wife while his mother is not home, so PersonX feels pleased.",231945_while_neg
+"PersonX's mother is not well but PersonX cooks for his wife, so PersonX feels pleased.",231945_but
+"PersonX's girlfriend does not like food but PersonX cooks for his wife, so PersonX feels pleased.",231945_but_neg
+"Although PersonX's girlfriend is not well, PersonX cooks for his wife, so PersonX feels pleased.",231945_although
+"Although PersonX's mother is not well, PersonX cooks for his wife, so PersonX feels pleased.",231945_although_neg
+"PersonX finds a lost object and answers the question, so PersonX is seen as good at finding things.",94505_and
+"PersonX finds a lost object and asks no questions, so PersonX is seen as good at finding things.",94505_and_neg
+"PersonX finds a lost object while answering a question, so PersonX is seen as good at finding things.",94505_while
+"PersonX finds a lost object while using the no method, so PersonX is seen as good at finding things.",94505_while_neg
+"PersonX's method is not perfect but PersonX finds a lost object, so PersonX is seen as good at finding things.",94505_but
+"PersonX's method is not good but PersonX finds a lost object, so PersonX is seen as good at finding things.",94505_but_neg
+"Although PersonX does not know the answer to the question, PersonX finds a lost object, so PersonX is seen as good at finding things.",94505_although
+"Although PersonX does not know the method, PersonX finds a lost object, so PersonX is seen as good at finding things.",94505_although_neg
+"PersonX finds a lost object and answers the question, so PersonX feels satisfied.",126188_and
+"PersonX finds a lost object and no one questions him, so PersonX feels satisfied.",126188_and_neg
+"PersonX finds a lost object while asking a question, so PersonX feels satisfied.",126188_while
+"PersonX finds a lost object while asking no questions, so PersonX feels satisfied.",126188_while_neg
+"PersonX's question is not answered but PersonX finds a lost object, so PersonX feels satisfied.",126188_but
+"There is no element but PersonX finds a lost object, so PersonX feels satisfied.",126188_but_neg
+"Although PersonX's question is not answered, PersonX finds a lost object, so PersonX feels satisfied.",126188_although
+"Although PersonX's question is not answered, PersonX finds a lost object, so PersonX feels satisfied.",126188_although_neg
+"PersonX agrees to do the job and earn money, so PersonX feels confident.",58038_and
+"PersonX agrees to do the job and does not ask for money, so PersonX feels confident.",58038_and_neg
+"PersonX agrees to do the job while earning money, so PersonX feels confident.",58038_while
+"PersonX agrees to do the job while no contract is in place, so PersonX feels confident.",58038_while_neg
+"PersonX is not a doctor but PersonX agrees to do the job, so PersonX feels confident.",58038_but
+"There is no contract but PersonX agrees to do the job, so PersonX feels confident.",58038_but_neg
+"Although PersonX does not have much money, PersonX agrees to do the job, so PersonX feels confident.",58038_although
+"Although PersonX does not have much money, PersonX agrees to do the job, so PersonX feels confident.",58038_although_neg
+"PersonX agrees to do the job and earns the money, so PersonX is seen as a team player.",317267_and
+"PersonX agrees to do the job and does not ask for money, so PersonX is seen as a team player.",317267_and_neg
+"PersonX agrees to do the job while earning money, so PersonX is seen as a team player.",317267_while
+"PersonX agrees to do the job while there is no contract, so PersonX is seen as a team player.",317267_while_neg
+"PersonX does not have much money but PersonX agrees to do the job, so PersonX is seen as a team player.",317267_but
+"PersonX does not have much money but PersonX agrees to do the job, so PersonX is seen as a team player.",317267_but_neg
+"Although PersonX does not have much money, PersonX agrees to do the job, so PersonX is seen as a team player.",317267_although
+"Although PersonX does not have a contract, PersonX agrees to do the job, so PersonX is seen as a team player.",317267_although_neg
+"PersonX signs up for the job and pays the money, so PersonX is seen as reliable.",8292_and
+"PersonX signs up for the job and does not miss a message, so PersonX is seen as reliable.",8292_and_neg
+"PersonX signs up for the job while saving money, so PersonX is seen as reliable.",8292_while
+"PersonX signs up for the job while not making any money, so PersonX is seen as reliable.",8292_while_neg
+"PersonX's message is not clear but PersonX signs up for the job, so PersonX is seen as reliable.",8292_but
+"PersonX's design is not accepted but PersonX signs up for the job, so PersonX is seen as reliable.",8292_but_neg
+"Although PersonX's message is not clear, PersonX signs up for the job, so PersonX is seen as reliable.",8292_although
+"Although PersonX does not have much money, PersonX signs up for the job, so PersonX is seen as reliable.",8292_although_neg
+"PersonX signs up for the job and receives a message, so PersonX feels hopeful.",201083_and
+"PersonX signs up for the job and receives no message, so PersonX feels hopeful.",201083_and_neg
+"PersonX signs up for the job while receiving a message from her doctor, so PersonX feels hopeful.",201083_while
+"PersonX signs up for the job while receiving no message, so PersonX feels hopeful.",201083_while_neg
+"PersonX does not have much money but PersonX signs up for the job, so PersonX feels hopeful.",201083_but
+"PersonX does not have much money but PersonX signs up for the job, so PersonX feels hopeful.",201083_but_neg
+"Although PersonX does not have much money, PersonX signs up for the job, so PersonX feels hopeful.",201083_although
+"Although PersonX does not have much money, PersonX signs up for the job, so PersonX feels hopeful.",201083_although_neg
+"PersonX listens to the answer and finds out the truth, so PersonX feels interested.",179265_and
+"PersonX listens to the answer and does not return the truth, so PersonX feels interested.",179265_and_neg
+"PersonX listens to the answer while thinking about the problem, so PersonX feels interested.",179265_while
+"PersonX listens to the answer while the problem does not return, so PersonX feels interested.",179265_while_neg
+"Although the question is not true but PersonX listens to the answer, so PersonX feels interested.",179265_but
+"There is no return but PersonX listens to the answer, so PersonX feels interested.",179265_but_neg
+"Although the reason is not clear, PersonX listens to the answer, so PersonX feels interested.",179265_although
+"Although the question is not true, PersonX listens to the answer, so PersonX feels interested.",179265_although_neg

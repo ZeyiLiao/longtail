@@ -1,6 +1,7 @@
 import copy
 import pickle
 from helper import *
+
 from get_related_words import get_related_words
 import random
 import os
@@ -66,6 +67,7 @@ def main(args):
     model_name = args.model_name
 
     premise_inputs = dict()
+    premise_orders = dict()
     premise_constraints = dict()
 
 
@@ -75,23 +77,21 @@ def main(args):
         get_related_words(args.input_file,args.save_file)
 
 
-
     with open(args.save_file,'rb') as f:
         premise_words = pickle.load(f)
 
 
-
-
-
     all_tuples_file = args.csv_file
 
-    df = pd.read_csv(all_tuples_file,names = ['head','relation','tail'],index_col='head')
+    df = pd.read_csv(all_tuples_file,names = ['head','relation','tail','order'],index_col='head')
 
 
     for query_index,query in enumerate(premise_words.keys()):
         df_selected = df.loc[query]
         relations = list(df_selected['relation'])
         tails = list(df_selected['tail'])
+        orders = list(df_selected['order'])
+
         desired_relations = list(set(relations) & needed_relations)
 
 
@@ -99,10 +99,13 @@ def main(args):
             continue
 
         relations_tails = []
+        rt_orders = []
         count = 0
         for index,relation in enumerate(relations):
             if relation in desired_relations:
                 relations_tails.append((relation,tails[index]))
+                rt_orders.append(orders[index])
+
                 count += 1;
                 desired_relations.remove(relation)
 
@@ -114,19 +117,24 @@ def main(args):
 
 
         backed_sents = []
+        bs_orders = []
         for index,relation_tail in enumerate(relations_tails):
             relation,tail = relation_tail[0],relation_tail[1]
+
             for transition_word in transition_words:
                 backed_sent = back_to_sen_mask(query,relation,tail,model_name,transition_word)
                 backed_sents.append(backed_sent)
 
+                bs_orders.append(f'{rt_orders[index]}_{transition_word}')
 
 
         premise_inputs[query] = backed_sents
+        premise_orders[query] = bs_orders
+
+
+
 
         words_candidates = premise_words[query]
-
-
 
         words_candidates = random.sample(words_candidates,num_of_cons)
 
@@ -157,12 +165,15 @@ def main(args):
         premise_constraints_length = len(premise_constraints[premise])
 
         # premise_inputs
-        for backed_sent in premise_inputs[premise]:
-            for _ in range(premise_constraints_length * (len(negation_words) + 1)):
-                fi_write.append(backed_sent)
+        for backed_sent,bs_order in zip(premise_inputs[premise],premise_orders[premise]):
 
-            for _ in range(len(negation_words) + 1):
-                fi_write_dis.append(backed_sent)
+            for _ in range(premise_constraints_length):
+                fi_write.append((backed_sent,bs_order))
+                fi_write.append((backed_sent,f'{bs_order}_neg'))
+
+
+            fi_write_dis.append((backed_sent,bs_order))
+            fi_write_dis.append((backed_sent,f'{bs_order}_neg'))
 
 
         for _ in range(len(premise_inputs[premise])):
@@ -223,12 +234,13 @@ def main(args):
     len(fc_inflect_write_dis) == len(fc_lemma_write_dis) == len(fi_write_dis)
     len(fc_inflect_write) == len(fc_lemma_write) == len(fi_write)
 
+
     num_variations = (premise_constraints_length * (len(negation_words) + 1) * len(transition_words) * len(needed_relations))
     num_variations_dis = ((len(negation_words) + 1) * len(transition_words) * len(needed_relations))
 
-
     total_groups_train = 6
     total_groups_train_dis = 12
+
     groups_for_train = random.sample(range(int(len(fi_write)/num_variations)) ,total_groups_train)
     groups_for_train_dis = random.sample(range(int(len(fi_write_dis)/num_variations_dis)) ,total_groups_train_dis)
 

@@ -1,4 +1,5 @@
 data/
+wandb/
 .vscode/
 __pycache__/
 figure/

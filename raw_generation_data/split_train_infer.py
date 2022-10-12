@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+import csv
 
 def split_train_infer(split_args,for_dis = False):
 
@@ -41,17 +42,19 @@ def split_train_infer(split_args,for_dis = False):
     train_or_infer = 'train'
     nl = '\n'
 
-    generation_inputs_path = root_dir / f'inputs_{model_name}_{train_or_infer}.txt'
+    generation_inputs_path = root_dir / f'inputs_{model_name}_{train_or_infer}.csv'
     generation_constraints_lemmas_path = root_dir / f'lemma_constraints_{model_name}_{train_or_infer}.json'
     generation_constraints_inflections_path = root_dir / f'inflection_constraints_{model_name}_{train_or_infer}.json'
 
     fi = open(generation_inputs_path,'w')
+    fi_w = csv.writer(fi)
+    fi_w.writerows(train_inputs)
+
     fc_lemma = open(generation_constraints_lemmas_path,'w')
     fc_inflect = open(generation_constraints_inflections_path,'w')
 
     for index in range(len(train_inputs)):
-        fi.write(train_inputs[index])
-        fi.write(nl)
+
         json.dump(train_lemmas[index],fc_lemma)
         fc_lemma.write(nl)
         json.dump(train_inflections[index],fc_inflect)
@@ -65,18 +68,19 @@ def split_train_infer(split_args,for_dis = False):
     train_or_infer = 'infer'
     nl = '\n'
 
-    generation_inputs_path = root_dir / f'inputs_{model_name}_{train_or_infer}.txt'
+    generation_inputs_path = root_dir / f'inputs_{model_name}_{train_or_infer}.csv'
     generation_constraints_lemmas_path = root_dir / f'lemma_constraints_{model_name}_{train_or_infer}.json'
     generation_constraints_inflections_path = root_dir / f'inflection_constraints_{model_name}_{train_or_infer}.json'
 
 
     fi = open(generation_inputs_path,'w')
+    fi_w = csv.writer(fi)
+    fi_w.writerows(infer_inputs)
+
     fc_lemma = open(generation_constraints_lemmas_path,'w')
     fc_inflect = open(generation_constraints_inflections_path,'w')
 
     for index in range(len(infer_inputs)):
-        fi.write(infer_inputs[index])
-        fi.write(nl)
         json.dump(infer_lemmas[index],fc_lemma)
         fc_lemma.write(nl)
         json.dump(infer_inflections[index],fc_inflect)

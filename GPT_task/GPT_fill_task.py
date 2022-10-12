@@ -7,33 +7,50 @@ from tqdm import tqdm
 import jsonlines
 
 
+
 def main(args):
 
+    demonstration_conti = \
+    "Input: PersonX feels creative, because PersonX writes poems in her diary and [mask].\n"\
+    "Constraint: [pillow, shoes, cloth, box, emotion]\n"\
+    "Output: PersonX feels creative, because PersonX writes poems in her diary and expresses her emotion.\n"\
+    "Input: PersonX is seen as fashionable because PersonX acquires an expensive shirt despite the fact that [mask].\n"\
+    "Constraint: [mouse, computer, window, pen, house]\n"\
+    "Output: PersonX is seen as fashionable, because PersonX acquires an expensive shirt despite the fact that PersonX lives in a poor house.\n"\
+    "Input: PersonX feels uncertain, because PersonX asks what to do while [mask].\n"\
+    "Constraint: [busy, school, bus, rice, meat]\n"\
+    "Output:PersonX feels uncertain, because PersonX asks what to do while being busy with trivial stuff.\n"\
+    "Input: PersonX feels confident because PersonX tells the whole truth even though the fact that [mask].\n"\
+    "Constraint: [bottle, water, medicine, hard, tissue]\n"\
+    "Output: PersonX feels confident because PersonX tells the whole truth even though the fact that problem is hard.\n"\
+
+
     demonstration = \
-    "Input: PersonX sneaks into PersonY's room and [mask], so PersonX feels nervous.\n"\
-    "Constraint: [closet, normal, place, plane, bed]\n"\
-    "Output: PersonX sneaks into PersonY's room and sees a closet space, so PersonX feels nervous.\n"\
-    "Input: PersonX sneaks into PersonY's room and [mask], so PersonX feels nervous.\n"\
-    "Constraint: [furniture, mountain, water, disk, bowl], [no]\n"\
-    "Output: PersonX sneaks into PersonY's room and does not find furnitures, so PersonX feels nervous.\n"\
-    "Input: [mask] but PersonX sneaks into PersonY's room, so PersonX feels nervous.\n"\
-    "Constraint: [police, computer, window, pen, mouse]\n"\
-    "Output: Police surround the house but PersonX sneaks into PersonY's room, so PersonX feels nervous.\n"\
-    "Input: [mask] but PersonX sneaks into PersonY's room, so PersonX feels nervous.\n"\
-    "Constraint: [money, water, medicine, cigarette, tissue], [no]\n"\
-    "Output: PersonX does not need money but PersonX sneaks into PersonY's room, so PersonX feels nervous\n"\
+    "Input: PersonX writes poems in her diary and [mask], so PersonX feels creative.\n"\
+    "Constraint: [pillow, shoes, cloth, box, emotion]\n"\
+    "Output: PersonX writes poems in her diary and expresses her emotion, so PersonX feels creative.\n"\
+    "Input: PersonX is a student in PersonY's course and [mask], so PersonX is seen as intelligent.\n"\
+    "Constraint: [normal, grade, place, plane, bed], [no]\n"\
+    "Output: PersonX is a student in PersonY's course and no one gets higher grade than him, so PersonX is seen as intelligent.\n"\
+    "Input: [mask] but PersonX acquires an expensive shirt, so PersonX is seen as fashionable.\n"\
+    "Constraint: [mouse, computer, window, pen, house]\n"\
+    "Output: PersonX lives in a poor house but PersonX acquires an expensive shirt, so PersonX is seen as fashionable.\n"\
+    "Input: [mask] but PersonX completes her paper, so PersonX is seen as diligent.\n"\
+    "Constraint: [mentor, grocery, hand, drug, skin], [no]\n"\
+    "Output: No mentor guides PersonX but PersonX completes her paper, so PersonX is seen as diligent.\n"\
     "Input: PersonX asks what to do while [mask], so PersonX feels uncertain.\n"\
-    "Constraint: [suggestion, shoes, cloth, box, pillow]\n"\
-    "Output: PersonX asks what to do while seeks suggestions, so PersonX feels uncertain.\n"\
-    "Input: PersonX asks what to do while [mask], so PersonX feels uncertain.\n"\
-    "Constraint: [school, help, bus, rice, meat], [no]\n"\
-    "Output: PersonX asks what to do while no one help, so PersonX feels uncertain.\n"\
-    "Input: Although [mask], PersonX asks what to do, so PersonX feels uncertain.\n"\
-    "Constraint: [road, street, car, tree, consultant]\n"\
-    "Output: Although consultant sleeps, PersonX asks what to do, so PersonX feels uncertain.\n"\
-    "Input: Although [mask], PersonX asks what to do, so PersonX feels uncertain.\n"\
-    "Constraint: [help, grocery, hand, drug, skin], [no]\n"\
-    "Output: Although no one help, PersonX asks what to do, so PersonX feels uncertain."
+    "Constraint: [busy, school, bus, rice, meat]\n"\
+    "Output: PersonX asks what to do while being busy with trivial stuffs, so PersonX feels uncertain.\n"\
+    "Input: PersonX sneaks into PersonY's room while [mask], so PersonX feels nervous.\n"\
+    "Constraint: [purse, mountain, water, disk, bowl], [no]\n"\
+    "Output: PersonX sneaks into PersonY's room while does not find the purse, so PersonX feels nervous.\n"\
+    "Input: Although [mask], PersonX gets a job at club, so PersonX feels pleased.\n"\
+    "Constraint: [road, team, car, tree, street]\n"\
+    "Output: Although PersonX dismissed the team, PersonX gets a job at club, so PersonX feels pleased.\n"\
+    "Input: Although [mask], PersonX tells the whole truth, so PersonX feels confident.\n"\
+    "Constraint: [bottle, water, medicine, easy, tissue], [no]\n"\
+    "Output: Although problem is not easy, PersonX tells the whole truth, so PersonX feels confident."
+
 
 
     def change_format(x):
@@ -53,17 +70,24 @@ def main(args):
         return cons_string
 
 
+
     print(f'we load data from {args.inputs}')
     print(f'we load lemma constraints from {args.lemma_constraints}')
     print(f'we load inflection constraints from {args.inflection_constraints}')
 
     with open (args.inputs) as f:
+
         if args.model_type == 't5':
             original_mask = '<extra_id_0>'
         else:
             raise NotImplementedError
 
-        inputs = [x.rstrip().replace(original_mask,'[mask]') for x in f.readlines()]
+        reader = csv.reader(f)
+        inputs = []
+        inputs_order = []
+        for line in reader:
+            inputs.append(line[0].replace(original_mask,'[mask]'))
+            inputs_order.append(line[1])
 
 
     with open (args.lemma_constraints) as f:
@@ -88,6 +112,7 @@ def main(args):
 
 
     generations = []
+    breakpoint()
 
 
     @backoff.on_exception(backoff.expo, openai.error.RateLimitError)
@@ -95,12 +120,13 @@ def main(args):
         return gpt3_wrapper.prompt_generation(input,inflection_constraint,lemma_constraint)
 
     gpt3_wrapper = PromptWrapper(demonstration,args.no_filter)
+    print('We use gpt3 to do generation')
     for index,(input,inflection_constraint,lemma_constraint) in enumerate(tqdm(list(zip(inputs,inflection_constraints,lemma_constraints)))):
 
         generation = gpt_generate(input,inflection_constraint,lemma_constraint)
         generations.append(generation)
 
-    assert len(inputs) == len(generations)
+    assert len(inputs) == len(generations) == len(inputs_order)
 
     Path(args.outputs).mkdir(parents= True,exist_ok=True)
 
@@ -132,10 +158,10 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='gpt3 generation')
-    parser.add_argument('--inputs',default = '../longtail_data/raw_data/input_t5_train.txt')
-    parser.add_argument('--lemma_constraints',default = '../longtail_data/raw_data/lemma_constraints_t5_train.json')
-    parser.add_argument('--inflection_constraints',default = '../longtail_data/raw_data/inflection_constraints_t5_train.json')
-    parser.add_argument('--outputs', default = 'GPT_fill_output.txt')
+    parser.add_argument('--inputs')
+    parser.add_argument('--lemma_constraints')
+    parser.add_argument('--inflection_constraints')
+    parser.add_argument('--outputs')
     parser.add_argument('--model_type', choices = ['t5','bart'], default = 't5')
     parser.add_argument('--no_filter', action='store_true')
     parser.add_argument('--Mturk', action='store_true')

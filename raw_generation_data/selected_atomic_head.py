@@ -4,12 +4,12 @@ import numpy as np
 import random
 
 
-path = '../data/ATOMIC10X_filter.csv'
+path = '/home/zeyi/longtail/longtail_data/ATOMIC10X_filter.csv'
 tmp = ddict(list)
 with open(path) as f:
     reader = csv.reader(f)
     for line in reader:
-        head,rel,tail = line[0],line[1],line[2]
+        head,rel,tail,order = line[0],line[1],line[2],line[3]
         tmp[head].append(rel)
 
 desired_heads = []

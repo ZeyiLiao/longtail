@@ -4,6 +4,7 @@ from typing import List
 import os
 from helper import *
 import openai
+
 with open('../key.txt') as f:
     key = f.read()
 openai.api_key = key
