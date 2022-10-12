@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 
-from process_t5_format import process_t5_format, process_t5_format_continuation
+from process_t5_format import process_t5_format
 import jsonlines
 import argparse
 from tf_trainer_format import change_tf_trainer_format
@@ -44,11 +44,9 @@ def main(args):
     assert '' not in outputs
     assert len(inputs) == len(constraints) == len(outputs)
 
-    if args.conti:
-        inputs,outputs = process_t5_format_continuation(inputs,outputs)
-    else:
-        inputs,outputs = process_t5_format(inputs,outputs)
-    breakpoint()
+    inputs,outputs = process_t5_format(inputs,outputs)
+
+
     train_count = int(len(inputs)*0.75)
     train_index = np.random.choice(len(inputs),train_count,replace=False)
 
@@ -120,6 +118,5 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='split gpt output into train_dev_test')
     parser.add_argument('--gpt_outputs_dir')
-    parser.add_argument('--conti', action = 'store_true')
     args = parser.parse_args()
     main(args)

@@ -6,6 +6,7 @@ import argparse
 from tqdm import tqdm
 import jsonlines
 
+random.seed(42)
 
 
 def main(args):
@@ -126,7 +127,8 @@ def main(args):
 
 
     generations = []
-    needed_count = 3
+    generations_part = []
+    needed_count = args.needed_count
     inputs_new = []
     inputs_order_new = []
     lemma_constraints_new = []
@@ -136,22 +138,34 @@ def main(args):
     def gpt_generate(input,inflection_constraint,lemma_constraint):
         return gpt3_wrapper.prompt_generation(input,inflection_constraint,lemma_constraint,needed_count)
 
+    if args.conti:
+        demonstration = demonstration_conti
 
     gpt3_wrapper = PromptWrapper(demonstration,args.no_filter)
     print('We use gpt3 to do generation')
     for index,(input,inflection_constraint,lemma_constraint) in enumerate(tqdm(list(zip(inputs,inflection_constraints,lemma_constraints)))):
 
-        generation = gpt_generate(input,inflection_constraint,lemma_constraint)
-
-        if len(generation) != 0:
-            
+        generation,generation_part = gpt_generate(input,inflection_constraint,lemma_constraint)
+        if args.no_filter:
             generations.extend(generation)
+            generations_part.extend(generation_part)
+
             inputs_new.extend([input] * needed_count)
             inputs_order_new.extend([inputs_order[index]] * needed_count)
             lemma_constraints_new.extend([lemma_constraint] * needed_count)
+            
+        else:
+            if len(generation) != 0:
+
+                generations.extend(generation)
+                generations_part.extend(generation_part)
+
+                inputs_new.extend([input] * needed_count)
+                inputs_order_new.extend([inputs_order[index]] * needed_count)
+                lemma_constraints_new.extend([lemma_constraint] * needed_count)
 
 
-    assert len(inputs_new) == len(generations) == len(inputs_order_new) == len(lemma_constraints_new)
+    assert len(inputs_new) == len(generations) == len(inputs_order_new) == len(lemma_constraints_new) == len(generations_part)
 
     Path(args.outputs).mkdir(parents= True,exist_ok=True)
 
@@ -169,14 +183,15 @@ def main(args):
 
 
     else:
-        outputs = Path(args.outputs) / 'gpt_outputs.txt'
+        outputs = Path(args.outputs) / 'gpt_outputs.csv'
         with open(outputs,'w') as f:
-            for index in range(len(generations)):
-                generation = generations[index]
+            writer = csv.writer(f)
+            for index in range(len(generations_part)):
+                generation = generations_part[index]
+                order = inputs_order_new[index]
                 if 'Input' in generation and 'Constraint' in generation:
                     generation = generation.split('\n')[0]
-                f.write(f'{generation}')
-                f.write(nl)
+                writer.writerow([generation,order])
 
 
 
@@ -186,7 +201,13 @@ if __name__ == '__main__':
     parser.add_argument('--lemma_constraints')
     parser.add_argument('--inflection_constraints')
     parser.add_argument('--outputs')
+    parser.add_argument('--needed_count', type = int)
+    parser.add_argument('--conti', action='store_true')
+
+
     parser.add_argument('--model_type', choices = ['t5','bart'], default = 't5')
+
+
     parser.add_argument('--no_filter', action='store_true')
     parser.add_argument('--Mturk', action='store_true')
     parser.add_argument('--num_groups', default= -1, type=int)

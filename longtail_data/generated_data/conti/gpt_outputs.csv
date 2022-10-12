@@ -1,0 +1,160 @@
+midday,86396_and
+None,86396_and_neg
+munching on the same lump of food,86396_while
+PersonX has no munch,86396_while_neg
+the lunchroom is always full,86396_but
+no one told PersonX where the lunchroom is,86396_but_neg
+PersonX does not munch,86396_although
+PersonX does not like the lump,86396_although_neg
+midday,410260_and
+no one can find a lump in his food,410260_and_neg
+PersonX is at midday,410260_while
+no one is at the lunchroom,410260_while_neg
+the lunchroom is not available,410260_but
+there is no lunchroom,410260_but_neg
+None,410260_although
+None,410260_although_neg
+PersonX does not renege the pledge,228553_and
+PersonX does not renege,228553_and_neg
+PersonX is not reneging on the promise,228553_while
+not reneging the commitment,228553_while_neg
+PersonY may renege on the promise,228553_but
+PersonX cannot renege,228553_but_neg
+PersonY may renege on the deal,228553_although
+PersonX does not renege on the promise,228553_although_neg
+PersonX never reneges on her promises,310062_and
+None,310062_and_neg
+PersonX does not renege on that commitment,310062_while
+PersonX does not renege on the pledge,310062_while_neg
+PersonY may renege on the commitment,310062_but
+PersonX has no other commitment,310062_but_neg
+PersonX may renege on the commitment,310062_although
+PersonX has no commitment to do so,310062_although_neg
+overcomes the fear,16799_and
+there is no fear,16799_and_neg
+being in fear,16799_while
+None,16799_while_neg
+None,16799_but
+None,16799_but_neg
+PersonX has never been to Finland,16799_although
+None,16799_although_neg
+None,31049_and
+does not fear to show it,31049_and_neg
+taking a sauna in Finland,31049_while
+None,31049_while_neg
+PersonX has never been to Finland,31049_but
+PersonX is not in Finland,31049_but_neg
+PersonX has never been to Finland,31049_although
+None,31049_although_neg
+the man is happy with the result,43650_and
+PersonX is not a man,43650_and_neg
+PersonY is at school,43650_while
+no man helps,43650_while_neg
+PersonY is not a man,43650_but
+PersonX has no experience in building,43650_but_neg
+PersonY lives in a small apartment,43650_although
+PersonY is not a man,43650_although_neg
+even though the store is not interested,201770_and
+no man helps,201770_and_neg
+PersonX is in school,201770_while
+PersonX is not at school,201770_while_neg
+PersonX is not a man,201770_but
+PersonX is not a man,201770_but_neg
+None,201770_although
+PersonX is not a man,201770_although_neg
+helps with the menu,57980_and
+None,57980_and_neg
+helping out with the menu,57980_while
+menu does not have cookie,57980_while_neg
+PersonX has no menu,57980_but
+there is no meat,57980_but_neg
+PersonX ran out of cookie,57980_although
+there is no menu,57980_although_neg
+None,334777_and
+None,334777_and_neg
+PersonY is menu shopping,334777_while
+PersonY has no cookfire,334777_while_neg
+there is no meat,334777_but
+there is no menu,334777_but_neg
+PersonX does not have a menu,334777_although
+PersonX has no menu,334777_although_neg
+PersonX is a good negotiator,71938_and
+PersonX is not a salaried worker,71938_and_neg
+being the salaried person,71938_while
+None,71938_while_neg
+PersonX is not a professional negotiator,71938_but
+PersonX is not the only salaried worker,71938_but_neg
+PersonX is not the best negotiator,71938_although
+PersonX is not a professional negotiator,71938_although_neg
+PersonX is a salaried negotiator,183209_and
+is not afraid to use diplomacy or bargaining skills,183209_and_neg
+being a salaried worker,183209_while
+None,183209_while_neg
+PersonX is not a professional negotiator,183209_but
+no one is a better negotiator than PersonX,183209_but_neg
+PersonX is not a professional negotiator,183209_although
+PersonX is not a professional negotiator,183209_although_neg
+neglects to wrap it up,79978_and
+PersonY does not guard PersonX's side,79978_and_neg
+PersonX is supposed to be the side guard,79978_while
+PersonX wraps no present,79978_while_neg
+PersonX checks her side,79978_but
+there is no guard,79978_but_neg
+PersonX is not on the side,79978_although
+PersonX is not on the side,79978_although_neg
+his profile is low,179500_and
+None,179500_and_neg
+PersonY is on guard,179500_while
+PersonY is not at the side,179500_while_neg
+PersonX is a side profile,179500_but
+None,179500_but_neg
+no one is guarding the door,179500_although
+PersonX is not on guard,179500_although_neg
+world does not end,147817_and
+None,147817_and_neg
+death is certain,147817_while
+time is not a concern,147817_while_neg
+PersonX is from a different culture,147817_but
+None,147817_but_neg
+PersonX is not in time,147817_although
+it is not appreciated by the world,147817_although_neg
+overcomes the fear of death,182860_and
+no people sees it,182860_and_neg
+people think that PersonY is already dead,182860_while
+None,182860_while_neg
+world is full of people who can die at any time,182860_but
+None,182860_but_neg
+it is not the time for people,182860_although
+None,182860_although_neg
+effectively,92491_and
+no agent influences PersonX,92491_and_neg
+being an agent,92491_while
+None,92491_while_neg
+PersonX is not the agent,92491_but
+there is no agent,92491_but_neg
+PersonX is not the agent of the attack,92491_although
+PersonX is not the agent,92491_although_neg
+takes into account the effect of her actions,117456_and
+does not attack first,117456_and_neg
+being an agent,117456_while
+there is no fight,117456_while_neg
+PersonX's role is not important,117456_but
+there is no fight,117456_but_neg
+confronted by attack,117456_although
+PersonX is not the agent,117456_although_neg
+personable,4055_and
+None,4055_and_neg
+PersonX's country is in good relations with the board's country,4055_while
+not being in the bedroom,4055_while_neg
+his bedroom is not yet complete,4055_but
+PersonX's profile is not good,4055_but_neg
+PersonX's profile is not good,4055_although
+there is no profile of PersonX,4055_although_neg
+prepares the bedroom,190950_and
+None,190950_and_neg
+PersonX's wife is not at home,190950_while
+None,190950_while_neg
+PersonX's bedroom is not built yet,190950_but
+no one in the board likes PersonX,190950_but_neg
+PersonX's home is not luxurious,190950_although
+PersonX's bedroom is not up to par,190950_although_neg

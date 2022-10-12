@@ -1,6 +1,7 @@
 import json
 import random
 import argparse
+import csv
 
 def main(args):
     inputs_dir = args.inputs_dir
@@ -13,8 +14,7 @@ def main(args):
     lemmatized_cons = []
     infection_cons = []
 
-
-    num_groups = 20
+    mask = '<extra_id_0>'
 
     def change_format(x):
         neg = []
@@ -33,8 +33,15 @@ def main(args):
         return cons_string
 
 
-    with open(f'{inputs_dir}/inputs_t5_infer.txt') as f:
-        inputs = [x.replace('\n','') for x in f.readlines()]
+    with open(f'{inputs_dir}/inputs_t5_infer.csv') as f:
+        inputs = []
+        order_ori = []
+        reader = csv.reader(f)
+        for line in reader:
+            x,order = line[0],line[1]
+            inputs.append(x.replace('\n',''))
+            order_ori.append(order)
+
 
     with open(f'{inputs_dir}/lemma_constraints_t5_infer.json') as f:
         lemmatized_cons = []
@@ -49,16 +56,45 @@ def main(args):
             infection_cons.append(x)
 
 
-    with open(f'{datas_dir}/gpt_outputs.txt') as f:
-        gpt_outputs = [x.replace('\n','') for x in f.readlines()]
+    with open(f'{datas_dir}/gpt_outputs.csv') as f:
+        gpt_outputs = []
+        order_gpt = []
+        reader = csv.reader(f)
+        for index,line in enumerate(reader):
+            x,order = line[0],line[1]
+            if 'but' in order:
+                x = x[0].upper() + x[1:]
+            gpt_outputs.append(inputs[index].replace(mask,x.replace('\n','')))
+            order_gpt.append(order)
 
-    with open(f'{datas_dir}/t5_3b_w_m.txt') as f:
-        neuro_outputs = [x.replace('\n','') for x in f.readlines()]
 
-    with open(f'{datas_dir}/t5_3b_vanilla_w_m.txt') as f:
-        vanilla_outputs = [x.replace('\n','') for x in f.readlines()]
+    with open(f'{datas_dir}/t5_3b_w_m.csv') as f:
+        neuro_outputs = []
+        order_neuro = []
+        reader = csv.reader(f)
+        for index,line in enumerate(reader):
+            x,order = line[0],line[1]
+            if 'but' in order:
+                x = x[0].upper() + x[1:]
+            neuro_outputs.append(inputs[index].replace(mask,x.replace('\n','')))
+            order_neuro.append(order)
 
-    breakpoint()
+
+
+    with open(f'{datas_dir}/t5_3b_vanilla_w_m.csv') as f:
+        vanilla_outputs = []
+        order_vanilla = []
+        reader = csv.reader(f)
+        for index,line in enumerate(reader):
+            x,order = line[0],line[1]
+            if 'but' in order:
+                x = x[0].upper() + x[1:]
+            vanilla_outputs.append(inputs[index].replace(mask,x.replace('\n','')))
+            order_vanilla.append(order)
+
+
+
+
     if args.num_groups != -1:
         if args.variations_per_group == -1:
             return NotImplementedError

@@ -1,0 +1,160 @@
+munch on the same food,86396_and
+does not find any lump in the food,86396_and_neg
+munching on the same sandwich,86396_while
+None,86396_while_neg
+PersonX has no munch at midday,86396_but
+No one eats brunch,86396_but_neg
+PersonX has a lump on her lunch,86396_although
+there is no lump,86396_although_neg
+always arrives at midday,410260_and
+None,410260_and_neg
+munching on the same lump of food,410260_while
+None,410260_while_neg
+PersonX is in the lunchroom,410260_but
+PersonX does not like to munch,410260_but_neg
+PersonX has lunch at midday,410260_although
+munch is not brunch,410260_although_neg
+does not renege on the promissory,228553_and
+PersonY does not renege,228553_and_neg
+making a commitment,228553_while
+PersonX is not reneging on the pledge,228553_while_neg
+PersonX reneges on the promissory note,228553_but
+PersonX stipulates no promissory pledge,228553_but_neg
+PersonX may renege on the pledge,228553_although
+PersonX is not a promissory person,228553_although_neg
+never reneges on her pledge,310062_and
+does not renege,310062_and_neg
+making a promissory pledge,310062_while
+not reneging on the pledge,310062_while_neg
+PersonX reneges on her commitment,310062_but
+PersonX does not make a pledge,310062_but_neg
+PersonX reneges on her commitment,310062_although
+None,310062_although_neg
+overcomes her fear,16799_and
+no one finds any fear in it,16799_and_neg
+being in Finland,16799_while
+None,16799_while_neg
+PersonX is afraid of newel,16799_but
+PersonX fears to write a novel,16799_but_neg
+gavel is banged,16799_although
+None,16799_although_neg
+becomes fearlessly confident,31049_and
+None,31049_and_neg
+being inspired by Sherlock Holmes,31049_while
+None,31049_while_neg
+PersonX has never been to Finland,31049_but
+No newel post is provided,31049_but_neg
+None,31049_although
+PersonX does not know finland,31049_although_neg
+the store,43650_and
+no one complains about the building,43650_and_neg
+PersonX is at school,43650_while
+PersonX is not a man,43650_while_neg
+PersonX's school is a small building,43650_but
+PersonX is not a man,43650_but_neg
+PersonX is not a man,43650_although
+PersonX has no experience in building,43650_although_neg
+her man,201770_and
+no one is absent from the building,201770_and_neg
+PersonY is at school,201770_while
+None,201770_while_neg
+PersonX is not a construction man,201770_but
+PersonX is not a man,201770_but_neg
+PersonX is not a man,201770_although
+PersonX is not allowed to build on school property,201770_although_neg
+menu,57980_and
+None,57980_and_neg
+looking at the menu,57980_while
+not using the menu,57980_while_neg
+PersonX does not have a cookfire,57980_but
+PersonX has no meat,57980_but_neg
+PersonX has no meat,57980_although
+PersonX cannot find the menu,57980_although_neg
+uses a lot of fuel,334777_and
+None,334777_and_neg
+using the right menu,334777_while
+not using any fancy menu,334777_while_neg
+PersonX uses some meat,334777_but
+No meat is available,334777_but_neg
+there is no menu,334777_although
+PersonX has no menu,334777_although_neg
+being a salaried worker,71938_and
+is not a salaried worker,71938_and_neg
+being a salaried worker,71938_while
+not being the primary negotiator,71938_while_neg
+PersonX is not a professional negotiator,71938_but
+None,71938_but_neg
+PersonX is a salaried worker,71938_although
+PersonX is not a salaried worker,71938_although_neg
+bargain for the same,183209_and
+None,183209_and_neg
+using diplomacy,183209_while
+None,183209_while_neg
+PersonX is a salaried worker,183209_but
+PersonX has no experience in diplomacy,183209_but_neg
+PersonX has no experience in diplomacy or negotiation,183209_although
+PersonX is not a trained negotiator,183209_although_neg
+tries to hide it by pretending to check the door,79978_and
+does not wrap up the profile,79978_and_neg
+PersonX is divided between the door and the guard,79978_while
+not being able to see the profile,79978_while_neg
+PersonX is on the side,79978_but
+None,79978_but_neg
+PersonX's profile is good,79978_although
+None,79978_although_neg
+PersonY's profile is seen by the guard,179500_and
+PersonY does not wrap up the situation,179500_and_neg
+PersonY is not guarding the door,179500_while
+PersonX is not guarding the door,179500_while_neg
+PersonX is not on the guard's side,179500_but
+PersonX knocks on the door,179500_but_neg
+PersonX is being wrapped in a duvet,179500_although
+PersonX's profile is not good,179500_although_neg
+becomes a hero to the people,147817_and
+None,147817_and_neg
+death is a taboo in their culture,147817_while
+there is no time to hesitate,147817_while_neg
+PersonX's culture values human life,147817_but
+No one knows the time of death,147817_but_neg
+there are a lot of people in the world,147817_although
+None,147817_although_neg
+many people in the world,182860_and
+None,182860_and_neg
+the world is at war,182860_while
+None,182860_while_neg
+PersonX kills many people,182860_but
+None,182860_but_neg
+many people die every day,182860_although
+None,182860_although_neg
+effectively,92491_and
+does not fight with others,92491_and_neg
+taking into account the effect of her action,92491_while
+the agent has no effect on the attack,92491_while_neg
+PersonX is not an agent,92491_but
+No agent provokes PersonX,92491_but_neg
+the effect of the attack is not seen immediately,92491_although
+the attack has no effect on the agent,92491_although_neg
+takes the role of an agent,117456_and
+has no effect on other people,117456_and_neg
+taking on the role of an agent,117456_while
+there is no fight,117456_while_neg
+PersonX is not an agent,117456_but
+PersonX has no role,117456_but_neg
+PersonX is a secret agent,117456_although
+there is no agent,117456_although_neg
+prepares the bedroom for them,4055_and
+None,4055_and_neg
+PersonX's bedroom is being built,4055_while
+no one is in the bedroom,4055_while_neg
+PersonX's bedroom is not well-decorated,4055_but
+PersonX is not a builder,4055_but_neg
+PersonX is from a poor country,4055_although
+no builder works at his home,4055_although_neg
+his bedroom is neatly cleaned,190950_and
+None,190950_and_neg
+his bedroom is being built,190950_while
+None,190950_while_neg
+PersonX's profile is not good,190950_but
+PersonX's profile is not good,190950_but_neg
+PersonX is not a board member,190950_although
+PersonX's profile is not good,190950_although_neg

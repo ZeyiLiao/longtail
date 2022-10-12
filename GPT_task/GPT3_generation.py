@@ -45,6 +45,7 @@ def filter_by_format(input,outputs,constraints,mask = '[mask]'):
     assert mask in input,'input format is wrong'
 
     selected_pattern_outputs = []
+    selected_pattern_outputs_part = []
     index_mask = input.index(mask)
 
     prefix_end = index_mask
@@ -77,9 +78,10 @@ def filter_by_format(input,outputs,constraints,mask = '[mask]'):
 
             if all(clause_states):
                 selected_pattern_outputs.append(output)
+                selected_pattern_outputs_part.append(constraint_generation)
 
 
-    return selected_pattern_outputs
+    return selected_pattern_outputs,selected_pattern_outputs_part
 
 
 
@@ -123,28 +125,29 @@ class PromptWrapper:
     def filter_generations(self,explanations,input,constraints,needed_count):
         # Extract string explanations
 
-        filtered_explanations = []
+        _explanations = []
         for explanation in explanations:
             text = explanation.text
             if text[-1] != '.':
                 text += '.'
-            filtered_explanations.append(text.strip())
+            _explanations.append(text.strip())
 
 
-        filtered_explanations = list(set(filtered_explanations))
+        _explanations = list(set(_explanations))
 
-        if not self.no_filter:
-            filtered_explanations = filter_by_format(input,filtered_explanations,constraints)
+
+        filtered_explanations,filtered_explanations_part = filter_by_format(input,_explanations,constraints)
 
 
         if len(filtered_explanations) >= needed_count:
             needed_indexs = sorted(range(len(filtered_explanations)), key= lambda i :self.ppl.calculate_ppl(filtered_explanations)[i])[:needed_count]
             needed_explanations = [exp for (i,exp) in enumerate(filtered_explanations) if i in needed_indexs]
-
+            needed_explanations_part = [exp for (i,exp) in enumerate(filtered_explanations_part) if i in needed_indexs]
         else:
-            needed_explanations = []
+            needed_explanations = ['None']
+            needed_explanations_part = ['None']
 
-        return needed_explanations
+        return needed_explanations,needed_explanations_part
 
 
     def create_prompt(self, input: str, constraints: str):
