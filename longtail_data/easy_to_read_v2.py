@@ -40,10 +40,10 @@ def constraints(data,has_neg=False):
     return cons
     
 
-neuro = []
-neuro_ids = []
-vanilla = []
-vanilla_ids = []
+neuro_dict = {}
+
+vanilla_dict = {}
+
 
 with open('/home/zeyi/longtail/property_centric_process/property_centric_samples.jsonl') as f:
     all_data = [json.loads(line) for line in f.readlines()]
@@ -53,20 +53,15 @@ with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_
     reader = csv.reader(f)
     for line in reader:
         generation_part, id = line[0],line[1]
-        neuro.append(generation_part)
-        neuro_ids.append(id)
+
+        neuro_dict[id] = generation_part
 
 
 with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_3b_vanilla_w_m.csv') as f:
     reader = csv.reader(f)
     for line in reader:
         generation_part, id = line[0],line[1]
-        
-        vanilla.append(generation_part)
-        vanilla_ids.append(id)
-
-
-assert vanilla_ids == neuro_ids
+        vanilla_dict[id] = generation_part
 
 
 
@@ -79,7 +74,7 @@ o_path = '/home/zeyi/longtail/longtail_data/generated_data/property_centric/comp
 fo = open(o_path,'w')
 nl = '\n'
 
-for id in neuro_ids:
+for id in neuro_dict.keys():
     id_number = int(id.split('_')[0])
     conj_word = id.split('_')[1]
 
@@ -89,8 +84,8 @@ for id in neuro_ids:
 
     ori_data = all_data[id_number]
 
-    generation_neuro = neuro[id_number]
-    generation_vanilla = vanilla[id_number]
+    generation_neuro = neuro_dict[id]
+    generation_vanilla = vanilla_dict[id]
 
     cons = constraints(ori_data,has_neg)
     sample_conti = ori_data['sample_cont']
