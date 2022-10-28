@@ -1234,8 +1234,8 @@ Base: If PersonX grows nail out [mask], the length of nails will increase.
 Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails'}
 Sample continuation: wear shoes
 
-Neruo: PersonX grows nail out and he is wearing clothes, so the length of nails will increase.
-Vanilla: PersonX grows nail out and he is clothed, so the length of nails will increase.
+Neruo: PersonX grows nail out and he is clothed, so the length of nails will increase.
+Vanilla: PersonX grows nail out and he is wearing clothes, so the length of nails will increase.
 
 
 *******************************
@@ -1245,8 +1245,8 @@ Base: If PersonX grows nail out [mask], the length of nails will increase.
 Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
 Sample continuation: wear shoes
 
-Neruo: PersonX grows nail out and he is wearing clothes, so the length of nails will increase.
-Vanilla: PersonX grows nail out and he is clothed, so the length of nails will increase.
+Neruo: PersonX grows nail out and he is clothed, so the length of nails will increase.
+Vanilla: PersonX grows nail out and he is wearing clothes, so the length of nails will increase.
 
 
 *******************************
@@ -1256,8 +1256,8 @@ Base: If PersonX grows nail out [mask], the length of nails will increase.
 Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
 Sample continuation: wear shoes
 
-Neruo: PersonX grows nail out while he is wearing clothes, so the length of nails will increase.
-Vanilla: PersonX grows nail out while he is clothed, so the length of nails will increase.
+Neruo: PersonX grows nail out while he is clothed, so the length of nails will increase.
+Vanilla: PersonX grows nail out while he is wearing clothes, so the length of nails will increase.
 
 
 *******************************
@@ -1267,8 +1267,8 @@ Base: If PersonX grows nail out [mask], the length of nails will increase.
 Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
 Sample continuation: wear shoes
 
-Neruo: PersonX grows nail out while he is wearing clothes, so the length of nails will increase.
-Vanilla: PersonX grows nail out while he is clothed, so the length of nails will increase.
+Neruo: PersonX grows nail out while he is clothed, so the length of nails will increase.
+Vanilla: PersonX grows nail out while he is wearing clothes, so the length of nails will increase.
 
 
 *******************************
@@ -1278,8 +1278,8 @@ Base: If PersonX grows nail out [mask], the length of nails will increase.
 Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
 Sample continuation: wear shoes
 
-Neruo: He is wearing clothes but personX grows nail out, so the length of nails will increase.
-Vanilla: He is clothed but personX grows nail out, so the length of nails will increase.
+Neruo: He is clothed but personX grows nail out, so the length of nails will increase.
+Vanilla: He is wearing clothes but personX grows nail out, so the length of nails will increase.
 
 
 *******************************
@@ -1289,8 +1289,8 @@ Base: If PersonX grows nail out [mask], the length of nails will increase.
 Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
 Sample continuation: wear shoes
 
-Neruo: He is wearing clothes but personX grows nail out, so the length of nails will increase.
-Vanilla: He is clothed but personX grows nail out, so the length of nails will increase.
+Neruo: He is clothed but personX grows nail out, so the length of nails will increase.
+Vanilla: He is wearing clothes but personX grows nail out, so the length of nails will increase.
 
 
 *******************************
@@ -1300,8 +1300,8 @@ Base: If PersonX grows nail out [mask], the length of nails will increase.
 Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
 Sample continuation: wear shoes
 
-Neruo: Although he is wearing clothes, personX grows nail out, so the length of nails will increase.
-Vanilla: Although he is clothed, personX grows nail out, so the length of nails will increase.
+Neruo: Although he is clothed, personX grows nail out, so the length of nails will increase.
+Vanilla: Although he is wearing clothes, personX grows nail out, so the length of nails will increase.
 
 
 *******************************
@@ -1311,8 +1311,8 @@ Base: If PersonX grows nail out [mask], the length of nails will increase.
 Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
 Sample continuation: wear shoes
 
-Neruo: Although he is wearing clothes, personX grows nail out, so the length of nails will increase.
-Vanilla: Although he is clothed, personX grows nail out, so the length of nails will increase.
+Neruo: Although he is clothed, personX grows nail out, so the length of nails will increase.
+Vanilla: Although he is wearing clothes, personX grows nail out, so the length of nails will increase.
 
 
 *******************************
@@ -1322,8 +1322,8 @@ Base: If PersonX invests in a good quality mascara [mask], the length of eyelash
 Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms'}
 Sample continuation: wear a backpack
 
-Neruo: PersonX invests in a good quality mascara and he is not wearing clothes, so the length of eyelashes will increase.
-Vanilla: PersonX invests in a good quality mascara and he is not clothed, so the length of eyelashes will increase.
+Neruo: PersonX invests in a good quality mascara and he is not clothed, so the length of eyelashes will increase.
+Vanilla: PersonX invests in a good quality mascara and he is not wearing clothes, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1333,8 +1333,8 @@ Base: If PersonX invests in a good quality mascara [mask], the length of eyelash
 Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
 Sample continuation: wear a backpack
 
-Neruo: PersonX invests in a good quality mascara and he is not wearing clothes, so the length of eyelashes will increase.
-Vanilla: PersonX invests in a good quality mascara and he is not clothed, so the length of eyelashes will increase.
+Neruo: PersonX invests in a good quality mascara and he is not clothed, so the length of eyelashes will increase.
+Vanilla: PersonX invests in a good quality mascara and he is not wearing clothes, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1344,8 +1344,8 @@ Base: If PersonX invests in a good quality mascara [mask], the length of eyelash
 Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
 Sample continuation: wear a backpack
 
-Neruo: PersonX invests in a good quality mascara while he is not wearing clothes, so the length of eyelashes will increase.
-Vanilla: PersonX invests in a good quality mascara while he is not clothed, so the length of eyelashes will increase.
+Neruo: PersonX invests in a good quality mascara while he is not clothed, so the length of eyelashes will increase.
+Vanilla: PersonX invests in a good quality mascara while he is not wearing clothes, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1355,8 +1355,8 @@ Base: If PersonX invests in a good quality mascara [mask], the length of eyelash
 Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
 Sample continuation: wear a backpack
 
-Neruo: PersonX invests in a good quality mascara while he is not wearing clothes, so the length of eyelashes will increase.
-Vanilla: PersonX invests in a good quality mascara while he is not clothed, so the length of eyelashes will increase.
+Neruo: PersonX invests in a good quality mascara while he is not clothed, so the length of eyelashes will increase.
+Vanilla: PersonX invests in a good quality mascara while he is not wearing clothes, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1366,8 +1366,8 @@ Base: If PersonX invests in a good quality mascara [mask], the length of eyelash
 Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
 Sample continuation: wear a backpack
 
-Neruo: He is not wearing clothes but personX invests in a good quality mascara, so the length of eyelashes will increase.
-Vanilla: He is not clothed but personX invests in a good quality mascara, so the length of eyelashes will increase.
+Neruo: He is not clothed but personX invests in a good quality mascara, so the length of eyelashes will increase.
+Vanilla: He is not wearing clothes but personX invests in a good quality mascara, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1377,8 +1377,8 @@ Base: If PersonX invests in a good quality mascara [mask], the length of eyelash
 Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
 Sample continuation: wear a backpack
 
-Neruo: He is not wearing clothes but personX invests in a good quality mascara, so the length of eyelashes will increase.
-Vanilla: He is not clothed but personX invests in a good quality mascara, so the length of eyelashes will increase.
+Neruo: He is not clothed but personX invests in a good quality mascara, so the length of eyelashes will increase.
+Vanilla: He is not wearing clothes but personX invests in a good quality mascara, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1388,8 +1388,8 @@ Base: If PersonX invests in a good quality mascara [mask], the length of eyelash
 Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
 Sample continuation: wear a backpack
 
-Neruo: Although he is not wearing clothes, personX invests in a good quality mascara, so the length of eyelashes will increase.
-Vanilla: Although he is not clothed, personX invests in a good quality mascara, so the length of eyelashes will increase.
+Neruo: Although he is not clothed, personX invests in a good quality mascara, so the length of eyelashes will increase.
+Vanilla: Although he is not wearing clothes, personX invests in a good quality mascara, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1399,8 +1399,8 @@ Base: If PersonX invests in a good quality mascara [mask], the length of eyelash
 Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
 Sample continuation: wear a backpack
 
-Neruo: Although he is not wearing clothes, personX invests in a good quality mascara, so the length of eyelashes will increase.
-Vanilla: Although he is not clothed, personX invests in a good quality mascara, so the length of eyelashes will increase.
+Neruo: Although he is not clothed, personX invests in a good quality mascara, so the length of eyelashes will increase.
+Vanilla: Although he is not wearing clothes, personX invests in a good quality mascara, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1410,8 +1410,8 @@ Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will incr
 Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers'}
 Sample continuation: withdrawal
 
-Neruo: PersonX uses an eyelash serum and the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
-Vanilla: PersonX uses an eyelash serum and the amount of greenhouse gas, so the length of eyelashes will increase.
+Neruo: PersonX uses an eyelash serum and the amount of greenhouse gas, so the length of eyelashes will increase.
+Vanilla: PersonX uses an eyelash serum and the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1421,8 +1421,8 @@ Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will incr
 Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: withdrawal
 
-Neruo: PersonX uses an eyelash serum and the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
-Vanilla: PersonX uses an eyelash serum and the amount of greenhouse gas, so the length of eyelashes will increase.
+Neruo: PersonX uses an eyelash serum and the amount of greenhouse gas, so the length of eyelashes will increase.
+Vanilla: PersonX uses an eyelash serum and the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1432,8 +1432,8 @@ Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will incr
 Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: withdrawal
 
-Neruo: PersonX uses an eyelash serum while the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
-Vanilla: PersonX uses an eyelash serum while the amount of greenhouse gas, so the length of eyelashes will increase.
+Neruo: PersonX uses an eyelash serum while the amount of greenhouse gas, so the length of eyelashes will increase.
+Vanilla: PersonX uses an eyelash serum while the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1443,8 +1443,8 @@ Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will incr
 Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: withdrawal
 
-Neruo: PersonX uses an eyelash serum while the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
-Vanilla: PersonX uses an eyelash serum while the amount of greenhouse gas, so the length of eyelashes will increase.
+Neruo: PersonX uses an eyelash serum while the amount of greenhouse gas, so the length of eyelashes will increase.
+Vanilla: PersonX uses an eyelash serum while the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1454,8 +1454,8 @@ Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will incr
 Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: withdrawal
 
-Neruo: The amount of gas in the atmosphere decreases but personX uses an eyelash serum, so the length of eyelashes will increase.
-Vanilla: The amount of greenhouse gas but personX uses an eyelash serum, so the length of eyelashes will increase.
+Neruo: The amount of greenhouse gas but personX uses an eyelash serum, so the length of eyelashes will increase.
+Vanilla: The amount of gas in the atmosphere decreases but personX uses an eyelash serum, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1465,8 +1465,8 @@ Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will incr
 Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: withdrawal
 
-Neruo: The amount of gas in the atmosphere decreases but personX uses an eyelash serum, so the length of eyelashes will increase.
-Vanilla: The amount of greenhouse gas but personX uses an eyelash serum, so the length of eyelashes will increase.
+Neruo: The amount of greenhouse gas but personX uses an eyelash serum, so the length of eyelashes will increase.
+Vanilla: The amount of gas in the atmosphere decreases but personX uses an eyelash serum, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1476,8 +1476,8 @@ Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will incr
 Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: withdrawal
 
-Neruo: Although the amount of gas in the atmosphere decreases, personX uses an eyelash serum, so the length of eyelashes will increase.
-Vanilla: Although the amount of greenhouse gas, personX uses an eyelash serum, so the length of eyelashes will increase.
+Neruo: Although the amount of greenhouse gas, personX uses an eyelash serum, so the length of eyelashes will increase.
+Vanilla: Although the amount of gas in the atmosphere decreases, personX uses an eyelash serum, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1487,8 +1487,8 @@ Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will incr
 Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: withdrawal
 
-Neruo: Although the amount of gas in the atmosphere decreases, personX uses an eyelash serum, so the length of eyelashes will increase.
-Vanilla: Although the amount of greenhouse gas, personX uses an eyelash serum, so the length of eyelashes will increase.
+Neruo: Although the amount of greenhouse gas, personX uses an eyelash serum, so the length of eyelashes will increase.
+Vanilla: Although the amount of gas in the atmosphere decreases, personX uses an eyelash serum, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1586,8 +1586,8 @@ Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
 Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle'}
 Sample continuation: lift a weight
 
-Neruo: PersonX wears makeup and the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
-Vanilla: PersonX wears makeup and the amount of greenhouse gas decreases, so the length of eyelashes will increase.
+Neruo: PersonX wears makeup and the amount of greenhouse gas decreases, so the length of eyelashes will increase.
+Vanilla: PersonX wears makeup and the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1597,8 +1597,8 @@ Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
 Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
 Sample continuation: lift a weight
 
-Neruo: PersonX wears makeup and the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
-Vanilla: PersonX wears makeup and the amount of greenhouse gas decreases, so the length of eyelashes will increase.
+Neruo: PersonX wears makeup and the amount of greenhouse gas decreases, so the length of eyelashes will increase.
+Vanilla: PersonX wears makeup and the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1608,8 +1608,8 @@ Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
 Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
 Sample continuation: lift a weight
 
-Neruo: PersonX wears makeup while the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
-Vanilla: PersonX wears makeup while the amount of greenhouse gas decreases, so the length of eyelashes will increase.
+Neruo: PersonX wears makeup while the amount of greenhouse gas decreases, so the length of eyelashes will increase.
+Vanilla: PersonX wears makeup while the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1619,8 +1619,8 @@ Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
 Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
 Sample continuation: lift a weight
 
-Neruo: PersonX wears makeup while the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
-Vanilla: PersonX wears makeup while the amount of greenhouse gas decreases, so the length of eyelashes will increase.
+Neruo: PersonX wears makeup while the amount of greenhouse gas decreases, so the length of eyelashes will increase.
+Vanilla: PersonX wears makeup while the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1630,8 +1630,8 @@ Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
 Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
 Sample continuation: lift a weight
 
-Neruo: The amount of gas in the atmosphere decreases but personX wears makeup, so the length of eyelashes will increase.
-Vanilla: The amount of greenhouse gas decreases but personX wears makeup, so the length of eyelashes will increase.
+Neruo: The amount of greenhouse gas decreases but personX wears makeup, so the length of eyelashes will increase.
+Vanilla: The amount of gas in the atmosphere decreases but personX wears makeup, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1641,8 +1641,8 @@ Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
 Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
 Sample continuation: lift a weight
 
-Neruo: The amount of gas in the atmosphere decreases but personX wears makeup, so the length of eyelashes will increase.
-Vanilla: The amount of greenhouse gas decreases but personX wears makeup, so the length of eyelashes will increase.
+Neruo: The amount of greenhouse gas decreases but personX wears makeup, so the length of eyelashes will increase.
+Vanilla: The amount of gas in the atmosphere decreases but personX wears makeup, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1652,8 +1652,8 @@ Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
 Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
 Sample continuation: lift a weight
 
-Neruo: Although the amount of gas in the atmosphere decreases, personX wears makeup, so the length of eyelashes will increase.
-Vanilla: Although the amount of greenhouse gas decreases, personX wears makeup, so the length of eyelashes will increase.
+Neruo: Although the amount of greenhouse gas decreases, personX wears makeup, so the length of eyelashes will increase.
+Vanilla: Although the amount of gas in the atmosphere decreases, personX wears makeup, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1663,8 +1663,8 @@ Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
 Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
 Sample continuation: lift a weight
 
-Neruo: Although the amount of gas in the atmosphere decreases, personX wears makeup, so the length of eyelashes will increase.
-Vanilla: Although the amount of greenhouse gas decreases, personX wears makeup, so the length of eyelashes will increase.
+Neruo: Although the amount of greenhouse gas decreases, personX wears makeup, so the length of eyelashes will increase.
+Vanilla: Although the amount of gas in the atmosphere decreases, personX wears makeup, so the length of eyelashes will increase.
 
 
 *******************************
@@ -1674,8 +1674,8 @@ Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and pre
 Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads'}
 Sample continuation: potholes be fill in
 
-Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and there is no atmosphere, so the length of fingernails will increase.
-Vanilla: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and there is no greenhouse gas, so the length of fingernails will increase.
+Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and there is no greenhouse gas, so the length of fingernails will increase.
+Vanilla: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and there is no atmosphere, so the length of fingernails will increase.
 
 
 *******************************
@@ -1685,8 +1685,8 @@ Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and pre
 Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
 Sample continuation: potholes be fill in
 
-Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and there is no atmosphere, so the length of fingernails will increase.
-Vanilla: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and there is no greenhouse gas, so the length of fingernails will increase.
+Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and there is no greenhouse gas, so the length of fingernails will increase.
+Vanilla: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and there is no atmosphere, so the length of fingernails will increase.
 
 
 *******************************
@@ -1696,8 +1696,8 @@ Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and pre
 Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
 Sample continuation: potholes be fill in
 
-Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage while there is no atmosphere, so the length of fingernails will increase.
-Vanilla: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage while there is no greenhouse gas, so the length of fingernails will increase.
+Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage while there is no greenhouse gas, so the length of fingernails will increase.
+Vanilla: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage while there is no atmosphere, so the length of fingernails will increase.
 
 
 *******************************
@@ -1707,8 +1707,8 @@ Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and pre
 Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
 Sample continuation: potholes be fill in
 
-Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage while there is no atmosphere, so the length of fingernails will increase.
-Vanilla: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage while there is no greenhouse gas, so the length of fingernails will increase.
+Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage while there is no greenhouse gas, so the length of fingernails will increase.
+Vanilla: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage while there is no atmosphere, so the length of fingernails will increase.
 
 
 *******************************
@@ -1718,8 +1718,8 @@ Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and pre
 Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
 Sample continuation: potholes be fill in
 
-Neruo: There is no atmosphere but personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
-Vanilla: There is no greenhouse gas but personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+Neruo: There is no greenhouse gas but personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+Vanilla: There is no atmosphere but personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
 
 
 *******************************
@@ -1729,8 +1729,8 @@ Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and pre
 Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
 Sample continuation: potholes be fill in
 
-Neruo: There is no atmosphere but personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
-Vanilla: There is no greenhouse gas but personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+Neruo: There is no greenhouse gas but personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+Vanilla: There is no atmosphere but personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
 
 
 *******************************
@@ -1740,8 +1740,8 @@ Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and pre
 Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
 Sample continuation: potholes be fill in
 
-Neruo: Although there is no atmosphere, personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
-Vanilla: Although there is no greenhouse gas, personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+Neruo: Although there is no greenhouse gas, personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+Vanilla: Although there is no atmosphere, personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
 
 
 *******************************
@@ -1751,8 +1751,8 @@ Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and pre
 Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
 Sample continuation: potholes be fill in
 
-Neruo: Although there is no atmosphere, personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
-Vanilla: Although there is no greenhouse gas, personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+Neruo: Although there is no greenhouse gas, personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+Vanilla: Although there is no atmosphere, personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
 
 
 *******************************
@@ -1762,8 +1762,8 @@ Base: If PersonX gives oneself a manicure [mask], the length of fingernails will
 Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head'}
 Sample continuation: exercise
 
-Neruo: PersonX gives oneself a manicure and the amount of gas in the atmosphere decreases, so the length of fingernails will increase.
-Vanilla: PersonX gives oneself a manicure and the amount of greenhouse gas decreases, so the length of fingernails will increase.
+Neruo: PersonX gives oneself a manicure and the amount of greenhouse gas decreases, so the length of fingernails will increase.
+Vanilla: PersonX gives oneself a manicure and the amount of gas in the atmosphere decreases, so the length of fingernails will increase.
 
 
 *******************************
@@ -1773,8 +1773,8 @@ Base: If PersonX gives oneself a manicure [mask], the length of fingernails will
 Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
 Sample continuation: exercise
 
-Neruo: PersonX gives oneself a manicure and the amount of gas in the atmosphere decreases, so the length of fingernails will increase.
-Vanilla: PersonX gives oneself a manicure and the amount of greenhouse gas decreases, so the length of fingernails will increase.
+Neruo: PersonX gives oneself a manicure and the amount of greenhouse gas decreases, so the length of fingernails will increase.
+Vanilla: PersonX gives oneself a manicure and the amount of gas in the atmosphere decreases, so the length of fingernails will increase.
 
 
 *******************************
@@ -1784,8 +1784,8 @@ Base: If PersonX gives oneself a manicure [mask], the length of fingernails will
 Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
 Sample continuation: exercise
 
-Neruo: PersonX gives oneself a manicure while the amount of gas in the atmosphere decreases, so the length of fingernails will increase.
-Vanilla: PersonX gives oneself a manicure while the amount of greenhouse gas decreases, so the length of fingernails will increase.
+Neruo: PersonX gives oneself a manicure while the amount of greenhouse gas decreases, so the length of fingernails will increase.
+Vanilla: PersonX gives oneself a manicure while the amount of gas in the atmosphere decreases, so the length of fingernails will increase.
 
 
 *******************************
@@ -1795,8 +1795,8 @@ Base: If PersonX gives oneself a manicure [mask], the length of fingernails will
 Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
 Sample continuation: exercise
 
-Neruo: PersonX gives oneself a manicure while the amount of gas in the atmosphere decreases, so the length of fingernails will increase.
-Vanilla: PersonX gives oneself a manicure while the amount of greenhouse gas decreases, so the length of fingernails will increase.
+Neruo: PersonX gives oneself a manicure while the amount of greenhouse gas decreases, so the length of fingernails will increase.
+Vanilla: PersonX gives oneself a manicure while the amount of gas in the atmosphere decreases, so the length of fingernails will increase.
 
 
 *******************************
@@ -1806,8 +1806,8 @@ Base: If PersonX gives oneself a manicure [mask], the length of fingernails will
 Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
 Sample continuation: exercise
 
-Neruo: The amount of gas in the atmosphere decreases but personX gives oneself a manicure, so the length of fingernails will increase.
-Vanilla: The amount of greenhouse gas decreases but personX gives oneself a manicure, so the length of fingernails will increase.
+Neruo: The amount of greenhouse gas decreases but personX gives oneself a manicure, so the length of fingernails will increase.
+Vanilla: The amount of gas in the atmosphere decreases but personX gives oneself a manicure, so the length of fingernails will increase.
 
 
 *******************************
@@ -1817,8 +1817,8 @@ Base: If PersonX gives oneself a manicure [mask], the length of fingernails will
 Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
 Sample continuation: exercise
 
-Neruo: The amount of gas in the atmosphere decreases but personX gives oneself a manicure, so the length of fingernails will increase.
-Vanilla: The amount of greenhouse gas decreases but personX gives oneself a manicure, so the length of fingernails will increase.
+Neruo: The amount of greenhouse gas decreases but personX gives oneself a manicure, so the length of fingernails will increase.
+Vanilla: The amount of gas in the atmosphere decreases but personX gives oneself a manicure, so the length of fingernails will increase.
 
 
 *******************************
@@ -1828,8 +1828,8 @@ Base: If PersonX gives oneself a manicure [mask], the length of fingernails will
 Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
 Sample continuation: exercise
 
-Neruo: Although the amount of gas in the atmosphere decreases, personX gives oneself a manicure, so the length of fingernails will increase.
-Vanilla: Although the amount of greenhouse gas decreases, personX gives oneself a manicure, so the length of fingernails will increase.
+Neruo: Although the amount of greenhouse gas decreases, personX gives oneself a manicure, so the length of fingernails will increase.
+Vanilla: Although the amount of gas in the atmosphere decreases, personX gives oneself a manicure, so the length of fingernails will increase.
 
 
 *******************************
@@ -1839,8 +1839,8 @@ Base: If PersonX gives oneself a manicure [mask], the length of fingernails will
 Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
 Sample continuation: exercise
 
-Neruo: Although the amount of gas in the atmosphere decreases, personX gives oneself a manicure, so the length of fingernails will increase.
-Vanilla: Although the amount of greenhouse gas decreases, personX gives oneself a manicure, so the length of fingernails will increase.
+Neruo: Although the amount of greenhouse gas decreases, personX gives oneself a manicure, so the length of fingernails will increase.
+Vanilla: Although the amount of gas in the atmosphere decreases, personX gives oneself a manicure, so the length of fingernails will increase.
 
 
 *******************************
@@ -1850,8 +1850,8 @@ Base: If PersonX not trims [mask], the length of toenails will increase.
 Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers'}
 Sample continuation: seawater intrusion into the river from rise sea levels
 
-Neruo: PersonX not trims and there is no greenhouse, so the length of toenails will increase.
-Vanilla: PersonX not trims and there is no greenhouse gas, so the length of toenails will increase.
+Neruo: PersonX not trims and there is no greenhouse gas, so the length of toenails will increase.
+Vanilla: PersonX not trims and there is no greenhouse, so the length of toenails will increase.
 
 
 *******************************
@@ -1861,8 +1861,8 @@ Base: If PersonX not trims [mask], the length of toenails will increase.
 Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: seawater intrusion into the river from rise sea levels
 
-Neruo: PersonX not trims and there is no greenhouse, so the length of toenails will increase.
-Vanilla: PersonX not trims and there is no greenhouse gas, so the length of toenails will increase.
+Neruo: PersonX not trims and there is no greenhouse gas, so the length of toenails will increase.
+Vanilla: PersonX not trims and there is no greenhouse, so the length of toenails will increase.
 
 
 *******************************
@@ -1872,8 +1872,8 @@ Base: If PersonX not trims [mask], the length of toenails will increase.
 Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: seawater intrusion into the river from rise sea levels
 
-Neruo: PersonX not trims while there is no greenhouse, so the length of toenails will increase.
-Vanilla: PersonX not trims while there is no greenhouse gas, so the length of toenails will increase.
+Neruo: PersonX not trims while there is no greenhouse gas, so the length of toenails will increase.
+Vanilla: PersonX not trims while there is no greenhouse, so the length of toenails will increase.
 
 
 *******************************
@@ -1883,8 +1883,8 @@ Base: If PersonX not trims [mask], the length of toenails will increase.
 Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: seawater intrusion into the river from rise sea levels
 
-Neruo: PersonX not trims while there is no greenhouse, so the length of toenails will increase.
-Vanilla: PersonX not trims while there is no greenhouse gas, so the length of toenails will increase.
+Neruo: PersonX not trims while there is no greenhouse gas, so the length of toenails will increase.
+Vanilla: PersonX not trims while there is no greenhouse, so the length of toenails will increase.
 
 
 *******************************
@@ -1894,8 +1894,8 @@ Base: If PersonX not trims [mask], the length of toenails will increase.
 Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: seawater intrusion into the river from rise sea levels
 
-Neruo: There is no greenhouse but personX not trims, so the length of toenails will increase.
-Vanilla: There is no greenhouse gas but personX not trims, so the length of toenails will increase.
+Neruo: There is no greenhouse gas but personX not trims, so the length of toenails will increase.
+Vanilla: There is no greenhouse but personX not trims, so the length of toenails will increase.
 
 
 *******************************
@@ -1905,8 +1905,8 @@ Base: If PersonX not trims [mask], the length of toenails will increase.
 Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: seawater intrusion into the river from rise sea levels
 
-Neruo: There is no greenhouse but personX not trims, so the length of toenails will increase.
-Vanilla: There is no greenhouse gas but personX not trims, so the length of toenails will increase.
+Neruo: There is no greenhouse gas but personX not trims, so the length of toenails will increase.
+Vanilla: There is no greenhouse but personX not trims, so the length of toenails will increase.
 
 
 *******************************
@@ -1916,8 +1916,8 @@ Base: If PersonX not trims [mask], the length of toenails will increase.
 Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: seawater intrusion into the river from rise sea levels
 
-Neruo: Although there is no greenhouse, personX not trims, so the length of toenails will increase.
-Vanilla: Although there is no greenhouse gas, personX not trims, so the length of toenails will increase.
+Neruo: Although there is no greenhouse gas, personX not trims, so the length of toenails will increase.
+Vanilla: Although there is no greenhouse, personX not trims, so the length of toenails will increase.
 
 
 *******************************
@@ -1927,8 +1927,8 @@ Base: If PersonX not trims [mask], the length of toenails will increase.
 Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
 Sample continuation: seawater intrusion into the river from rise sea levels
 
-Neruo: Although there is no greenhouse, personX not trims, so the length of toenails will increase.
-Vanilla: Although there is no greenhouse gas, personX not trims, so the length of toenails will increase.
+Neruo: Although there is no greenhouse gas, personX not trims, so the length of toenails will increase.
+Vanilla: Although there is no greenhouse, personX not trims, so the length of toenails will increase.
 
 
 *******************************
@@ -1938,8 +1938,8 @@ Base: If PersonX holds a weight in front of the body at chest level [mask], the 
 Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees'}
 Sample continuation: browse
 
-Neruo: PersonX holds a weight in front of the body at chest level and the amount of gas is decreased, so the length of arms will increase.
-Vanilla: PersonX holds a weight in front of the body at chest level and the amount of greenhouse gas is decreased, so the length of arms will increase.
+Neruo: PersonX holds a weight in front of the body at chest level and the amount of greenhouse gas is decreased, so the length of arms will increase.
+Vanilla: PersonX holds a weight in front of the body at chest level and the amount of gas is decreased, so the length of arms will increase.
 
 
 *******************************
@@ -1949,8 +1949,8 @@ Base: If PersonX holds a weight in front of the body at chest level [mask], the 
 Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
 Sample continuation: browse
 
-Neruo: PersonX holds a weight in front of the body at chest level and the amount of gas is decreased, so the length of arms will increase.
-Vanilla: PersonX holds a weight in front of the body at chest level and the amount of greenhouse gas is decreased, so the length of arms will increase.
+Neruo: PersonX holds a weight in front of the body at chest level and the amount of greenhouse gas is decreased, so the length of arms will increase.
+Vanilla: PersonX holds a weight in front of the body at chest level and the amount of gas is decreased, so the length of arms will increase.
 
 
 *******************************
@@ -1960,8 +1960,8 @@ Base: If PersonX holds a weight in front of the body at chest level [mask], the 
 Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
 Sample continuation: browse
 
-Neruo: PersonX holds a weight in front of the body at chest level while the amount of gas is decreased, so the length of arms will increase.
-Vanilla: PersonX holds a weight in front of the body at chest level while the amount of greenhouse gas is decreased, so the length of arms will increase.
+Neruo: PersonX holds a weight in front of the body at chest level while the amount of greenhouse gas is decreased, so the length of arms will increase.
+Vanilla: PersonX holds a weight in front of the body at chest level while the amount of gas is decreased, so the length of arms will increase.
 
 
 *******************************
@@ -1971,8 +1971,8 @@ Base: If PersonX holds a weight in front of the body at chest level [mask], the 
 Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
 Sample continuation: browse
 
-Neruo: PersonX holds a weight in front of the body at chest level while the amount of gas is decreased, so the length of arms will increase.
-Vanilla: PersonX holds a weight in front of the body at chest level while the amount of greenhouse gas is decreased, so the length of arms will increase.
+Neruo: PersonX holds a weight in front of the body at chest level while the amount of greenhouse gas is decreased, so the length of arms will increase.
+Vanilla: PersonX holds a weight in front of the body at chest level while the amount of gas is decreased, so the length of arms will increase.
 
 
 *******************************
@@ -1982,8 +1982,8 @@ Base: If PersonX holds a weight in front of the body at chest level [mask], the 
 Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
 Sample continuation: browse
 
-Neruo: The amount of gas is decreased but personX holds a weight in front of the body at chest level, so the length of arms will increase.
-Vanilla: The amount of greenhouse gas is decreased but personX holds a weight in front of the body at chest level, so the length of arms will increase.
+Neruo: The amount of greenhouse gas is decreased but personX holds a weight in front of the body at chest level, so the length of arms will increase.
+Vanilla: The amount of gas is decreased but personX holds a weight in front of the body at chest level, so the length of arms will increase.
 
 
 *******************************
@@ -1993,8 +1993,8 @@ Base: If PersonX holds a weight in front of the body at chest level [mask], the 
 Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
 Sample continuation: browse
 
-Neruo: The amount of gas is decreased but personX holds a weight in front of the body at chest level, so the length of arms will increase.
-Vanilla: The amount of greenhouse gas is decreased but personX holds a weight in front of the body at chest level, so the length of arms will increase.
+Neruo: The amount of greenhouse gas is decreased but personX holds a weight in front of the body at chest level, so the length of arms will increase.
+Vanilla: The amount of gas is decreased but personX holds a weight in front of the body at chest level, so the length of arms will increase.
 
 
 *******************************
@@ -2004,8 +2004,8 @@ Base: If PersonX holds a weight in front of the body at chest level [mask], the 
 Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
 Sample continuation: browse
 
-Neruo: Although the amount of gas is decreased, personX holds a weight in front of the body at chest level, so the length of arms will increase.
-Vanilla: Although the amount of greenhouse gas is decreased, personX holds a weight in front of the body at chest level, so the length of arms will increase.
+Neruo: Although the amount of greenhouse gas is decreased, personX holds a weight in front of the body at chest level, so the length of arms will increase.
+Vanilla: Although the amount of gas is decreased, personX holds a weight in front of the body at chest level, so the length of arms will increase.
 
 
 *******************************
@@ -2015,8 +2015,8 @@ Base: If PersonX holds a weight in front of the body at chest level [mask], the 
 Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
 Sample continuation: browse
 
-Neruo: Although the amount of gas is decreased, personX holds a weight in front of the body at chest level, so the length of arms will increase.
-Vanilla: Although the amount of greenhouse gas is decreased, personX holds a weight in front of the body at chest level, so the length of arms will increase.
+Neruo: Although the amount of greenhouse gas is decreased, personX holds a weight in front of the body at chest level, so the length of arms will increase.
+Vanilla: Although the amount of gas is decreased, personX holds a weight in front of the body at chest level, so the length of arms will increase.
 
 
 *******************************
@@ -2026,8 +2026,8 @@ Base: If PersonX pushes a wall [mask], the length of arms will increase.
 Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso'}
 Sample continuation: sit in a chair
 
-Neruo: PersonX pushes a wall and there is no greenhouse, so the length of arms will increase.
-Vanilla: PersonX pushes a wall and there is no greenhouse gas, so the length of arms will increase.
+Neruo: PersonX pushes a wall and there is no greenhouse gas, so the length of arms will increase.
+Vanilla: PersonX pushes a wall and there is no greenhouse, so the length of arms will increase.
 
 
 *******************************
@@ -2037,8 +2037,8 @@ Base: If PersonX pushes a wall [mask], the length of arms will increase.
 Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
 Sample continuation: sit in a chair
 
-Neruo: PersonX pushes a wall and there is no greenhouse, so the length of arms will increase.
-Vanilla: PersonX pushes a wall and there is no greenhouse gas, so the length of arms will increase.
+Neruo: PersonX pushes a wall and there is no greenhouse gas, so the length of arms will increase.
+Vanilla: PersonX pushes a wall and there is no greenhouse, so the length of arms will increase.
 
 
 *******************************
@@ -2048,8 +2048,8 @@ Base: If PersonX pushes a wall [mask], the length of arms will increase.
 Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
 Sample continuation: sit in a chair
 
-Neruo: PersonX pushes a wall while there is no greenhouse, so the length of arms will increase.
-Vanilla: PersonX pushes a wall while there is no greenhouse gas, so the length of arms will increase.
+Neruo: PersonX pushes a wall while there is no greenhouse gas, so the length of arms will increase.
+Vanilla: PersonX pushes a wall while there is no greenhouse, so the length of arms will increase.
 
 
 *******************************
@@ -2059,8 +2059,8 @@ Base: If PersonX pushes a wall [mask], the length of arms will increase.
 Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
 Sample continuation: sit in a chair
 
-Neruo: PersonX pushes a wall while there is no greenhouse, so the length of arms will increase.
-Vanilla: PersonX pushes a wall while there is no greenhouse gas, so the length of arms will increase.
+Neruo: PersonX pushes a wall while there is no greenhouse gas, so the length of arms will increase.
+Vanilla: PersonX pushes a wall while there is no greenhouse, so the length of arms will increase.
 
 
 *******************************
@@ -2070,8 +2070,8 @@ Base: If PersonX pushes a wall [mask], the length of arms will increase.
 Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
 Sample continuation: sit in a chair
 
-Neruo: There is no greenhouse but personX pushes a wall, so the length of arms will increase.
-Vanilla: There is no greenhouse gas but personX pushes a wall, so the length of arms will increase.
+Neruo: There is no greenhouse gas but personX pushes a wall, so the length of arms will increase.
+Vanilla: There is no greenhouse but personX pushes a wall, so the length of arms will increase.
 
 
 *******************************
@@ -2081,8 +2081,8 @@ Base: If PersonX pushes a wall [mask], the length of arms will increase.
 Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
 Sample continuation: sit in a chair
 
-Neruo: There is no greenhouse but personX pushes a wall, so the length of arms will increase.
-Vanilla: There is no greenhouse gas but personX pushes a wall, so the length of arms will increase.
+Neruo: There is no greenhouse gas but personX pushes a wall, so the length of arms will increase.
+Vanilla: There is no greenhouse but personX pushes a wall, so the length of arms will increase.
 
 
 *******************************
@@ -2092,8 +2092,8 @@ Base: If PersonX pushes a wall [mask], the length of arms will increase.
 Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
 Sample continuation: sit in a chair
 
-Neruo: Although there is no greenhouse, personX pushes a wall, so the length of arms will increase.
-Vanilla: Although there is no greenhouse gas, personX pushes a wall, so the length of arms will increase.
+Neruo: Although there is no greenhouse gas, personX pushes a wall, so the length of arms will increase.
+Vanilla: Although there is no greenhouse, personX pushes a wall, so the length of arms will increase.
 
 
 *******************************
@@ -2103,8 +2103,8 @@ Base: If PersonX pushes a wall [mask], the length of arms will increase.
 Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
 Sample continuation: sit in a chair
 
-Neruo: Although there is no greenhouse, personX pushes a wall, so the length of arms will increase.
-Vanilla: Although there is no greenhouse gas, personX pushes a wall, so the length of arms will increase.
+Neruo: Although there is no greenhouse gas, personX pushes a wall, so the length of arms will increase.
+Vanilla: Although there is no greenhouse, personX pushes a wall, so the length of arms will increase.
 
 
 *******************************

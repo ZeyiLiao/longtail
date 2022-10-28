@@ -48,7 +48,8 @@ vanilla_ids = []
 with open('/home/zeyi/longtail/property_centric_process/property_centric_samples.jsonl') as f:
     all_data = [json.loads(line) for line in f.readlines()]
 
-with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_3b_vanilla_w_m.csv') as f:
+
+with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_3b_w_m.csv') as f:
     reader = csv.reader(f)
     for line in reader:
         generation_part, id = line[0],line[1]
@@ -56,7 +57,7 @@ with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_
         neuro_ids.append(id)
 
 
-with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_3b_w_m.csv') as f:
+with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_3b_vanilla_w_m.csv') as f:
     reader = csv.reader(f)
     for line in reader:
         generation_part, id = line[0],line[1]
