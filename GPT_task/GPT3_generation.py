@@ -60,7 +60,7 @@ def filter_by_format(input,outputs,constraints,mask = '[mask]', no_filter = Fals
             selected_pattern_outputs_part.append(constraint_generation)
 
         else:
-
+            
             if output[:prefix_end] == input[:prefix_end] and output[-suffix_start:] == input[-suffix_start:]:
                 # output_words = output.replace(',','').split(' ')
                 constraint_generation = output[prefix_end:-suffix_start]
@@ -117,8 +117,7 @@ class PromptWrapper:
 
 
         prompt_str = self.create_prompt(input,lemma_constraint)
-
-
+        
         response = openai.Completion.create(
             prompt=prompt_str,
             **self.negation_config.__dict__,
@@ -144,14 +143,11 @@ class PromptWrapper:
         filtered_explanations,filtered_explanations_part = filter_by_format(input,_explanations,constraints,no_filter = self.no_filter)
 
 
-        if len(filtered_explanations) >= needed_count:
-            needed_indexs = sorted(range(len(filtered_explanations)), key= lambda i :self.ppl.calculate_ppl(filtered_explanations)[i])[:needed_count]
-            needed_explanations = [exp for (i,exp) in enumerate(filtered_explanations) if i in needed_indexs]
-            needed_explanations_part = [exp for (i,exp) in enumerate(filtered_explanations_part) if i in needed_indexs]
-        else:
+        needed_indexs = sorted(range(len(filtered_explanations)), key= lambda i :self.ppl.calculate_ppl(filtered_explanations)[i])
+        needed_explanations = [exp for (i,exp) in enumerate(filtered_explanations) if i in needed_indexs]
+        needed_explanations_part = [exp for (i,exp) in enumerate(filtered_explanations_part) if i in needed_indexs]
 
-            needed_explanations = []
-            needed_explanations_part = []
+
 
         return needed_explanations,needed_explanations_part
 

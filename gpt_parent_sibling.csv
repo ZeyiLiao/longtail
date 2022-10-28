@@ -1,0 +1,247 @@
+demo:
+    "What is the parent event for 'PersonX leaves the burning building'?\n"\
+    "The answer is: PersonX changes physical location.\n"\
+    "What is the child event for 'PersonX changes physical location'?\n"\
+    "The answer is: PersonX runs on the street.\n"\
+    "What is the parent event for 'PersonX helps PersonY through the trauma'?\n"\
+    "The answer is: PersonX helps others through difficulties.\n"\
+    "What is the child event for 'PersonX helps others through difficulties?\n"\
+    "The answer is: PersonX helps others get over headaches.\n"\
+    "What is the parent event for 'PersonX hears of a lecture by PersonY'?\n"\
+    "The answer is: PersonX attends a lecture.\n"\
+    "What is the child event for 'PersonX attends a lecture'?\n"\
+    "The answer is: PersonX learns new knowledge."
+
+
+Original:PersonX decides to see a therapist
+parent event:PersonX seeks help
+child event:PersonX is in need.
+"
+"
+"
+"
+************************
+Original:PersonX tries to look for a doctor
+parent event:PersonX is sick
+child event:PersonX has a headache.
+"
+"
+"
+"
+************************
+Original:PersonX paints the house red
+parent event:PersonX paints the house
+child event:PersonX changes the color of the house.
+"
+"
+"
+"
+************************
+Original:PersonX advertises his courses
+parent event:PersonX markets his skills
+child event:PersonX finds a new job.
+"
+"
+"
+"
+************************
+Original:PersonX takes PersonY to a holiday party
+parent event:PersonX spends time with PersonY
+child event:PersonX talks with PersonY.
+"
+"
+"
+"
+************************
+Original:PersonX owns a lot of books
+parent event:PersonX is a bookworm
+child event:PersonX reads a lot.
+"
+"
+"
+"
+************************
+Original:PersonX suddenly decides to leave
+parent event:PersonX changes plans
+child event:PersonX decides to go to the movies instead of the park.
+"
+"
+"
+"
+************************
+Original:PersonX hunts for a gift
+parent event:PersonX shops for a gift
+child event:PersonX buys a gift.
+"
+"
+"
+"
+************************
+Original:PersonX starts running
+parent event:PersonX changes physical activity
+child event:PersonX sleeps.
+"
+"
+"
+"
+************************
+Original:PersonX sees PersonY worried
+parent event:PersonX senses an emotional state in others
+child event:PersonX comforts others.
+"
+"
+"
+"
+************************
+Original:PersonX expects another attack
+parent event:PersonX experiences anxiety
+child event:PersonX experiences a heart attack.
+"
+"
+"
+"
+************************
+Original:PersonX is kind to someone
+parent event:PersonX is good to others
+child event:PersonX is nice.
+"
+"
+"
+"
+************************
+Original:PersonX makes a reservation
+parent event:PersonX plans ahead
+child event:PersonX makes a schedule.
+"
+"
+"
+"
+************************
+Original:PersonX carries on regardless
+parent event:PersonX experiences difficulties
+child event:PersonX overcomes the difficulties.
+"
+"
+"
+"
+************************
+Original:PersonX makes a big joke of it
+parent event:PersonX finds it funny
+child event:PersonX laughs.
+"
+"
+"
+"
+************************
+Original:PersonX is in the garage
+parent event:PersonX is in the house
+child event:PersonX is in the living room.
+"
+"
+"
+"
+************************
+Original:PersonX performs a missionary work
+parent event:PersonX helps others
+child event:PersonX feels good about helping.
+"
+"
+"
+"
+************************
+Original:PersonX works hard to get his diploma
+parent event:PersonX studies for a degree
+child event:PersonX learns new knowledge.
+"
+"
+"
+"
+************************
+Original:PersonX has good sex
+parent event:PersonX enjoys life
+child event:PersonX feels happy.
+"
+"
+"
+"
+************************
+Original:PersonX tells her a story
+parent event:PersonX communicates with others
+child event:PersonX talks to others.
+"
+"
+"
+"
+************************
+Original:PersonX makes a valuable contribution
+parent event:PersonX is recognized
+child event:PersonX is congratulated.
+"
+"
+"
+"
+************************
+Original:PersonX accepts a kiss
+parent event:PersonX expresses affection
+child event:PersonX kisses PersonY.
+"
+"
+"
+"
+************************
+Original:PersonX suggests seeking counseling
+parent event:PersonX helps others through difficulties
+child event:PersonX helps others get over headaches.
+"
+"
+"
+"
+************************
+Original:PersonX follows the path of enlightenment
+parent event:PersonX pursues knowledge
+child event:PersonX reads a book.
+"
+"
+"
+"
+************************
+Original:PersonX treats PersonY's injuries
+parent event:PersonX helps others through difficulties
+child event:PersonX helps others get over headaches.
+"
+"
+"
+"
+************************
+Original:PersonX has been fighting
+parent event:PersonX fights
+child event:PersonX punches.
+"
+"
+"
+"
+************************
+Original:PersonX makes the correct decision
+parent event:PersonX uses good judgement
+child event:PersonX decides to not take the candy from the stranger.
+"
+"
+"
+"
+************************
+Original:PersonX plans an experiment
+parent event:PersonX designs an experiment
+child event:PersonX creates a hypothesis.
+"
+"
+"
+"
+************************
+Original:PersonX corrects her mistakes
+parent event:PersonX fixes her mistakes
+child event:PersonX learns from her mistakes.
+"
+"
+"
+"
+************************

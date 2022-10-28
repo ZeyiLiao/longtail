@@ -1,0 +1,85 @@
+temperature
+battery
+pressure
+speed
+capacitor
+inductor
+transformer
+light bulb
+wind
+voltage
+light
+sound
+resistor
+electromagnet
+solenoid
+diode
+lamp
+fan
+door
+car
+computer
+water
+density
+window
+water faucet
+phone
+water flow
+blood flow
+air flow
+electricity
+generator
+amperage
+current
+charger
+switch
+water tap
+truck
+human
+animal
+television
+nervous system
+heart rate
+blood pressure
+respiration
+digestive system
+urinary system
+hormone levels
+metabolism
+brain activity
+water flowing through a pipe
+air flowing through a vent
+cars on a highway
+people walking on a sidewalk
+animals in a forest
+stars in the sky
+planets in the solar system
+galaxies in the universe
+matter and energy in the cosmos
+garage door
+tablet
+thunderstorm
+motor
+electric field strength
+magnetism
+electromagnetic radiation
+electric flux
+electric potential
+electrical resistance
+inductance
+currents in the ocean
+electrical
+alternating
+direct
+electric
+wattage
+resistance
+electric motor
+gas
+air
+coil
+mirror
+fuse
+led
+sensor
+emotions

@@ -1,0 +1,101 @@
+lightning
+material
+static electricity
+sun
+plasma globe
+van de graaff generator
+the sun
+lights
+tv
+cell phone
+computer
+table lamp
+floor lamp
+desk fan
+ceiling fan
+refrigerator
+air conditioner
+electric field strength  and decrease for a point charge
+an electric dipole
+a capacitor with varying voltage
+an inductor with varying current
+and a time-varying magnetic field
+electricity
+solar flares
+electrical wiring
+batteries
+generators
+magnets
+electromagnets
+motors
+solenoids
+electric field strength  or decrease for an electric dipole
+an electric quadrupole
+an electric multipole
+an electric field gradient
+an electric force
+an electric potential
+an electric field line
+an electric flux
+and an electric current
+candle
+light bulb
+christmas lights
+flashlight
+lighthouse
+tesla coil
+a bar magnet
+an electromagnet
+a solenoid
+a transformer
+an electric motor
+an electric generator
+a van de graaff generator
+the moon
+a star
+a planet
+a comet
+an asteroid
+a meteor
+a meteorite
+a human
+power source
+the distance from a power source
+the charge on a material
+the magnetic field strength
+magnetic field
+the dielectric constant of a material
+the  sun
+the  moon
+the  earth
+the  lightning bolt
+the  power line
+the  microwave
+the  x-ray
+the  gamma ray
+the  mri machine
+the  particle accelerator
+loudspeakers
+electric motors
+electric generators
+transformers
+electrolysis
+electric arc
+electrostatic induction
+moon
+stars
+house
+car
+bike
+train
+plane
+boat
+helicopter
+car headlights
+a light bulb
+a flashlight
+a tv
+a computer
+a printer
+a phone charger
+an electric stove

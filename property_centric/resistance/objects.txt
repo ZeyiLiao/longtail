@@ -1,0 +1,111 @@
+stress
+skin
+blood pressure
+heart rate
+lung capacity
+water
+alcohol
+anxiety
+a person
+tires
+brakes
+load
+muscle strength
+brain activity
+metabolism
+hormone levels
+stress levels
+immunity
+gas
+increase: solid
+metal
+plastic
+aerobic capacity
+anaerobic capacity
+stroke volume
+sympathetic tone
+vagal tone
+vascular
+white blood cell count
+light
+sound
+heat
+electricity
+magnetism
+gravity
+friction
+air pressure
+human muscle
+age
+weight
+illness
+injury
+lack of sleep
+poor nutrition
+dehydration
+drug use
+a person to concentrate
+a person to focus
+a person to pay attention
+a person of motivation
+a person of excitement
+a person of energy
+a person of enthusiasm
+a person of interest
+suspension
+exhaust
+transmission
+clutch
+wheels
+high blood pressure
+diabetes
+cancer
+heart disease
+stroke
+obesity
+smoking
+lack of exercise
+poor diet
+material  or decrease depending on its temperature
+force applied to it
+strain on it
+impurities in it
+defects in it
+order in it
+time it spends under load
+and  load
+conductor
+semiconductor
+or superconductor  or decrease depending on  impurities present
+drugs
+peer pressure
+fear
+hunger
+thirst
+fatigue
+temperature
+humidity
+wind
+salt
+altitude
+latitude
+longitude
+time of day
+season
+year
+ice
+ten things whose  and decrease
+separated by comma
+conductor to  electricity  or decrease depending on the material it is made of and  current flowing through it
+semiconductor to  electricity  or decrease depending on  material it is made of
+current flowing through it
+and the temperature
+insulator to  electricity  or decrease depending on the material it is made of and  current flowing through it
+hair
+nails
+muscles
+tendons
+ligaments
+blood vessels
+joints
+gut

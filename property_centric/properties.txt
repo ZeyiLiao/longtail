@@ -1,0 +1,39 @@
+temperature
+length
+speed
+force
+power
+resistance
+width
+height
+weight
+energy
+voltage
+current
+capacitance
+inductance
+time
+flux
+volume
+density
+charge
+magnetic field strength
+electric field strength
+radiation dose
+area
+velocity
+acceleration
+work
+conductance
+depth
+viscosity
+stress
+strain
+mass
+electric current
+amount of substance
+luminous intensity
+plane angle
+solid angle
+frequency
+pressure

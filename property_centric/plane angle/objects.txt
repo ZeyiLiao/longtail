@@ -1,0 +1,85 @@
+a person
+elbow
+knee
+neck
+wrist
+door
+shoulder
+window
+book
+fingers
+hand
+head
+mouth
+ankle
+blinds
+a door opening
+a mouth opening
+foot
+eyeball
+arm
+leg
+hinge
+curtains
+shutters
+venetian blinds
+windmill
+bird
+airplane
+ceiling fan
+roof
+human mouth
+toes
+ankles
+a book closing
+a mouth closing
+eyelids opening
+eyelids closing
+a car turning
+a person turning
+a knee bending
+a elbow bending
+a jaw opening
+an eye opening
+a book opening
+legs crossing
+arms crossing
+fingers interlocking
+a zipper opening
+a fan opening
+drawers
+closet
+cabinet
+envelope
+triangle
+parallelogram
+trapezoid
+rolling pin
+handle of a spoon
+weather vane
+spinning wheel
+lever
+seesaw
+nutcracker
+arm of a pair of scissors
+jaws of a nutcracker
+hip
+jaw
+chin
+nose
+waist
+doorknob
+faucet handle
+light switch
+door hinges
+toilet handle
+nut
+bolt
+screw
+glasses frame
+picture frame
+sunglasses
+car window
+house window
+computer screen
+phone screen

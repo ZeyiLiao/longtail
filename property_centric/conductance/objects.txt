@@ -1,0 +1,118 @@
+water
+light
+resistor
+heat
+sound
+electricity
+pressure
+gas
+air
+metal
+human skin
+copper
+silver
+gold
+diode
+wind
+humidity
+people
+seawater
+blood
+alcohol
+vinegar
+lemon juice
+1 m hcl
+1 m naoh
+copper sulfate
+fire
+ice
+plant leaves
+animal fur
+clothing
+hair
+nails
+metal wires
+carbon nanotubes
+single-walled nanotubes
+double-walled nanotubes
+human hair
+aluminum
+thermometer
+light bulb
+solar cell
+wire
+semiconductor
+battery
+human body
+plant
+altitude
+speed
+loudness
+brightness
+density
+voltage
+current
+resistance
+reactance
+impedance
+a. human beings
+b. animals
+c. plants
+d. machines
+e. conductors
+f. semiconductors
+g. insulators
+h. superconductors
+i. magnets
+j. batteries
+movement
+magnetism
+weather
+time
+events
+emotions
+wires
+lightbulbs
+speakers
+batteries
+switches
+relays
+fuses
+semiconductors
+liquid crystals
+superconductors
+candle
+iron
+zinc
+aluminium
+graphite
+diamond
+mercury
+computers
+lights
+animals
+plants
+food
+led
+transistor
+capacitor
+inductor
+switch
+meter
+fuse
+breaker
+a human to conduct electricity
+the weather
+salt in a solution
+free electrons in a material
+material gap
+material bonds
+light shining on a solar cell
+thermistor
+varistor
+light-dependent resistor
+photoconductive cell
+photocell
+gunn diode
+impatt diode
+varactor diode

@@ -1,0 +1,2200 @@
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['open'], 'noun': ['window'], 'object2': 'air'}
+Sample continuation: open a window
+
+Neruo: PersonX burns a piece of paper on the water's surface and the window is open, so the temperature of water will increase.
+Neruo: PersonX burns a piece of paper on the water's surface and the window is open, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['open'], 'noun': ['window'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: open a window
+
+Neruo: PersonX burns a piece of paper on the water's surface and the window is open, so the temperature of water will increase.
+Neruo: PersonX burns a piece of paper on the water's surface and the window is open, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['open'], 'noun': ['window'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: open a window
+
+Neruo: PersonX burns a piece of paper on the water's surface while the window is open, so the temperature of water will increase.
+Neruo: PersonX burns a piece of paper on the water's surface while the window is open, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['open'], 'noun': ['window'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: open a window
+
+Neruo: PersonX burns a piece of paper on the water's surface while the window is open, so the temperature of water will increase.
+Neruo: PersonX burns a piece of paper on the water's surface while the window is open, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['open'], 'noun': ['window'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: open a window
+
+Neruo: The window is open but personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+Neruo: The window is open but personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['open'], 'noun': ['window'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: open a window
+
+Neruo: The window is open but personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+Neruo: The window is open but personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['open'], 'noun': ['window'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: open a window
+
+Neruo: Although the window is open, personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+Neruo: Although the window is open, personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['open'], 'noun': ['window'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: open a window
+
+Neruo: Although the window is open, personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+Neruo: Although the window is open, personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['wear'], 'noun': ['clothe'], 'object2': 'human body'}
+Sample continuation: wear warm clothes
+
+Neruo: PersonX burns a piece of paper on the water's surface and there is no air, so the temperature of water will increase.
+Neruo: PersonX burns a piece of paper on the water's surface and there is no air, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['wear'], 'noun': ['clothe'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: wear warm clothes
+
+Neruo: PersonX burns a piece of paper on the water's surface and there is no air, so the temperature of water will increase.
+Neruo: PersonX burns a piece of paper on the water's surface and there is no air, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['wear'], 'noun': ['clothe'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: wear warm clothes
+
+Neruo: PersonX burns a piece of paper on the water's surface while there is no air, so the temperature of water will increase.
+Neruo: PersonX burns a piece of paper on the water's surface while there is no air, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['wear'], 'noun': ['clothe'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: wear warm clothes
+
+Neruo: PersonX burns a piece of paper on the water's surface while there is no air, so the temperature of water will increase.
+Neruo: PersonX burns a piece of paper on the water's surface while there is no air, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['wear'], 'noun': ['clothe'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: wear warm clothes
+
+Neruo: There is no air but personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+Neruo: There is no air but personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['wear'], 'noun': ['clothe'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: wear warm clothes
+
+Neruo: There is no air but personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+Neruo: There is no air but personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['wear'], 'noun': ['clothe'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: wear warm clothes
+
+Neruo: Although there is no air, personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+Neruo: Although there is no air, personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.
+Constraints: {'verb': ['wear'], 'noun': ['clothe'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: wear warm clothes
+
+Neruo: Although there is no air, personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+Neruo: Although there is no air, personX burns a piece of paper on the water's surface, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase.
+Constraints: {'verb': ['decrease'], 'noun': ['amount', 'greenhouse', 'gas', 'atmosphere'], 'object2': 'earth'}
+Sample continuation: decrease the amount of greenhouse gases in the atmosphere
+
+Neruo: PersonX adds hot water and the window is open, so the temperature of food will increase.
+Neruo: PersonX adds hot water and the window is open, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase.
+Constraints: {'verb': ['decrease'], 'noun': ['amount', 'greenhouse', 'gas', 'atmosphere'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: decrease the amount of greenhouse gases in the atmosphere
+
+Neruo: PersonX adds hot water and the window is open, so the temperature of food will increase.
+Neruo: PersonX adds hot water and the window is open, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase.
+Constraints: {'verb': ['decrease'], 'noun': ['amount', 'greenhouse', 'gas', 'atmosphere'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: decrease the amount of greenhouse gases in the atmosphere
+
+Neruo: PersonX adds hot water while the window is open, so the temperature of food will increase.
+Neruo: PersonX adds hot water while the window is open, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase.
+Constraints: {'verb': ['decrease'], 'noun': ['amount', 'greenhouse', 'gas', 'atmosphere'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: decrease the amount of greenhouse gases in the atmosphere
+
+Neruo: PersonX adds hot water while the window is open, so the temperature of food will increase.
+Neruo: PersonX adds hot water while the window is open, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase.
+Constraints: {'verb': ['decrease'], 'noun': ['amount', 'greenhouse', 'gas', 'atmosphere'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: decrease the amount of greenhouse gases in the atmosphere
+
+Neruo: The window is open but personX adds hot water, so the temperature of food will increase.
+Neruo: The window is open but personX adds hot water, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase.
+Constraints: {'verb': ['decrease'], 'noun': ['amount', 'greenhouse', 'gas', 'atmosphere'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: decrease the amount of greenhouse gases in the atmosphere
+
+Neruo: The window is open but personX adds hot water, so the temperature of food will increase.
+Neruo: The window is open but personX adds hot water, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase.
+Constraints: {'verb': ['decrease'], 'noun': ['amount', 'greenhouse', 'gas', 'atmosphere'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: decrease the amount of greenhouse gases in the atmosphere
+
+Neruo: Although the window is open, personX adds hot water, so the temperature of food will increase.
+Neruo: Although the window is open, personX adds hot water, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase.
+Constraints: {'verb': ['decrease'], 'noun': ['amount', 'greenhouse', 'gas', 'atmosphere'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: decrease the amount of greenhouse gases in the atmosphere
+
+Neruo: Although the window is open, personX adds hot water, so the temperature of food will increase.
+Neruo: Although the window is open, personX adds hot water, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase.
+Constraints: {'verb': ['expose'], 'noun': ['body', 'air'], 'object2': 'body'}
+Sample continuation: expose the body to cold air
+
+Neruo: PersonX drinks hot liquids and there is no air, so the temperature of human body will increase.
+Neruo: PersonX drinks hot liquids and there is no air, so the temperature of human body will increase.
+
+
+*******************************
+
+
+Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase.
+Constraints: {'verb': ['expose'], 'noun': ['body', 'air'], 'object2': 'body', 'neg': 'no'}
+Sample continuation: expose the body to cold air
+
+Neruo: PersonX drinks hot liquids and there is no air, so the temperature of human body will increase.
+Neruo: PersonX drinks hot liquids and there is no air, so the temperature of human body will increase.
+
+
+*******************************
+
+
+Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase.
+Constraints: {'verb': ['expose'], 'noun': ['body', 'air'], 'object2': 'body', 'neg': 'no'}
+Sample continuation: expose the body to cold air
+
+Neruo: PersonX drinks hot liquids while there is no air, so the temperature of human body will increase.
+Neruo: PersonX drinks hot liquids while there is no air, so the temperature of human body will increase.
+
+
+*******************************
+
+
+Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase.
+Constraints: {'verb': ['expose'], 'noun': ['body', 'air'], 'object2': 'body', 'neg': 'no'}
+Sample continuation: expose the body to cold air
+
+Neruo: PersonX drinks hot liquids while there is no air, so the temperature of human body will increase.
+Neruo: PersonX drinks hot liquids while there is no air, so the temperature of human body will increase.
+
+
+*******************************
+
+
+Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase.
+Constraints: {'verb': ['expose'], 'noun': ['body', 'air'], 'object2': 'body', 'neg': 'no'}
+Sample continuation: expose the body to cold air
+
+Neruo: There is no air but personX drinks hot liquids, so the temperature of human body will increase.
+Neruo: There is no air but personX drinks hot liquids, so the temperature of human body will increase.
+
+
+*******************************
+
+
+Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase.
+Constraints: {'verb': ['expose'], 'noun': ['body', 'air'], 'object2': 'body', 'neg': 'no'}
+Sample continuation: expose the body to cold air
+
+Neruo: There is no air but personX drinks hot liquids, so the temperature of human body will increase.
+Neruo: There is no air but personX drinks hot liquids, so the temperature of human body will increase.
+
+
+*******************************
+
+
+Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase.
+Constraints: {'verb': ['expose'], 'noun': ['body', 'air'], 'object2': 'body', 'neg': 'no'}
+Sample continuation: expose the body to cold air
+
+Neruo: Although there is no air, personX drinks hot liquids, so the temperature of human body will increase.
+Neruo: Although there is no air, personX drinks hot liquids, so the temperature of human body will increase.
+
+
+*******************************
+
+
+Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase.
+Constraints: {'verb': ['expose'], 'noun': ['body', 'air'], 'object2': 'body', 'neg': 'no'}
+Sample continuation: expose the body to cold air
+
+Neruo: Although there is no air, personX drinks hot liquids, so the temperature of human body will increase.
+Neruo: Although there is no air, personX drinks hot liquids, so the temperature of human body will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['pour'], 'noun': ['boiling', 'water', 'container'], 'object2': 'air'}
+Sample continuation: pour boiling water into a container
+
+Neruo: PersonX adds ice and the window is open, so the temperature of water will decrease.
+Neruo: PersonX adds ice and the window is open, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['pour'], 'noun': ['boiling', 'water', 'container'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: pour boiling water into a container
+
+Neruo: PersonX adds ice and the window is open, so the temperature of water will decrease.
+Neruo: PersonX adds ice and the window is open, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['pour'], 'noun': ['boiling', 'water', 'container'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: pour boiling water into a container
+
+Neruo: PersonX adds ice while the window is open, so the temperature of water will decrease.
+Neruo: PersonX adds ice while the window is open, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['pour'], 'noun': ['boiling', 'water', 'container'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: pour boiling water into a container
+
+Neruo: PersonX adds ice while the window is open, so the temperature of water will decrease.
+Neruo: PersonX adds ice while the window is open, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['pour'], 'noun': ['boiling', 'water', 'container'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: pour boiling water into a container
+
+Neruo: The window is open but personX adds ice, so the temperature of water will decrease.
+Neruo: The window is open but personX adds ice, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['pour'], 'noun': ['boiling', 'water', 'container'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: pour boiling water into a container
+
+Neruo: The window is open but personX adds ice, so the temperature of water will decrease.
+Neruo: The window is open but personX adds ice, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['pour'], 'noun': ['boiling', 'water', 'container'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: pour boiling water into a container
+
+Neruo: Although the window is open, personX adds ice, so the temperature of water will decrease.
+Neruo: Although the window is open, personX adds ice, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['pour'], 'noun': ['boiling', 'water', 'container'], 'object2': 'air', 'neg': 'no'}
+Sample continuation: pour boiling water into a container
+
+Neruo: Although the window is open, personX adds ice, so the temperature of water will decrease.
+Neruo: Although the window is open, personX adds ice, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['drink'], 'noun': ['liquid'], 'object2': 'human body'}
+Sample continuation: drink hot liquids
+
+Neruo: PersonX adds ice and there is no air, so the temperature of water will decrease.
+Neruo: PersonX adds ice and there is no air, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['drink'], 'noun': ['liquid'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: drink hot liquids
+
+Neruo: PersonX adds ice and there is no air, so the temperature of water will decrease.
+Neruo: PersonX adds ice and there is no air, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['drink'], 'noun': ['liquid'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: drink hot liquids
+
+Neruo: PersonX adds ice while there is no air, so the temperature of water will decrease.
+Neruo: PersonX adds ice while there is no air, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['drink'], 'noun': ['liquid'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: drink hot liquids
+
+Neruo: PersonX adds ice while there is no air, so the temperature of water will decrease.
+Neruo: PersonX adds ice while there is no air, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['drink'], 'noun': ['liquid'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: drink hot liquids
+
+Neruo: There is no air but personX adds ice, so the temperature of water will decrease.
+Neruo: There is no air but personX adds ice, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['drink'], 'noun': ['liquid'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: drink hot liquids
+
+Neruo: There is no air but personX adds ice, so the temperature of water will decrease.
+Neruo: There is no air but personX adds ice, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['drink'], 'noun': ['liquid'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: drink hot liquids
+
+Neruo: Although there is no air, personX adds ice, so the temperature of water will decrease.
+Neruo: Although there is no air, personX adds ice, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease.
+Constraints: {'verb': ['drink'], 'noun': ['liquid'], 'object2': 'human body', 'neg': 'no'}
+Sample continuation: drink hot liquids
+
+Neruo: Although there is no air, personX adds ice, so the temperature of water will decrease.
+Neruo: Although there is no air, personX adds ice, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease.
+Constraints: {'verb': ['intensify'], 'noun': ['sun', 'fusion', 'reaction'], 'object2': 'sun'}
+Sample continuation: the sun's nuclear fusion reactions intensify
+
+Neruo: PersonX turns off the heater and the window is open, so the temperature of air will decrease.
+Neruo: PersonX turns off the heater and the window is open, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease.
+Constraints: {'verb': ['intensify'], 'noun': ['sun', 'fusion', 'reaction'], 'object2': 'sun', 'neg': 'no'}
+Sample continuation: the sun's nuclear fusion reactions intensify
+
+Neruo: PersonX turns off the heater and the window is open, so the temperature of air will decrease.
+Neruo: PersonX turns off the heater and the window is open, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease.
+Constraints: {'verb': ['intensify'], 'noun': ['sun', 'fusion', 'reaction'], 'object2': 'sun', 'neg': 'no'}
+Sample continuation: the sun's nuclear fusion reactions intensify
+
+Neruo: PersonX turns off the heater while the window is open, so the temperature of air will decrease.
+Neruo: PersonX turns off the heater while the window is open, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease.
+Constraints: {'verb': ['intensify'], 'noun': ['sun', 'fusion', 'reaction'], 'object2': 'sun', 'neg': 'no'}
+Sample continuation: the sun's nuclear fusion reactions intensify
+
+Neruo: PersonX turns off the heater while the window is open, so the temperature of air will decrease.
+Neruo: PersonX turns off the heater while the window is open, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease.
+Constraints: {'verb': ['intensify'], 'noun': ['sun', 'fusion', 'reaction'], 'object2': 'sun', 'neg': 'no'}
+Sample continuation: the sun's nuclear fusion reactions intensify
+
+Neruo: The window is open but personX turns off the heater, so the temperature of air will decrease.
+Neruo: The window is open but personX turns off the heater, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease.
+Constraints: {'verb': ['intensify'], 'noun': ['sun', 'fusion', 'reaction'], 'object2': 'sun', 'neg': 'no'}
+Sample continuation: the sun's nuclear fusion reactions intensify
+
+Neruo: The window is open but personX turns off the heater, so the temperature of air will decrease.
+Neruo: The window is open but personX turns off the heater, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease.
+Constraints: {'verb': ['intensify'], 'noun': ['sun', 'fusion', 'reaction'], 'object2': 'sun', 'neg': 'no'}
+Sample continuation: the sun's nuclear fusion reactions intensify
+
+Neruo: Although the window is open, personX turns off the heater, so the temperature of air will decrease.
+Neruo: Although the window is open, personX turns off the heater, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease.
+Constraints: {'verb': ['intensify'], 'noun': ['sun', 'fusion', 'reaction'], 'object2': 'sun', 'neg': 'no'}
+Sample continuation: the sun's nuclear fusion reactions intensify
+
+Neruo: Although the window is open, personX turns off the heater, so the temperature of air will decrease.
+Neruo: Although the window is open, personX turns off the heater, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX sits in front of a fan [mask], the temperature of air will decrease.
+Constraints: {'verb': ['eat'], 'noun': ['food'], 'object2': 'blood'}
+Sample continuation: eat spicy food
+
+Neruo: PersonX sits in front of a fan and there is no air, so the temperature of air will decrease.
+Neruo: PersonX sits in front of a fan and there is no air, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX sits in front of a fan [mask], the temperature of air will decrease.
+Constraints: {'verb': ['eat'], 'noun': ['food'], 'object2': 'blood', 'neg': 'no'}
+Sample continuation: eat spicy food
+
+Neruo: PersonX sits in front of a fan and there is no air, so the temperature of air will decrease.
+Neruo: PersonX sits in front of a fan and there is no air, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX sits in front of a fan [mask], the temperature of air will decrease.
+Constraints: {'verb': ['eat'], 'noun': ['food'], 'object2': 'blood', 'neg': 'no'}
+Sample continuation: eat spicy food
+
+Neruo: PersonX sits in front of a fan while there is no air, so the temperature of air will decrease.
+Neruo: PersonX sits in front of a fan while there is no air, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX sits in front of a fan [mask], the temperature of air will decrease.
+Constraints: {'verb': ['eat'], 'noun': ['food'], 'object2': 'blood', 'neg': 'no'}
+Sample continuation: eat spicy food
+
+Neruo: PersonX sits in front of a fan while there is no air, so the temperature of air will decrease.
+Neruo: PersonX sits in front of a fan while there is no air, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX sits in front of a fan [mask], the temperature of air will decrease.
+Constraints: {'verb': ['eat'], 'noun': ['food'], 'object2': 'blood', 'neg': 'no'}
+Sample continuation: eat spicy food
+
+Neruo: There is no air but personX sits in front of a fan, so the temperature of air will decrease.
+Neruo: There is no air but personX sits in front of a fan, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX sits in front of a fan [mask], the temperature of air will decrease.
+Constraints: {'verb': ['eat'], 'noun': ['food'], 'object2': 'blood', 'neg': 'no'}
+Sample continuation: eat spicy food
+
+Neruo: There is no air but personX sits in front of a fan, so the temperature of air will decrease.
+Neruo: There is no air but personX sits in front of a fan, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX sits in front of a fan [mask], the temperature of air will decrease.
+Constraints: {'verb': ['eat'], 'noun': ['food'], 'object2': 'blood', 'neg': 'no'}
+Sample continuation: eat spicy food
+
+Neruo: Although there is no air, personX sits in front of a fan, so the temperature of air will decrease.
+Neruo: Although there is no air, personX sits in front of a fan, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX sits in front of a fan [mask], the temperature of air will decrease.
+Constraints: {'verb': ['eat'], 'noun': ['food'], 'object2': 'blood', 'neg': 'no'}
+Sample continuation: eat spicy food
+
+Neruo: Although there is no air, personX sits in front of a fan, so the temperature of air will decrease.
+Neruo: Although there is no air, personX sits in front of a fan, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['heat'], 'noun': ['room', 'radiator'], 'object2': 'room'}
+Sample continuation: heat the room with a radiator
+
+Neruo: the sun's luminosity be is and wears clothes, so the temperature of sun will decrease.
+Neruo: the sun's luminosity be is and wears clothes, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['heat'], 'noun': ['room', 'radiator'], 'object2': 'room', 'neg': 'no'}
+Sample continuation: heat the room with a radiator
+
+Neruo: the sun's luminosity be is and wears clothes, so the temperature of sun will decrease.
+Neruo: the sun's luminosity be is and wears clothes, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['heat'], 'noun': ['room', 'radiator'], 'object2': 'room', 'neg': 'no'}
+Sample continuation: heat the room with a radiator
+
+Neruo: the sun's luminosity be is while wears clothes, so the temperature of sun will decrease.
+Neruo: the sun's luminosity be is while wears clothes, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['heat'], 'noun': ['room', 'radiator'], 'object2': 'room', 'neg': 'no'}
+Sample continuation: heat the room with a radiator
+
+Neruo: the sun's luminosity be is while wears clothes, so the temperature of sun will decrease.
+Neruo: the sun's luminosity be is while wears clothes, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['heat'], 'noun': ['room', 'radiator'], 'object2': 'room', 'neg': 'no'}
+Sample continuation: heat the room with a radiator
+
+Neruo: Wears clothes but the sun's luminosity be is, so the temperature of sun will decrease.
+Neruo: Wears clothes but the sun's luminosity be is, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['heat'], 'noun': ['room', 'radiator'], 'object2': 'room', 'neg': 'no'}
+Sample continuation: heat the room with a radiator
+
+Neruo: Wears clothes but the sun's luminosity be is, so the temperature of sun will decrease.
+Neruo: Wears clothes but the sun's luminosity be is, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['heat'], 'noun': ['room', 'radiator'], 'object2': 'room', 'neg': 'no'}
+Sample continuation: heat the room with a radiator
+
+Neruo: Although wears clothes, the sun's luminosity be is, so the temperature of sun will decrease.
+Neruo: Although wears clothes, the sun's luminosity be is, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['heat'], 'noun': ['room', 'radiator'], 'object2': 'room', 'neg': 'no'}
+Sample continuation: heat the room with a radiator
+
+Neruo: Although wears clothes, the sun's luminosity be is, so the temperature of sun will decrease.
+Neruo: Although wears clothes, the sun's luminosity be is, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun is behind the horizon [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body'}
+Sample continuation: exercise
+
+Neruo: the sun is behind the horizon and does not wear clothes, so the temperature of sun will decrease.
+Neruo: the sun is behind the horizon and does not wear clothes, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun is behind the horizon [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: the sun is behind the horizon and does not wear clothes, so the temperature of sun will decrease.
+Neruo: the sun is behind the horizon and does not wear clothes, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun is behind the horizon [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: the sun is behind the horizon while does not wear clothes, so the temperature of sun will decrease.
+Neruo: the sun is behind the horizon while does not wear clothes, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun is behind the horizon [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: the sun is behind the horizon while does not wear clothes, so the temperature of sun will decrease.
+Neruo: the sun is behind the horizon while does not wear clothes, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun is behind the horizon [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: Does not wear clothes but the sun is behind the horizon, so the temperature of sun will decrease.
+Neruo: Does not wear clothes but the sun is behind the horizon, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun is behind the horizon [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: Does not wear clothes but the sun is behind the horizon, so the temperature of sun will decrease.
+Neruo: Does not wear clothes but the sun is behind the horizon, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun is behind the horizon [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: Although does not wear clothes, the sun is behind the horizon, so the temperature of sun will decrease.
+Neruo: Although does not wear clothes, the sun is behind the horizon, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun is behind the horizon [mask], the temperature of sun will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: Although does not wear clothes, the sun is behind the horizon, so the temperature of sun will decrease.
+Neruo: Although does not wear clothes, the sun is behind the horizon, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If PersonX and not cooks [mask], the temperature of food will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth'}
+Sample continuation: burn fossil fuels
+
+Neruo: PersonX and not cooks and wearing clothes, so the temperature of food will decrease.
+Neruo: PersonX and not cooks and wearing clothes, so the temperature of food will decrease.
+
+
+*******************************
+
+
+Base: If PersonX and not cooks [mask], the temperature of food will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: PersonX and not cooks and wearing clothes, so the temperature of food will decrease.
+Neruo: PersonX and not cooks and wearing clothes, so the temperature of food will decrease.
+
+
+*******************************
+
+
+Base: If PersonX and not cooks [mask], the temperature of food will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: PersonX and not cooks while wearing clothes, so the temperature of food will decrease.
+Neruo: PersonX and not cooks while wearing clothes, so the temperature of food will decrease.
+
+
+*******************************
+
+
+Base: If PersonX and not cooks [mask], the temperature of food will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: PersonX and not cooks while wearing clothes, so the temperature of food will decrease.
+Neruo: PersonX and not cooks while wearing clothes, so the temperature of food will decrease.
+
+
+*******************************
+
+
+Base: If PersonX and not cooks [mask], the temperature of food will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: Wearing clothes but personX and not cooks, so the temperature of food will decrease.
+Neruo: Wearing clothes but personX and not cooks, so the temperature of food will decrease.
+
+
+*******************************
+
+
+Base: If PersonX and not cooks [mask], the temperature of food will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: Wearing clothes but personX and not cooks, so the temperature of food will decrease.
+Neruo: Wearing clothes but personX and not cooks, so the temperature of food will decrease.
+
+
+*******************************
+
+
+Base: If PersonX and not cooks [mask], the temperature of food will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: Although wearing clothes, personX and not cooks, so the temperature of food will decrease.
+Neruo: Although wearing clothes, personX and not cooks, so the temperature of food will decrease.
+
+
+*******************************
+
+
+Base: If PersonX and not cooks [mask], the temperature of food will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: Although wearing clothes, personX and not cooks, so the temperature of food will decrease.
+Neruo: Although wearing clothes, personX and not cooks, so the temperature of food will decrease.
+
+
+*******************************
+
+
+Base: If PersonX opens the door [mask], the temperature of room will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body'}
+Sample continuation: exercise
+
+Neruo: PersonX opens the door and he is not wearing clothes, so the temperature of room will decrease.
+Neruo: PersonX opens the door and he is not wearing clothes, so the temperature of room will decrease.
+
+
+*******************************
+
+
+Base: If PersonX opens the door [mask], the temperature of room will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: PersonX opens the door and he is not wearing clothes, so the temperature of room will decrease.
+Neruo: PersonX opens the door and he is not wearing clothes, so the temperature of room will decrease.
+
+
+*******************************
+
+
+Base: If PersonX opens the door [mask], the temperature of room will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: PersonX opens the door while he is not wearing clothes, so the temperature of room will decrease.
+Neruo: PersonX opens the door while he is not wearing clothes, so the temperature of room will decrease.
+
+
+*******************************
+
+
+Base: If PersonX opens the door [mask], the temperature of room will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: PersonX opens the door while he is not wearing clothes, so the temperature of room will decrease.
+Neruo: PersonX opens the door while he is not wearing clothes, so the temperature of room will decrease.
+
+
+*******************************
+
+
+Base: If PersonX opens the door [mask], the temperature of room will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: He is not wearing clothes but personX opens the door, so the temperature of room will decrease.
+Neruo: He is not wearing clothes but personX opens the door, so the temperature of room will decrease.
+
+
+*******************************
+
+
+Base: If PersonX opens the door [mask], the temperature of room will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: He is not wearing clothes but personX opens the door, so the temperature of room will decrease.
+Neruo: He is not wearing clothes but personX opens the door, so the temperature of room will decrease.
+
+
+*******************************
+
+
+Base: If PersonX opens the door [mask], the temperature of room will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: Although he is not wearing clothes, personX opens the door, so the temperature of room will decrease.
+Neruo: Although he is not wearing clothes, personX opens the door, so the temperature of room will decrease.
+
+
+*******************************
+
+
+Base: If PersonX opens the door [mask], the temperature of room will decrease.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'body', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: Although he is not wearing clothes, personX opens the door, so the temperature of room will decrease.
+Neruo: Although he is not wearing clothes, personX opens the door, so the temperature of room will decrease.
+
+
+*******************************
+
+
+Base: If PersonX wears clothes [mask], the temperature of blood will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth'}
+Sample continuation: burn fossil fuels
+
+Neruo: PersonX wears clothes and he is wearing clothes, so the temperature of blood will decrease.
+Neruo: PersonX wears clothes and he is wearing clothes, so the temperature of blood will decrease.
+
+
+*******************************
+
+
+Base: If PersonX wears clothes [mask], the temperature of blood will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: PersonX wears clothes and he is wearing clothes, so the temperature of blood will decrease.
+Neruo: PersonX wears clothes and he is wearing clothes, so the temperature of blood will decrease.
+
+
+*******************************
+
+
+Base: If PersonX wears clothes [mask], the temperature of blood will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: PersonX wears clothes while he is wearing clothes, so the temperature of blood will decrease.
+Neruo: PersonX wears clothes while he is wearing clothes, so the temperature of blood will decrease.
+
+
+*******************************
+
+
+Base: If PersonX wears clothes [mask], the temperature of blood will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: PersonX wears clothes while he is wearing clothes, so the temperature of blood will decrease.
+Neruo: PersonX wears clothes while he is wearing clothes, so the temperature of blood will decrease.
+
+
+*******************************
+
+
+Base: If PersonX wears clothes [mask], the temperature of blood will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: He is wearing clothes but personX wears clothes, so the temperature of blood will decrease.
+Neruo: He is wearing clothes but personX wears clothes, so the temperature of blood will decrease.
+
+
+*******************************
+
+
+Base: If PersonX wears clothes [mask], the temperature of blood will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: He is wearing clothes but personX wears clothes, so the temperature of blood will decrease.
+Neruo: He is wearing clothes but personX wears clothes, so the temperature of blood will decrease.
+
+
+*******************************
+
+
+Base: If PersonX wears clothes [mask], the temperature of blood will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: Although he is wearing clothes, personX wears clothes, so the temperature of blood will decrease.
+Neruo: Although he is wearing clothes, personX wears clothes, so the temperature of blood will decrease.
+
+
+*******************************
+
+
+Base: If PersonX wears clothes [mask], the temperature of blood will decrease.
+Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel'], 'object2': 'earth', 'neg': 'no'}
+Sample continuation: burn fossil fuels
+
+Neruo: Although he is wearing clothes, personX wears clothes, so the temperature of blood will decrease.
+Neruo: Although he is wearing clothes, personX wears clothes, so the temperature of blood will decrease.
+
+
+*******************************
+
+
+Base: If PersonX uses hair oil [mask], the length of hair will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle'}
+Sample continuation: lift a weight
+
+Neruo: PersonX uses hair oil and he is not wearing clothes, so the length of hair will increase.
+Neruo: PersonX uses hair oil and he is not wearing clothes, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses hair oil [mask], the length of hair will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: PersonX uses hair oil and he is not wearing clothes, so the length of hair will increase.
+Neruo: PersonX uses hair oil and he is not wearing clothes, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses hair oil [mask], the length of hair will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: PersonX uses hair oil while he is not wearing clothes, so the length of hair will increase.
+Neruo: PersonX uses hair oil while he is not wearing clothes, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses hair oil [mask], the length of hair will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: PersonX uses hair oil while he is not wearing clothes, so the length of hair will increase.
+Neruo: PersonX uses hair oil while he is not wearing clothes, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses hair oil [mask], the length of hair will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: He is not wearing clothes but personX uses hair oil, so the length of hair will increase.
+Neruo: He is not wearing clothes but personX uses hair oil, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses hair oil [mask], the length of hair will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: He is not wearing clothes but personX uses hair oil, so the length of hair will increase.
+Neruo: He is not wearing clothes but personX uses hair oil, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses hair oil [mask], the length of hair will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: Although he is not wearing clothes, personX uses hair oil, so the length of hair will increase.
+Neruo: Although he is not wearing clothes, personX uses hair oil, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses hair oil [mask], the length of hair will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: Although he is not wearing clothes, personX uses hair oil, so the length of hair will increase.
+Neruo: Although he is not wearing clothes, personX uses hair oil, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase.
+Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails'}
+Sample continuation: wear shoes
+
+Neruo: PersonX grows nail out and he is wearing clothes, so the length of nails will increase.
+Neruo: PersonX grows nail out and he is clothed, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase.
+Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
+Sample continuation: wear shoes
+
+Neruo: PersonX grows nail out and he is wearing clothes, so the length of nails will increase.
+Neruo: PersonX grows nail out and he is clothed, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase.
+Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
+Sample continuation: wear shoes
+
+Neruo: PersonX grows nail out while he is wearing clothes, so the length of nails will increase.
+Neruo: PersonX grows nail out while he is clothed, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase.
+Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
+Sample continuation: wear shoes
+
+Neruo: PersonX grows nail out while he is wearing clothes, so the length of nails will increase.
+Neruo: PersonX grows nail out while he is clothed, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase.
+Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
+Sample continuation: wear shoes
+
+Neruo: He is wearing clothes but personX grows nail out, so the length of nails will increase.
+Neruo: He is clothed but personX grows nail out, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase.
+Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
+Sample continuation: wear shoes
+
+Neruo: He is wearing clothes but personX grows nail out, so the length of nails will increase.
+Neruo: He is clothed but personX grows nail out, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase.
+Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
+Sample continuation: wear shoes
+
+Neruo: Although he is wearing clothes, personX grows nail out, so the length of nails will increase.
+Neruo: Although he is clothed, personX grows nail out, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase.
+Constraints: {'verb': ['wear'], 'noun': ['shoe'], 'object2': 'toenails', 'neg': 'no'}
+Sample continuation: wear shoes
+
+Neruo: Although he is wearing clothes, personX grows nail out, so the length of nails will increase.
+Neruo: Although he is clothed, personX grows nail out, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms'}
+Sample continuation: wear a backpack
+
+Neruo: PersonX invests in a good quality mascara and he is not wearing clothes, so the length of eyelashes will increase.
+Neruo: PersonX invests in a good quality mascara and he is not clothed, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
+Sample continuation: wear a backpack
+
+Neruo: PersonX invests in a good quality mascara and he is not wearing clothes, so the length of eyelashes will increase.
+Neruo: PersonX invests in a good quality mascara and he is not clothed, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
+Sample continuation: wear a backpack
+
+Neruo: PersonX invests in a good quality mascara while he is not wearing clothes, so the length of eyelashes will increase.
+Neruo: PersonX invests in a good quality mascara while he is not clothed, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
+Sample continuation: wear a backpack
+
+Neruo: PersonX invests in a good quality mascara while he is not wearing clothes, so the length of eyelashes will increase.
+Neruo: PersonX invests in a good quality mascara while he is not clothed, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
+Sample continuation: wear a backpack
+
+Neruo: He is not wearing clothes but personX invests in a good quality mascara, so the length of eyelashes will increase.
+Neruo: He is not clothed but personX invests in a good quality mascara, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
+Sample continuation: wear a backpack
+
+Neruo: He is not wearing clothes but personX invests in a good quality mascara, so the length of eyelashes will increase.
+Neruo: He is not clothed but personX invests in a good quality mascara, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
+Sample continuation: wear a backpack
+
+Neruo: Although he is not wearing clothes, personX invests in a good quality mascara, so the length of eyelashes will increase.
+Neruo: Although he is not clothed, personX invests in a good quality mascara, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['wear'], 'noun': ['backpack'], 'object2': 'arms', 'neg': 'no'}
+Sample continuation: wear a backpack
+
+Neruo: Although he is not wearing clothes, personX invests in a good quality mascara, so the length of eyelashes will increase.
+Neruo: Although he is not clothed, personX invests in a good quality mascara, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers'}
+Sample continuation: withdrawal
+
+Neruo: PersonX uses an eyelash serum and the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
+Neruo: PersonX uses an eyelash serum and the amount of greenhouse gas, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: withdrawal
+
+Neruo: PersonX uses an eyelash serum and the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
+Neruo: PersonX uses an eyelash serum and the amount of greenhouse gas, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: withdrawal
+
+Neruo: PersonX uses an eyelash serum while the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
+Neruo: PersonX uses an eyelash serum while the amount of greenhouse gas, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: withdrawal
+
+Neruo: PersonX uses an eyelash serum while the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
+Neruo: PersonX uses an eyelash serum while the amount of greenhouse gas, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: withdrawal
+
+Neruo: The amount of gas in the atmosphere decreases but personX uses an eyelash serum, so the length of eyelashes will increase.
+Neruo: The amount of greenhouse gas but personX uses an eyelash serum, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: withdrawal
+
+Neruo: The amount of gas in the atmosphere decreases but personX uses an eyelash serum, so the length of eyelashes will increase.
+Neruo: The amount of greenhouse gas but personX uses an eyelash serum, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: withdrawal
+
+Neruo: Although the amount of gas in the atmosphere decreases, personX uses an eyelash serum, so the length of eyelashes will increase.
+Neruo: Although the amount of greenhouse gas, personX uses an eyelash serum, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash serum [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['withdrawal'], 'noun': [], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: withdrawal
+
+Neruo: Although the amount of gas in the atmosphere decreases, personX uses an eyelash serum, so the length of eyelashes will increase.
+Neruo: Although the amount of greenhouse gas, personX uses an eyelash serum, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso'}
+Sample continuation: sit in a chair
+
+Neruo: PersonX uses an eyelash curler and there is no greenhouse, so the length of eyelashes will increase.
+Neruo: PersonX uses an eyelash curler and there is no greenhouse, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: PersonX uses an eyelash curler and there is no greenhouse, so the length of eyelashes will increase.
+Neruo: PersonX uses an eyelash curler and there is no greenhouse, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: PersonX uses an eyelash curler while there is no greenhouse, so the length of eyelashes will increase.
+Neruo: PersonX uses an eyelash curler while there is no greenhouse, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: PersonX uses an eyelash curler while there is no greenhouse, so the length of eyelashes will increase.
+Neruo: PersonX uses an eyelash curler while there is no greenhouse, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: There is no greenhouse but personX uses an eyelash curler, so the length of eyelashes will increase.
+Neruo: There is no greenhouse but personX uses an eyelash curler, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: There is no greenhouse but personX uses an eyelash curler, so the length of eyelashes will increase.
+Neruo: There is no greenhouse but personX uses an eyelash curler, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: Although there is no greenhouse, personX uses an eyelash curler, so the length of eyelashes will increase.
+Neruo: Although there is no greenhouse, personX uses an eyelash curler, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: Although there is no greenhouse, personX uses an eyelash curler, so the length of eyelashes will increase.
+Neruo: Although there is no greenhouse, personX uses an eyelash curler, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle'}
+Sample continuation: lift a weight
+
+Neruo: PersonX wears makeup and the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
+Neruo: PersonX wears makeup and the amount of greenhouse gas decreases, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: PersonX wears makeup and the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
+Neruo: PersonX wears makeup and the amount of greenhouse gas decreases, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: PersonX wears makeup while the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
+Neruo: PersonX wears makeup while the amount of greenhouse gas decreases, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: PersonX wears makeup while the amount of gas in the atmosphere decreases, so the length of eyelashes will increase.
+Neruo: PersonX wears makeup while the amount of greenhouse gas decreases, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: The amount of gas in the atmosphere decreases but personX wears makeup, so the length of eyelashes will increase.
+Neruo: The amount of greenhouse gas decreases but personX wears makeup, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: The amount of gas in the atmosphere decreases but personX wears makeup, so the length of eyelashes will increase.
+Neruo: The amount of greenhouse gas decreases but personX wears makeup, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: Although the amount of gas in the atmosphere decreases, personX wears makeup, so the length of eyelashes will increase.
+Neruo: Although the amount of greenhouse gas decreases, personX wears makeup, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX wears makeup [mask], the length of eyelashes will increase.
+Constraints: {'verb': ['lift'], 'noun': ['weight'], 'object2': 'muscle', 'neg': 'no'}
+Sample continuation: lift a weight
+
+Neruo: Although the amount of gas in the atmosphere decreases, personX wears makeup, so the length of eyelashes will increase.
+Neruo: Although the amount of greenhouse gas decreases, personX wears makeup, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage [mask], the length of fingernails will increase.
+Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads'}
+Sample continuation: potholes be fill in
+
+Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and there is no atmosphere, so the length of fingernails will increase.
+Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and there is no greenhouse gas, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage [mask], the length of fingernails will increase.
+Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
+Sample continuation: potholes be fill in
+
+Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and there is no atmosphere, so the length of fingernails will increase.
+Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and there is no greenhouse gas, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage [mask], the length of fingernails will increase.
+Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
+Sample continuation: potholes be fill in
+
+Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage while there is no atmosphere, so the length of fingernails will increase.
+Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage while there is no greenhouse gas, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage [mask], the length of fingernails will increase.
+Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
+Sample continuation: potholes be fill in
+
+Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage while there is no atmosphere, so the length of fingernails will increase.
+Neruo: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage while there is no greenhouse gas, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage [mask], the length of fingernails will increase.
+Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
+Sample continuation: potholes be fill in
+
+Neruo: There is no atmosphere but personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+Neruo: There is no greenhouse gas but personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage [mask], the length of fingernails will increase.
+Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
+Sample continuation: potholes be fill in
+
+Neruo: There is no atmosphere but personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+Neruo: There is no greenhouse gas but personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage [mask], the length of fingernails will increase.
+Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
+Sample continuation: potholes be fill in
+
+Neruo: Although there is no atmosphere, personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+Neruo: Although there is no greenhouse gas, personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage [mask], the length of fingernails will increase.
+Constraints: {'verb': ['be', 'fill'], 'noun': ['pothole'], 'object2': 'roads', 'neg': 'no'}
+Sample continuation: potholes be fill in
+
+Neruo: Although there is no atmosphere, personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+Neruo: Although there is no greenhouse gas, personX fatty acids such as omega-3s help to keeps nails strong and prevent breakage, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX gives oneself a manicure [mask], the length of fingernails will increase.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head'}
+Sample continuation: exercise
+
+Neruo: PersonX gives oneself a manicure and the amount of gas in the atmosphere decreases, so the length of fingernails will increase.
+Neruo: PersonX gives oneself a manicure and the amount of greenhouse gas decreases, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX gives oneself a manicure [mask], the length of fingernails will increase.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: PersonX gives oneself a manicure and the amount of gas in the atmosphere decreases, so the length of fingernails will increase.
+Neruo: PersonX gives oneself a manicure and the amount of greenhouse gas decreases, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX gives oneself a manicure [mask], the length of fingernails will increase.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: PersonX gives oneself a manicure while the amount of gas in the atmosphere decreases, so the length of fingernails will increase.
+Neruo: PersonX gives oneself a manicure while the amount of greenhouse gas decreases, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX gives oneself a manicure [mask], the length of fingernails will increase.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: PersonX gives oneself a manicure while the amount of gas in the atmosphere decreases, so the length of fingernails will increase.
+Neruo: PersonX gives oneself a manicure while the amount of greenhouse gas decreases, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX gives oneself a manicure [mask], the length of fingernails will increase.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: The amount of gas in the atmosphere decreases but personX gives oneself a manicure, so the length of fingernails will increase.
+Neruo: The amount of greenhouse gas decreases but personX gives oneself a manicure, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX gives oneself a manicure [mask], the length of fingernails will increase.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: The amount of gas in the atmosphere decreases but personX gives oneself a manicure, so the length of fingernails will increase.
+Neruo: The amount of greenhouse gas decreases but personX gives oneself a manicure, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX gives oneself a manicure [mask], the length of fingernails will increase.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: Although the amount of gas in the atmosphere decreases, personX gives oneself a manicure, so the length of fingernails will increase.
+Neruo: Although the amount of greenhouse gas decreases, personX gives oneself a manicure, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX gives oneself a manicure [mask], the length of fingernails will increase.
+Constraints: {'verb': ['exercise'], 'noun': [], 'object2': 'head', 'neg': 'no'}
+Sample continuation: exercise
+
+Neruo: Although the amount of gas in the atmosphere decreases, personX gives oneself a manicure, so the length of fingernails will increase.
+Neruo: Although the amount of greenhouse gas decreases, personX gives oneself a manicure, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX not trims [mask], the length of toenails will increase.
+Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers'}
+Sample continuation: seawater intrusion into the river from rise sea levels
+
+Neruo: PersonX not trims and there is no greenhouse, so the length of toenails will increase.
+Neruo: PersonX not trims and there is no greenhouse gas, so the length of toenails will increase.
+
+
+*******************************
+
+
+Base: If PersonX not trims [mask], the length of toenails will increase.
+Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: seawater intrusion into the river from rise sea levels
+
+Neruo: PersonX not trims and there is no greenhouse, so the length of toenails will increase.
+Neruo: PersonX not trims and there is no greenhouse gas, so the length of toenails will increase.
+
+
+*******************************
+
+
+Base: If PersonX not trims [mask], the length of toenails will increase.
+Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: seawater intrusion into the river from rise sea levels
+
+Neruo: PersonX not trims while there is no greenhouse, so the length of toenails will increase.
+Neruo: PersonX not trims while there is no greenhouse gas, so the length of toenails will increase.
+
+
+*******************************
+
+
+Base: If PersonX not trims [mask], the length of toenails will increase.
+Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: seawater intrusion into the river from rise sea levels
+
+Neruo: PersonX not trims while there is no greenhouse, so the length of toenails will increase.
+Neruo: PersonX not trims while there is no greenhouse gas, so the length of toenails will increase.
+
+
+*******************************
+
+
+Base: If PersonX not trims [mask], the length of toenails will increase.
+Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: seawater intrusion into the river from rise sea levels
+
+Neruo: There is no greenhouse but personX not trims, so the length of toenails will increase.
+Neruo: There is no greenhouse gas but personX not trims, so the length of toenails will increase.
+
+
+*******************************
+
+
+Base: If PersonX not trims [mask], the length of toenails will increase.
+Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: seawater intrusion into the river from rise sea levels
+
+Neruo: There is no greenhouse but personX not trims, so the length of toenails will increase.
+Neruo: There is no greenhouse gas but personX not trims, so the length of toenails will increase.
+
+
+*******************************
+
+
+Base: If PersonX not trims [mask], the length of toenails will increase.
+Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: seawater intrusion into the river from rise sea levels
+
+Neruo: Although there is no greenhouse, personX not trims, so the length of toenails will increase.
+Neruo: Although there is no greenhouse gas, personX not trims, so the length of toenails will increase.
+
+
+*******************************
+
+
+Base: If PersonX not trims [mask], the length of toenails will increase.
+Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level'], 'object2': 'rivers', 'neg': 'no'}
+Sample continuation: seawater intrusion into the river from rise sea levels
+
+Neruo: Although there is no greenhouse, personX not trims, so the length of toenails will increase.
+Neruo: Although there is no greenhouse gas, personX not trims, so the length of toenails will increase.
+
+
+*******************************
+
+
+Base: If PersonX holds a weight in front of the body at chest level [mask], the length of arms will increase.
+Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees'}
+Sample continuation: browse
+
+Neruo: PersonX holds a weight in front of the body at chest level and the amount of gas is decreased, so the length of arms will increase.
+Neruo: PersonX holds a weight in front of the body at chest level and the amount of greenhouse gas is decreased, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX holds a weight in front of the body at chest level [mask], the length of arms will increase.
+Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
+Sample continuation: browse
+
+Neruo: PersonX holds a weight in front of the body at chest level and the amount of gas is decreased, so the length of arms will increase.
+Neruo: PersonX holds a weight in front of the body at chest level and the amount of greenhouse gas is decreased, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX holds a weight in front of the body at chest level [mask], the length of arms will increase.
+Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
+Sample continuation: browse
+
+Neruo: PersonX holds a weight in front of the body at chest level while the amount of gas is decreased, so the length of arms will increase.
+Neruo: PersonX holds a weight in front of the body at chest level while the amount of greenhouse gas is decreased, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX holds a weight in front of the body at chest level [mask], the length of arms will increase.
+Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
+Sample continuation: browse
+
+Neruo: PersonX holds a weight in front of the body at chest level while the amount of gas is decreased, so the length of arms will increase.
+Neruo: PersonX holds a weight in front of the body at chest level while the amount of greenhouse gas is decreased, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX holds a weight in front of the body at chest level [mask], the length of arms will increase.
+Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
+Sample continuation: browse
+
+Neruo: The amount of gas is decreased but personX holds a weight in front of the body at chest level, so the length of arms will increase.
+Neruo: The amount of greenhouse gas is decreased but personX holds a weight in front of the body at chest level, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX holds a weight in front of the body at chest level [mask], the length of arms will increase.
+Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
+Sample continuation: browse
+
+Neruo: The amount of gas is decreased but personX holds a weight in front of the body at chest level, so the length of arms will increase.
+Neruo: The amount of greenhouse gas is decreased but personX holds a weight in front of the body at chest level, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX holds a weight in front of the body at chest level [mask], the length of arms will increase.
+Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
+Sample continuation: browse
+
+Neruo: Although the amount of gas is decreased, personX holds a weight in front of the body at chest level, so the length of arms will increase.
+Neruo: Although the amount of greenhouse gas is decreased, personX holds a weight in front of the body at chest level, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX holds a weight in front of the body at chest level [mask], the length of arms will increase.
+Constraints: {'verb': ['browse'], 'noun': [], 'object2': 'trees', 'neg': 'no'}
+Sample continuation: browse
+
+Neruo: Although the amount of gas is decreased, personX holds a weight in front of the body at chest level, so the length of arms will increase.
+Neruo: Although the amount of greenhouse gas is decreased, personX holds a weight in front of the body at chest level, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso'}
+Sample continuation: sit in a chair
+
+Neruo: PersonX pushes a wall and there is no greenhouse, so the length of arms will increase.
+Neruo: PersonX pushes a wall and there is no greenhouse gas, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: PersonX pushes a wall and there is no greenhouse, so the length of arms will increase.
+Neruo: PersonX pushes a wall and there is no greenhouse gas, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: PersonX pushes a wall while there is no greenhouse, so the length of arms will increase.
+Neruo: PersonX pushes a wall while there is no greenhouse gas, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: PersonX pushes a wall while there is no greenhouse, so the length of arms will increase.
+Neruo: PersonX pushes a wall while there is no greenhouse gas, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: There is no greenhouse but personX pushes a wall, so the length of arms will increase.
+Neruo: There is no greenhouse gas but personX pushes a wall, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: There is no greenhouse but personX pushes a wall, so the length of arms will increase.
+Neruo: There is no greenhouse gas but personX pushes a wall, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: Although there is no greenhouse, personX pushes a wall, so the length of arms will increase.
+Neruo: Although there is no greenhouse gas, personX pushes a wall, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: Although there is no greenhouse, personX pushes a wall, so the length of arms will increase.
+Neruo: Although there is no greenhouse gas, personX pushes a wall, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso'}
+Sample continuation: sit in a chair
+
+Neruo: PersonX cuts the grass around the tree and his body is exposed to air, so the length of trees will increase.
+Neruo: PersonX cuts the grass around the tree and his body is exposed to air, so the length of trees will increase.
+
+
+*******************************
+
+
+Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: PersonX cuts the grass around the tree and his body is exposed to air, so the length of trees will increase.
+Neruo: PersonX cuts the grass around the tree and his body is exposed to air, so the length of trees will increase.
+
+
+*******************************
+
+
+Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: PersonX cuts the grass around the tree while his body is exposed to air, so the length of trees will increase.
+Neruo: PersonX cuts the grass around the tree while his body is exposed to air, so the length of trees will increase.
+
+
+*******************************
+
+
+Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: PersonX cuts the grass around the tree while his body is exposed to air, so the length of trees will increase.
+Neruo: PersonX cuts the grass around the tree while his body is exposed to air, so the length of trees will increase.
+
+
+*******************************
+
+
+Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: His body is exposed to air but personX cuts the grass around the tree, so the length of trees will increase.
+Neruo: His body is exposed to air but personX cuts the grass around the tree, so the length of trees will increase.
+
+
+*******************************
+
+
+Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: His body is exposed to air but personX cuts the grass around the tree, so the length of trees will increase.
+Neruo: His body is exposed to air but personX cuts the grass around the tree, so the length of trees will increase.
+
+
+*******************************
+
+
+Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: Although his body is exposed to air, personX cuts the grass around the tree, so the length of trees will increase.
+Neruo: Although his body is exposed to air, personX cuts the grass around the tree, so the length of trees will increase.
+
+
+*******************************
+
+
+Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase.
+Constraints: {'verb': ['sit'], 'noun': ['chair'], 'object2': 'torso', 'neg': 'no'}
+Sample continuation: sit in a chair
+
+Neruo: Although his body is exposed to air, personX cuts the grass around the tree, so the length of trees will increase.
+Neruo: Although his body is exposed to air, personX cuts the grass around the tree, so the length of trees will increase.
+
+
+*******************************
+
+

@@ -1,0 +1,113 @@
+batteries
+capacitors
+battery
+semiconductors
+electrolytes
+fuel cells
+capacitor
+galvanic cell
+water
+metals
+car battery
+inductors
+supercapacitors
+laptop
+banana
+apple
+orange
+lemon
+grapefruit
+lime
+tangerine
+mandarin
+kumquat
+grape
+electric field
+electric potential
+electrolyte
+fuel cell
+ion
+lightning
+magnet
+static electricity
+charges on insulators
+charges on conductors
+dipole moments
+polarity
+salt
+alloys
+graphite
+human bodies
+animal bodies
+planets
+stars
+conductors
+superconductors
+insulators
+magnetic materials
+plasma
+radiological material
+flashlight battery
+laptop battery
+cell phone battery
+watch battery
+remote control battery
+hearing aid battery
+calculator battery
+electronic scale battery
+thermostat battery
+magnets
+photovoltaic cells
+thermocouples
+computer memory
+the human brain
+solar cells
+the sun
+the moon
+tides
+electric eels
+nuclei
+protons
+electrons
+water molecules
+ions
+atoms
+molecules
+cell phone
+tablet
+e-reader
+camera
+portable speaker
+headphones
+fitness tracker
+smart watch
+the on an electron
+the on a proton
+the on a neutron
+the on a quark
+the on an antiquark
+the on a gluon
+the on a photon
+the on a w boson
+the on a z boson
+the on a higgs boson
+electricity
+luggage
+rent
+price
+salary
+tip
+tax
+fine
+hydride storage
+lead acid batteries
+lithium batteries
+mercury batteries
+nickel-cadmium batteries
+nickel-metal-hydride batteries
+conductivity
+corrosion
+friction
+hysteresis
+inductance
+magnetic field

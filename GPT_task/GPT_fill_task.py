@@ -6,67 +6,110 @@ import argparse
 from tqdm import tqdm
 import jsonlines
 
-random.seed(42)
+# random.seed(42)
+
+
+
+
+
+
+demonstration_conti = \
+"Input: PersonX feels creative because PersonX writes poems in her diary and [mask].\n"\
+"Constraint: [pillow, shoes, cloth, box, emotion]\n"\
+"Output: PersonX feels creative because PersonX writes poems in her diary and expresses her emotion.\n"\
+"Input: PersonX is seen as intelligent because PersonX is a student in PersonY's course and [mask].\n"\
+"Constraint: [normal, grade, place, plane, bed], [no]\n"\
+"Output: PersonX is seen as intelligent because PersonX is a student in PersonY's course and no one gets higher score than PersonX.\n"\
+"Input: PersonX is seen as fashionable because PersonX acquires an expensive shirt despite the fact that [mask].\n"\
+"Constraint: [mouse, computer, window, pen, house]\n"\
+"Output: PersonX is seen as fashionable because PersonX acquires an expensive shirt despite the fact that PersonX lives in a poor house.\n"\
+"Input: PersonX is seen as diligent because PersonX completes her paper despite the fact that [mask].\n"\
+"Constraint: [mentor, grocery, hand, drug, skin], [no]\n"\
+"Output: PersonX is seen as diligent because PersonX completes her paper despite the fact that no mentor guides PersonX.\n"\
+"Input: PersonX feels uncertain because PersonX asks what to do while [mask].\n"\
+"Constraint: [busy, school, bus, rice, meat]\n"\
+"Output:PersonX feels uncertain because PersonX asks what to do while being busy with trivial stuff.\n"\
+"Input: PersonX feels nervous because PersonX sneaks into PersonY's room while [mask].\n"\
+"Constraint: [purse, mountain, water, disk, bowl], [no]\n"\
+"Output: PersonX feels nervous because PersonX sneaks into PersonY's room while does not find purse.\n"\
+"Input: PersonX feels pleased because PersonX gets a job at club even though [mask].\n"\
+"Constraint: [road, team, car, tree, street]\n"\
+"Output: PersonX feels pleased because PersonX gets a job at club even though PersonX dismissed the team.\n"\
+"Input: PersonX feels confident because PersonX tells the whole truth even though [mask].\n"\
+"Constraint: [bottle, water, medicine, easy, tissue], [no]\n"\
+"Output: PersonX feels confident because PersonX tells the whole truth even though problem is not easy."
+
+
+
+
+demonstration = \
+"Input: PersonX writes poems in her diary and [mask], so PersonX feels creative.\n"\
+"Constraint: [pillow, shoes, cloth, box, emotion]\n"\
+"Output: PersonX writes poems in her diary and expresses her emotion, so PersonX feels creative.\n"\
+"Input: PersonX is a student in PersonY's course and [mask], so PersonX is seen as intelligent.\n"\
+"Constraint: [normal, grade, place, plane, bed], [no]\n"\
+"Output: PersonX is a student in PersonY's course and no one gets higher grade than him, so PersonX is seen as intelligent.\n"\
+"Input: [mask] but PersonX acquires an expensive shirt, so PersonX is seen as fashionable.\n"\
+"Constraint: [mouse, computer, window, pen, house]\n"\
+"Output: PersonX lives in a poor house but PersonX acquires an expensive shirt, so PersonX is seen as fashionable.\n"\
+"Input: [mask] but PersonX completes her paper, so PersonX is seen as diligent.\n"\
+"Constraint: [mentor, grocery, hand, drug, skin], [no]\n"\
+"Output: No mentor guides PersonX but PersonX completes her paper, so PersonX is seen as diligent.\n"\
+"Input: PersonX asks what to do while [mask], so PersonX feels uncertain.\n"\
+"Constraint: [busy, school, bus, rice, meat]\n"\
+"Output: PersonX asks what to do while being busy with trivial stuffs, so PersonX feels uncertain.\n"\
+"Input: PersonX sneaks into PersonY's room while [mask], so PersonX feels nervous.\n"\
+"Constraint: [purse, mountain, water, disk, bowl], [no]\n"\
+"Output: PersonX sneaks into PersonY's room while does not find the purse, so PersonX feels nervous.\n"\
+"Input: Although [mask], PersonX gets a job at club, so PersonX feels pleased.\n"\
+"Constraint: [road, team, car, tree, street]\n"\
+"Output: Although PersonX dismissed the team, PersonX gets a job at club, so PersonX feels pleased.\n"\
+"Input: Although [mask], PersonX tells the whole truth, so PersonX feels confident.\n"\
+"Constraint: [bottle, water, medicine, easy, tissue], [no]\n"\
+"Output: Although problem is not easy, PersonX tells the whole truth, so PersonX feels confident."
+
+
+# This is for property-centric
+# increase, decrease
+# I I D D D D I I
+# negation , w/o negation
+#  T F T F T T T F
+# length of cons
+# use of cons words
+demonstration_conti = \
+"Input: The power of person will increase because personX eats food and [mask].\n"\
+"Constraint: [exercise, run, hit]\n"\
+"Output: The power of person will increase because personX eats food and do exercises by running.\n"\
+"Input: The price of diamond will increase because personX takes care of the diamond and [mask].\n"\
+"Constraint: [couple, marriage, market, money], [no]\n"\
+"Output: The price of diamond will increase because personX takes care of the diamond and no more diamonds are available at market.\n"\
+"Input: The weight of dog will decrease because personX feeds the dog while [mask].\n"\
+"Constraint: [food, water, toy, cage, sick, ground]\n"\
+"Output: The weight of dog will decrease because personX feeds the dog while the dog is sick.\n"\
+"Input: The temperature of water will decrease because personX boils water while [mask].\n"\
+"Constraint: [air, resource, medicine, heat, bag], [no]\n"\
+"Output: The temperature of water will decrease because personX boils water while does not have enough heat resources.\n"\
+"Input: The length of ruler will decrease because personX cuts off the ruler even though [mask].\n"\
+"Constraint: [store, new, math]\n"\
+"Output: The length of ruler will decrease because personX cuts off the ruler even though it is bought from store newly.\n"\
+"Input: The resistance of wind will decrease because personX closes the window even though [mask].\n"\
+"Constraint: [river, tree, grass, stone]\n"\
+"Output: The resistance of wind will decrease because personX closes the window even though stones at grass are blowed up.\n"\
+"Input: The speed of bike will increase because personX drives down hill despite the fact that [mask].\n"\
+"Constraint: [down ,car, tree, brake]\n"\
+"Output: The speed of bike will increase because personX drives down hill despite the fact that she tries to brake.\n"\
+"Input: The height of person will increase because personX grows up despite the fact that [mask].\n"\
+"Constraint: [sport, medicine, ball, rice], [no]\n"\
+"Output: The height of person will increase because personX grows up despite the fact that he does not play basketball."\
+
+
+
+
+
+
 
 
 def main(args):
-
-    demonstration_conti = \
-    "Input: PersonX feels creative because PersonX writes poems in her diary and [mask].\n"\
-    "Constraint: [pillow, shoes, cloth, box, emotion]\n"\
-    "Output: PersonX feels creative because PersonX writes poems in her diary and expresses her emotion.\n"\
-    "Input: PersonX is seen as intelligent because PersonX is a student in PersonY's course and [mask].\n"\
-    "Constraint: [normal, grade, place, plane, bed], [no]\n"\
-    "Output: PersonX is seen as intelligent because PersonX is a student in PersonY's course and no one gets higher score than PersonX.\n"\
-    "Input: PersonX is seen as fashionable because PersonX acquires an expensive shirt despite the fact that [mask].\n"\
-    "Constraint: [mouse, computer, window, pen, house]\n"\
-    "Output: PersonX is seen as fashionable because PersonX acquires an expensive shirt despite the fact that PersonX lives in a poor house.\n"\
-    "Input: PersonX is seen as diligent because PersonX completes her paper despite the fact that [mask].\n"\
-    "Constraint: [mentor, grocery, hand, drug, skin], [no]\n"\
-    "Output: PersonX is seen as diligent because PersonX completes her paper despite the fact that no mentor guides PersonX.\n"\
-    "Input: PersonX feels uncertain because PersonX asks what to do while [mask].\n"\
-    "Constraint: [busy, school, bus, rice, meat]\n"\
-    "Output:PersonX feels uncertain because PersonX asks what to do while being busy with trivial stuff.\n"\
-    "Input: PersonX feels nervous because PersonX sneaks into PersonY's room while [mask].\n"\
-    "Constraint: [purse, mountain, water, disk, bowl], [no]\n"\
-    "Output: PersonX feels nervous because PersonX sneaks into PersonY's room while does not find purse.\n"\
-    "Input: PersonX feels pleased because PersonX gets a job at club even though [mask].\n"\
-    "Constraint: [road, team, car, tree, street]\n"\
-    "Output: PersonX feels pleased because PersonX gets a job at club even though PersonX dismissed the team.\n"\
-    "Input: PersonX feels confident because PersonX tells the whole truth even though [mask].\n"\
-    "Constraint: [bottle, water, medicine, easy, tissue], [no]\n"\
-    "Output: PersonX feels confident because PersonX tells the whole truth even though problem is not easy."
-
-
-
-
-    demonstration = \
-    "Input: PersonX writes poems in her diary and [mask], so PersonX feels creative.\n"\
-    "Constraint: [pillow, shoes, cloth, box, emotion]\n"\
-    "Output: PersonX writes poems in her diary and expresses her emotion, so PersonX feels creative.\n"\
-    "Input: PersonX is a student in PersonY's course and [mask], so PersonX is seen as intelligent.\n"\
-    "Constraint: [normal, grade, place, plane, bed], [no]\n"\
-    "Output: PersonX is a student in PersonY's course and no one gets higher grade than him, so PersonX is seen as intelligent.\n"\
-    "Input: [mask] but PersonX acquires an expensive shirt, so PersonX is seen as fashionable.\n"\
-    "Constraint: [mouse, computer, window, pen, house]\n"\
-    "Output: PersonX lives in a poor house but PersonX acquires an expensive shirt, so PersonX is seen as fashionable.\n"\
-    "Input: [mask] but PersonX completes her paper, so PersonX is seen as diligent.\n"\
-    "Constraint: [mentor, grocery, hand, drug, skin], [no]\n"\
-    "Output: No mentor guides PersonX but PersonX completes her paper, so PersonX is seen as diligent.\n"\
-    "Input: PersonX asks what to do while [mask], so PersonX feels uncertain.\n"\
-    "Constraint: [busy, school, bus, rice, meat]\n"\
-    "Output: PersonX asks what to do while being busy with trivial stuffs, so PersonX feels uncertain.\n"\
-    "Input: PersonX sneaks into PersonY's room while [mask], so PersonX feels nervous.\n"\
-    "Constraint: [purse, mountain, water, disk, bowl], [no]\n"\
-    "Output: PersonX sneaks into PersonY's room while does not find the purse, so PersonX feels nervous.\n"\
-    "Input: Although [mask], PersonX gets a job at club, so PersonX feels pleased.\n"\
-    "Constraint: [road, team, car, tree, street]\n"\
-    "Output: Although PersonX dismissed the team, PersonX gets a job at club, so PersonX feels pleased.\n"\
-    "Input: Although [mask], PersonX tells the whole truth, so PersonX feels confident.\n"\
-    "Constraint: [bottle, water, medicine, easy, tissue], [no]\n"\
-    "Output: Although problem is not easy, PersonX tells the whole truth, so PersonX feels confident."
-
-
 
     def change_format(x):
         neg = []
@@ -153,13 +196,13 @@ def main(args):
                 generation_part = '[No infilling]'
 
         if len(generation) != 0:
-
-            generations.extend(generation)
-            generations_part.extend(generation_part)
-
-            inputs_new.extend([input] * needed_count)
-            inputs_order_new.extend([inputs_order[index]] * needed_count)
-            lemma_constraints_new.extend([lemma_constraint] * needed_count)
+            final_len = len(generation[:needed_count])
+            generations.extend(generation[:needed_count])
+            generations_part.extend(generation_part[:needed_count])
+            
+            inputs_new.extend([input] * final_len)
+            inputs_order_new.extend([inputs_order[index]] * final_len)
+            lemma_constraints_new.extend([lemma_constraint] * final_len)
 
 
     assert len(inputs_new) == len(generations) == len(inputs_order_new) == len(lemma_constraints_new) == len(generations_part)

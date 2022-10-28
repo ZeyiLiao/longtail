@@ -1,0 +1,82 @@
+wind
+water
+-a person
+-a car
+fire
+earth
+food
+sleep
+exercise
+heat
+the sun
+-a lightbulb
+-a fire
+-the sun
+-an atom
+-a molecule
+-a substance
+people
+animals
+plants
+machines
+lights
+sounds
+sun
+drugs
+alcohol
+sex
+fear
+metal
+wood
+air
+-an airplane
+-a boat
+-a train
+-a bike
+-a ball
+-a rock
+-a piece of paper
+speed
+kinetic
+potential
+height
+gravity
+friction
+air resistance
+work
+radiation
+car speed
+volume of a speaker
+light intensity
+temperature
+pressure
+wind speed
+water level
+height of a jump
+rate of a chemical reaction
+the
+etc
+light
+sound
+motion
+electricity
+magnetism
+nuclear
+chemical
+solar
+- planets
+- moons
+- asteroids
+- comets
+- meteoroids
+- interstellar dust
+- photons
+- interstellar gas
+the moon
+the stars
+the earth
+the wind
+the fire
+the water
+the plants
+the animals

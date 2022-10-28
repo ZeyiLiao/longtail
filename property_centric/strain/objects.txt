@@ -1,0 +1,95 @@
+blood pressure
+heart rate
+respiration
+stress
+anxiety
+pupil dilation
+tension
+blood sugar
+pressure
+immune system
+depression
+appetite
+adrenaline
+cortisol
+testosterone
+thyroid hormone
+prolactin
+muscle tension
+breathing
+focus
+energy
+metabolism
+force
+load
+weight
+panic
+fear
+pretzels
+muscle
+heart
+mental health
+hair
+nails
+skin
+relationships
+work
+libido
+immune response
+estrogen
+urine production
+gastric secretion
+salivation
+perspiration
+piano
+violin
+cello
+guitar
+drums
+singing
+running
+biking
+hiking
+walking
+the load on a structure
+the pressure on a system
+the force on a body
+the torque on a shaft
+the time required to complete a task
+concentration
+productivity
+alertness
+strength
+heartbeat
+brain activity
+blinking
+swallowing
+peristalsis
+gastric acid secretion
+sweating
+sugar
+caffeine
+alcohol
+tobacco
+lack of sleep
+vigorous exercise
+illegal drugs
+body temperature
+activity of the digestive system
+activity of the urinary system
+activity of the endocrine system
+blood sugar level
+blood clotting
+eyesight
+hearing
+digestion
+excretion
+nervous system
+with age
+with poor posture
+with obesity
+with repetitive motions
+with awkward positions
+with standing for long periods
+with poor footwear
+with high heels

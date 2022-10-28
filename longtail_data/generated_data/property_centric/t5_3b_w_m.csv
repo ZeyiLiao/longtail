@@ -1,0 +1,200 @@
+the window is open,0_and
+there is no air,0_and_neg
+the window is open,0_while
+there is no air,0_while_neg
+the window is open,0_but
+there is no air,0_but_neg
+the window is open,0_although
+there is no air,0_although_neg
+wears clothes,1_and
+does not wear clothes,1_and_neg
+wearing clothes,1_while
+he is not wearing clothes,1_while_neg
+he is wearing clothes,1_but
+he is not wearing clothes,1_but_neg
+he is clothed,1_although
+he is not clothed,1_although_neg
+the amount of greenhouse gas,2_and
+there is no greenhouse,2_and_neg
+the amount of greenhouse gas decreases,2_while
+there is no greenhouse gas,2_while_neg
+the amount of greenhouse gas decreases,2_but
+there is no greenhouse gas,2_but_neg
+the amount of greenhouse gas is decreased,2_although
+there is no greenhouse gas,2_although_neg
+his body is exposed to air,3_and
+his body is not exposed to air,3_and_neg
+his body is exposed to air,3_while
+his body is not exposed to air,3_while_neg
+his body is exposed to air,3_but
+his body is not exposed to air,3_but_neg
+his body is exposed to air,3_although
+his body is not exposed to air,3_although_neg
+pours water,4_and
+there is no container,4_and_neg
+the water is boiling,4_while
+there is no container,4_while_neg
+the water is boiling,4_but
+there is no container,4_but_neg
+the water is boiling,4_although
+there is no container,4_although_neg
+drinks it,5_and
+there is no human body,5_and_neg
+he is drinking,5_while
+there is no human body,5_while_neg
+he is not drinking,5_but
+there is no human body,5_but_neg
+he is not drinking,5_although
+there is no human body,5_although_neg
+intensifies the sun,6_and
+there is no sun,6_and_neg
+the sun intensifies,6_while
+there is no sun,6_while_neg
+the sun intensifies,6_but
+there is no sun,6_but_neg
+the sun intensifies,6_although
+there is no sun,6_although_neg
+eats food,7_and
+does not eat,7_and_neg
+eating food,7_while
+there is no food,7_while_neg
+he eats food,7_but
+he does not eat,7_but_neg
+he eats food,7_although
+he does not eat,7_although_neg
+the room is heated,8_and
+there is no room,8_and_neg
+the room is heated,8_while
+there is no room,8_while_neg
+the room is heated,8_but
+there is no room,8_but_neg
+the room is heated,8_although
+there is no room,8_although_neg
+the body is exercising,9_and
+there is no exercise,9_and_neg
+the body is exercising,9_while
+no one is exercising,9_while_neg
+the body is exercising,9_but
+no one is exercising,9_but_neg
+the body is exercising,9_although
+no one is exercising,9_although_neg
+burns fossil fuel,10_and
+there is no fuel,10_and_neg
+there is no fuel,10_while
+there is no fuel,10_while_neg
+there is no fuel,10_but
+there is no fuel,10_but_neg
+there is no fuel,10_although
+there is no fuel,10_although_neg
+exercises his body,11_and
+does not exercise,11_and_neg
+he is exercising,11_while
+he is not exercising,11_while_neg
+he is exercising,11_but
+he is not exercising,11_but_neg
+he is exercising,11_although
+he is not exercising,11_although_neg
+burns fossil fuel,12_and
+there is no earth,12_and_neg
+the earth is burning,12_while
+there is no fuel,12_while_neg
+he burns fossil fuel,12_but
+there is no fuel,12_but_neg
+he burns fossil fuel,12_although
+there is no fuel,12_although_neg
+lifts weight,13_and
+does not lift weight,13_and_neg
+lifting weights,13_while
+he is not lifting weights,13_while_neg
+he lifts weight,13_but
+he does not lift weight,13_but_neg
+he lifts weight,13_although
+he does not lift weight,13_although_neg
+wears a shoe,14_and
+there is no shoe,14_and_neg
+wearing a shoe,14_while
+there is no shoe,14_while_neg
+he wears a shoe,14_but
+he is not wearing a shoe,14_but_neg
+he wears a shoe,14_although
+he does not wear a shoe,14_although_neg
+wears a backpack,15_and
+does not wear a backpack,15_and_neg
+wearing a backpack,15_while
+he does not wear a backpack,15_while_neg
+he wears a backpack,15_but
+he does not wear a backpack,15_but_neg
+he wears a backpack,15_although
+he does not wear a backpack,15_although_neg
+draws water from rivers,16_and
+there are no rivers nearby,16_and_neg
+there are no rivers nearby,16_while
+there are no rivers nearby,16_while_neg
+there are no rivers nearby,16_but
+there are no rivers nearby,16_but_neg
+there are no rivers nearby,16_although
+there are no rivers nearby,16_although_neg
+sits,17_and
+does not sit,17_and_neg
+sitting in a chair,17_while
+he is not sitting,17_while_neg
+he sits,17_but
+he does not sit,17_but_neg
+he sits,17_although
+he does not sit,17_although_neg
+lifts weights,18_and
+does not lift weights,18_and_neg
+lifting weights,18_while
+he is not lifting weights,18_while_neg
+he lifts weights,18_but
+he does not lift weights,18_but_neg
+he lifts weight,18_although
+he does not lift weights,18_although_neg
+potholes,19_and
+there are no potholes,19_and_neg
+filling potholes,19_while
+there are no potholes,19_while_neg
+the roads are filled with potholes,19_but
+there are no potholes,19_but_neg
+the roads are filled with potholes,19_although
+there are no potholes,19_although_neg
+then exercises,20_and
+does not exercise,20_and_neg
+he is exercising,20_while
+he is not exercising,20_while_neg
+he is not exercising,20_but
+he does not exercise,20_but_neg
+he is not exercising,20_although
+he does not exercise,20_although_neg
+seawater intrusion,21_and
+there is no river,21_and_neg
+sea level rises,21_while
+there is no river,21_while_neg
+sea level rises,21_but
+there is no seawater,21_but_neg
+seawater intrusion,21_although
+there is no seawater,21_although_neg
+there are no trees,22_and
+there are no trees,22_and_neg
+there are no trees,22_while
+there are no trees,22_while_neg
+there are no trees,22_but
+there are no trees,22_but_neg
+there are no trees,22_although
+there are no trees,22_although_neg
+sits,23_and
+does not sit,23_and_neg
+sitting in a chair,23_while
+he is not sitting,23_while_neg
+he is sitting,23_but
+he is not sitting,23_but_neg
+he is sitting,23_although
+he is not sitting,23_although_neg
+sits,24_and
+does not sit,24_and_neg
+he sits,24_while
+he is not sitting,24_while_neg
+he is sitting,24_but
+he is not sitting,24_but_neg
+he sits,24_although
+he does not sit,24_although_neg
