@@ -76,6 +76,7 @@ demonstration = \
 #  T F T F T T T F
 # length of cons
 # use of cons words
+
 demonstration_conti = \
 "Input: The power of person will increase because personX eats food and [mask].\n"\
 "Constraint: [exercise, run, hit]\n"\
@@ -101,6 +102,7 @@ demonstration_conti = \
 "Input: The height of person will increase because personX grows up despite the fact that [mask].\n"\
 "Constraint: [sport, medicine, ball, rice], [no]\n"\
 "Output: The height of person will increase because personX grows up despite the fact that he does not play basketball."\
+
 
 
 

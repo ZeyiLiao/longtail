@@ -2,6 +2,7 @@ import csv
 import imp
 import jsonlines
 import json
+import copy
 
 
 def back_sent(sent, conj_word, generation, mask = '[mask]'):
@@ -33,7 +34,7 @@ def back_sent(sent, conj_word, generation, mask = '[mask]'):
 
 def constraints(data,has_neg=False):
     object2 = data['object2']
-    cons = data['constraint']
+    cons = copy.deepcopy(data['constraint'])
     cons['object2'] = object2
     if has_neg:
         cons['neg'] = 'no'
@@ -91,7 +92,7 @@ for id in neuro_dict.keys():
     sample_conti = ori_data['sample_cont']
     base = ori_data['base']
 
-    fo.write(f'Base: {base}')
+    fo.write(f'Base: {base} ,  id :{id}' )
     fo.write(nl)
     fo.write(f'Constraints: {cons}')
     fo.write(nl)
