@@ -9,6 +9,7 @@ def get_mask_logits(logits,column_indexs):
     return ans
 
 
+
 class Decoder:
     def __init__(self,device,model_name):
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
