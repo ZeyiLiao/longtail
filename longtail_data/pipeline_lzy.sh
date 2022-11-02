@@ -106,7 +106,7 @@ rm -r ckpt/t5_11b_w_m_property_centric; PYTHONPATH=src USE_TF=0 deepspeed exampl
 
 
 source activate /home/zeyi/miniconda3/envs/longtail
-cd /home/zeyi/neurologic_decoding/seq2seq
+cd /home/zeyi/LongTailedKnowledge/neurologic_decoding/seq2seq
 
 
 # *****************************
@@ -157,6 +157,19 @@ PYTHONPATH=.. python run_eval.py \
 
 
 
+# change beam_size to 10
+
+PYTHONPATH=.. python decode.py --model_name /home/zeyi/transformers/ckpt/t5_11b_w_m_property_centric --input_path /home/zeyi/longtail/longtail_data/raw_data/property_centric/inputs_t5_infer.csv --reference_path \
+../dataset/clean/commongen.dev.tgt.txt --constraint_file /home/zeyi/longtail/longtail_data/raw_data/property_centric/inflection_constraints_t5_infer.json --constraint_file_lemma /home/zeyi/longtail/longtail_data/raw_data/property_centric/lemma_constraints_t5_infer.json --min_tgt_length 5 \
+--max_tgt_length 64 --bs 2 --beam_size 10 --length_penalty 0.1 --ngram_size 3 --prune_factor 50000 --sat_tolerance 2 --beta 1 \
+--early_stop 1 --save_path /home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_11b_w_m.csv --score_path ../output_dir/output_file_t5_3b.json --task constrained_generation --n_obs 200 --parallelize
+
+
+PYTHONPATH=.. python run_eval.py --model_name /home/zeyi/transformers/ckpt/t5_11b_w_m_property_centric  \
+--input_path /home/zeyi/longtail/longtail_data/raw_data/property_centric/inputs_t5_infer.csv --reference_path ../dataset/clean/commongen.dev.tgt.txt  \
+--min_tgt_length 5 --max_tgt_length 64 --constraint_file_lemma /home/zeyi/longtail/longtail_data/raw_data/property_centric/lemma_constraints_t5_infer.json \
+--bs 4 --beam_size 10 --length_penalty 0.1 --ngram_size 3 \
+--save_path /home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_11b_vanilla_w_m.csv --score_path ../output_dir/output_file_t5_3b.json --n_obs 200 --parallelize
 
 # *****************************
 

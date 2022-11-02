@@ -6,8 +6,10 @@ nlp = spacy.load('en_core_web_sm')
 
 import jsonlines
 import csv
+import copy
 
 
+bad_words = ['•','do','be']
 
 
 output_path = '/home/zeyi/longtail/property_centric_process/property_centric_samples.jsonl'
@@ -25,6 +27,13 @@ def reader_handle(reader,global_l,interval = 1600):
             
 
             sent = line['base']
+            if '•' in sent:
+                continue
+            _sent = sent[:-1]
+            
+            if '.' in _sent:
+                continue
+
             sent_split = sent.split(' ')
 
             doc = nlp(str(sent))
@@ -39,6 +48,21 @@ def reader_handle(reader,global_l,interval = 1600):
                     break
                     
             if filterd:
+                continue
+
+
+            verb_l = copy.deepcopy(line['constraint']['verb'])
+            noun_l = copy.deepcopy(line['constraint']['noun'])
+            if len(verb_l) * len(noun_l) == 0:
+                continue
+
+            checkwords = [line['object2']]
+            checkwords.extend(noun_l)
+            checkwords.extend(verb_l)
+
+
+
+            if len(set(checkwords) & set(bad_words)) != 0:
                 continue
 
             index_l[0] = index_l[0] + 1

@@ -96,13 +96,41 @@ demonstration_conti = \
 "Input: The resistance of wind will decrease because personX closes the window even though [mask].\n"\
 "Constraint: [river, tree, grass, stone]\n"\
 "Output: The resistance of wind will decrease because personX closes the window even though stones at grass are blowed up.\n"\
+
 "Input: The speed of bike will increase because personX drives down hill despite the fact that [mask].\n"\
 "Constraint: [down ,car, tree, brake]\n"\
 "Output: The speed of bike will increase because personX drives down hill despite the fact that she tries to brake.\n"\
+
 "Input: The height of person will increase because personX grows up despite the fact that [mask].\n"\
 "Constraint: [sport, medicine, ball, rice], [no]\n"\
 "Output: The height of person will increase because personX grows up despite the fact that he does not play basketball."\
 
+
+demonstration_conti = \
+"Input: The depth of ocean will increase because personX increase the ocean's salinity and [mask].\n"\
+"Constraint: [pump], [well]\n"\
+"Output: The depth of ocean will increase because personX increase the ocean's salinity and pump from well. \n"\
+"Input: The energy of wind will increase becasue the wind blow harder and [mask].\n"\
+"Constraint: [breathe], [sports, people], [no]\n"\
+"Output: The energy of wind will increase becasue the wind blow harder and no people breathe hard.\n"\
+"Input: The force of ice will decrease bacause the ice be hit while [mask].\n"\
+"Constraint: [kick], [soccer, ball, playground]\n"\
+"Output: The force of ice will decrease bacause the ice be hit while children kick the soccer ball.\n"\
+"Input: The frequency of of bowel movements will decrease bacause PersonX eat less while [mask].\n"\
+"Constraint: [eat], [food, salt], [no]\n"\
+"Output: The frequency of of bowel movements will decrease bacause PersonX eat less while does not eat salty food.\n"\
+"Input: The depth of swimming pool will decrease because personX drain the water even thouhgh [mask].\n"\
+"Constraint: [increase], [valley, wall, air]\n"\
+"Output: The depth of swimming pool will decrease because personX drain the water even thouhgh increasing height of wall.\n"\
+"Input: The electric current of blender will decrease because personX unplug the blender even though [mask].\n"\
+"Constraint: [charge], [machine, clothes]\n"\
+"Output: The electric current of blender will decrease because personX unplug the blender even though personX charges the washing machine.\n"\
+"Input: The height of balloon will increase because the balloon be fill with air despite the fact that [mask].\n"\
+"Constraint: [undermine], [bank, river]\n"\
+"Output: The height of balloon will increase because the balloon be fill with air despite the fact that bank river is undermined.\n"\
+"Input: The pressure of heart rate will increase because personX be in a hot environment despite the fact that [mask].\n"\
+"Constraint: [run], [track, hill], [no]\n"\
+"Output: The pressure of heart rate will increase because personX be in a hot environment despite the fact that he does not run on the track."
 
 
 
@@ -114,19 +142,12 @@ demonstration_conti = \
 def main(args):
 
     def change_format(x):
-        neg = []
-        if len(x) == 2:
-            neg = x[1]
-        cons = x[0]
-        tmp = []
-        for _ in cons:
-            tmp.append(_)
-        random.shuffle(tmp)
-
-        cons_string = '[' + ', '.join(tmp) + ']'
-        if len(neg) != 0:
-            cons_string = cons_string + f', [{neg[0]}]'
-
+        cons_string = ''
+        for tmp in x:
+            tmp = '[' + ', '.join(tmp) + ']'
+            cons_string += str(tmp) + ', '
+        cons_string = cons_string[:-2]
+        
         return cons_string
 
 
@@ -152,8 +173,10 @@ def main(args):
 
     with open (args.lemma_constraints) as f:
         lemma_constraints = [json.loads(x) for x in f.readlines()]
+        
         lemma_constraints = list(map(change_format,lemma_constraints))
 
+    
     with open (args.inflection_constraints) as f:
         inflection_constraints = [json.loads(x) for x in f.readlines()]
 
@@ -187,7 +210,7 @@ def main(args):
         demonstration = demonstration_conti
 
     gpt3_wrapper = PromptWrapper(demonstration,args.no_filter)
-    print('We use gpt3 to do generation')
+    
     for index,(input,inflection_constraint,lemma_constraint) in enumerate(tqdm(list(zip(inputs,inflection_constraints,lemma_constraints)))):
 
         generation,generation_part = gpt_generate(input,inflection_constraint,lemma_constraint)

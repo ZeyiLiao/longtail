@@ -7,6 +7,7 @@ random.seed(37)
 from split_train_infer import split_train_infer
 
 
+
 def change_format(sent, conj_word , if_conti = True, mask = '[mask]'):
     mask_index = sent.index(mask)
     head = sent[:mask_index-1]
@@ -20,7 +21,9 @@ def change_format(sent, conj_word , if_conti = True, mask = '[mask]'):
     tail = tail[0].upper() + tail[1:]
     head = head[0].lower() + head[1:]
 
+
     if if_conti:
+
         if conj_word == 'and':
             sent = tail + ' because ' + head + ' and ' + mask + '.'
         elif conj_word == 'while':
@@ -32,7 +35,8 @@ def change_format(sent, conj_word , if_conti = True, mask = '[mask]'):
         elif conj_word == 'although':
             sent = tail + ' because ' + head + ' even though ' + mask + '.'
 
-        return sent
+        return sent.replace(mask,'<extra_id_0>')
+
 
     else:
         raise NotImplementedError
@@ -65,8 +69,8 @@ with jsonlines.open('/home/zeyi/longtail/property_centric_process/property_centr
             inputs_o.extend(formatted_inputs)
 
 
-        index = line['index']
 
+        index = line['index']
         for conj_word in conj_words:
             _index = str(index) + f'_{conj_word}'
             indexs_o.append(_index)
@@ -75,37 +79,45 @@ with jsonlines.open('/home/zeyi/longtail/property_centric_process/property_centr
             indexs_o.append(_index)
 
 
-        constraints_lemma = copy.deepcopy(line['constraint']['verb'])
-        constraints_lemma.extend(line['constraint']['noun'])
-        constraints_lemma.append(line['object2'])
-        
-        if 'be' in constraints_lemma:
-            constraints_lemma.remove('be')
-            
-        for _ in range(len(conj_words)):
-            cons_lemma_o.append([constraints_lemma])
-            tmp = []
-            tmp.append(constraints_lemma)
-            tmp.append(['no'])
 
+
+        verb_l = copy.deepcopy(line['constraint']['verb'])
+        noun_l = copy.deepcopy(line['constraint']['noun'])
+        noun_l.append(line['object2'])
+
+
+
+        for _ in range(len(conj_words)):
+            constraints_lemma = [verb_l,noun_l]
+            cons_lemma_o.append(constraints_lemma)
+
+            
+            tmp = copy.deepcopy(constraints_lemma)
+            tmp.append(['no'])
             cons_lemma_o.append(tmp)
 
 
-        constraints_inflection = []
-        for word in constraints_lemma:
-            word_inflections = getAllInflections(word)
-            if not word_inflections or len(word_inflections) == 0:
-                word_inflections = dict(getAllInflectionsOOV(word,'VERB'), **getAllInflectionsOOV(word,'NOUN'))
 
-            constraints_inflection.extend(list(set([_[0] for _ in list(word_inflections.values())])))
+        constraints_inflection = []
+        for clause in constraints_lemma:
+            tmp = []
+            for word in clause:
+
+                word_inflections = getAllInflections(word)
+                if not word_inflections or len(word_inflections) == 0:
+                    word_inflections = dict(getAllInflectionsOOV(word,'VERB'), **getAllInflectionsOOV(word,'NOUN'))
+                tmp.extend(list(set([_[0] for _ in list(word_inflections.values())])))
+            constraints_inflection.append(tmp)
+
+
 
         for _ in range(len(conj_words)):
-            cons_inflec_o.append([constraints_inflection])
-            tmp = []
-            tmp.append(constraints_inflection)
+            cons_inflec_o.append(constraints_inflection)
+            tmp = copy.deepcopy(constraints_inflection)
             tmp.append(['no', 'not'])
             
             cons_inflec_o.append(tmp)
+
 
 
 assert len(inputs_o)== len(indexs_o)== len(cons_lemma_o)== len(cons_inflec_o)
