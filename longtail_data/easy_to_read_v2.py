@@ -111,7 +111,7 @@ for id in gpt_dict.keys():
     fo.write(f'Sample continuation: {sample_conti}')
     fo.write(nl)
     fo.write(nl)
-    fo.write(f'Neruo: {back_sent(base,conj_word,generation_neuro)}')
+    fo.write(f'Neuro: {back_sent(base,conj_word,generation_neuro)}')
     fo.write(nl)
     fo.write(f'Vanilla: {back_sent(base,conj_word,generation_vanilla)}')
     fo.write(nl)
