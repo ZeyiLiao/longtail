@@ -1,0 +1,160 @@
+the window is open,0_and
+he does not open the window for air,0_and_neg
+opening the window,0_while
+the window is not open,0_while_neg
+he open the windows for air,0_but
+he does not open the window,0_but_neg
+he opens the window,0_although
+there is no open window,0_although_neg
+wear no clothes,1_and
+no clothed human body is in the water,1_and_neg
+wearing clothes,1_while
+PersonX does not wear any clothes,1_while_neg
+he wears wet clothes,1_but
+ot wear any cloth,1_but_neg
+he is wearing clothes,1_although
+he is not wearing any clothes,1_although_neg
+decreases the amount of greenhouse gases in the atmosphere,2_and
+decrease the amount of greenhouse gases in the atmosphere,2_and_neg
+decreases the amount of greenhouse gas in the atmosphere,2_while
+decrease the amount of greenhouse gas in the atmosphere,2_while_neg
+the atmosphere's temperature decreases the amount of greenhouse gas on Earth,2_but
+he does not decrease the amount of greenhouse gas in the atmosphere,2_but_neg
+he decreases the amount of greenhouse gas in the atmosphere,2_although
+the amount of greenhouse gas in the atmosphere of earth does not decrease,2_although_neg
+expose his body to the hot air,3_and
+expose the body to the air,3_and_neg
+expose to the hot sun,3_while
+he is not exposing his body to the air,3_while_neg
+he exposes his body to the cold air,3_but
+he does not expose his body to the air,3_but_neg
+exposing his body to cold air,3_although
+he does not expose his body to the air,3_although_neg
+pours boiling water into the container,4_and
+pours boiling water into the container,4_and_neg
+pour boiling water into the container,4_while
+pour boiling water into a container,4_while_neg
+boiling water is poured into the container,4_but
+he does not pour boiling water into the container,4_but_neg
+the water is boiling,4_although
+he did not pour boiling water into the container,4_although_neg
+drink the cold water,5_and
+no one drinks the water,5_and_neg
+drink water from the human body,5_while
+personX drinks no liquid,5_while_neg
+personX drinks the water,5_but
+he does not drink any liquid,5_but_neg
+the water is being drunk by a human,5_although
+he does not drink water,5_although_neg
+Sun's nuclear fusion reaction is intensified,6_and
+the sun does not intensify the fusion reaction,6_and_neg
+the sun's fusion reaction is taking place,6_while
+,6_while_neg
+the sun's fusion reaction intensifies,6_but
+the sun's fusion reaction is not intensified,6_but_neg
+the sun's fusion reaction intensifies,6_although
+the sun's fusion reaction does not intensify,6_although_neg
+eats food with a high blood content,7_and
+eats food with no blood,7_and_neg
+eating food with lots of blood,7_while
+he eats his food,7_while_neg
+he eats hot food,7_but
+personX does not eat bloody food,7_but_neg
+he eats food with a lot of blood,7_although
+he does not eat spicy food,7_although_neg
+the radiator in the room is heating,8_and
+no heat is radiated from the radiator,8_and_neg
+the radiator in the room heats the room,8_while
+the radiator is turned off,8_while_neg
+room temperature is increased by the radiator,8_but
+the room is not heated by the radiator,8_but_neg
+the radiator is on,8_although
+the room is not heated by the radiator,8_although_neg
+the food is not burned by fossil fuel on earth,9_and
+the food is not burned,9_and_neg
+burning fossil fuels on earth,9_while
+the food is not burned by fossil fuels,9_while_neg
+fossil fuels are burned on earth,9_but
+there is no heat source,9_but_neg
+the fossil fuel is burned on earth,9_although
+he does not use fossil fuels,9_although_neg
+the earth's fossil fuel burns,10_and
+no fossil fuel is burned on Earth,10_and_neg
+the earth's fossil fuels are burning,10_while
+the earth does not burn fossil fuels,10_while_neg
+the earth is burning from fossil fuels,10_but
+the earth no longer burns fossil fuels,10_but_neg
+fossil fuels burn on Earth,10_although
+the earth does not burn fossil fuels,10_although_neg
+lifting weights,11_and
+lifts weights,11_and_neg
+lifting weight,11_while
+lifting weights,11_while_neg
+lifting weights stresses the muscles,11_but
+he does not lift weights,11_but_neg
+lifting weights can lead to muscle growth,11_although
+personX does not lift weights,11_although_neg
+wears shoes to protect the toenails,12_and
+does not wear shoes,12_and_neg
+ wearing shoes,12_while
+ not wearing shoes,12_while_neg
+ he wears shoes,12_but
+he does not wear shoes on his toenails,12_but_neg
+shoes do not wear toenails,12_although
+he does not wear shoes,12_although_neg
+wear it on her backpack and arms,13_and
+she wears it every day,13_and_neg
+personX wears a backpack on his arms,13_while
+she does not wear a backpack or carry anything in her arms,13_while_neg
+she wears backpack on her arms,13_but
+personX does not wear a backpack or long sleeves,13_but_neg
+personX does not wear a backpack or arms,13_although
+he does not wear it on his backpack or arms,13_although_neg
+sits on a chair,14_and
+sits in the chair,14_and_neg
+sitting in a chair,14_while
+she sits in a chair,14_while_neg
+personX sits on the chair,14_but
+he does not sit in the chair,14_but_neg
+he sits in the chair,14_although
+he does not sit in a chair,14_although_neg
+lifts weights to increase muscle,15_and
+no weight is lifted,15_and_neg
+lifting weights,15_while
+lifting weights,15_while_neg
+she does not lift weights,15_but
+she does not lift weights,15_but_neg
+he lifts weights,15_although
+he does not lift weights,15_although_neg
+ and sea level rises due to river intrusion,16_and
+the sea level rises due to seawater intrusion in rivers,16_and_neg
+seawater intrusion rises,16_while
+the sea level rises and seawater intrusion in the river,16_while_neg
+that the sea level rises and seawater intrusion in rivers and seas,16_but
+"there is no rise in seawater intrusion, sea level or rivers",16_but_neg
+the seawater intrusion rises the sea level of rivers,16_although
+the level of seawater intrusion in the river has risen,16_although_neg
+sit in the chair,17_and
+does not sit in the chair,17_and_neg
+siting in a chair,17_while
+sitting in a chair and not using his torso,17_while_neg
+he is sitting in a chair,17_but
+he does not sit in a chair,17_but_neg
+personX is sitting in a chair,17_although
+he does not sit in a chair,17_although_neg
+sit in the chair,18_and
+he does not sit in the chair,18_and_neg
+personX sits in the chair,18_while
+personX sits in the chair,18_while_neg
+he sits in a chair,18_but
+he does not sit in the chair,18_but_neg
+personX sits in the chair,18_although
+he does not sit in the chair,18_although_neg
+lift weights to build muscle,19_and
+lift the weight,19_and_neg
+lifting weights,19_while
+he does not lift weights,19_while_neg
+he does not lift weights,19_but
+he does not lift weights,19_but_neg
+lifting weights develops muscle,19_although
+he does not lift weights,19_although_neg

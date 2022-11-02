@@ -1,0 +1,200 @@
+open the window,0_and
+does not open the window,0_and_neg
+the window is open,0_while
+the window is not open,0_while_neg
+the window is open,0_but
+there is no open window,0_but_neg
+the window is open,0_although
+the window is not open,0_although_neg
+wears clothing that covers his human body,1_and
+does not wear clothing that covers his human body,1_and_neg
+wearing clothing that covers his human body,1_while
+not wearing clothing that covers his human body,1_while_neg
+he wears clothing that covers his human body,1_but
+he wears no clothing,1_but_neg
+he wears clothing that covers his human body,1_although
+no clothing is worn,1_although_neg
+decreases the amount of greenhouse gas,2_and
+does not decrease the amount of greenhouse gas,2_and_neg
+decreasing the amount of greenhouse gas,2_while
+the amount of greenhouse gas does not decrease,2_while_neg
+the amount of greenhouse gas in the atmosphere decreases,2_but
+amount of greenhouse gas does not decrease,2_but_neg
+the amount of greenhouse gas in the atmosphere decreases,2_although
+amount of greenhouse gas does not decrease,2_although_neg
+exposes his body to hot air,3_and
+does not expose his body to air,3_and_neg
+exposed to air,3_while
+not exposed to air,3_while_neg
+he exposes his body to air,3_but
+the body is not exposed to air,3_but_neg
+he is exposed to air,3_although
+no body is exposed to air,3_although_neg
+pours boiling water into the container,4_and
+does not pour boiling water into the container,4_and_neg
+pouring boiling water into the container,4_while
+no water is being poured into the container,4_while_neg
+he pours boiling water into the container,4_but
+no water is poured into the container,4_but_neg
+he pours boiling water into the container,4_although
+no water is poured into the container,4_although_neg
+drinks the liquid,5_and
+does not drink the liquid,5_and_neg
+drinking the liquid,5_while
+does not drink the liquid,5_while_neg
+he drinks the liquid,5_but
+no liquid is drunk,5_but_neg
+he drinks the liquid,5_although
+no liquid is drunk,5_although_neg
+intensifies the sun fusion reaction,6_and
+does not intensify the sun fusion reaction,6_and_neg
+intensifying the sun fusion reaction,6_while
+the sun does not intensify,6_while_neg
+the sun intensifies the fusion reaction,6_but
+no sun is intensified,6_but_neg
+the sun intensifies the fusion reaction,6_although
+the sun does not intensify,6_although_neg
+eats food,7_and
+does not eat food,7_and_neg
+eating food,7_while
+does not eat food,7_while_neg
+he eats food,7_but
+no food is eaten,7_but_neg
+he eats food,7_although
+no food is eaten,7_although_neg
+heat the room,8_and
+there is no heat in the room,8_and_neg
+the room is heated by the radiator,8_while
+there is no heat in the room,8_while_neg
+the room is heated by the radiator,8_but
+there is no heat in the room,8_but_neg
+the room is heated by the radiator,8_although
+there is no heat in the room,8_although_neg
+burns the fossil fuel,9_and
+does not burn fossil fuels,9_and_neg
+burning fossil fuel,9_while
+no fossil fuel is burned,9_while_neg
+he burns fossil fuel,9_but
+no fossil fuel is burned,9_but_neg
+he burns fossil fuel,9_although
+no fossil fuel is burned,9_although_neg
+burns fossil fuels,10_and
+does not burn fossil fuels,10_and_neg
+burning fossil fuel,10_while
+not burning fossil fuels,10_while_neg
+he burns fossil fuel,10_but
+no fossil fuel is burned,10_but_neg
+he burns fossil fuel,10_although
+no fossil fuel is burned,10_although_neg
+lifts weights,11_and
+does not lift weights,11_and_neg
+lifting weights,11_while
+not lifting weights,11_while_neg
+he lifts weights,11_but
+no weight is lifted,11_but_neg
+he lifts weights,11_although
+no weight is lifted,11_although_neg
+wears shoes,12_and
+does not wear shoes,12_and_neg
+wearing shoes,12_while
+not wearing shoes,12_while_neg
+he wears shoes,12_but
+no shoe is worn,12_but_neg
+he wears shoes,12_although
+no shoe is worn,12_although_neg
+wears a backpack,13_and
+does not wear a backpack or arms,13_and_neg
+wearing a backpack,13_while
+not wearing a backpack or arms,13_while_neg
+he wears a backpack,13_but
+he wears no backpack or arms,13_but_neg
+he wears a backpack,13_although
+he wears no backpack or arms,13_although_neg
+sits in a chair,14_and
+does not sit in a chair,14_and_neg
+sitting in a chair,14_while
+not sitting in a chair,14_while_neg
+he sits in a chair,14_but
+no chair is sat in,14_but_neg
+he sits in a chair,14_although
+no chair is sat in,14_although_neg
+lifts weights,15_and
+does not lift weights,15_and_neg
+lifting weights,15_while
+not lifting weights,15_while_neg
+he lifts weights,15_but
+no weight is lifted,15_but_neg
+he lifts weights,15_although
+no weight is lifted,15_although_neg
+rise in sea level,16_and
+no rise in sea level,16_and_neg
+the sea level rises,16_while
+no rise in sea level,16_while_neg
+there is a rise in the sea level,16_but
+there is no rise in the sea level,16_but_neg
+the seawater rises,16_although
+there is no rise in the sea level,16_although_neg
+sits in a chair,17_and
+does not sit in a chair,17_and_neg
+sitting in a chair,17_while
+not sitting in a chair,17_while_neg
+he sits in a chair,17_but
+no chair is sat in,17_but_neg
+he sits in a chair,17_although
+no chair is sat in,17_although_neg
+sits in the chair,18_and
+does not sit in the chair,18_and_neg
+sitting in the chair,18_while
+not sitting in a chair,18_while_neg
+he sits in a chair,18_but
+no chair is sat in,18_but_neg
+he sits in a chair,18_although
+no chair is sat in,18_although_neg
+lifts the weight of the muscle,19_and
+does not lift the weight,19_and_neg
+lifting weights,19_while
+not lifting weights,19_while_neg
+he lifts weights with muscle,19_but
+no weight is lifted,19_but_neg
+he lifts weights with muscle,19_although
+no weight is lifted,19_although_neg
+takes medication,20_and
+does not take medication,20_and_neg
+taking medication,20_while
+not taking medication,20_while_neg
+he takes medication for his penis,20_but
+no medication is taken,20_but_neg
+he takes medication for his penis,20_although
+no medication is taken,20_although_neg
+sits in a chair,21_and
+does not sit in a chair,21_and_neg
+sitting in a chair,21_while
+not sitting in a chair,21_while_neg
+he sits in a chair,21_but
+no one sits in the chair,21_but_neg
+he sits in a chair,21_although
+no one sits in the chair,21_although_neg
+lift the weight of the muscle,22_and
+does not lift the weight,22_and_neg
+lifting weight,22_while
+no weight is lifted,22_while_neg
+he lifts weight with muscle,22_but
+no weight is lifted,22_but_neg
+he lifts weight with muscle,22_although
+no weight is lifted,22_although_neg
+sits in a chair,23_and
+does not sit in a chair,23_and_neg
+sitting in a chair,23_while
+not sitting in a chair,23_while_neg
+he sits in a chair,23_but
+no chair is sat in,23_but_neg
+he sits in a chair,23_although
+no chair is sat in,23_although_neg
+uses an exfoliating product,24_and
+does not exfoliate his skin,24_and_neg
+using the product,24_while
+not using the product,24_while_neg
+he uses an exfoliating product,24_but
+no exfoliate the skin,24_but_neg
+he uses an exfoliating product,24_although
+no exfoliate the skin,24_although_neg
