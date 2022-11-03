@@ -3,7 +3,7 @@ import imp
 import jsonlines
 import json
 import copy
-
+import sacrebleu
 
 def back_sent(sent, conj_word, generation, mask = '[mask]'):
     mask_index = sent.index(mask)
@@ -68,7 +68,7 @@ with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_
 
 
 
-with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_11b_gpt_outputs.csv') as f:
+with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/gpt_outputs.csv') as f:
     reader = csv.reader(f)
     for line in reader:
         generation_part, id = line[0],line[1]
@@ -85,6 +85,8 @@ o_path = '/home/zeyi/longtail/longtail_data/generated_data/property_centric/comp
 
 fo = open(o_path,'w')
 nl = '\n'
+exact_match = 100
+exact_match_count = 0
 
 for id in gpt_dict.keys():
     id_number = int(id.split('_')[0])
@@ -111,9 +113,17 @@ for id in gpt_dict.keys():
     fo.write(f'Sample continuation: {sample_conti}')
     fo.write(nl)
     fo.write(nl)
-    fo.write(f'Neuro: {back_sent(base,conj_word,generation_neuro)}')
+    neuro = back_sent(base,conj_word,generation_neuro)
+    vanilla = back_sent(base,conj_word,generation_vanilla)
+    fo.write(f'Neuro: {neuro}')
     fo.write(nl)
-    fo.write(f'Vanilla: {back_sent(base,conj_word,generation_vanilla)}')
+    fo.write(f'Vanilla: {vanilla}')
+    fo.write(nl)
+    bleu_score = sacrebleu.corpus_bleu([neuro], [[vanilla]]).score
+    if bleu_score >= exact_match:
+        exact_match_count += 1
+    fo.write(f'bleu: {bleu_score}')
+
     fo.write(nl)
     fo.write(f'GPT-3: {back_sent(base,conj_word,generation_gpt)}')
     fo.write(nl)
@@ -127,5 +137,10 @@ for id in gpt_dict.keys():
     vanilla_o.append(back_sent(base,conj_word,generation_vanilla))
     neuro_o.append(back_sent(base,conj_word,generation_neuro))
 
+
+fo.write(nl)
+fo.write(f'Ratio of exach match: {exact_match_count/len(gpt_dict.keys())}')
+
+fo.write(nl)
 fo.close()
 

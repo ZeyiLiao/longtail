@@ -106,6 +106,7 @@ demonstration_conti = \
 "Output: The height of person will increase because personX grows up despite the fact that he does not play basketball."\
 
 
+
 demonstration_conti = \
 "Input: The depth of ocean will increase because personX increase the ocean's salinity and [mask].\n"\
 "Constraint: [pump], [well]\n"\
@@ -134,7 +135,17 @@ demonstration_conti = \
 
 
 
+# ****************# ****************# ****************# ****************# ****************# ****************# ****************# ****************
+# ****************# ****************# ****************# ****************# ****************# ****************# ****************# ****************
 
+# ****************# ****************# ****************# ****************# ****************# ****************# ****************# ****************
+demonstration_conti = \
+"Input: The depth of ocean will increase because personX increase the ocean's salinity and [mask].\n"\
+"Constraint: [pump], [well, machine]\n"\
+"Output: The depth of ocean will increase because personX increase the ocean's salinity and pump from well. \n"\
+"Input: The frequency of of bowel movements will decrease bacause PersonX eat less and [mask].\n"\
+"Constraint: [eat], [food, salt], [no]\n"\
+"Output: The frequency of of bowel movements will decrease bacause PersonX eat less and does not eat salty food."
 
 
 

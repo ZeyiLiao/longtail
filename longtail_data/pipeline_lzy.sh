@@ -26,7 +26,6 @@ PYTHONPATH=. python GPT_task/GPT_fill_task.py --inputs longtail_data/raw_data/pr
 --outputs longtail_data/for_finetune/property_centric --needed_count 3 --conti
 
 
-
 # *****************************
 
 
@@ -41,10 +40,10 @@ PYTHONPATH=. python GPT_task/GPT_fill_task.py --inputs longtail_data/raw_data/pr
 
 
 # *****************************
+
 PYTHONPATH=. python longtail_data/splitting.py --gpt_outputs_dir longtail_data/for_finetune/for_dis
 
 PYTHONPATH=. python longtail_data/splitting.py --gpt_outputs_dir longtail_data/for_finetune/conti
-
 
 PYTHONPATH=. python longtail_data/splitting.py --gpt_outputs_dir longtail_data/for_finetune/property_centric
 

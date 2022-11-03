@@ -1,200 +1,200 @@
-open the window,0_and
+opens the window,0_and
 does not open the window,0_and_neg
-the window is open,0_while
-the window is not open,0_while_neg
-the window is open,0_but
-there is no open window,0_but_neg
-the window is open,0_although
-the window is not open,0_although_neg
-wears clothing that covers his human body,1_and
-does not wear clothing that covers his human body,1_and_neg
-wearing clothing that covers his human body,1_while
-not wearing clothing that covers his human body,1_while_neg
-he wears clothing that covers his human body,1_but
-he wears no clothing,1_but_neg
-he wears clothing that covers his human body,1_although
-no clothing is worn,1_although_neg
-decreases the amount of greenhouse gas,2_and
-does not decrease the amount of greenhouse gas,2_and_neg
-decreasing the amount of greenhouse gas,2_while
-the amount of greenhouse gas does not decrease,2_while_neg
-the amount of greenhouse gas in the atmosphere decreases,2_but
-amount of greenhouse gas does not decrease,2_but_neg
-the amount of greenhouse gas in the atmosphere decreases,2_although
-amount of greenhouse gas does not decrease,2_although_neg
-exposes his body to hot air,3_and
-does not expose his body to air,3_and_neg
-exposed to air,3_while
-not exposed to air,3_while_neg
-he exposes his body to air,3_but
-the body is not exposed to air,3_but_neg
-he is exposed to air,3_although
-no body is exposed to air,3_although_neg
-pours boiling water into the container,4_and
-does not pour boiling water into the container,4_and_neg
-pouring boiling water into the container,4_while
-no water is being poured into the container,4_while_neg
-he pours boiling water into the container,4_but
-no water is poured into the container,4_but_neg
-he pours boiling water into the container,4_although
-no water is poured into the container,4_although_neg
-drinks the liquid,5_and
-does not drink the liquid,5_and_neg
-drinking the liquid,5_while
-does not drink the liquid,5_while_neg
-he drinks the liquid,5_but
-no liquid is drunk,5_but_neg
-he drinks the liquid,5_although
-no liquid is drunk,5_although_neg
-intensifies the sun fusion reaction,6_and
-does not intensify the sun fusion reaction,6_and_neg
-intensifying the sun fusion reaction,6_while
-the sun does not intensify,6_while_neg
-the sun intensifies the fusion reaction,6_but
-no sun is intensified,6_but_neg
-the sun intensifies the fusion reaction,6_although
-the sun does not intensify,6_although_neg
-eats food,7_and
-does not eat food,7_and_neg
-eating food,7_while
-does not eat food,7_while_neg
-he eats food,7_but
-no food is eaten,7_but_neg
-he eats food,7_although
-no food is eaten,7_although_neg
-heat the room,8_and
-there is no heat in the room,8_and_neg
-the room is heated by the radiator,8_while
-there is no heat in the room,8_while_neg
-the room is heated by the radiator,8_but
-there is no heat in the room,8_but_neg
-the room is heated by the radiator,8_although
-there is no heat in the room,8_although_neg
-burns the fossil fuel,9_and
-does not burn fossil fuels,9_and_neg
-burning fossil fuel,9_while
-no fossil fuel is burned,9_while_neg
-he burns fossil fuel,9_but
-no fossil fuel is burned,9_but_neg
-he burns fossil fuel,9_although
-no fossil fuel is burned,9_although_neg
-burns fossil fuels,10_and
-does not burn fossil fuels,10_and_neg
-burning fossil fuel,10_while
-not burning fossil fuels,10_while_neg
-he burns fossil fuel,10_but
-no fossil fuel is burned,10_but_neg
-he burns fossil fuel,10_although
-no fossil fuel is burned,10_although_neg
-lifts weights,11_and
-does not lift weights,11_and_neg
-lifting weights,11_while
-not lifting weights,11_while_neg
-he lifts weights,11_but
-no weight is lifted,11_but_neg
-he lifts weights,11_although
-no weight is lifted,11_although_neg
-wears shoes,12_and
-does not wear shoes,12_and_neg
-wearing shoes,12_while
-not wearing shoes,12_while_neg
-he wears shoes,12_but
-no shoe is worn,12_but_neg
-he wears shoes,12_although
-no shoe is worn,12_although_neg
-wears a backpack,13_and
-does not wear a backpack or arms,13_and_neg
-wearing a backpack,13_while
-not wearing a backpack or arms,13_while_neg
-he wears a backpack,13_but
-he wears no backpack or arms,13_but_neg
-he wears a backpack,13_although
-he wears no backpack or arms,13_although_neg
-sits in a chair,14_and
-does not sit in a chair,14_and_neg
-sitting in a chair,14_while
-not sitting in a chair,14_while_neg
-he sits in a chair,14_but
-no chair is sat in,14_but_neg
-he sits in a chair,14_although
-no chair is sat in,14_although_neg
-lifts weights,15_and
-does not lift weights,15_and_neg
-lifting weights,15_while
-not lifting weights,15_while_neg
-he lifts weights,15_but
-no weight is lifted,15_but_neg
-he lifts weights,15_although
-no weight is lifted,15_although_neg
-rise in sea level,16_and
-no rise in sea level,16_and_neg
-the sea level rises,16_while
-no rise in sea level,16_while_neg
-there is a rise in the sea level,16_but
-there is no rise in the sea level,16_but_neg
-the seawater rises,16_although
-there is no rise in the sea level,16_although_neg
-sits in a chair,17_and
-does not sit in a chair,17_and_neg
-sitting in a chair,17_while
-not sitting in a chair,17_while_neg
-he sits in a chair,17_but
-no chair is sat in,17_but_neg
-he sits in a chair,17_although
-no chair is sat in,17_although_neg
-sits in the chair,18_and
-does not sit in the chair,18_and_neg
-sitting in the chair,18_while
-not sitting in a chair,18_while_neg
-he sits in a chair,18_but
-no chair is sat in,18_but_neg
-he sits in a chair,18_although
-no chair is sat in,18_although_neg
-lifts the weight of the muscle,19_and
-does not lift the weight,19_and_neg
-lifting weights,19_while
-not lifting weights,19_while_neg
-he lifts weights with muscle,19_but
-no weight is lifted,19_but_neg
-he lifts weights with muscle,19_although
-no weight is lifted,19_although_neg
-takes medication,20_and
-does not take medication,20_and_neg
-taking medication,20_while
-not taking medication,20_while_neg
-he takes medication for his penis,20_but
-no medication is taken,20_but_neg
-he takes medication for his penis,20_although
-no medication is taken,20_although_neg
+decreases the amount of greenhouse gas,1_and
+does not decrease the amount of greenhouse gas,1_and_neg
+exposes the body to air,2_and
+does not expose the body to air,2_and_neg
+pours air into the boiling water,3_and
+does not pour the water,3_and_neg
+intensifies the sun,4_and
+does not intensify the sun,4_and_neg
+eats food and blood,5_and
+does not eat food or blood,5_and_neg
+there is no heat in the room,6_and
+there is no heat in the room,6_and_neg
+burns fossil fuel,7_and
+does not burn fossil fuel,7_and_neg
+burns fossil fuel,8_and
+does not burn fossil fuels,8_and_neg
+lifts weights,9_and
+does not lift weights,9_and_neg
+does not wear shoes,10_and
+does not wear shoes,10_and_neg
+wears a backpack,11_and
+does not wear a backpack,11_and_neg
+sits in a chair,12_and
+does not sit in a chair,12_and_neg
+lifts weights,13_and
+does not lift weights,13_and_neg
+seawater rises,14_and
+seawater intrusion does not rise,14_and_neg
+sits in a chair,15_and
+does not sit in a chair,15_and_neg
+sits in a chair,16_and
+does not sit in a chair,16_and_neg
+lifts weights,17_and
+lifts no weight,17_and_neg
+does not take medication,18_and
+does not take medication,18_and_neg
+sits in a chair,19_and
+does not sit in a chair,19_and_neg
+lifts more weight,20_and
+lifts no weight,20_and_neg
 sits in a chair,21_and
 does not sit in a chair,21_and_neg
-sitting in a chair,21_while
-not sitting in a chair,21_while_neg
-he sits in a chair,21_but
-no one sits in the chair,21_but_neg
-he sits in a chair,21_although
-no one sits in the chair,21_although_neg
-lift the weight of the muscle,22_and
-does not lift the weight,22_and_neg
-lifting weight,22_while
-no weight is lifted,22_while_neg
-he lifts weight with muscle,22_but
-no weight is lifted,22_but_neg
-he lifts weight with muscle,22_although
-no weight is lifted,22_although_neg
-sits in a chair,23_and
-does not sit in a chair,23_and_neg
-sitting in a chair,23_while
-not sitting in a chair,23_while_neg
-he sits in a chair,23_but
-no chair is sat in,23_but_neg
-he sits in a chair,23_although
-no chair is sat in,23_although_neg
-uses an exfoliating product,24_and
-does not exfoliate his skin,24_and_neg
-using the product,24_while
-not using the product,24_while_neg
-he uses an exfoliating product,24_but
-no exfoliate the skin,24_but_neg
-he uses an exfoliating product,24_although
-no exfoliate the skin,24_although_neg
+uses an exfoliating product,22_and
+does not exfoliate skin,22_and_neg
+does not wear gloves,23_and
+does not wear gloves,23_and_neg
+hangs arms,24_and
+does not hang arms,24_and_neg
+tributaries flow into rivers,25_and
+there are no flowing rivers,25_and_neg
+wears a necklace,26_and
+does not wear a necklace,26_and_neg
+wears shoes,27_and
+does not wear shoes,27_and_neg
+does not eat food with calcium,28_and
+does not eat food with calcium,28_and_neg
+does not eat food,29_and
+does not eat food,29_and_neg
+flows into rivers,30_and
+no tributaries flow into rivers,30_and_neg
+uses the penis,31_and
+does not use injections,31_and_neg
+takes vitamin D supplement,32_and
+does not take vitamins or supplements,32_and_neg
+stretches neck and head,33_and
+does not stretch neck or head,33_and_neg
+does not grow hair or skin,34_and
+does not grow hair or skin,34_and_neg
+holds their head and neck,35_and
+does not hold their head or neck,35_and_neg
+changes course,37_and
+course does not change,37_and_neg
+river is dammed,38_and
+there is no dam on the river,38_and_neg
+decreases the amount of fuel,39_and
+the amount of fuel does not decrease,39_and_neg
+changes course,40_and
+does not change course,40_and_neg
+dam on the river,41_and
+there is no dam on the river,41_and_neg
+decreases the amount of fuel,42_and
+does not decrease the amount of fuel,42_and_neg
+turns on the fan,43_and
+does not turn on the fan,43_and_neg
+decreases the temperature,44_and
+decreases no sound,44_and_neg
+approaches the bus,45_and
+does not approach the bus,45_and_neg
+fires a bullet into the air,46_and
+no bullets are fired,46_and_neg
+increases in size,47_and
+no snow particles increase in size,47_and_neg
+decreases the temperature,48_and
+decreases no sound,48_and_neg
+there is no dam on the river,49_and
+there is no dam on the river,49_and_neg
+dams the river,51_and
+there is no dam on the river,51_and_neg
+decreases the amount of fuel in the rocket,52_and
+does not decrease the amount of fuel,52_and_neg
+decreasing the sound,53_and
+not by decreasing the sound,53_and_neg
+increases the size of snow,54_and
+does not increase the particle size,54_and_neg
+the temperature rises,55_and
+the temperature does not rise,55_and_neg
+the temperature rises,56_and
+does not rise in temperature,56_and_neg
+bus driver presses the accelerator,57_and
+does not press the accelerator,57_and_neg
+fires a gun,58_and
+does not fire the gun,58_and_neg
+sails into the wind,59_and
+there is no sail on the boat,59_and_neg
+presses the speed button,60_and
+does not press the fan speed button,60_and_neg
+walks to the light,61_and
+light does not walk,61_and_neg
+increases the amplitude of the sound wave,62_and
+the sound wave does not increase,62_and_neg
+cheetah increases speed,63_and
+does not increase speed,63_and_neg
+pressing the fan speed button,64_and
+by not pressing the fan speed button,64_and_neg
+walking into the light,65_and
+there is no light walking,65_and_neg
+an increase in the sound wave amplitude,66_and
+no increase in the sound wave amplitude,66_and_neg
+an increase in wind speed,67_and
+no increase in speed,67_and_neg
+increase the thrust of the plane,68_and
+thrust does not increase,68_and_neg
+temperature decreases,69_and
+temperature does not decrease,69_and_neg
+increases the thrust of the plane,70_and
+does not increase the thrust,70_and_neg
+the temperature decreases,71_and
+temperature does not decrease,71_and_neg
+the bus driver presses the accelerator,72_and
+does not press the accelerator,72_and_neg
+fires the gun,73_and
+does not fire the gun,73_and_neg
+walks towards a light,74_and
+light but does not walk,74_and_neg
+increases the amplitude of the sound wave,75_and
+the sound does not increase,75_and_neg
+increases the amplitude of the sound wave,77_and
+does not increase the sound wave amplitude,77_and_neg
+increases the speed of cheetah,78_and
+does not increase speed,78_and_neg
+increases the area of contact,79_and
+there is no increase in friction,79_and_neg
+moves away from the air,80_and
+air is not moving,80_and_neg
+increases the area of contact,81_and
+does not increase the surface area,81_and_neg
+moves from air to air,82_and
+moves no air,82_and_neg
+stops blowing cold wind,83_and
+the wind does not blow,83_and_neg
+move away from the air source,84_and
+do not move the source of air,84_and_neg
+stops blowing cold wind,85_and
+the wind does not blow cold,85_and_neg
+the wind stops blowing,86_and
+no wind is blowing,86_and_neg
+does not jump off the cliff,87_and
+does not jump off the cliff,87_and_neg
+increases the number of turns,88_and
+does not increase the number of turns,88_and_neg
+holds an object,89_and
+does not hold the object,89_and_neg
+wears cold clothing,90_and
+wears no clothing,90_and_neg
+increase the surface area of contact,91_and
+does not increase the contact area,91_and_neg
+increases the area of contact,92_and
+does not increase the friction,92_and_neg
+hold the object,94_and
+the object is not held,94_and_neg
+wear cold clothing,95_and
+no clothing is worn,95_and_neg
+squeezes a tube of toothpaste,96_and
+does not squeeze the tube of toothpaste,96_and_neg
+the wind blows,97_and
+the wind does not blow,97_and_neg
+squeezes the tube of toothpaste,98_and
+does not squeeze the tube of toothpaste,98_and_neg
+wears cold clothing,99_and
+does not wear cold weather clothing,99_and_neg
+the wind blows,100_and
+there is no wind blowing,100_and_neg
+the wind blows,101_and
+there is no wind blowing,101_and_neg
+wear warm clothing,102_and
+wear no clothing,102_and_neg
+the waves die,103_and
+the waves do not die,103_and_neg

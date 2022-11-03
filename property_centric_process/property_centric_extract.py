@@ -3,23 +3,27 @@ from operator import index
 from lemminflect import getAllInflections, getInflection
 import spacy
 nlp = spacy.load('en_core_web_sm')
-
+import os
 import jsonlines
 import csv
 import copy
 
 
-bad_words = ['•','do','be']
+bad_words = ['•','do','be','-']
 
 
 output_path = '/home/zeyi/longtail/property_centric_process/property_centric_samples.jsonl'
 
 property_centric_dir = '/home/zeyi/longtail/property_centric'
 
+
+
+
 with open(f'{property_centric_dir}/properties.txt') as f:
     all_properties = [line.strip() for line in f]
+    
 
-def reader_handle(reader,global_l,interval = 1600):
+def reader_handle(reader,global_l,interval = 400):
     for i,line in enumerate(reader):
 
         if i % interval == 0:
@@ -64,6 +68,18 @@ def reader_handle(reader,global_l,interval = 1600):
 
             if len(set(checkwords) & set(bad_words)) != 0:
                 continue
+            
+            def only_one_word(x):
+                return len(x.split(' ')) == 1
+
+            if not all([only_one_word(_) for _ in checkwords]):
+                continue
+
+
+
+
+
+            
 
             index_l[0] = index_l[0] + 1
             sent = ' '.join(sent_split)

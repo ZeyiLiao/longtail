@@ -43,9 +43,8 @@ def change_format(sent, conj_word , if_conti = True, mask = '[mask]'):
 
 
 conj_words = ['and', 'while', 'but', 'although']
+conj_words = ['and']
 negation_word = ['no']
-
-
 
 
 inputs_o = []
