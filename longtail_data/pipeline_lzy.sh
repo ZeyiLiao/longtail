@@ -105,7 +105,7 @@ rm -r ckpt/t5_11b_w_m_property_centric; PYTHONPATH=src USE_TF=0 deepspeed exampl
 
 
 source activate /home/zeyi/miniconda3/envs/longtail
-cd /home/zeyi/LongTailedKnowledge/neurologic_decoding/seq2seq
+cd /home/zeyi/neurologic_decoding/seq2seq
 
 
 # *****************************

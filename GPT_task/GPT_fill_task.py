@@ -141,12 +141,17 @@ demonstration_conti = \
 # ****************# ****************# ****************# ****************# ****************# ****************# ****************# ****************
 demonstration_conti = \
 "Input: The depth of ocean will increase because personX increase the ocean's salinity and [mask].\n"\
-"Constraint: [pump], [well, machine]\n"\
-"Output: The depth of ocean will increase because personX increase the ocean's salinity and pump from well. \n"\
+"Constraint: [pump], [well], [machine]\n"\
+"Output: The depth of ocean will increase because personX increase the ocean's salinity and pump the well by machine. \n"\
 "Input: The frequency of of bowel movements will decrease bacause PersonX eat less and [mask].\n"\
-"Constraint: [eat], [food, salt], [no]\n"\
-"Output: The frequency of of bowel movements will decrease bacause PersonX eat less and does not eat salty food."
-
+"Constraint: [eat], [food], [salt], [no]\n"\
+"Output: The frequency of of bowel movements will decrease bacause PersonX eat less and does not eat salty food.\n"\
+"Input: The pressure of heart rate will increase because personX be in a hot environment and [mask].\n"\
+"Constraint: [run], [track, hill], [track, grass], [hill, grass], [no]\n"\
+"Output: The pressure of heart rate will increase because personX be in a hot environment and he does not run on the track of the hill\n"\
+"Input: The force of ice will decrease bacause the ice be hit and [mask].\n"\
+"Constraint: [kick, run], [soccer, ball], [playground, ball], [soccer, playground]\n"\
+"Output: The force of ice will decrease bacause the ice be hit and children kick the soccer on the playground."
 
 
 

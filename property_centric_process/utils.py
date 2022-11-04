@@ -1,9 +1,7 @@
+
 from itertools import combinations 
 from sympy.logic.boolalg import to_cnf
 from sympy import *
-
-
-
 
 class Logic_wrapper:
     def __init__(self):
@@ -60,16 +58,3 @@ class Logic_wrapper:
         return self.change_to_cnf(words)
 
     
-
-    
-
-
-
-
-a = ['door', 'window', 'medicine','hihi']
-b = ['door']
-c = ['door','window']
-logic_wrapper = Logic_wrapper()
-print(logic_wrapper.run(a))
-print(logic_wrapper.run(b))
-print(logic_wrapper.run(c))

@@ -1,40 +1,160 @@
-there is no air flow,0_and
-there is no airflow to window,0_and_neg
-decreases the amount of greenhouse gas in the atmosphere,1_and
-decreases the amount of greenhouse gas in the atmosphere,1_and_neg
-exposes body to hot air,2_and
-expose his body to hot air,2_and_neg
-pours boiling water into a container,3_and
-o the boiling water container,3_and_neg
-the sun's fusion reaction is not as intense,4_and
-sun's fusion reaction doesn't intensify,4_and_neg
-has no food in their stomach,5_and
-has no food in their stomach,5_and_neg
-heat from room,6_and
-radiator is turned off in the room,6_and_neg
-burns fossil fuels,7_and
-uses no fossil fuel,7_and_neg
-protects themselves from burning fossil fuels,8_and
-burns no fossil fuels,8_and_neg
-lifts weights,9_and
-lifts weights regularly,9_and_neg
- does not wear shoes,10_and
-does not wear shoes that cover the toenails,10_and_neg
-wears it often,11_and
-wears it every day,11_and_neg
-sit upright in a chair,12_and
-sits upright in a chair,12_and_neg
-lifts weights,13_and
-lifts weights regularly,13_and_neg
- and sea level rises due to seawater intrusion in rivers,14_and
-sea level rises due to seawater intrusion in rivers,14_and_neg
-sits in chair,15_and
-does not sit in a chair,15_and_neg
-sits in a chair,16_and
-does not sit in a chair,16_and_neg
-lifts weights to increase muscle,17_and
-lifts weights to build muscle,17_and_neg
-takes medication,18_and
-takes no medication,18_and_neg
-sits in a chair,19_and
-does not sit in a chair all day,19_and_neg
+there is no open window for the air to come in,0_and
+there is no air flow from the open window,0_and_neg
+the sun's fusion reaction stop,1_and
+the water undergoes nuclear fusion with the sun,1_and_neg
+the water is stored in a refrigerator,2_and
+the food in the refrigerator is not burned,2_and_neg
+he opens the door of the room,3_and
+he opens the door of the room,3_and_neg
+his human body is in contact with the water,4_and
+the human body does not wear any clothes,4_and_neg
+the water starts to boil,5_and
+he does not drink the water,5_and_neg
+the water is exposed to air,6_and
+he does not expose the fire to the air,6_and_neg
+opens the door to the room,7_and
+opens the door to the room,7_and_neg
+he wears Clothes,8_and
+he does not wear any clothes,8_and_neg
+drink it,9_and
+drinks it,9_and_neg
+expose it to the air,10_and
+er to the air,10_and_neg
+his blood is heated up,11_and
+drinks hot water instead of cold water,11_and_neg
+expose his body to the air,12_and
+his body is not exposed to the air,12_and_neg
+exposes the air to his body,13_and
+he does not expose his body to air,13_and_neg
+pours the boiling water into the container,14_and
+pours the boiling water into the container,14_and_neg
+ ice and fusion reaction with the sun,15_and
+the sun does not intensify the fusion reaction,15_and_neg
+water to the food,16_and
+water to the food,16_and_neg
+the radiator is in the room,17_and
+the radiator is not in the room,17_and_neg
+he drinks the liquid in the human body,18_and
+drink the liquid in the human body,18_and_neg
+the food is in the blood,19_and
+does not eat food with a high blood sugar content,19_and_neg
+the fuel is not Fossil based,20_and
+he does not burn fossil fuel,20_and_neg
+intensifies the fusion reaction of the sun,21_and
+the sun's fusion reaction does not intensify,21_and_neg
+add food and water to the room,22_and
+does not add food or water,22_and_neg
+the radiator in the room,23_and
+there is no radiator in the room,23_and_neg
+drink a cold liquid,24_and
+does not drink any liquids,24_and_neg
+eats food with a lot of blood in it,25_and
+doesn't eat spicy food,25_and_neg
+burns fossil fuels,26_and
+he does not burn fossil fuels,26_and_neg
+reasing and water is being added to it,27_and
+food is added to the water,27_and_neg
+the radiator is turned on in the room,28_and
+the room has no radiator,28_and_neg
+ and it is hidden behind clouds,29_and
+it is not a human body,29_and_neg
+vampire drinks the blood,30_and
+vampires eat human blood,30_and_neg
+it will not burn fossil fuels on Earth,31_and
+it does not burn fossil fuel,31_and_neg
+fuel the earth with fossil,32_and
+he uses no fossil fuel,32_and_neg
+the human body does not drink any liquids,33_and
+the human body does not generate heat by drinking liquids,33_and_neg
+he does not burn fossil fuels,34_and
+he does not fossil fuel on the earth,34_and_neg
+he eats warm food,35_and
+eats warm food,35_and_neg
+he burns fossil fuel on earth,36_and
+the fuel is not from the fossil on the earth,36_and_neg
+the fuel is from the fossil on the earth,37_and
+his skin does not burn from the fuel of the fossil,37_and_neg
+takes medication for his penis,38_and
+takes medication to promote hair growth on the penis,38_and_neg
+graft the bone,39_and
+does not graft the bone,39_and_neg
+ weights to increase muscle mass,40_and
+he does not lift any weights,40_and_neg
+he wears makeup and eyelashes,41_and
+ he does not wear makeup or have eyelashes,41_and_neg
+she bites her fingernails,42_and
+he doesn't bite his fingernails,42_and_neg
+does not wear shoes,43_and
+does not wear toenails in the shoe,43_and_neg
+he wears a backpack on his arms,44_and
+he does not wear arm protection backpack,44_and_neg
+he does not wear heels on his legs,45_and
+wears high heels on their legs,45_and_neg
+takes medication for a fungus on his penis,46_and
+takes medication for his penis,46_and_neg
+she sits on the chair with her torso upright,47_and
+she does not sit on the chair,47_and_neg
+wear turtleneck,48_and
+wears a turtleneck,48_and_neg
+she bites her fingernails,49_and
+he does not bite his fingernails,49_and_neg
+wears it regularly,50_and
+she wears it every day,50_and_neg
+she wears it on her arms in a backpack,51_and
+she wears it on her arms or backpack,51_and_neg
+she wears it on her eyelashes,52_and
+he does not wear heels,52_and_neg
+takes medication for penis enlargement,53_and
+does not take medication for penis enlargement,53_and_neg
+sits in a chair with their torso upright,54_and
+sits in a chair,54_and_neg
+he wears a turtleneck,55_and
+he wears a turtleneck,55_and_neg
+has a genetic disposition for dwarfism,56_and
+has no dwarfism,56_and_neg
+lifts weights to exercise the muscles,57_and
+she lifts a weight,57_and_neg
+farms trees,58_and
+does not work on the farm with trees,58_and_neg
+he takes medication for his penis,59_and
+he takes medication to prevent penis breakage,59_and_neg
+keeps them trimmed regularly,60_and
+inserts the diaphragm into the vagina,60_and_neg
+sit on the chair with the torso upright,61_and
+he sits on the chair with his torso upright,61_and_neg
+wears a turtleneck,62_and
+does not wear a turtleneck,62_and_neg
+lifting weights increases muscle mass,63_and
+lifting weights does not require much muscle,63_and_neg
+he takes medication for his penis,64_and
+does not take medication for his penis,64_and_neg
+the level of hormone in the bone increases,65_and
+levels of bone and hormone increase,65_and_neg
+wears heels on his legs,66_and
+he does not wear heels on his legs,66_and_neg
+he takes medication for his penis,67_and
+takes medication for his penis,67_and_neg
+his torso is in a chair,68_and
+torso is not in a chair,68_and_neg
+he wears a turtleneck,69_and
+does not wear a neck turtleneck,69_and_neg
+increases the level of hormone in his body,70_and
+his level of bone hormone increases,70_and_neg
+personX lifts muscle by weight,71_and
+personX lift weights,71_and_neg
+he sits in the chair with his torso upright,72_and
+he does not sit in the chair with his torso,72_and_neg
+wear a turtleneck,73_and
+he does not wear a turtleneck,73_and_neg
+ trees regularly,74_and
+he has strong muscles to lift the fertilizer bags,74_and_neg
+sit on the chair with its torso,75_and
+he does not sit on the chair with his torso,75_and_neg
+wears a turtleneck,76_and
+wear a turtleneck,76_and_neg
+the muscle lift the weight,77_and
+the weight of the muscles lifting the weights,77_and_neg
+takes medication for a sore throat,78_and
+takes medication to enlarge his penis,78_and_neg
+lifts his tongue muscle to reach the weight,79_and
+he does not lift any muscle or weight,79_and_neg

@@ -5,8 +5,10 @@ from lemminflect import getInflection, getAllInflections, getAllInflectionsOOV
 import random
 random.seed(37)
 from split_train_infer import split_train_infer
+from utils import Logic_wrapper
 
 
+logic_wrapper = Logic_wrapper()
 
 def change_format(sent, conj_word , if_conti = True, mask = '[mask]'):
     mask_index = sent.index(mask)
@@ -59,14 +61,13 @@ with jsonlines.open('/home/zeyi/longtail/property_centric_process/property_centr
     for line in f:
         ori_sent = line['base']
 
-        
+
         for conj_word in conj_words:
             formatted_inputs = []
             formatted_inputs.append(change_format(ori_sent,conj_word))
             # negation, so we times 2
             formatted_inputs = formatted_inputs * 2 
             inputs_o.extend(formatted_inputs)
-
 
 
         index = line['index']
@@ -79,15 +80,18 @@ with jsonlines.open('/home/zeyi/longtail/property_centric_process/property_centr
 
 
 
-
         verb_l = copy.deepcopy(line['constraint']['verb'])
         noun_l = copy.deepcopy(line['constraint']['noun'])
         noun_l.append(line['object2'])
+        noun_l = list(set(noun_l))
 
 
 
         for _ in range(len(conj_words)):
-            constraints_lemma = [verb_l,noun_l]
+
+            constraints_lemma = [verb_l]
+            noun_l = logic_wrapper.run(noun_l)
+            constraints_lemma.extend(noun_l)
             cons_lemma_o.append(constraints_lemma)
 
             
@@ -105,6 +109,8 @@ with jsonlines.open('/home/zeyi/longtail/property_centric_process/property_centr
                 word_inflections = getAllInflections(word)
                 if not word_inflections or len(word_inflections) == 0:
                     word_inflections = dict(getAllInflectionsOOV(word,'VERB'), **getAllInflectionsOOV(word,'NOUN'))
+                    if len(word.split(' ')) == 1:
+                        word_inflections.update(getAllInflectionsOOV(word,'ADJ'))
                 tmp.extend(list(set([_[0] for _ in list(word_inflections.values())])))
             constraints_inflection.append(tmp)
 

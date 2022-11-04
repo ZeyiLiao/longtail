@@ -48,6 +48,8 @@ vanilla_dict = {}
 
 gpt_dict = {}
 
+lemma_l = []
+
 
 with open('/home/zeyi/longtail/property_centric_process/property_centric_samples.jsonl') as f:
     all_data = [json.loads(line) for line in f.readlines()]
@@ -75,6 +77,13 @@ with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/gpt
         gpt_dict[id] = generation_part
 
 
+with open('/home/zeyi/longtail/longtail_data/raw_data/property_centric/lemma_constraints_t5_infer.json') as f:
+    for i,line in enumerate(f):
+        if i >= len(gpt_dict.keys()):
+            break
+        lemma = json.loads(line)
+        lemma_l.append(lemma)
+        
 
 
 
@@ -88,7 +97,8 @@ nl = '\n'
 exact_match = 100
 exact_match_count = 0
 
-for id in gpt_dict.keys():
+
+for index,id in enumerate(gpt_dict.keys()):
     id_number = int(id.split('_')[0])
     conj_word = id.split('_')[1]
 
@@ -102,7 +112,8 @@ for id in gpt_dict.keys():
     generation_vanilla = vanilla_dict[id]
     generation_gpt = gpt_dict[id]
 
-    cons = constraints(ori_data,has_neg)
+    # cons = constraints(ori_data,has_neg)
+    cons = lemma_l[index]
     sample_conti = ori_data['sample_cont']
     base = ori_data['base']
 

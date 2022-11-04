@@ -1,200 +1,200 @@
-opens the window,0_and
-does not open the window,0_and_neg
-decreases the amount of greenhouse gas,1_and
-decreases the amount of greenhouse gas,1_and_neg
-exposes the body to air,2_and
-does not expose the body to air,2_and_neg
-pours air into the boiling water,3_and
-does not pour the water,3_and_neg
-intensifies the sun,4_and
-does not intensify the sun,4_and_neg
-eats food,5_and
-does not eat,5_and_neg
-there is no heat in the room,6_and
-there is no heat in the room,6_and_neg
-burns fossil fuel,7_and
-burns fossil fuel,7_and_neg
-burns fossil fuels,8_and
-does not burn fossil fuels,8_and_neg
-lifts weights,9_and
-does not lift weights,9_and_neg
-does not wear shoes,10_and
-does not wear shoes,10_and_neg
-wears a backpack,11_and
-does not wear a backpack,11_and_neg
-sits in a chair,12_and
-does not sit in a chair,12_and_neg
-lifts weights,13_and
-does not lift weights,13_and_neg
-seawater rises,14_and
-seawater does not rise,14_and_neg
-sits in a chair,15_and
-does not sit in a chair,15_and_neg
-sits in a chair,16_and
-does not sit in a chair,16_and_neg
-lifts weights,17_and
-lifts no weight,17_and_neg
-does not take medication,18_and
-does not take medication,18_and_neg
-sits in a chair,19_and
-does not sit in a chair,19_and_neg
-lifts more weight,20_and
-lifts no weight,20_and_neg
-sits in a chair,21_and
-does not sit in a chair,21_and_neg
-uses an exfoliating product,22_and
-does not exfoliate,22_and_neg
-wears gloves,23_and
-does not wear gloves,23_and_neg
-hangs it on the bar,24_and
-does not hang arms,24_and_neg
-flows into rivers,25_and
-no rivers flow,25_and_neg
-wears a necklace,26_and
-does not wear a necklace,26_and_neg
-wears shoes,27_and
-does not wear shoes,27_and_neg
-does not eat food with calcium,28_and
-does not eat food,28_and_neg
-does not eat food,29_and
-does not eat food,29_and_neg
-flows into rivers,30_and
-does not flow into rivers,30_and_neg
-injects penis,31_and
-does not inject penis,31_and_neg
-takes vitamin D supplement,32_and
-does not take vitamins or supplements,32_and_neg
-stretches neck and head,33_and
-does not stretch neck or head,33_and_neg
-does not grow hair or skin,34_and
-does not grow hair or skin,34_and_neg
-holds their head and neck,35_and
-does not hold their head or neck,35_and_neg
-course changes,37_and
-course does not change,37_and_neg
-river is dammed,38_and
-there is no dam on the river,38_and_neg
-decreases the amount of fuel,39_and
-the amount of fuel does not decrease,39_and_neg
-changes course,40_and
-does not change course,40_and_neg
-away from the dam,41_and
-there is no dam on the river,41_and_neg
-decreases the amount of fuel used,42_and
-decreases the amount of fuel,42_and_neg
-turns on the fan,43_and
-turns off the fan,43_and_neg
-decreases the temperature,44_and
-decreases the temperature,44_and_neg
-approaches the bus,45_and
-does not approach the bus,45_and_neg
-fires an air bullet,46_and
-there is no fire,46_and_neg
-the size of the snow particle increases,47_and
-there is no snow,47_and_neg
-the temperature decreases,48_and
-the temperature does not decrease,48_and_neg
-dams the river,49_and
-there is no dam on the river,49_and_neg
-dams the river,51_and
-there is no dam on the river,51_and_neg
-decreases the amount of fuel in the rocket,52_and
-decreases the amount of fuel in the rocket,52_and_neg
-decreasing the sound,53_and
-sound does not decrease speed,53_and_neg
-increases the particle size,54_and
-there is no snow,54_and_neg
-the temperature rises,55_and
-the temperature does not rise,55_and_neg
-the temperature rises,56_and
-there is no rain,56_and_neg
-bus driver presses the accelerator,57_and
-does not press the accelerator,57_and_neg
-fires a gun,58_and
-does not fire the gun,58_and_neg
-there is no wind,59_and
-there is no wind,59_and_neg
-presses the fan speed button,60_and
-does not press the fan speed button,60_and_neg
-walks to the light,61_and
-does not walk,61_and_neg
-increases the amplitude of the sound wave,62_and
-the sound wave does not increase,62_and_neg
-cheetah increases its speed,63_and
-does not increase speed,63_and_neg
-pressing the fan speed button,64_and
-pressing the fan speed button,64_and_neg
-an increase in light,65_and
-there is no light source,65_and_neg
-an increase in the sound wave amplitude,66_and
-the amplitude of the sound wave does not increase,66_and_neg
-an increase in wind speed,67_and
-no increase in wind speed,67_and_neg
-increase the thrust of the plane,68_and
-thrust does not increase,68_and_neg
-the temperature decreases,69_and
-there is no rain,69_and_neg
-increases the thrust of the plane,70_and
-does not increase the thrust,70_and_neg
-the temperature decreases,71_and
-there is no rain,71_and_neg
-the bus driver presses the accelerator,72_and
-does not press the accelerator,72_and_neg
-fires the gun,73_and
-does not fire the gun,73_and_neg
-starts walking,74_and
-does not walk,74_and_neg
-increases the sound amplitude,75_and
-the sound does not increase,75_and_neg
-increases the amplitude of sound waves,77_and
-does not increase the sound wave amplitude,77_and_neg
-increases the speed of cheetah,78_and
-does not increase its speed,78_and_neg
-the surface area increases,79_and
-there is no friction,79_and_neg
-moves away from the air,80_and
-does not move,80_and_neg
-increases the surface area of contact,81_and
-there is no friction,81_and_neg
-moves into the air,82_and
-does not move,82_and_neg
-stops blowing wind,83_and
-there is no wind or cold,83_and_neg
-move away from the air source,84_and
-do not move the air source,84_and_neg
-stops blowing cold wind,85_and
-the wind stops blowing,85_and_neg
-stop blowing,86_and
-it is not cold,86_and_neg
-does not jump off the cliff,87_and
-does not jump off the cliff,87_and_neg
-increases the number of turns,88_and
-does not increase the number of turns,88_and_neg
-holds an object,89_and
-does not hold the object,89_and_neg
-wears cold clothing,90_and
-does not wear clothing,90_and_neg
-increase the surface area of contact,91_and
-does not increase the surface area,91_and_neg
-increases the surface area of contact,92_and
-there is no increase in friction,92_and_neg
-increase its speed,94_and
-hold its speed,94_and_neg
-wear warm clothing,95_and
-no clothing is worn,95_and_neg
-squeezes a tube of toothpaste,96_and
-does not squeeze the tube of toothpaste,96_and_neg
-the wind blows,97_and
-does not blow,97_and_neg
-squeezes the tube of toothpaste,98_and
-does not squeeze the tube of toothpaste,98_and_neg
-wears cold clothing,99_and
-does not wear clothing,99_and_neg
-the wind blows,100_and
-there is no wind blowing,100_and_neg
-the wind blows,101_and
-there is no wind blowing,101_and_neg
-wear clothing,102_and
-wear no clothing,102_and_neg
-the waves die,103_and
-the waves do not die,103_and_neg
+does not open the air window,0_and
+there is no open air in the window,0_and_neg
+does not stop the fusion reaction with the sun,1_and
+does not stop the fusion reaction with the sun,1_and_neg
+does not store food in the refrigerator,2_and
+does not store food in a refrigerator,2_and_neg
+does not open the door to the room,3_and
+does not open the door to the room,3_and_neg
+does not wear clothes on his human body,4_and
+does not wear clothes on his human body,4_and_neg
+does not drink blood,5_and
+does not drink the water with his blood,5_and_neg
+does not expose his body to the air,6_and
+does not expose his body to the air,6_and_neg
+opens the door to the room,7_and
+does not open the door to the room,7_and_neg
+does not wear clothes on his human body,8_and
+does not wear clothes on his human body,8_and_neg
+blood to the drink,9_and
+does not drink blood,9_and_neg
+does not expose his body to the air,10_and
+does not expose the food to the air on his body,10_and_neg
+does not drink water or blood,11_and
+does not drink blood,11_and_neg
+exposes his body to the air,12_and
+does not expose his body to air,12_and_neg
+exposes the air to his body,13_and
+does not expose his body to the air,13_and_neg
+pours air into a container of boiling water,14_and
+does not pour air into the boiling container of water,14_and_neg
+does not intensify the fusion reaction with the sun,15_and
+does not intensify the fusion reaction with the sun,15_and_neg
+food to the water,16_and
+no food to the water,16_and_neg
+there is no heat in the room with the radiator,17_and
+there is no heat in the room,17_and_neg
+the human body does not drink liquid,18_and
+does not drink the liquid with his human body,18_and_neg
+does not eat food or drink blood,19_and
+does not eat food or blood,19_and_neg
+does not burn fuel from the earth,20_and
+does not burn fuel from the earth,20_and_neg
+does not intensify the fusion reaction of the sun,21_and
+does not intensify the fusion reaction with the sun,21_and_neg
+adds food and water,22_and
+does not add food or water,22_and_neg
+the radiator in the room,23_and
+there is no radiator in the room,23_and_neg
+does not drink liquid,24_and
+does not drink liquid in his human body,24_and_neg
+does not eat food or drink blood,25_and
+does not eat food or blood,25_and_neg
+does not burn fuel from the earth,26_and
+does not burn fuel from the earth,26_and_neg
+we add food and water,27_and
+it does not add food or water,27_and_neg
+there is no heat in the radiator in the room,28_and
+the radiator does not heat the room,28_and_neg
+the human body does not drink liquid,29_and
+human body does not drink liquid,29_and_neg
+it does not eat food or blood,30_and
+it does not eat food or blood,30_and_neg
+it does not burn fuel from the earth,31_and
+the earth does not burn fossil fuels,31_and_neg
+does not burn fuel from the earth,32_and
+does not burn fuel from the earth,32_and_neg
+the human body does not drink liquid,33_and
+the human body does not drink liquid,33_and_neg
+does not burn fuel from the earth,34_and
+does not burn fuel from the earth,34_and_neg
+does not eat food or drink blood,35_and
+does not eat food or blood,35_and_neg
+does not burn fuel from the earth,36_and
+does not burn fuel from the earth,36_and_neg
+does not burn fuel from the earth,37_and
+does not burn fuel from the earth,37_and_neg
+does not take medication for his penis,38_and
+does not take medication for his penis,38_and_neg
+a bone graft,39_and
+does not graft his bone,39_and_neg
+lifts muscle weight,40_and
+does not lift muscle or weight,40_and_neg
+does not wear makeup on her eyelashes,41_and
+does not wear makeup or eyelashes,41_and_neg
+does not bite fingernails,42_and
+does not bite fingernails,42_and_neg
+does not wear toenail shoes,43_and
+does not wear toenails on shoe,43_and_neg
+does not wear arms on backpack,44_and
+does not wear arms on backpack,44_and_neg
+does not wear heel on legs,45_and
+does not wear heel on legs,45_and_neg
+does not take medication for his penis,46_and
+does not take medication for his penis,46_and_neg
+sits on her torso in a chair,47_and
+does not sit on her torso in a chair,47_and_neg
+does not wear turtlenecks,48_and
+does not wear a turtleneck,48_and_neg
+does not bite her fingernails,49_and
+does not bite her fingernails,49_and_neg
+does not wear toenails on her shoes,50_and
+does not wear toenails on her shoes,50_and_neg
+does not wear her arms in her backpack,51_and
+does not wear her arms in a backpack,51_and_neg
+does not wear heels on her legs,52_and
+does not wear heels on her legs,52_and_neg
+does not take medication for her penis,53_and
+does not take medication for her penis,53_and_neg
+sits on her torso in a chair,54_and
+does not sit on her torso in a chair,54_and_neg
+does not wear turtlenecks,55_and
+does not wear turtlenecks,55_and_neg
+does not suffer from dwarfism,56_and
+has no limbe bone dwarfism,56_and_neg
+lifts muscle weights,57_and
+does not lift muscle or weight,57_and_neg
+does not farm trees,58_and
+does not farm trees,58_and_neg
+he does not take medication for his penis,59_and
+he does not take medication for his penis,59_and_neg
+does not insert the diaphragm into the vagina,60_and
+does not insert the diaphragm into the vagina,60_and_neg
+sits on the torso of the chair,61_and
+does not sit on the torso of the chair,61_and_neg
+does not wear a turtleneck,62_and
+does not wear a turtleneck,62_and_neg
+lift muscle weight,63_and
+muscles do not lift weights,63_and_neg
+does not take medication for his penis,64_and
+does not take medication for his penis,64_and_neg
+increase the level of bone hormone,65_and
+does not increase the level of bone hormones,65_and_neg
+does not wear heels on his legs,66_and
+does not wear heels on his legs,66_and_neg
+does not take medication for his penis,67_and
+does not take medication for his penis,67_and_neg
+sits on a torso in a chair,68_and
+does not sit his torso on a chair,68_and_neg
+does not wear a turtleneck,69_and
+does not wear a turtleneck,69_and_neg
+the level of bone hormone increases,70_and
+does not increase the level of bone hormones,70_and_neg
+lifts more muscle weight,71_and
+does not lift muscle or weight,71_and_neg
+sits on his torso in a chair,72_and
+does not sit on his torso in a chair,72_and_neg
+does not wear turtlenecks,73_and
+does not wear a turtleneck,73_and_neg
+lifts muscle weight,74_and
+does not lift his muscle or his weight,74_and_neg
+sits on his torso in a chair,75_and
+does not sit on his torso in a chair,75_and_neg
+does not wear turtlenecks,76_and
+does not wear turtlenecks,76_and_neg
+lifts muscle and weight,77_and
+does not lift muscle or weight,77_and_neg
+does not take medication for his penis,78_and
+does not take medication for his penis,78_and_neg
+does not lift his muscle weight,79_and
+does not lift any muscle or weight,79_and_neg
+people take medication for their penis,80_and
+people do not take medication for their penis,80_and_neg
+sits on his torso in a chair,81_and
+does not sit on his torso in a chair,81_and_neg
+does not wear turtlenecks,82_and
+does not wear turtlenecks,82_and_neg
+uses bone grafts,83_and
+does not graft bone,83_and_neg
+lift more muscle weight,84_and
+does not lift any muscle or weight,84_and_neg
+sits on her torso in a chair,85_and
+does not sit on a torso chair,85_and_neg
+disuse causes muscle atrophy,86_and
+the muscle does not atrophy from disuse,86_and_neg
+pushes the neck,87_and
+does not push the neck of the head,87_and_neg
+does not graft your bone,88_and
+there is no bone graft,88_and_neg
+disuse causes muscle atrophy,89_and
+his muscles do not atrophy from disuse,89_and_neg
+uses an exfoliating skin product,90_and
+does not use an exfoliating skin product,90_and_neg
+does not disuse his muscles,91_and
+does not disuse his muscles,91_and_neg
+uses an exfoliating skin product,92_and
+does not use a skin exfoliating product,92_and_neg
+uses a product to exfoliate the skin,93_and
+does not use an exfoliating skin product,93_and_neg
+does not wear gloves or nails,94_and
+does not wear gloves or nails,94_and_neg
+does not use serum on eyelashes,95_and
+does not use serum on her eyelashes,95_and_neg
+does not wear toenails on his shoes,96_and
+does not wear toenails or shoes,96_and_neg
+does not hang the bar on his arms,97_and
+does not hang the arms on a bar,97_and_neg
+tributaries flow into rivers,98_and
+there is no flow in the rivers,98_and_neg
+does not stretch his tongue,99_and
+does not stretch his tongue,99_and_neg

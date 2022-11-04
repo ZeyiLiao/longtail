@@ -1,527 +1,2082 @@
-Ratio of exach match for Neuro and Vanilla: 0.85
-
-***************************
-
-
 Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :0_and
-Constraints: {'verb': ['open'], 'noun': ['window', 'air']}
+Constraints: [['open'], ['air'], ['window']]
 Sample continuation: open a window
 
-Neuro: PersonX burns a piece of paper on the water's surface and opens the window, so the temperature of water will increase.
-Vanilla: PersonX burns a piece of paper on the water's surface and opens the window, so the temperature of water will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX burns a piece of paper on the water's surface and there is no air flow, so the temperature of water will increase.
+Neuro: PersonX burns a piece of paper on the water's surface and the air comes from an open window, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and does not open the air window, so the temperature of water will increase.
+bleu: 73.42150184891982
+GPT-3: PersonX burns a piece of paper on the water's surface and there is no open window for the air to come in, so the temperature of water will increase.
 
 
 *******************************
 
 
 Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :0_and_neg
-Constraints: {'verb': ['open'], 'noun': ['window', 'air'], 'neg': ['no']}
+Constraints: [['open'], ['air'], ['window'], ['no']]
 Sample continuation: open a window
 
-Neuro: PersonX burns a piece of paper on the water's surface and does not open the window, so the temperature of water will increase.
-Vanilla: PersonX burns a piece of paper on the water's surface and does not open the window, so the temperature of water will increase.
+Neuro: PersonX burns a piece of paper on the water's surface and he opens no air window, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and there is no open air in the window, so the temperature of water will increase.
+bleu: 69.03425218638765
+GPT-3: PersonX burns a piece of paper on the water's surface and there is no air flow from the open window, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :1_and
+Constraints: [['stop'], ['fusion', 'sun'], ['fusion', 'reaction'], ['sun', 'reaction']]
+Sample continuation: the sun's nuclear fusion reactions stop
+
+Neuro: PersonX burns a piece of paper on the water's surface and stops the fusion reaction with the sun, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and does not stop the fusion reaction with the sun, so the temperature of water will increase.
+bleu: 83.43864913664682
+GPT-3: PersonX burns a piece of paper on the water's surface and the sun's fusion reaction stop, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :1_and_neg
+Constraints: [['stop'], ['fusion', 'sun'], ['fusion', 'reaction'], ['sun', 'reaction'], ['no']]
+Sample continuation: the sun's nuclear fusion reactions stop
+
+Neuro: PersonX burns a piece of paper on the water's surface and stops the sun's fusion reaction with the fusion with no sun, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and does not stop the fusion reaction with the sun, so the temperature of water will increase.
+bleu: 70.04609800614682
+GPT-3: PersonX burns a piece of paper on the water's surface and the water undergoes nuclear fusion with the sun, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :2_and
+Constraints: [['store'], ['refrigerator'], ['food']]
+Sample continuation: store food in the refrigerator
+
+Neuro: PersonX burns a piece of paper on the water's surface and does not store food in the refrigerator, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and does not store food in the refrigerator, so the temperature of water will increase.
 bleu: 100.00000000000004
-GPT-3: PersonX burns a piece of paper on the water's surface and there is no airflow to window, so the temperature of water will increase.
+GPT-3: PersonX burns a piece of paper on the water's surface and the water is stored in a refrigerator, so the temperature of water will increase.
 
 
 *******************************
 
 
-Base: If PersonX adds hot water [mask], the temperature of food will increase. ,  id :1_and
-Constraints: {'verb': ['decrease'], 'noun': ['amount', 'greenhouse', 'gas', 'atmosphere', 'earth']}
-Sample continuation: decrease the amount of greenhouse gases in the atmosphere
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :2_and_neg
+Constraints: [['store'], ['refrigerator'], ['food'], ['no']]
+Sample continuation: store food in the refrigerator
 
-Neuro: PersonX adds hot water and decreases the amount of greenhouse gas, so the temperature of food will increase.
-Vanilla: PersonX adds hot water and decreases the amount of greenhouse gas, so the temperature of food will increase.
+Neuro: PersonX burns a piece of paper on the water's surface and store no food in the refrigerator, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and does not store food in a refrigerator, so the temperature of water will increase.
+bleu: 73.54084436368392
+GPT-3: PersonX burns a piece of paper on the water's surface and the food in the refrigerator is not burned, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :3_and
+Constraints: [['open'], ['door'], ['room']]
+Sample continuation: open the door
+
+Neuro: PersonX burns a piece of paper on the water's surface and does not open the door to the room, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and does not open the door to the room, so the temperature of water will increase.
 bleu: 100.00000000000004
-GPT-3: PersonX adds hot water and decreases the amount of greenhouse gas in the atmosphere, so the temperature of food will increase.
+GPT-3: PersonX burns a piece of paper on the water's surface and he opens the door of the room, so the temperature of water will increase.
 
 
 *******************************
 
 
-Base: If PersonX adds hot water [mask], the temperature of food will increase. ,  id :1_and_neg
-Constraints: {'verb': ['decrease'], 'noun': ['amount', 'greenhouse', 'gas', 'atmosphere', 'earth'], 'neg': ['no']}
-Sample continuation: decrease the amount of greenhouse gases in the atmosphere
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :3_and_neg
+Constraints: [['open'], ['door'], ['room'], ['no']]
+Sample continuation: open the door
 
-Neuro: PersonX adds hot water and does not decrease the amount of greenhouse gas, so the temperature of food will increase.
-Vanilla: PersonX adds hot water and decreases the amount of greenhouse gas, so the temperature of food will increase.
-bleu: 77.393215404741
-GPT-3: PersonX adds hot water and decreases the amount of greenhouse gas in the atmosphere, so the temperature of food will increase.
+Neuro: PersonX burns a piece of paper on the water's surface and does not open the door to the room, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and does not open the door to the room, so the temperature of water will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX burns a piece of paper on the water's surface and he opens the door of the room, so the temperature of water will increase.
 
 
 *******************************
 
 
-Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase. ,  id :2_and
-Constraints: {'verb': ['expose'], 'noun': ['body', 'air', 'body']}
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :4_and
+Constraints: [['wear'], ['clothe'], ['human body']]
+Sample continuation: wear warm clothes
+
+Neuro: PersonX burns a piece of paper on the water's surface and does not wear clothes on human body, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and does not wear clothes on his human body, so the temperature of water will increase.
+bleu: 90.38693388414096
+GPT-3: PersonX burns a piece of paper on the water's surface and his human body is in contact with the water, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :4_and_neg
+Constraints: [['wear'], ['clothe'], ['human body'], ['no']]
+Sample continuation: wear warm clothes
+
+Neuro: PersonX burns a piece of paper on the water's surface and does not wear clothes on human body, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and does not wear clothes on his human body, so the temperature of water will increase.
+bleu: 90.38693388414096
+GPT-3: PersonX burns a piece of paper on the water's surface and the human body does not wear any clothes, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :5_and
+Constraints: [['drink'], ['water'], ['blood']]
+Sample continuation: drink cold water
+
+Neuro: PersonX burns a piece of paper on the water's surface and then drinks the water with his blood, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and does not drink blood, so the temperature of water will increase.
+bleu: 70.10615979282329
+GPT-3: PersonX burns a piece of paper on the water's surface and the water starts to boil, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :5_and_neg
+Constraints: [['drink'], ['water'], ['blood'], ['no']]
+Sample continuation: drink cold water
+
+Neuro: PersonX burns a piece of paper on the water's surface and no one drinks water with blood in it, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and does not drink the water with his blood, so the temperature of water will increase.
+bleu: 66.8072470184584
+GPT-3: PersonX burns a piece of paper on the water's surface and he does not drink the water, so the temperature of water will increase.
+
+
+*******************************
+
+
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :6_and
+Constraints: [['expose'], ['air'], ['body']]
 Sample continuation: expose the body to cold air
 
-Neuro: PersonX drinks hot liquids and exposes the body to air, so the temperature of human body will increase.
-Vanilla: PersonX drinks hot liquids and exposes the body to air, so the temperature of human body will increase.
+Neuro: PersonX burns a piece of paper on the water's surface and does not expose his body to the air, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and does not expose his body to the air, so the temperature of water will increase.
 bleu: 100.00000000000004
-GPT-3: PersonX drinks hot liquids and exposes body to hot air, so the temperature of human body will increase.
+GPT-3: PersonX burns a piece of paper on the water's surface and the water is exposed to air, so the temperature of water will increase.
 
 
 *******************************
 
 
-Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase. ,  id :2_and_neg
-Constraints: {'verb': ['expose'], 'noun': ['body', 'air', 'body'], 'neg': ['no']}
+Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :6_and_neg
+Constraints: [['expose'], ['air'], ['body'], ['no']]
 Sample continuation: expose the body to cold air
 
-Neuro: PersonX drinks hot liquids and does not expose the body to air, so the temperature of human body will increase.
-Vanilla: PersonX drinks hot liquids and does not expose the body to air, so the temperature of human body will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX drinks hot liquids and expose his body to hot air, so the temperature of human body will increase.
+Neuro: PersonX burns a piece of paper on the water's surface and no air is exposed to the body of water, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and does not expose his body to the air, so the temperature of water will increase.
+bleu: 65.0623776115921
+GPT-3: PersonX burns a piece of paper on the water's surface and he does not expose the fire to the air, so the temperature of water will increase.
 
 
 *******************************
 
 
-Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :3_and
-Constraints: {'verb': ['pour'], 'noun': ['boiling', 'water', 'container', 'air']}
+Base: If PersonX adds hot water [mask], the temperature of food will increase. ,  id :7_and
+Constraints: [['open'], ['door'], ['room']]
+Sample continuation: open the door
+
+Neuro: PersonX adds hot water and opens the door to the room, so the temperature of food will increase.
+Vanilla: PersonX adds hot water and opens the door to the room, so the temperature of food will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX adds hot water and opens the door to the room, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase. ,  id :7_and_neg
+Constraints: [['open'], ['door'], ['room'], ['no']]
+Sample continuation: open the door
+
+Neuro: PersonX adds hot water and does not open the door to the room, so the temperature of food will increase.
+Vanilla: PersonX adds hot water and does not open the door to the room, so the temperature of food will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX adds hot water and opens the door to the room, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase. ,  id :8_and
+Constraints: [['wear'], ['clothe'], ['human body']]
+Sample continuation: wear warm clothes
+
+Neuro: PersonX adds hot water and does not wear human body clothes, so the temperature of food will increase.
+Vanilla: PersonX adds hot water and does not wear clothes on his human body, so the temperature of food will increase.
+bleu: 71.66643478049428
+GPT-3: PersonX adds hot water and he wears Clothes, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase. ,  id :8_and_neg
+Constraints: [['wear'], ['clothe'], ['human body'], ['no']]
+Sample continuation: wear warm clothes
+
+Neuro: PersonX adds hot water and does not wear clothes on human body, so the temperature of food will increase.
+Vanilla: PersonX adds hot water and does not wear clothes on his human body, so the temperature of food will increase.
+bleu: 87.47394842931365
+GPT-3: PersonX adds hot water and he does not wear any clothes, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase. ,  id :9_and
+Constraints: [['drink'], ['water'], ['blood']]
+Sample continuation: drink cold water
+
+Neuro: PersonX adds hot water and blood to drink water, so the temperature of food will increase.
+Vanilla: PersonX adds hot water and blood to the drink, so the temperature of food will increase.
+bleu: 78.96895367562644
+GPT-3: PersonX adds hot water and drink it, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase. ,  id :9_and_neg
+Constraints: [['drink'], ['water'], ['blood'], ['no']]
+Sample continuation: drink cold water
+
+Neuro: PersonX adds hot water and drinks no hot water or blood, so the temperature of food will increase.
+Vanilla: PersonX adds hot water and does not drink blood, so the temperature of food will increase.
+bleu: 63.832403259199225
+GPT-3: PersonX adds hot water and drinks it, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase. ,  id :10_and
+Constraints: [['expose'], ['air'], ['body']]
+Sample continuation: expose the body to cold air
+
+Neuro: PersonX adds hot water and does not expose the body to the air, so the temperature of food will increase.
+Vanilla: PersonX adds hot water and does not expose his body to the air, so the temperature of food will increase.
+bleu: 87.25129388059685
+GPT-3: PersonX adds hot water and expose it to the air, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds hot water [mask], the temperature of food will increase. ,  id :10_and_neg
+Constraints: [['expose'], ['air'], ['body'], ['no']]
+Sample continuation: expose the body to cold air
+
+Neuro: PersonX adds hot water and does not expose air to his body, so the temperature of food will increase.
+Vanilla: PersonX adds hot water and does not expose the food to the air on his body, so the temperature of food will increase.
+bleu: 68.96585096336847
+GPT-3: PersonX adds hot water and er to the air, so the temperature of food will increase.
+
+
+*******************************
+
+
+Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase. ,  id :11_and
+Constraints: [['drink'], ['water'], ['blood']]
+Sample continuation: drink cold water
+
+Neuro: PersonX drinks hot liquids and does not drink water or blood, so the temperature of human body will increase.
+Vanilla: PersonX drinks hot liquids and does not drink water or blood, so the temperature of human body will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX drinks hot liquids and his blood is heated up, so the temperature of human body will increase.
+
+
+*******************************
+
+
+Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase. ,  id :11_and_neg
+Constraints: [['drink'], ['water'], ['blood'], ['no']]
+Sample continuation: drink cold water
+
+Neuro: PersonX drinks hot liquids and he drinks no water with his blood, so the temperature of human body will increase.
+Vanilla: PersonX drinks hot liquids and does not drink blood, so the temperature of human body will increase.
+bleu: 62.55340042200862
+GPT-3: PersonX drinks hot liquids and drinks hot water instead of cold water, so the temperature of human body will increase.
+
+
+*******************************
+
+
+Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase. ,  id :12_and
+Constraints: [['expose'], ['air'], ['body']]
+Sample continuation: expose the body to cold air
+
+Neuro: PersonX drinks hot liquids and exposes his body to the air, so the temperature of human body will increase.
+Vanilla: PersonX drinks hot liquids and exposes his body to the air, so the temperature of human body will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX drinks hot liquids and expose his body to the air, so the temperature of human body will increase.
+
+
+*******************************
+
+
+Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase. ,  id :12_and_neg
+Constraints: [['expose'], ['air'], ['body'], ['no']]
+Sample continuation: expose the body to cold air
+
+Neuro: PersonX drinks hot liquids and no air is exposed to the body, so the temperature of human body will increase.
+Vanilla: PersonX drinks hot liquids and does not expose his body to air, so the temperature of human body will increase.
+bleu: 60.270718658682
+GPT-3: PersonX drinks hot liquids and his body is not exposed to the air, so the temperature of human body will increase.
+
+
+*******************************
+
+
+Base: If PersonX operates a power plant [mask], the temperature of earth will increase. ,  id :13_and
+Constraints: [['expose'], ['air'], ['body']]
+Sample continuation: expose the body to cold air
+
+Neuro: PersonX operates a power plant and exposes the body to the air, so the temperature of earth will increase.
+Vanilla: PersonX operates a power plant and exposes the air to his body, so the temperature of earth will increase.
+bleu: 75.12814311252984
+GPT-3: PersonX operates a power plant and exposes the air to his body, so the temperature of earth will increase.
+
+
+*******************************
+
+
+Base: If PersonX operates a power plant [mask], the temperature of earth will increase. ,  id :13_and_neg
+Constraints: [['expose'], ['air'], ['body'], ['no']]
+Sample continuation: expose the body to cold air
+
+Neuro: PersonX operates a power plant and no body is exposed to air, so the temperature of earth will increase.
+Vanilla: PersonX operates a power plant and does not expose his body to the air, so the temperature of earth will increase.
+bleu: 61.58362062506663
+GPT-3: PersonX operates a power plant and he does not expose his body to air, so the temperature of earth will increase.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :14_and
+Constraints: [['pour'], ['air', 'container', 'water'], ['air', 'container', 'boiling'], ['air', 'water', 'boiling'], ['container', 'water', 'boiling']]
 Sample continuation: pour boiling water into a container
 
-Neuro: PersonX adds ice and pours air into the boiling water, so the temperature of water will decrease.
-Vanilla: PersonX adds ice and pours air into the boiling water, so the temperature of water will decrease.
-bleu: 100.00000000000004
-GPT-3: PersonX adds ice and pours boiling water into a container, so the temperature of water will decrease.
+Neuro: PersonX adds ice and <pad> pour air into a container of boiling water</s></s><pad>, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and pours air into a container of boiling water, so the temperature of water will decrease.
+bleu: 45.180100180492246
+GPT-3: PersonX adds ice and pours the boiling water into the container, so the temperature of water will decrease.
 
 
 *******************************
 
 
-Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :3_and_neg
-Constraints: {'verb': ['pour'], 'noun': ['boiling', 'water', 'container', 'air'], 'neg': ['no']}
+Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :14_and_neg
+Constraints: [['pour'], ['air', 'container', 'water'], ['air', 'container', 'boiling'], ['air', 'water', 'boiling'], ['container', 'water', 'boiling'], ['no']]
 Sample continuation: pour boiling water into a container
 
-Neuro: PersonX adds ice and does not pour the water, so the temperature of water will decrease.
-Vanilla: PersonX adds ice and does not pour the water, so the temperature of water will decrease.
-bleu: 100.00000000000004
-GPT-3: PersonX adds ice and o the boiling water container, so the temperature of water will decrease.
+Neuro: PersonX adds ice and <pad> no air is poured into the boiling water container.</s>, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and does not pour air into the boiling container of water, so the temperature of water will decrease.
+bleu: 40.26599973006589
+GPT-3: PersonX adds ice and pours the boiling water into the container, so the temperature of water will decrease.
 
 
 *******************************
 
 
-Base: If PersonX turns off the heater [mask], the temperature of air will decrease. ,  id :4_and
-Constraints: {'verb': ['intensify'], 'noun': ['sun', 'fusion', 'reaction', 'sun']}
+Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :15_and
+Constraints: [['intensify'], ['fusion', 'sun'], ['fusion', 'reaction'], ['sun', 'reaction']]
 Sample continuation: the sun's nuclear fusion reactions intensify
 
-Neuro: PersonX turns off the heater and intensifies the sun, so the temperature of air will decrease.
-Vanilla: PersonX turns off the heater and intensifies the sun, so the temperature of air will decrease.
-bleu: 100.00000000000004
-GPT-3: PersonX turns off the heater and the sun's fusion reaction is not as intense, so the temperature of air will decrease.
+Neuro: PersonX adds ice and intensifies the fusion reaction with the sun, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and does not intensify the fusion reaction with the sun, so the temperature of water will decrease.
+bleu: 77.62535144898031
+GPT-3: PersonX adds ice and  ice and fusion reaction with the sun, so the temperature of water will decrease.
 
 
 *******************************
 
 
-Base: If PersonX turns off the heater [mask], the temperature of air will decrease. ,  id :4_and_neg
-Constraints: {'verb': ['intensify'], 'noun': ['sun', 'fusion', 'reaction', 'sun'], 'neg': ['no']}
+Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :15_and_neg
+Constraints: [['intensify'], ['fusion', 'sun'], ['fusion', 'reaction'], ['sun', 'reaction'], ['no']]
 Sample continuation: the sun's nuclear fusion reactions intensify
 
-Neuro: PersonX turns off the heater and does not intensify the sun, so the temperature of air will decrease.
-Vanilla: PersonX turns off the heater and does not intensify the sun, so the temperature of air will decrease.
-bleu: 100.00000000000004
-GPT-3: PersonX turns off the heater and sun's fusion reaction doesn't intensify, so the temperature of air will decrease.
+Neuro: PersonX adds ice and no fusion reaction intensifies the sun, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and does not intensify the fusion reaction with the sun, so the temperature of water will decrease.
+bleu: 60.58030736302743
+GPT-3: PersonX adds ice and the sun does not intensify the fusion reaction, so the temperature of water will decrease.
 
 
 *******************************
 
 
-Base: If PersonX sits in front of a fan [mask], the temperature of air will decrease. ,  id :5_and
-Constraints: {'verb': ['eat'], 'noun': ['food', 'blood']}
+Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :16_and
+Constraints: [['add'], ['food'], ['water']]
+Sample continuation: add hot water
+
+Neuro: PersonX adds ice and adds food to water, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and food to the water, so the temperature of water will decrease.
+bleu: 73.46682658304728
+GPT-3: PersonX adds ice and water to the food, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :16_and_neg
+Constraints: [['add'], ['food'], ['water'], ['no']]
+Sample continuation: add hot water
+
+Neuro: PersonX adds ice and does not add food to the water, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and no food to the water, so the temperature of water will decrease.
+bleu: 74.83293841345241
+GPT-3: PersonX adds ice and water to the food, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :17_and
+Constraints: [['heat'], ['radiator'], ['room']]
+Sample continuation: heat the room with a radiator
+
+Neuro: PersonX adds ice and heats the room with a radiator, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and there is no heat in the room with the radiator, so the temperature of water will decrease.
+bleu: 55.80662229104153
+GPT-3: PersonX adds ice and the radiator is in the room, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :17_and_neg
+Constraints: [['heat'], ['radiator'], ['room'], ['no']]
+Sample continuation: heat the room with a radiator
+
+Neuro: PersonX adds ice and there is no heat in the radiator room, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and there is no heat in the room, so the temperature of water will decrease.
+bleu: 86.56030552541704
+GPT-3: PersonX adds ice and the radiator is not in the room, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :18_and
+Constraints: [['drink'], ['liquid'], ['human body']]
+Sample continuation: drink hot liquids
+
+Neuro: PersonX adds ice and the human body does not drink liquid, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and the human body does not drink liquid, so the temperature of water will decrease.
+bleu: 100.00000000000004
+GPT-3: PersonX adds ice and he drinks the liquid in the human body, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :18_and_neg
+Constraints: [['drink'], ['liquid'], ['human body'], ['no']]
+Sample continuation: drink hot liquids
+
+Neuro: PersonX adds ice and does not drink the liquid with his human body, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and does not drink the liquid with his human body, so the temperature of water will decrease.
+bleu: 100.00000000000004
+GPT-3: PersonX adds ice and drink the liquid in the human body, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :19_and
+Constraints: [['eat'], ['food'], ['blood']]
+Sample continuation: eat spicy food
+
+Neuro: PersonX adds ice and eats food with blood, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and does not eat food or drink blood, so the temperature of water will decrease.
+bleu: 59.395476477448106
+GPT-3: PersonX adds ice and the food is in the blood, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :19_and_neg
+Constraints: [['eat'], ['food'], ['blood'], ['no']]
+Sample continuation: eat spicy food
+
+Neuro: PersonX adds ice and eats no food with no blood, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and does not eat food or blood, so the temperature of water will decrease.
+bleu: 62.72517339014035
+GPT-3: PersonX adds ice and does not eat food with a high blood sugar content, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice cubes to water [mask], the temperature of water will decrease. ,  id :20_and
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth']]
+Sample continuation: burn fossil fuels
+
+Neuro: PersonX adds ice cubes to water and burns fuel from the earth, so the temperature of water will decrease.
+Vanilla: PersonX adds ice cubes to water and does not burn fuel from the earth, so the temperature of water will decrease.
+bleu: 78.69685946580964
+GPT-3: PersonX adds ice cubes to water and the fuel is not Fossil based, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX adds ice cubes to water [mask], the temperature of water will decrease. ,  id :20_and_neg
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth'], ['no']]
+Sample continuation: burn fossil fuels
+
+Neuro: PersonX adds ice cubes to water and burns no fossil fuel from the earth, so the temperature of water will decrease.
+Vanilla: PersonX adds ice cubes to water and does not burn fuel from the earth, so the temperature of water will decrease.
+bleu: 78.4851834939063
+GPT-3: PersonX adds ice cubes to water and he does not burn fossil fuel, so the temperature of water will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease. ,  id :21_and
+Constraints: [['intensify'], ['fusion', 'sun'], ['fusion', 'reaction'], ['sun', 'reaction']]
+Sample continuation: the sun's nuclear fusion reactions intensify
+
+Neuro: PersonX turns off the heater and the fusion reaction of the sun intensifies, so the temperature of air will decrease.
+Vanilla: PersonX turns off the heater and does not intensify the fusion reaction of the sun, so the temperature of air will decrease.
+bleu: 72.04492053232023
+GPT-3: PersonX turns off the heater and intensifies the fusion reaction of the sun, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease. ,  id :21_and_neg
+Constraints: [['intensify'], ['fusion', 'sun'], ['fusion', 'reaction'], ['sun', 'reaction'], ['no']]
+Sample continuation: the sun's nuclear fusion reactions intensify
+
+Neuro: PersonX turns off the heater and sun does not intensify the fusion reaction, so the temperature of air will decrease.
+Vanilla: PersonX turns off the heater and does not intensify the fusion reaction with the sun, so the temperature of air will decrease.
+bleu: 72.88769447259035
+GPT-3: PersonX turns off the heater and the sun's fusion reaction does not intensify, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease. ,  id :22_and
+Constraints: [['add'], ['food'], ['water']]
+Sample continuation: add hot water
+
+Neuro: PersonX turns off the heater and does not add food or water, so the temperature of air will decrease.
+Vanilla: PersonX turns off the heater and adds food and water, so the temperature of air will decrease.
+bleu: 66.77604630703735
+GPT-3: PersonX turns off the heater and add food and water to the room, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease. ,  id :22_and_neg
+Constraints: [['add'], ['food'], ['water'], ['no']]
+Sample continuation: add hot water
+
+Neuro: PersonX turns off the heater and does not add food or water, so the temperature of air will decrease.
+Vanilla: PersonX turns off the heater and does not add food or water, so the temperature of air will decrease.
+bleu: 100.00000000000004
+GPT-3: PersonX turns off the heater and does not add food or water, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease. ,  id :23_and
+Constraints: [['heat'], ['radiator'], ['room']]
+Sample continuation: heat the room with a radiator
+
+Neuro: PersonX turns off the heater and does not heat the room with the radiator, so the temperature of air will decrease.
+Vanilla: PersonX turns off the heater and the radiator in the room, so the temperature of air will decrease.
+bleu: 60.36289520955243
+GPT-3: PersonX turns off the heater and the radiator in the room, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease. ,  id :23_and_neg
+Constraints: [['heat'], ['radiator'], ['room'], ['no']]
+Sample continuation: heat the room with a radiator
+
+Neuro: PersonX turns off the heater and no radiator heats the room, so the temperature of air will decrease.
+Vanilla: PersonX turns off the heater and there is no radiator in the room, so the temperature of air will decrease.
+bleu: 70.75330011966422
+GPT-3: PersonX turns off the heater and there is no radiator in the room, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease. ,  id :24_and
+Constraints: [['drink'], ['liquid'], ['human body']]
+Sample continuation: drink hot liquids
+
+Neuro: PersonX turns off the heater and does not drink liquid human body, so the temperature of air will decrease.
+Vanilla: PersonX turns off the heater and does not drink liquid, so the temperature of air will decrease.
+bleu: 81.37489370974959
+GPT-3: PersonX turns off the heater and drink a cold liquid, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX turns off the heater [mask], the temperature of air will decrease. ,  id :24_and_neg
+Constraints: [['drink'], ['liquid'], ['human body'], ['no']]
+Sample continuation: drink hot liquids
+
+Neuro: PersonX turns off the heater and does not drink liquid human body, so the temperature of air will decrease.
+Vanilla: PersonX turns off the heater and does not drink liquid in his human body, so the temperature of air will decrease.
+bleu: 83.40614345461115
+GPT-3: PersonX turns off the heater and does not drink any liquids, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX sits in front of a fan [mask], the temperature of air will decrease. ,  id :25_and
+Constraints: [['eat'], ['food'], ['blood']]
 Sample continuation: eat spicy food
 
 Neuro: PersonX sits in front of a fan and eats food and blood, so the temperature of air will decrease.
-Vanilla: PersonX sits in front of a fan and eats food, so the temperature of air will decrease.
-bleu: 81.37489370974959
-GPT-3: PersonX sits in front of a fan and has no food in their stomach, so the temperature of air will decrease.
+Vanilla: PersonX sits in front of a fan and does not eat food or drink blood, so the temperature of air will decrease.
+bleu: 66.93985979198287
+GPT-3: PersonX sits in front of a fan and eats food with a lot of blood in it, so the temperature of air will decrease.
 
 
 *******************************
 
 
-Base: If PersonX sits in front of a fan [mask], the temperature of air will decrease. ,  id :5_and_neg
-Constraints: {'verb': ['eat'], 'noun': ['food', 'blood'], 'neg': ['no']}
+Base: If PersonX sits in front of a fan [mask], the temperature of air will decrease. ,  id :25_and_neg
+Constraints: [['eat'], ['food'], ['blood'], ['no']]
 Sample continuation: eat spicy food
 
-Neuro: PersonX sits in front of a fan and does not eat food or blood, so the temperature of air will decrease.
-Vanilla: PersonX sits in front of a fan and does not eat, so the temperature of air will decrease.
-bleu: 78.4851834939063
-GPT-3: PersonX sits in front of a fan and has no food in their stomach, so the temperature of air will decrease.
+Neuro: PersonX sits in front of a fan and eats no food with blood in it, so the temperature of air will decrease.
+Vanilla: PersonX sits in front of a fan and does not eat food or blood, so the temperature of air will decrease.
+bleu: 63.226619322017804
+GPT-3: PersonX sits in front of a fan and doesn't eat spicy food, so the temperature of air will decrease.
 
 
 *******************************
 
 
-Base: If the sun's luminosity be is [mask], the temperature of sun will decrease. ,  id :6_and
-Constraints: {'verb': ['heat'], 'noun': ['room', 'radiator', 'room']}
+Base: If PersonX eats ice cream [mask], the temperature of air will decrease. ,  id :26_and
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth']]
+Sample continuation: burn fossil fuels
+
+Neuro: PersonX eats ice cream and burns fuel from the earth, so the temperature of air will decrease.
+Vanilla: PersonX eats ice cream and does not burn fuel from the earth, so the temperature of air will decrease.
+bleu: 76.4383812294067
+GPT-3: PersonX eats ice cream and burns fossil fuels, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If PersonX eats ice cream [mask], the temperature of air will decrease. ,  id :26_and_neg
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth'], ['no']]
+Sample continuation: burn fossil fuels
+
+Neuro: PersonX eats ice cream and burns no fossil fuel from the earth, so the temperature of air will decrease.
+Vanilla: PersonX eats ice cream and does not burn fuel from the earth, so the temperature of air will decrease.
+bleu: 76.1827408333416
+GPT-3: PersonX eats ice cream and he does not burn fossil fuels, so the temperature of air will decrease.
+
+
+*******************************
+
+
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease. ,  id :27_and
+Constraints: [['add'], ['food'], ['water']]
+Sample continuation: add hot water
+
+Neuro: the sun's luminosity be is and we add food and water, so the temperature of sun will decrease.
+Vanilla: the sun's luminosity be is and we add food and water, so the temperature of sun will decrease.
+bleu: 100.00000000000004
+GPT-3: the sun's luminosity be is and reasing and water is being added to it, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease. ,  id :27_and_neg
+Constraints: [['add'], ['food'], ['water'], ['no']]
+Sample continuation: add hot water
+
+Neuro: the sun's luminosity be is and it does not add food or water, so the temperature of sun will decrease.
+Vanilla: the sun's luminosity be is and it does not add food or water, so the temperature of sun will decrease.
+bleu: 100.00000000000004
+GPT-3: the sun's luminosity be is and food is added to the water, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease. ,  id :28_and
+Constraints: [['heat'], ['radiator'], ['room']]
 Sample continuation: heat the room with a radiator
 
-Neuro: the sun's luminosity be is and there is no heat in the room, so the temperature of sun will decrease.
-Vanilla: the sun's luminosity be is and there is no heat in the room, so the temperature of sun will decrease.
-bleu: 100.00000000000004
-GPT-3: the sun's luminosity be is and heat from room, so the temperature of sun will decrease.
+Neuro: the sun's luminosity be is and the heat from the radiator in the room, so the temperature of sun will decrease.
+Vanilla: the sun's luminosity be is and there is no heat in the radiator in the room, so the temperature of sun will decrease.
+bleu: 72.83166948276748
+GPT-3: the sun's luminosity be is and the radiator is turned on in the room, so the temperature of sun will decrease.
 
 
 *******************************
 
 
-Base: If the sun's luminosity be is [mask], the temperature of sun will decrease. ,  id :6_and_neg
-Constraints: {'verb': ['heat'], 'noun': ['room', 'radiator', 'room'], 'neg': ['no']}
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease. ,  id :28_and_neg
+Constraints: [['heat'], ['radiator'], ['room'], ['no']]
 Sample continuation: heat the room with a radiator
 
-Neuro: the sun's luminosity be is and there is no heat in the room, so the temperature of sun will decrease.
-Vanilla: the sun's luminosity be is and there is no heat in the room, so the temperature of sun will decrease.
+Neuro: the sun's luminosity be is and the radiator does not heat the room, so the temperature of sun will decrease.
+Vanilla: the sun's luminosity be is and the radiator does not heat the room, so the temperature of sun will decrease.
 bleu: 100.00000000000004
-GPT-3: the sun's luminosity be is and radiator is turned off in the room, so the temperature of sun will decrease.
+GPT-3: the sun's luminosity be is and the room has no radiator, so the temperature of sun will decrease.
 
 
 *******************************
 
 
-Base: If PersonX and not cooks [mask], the temperature of food will decrease. ,  id :7_and
-Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel', 'earth']}
-Sample continuation: burn fossil fuels
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease. ,  id :29_and
+Constraints: [['drink'], ['liquid'], ['human body']]
+Sample continuation: drink hot liquids
 
-Neuro: PersonX and not cooks and burns fossil fuel, so the temperature of food will decrease.
-Vanilla: PersonX and not cooks and burns fossil fuel, so the temperature of food will decrease.
+Neuro: the sun's luminosity be is and the human body does not drink liquid, so the temperature of sun will decrease.
+Vanilla: the sun's luminosity be is and the human body does not drink liquid, so the temperature of sun will decrease.
 bleu: 100.00000000000004
-GPT-3: PersonX and not cooks and burns fossil fuels, so the temperature of food will decrease.
+GPT-3: the sun's luminosity be is and  and it is hidden behind clouds, so the temperature of sun will decrease.
 
 
 *******************************
 
 
-Base: If PersonX and not cooks [mask], the temperature of food will decrease. ,  id :7_and_neg
-Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel', 'earth'], 'neg': ['no']}
-Sample continuation: burn fossil fuels
+Base: If the sun's luminosity be is [mask], the temperature of sun will decrease. ,  id :29_and_neg
+Constraints: [['drink'], ['liquid'], ['human body'], ['no']]
+Sample continuation: drink hot liquids
 
-Neuro: PersonX and not cooks and does not burn fossil fuel, so the temperature of food will decrease.
-Vanilla: PersonX and not cooks and burns fossil fuel, so the temperature of food will decrease.
-bleu: 73.31765459202478
-GPT-3: PersonX and not cooks and uses no fossil fuel, so the temperature of food will decrease.
+Neuro: the sun's luminosity be is and human body does not drink liquid, so the temperature of sun will decrease.
+Vanilla: the sun's luminosity be is and human body does not drink liquid, so the temperature of sun will decrease.
+bleu: 100.00000000000004
+GPT-3: the sun's luminosity be is and it is not a human body, so the temperature of sun will decrease.
 
 
 *******************************
 
 
-Base: If PersonX wears clothes [mask], the temperature of blood will decrease. ,  id :8_and
-Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel', 'earth']}
+Base: If the sun sets [mask], the temperature of sun will decrease. ,  id :30_and
+Constraints: [['eat'], ['food'], ['blood']]
+Sample continuation: eat spicy food
+
+Neuro: the sun sets and it eats food and blood, so the temperature of sun will decrease.
+Vanilla: the sun sets and it does not eat food or blood, so the temperature of sun will decrease.
+bleu: 65.11582133926854
+GPT-3: the sun sets and vampire drinks the blood, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun sets [mask], the temperature of sun will decrease. ,  id :30_and_neg
+Constraints: [['eat'], ['food'], ['blood'], ['no']]
+Sample continuation: eat spicy food
+
+Neuro: the sun sets and blood does not eat food, so the temperature of sun will decrease.
+Vanilla: the sun sets and it does not eat food or blood, so the temperature of sun will decrease.
+bleu: 66.33346653042976
+GPT-3: the sun sets and vampires eat human blood, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun is behind the horizon [mask], the temperature of sun will decrease. ,  id :31_and
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth']]
 Sample continuation: burn fossil fuels
 
-Neuro: PersonX wears clothes and burns fossil fuel, so the temperature of blood will decrease.
-Vanilla: PersonX wears clothes and burns fossil fuels, so the temperature of blood will decrease.
+Neuro: the sun is behind the horizon and earth does not burn fossil fuels, so the temperature of sun will decrease.
+Vanilla: the sun is behind the horizon and it does not burn fuel from the earth, so the temperature of sun will decrease.
+bleu: 63.70677537207918
+GPT-3: the sun is behind the horizon and it will not burn fossil fuels on Earth, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If the sun is behind the horizon [mask], the temperature of sun will decrease. ,  id :31_and_neg
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth'], ['no']]
+Sample continuation: burn fossil fuels
+
+Neuro: the sun is behind the horizon and earth does not burn fossil fuels, so the temperature of sun will decrease.
+Vanilla: the sun is behind the horizon and the earth does not burn fossil fuels, so the temperature of sun will decrease.
+bleu: 88.07735005887434
+GPT-3: the sun is behind the horizon and it does not burn fossil fuel, so the temperature of sun will decrease.
+
+
+*******************************
+
+
+Base: If PersonX and not cooks [mask], the temperature of food will decrease. ,  id :32_and
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth']]
+Sample continuation: burn fossil fuels
+
+Neuro: PersonX and not cooks and burns fuel from the earth, so the temperature of food will decrease.
+Vanilla: PersonX and not cooks and does not burn fuel from the earth, so the temperature of food will decrease.
+bleu: 76.4383812294067
+GPT-3: PersonX and not cooks and fuel the earth with fossil, so the temperature of food will decrease.
+
+
+*******************************
+
+
+Base: If PersonX and not cooks [mask], the temperature of food will decrease. ,  id :32_and_neg
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth'], ['no']]
+Sample continuation: burn fossil fuels
+
+Neuro: PersonX and not cooks and burns no fossil fuel from the earth, so the temperature of food will decrease.
+Vanilla: PersonX and not cooks and does not burn fuel from the earth, so the temperature of food will decrease.
+bleu: 76.1827408333416
+GPT-3: PersonX and not cooks and he uses no fossil fuel, so the temperature of food will decrease.
+
+
+*******************************
+
+
+Base: If colder air be comes in from outside [mask], the temperature of room will decrease. ,  id :33_and
+Constraints: [['drink'], ['liquid'], ['human body']]
+Sample continuation: drink hot liquids
+
+Neuro: colder air be comes in from outside and the human body does not drink liquid, so the temperature of room will decrease.
+Vanilla: colder air be comes in from outside and the human body does not drink liquid, so the temperature of room will decrease.
+bleu: 100.00000000000004
+GPT-3: colder air be comes in from outside and the human body does not drink any liquids, so the temperature of room will decrease.
+
+
+*******************************
+
+
+Base: If colder air be comes in from outside [mask], the temperature of room will decrease. ,  id :33_and_neg
+Constraints: [['drink'], ['liquid'], ['human body'], ['no']]
+Sample continuation: drink hot liquids
+
+Neuro: colder air be comes in from outside and human body does not drink liquid, so the temperature of room will decrease.
+Vanilla: colder air be comes in from outside and the human body does not drink liquid, so the temperature of room will decrease.
+bleu: 88.62476419965998
+GPT-3: colder air be comes in from outside and the human body does not generate heat by drinking liquids, so the temperature of room will decrease.
+
+
+*******************************
+
+
+Base: If PersonX opens the door [mask], the temperature of room will decrease. ,  id :34_and
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth']]
+Sample continuation: burn fossil fuels
+
+Neuro: PersonX opens the door and burns fuel from the earth, so the temperature of room will decrease.
+Vanilla: PersonX opens the door and does not burn fuel from the earth, so the temperature of room will decrease.
+bleu: 76.4383812294067
+GPT-3: PersonX opens the door and he does not burn fossil fuels, so the temperature of room will decrease.
+
+
+*******************************
+
+
+Base: If PersonX opens the door [mask], the temperature of room will decrease. ,  id :34_and_neg
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth'], ['no']]
+Sample continuation: burn fossil fuels
+
+Neuro: PersonX opens the door and burns no fuel from the earth, so the temperature of room will decrease.
+Vanilla: PersonX opens the door and does not burn fuel from the earth, so the temperature of room will decrease.
+bleu: 76.39843504088954
+GPT-3: PersonX opens the door and he does not fossil fuel on the earth, so the temperature of room will decrease.
+
+
+*******************************
+
+
+Base: If PersonX wears warm clothes [mask], the temperature of human body will decrease. ,  id :35_and
+Constraints: [['eat'], ['food'], ['blood']]
+Sample continuation: eat spicy food
+
+Neuro: PersonX wears warm clothes and eats food that contains blood, so the temperature of human body will decrease.
+Vanilla: PersonX wears warm clothes and does not eat food or drink blood, so the temperature of human body will decrease.
+bleu: 63.69918075034134
+GPT-3: PersonX wears warm clothes and he eats warm food, so the temperature of human body will decrease.
+
+
+*******************************
+
+
+Base: If PersonX wears warm clothes [mask], the temperature of human body will decrease. ,  id :35_and_neg
+Constraints: [['eat'], ['food'], ['blood'], ['no']]
+Sample continuation: eat spicy food
+
+Neuro: PersonX wears warm clothes and eats no food with blood, so the temperature of human body will decrease.
+Vanilla: PersonX wears warm clothes and does not eat food or blood, so the temperature of human body will decrease.
+bleu: 66.96510758566588
+GPT-3: PersonX wears warm clothes and eats warm food, so the temperature of human body will decrease.
+
+
+*******************************
+
+
+Base: If PersonX stays in the sun [mask], the temperature of human body will decrease. ,  id :36_and
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth']]
+Sample continuation: burn fossil fuels
+
+Neuro: PersonX stays in the sun and burns fuel from the earth, so the temperature of human body will decrease.
+Vanilla: PersonX stays in the sun and does not burn fuel from the earth, so the temperature of human body will decrease.
+bleu: 78.69685946580964
+GPT-3: PersonX stays in the sun and he burns fossil fuel on earth, so the temperature of human body will decrease.
+
+
+*******************************
+
+
+Base: If PersonX stays in the sun [mask], the temperature of human body will decrease. ,  id :36_and_neg
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth'], ['no']]
+Sample continuation: burn fossil fuels
+
+Neuro: PersonX stays in the sun and burns no fuel from the earth, so the temperature of human body will decrease.
+Vanilla: PersonX stays in the sun and does not burn fuel from the earth, so the temperature of human body will decrease.
+bleu: 78.66663591208106
+GPT-3: PersonX stays in the sun and the fuel is not from the fossil on the earth, so the temperature of human body will decrease.
+
+
+*******************************
+
+
+Base: If PersonX wears clothes [mask], the temperature of blood will decrease. ,  id :37_and
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth']]
+Sample continuation: burn fossil fuels
+
+Neuro: PersonX wears clothes and burns fuel from the earth, so the temperature of blood will decrease.
+Vanilla: PersonX wears clothes and does not burn fuel from the earth, so the temperature of blood will decrease.
+bleu: 75.11573912724296
+GPT-3: PersonX wears clothes and the fuel is from the fossil on the earth, so the temperature of blood will decrease.
+
+
+*******************************
+
+
+Base: If PersonX wears clothes [mask], the temperature of blood will decrease. ,  id :37_and_neg
+Constraints: [['burn'], ['fuel', 'fossil'], ['fuel', 'earth'], ['fossil', 'earth'], ['no']]
+Sample continuation: burn fossil fuels
+
+Neuro: PersonX wears clothes and burns no fuel from the earth, so the temperature of blood will decrease.
+Vanilla: PersonX wears clothes and does not burn fuel from the earth, so the temperature of blood will decrease.
+bleu: 75.06935728875011
+GPT-3: PersonX wears clothes and his skin does not burn from the fuel of the fossil, so the temperature of blood will decrease.
+
+
+*******************************
+
+
+Base: If PersonX gets a haircut [mask], the length of hair will increase. ,  id :38_and
+Constraints: [['take'], ['medication'], ['penis']]
+Sample continuation: take certain medications
+
+Neuro: PersonX gets a haircut and does not take medication for his penis, so the length of hair will increase.
+Vanilla: PersonX gets a haircut and does not take medication for his penis, so the length of hair will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX gets a haircut and takes medication for his penis, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX gets a haircut [mask], the length of hair will increase. ,  id :38_and_neg
+Constraints: [['take'], ['medication'], ['penis'], ['no']]
+Sample continuation: take certain medications
+
+Neuro: PersonX gets a haircut and does not take penis medication, so the length of hair will increase.
+Vanilla: PersonX gets a haircut and does not take medication for his penis, so the length of hair will increase.
+bleu: 73.22868969362891
+GPT-3: PersonX gets a haircut and takes medication to promote hair growth on the penis, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses a wide-toothed comb [mask], the length of hair will increase. ,  id :39_and
+Constraints: [['graft'], ['bone']]
+Sample continuation: bone graft
+
+Neuro: PersonX uses a wide-toothed comb and does not graft bone, so the length of hair will increase.
+Vanilla: PersonX uses a wide-toothed comb and a bone graft, so the length of hair will increase.
+bleu: 69.639896108447
+GPT-3: PersonX uses a wide-toothed comb and graft the bone, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses a wide-toothed comb [mask], the length of hair will increase. ,  id :39_and_neg
+Constraints: [['graft'], ['bone'], ['no']]
+Sample continuation: bone graft
+
+Neuro: PersonX uses a wide-toothed comb and does not graft bone, so the length of hair will increase.
+Vanilla: PersonX uses a wide-toothed comb and does not graft his bone, so the length of hair will increase.
+bleu: 86.06031405392808
+GPT-3: PersonX uses a wide-toothed comb and does not graft the bone, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses hair oil [mask], the length of hair will increase. ,  id :40_and
+Constraints: [['lift'], ['muscle'], ['weight']]
+Sample continuation: lift a weight
+
+Neuro: PersonX uses hair oil and lifts muscle weight, so the length of hair will increase.
+Vanilla: PersonX uses hair oil and lifts muscle weight, so the length of hair will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX uses hair oil and  weights to increase muscle mass, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses hair oil [mask], the length of hair will increase. ,  id :40_and_neg
+Constraints: [['lift'], ['muscle'], ['weight'], ['no']]
+Sample continuation: lift a weight
+
+Neuro: PersonX uses hair oil and lifts no muscle or weight, so the length of hair will increase.
+Vanilla: PersonX uses hair oil and does not lift muscle or weight, so the length of hair will increase.
+bleu: 75.06935728875011
+GPT-3: PersonX uses hair oil and he does not lift any weights, so the length of hair will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id :41_and
+Constraints: [['wear'], ['makeup'], ['eyelashes']]
+Sample continuation: wear makeup
+
+Neuro: PersonX grows nail out and does not wear makeup on her eyelashes, so the length of nails will increase.
+Vanilla: PersonX grows nail out and does not wear makeup on her eyelashes, so the length of nails will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX grows nail out and he wears makeup and eyelashes, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id :41_and_neg
+Constraints: [['wear'], ['makeup'], ['eyelashes'], ['no']]
+Sample continuation: wear makeup
+
+Neuro: PersonX grows nail out and does not wear makeup on eyelashes, so the length of nails will increase.
+Vanilla: PersonX grows nail out and does not wear makeup or eyelashes, so the length of nails will increase.
+bleu: 85.78928092681438
+GPT-3: PersonX grows nail out and  he does not wear makeup or have eyelashes, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id :42_and
+Constraints: [['bite'], ['fingernail'], ['fingernails']]
+Sample continuation: bite fingernails
+
+Neuro: PersonX grows nail out and does not bite fingernails, so the length of nails will increase.
+Vanilla: PersonX grows nail out and does not bite fingernails, so the length of nails will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX grows nail out and she bites her fingernails, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id :42_and_neg
+Constraints: [['bite'], ['fingernail'], ['fingernails'], ['no']]
+Sample continuation: bite fingernails
+
+Neuro: PersonX grows nail out and does not bite his fingernails, so the length of nails will increase.
+Vanilla: PersonX grows nail out and does not bite fingernails, so the length of nails will increase.
+bleu: 84.92326635760686
+GPT-3: PersonX grows nail out and he doesn't bite his fingernails, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id :43_and
+Constraints: [['wear'], ['toenails'], ['shoe']]
+Sample continuation: wear shoes
+
+Neuro: PersonX grows nail out and does not wear toenails on shoe, so the length of nails will increase.
+Vanilla: PersonX grows nail out and does not wear toenail shoes, so the length of nails will increase.
+bleu: 74.83293841345241
+GPT-3: PersonX grows nail out and does not wear shoes, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id :43_and_neg
+Constraints: [['wear'], ['toenails'], ['shoe'], ['no']]
+Sample continuation: wear shoes
+
+Neuro: PersonX grows nail out and does not wear toenails shoes, so the length of nails will increase.
+Vanilla: PersonX grows nail out and does not wear toenails on shoe, so the length of nails will increase.
+bleu: 80.56920633274976
+GPT-3: PersonX grows nail out and does not wear toenails in the shoe, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id :44_and
+Constraints: [['wear'], ['arms'], ['backpack']]
+Sample continuation: wear a backpack
+
+Neuro: PersonX grows nail out and does not wear arms on backpack, so the length of nails will increase.
+Vanilla: PersonX grows nail out and does not wear arms on backpack, so the length of nails will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX grows nail out and he wears a backpack on his arms, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id :44_and_neg
+Constraints: [['wear'], ['arms'], ['backpack'], ['no']]
+Sample continuation: wear a backpack
+
+Neuro: PersonX grows nail out and wears no arms and no backpack, so the length of nails will increase.
+Vanilla: PersonX grows nail out and does not wear arms on backpack, so the length of nails will increase.
+bleu: 64.87066897882097
+GPT-3: PersonX grows nail out and he does not wear arm protection backpack, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id :45_and
+Constraints: [['wear'], ['heel'], ['legs']]
+Sample continuation: wear high heels
+
+Neuro: PersonX grows nail out and does not wear heel on legs, so the length of nails will increase.
+Vanilla: PersonX grows nail out and does not wear heel on legs, so the length of nails will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX grows nail out and he does not wear heels on his legs, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id :45_and_neg
+Constraints: [['wear'], ['heel'], ['legs'], ['no']]
+Sample continuation: wear high heels
+
+Neuro: PersonX grows nail out and no longer wears heels on his legs, so the length of nails will increase.
+Vanilla: PersonX grows nail out and does not wear heel on legs, so the length of nails will increase.
+bleu: 61.53267326643311
+GPT-3: PersonX grows nail out and wears high heels on their legs, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX avoids water [mask], the length of nails will increase. ,  id :46_and
+Constraints: [['take'], ['medication'], ['penis']]
+Sample continuation: take certain medications
+
+Neuro: PersonX avoids water and does not take medication for his penis, so the length of nails will increase.
+Vanilla: PersonX avoids water and does not take medication for his penis, so the length of nails will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX avoids water and takes medication for a fungus on his penis, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX avoids water [mask], the length of nails will increase. ,  id :46_and_neg
+Constraints: [['take'], ['medication'], ['penis'], ['no']]
+Sample continuation: take certain medications
+
+Neuro: PersonX avoids water and does not take medication for penis, so the length of nails will increase.
+Vanilla: PersonX avoids water and does not take medication for his penis, so the length of nails will increase.
+bleu: 86.06031405392808
+GPT-3: PersonX avoids water and takes medication for his penis, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses a nail strengthen polish [mask], the length of nails will increase. ,  id :47_and
+Constraints: [['sit'], ['torso'], ['chair']]
+Sample continuation: sit in a chair
+
+Neuro: PersonX uses a nail strengthen polish and sits on a torso chair, so the length of nails will increase.
+Vanilla: PersonX uses a nail strengthen polish and sits on her torso in a chair, so the length of nails will increase.
+bleu: 75.8569677460017
+GPT-3: PersonX uses a nail strengthen polish and she sits on the chair with her torso upright, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses a nail strengthen polish [mask], the length of nails will increase. ,  id :47_and_neg
+Constraints: [['sit'], ['torso'], ['chair'], ['no']]
+Sample continuation: sit in a chair
+
+Neuro: PersonX uses a nail strengthen polish and does not sit on torso chairs, so the length of nails will increase.
+Vanilla: PersonX uses a nail strengthen polish and does not sit on her torso in a chair, so the length of nails will increase.
+bleu: 72.71208308994763
+GPT-3: PersonX uses a nail strengthen polish and she does not sit on the chair, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses a nail strengthen polish [mask], the length of nails will increase. ,  id :48_and
+Constraints: [['wear'], ['neck'], ['turtleneck']]
+Sample continuation: wear a turtleneck
+
+Neuro: PersonX uses a nail strengthen polish and does not wear neck turtlenecks, so the length of nails will increase.
+Vanilla: PersonX uses a nail strengthen polish and does not wear turtlenecks, so the length of nails will increase.
+bleu: 86.56030552541704
+GPT-3: PersonX uses a nail strengthen polish and wear turtleneck, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses a nail strengthen polish [mask], the length of nails will increase. ,  id :48_and_neg
+Constraints: [['wear'], ['neck'], ['turtleneck'], ['no']]
+Sample continuation: wear a turtleneck
+
+Neuro: PersonX uses a nail strengthen polish and does not wear neck turtlenecks, so the length of nails will increase.
+Vanilla: PersonX uses a nail strengthen polish and does not wear a turtleneck, so the length of nails will increase.
+bleu: 81.37489370974959
+GPT-3: PersonX uses a nail strengthen polish and wears a turtleneck, so the length of nails will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase. ,  id :49_and
+Constraints: [['bite'], ['fingernail'], ['fingernails']]
+Sample continuation: bite fingernails
+
+Neuro: PersonX invests in a good quality mascara and does not bite her fingernails, so the length of eyelashes will increase.
+Vanilla: PersonX invests in a good quality mascara and does not bite her fingernails, so the length of eyelashes will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX invests in a good quality mascara and she bites her fingernails, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase. ,  id :49_and_neg
+Constraints: [['bite'], ['fingernail'], ['fingernails'], ['no']]
+Sample continuation: bite fingernails
+
+Neuro: PersonX invests in a good quality mascara and does not bite her fingernails, so the length of eyelashes will increase.
+Vanilla: PersonX invests in a good quality mascara and does not bite her fingernails, so the length of eyelashes will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX invests in a good quality mascara and he does not bite his fingernails, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase. ,  id :50_and
+Constraints: [['wear'], ['toenails'], ['shoe']]
+Sample continuation: wear shoes
+
+Neuro: PersonX invests in a good quality mascara and does not wear toenails on her shoe, so the length of eyelashes will increase.
+Vanilla: PersonX invests in a good quality mascara and does not wear toenails on her shoes, so the length of eyelashes will increase.
+bleu: 88.43865924896839
+GPT-3: PersonX invests in a good quality mascara and wears it regularly, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase. ,  id :50_and_neg
+Constraints: [['wear'], ['toenails'], ['shoe'], ['no']]
+Sample continuation: wear shoes
+
+Neuro: PersonX invests in a good quality mascara and does not wear toenails on her shoes, so the length of eyelashes will increase.
+Vanilla: PersonX invests in a good quality mascara and does not wear toenails on her shoes, so the length of eyelashes will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX invests in a good quality mascara and she wears it every day, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase. ,  id :51_and
+Constraints: [['wear'], ['arms'], ['backpack']]
+Sample continuation: wear a backpack
+
+Neuro: PersonX invests in a good quality mascara and does not wear her arms in her backpack, so the length of eyelashes will increase.
+Vanilla: PersonX invests in a good quality mascara and does not wear her arms in her backpack, so the length of eyelashes will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX invests in a good quality mascara and she wears it on her arms in a backpack, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase. ,  id :51_and_neg
+Constraints: [['wear'], ['arms'], ['backpack'], ['no']]
+Sample continuation: wear a backpack
+
+Neuro: PersonX invests in a good quality mascara and no longer wears arms or a backpack, so the length of eyelashes will increase.
+Vanilla: PersonX invests in a good quality mascara and does not wear her arms in a backpack, so the length of eyelashes will increase.
+bleu: 68.4916321235026
+GPT-3: PersonX invests in a good quality mascara and she wears it on her arms or backpack, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase. ,  id :52_and
+Constraints: [['wear'], ['heel'], ['legs']]
+Sample continuation: wear high heels
+
+Neuro: PersonX invests in a good quality mascara and does not wear high heeled legs, so the length of eyelashes will increase.
+Vanilla: PersonX invests in a good quality mascara and does not wear heels on her legs, so the length of eyelashes will increase.
+bleu: 79.64269516620872
+GPT-3: PersonX invests in a good quality mascara and she wears it on her eyelashes, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase. ,  id :52_and_neg
+Constraints: [['wear'], ['heel'], ['legs'], ['no']]
+Sample continuation: wear high heels
+
+Neuro: PersonX invests in a good quality mascara and does not wear heels on her legs, so the length of eyelashes will increase.
+Vanilla: PersonX invests in a good quality mascara and does not wear heels on her legs, so the length of eyelashes will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX invests in a good quality mascara and he does not wear heels, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses false eyelashes [mask], the length of eyelashes will increase. ,  id :53_and
+Constraints: [['take'], ['medication'], ['penis']]
+Sample continuation: take certain medications
+
+Neuro: PersonX uses false eyelashes and does not take medication for her penis, so the length of eyelashes will increase.
+Vanilla: PersonX uses false eyelashes and does not take medication for her penis, so the length of eyelashes will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX uses false eyelashes and takes medication for penis enlargement, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses false eyelashes [mask], the length of eyelashes will increase. ,  id :53_and_neg
+Constraints: [['take'], ['medication'], ['penis'], ['no']]
+Sample continuation: take certain medications
+
+Neuro: PersonX uses false eyelashes and does not take medication for penis, so the length of eyelashes will increase.
+Vanilla: PersonX uses false eyelashes and does not take medication for her penis, so the length of eyelashes will increase.
+bleu: 86.80538146126796
+GPT-3: PersonX uses false eyelashes and does not take medication for penis enlargement, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase. ,  id :54_and
+Constraints: [['sit'], ['torso'], ['chair']]
+Sample continuation: sit in a chair
+
+Neuro: PersonX uses an eyelash curler and sits on a torso chair, so the length of eyelashes will increase.
+Vanilla: PersonX uses an eyelash curler and sits on her torso in a chair, so the length of eyelashes will increase.
+bleu: 74.61207378659121
+GPT-3: PersonX uses an eyelash curler and sits in a chair with their torso upright, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase. ,  id :54_and_neg
+Constraints: [['sit'], ['torso'], ['chair'], ['no']]
+Sample continuation: sit in a chair
+
+Neuro: PersonX uses an eyelash curler and does not sit on a torso chair, so the length of eyelashes will increase.
+Vanilla: PersonX uses an eyelash curler and does not sit on her torso in a chair, so the length of eyelashes will increase.
+bleu: 76.98357788647147
+GPT-3: PersonX uses an eyelash curler and sits in a chair, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase. ,  id :55_and
+Constraints: [['wear'], ['neck'], ['turtleneck']]
+Sample continuation: wear a turtleneck
+
+Neuro: PersonX uses an eyelash curler and does not wear neck turtlenecks, so the length of eyelashes will increase.
+Vanilla: PersonX uses an eyelash curler and does not wear turtlenecks, so the length of eyelashes will increase.
+bleu: 85.78928092681438
+GPT-3: PersonX uses an eyelash curler and he wears a turtleneck, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase. ,  id :55_and_neg
+Constraints: [['wear'], ['neck'], ['turtleneck'], ['no']]
+Sample continuation: wear a turtleneck
+
+Neuro: PersonX uses an eyelash curler and does not wear neck turtlenecks, so the length of eyelashes will increase.
+Vanilla: PersonX uses an eyelash curler and does not wear turtlenecks, so the length of eyelashes will increase.
+bleu: 85.78928092681438
+GPT-3: PersonX uses an eyelash curler and he wears a turtleneck, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX applies false eyelashes [mask], the length of eyelashes will increase. ,  id :56_and
+Constraints: [['limbe'], ['bone'], ['dwarfism']]
+Sample continuation: short-limbe dwarfism
+
+Neuro: PersonX applies false eyelashes and does not have limbe bone dwarfism, so the length of eyelashes will increase.
+Vanilla: PersonX applies false eyelashes and does not suffer from dwarfism, so the length of eyelashes will increase.
+bleu: 74.83293841345241
+GPT-3: PersonX applies false eyelashes and has a genetic disposition for dwarfism, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX applies false eyelashes [mask], the length of eyelashes will increase. ,  id :56_and_neg
+Constraints: [['limbe'], ['bone'], ['dwarfism'], ['no']]
+Sample continuation: short-limbe dwarfism
+
+Neuro: PersonX applies false eyelashes and has no limbe bone dwarfism, so the length of eyelashes will increase.
+Vanilla: PersonX applies false eyelashes and has no limbe bone dwarfism, so the length of eyelashes will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX applies false eyelashes and has no dwarfism, so the length of eyelashes will increase.
+
+
+*******************************
+
+
+Base: If PersonX wears makeup [mask], the length of eyelashes will increase. ,  id :57_and
+Constraints: [['lift'], ['muscle'], ['weight']]
+Sample continuation: lift a weight
+
+Neuro: PersonX wears makeup and lifts muscle weight, so the length of eyelashes will increase.
+Vanilla: PersonX wears makeup and lifts muscle weights, so the length of eyelashes will increase.
 bleu: 81.53551038173119
-GPT-3: PersonX wears clothes and protects themselves from burning fossil fuels, so the temperature of blood will decrease.
+GPT-3: PersonX wears makeup and lifts weights to exercise the muscles, so the length of eyelashes will increase.
 
 
 *******************************
 
 
-Base: If PersonX wears clothes [mask], the temperature of blood will decrease. ,  id :8_and_neg
-Constraints: {'verb': ['burn'], 'noun': ['fossil', 'fuel', 'earth'], 'neg': ['no']}
-Sample continuation: burn fossil fuels
-
-Neuro: PersonX wears clothes and does not burn fossil fuels, so the temperature of blood will decrease.
-Vanilla: PersonX wears clothes and does not burn fossil fuels, so the temperature of blood will decrease.
-bleu: 100.00000000000004
-GPT-3: PersonX wears clothes and burns no fossil fuels, so the temperature of blood will decrease.
-
-
-*******************************
-
-
-Base: If PersonX uses hair oil [mask], the length of hair will increase. ,  id :9_and
-Constraints: {'verb': ['lift'], 'noun': ['weight', 'muscle']}
+Base: If PersonX wears makeup [mask], the length of eyelashes will increase. ,  id :57_and_neg
+Constraints: [['lift'], ['muscle'], ['weight'], ['no']]
 Sample continuation: lift a weight
 
-Neuro: PersonX uses hair oil and lifts weights, so the length of hair will increase.
-Vanilla: PersonX uses hair oil and lifts weights, so the length of hair will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX uses hair oil and lifts weights, so the length of hair will increase.
+Neuro: PersonX wears makeup and lifts no muscle or weight, so the length of eyelashes will increase.
+Vanilla: PersonX wears makeup and does not lift muscle or weight, so the length of eyelashes will increase.
+bleu: 73.57777961658122
+GPT-3: PersonX wears makeup and she lifts a weight, so the length of eyelashes will increase.
 
 
 *******************************
 
 
-Base: If PersonX uses hair oil [mask], the length of hair will increase. ,  id :9_and_neg
-Constraints: {'verb': ['lift'], 'noun': ['weight', 'muscle'], 'neg': ['no']}
-Sample continuation: lift a weight
+Base: If PersonX avoids bite nails [mask], the length of fingernails will increase. ,  id :58_and
+Constraints: [['farm'], ['trees'], ['tree']]
+Sample continuation: tree farm
 
-Neuro: PersonX uses hair oil and does not lift weights, so the length of hair will increase.
-Vanilla: PersonX uses hair oil and does not lift weights, so the length of hair will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX uses hair oil and lifts weights regularly, so the length of hair will increase.
-
-
-*******************************
-
-
-Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id :10_and
-Constraints: {'verb': ['wear'], 'noun': ['shoe', 'toenails']}
-Sample continuation: wear shoes
-
-Neuro: PersonX grows nail out and does not wear shoes, so the length of nails will increase.
-Vanilla: PersonX grows nail out and does not wear shoes, so the length of nails will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX grows nail out and  does not wear shoes, so the length of nails will increase.
+Neuro: PersonX avoids bite nails and farm trees, so the length of fingernails will increase.
+Vanilla: PersonX avoids bite nails and does not farm trees, so the length of fingernails will increase.
+bleu: 78.1627531804133
+GPT-3: PersonX avoids bite nails and farms trees, so the length of fingernails will increase.
 
 
 *******************************
 
 
-Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id :10_and_neg
-Constraints: {'verb': ['wear'], 'noun': ['shoe', 'toenails'], 'neg': ['no']}
-Sample continuation: wear shoes
+Base: If PersonX avoids bite nails [mask], the length of fingernails will increase. ,  id :58_and_neg
+Constraints: [['farm'], ['trees'], ['tree'], ['no']]
+Sample continuation: tree farm
 
-Neuro: PersonX grows nail out and does not wear shoes, so the length of nails will increase.
-Vanilla: PersonX grows nail out and does not wear shoes, so the length of nails will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX grows nail out and does not wear shoes that cover the toenails, so the length of nails will increase.
-
-
-*******************************
-
-
-Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase. ,  id :11_and
-Constraints: {'verb': ['wear'], 'noun': ['backpack', 'arms']}
-Sample continuation: wear a backpack
-
-Neuro: PersonX invests in a good quality mascara and wears a backpack, so the length of eyelashes will increase.
-Vanilla: PersonX invests in a good quality mascara and wears a backpack, so the length of eyelashes will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX invests in a good quality mascara and wears it often, so the length of eyelashes will increase.
+Neuro: PersonX avoids bite nails and farm trees do not grow on the farm, so the length of fingernails will increase.
+Vanilla: PersonX avoids bite nails and does not farm trees, so the length of fingernails will increase.
+bleu: 56.333167591361615
+GPT-3: PersonX avoids bite nails and does not work on the farm with trees, so the length of fingernails will increase.
 
 
 *******************************
 
 
-Base: If PersonX invests in a good quality mascara [mask], the length of eyelashes will increase. ,  id :11_and_neg
-Constraints: {'verb': ['wear'], 'noun': ['backpack', 'arms'], 'neg': ['no']}
-Sample continuation: wear a backpack
+Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage [mask], the length of fingernails will increase. ,  id :59_and
+Constraints: [['take'], ['medication'], ['penis']]
+Sample continuation: take certain medications
 
-Neuro: PersonX invests in a good quality mascara and does not wear a backpack, so the length of eyelashes will increase.
-Vanilla: PersonX invests in a good quality mascara and does not wear a backpack, so the length of eyelashes will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX invests in a good quality mascara and wears it every day, so the length of eyelashes will increase.
+Neuro: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and does not take medication for his penis, so the length of fingernails will increase.
+Vanilla: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and he does not take medication for his penis, so the length of fingernails will increase.
+bleu: 91.67409308877167
+GPT-3: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and he takes medication for his penis, so the length of fingernails will increase.
 
 
 *******************************
 
 
-Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase. ,  id :12_and
-Constraints: {'verb': ['sit'], 'noun': ['chair', 'torso']}
+Base: If PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage [mask], the length of fingernails will increase. ,  id :59_and_neg
+Constraints: [['take'], ['medication'], ['penis'], ['no']]
+Sample continuation: take certain medications
+
+Neuro: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and does not take medication for penis, so the length of fingernails will increase.
+Vanilla: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and he does not take medication for his penis, so the length of fingernails will increase.
+bleu: 83.03585490287912
+GPT-3: PersonX fatty acids such as omega-3s help to keeps nails strong and prevent breakage and he takes medication to prevent penis breakage, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX trims the nails [mask], the length of fingernails will increase. ,  id :60_and
+Constraints: [['insert'], ['diaphragm'], ['vagina']]
+Sample continuation: insert a diaphragm
+
+Neuro: PersonX trims the nails and does not insert diaphragm in the vaginal, so the length of fingernails will increase.
+Vanilla: PersonX trims the nails and does not insert the diaphragm into the vagina, so the length of fingernails will increase.
+bleu: 69.58981559087937
+GPT-3: PersonX trims the nails and keeps them trimmed regularly, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX trims the nails [mask], the length of fingernails will increase. ,  id :60_and_neg
+Constraints: [['insert'], ['diaphragm'], ['vagina'], ['no']]
+Sample continuation: insert a diaphragm
+
+Neuro: PersonX trims the nails and does not insert the diaphragm vaginally, so the length of fingernails will increase.
+Vanilla: PersonX trims the nails and does not insert the diaphragm into the vagina, so the length of fingernails will increase.
+bleu: 77.62535144898031
+GPT-3: PersonX trims the nails and inserts the diaphragm into the vagina, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX gives oneself a manicure [mask], the length of fingernails will increase. ,  id :61_and
+Constraints: [['sit'], ['torso'], ['chair']]
 Sample continuation: sit in a chair
 
-Neuro: PersonX uses an eyelash curler and sits in a chair, so the length of eyelashes will increase.
-Vanilla: PersonX uses an eyelash curler and sits in a chair, so the length of eyelashes will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX uses an eyelash curler and sit upright in a chair, so the length of eyelashes will increase.
+Neuro: PersonX gives oneself a manicure and sits torso-up in a chair, so the length of fingernails will increase.
+Vanilla: PersonX gives oneself a manicure and sits on the torso of the chair, so the length of fingernails will increase.
+bleu: 67.71164277807225
+GPT-3: PersonX gives oneself a manicure and sit on the chair with the torso upright, so the length of fingernails will increase.
 
 
 *******************************
 
 
-Base: If PersonX uses an eyelash curler [mask], the length of eyelashes will increase. ,  id :12_and_neg
-Constraints: {'verb': ['sit'], 'noun': ['chair', 'torso'], 'neg': ['no']}
+Base: If PersonX gives oneself a manicure [mask], the length of fingernails will increase. ,  id :61_and_neg
+Constraints: [['sit'], ['torso'], ['chair'], ['no']]
 Sample continuation: sit in a chair
 
-Neuro: PersonX uses an eyelash curler and does not sit in a chair, so the length of eyelashes will increase.
-Vanilla: PersonX uses an eyelash curler and does not sit in a chair, so the length of eyelashes will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX uses an eyelash curler and sits upright in a chair, so the length of eyelashes will increase.
+Neuro: PersonX gives oneself a manicure and does not sit on a torso chair, so the length of fingernails will increase.
+Vanilla: PersonX gives oneself a manicure and does not sit on the torso of the chair, so the length of fingernails will increase.
+bleu: 76.09344473380506
+GPT-3: PersonX gives oneself a manicure and he sits on the chair with his torso upright, so the length of fingernails will increase.
 
 
 *******************************
 
 
-Base: If PersonX wears makeup [mask], the length of eyelashes will increase. ,  id :13_and
-Constraints: {'verb': ['lift'], 'noun': ['weight', 'muscle']}
+Base: If PersonX gives oneself a manicure [mask], the length of fingernails will increase. ,  id :62_and
+Constraints: [['wear'], ['neck'], ['turtleneck']]
+Sample continuation: wear a turtleneck
+
+Neuro: PersonX gives oneself a manicure and does not wear neck turtlenecks, so the length of fingernails will increase.
+Vanilla: PersonX gives oneself a manicure and does not wear a turtleneck, so the length of fingernails will increase.
+bleu: 80.3154665668484
+GPT-3: PersonX gives oneself a manicure and wears a turtleneck, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If PersonX gives oneself a manicure [mask], the length of fingernails will increase. ,  id :62_and_neg
+Constraints: [['wear'], ['neck'], ['turtleneck'], ['no']]
+Sample continuation: wear a turtleneck
+
+Neuro: PersonX gives oneself a manicure and does not wear neck turtlenecks, so the length of fingernails will increase.
+Vanilla: PersonX gives oneself a manicure and does not wear a turtleneck, so the length of fingernails will increase.
+bleu: 80.3154665668484
+GPT-3: PersonX gives oneself a manicure and does not wear a turtleneck, so the length of fingernails will increase.
+
+
+*******************************
+
+
+Base: If amino acids be needs for the production of keratin [mask], the length of fingernails will increase. ,  id :63_and
+Constraints: [['lift'], ['muscle'], ['weight']]
 Sample continuation: lift a weight
 
-Neuro: PersonX wears makeup and lifts weights, so the length of eyelashes will increase.
-Vanilla: PersonX wears makeup and lifts weights, so the length of eyelashes will increase.
+Neuro: amino acids be needs for the production of keratin and lift muscle weight, so the length of fingernails will increase.
+Vanilla: amino acids be needs for the production of keratin and lift muscle weight, so the length of fingernails will increase.
 bleu: 100.00000000000004
-GPT-3: PersonX wears makeup and lifts weights, so the length of eyelashes will increase.
+GPT-3: amino acids be needs for the production of keratin and lifting weights increases muscle mass, so the length of fingernails will increase.
 
 
 *******************************
 
 
-Base: If PersonX wears makeup [mask], the length of eyelashes will increase. ,  id :13_and_neg
-Constraints: {'verb': ['lift'], 'noun': ['weight', 'muscle'], 'neg': ['no']}
+Base: If amino acids be needs for the production of keratin [mask], the length of fingernails will increase. ,  id :63_and_neg
+Constraints: [['lift'], ['muscle'], ['weight'], ['no']]
 Sample continuation: lift a weight
 
-Neuro: PersonX wears makeup and does not lift weights, so the length of eyelashes will increase.
-Vanilla: PersonX wears makeup and does not lift weights, so the length of eyelashes will increase.
+Neuro: amino acids be needs for the production of keratin and muscles do not lift weights, so the length of fingernails will increase.
+Vanilla: amino acids be needs for the production of keratin and muscles do not lift weights, so the length of fingernails will increase.
 bleu: 100.00000000000004
-GPT-3: PersonX wears makeup and lifts weights regularly, so the length of eyelashes will increase.
+GPT-3: amino acids be needs for the production of keratin and lifting weights does not require much muscle, so the length of fingernails will increase.
 
 
 *******************************
 
 
-Base: If PersonX not trims [mask], the length of toenails will increase. ,  id :14_and
-Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level', 'rivers']}
-Sample continuation: seawater intrusion into the river from rise sea levels
+Base: If PersonX not removes dead skin [mask], the length of toenails will increase. ,  id :64_and
+Constraints: [['take'], ['medication'], ['penis']]
+Sample continuation: take certain medications
 
-Neuro: PersonX not trims and seawater rises, so the length of toenails will increase.
-Vanilla: PersonX not trims and seawater rises, so the length of toenails will increase.
+Neuro: PersonX not removes dead skin and does not take medication for his penis, so the length of toenails will increase.
+Vanilla: PersonX not removes dead skin and does not take medication for his penis, so the length of toenails will increase.
 bleu: 100.00000000000004
-GPT-3: PersonX not trims and  and sea level rises due to seawater intrusion in rivers, so the length of toenails will increase.
+GPT-3: PersonX not removes dead skin and he takes medication for his penis, so the length of toenails will increase.
 
 
 *******************************
 
 
-Base: If PersonX not trims [mask], the length of toenails will increase. ,  id :14_and_neg
-Constraints: {'verb': ['rise'], 'noun': ['seawater', 'intrusion', 'river', 'sea', 'level', 'rivers'], 'neg': ['no']}
-Sample continuation: seawater intrusion into the river from rise sea levels
+Base: If PersonX not removes dead skin [mask], the length of toenails will increase. ,  id :64_and_neg
+Constraints: [['take'], ['medication'], ['penis'], ['no']]
+Sample continuation: take certain medications
 
-Neuro: PersonX not trims and seawater intrusion does not rise, so the length of toenails will increase.
-Vanilla: PersonX not trims and seawater does not rise, so the length of toenails will increase.
+Neuro: PersonX not removes dead skin and does not take medication for his penis, so the length of toenails will increase.
+Vanilla: PersonX not removes dead skin and does not take medication for his penis, so the length of toenails will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX not removes dead skin and does not take medication for his penis, so the length of toenails will increase.
+
+
+*******************************
+
+
+Base: If wears shoes that be too small [mask], the length of toenails will increase. ,  id :65_and
+Constraints: [['increase'], ['level', 'bone'], ['level', 'hormone'], ['bone', 'hormone']]
+Sample continuation: increase parathyroid hormone levels
+
+Neuro: wears shoes that be too small and increase the level of bone hormone, so the length of toenails will increase.
+Vanilla: wears shoes that be too small and increase the level of bone hormone, so the length of toenails will increase.
+bleu: 100.00000000000004
+GPT-3: wears shoes that be too small and the level of hormone in the bone increases, so the length of toenails will increase.
+
+
+*******************************
+
+
+Base: If wears shoes that be too small [mask], the length of toenails will increase. ,  id :65_and_neg
+Constraints: [['increase'], ['level', 'bone'], ['level', 'hormone'], ['bone', 'hormone'], ['no']]
+Sample continuation: increase parathyroid hormone levels
+
+Neuro: wears shoes that be too small and level of bone hormone does not increase, so the length of toenails will increase.
+Vanilla: wears shoes that be too small and does not increase the level of bone hormones, so the length of toenails will increase.
+bleu: 68.42636738577974
+GPT-3: wears shoes that be too small and levels of bone and hormone increase, so the length of toenails will increase.
+
+
+*******************************
+
+
+Base: If PersonX holds a weight out to the side at shoulder level [mask], the length of arms will increase. ,  id :66_and
+Constraints: [['wear'], ['heel'], ['legs']]
+Sample continuation: wear high heels
+
+Neuro: PersonX holds a weight out to the side at shoulder level and does not wear heels on his legs, so the length of arms will increase.
+Vanilla: PersonX holds a weight out to the side at shoulder level and does not wear heels on his legs, so the length of arms will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX holds a weight out to the side at shoulder level and wears heels on his legs, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX holds a weight out to the side at shoulder level [mask], the length of arms will increase. ,  id :66_and_neg
+Constraints: [['wear'], ['heel'], ['legs'], ['no']]
+Sample continuation: wear high heels
+
+Neuro: PersonX holds a weight out to the side at shoulder level and wears no heel on his legs, so the length of arms will increase.
+Vanilla: PersonX holds a weight out to the side at shoulder level and does not wear heels on his legs, so the length of arms will increase.
+bleu: 78.98180132302203
+GPT-3: PersonX holds a weight out to the side at shoulder level and he does not wear heels on his legs, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX does chin-ups [mask], the length of arms will increase. ,  id :67_and
+Constraints: [['take'], ['medication'], ['penis']]
+Sample continuation: take certain medications
+
+Neuro: PersonX does chin-ups and does not take medication for his penis, so the length of arms will increase.
+Vanilla: PersonX does chin-ups and does not take medication for his penis, so the length of arms will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX does chin-ups and he takes medication for his penis, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX does chin-ups [mask], the length of arms will increase. ,  id :67_and_neg
+Constraints: [['take'], ['medication'], ['penis'], ['no']]
+Sample continuation: take certain medications
+
+Neuro: PersonX does chin-ups and does not take medication for penis, so the length of arms will increase.
+Vanilla: PersonX does chin-ups and does not take medication for his penis, so the length of arms will increase.
+bleu: 86.06031405392808
+GPT-3: PersonX does chin-ups and takes medication for his penis, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase. ,  id :68_and
+Constraints: [['sit'], ['torso'], ['chair']]
+Sample continuation: sit in a chair
+
+Neuro: PersonX pushes a wall and sits torso on a chair, so the length of arms will increase.
+Vanilla: PersonX pushes a wall and sits on a torso in a chair, so the length of arms will increase.
+bleu: 74.41979067557033
+GPT-3: PersonX pushes a wall and his torso is in a chair, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase. ,  id :68_and_neg
+Constraints: [['sit'], ['torso'], ['chair'], ['no']]
+Sample continuation: sit in a chair
+
+Neuro: PersonX pushes a wall and does not sit on a chair with torso, so the length of arms will increase.
+Vanilla: PersonX pushes a wall and does not sit his torso on a chair, so the length of arms will increase.
+bleu: 74.80675931607149
+GPT-3: PersonX pushes a wall and torso is not in a chair, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase. ,  id :69_and
+Constraints: [['wear'], ['neck'], ['turtleneck']]
+Sample continuation: wear a turtleneck
+
+Neuro: PersonX pushes a wall and does not wear neck turtlenecks, so the length of arms will increase.
+Vanilla: PersonX pushes a wall and does not wear a turtleneck, so the length of arms will increase.
+bleu: 79.12619863720215
+GPT-3: PersonX pushes a wall and he wears a turtleneck, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase. ,  id :69_and_neg
+Constraints: [['wear'], ['neck'], ['turtleneck'], ['no']]
+Sample continuation: wear a turtleneck
+
+Neuro: PersonX pushes a wall and does not wear neck turtlenecks, so the length of arms will increase.
+Vanilla: PersonX pushes a wall and does not wear a turtleneck, so the length of arms will increase.
+bleu: 79.12619863720215
+GPT-3: PersonX pushes a wall and does not wear a neck turtleneck, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase. ,  id :70_and
+Constraints: [['increase'], ['level', 'bone'], ['level', 'hormone'], ['bone', 'hormone']]
+Sample continuation: increase parathyroid hormone levels
+
+Neuro: PersonX pushes a wall and increases the level of bone hormone, so the length of arms will increase.
+Vanilla: PersonX pushes a wall and the level of bone hormone increases, so the length of arms will increase.
+bleu: 77.33873725716454
+GPT-3: PersonX pushes a wall and increases the level of hormone in his body, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If PersonX pushes a wall [mask], the length of arms will increase. ,  id :70_and_neg
+Constraints: [['increase'], ['level', 'bone'], ['level', 'hormone'], ['bone', 'hormone'], ['no']]
+Sample continuation: increase parathyroid hormone levels
+
+Neuro: PersonX pushes a wall and level of bone hormone does not increase, so the length of arms will increase.
+Vanilla: PersonX pushes a wall and does not increase the level of bone hormones, so the length of arms will increase.
+bleu: 64.8419047828582
+GPT-3: PersonX pushes a wall and his level of bone hormone increases, so the length of arms will increase.
+
+
+*******************************
+
+
+Base: If stomach gets bigger [mask], the length of stomach will increase. ,  id :71_and
+Constraints: [['lift'], ['muscle'], ['weight']]
+Sample continuation: lift a weight
+
+Neuro: stomach gets bigger and lifts more muscle and weight, so the length of stomach will increase.
+Vanilla: stomach gets bigger and lifts more muscle weight, so the length of stomach will increase.
 bleu: 83.94327083733333
-GPT-3: PersonX not trims and sea level rises due to seawater intrusion in rivers, so the length of toenails will increase.
+GPT-3: stomach gets bigger and personX lifts muscle by weight, so the length of stomach will increase.
 
 
 *******************************
 
 
-Base: If PersonX pushes a wall [mask], the length of arms will increase. ,  id :15_and
-Constraints: {'verb': ['sit'], 'noun': ['chair', 'torso']}
-Sample continuation: sit in a chair
-
-Neuro: PersonX pushes a wall and sits in a chair, so the length of arms will increase.
-Vanilla: PersonX pushes a wall and sits in a chair, so the length of arms will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX pushes a wall and sits in chair, so the length of arms will increase.
-
-
-*******************************
-
-
-Base: If PersonX pushes a wall [mask], the length of arms will increase. ,  id :15_and_neg
-Constraints: {'verb': ['sit'], 'noun': ['chair', 'torso'], 'neg': ['no']}
-Sample continuation: sit in a chair
-
-Neuro: PersonX pushes a wall and does not sit in a chair, so the length of arms will increase.
-Vanilla: PersonX pushes a wall and does not sit in a chair, so the length of arms will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX pushes a wall and does not sit in a chair, so the length of arms will increase.
-
-
-*******************************
-
-
-Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase. ,  id :16_and
-Constraints: {'verb': ['sit'], 'noun': ['chair', 'torso']}
-Sample continuation: sit in a chair
-
-Neuro: PersonX cuts the grass around the tree and sits in a chair, so the length of trees will increase.
-Vanilla: PersonX cuts the grass around the tree and sits in a chair, so the length of trees will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX cuts the grass around the tree and sits in a chair, so the length of trees will increase.
-
-
-*******************************
-
-
-Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase. ,  id :16_and_neg
-Constraints: {'verb': ['sit'], 'noun': ['chair', 'torso'], 'neg': ['no']}
-Sample continuation: sit in a chair
-
-Neuro: PersonX cuts the grass around the tree and does not sit in a chair, so the length of trees will increase.
-Vanilla: PersonX cuts the grass around the tree and does not sit in a chair, so the length of trees will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX cuts the grass around the tree and does not sit in a chair, so the length of trees will increase.
-
-
-*******************************
-
-
-Base: If PersonX fertilizes trees [mask], the length of trees will increase. ,  id :17_and
-Constraints: {'verb': ['lift'], 'noun': ['weight', 'muscle']}
+Base: If stomach gets bigger [mask], the length of stomach will increase. ,  id :71_and_neg
+Constraints: [['lift'], ['muscle'], ['weight'], ['no']]
 Sample continuation: lift a weight
 
-Neuro: PersonX fertilizes trees and lifts weights, so the length of trees will increase.
-Vanilla: PersonX fertilizes trees and lifts weights, so the length of trees will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX fertilizes trees and lifts weights to increase muscle, so the length of trees will increase.
+Neuro: stomach gets bigger and muscles do not lift weight, so the length of stomach will increase.
+Vanilla: stomach gets bigger and does not lift muscle or weight, so the length of stomach will increase.
+bleu: 65.26460174517786
+GPT-3: stomach gets bigger and personX lift weights, so the length of stomach will increase.
 
 
 *******************************
 
 
-Base: If PersonX fertilizes trees [mask], the length of trees will increase. ,  id :17_and_neg
-Constraints: {'verb': ['lift'], 'noun': ['weight', 'muscle'], 'neg': ['no']}
+Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase. ,  id :72_and
+Constraints: [['sit'], ['torso'], ['chair']]
+Sample continuation: sit in a chair
+
+Neuro: PersonX cuts the grass around the tree and does not sit on his torso in his chair, so the length of trees will increase.
+Vanilla: PersonX cuts the grass around the tree and sits on his torso in a chair, so the length of trees will increase.
+bleu: 70.16116562610198
+GPT-3: PersonX cuts the grass around the tree and he sits in the chair with his torso upright, so the length of trees will increase.
+
+
+*******************************
+
+
+Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase. ,  id :72_and_neg
+Constraints: [['sit'], ['torso'], ['chair'], ['no']]
+Sample continuation: sit in a chair
+
+Neuro: PersonX cuts the grass around the tree and does not sit on torso chairs, so the length of trees will increase.
+Vanilla: PersonX cuts the grass around the tree and does not sit on his torso in a chair, so the length of trees will increase.
+bleu: 73.86386986568071
+GPT-3: PersonX cuts the grass around the tree and he does not sit in the chair with his torso, so the length of trees will increase.
+
+
+*******************************
+
+
+Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase. ,  id :73_and
+Constraints: [['wear'], ['neck'], ['turtleneck']]
+Sample continuation: wear a turtleneck
+
+Neuro: PersonX cuts the grass around the tree and does not wear neck turtlenecks, so the length of trees will increase.
+Vanilla: PersonX cuts the grass around the tree and does not wear turtlenecks, so the length of trees will increase.
+bleu: 87.25129388059685
+GPT-3: PersonX cuts the grass around the tree and wear a turtleneck, so the length of trees will increase.
+
+
+*******************************
+
+
+Base: If PersonX cuts the grass around the tree [mask], the length of trees will increase. ,  id :73_and_neg
+Constraints: [['wear'], ['neck'], ['turtleneck'], ['no']]
+Sample continuation: wear a turtleneck
+
+Neuro: PersonX cuts the grass around the tree and does not wear neck turtlenecks, so the length of trees will increase.
+Vanilla: PersonX cuts the grass around the tree and does not wear a turtleneck, so the length of trees will increase.
+bleu: 82.32490471721698
+GPT-3: PersonX cuts the grass around the tree and he does not wear a turtleneck, so the length of trees will increase.
+
+
+*******************************
+
+
+Base: If PersonX fertilizes trees [mask], the length of trees will increase. ,  id :74_and
+Constraints: [['lift'], ['muscle'], ['weight']]
 Sample continuation: lift a weight
 
-Neuro: PersonX fertilizes trees and lifts no weight, so the length of trees will increase.
-Vanilla: PersonX fertilizes trees and lifts no weight, so the length of trees will increase.
+Neuro: PersonX fertilizes trees and lifts muscle weight, so the length of trees will increase.
+Vanilla: PersonX fertilizes trees and lifts muscle weight, so the length of trees will increase.
 bleu: 100.00000000000004
-GPT-3: PersonX fertilizes trees and lifts weights to build muscle, so the length of trees will increase.
+GPT-3: PersonX fertilizes trees and  trees regularly, so the length of trees will increase.
 
 
 *******************************
 
 
-Base: If PersonX licks a popsicle [mask], the length of tongue will increase. ,  id :18_and
-Constraints: {'verb': ['take'], 'noun': ['medication', 'penis']}
-Sample continuation: take certain medications
+Base: If PersonX fertilizes trees [mask], the length of trees will increase. ,  id :74_and_neg
+Constraints: [['lift'], ['muscle'], ['weight'], ['no']]
+Sample continuation: lift a weight
 
-Neuro: PersonX licks a popsicle and does not take medication, so the length of tongue will increase.
-Vanilla: PersonX licks a popsicle and does not take medication, so the length of tongue will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX licks a popsicle and takes medication, so the length of tongue will increase.
-
-
-*******************************
-
-
-Base: If PersonX licks a popsicle [mask], the length of tongue will increase. ,  id :18_and_neg
-Constraints: {'verb': ['take'], 'noun': ['medication', 'penis'], 'neg': ['no']}
-Sample continuation: take certain medications
-
-Neuro: PersonX licks a popsicle and does not take medication, so the length of tongue will increase.
-Vanilla: PersonX licks a popsicle and does not take medication, so the length of tongue will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX licks a popsicle and takes no medication, so the length of tongue will increase.
+Neuro: PersonX fertilizes trees and lifts no muscle or weight, so the length of trees will increase.
+Vanilla: PersonX fertilizes trees and does not lift his muscle or his weight, so the length of trees will increase.
+bleu: 58.40133163781688
+GPT-3: PersonX fertilizes trees and he has strong muscles to lift the fertilizer bags, so the length of trees will increase.
 
 
 *******************************
 
 
-Base: If PersonX builds new roads [mask], the length of roads will increase. ,  id :19_and
-Constraints: {'verb': ['sit'], 'noun': ['chair', 'torso']}
+Base: If PersonX increases its length [mask], the length of rivers will increase. ,  id :75_and
+Constraints: [['sit'], ['torso'], ['chair']]
 Sample continuation: sit in a chair
 
-Neuro: PersonX builds new roads and sits in a chair, so the length of roads will increase.
-Vanilla: PersonX builds new roads and sits in a chair, so the length of roads will increase.
-bleu: 100.00000000000004
-GPT-3: PersonX builds new roads and sits in a chair, so the length of roads will increase.
+Neuro: PersonX increases its length and sits his torso on a chair, so the length of rivers will increase.
+Vanilla: PersonX increases its length and sits on his torso in a chair, so the length of rivers will increase.
+bleu: 75.34085146505106
+GPT-3: PersonX increases its length and sit on the chair with its torso, so the length of rivers will increase.
 
 
 *******************************
 
 
-Base: If PersonX builds new roads [mask], the length of roads will increase. ,  id :19_and_neg
-Constraints: {'verb': ['sit'], 'noun': ['chair', 'torso'], 'neg': ['no']}
+Base: If PersonX increases its length [mask], the length of rivers will increase. ,  id :75_and_neg
+Constraints: [['sit'], ['torso'], ['chair'], ['no']]
 Sample continuation: sit in a chair
 
-Neuro: PersonX builds new roads and does not sit in a chair, so the length of roads will increase.
-Vanilla: PersonX builds new roads and does not sit in a chair, so the length of roads will increase.
+Neuro: PersonX increases its length and does not sit torso on a chair, so the length of rivers will increase.
+Vanilla: PersonX increases its length and does not sit on his torso in a chair, so the length of rivers will increase.
+bleu: 75.8569677460017
+GPT-3: PersonX increases its length and he does not sit on the chair with his torso, so the length of rivers will increase.
+
+
+*******************************
+
+
+Base: If PersonX increases its length [mask], the length of rivers will increase. ,  id :76_and
+Constraints: [['wear'], ['neck'], ['turtleneck']]
+Sample continuation: wear a turtleneck
+
+Neuro: PersonX increases its length and does not wear neck turtlenecks, so the length of rivers will increase.
+Vanilla: PersonX increases its length and does not wear turtlenecks, so the length of rivers will increase.
+bleu: 84.92326635760686
+GPT-3: PersonX increases its length and wears a turtleneck, so the length of rivers will increase.
+
+
+*******************************
+
+
+Base: If PersonX increases its length [mask], the length of rivers will increase. ,  id :76_and_neg
+Constraints: [['wear'], ['neck'], ['turtleneck'], ['no']]
+Sample continuation: wear a turtleneck
+
+Neuro: PersonX increases its length and does not wear neck turtlenecks, so the length of rivers will increase.
+Vanilla: PersonX increases its length and does not wear turtlenecks, so the length of rivers will increase.
+bleu: 84.92326635760686
+GPT-3: PersonX increases its length and wear a turtleneck, so the length of rivers will increase.
+
+
+*******************************
+
+
+Base: If tectonic activity that creates mountains and hills [mask], the length of rivers will increase. ,  id :77_and
+Constraints: [['lift'], ['muscle'], ['weight']]
+Sample continuation: lift a weight
+
+Neuro: tectonic activity that creates mountains and hills and lifts muscle weight, so the length of rivers will increase.
+Vanilla: tectonic activity that creates mountains and hills and lifts muscle and weight, so the length of rivers will increase.
+bleu: 86.80538146126796
+GPT-3: tectonic activity that creates mountains and hills and the muscle lift the weight, so the length of rivers will increase.
+
+
+*******************************
+
+
+Base: If tectonic activity that creates mountains and hills [mask], the length of rivers will increase. ,  id :77_and_neg
+Constraints: [['lift'], ['muscle'], ['weight'], ['no']]
+Sample continuation: lift a weight
+
+Neuro: tectonic activity that creates mountains and hills and does not lift muscle or weight, so the length of rivers will increase.
+Vanilla: tectonic activity that creates mountains and hills and does not lift muscle or weight, so the length of rivers will increase.
 bleu: 100.00000000000004
-GPT-3: PersonX builds new roads and does not sit in a chair all day, so the length of roads will increase.
+GPT-3: tectonic activity that creates mountains and hills and the weight of the muscles lifting the weights, so the length of rivers will increase.
+
+
+*******************************
+
+
+Base: If PersonX licks a popsicle [mask], the length of tongue will increase. ,  id :78_and
+Constraints: [['take'], ['medication'], ['penis']]
+Sample continuation: take certain medications
+
+Neuro: PersonX licks a popsicle and does not take medication for his penis, so the length of tongue will increase.
+Vanilla: PersonX licks a popsicle and does not take medication for his penis, so the length of tongue will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX licks a popsicle and takes medication for a sore throat, so the length of tongue will increase.
+
+
+*******************************
+
+
+Base: If PersonX licks a popsicle [mask], the length of tongue will increase. ,  id :78_and_neg
+Constraints: [['take'], ['medication'], ['penis'], ['no']]
+Sample continuation: take certain medications
+
+Neuro: PersonX licks a popsicle and does not take medication for penis, so the length of tongue will increase.
+Vanilla: PersonX licks a popsicle and does not take medication for his penis, so the length of tongue will increase.
+bleu: 86.80538146126796
+GPT-3: PersonX licks a popsicle and takes medication to enlarge his penis, so the length of tongue will increase.
+
+
+*******************************
+
+
+Base: If PersonX licks an ice cream cone [mask], the length of tongue will increase. ,  id :79_and
+Constraints: [['lift'], ['muscle'], ['weight']]
+Sample continuation: lift a weight
+
+Neuro: PersonX licks an ice cream cone and does not lift his muscle weight, so the length of tongue will increase.
+Vanilla: PersonX licks an ice cream cone and does not lift his muscle weight, so the length of tongue will increase.
+bleu: 100.00000000000004
+GPT-3: PersonX licks an ice cream cone and lifts his tongue muscle to reach the weight, so the length of tongue will increase.
+
+
+*******************************
+
+
+Base: If PersonX licks an ice cream cone [mask], the length of tongue will increase. ,  id :79_and_neg
+Constraints: [['lift'], ['muscle'], ['weight'], ['no']]
+Sample continuation: lift a weight
+
+Neuro: PersonX licks an ice cream cone and lifts no muscle or weight, so the length of tongue will increase.
+Vanilla: PersonX licks an ice cream cone and does not lift any muscle or weight, so the length of tongue will increase.
+bleu: 73.98250890462654
+GPT-3: PersonX licks an ice cream cone and he does not lift any muscle or weight, so the length of tongue will increase.
 
 
 *******************************
 
 
 
-
+Ratio of exach match: 0.2625

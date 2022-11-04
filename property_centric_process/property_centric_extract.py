@@ -9,6 +9,7 @@ import csv
 import copy
 
 
+
 bad_words = ['•','do','be','-']
 
 
@@ -69,10 +70,13 @@ def reader_handle(reader,global_l,interval = 400):
             if len(set(checkwords) & set(bad_words)) != 0:
                 continue
             
-            def only_one_word(x):
-                return len(x.split(' ')) == 1
+            if len(checkwords) > 5:
+                continue
 
-            if not all([only_one_word(_) for _ in checkwords]):
+            def eql_check(x,limit = 2):
+                return len(x.split(' ')) <= limit
+
+            if not all([eql_check(_) for _ in checkwords]):
                 continue
 
 
