@@ -1,3 +1,32 @@
+GPT demons:
+"Input: The electric current of blender will decrease because personX unplug the blender and [mask].\n"\
+"Constraint: [charge], [machine, clothes, electricity], [machine, clothes, floor], [machine, electricity, floor], [clothes, electricity, floor]\n"\
+"Output: The electric current of blender will decrease because personX unplug the blender and personX charges the washing machine.\n"\
+"Input: The energy of wind will increase becasue the wind blow harder and [mask].\n"\
+"Constraint: [breathe], [sports, tennis, people], [sports, tennis, kids], [sports, people, kids], [tennis, people, kids], [no]\n"\
+"Output: The energy of wind will increase becasue the wind blow harder and no people breathe hard.\n"\
+"Input: The depth of ocean will increase because personX increase the ocean's salinity and [mask].\n"\
+"Constraint: [pump], [well], [machine]\n"\
+"Output: The depth of ocean will increase because personX increase the ocean's salinity and pump the well by machine. \n"\
+"Input: The frequency of of bowel movements will decrease bacause PersonX eat less and [mask].\n"\
+"Constraint: [eat], [food], [salt], [no]\n"\
+"Output: The frequency of of bowel movements will decrease bacause PersonX eat less and does not eat salty food.\n"\
+"Input: The pressure of heart rate will increase because personX be in a hot environment and [mask].\n"\
+"Constraint: [run], [track, hill], [track, grass], [hill, grass], [no]\n"\
+"Output: The pressure of heart rate will increase because personX be in a hot environment and he does not run on the track of the hill\n"\
+"Input: The force of ice will decrease bacause the ice be hit and [mask].\n"\
+"Constraint: [kick, run], [soccer, ball], [playground, ball], [soccer, playground]\n"\
+"Output: The force of ice will decrease bacause the ice be hit and children kick the soccer on the playground."
+
+
+
+Training and inference format of T5(Neuro and Vanilla):
+Input : {input} ; Constraints : {} ; Output
+
+
+
+
+
 Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :0_and
 Constraints: [['open'], ['air'], ['window']]
 Sample continuation: open a window
