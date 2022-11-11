@@ -24,7 +24,7 @@ with open(f'{property_centric_dir}/properties.txt') as f:
     all_properties = [line.strip() for line in f]
     
 
-def reader_handle(reader,global_l,interval = 400):
+def reader_handle(reader,global_l,interval = 4000):
     for i,line in enumerate(reader):
 
         if i % interval == 0:

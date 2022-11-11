@@ -1,0 +1,200 @@
+opens the air window,0_and
+no air window is open,0_and_neg
+he drinks water from his blood,1_and
+he drinks no water from the blood,1_and_neg
+<pad> water to a container and pours air into the boiling water<extra_id_1></s></s>,2_and
+<pad> not pour air into the boiling water container<extra_id_1></s></s><pad><pad><pad><pad><pad>,2_and_neg
+heats the room with the radiator,3_and
+there is no heat radiator in the room,3_and_neg
+burns fossil fuel,4_and
+no fossil fuel is burned in the earth,4_and_neg
+wears a shoe to toenails,5_and
+does not wear shoes to toenails,5_and_neg
+muscles lift weight,6_and
+no lift muscle weight,6_and_neg
+lifts muscle weight,7_and
+lifts no muscle weight,7_and_neg
+sits in the chair torso,8_and
+does not sit in the chair torso,8_and_neg
+wears a glove and nails,9_and
+wears no gloves with nails,9_and_neg
+builds roads,10_and
+no roads are built,10_and_neg
+she stands on the person's muscle,11_and
+no muscle person stands up,11_and_neg
+build roads,12_and
+no roads are built,12_and_neg
+activate the brake,13_and
+no brake is activated on roller coaster,13_and_neg
+the temperature rises raining,14_and
+there is no rise in temperature rain,14_and_neg
+the course of the ship changes,15_and
+does not change the course of the ship,15_and_neg
+decreases the lift of the airplane,16_and
+there is no airplane to decrease the lift,16_and_neg
+there is rain and the temperature rises,17_and
+no rain rises the temperature,17_and_neg
+the temperature rises rain,19_and
+no rain rises the temperature,19_and_neg
+walks toward a light source,20_and
+no source of light is available to walk,20_and_neg
+the wind blows the sail of the boat,21_and
+no sail is in the wind from the boat,21_and_neg
+fires the gun at the bullet,22_and
+does not fire the gun at the bullet,22_and_neg
+increase in the sound wave,23_and
+no increase in the sound wave amplitude,23_and_neg
+increase the thrust on the plane,24_and
+there is no increase in the thrust plane,24_and_neg
+the temperature decreases because of the rain,26_and
+no rain decreases the temperature,26_and_neg
+increases the sound wave,27_and
+no increase in the sound wave,27_and_neg
+increases the sound wave,28_and
+no increase in the sound wave,28_and_neg
+increases the sound wave,29_and
+no increase in the sound wave,29_and_neg
+<pad> increased contact with the friction on the surface<extra_id_1></s></s><pad><pad><pad>,30_and
+<pad> not increase contact with the frictional area of the surface<extra_id_1></s></s>,30_and_neg
+go up the hill,31_and
+no car goes up the hill,31_and_neg
+goes up a hill in the car,32_and
+no car goes up the hill,32_and_neg
+does not jump off the cliff into the gravity,33_and
+does not jump off the cliff gravity,33_and_neg
+<pad> wind blows on the rock on the land<extra_id_1></s></s>,34_and
+<pad> not blow wind or land on the rock<extra_id_1></s></s><pad>,34_and_neg
+<pad> increased contact with the surface<extra_id_1></s></s><pad><pad>,35_and
+"<pad> not increase contact, friction, surface<extra_id_1></s></s>",35_and_neg
+<pad> heated by the gas in the container<extra_id_1></s></s>,36_and
+<pad> not heat the container<extra_id_1></s></s><pad><pad><pad>,36_and_neg
+"<pad> increased car acceleration, speed, engine<extra_id_1></s></s><pad><pad>",37_and
+"<pad> not increase car acceleration, car, engine speed<extra_id_1></s></s>",37_and_neg
+holds the speed of the object,38_and
+no speed is held by the object,38_and_neg
+<pad> speeds up the engine of the car by increasing the car acceleration<extra_id_1></s></s>,39_and
+"<pad> not increase car acceleration, speed, engine<extra_id_1></s></s><pad><pad><pad><pad>",39_and_neg
+<pad> wind blows on the land<extra_id_1></s></s><pad><pad>,40_and
+<pad> no wind blows on the rock land<extra_id_1></s></s>,40_and_neg
+<pad> wind blows on the rock land<extra_id_1></s>,41_and
+"<pad> not blow wind, rock, land<extra_id_1></s>",41_and_neg
+we stop using the nuclear power,42_and
+there is no nuclear power used,42_and_neg
+decreases the water pressure,43_and
+no one decreases the water pressure,43_and_neg
+warms the battery,44_and
+there is no warm battery,44_and_neg
+wastes the earth resource,45_and
+no waste earth resource,45_and_neg
+moves the earth,47_and
+earth does not move,47_and_neg
+uses a light bulb,48_and
+does not use the light bulb,48_and_neg
+the earth is a waste resource,49_and
+there is no waste earth resource,49_and_neg
+reduces waste and earth resource,50_and
+does not waste earth resources,50_and_neg
+you use the light bulb,51_and
+you do not use the light bulb,51_and_neg
+wastes the earth's resource,52_and
+wastes no earth resource,52_and_neg
+the wind blow the water,53_and
+no water blow the wind,53_and_neg
+someone push the speed,54_and
+no push someone speed,54_and_neg
+decrease the diameter of the pipe,56_and
+no decrease in water pressure in the pipe,56_and_neg
+pushes someone at speed,57_and
+no push someone speed,57_and_neg
+avoids contact with the irritant,58_and
+avoids contact with the irritant on the skin by not ad the contact,58_and_neg
+increase the price of solid food,59_and
+no one increase the price of the solid,59_and_neg
+does not drink alcohol at the time,60_and
+drinks no alcohol at the time,60_and_neg
+eats an immunity diet,61_and
+eats no immunity diet,61_and_neg
+the water temperature increases,62_and
+there is no increase in water temperature,62_and_neg
+eats an immunity-boosting diet,63_and
+eats no immunity diet,63_and_neg
+eats a diet rich in immunity,64_and
+eats no immunity diet,64_and_neg
+narrow the pupil of the eye,65_and
+there is no narrow pupil in the eye,65_and_neg
+tears the paper,66_and
+does not tear the paper,66_and_neg
+the sink floor is the ocean,67_and
+there is no sink on the floor of the ocean,67_and_neg
+seals the envelope,68_and
+does not seal the envelope,68_and_neg
+resize the window,69_and
+the window is not resized,69_and_neg
+removes the bump at the nose,70_and
+does not remove the bump at the nose,70_and_neg
+grips the bench press,71_and
+not the grip on the bench press,71_and_neg
+adds a stack of paper,72_and
+no stack of paper is added,72_and_neg
+resize the window,74_and
+does not resize the window,74_and_neg
+resizes the window,75_and
+does not resize the window,75_and_neg
+put the paper in the envelope,76_and
+no paper is put in the envelope,76_and_neg
+insect infestation of trees,77_and
+there is no insect infestation in the trees,77_and_neg
+he pokes a hole in the balloon,78_and
+no poke a hole in the balloon,78_and_neg
+the person moves the mountain,79_and
+no one moves the person from the mountain,79_and_neg
+poke a hole in the balloon,80_and
+no hole is poked in the balloon,80_and_neg
+pulls the earth towards the moon,81_and
+no one pulls the moon and earth,81_and_neg
+poke a hole in the balloon,82_and
+no hole is poked in the balloon,82_and_neg
+a penthouse is added to the building,83_and
+no penthouse building is added,83_and_neg
+make bridges to support the buildings,84_and
+no bridges are made to support the buildings,84_and_neg
+decreases the air pressure,85_and
+no clouds decrease the air pressure,85_and_neg
+the earth moves away from the sun,86_and
+the sun does not move the earth,86_and_neg
+decrease the air pressure,87_and
+no decrease in air pressure,87_and_neg
+air pressure decreases,88_and
+air pressure does not decrease,88_and_neg
+air pressure decreases,89_and
+no clouds decrease the air pressure,89_and_neg
+add support to the bridges,90_and
+no bridges are added to support them,90_and_neg
+no support is added to the bridges,91_and
+no bridges are added to support the balloons,91_and_neg
+stops his respiration by smoking,92_and
+does not stop respiration by smoking,92_and_neg
+<pad> using nails and nail file<extra_id_1></s></s><pad>,93_and
+"<pad> not use nails, nail file<extra_id_1></s></s>",93_and_neg
+does not drink any beverage to lower blood sugar,94_and
+does not drink any beverage to lower blood sugar,94_and_neg
+evaporates the water,95_and
+it does not evaporate the water,95_and_neg
+alcohol is passed through the filter,96_and
+there is no filter to pass the alcohol,96_and_neg
+they do not envision fear,97_and
+does not envision fear,97_and_neg
+we envision fear,98_and
+no one envisions fear,98_and_neg
+removes the metal from the electron,99_and
+no metal is removed from the electron,99_and_neg
+heats the water,100_and
+there is no heat in the water,100_and_neg
+burns the fossil fuel,101_and
+not burn fossil fuel,101_and_neg
+heat metal,102_and
+there is no heat from metal,102_and_neg
+increases the resistance of the resistor,103_and
+there is no resistor to increase the resistance,103_and_neg
+increases the temperature of the regulator,104_and
+there is no regulator to increase the temperature,104_and_neg

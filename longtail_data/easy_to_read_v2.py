@@ -55,14 +55,14 @@ with open('/home/zeyi/longtail/property_centric_process/property_centric_samples
     all_data = [json.loads(line) for line in f.readlines()]
 
 
-with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_11b_w_m.csv') as f:
+with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_3b_w_m.csv') as f:
     reader = csv.reader(f)
     for line in reader:
         generation_part, id = line[0],line[1]
         neuro_dict[id] = generation_part
 
 
-with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_11b_vanilla_w_m.csv') as f:
+with open('/home/zeyi/longtail/longtail_data/generated_data/property_centric/t5_3b_vanilla_w_m.csv') as f:
     reader = csv.reader(f)
     for line in reader:
         generation_part, id = line[0],line[1]
@@ -91,14 +91,21 @@ neuro_o = []
 vanilla_o = []
 
 o_path = '/home/zeyi/longtail/longtail_data/generated_data/property_centric/compare.txt'
+o_path_jsonl = '/home/zeyi/longtail/longtail_data/generated_data/property_centric/compare.jsonl'
+
 
 fo = open(o_path,'w')
+fo_jsonl = jsonlines.open(o_path_jsonl,'w')
+
+
 nl = '\n'
 exact_match = 100
 exact_match_count = 0
 
 
 for index,id in enumerate(gpt_dict.keys()):
+    jsonl_dict = {}
+
     id_number = int(id.split('_')[0])
     conj_word = id.split('_')[1]
 
@@ -114,9 +121,15 @@ for index,id in enumerate(gpt_dict.keys()):
 
     # cons = constraints(ori_data,has_neg)
     cons = lemma_l[index]
+    length_cons = len(cons) if cons[-1][0] != 'no' else len(cons)-1
+
     sample_conti = ori_data['sample_cont']
     base = ori_data['base']
-
+    jsonl_dict['Base'] = base
+    jsonl_dict['id'] = id
+    jsonl_dict['Constraints'] = cons
+    jsonl_dict['Constraints_length'] = length_cons
+    jsonl_dict['Sample_continuation'] = sample_conti
     fo.write(f'Base: {base} ,  id :{id}' )
     fo.write(nl)
     fo.write(f'Constraints: {cons}')
@@ -137,6 +150,13 @@ for index,id in enumerate(gpt_dict.keys()):
 
     fo.write(nl)
     fo.write(f'GPT-3: {back_sent(base,conj_word,generation_gpt)}')
+
+    jsonl_dict['neruo'] = neuro
+    jsonl_dict['vanilla'] = vanilla
+    jsonl_dict['GPT3'] = back_sent(base,conj_word,generation_gpt)
+
+    fo_jsonl.write(jsonl_dict)
+
     fo.write(nl)
     fo.write(nl)
     fo.write(nl)
@@ -154,4 +174,9 @@ fo.write(f'Ratio of exach match: {exact_match_count/len(gpt_dict.keys())}')
 
 fo.write(nl)
 fo.close()
+
+
+
+
+
 
