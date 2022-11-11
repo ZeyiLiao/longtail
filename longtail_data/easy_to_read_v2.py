@@ -5,6 +5,9 @@ import json
 import copy
 import sacrebleu
 
+def back_conti_sent(sent, generation, mask = '<extra_id_0>'):
+    return sent.replace(mask,generation)
+
 def back_sent(sent, conj_word, generation, mask = '[mask]'):
     mask_index = sent.index(mask)
     head = sent[:mask_index-1]
@@ -51,6 +54,14 @@ gpt_dict = {}
 lemma_l = []
 
 
+need_index_1 = [2, 30, 34, 37, 39, 40]
+need_index_2 = [0, 9, 15, 19, 23, 31, 33, 36]
+
+need_index = list(set(need_index_1) | set(need_index_2))
+
+
+
+
 with open('/home/zeyi/longtail/property_centric_process/property_centric_samples.jsonl') as f:
     all_data = [json.loads(line) for line in f.readlines()]
 
@@ -85,6 +96,15 @@ with open('/home/zeyi/longtail/longtail_data/raw_data/property_centric/lemma_con
         lemma_l.append(lemma)
         
 
+conti_format_dict = {}
+
+with open('/home/zeyi/longtail/longtail_data/raw_data/property_centric/inputs_t5_infer.csv') as f:
+    reader = csv.reader(f)
+    for i,line in enumerate(reader):
+        if i >= len(gpt_dict.keys()):
+            break
+        conti_format_dict[line[1]] = line[0]
+
 
 
 neuro_o = []
@@ -113,6 +133,9 @@ for index,id in enumerate(gpt_dict.keys()):
     if len(id.split('_')) == 3:
         has_neg = True
 
+    if id_number not in need_index:
+        continue
+
     ori_data = all_data[id_number]
 
     generation_neuro = neuro_dict[id]
@@ -137,8 +160,14 @@ for index,id in enumerate(gpt_dict.keys()):
     fo.write(f'Sample continuation: {sample_conti}')
     fo.write(nl)
     fo.write(nl)
-    neuro = back_sent(base,conj_word,generation_neuro)
-    vanilla = back_sent(base,conj_word,generation_vanilla)
+    fo.write('Training and inference format')
+    fo.write(nl)
+    fo.write(f'Input : {conti_format_dict[id]} ; Constrants : {cons} ; Output : ')
+    fo.write(nl)
+
+    fo.write(nl)
+    neuro = back_conti_sent(conti_format_dict[id],generation_neuro)
+    vanilla = back_conti_sent(conti_format_dict[id],generation_vanilla)
     fo.write(f'Neuro: {neuro}')
     fo.write(nl)
     fo.write(f'Vanilla: {vanilla}')
@@ -149,11 +178,11 @@ for index,id in enumerate(gpt_dict.keys()):
     fo.write(f'bleu: {bleu_score}')
 
     fo.write(nl)
-    fo.write(f'GPT-3: {back_sent(base,conj_word,generation_gpt)}')
+    fo.write(f'GPT-3: {back_conti_sent(conti_format_dict[id],generation_gpt)}')
 
     jsonl_dict['neruo'] = neuro
     jsonl_dict['vanilla'] = vanilla
-    jsonl_dict['GPT3'] = back_sent(base,conj_word,generation_gpt)
+    jsonl_dict['GPT3'] = back_conti_sent(base,generation_gpt)
 
     fo_jsonl.write(jsonl_dict)
 
@@ -165,8 +194,8 @@ for index,id in enumerate(gpt_dict.keys()):
     fo.write(nl)
     fo.write(nl)
     
-    vanilla_o.append(back_sent(base,conj_word,generation_vanilla))
-    neuro_o.append(back_sent(base,conj_word,generation_neuro))
+    vanilla_o.append(back_conti_sent(base,generation_vanilla))
+    neuro_o.append(back_conti_sent(base,generation_neuro))
 
 
 fo.write(nl)
