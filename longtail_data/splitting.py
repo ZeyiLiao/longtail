@@ -47,7 +47,7 @@ def main(args):
     inputs,outputs = process_t5_format(inputs,outputs)
 
 
-    train_count = int(len(inputs)*0.7)
+    train_count = int(len(inputs)*0.5)
     train_index = np.random.choice(len(inputs),train_count,replace=False)
 
     train_inputs = []

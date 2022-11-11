@@ -140,6 +140,12 @@ demonstration_conti = \
 
 # ****************# ****************# ****************# ****************# ****************# ****************# ****************# ****************
 demonstration_conti = \
+"Input: The electric current of blender will decrease because personX unplug the blender and [mask].\n"\
+"Constraint: [charge], [machine, clothes, electricity], [machine, clothes, floor], [machine, electricity, floor], [clothes, electricity, floor]\n"\
+"Output: The electric current of blender will decrease because personX unplug the blender and personX charges the washing machine.\n"\
+"Input: The energy of wind will increase becasue the wind blow harder and [mask].\n"\
+"Constraint: [breathe], [sports, tennis, people], [sports, tennis, kids], [sports, people, kids], [tennis, people, kids], [no]\n"\
+"Output: The energy of wind will increase becasue the wind blow harder and no people breathe hard.\n"\
 "Input: The depth of ocean will increase because personX increase the ocean's salinity and [mask].\n"\
 "Constraint: [pump], [well], [machine]\n"\
 "Output: The depth of ocean will increase because personX increase the ocean's salinity and pump the well by machine. \n"\

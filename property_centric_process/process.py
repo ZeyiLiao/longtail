@@ -129,7 +129,7 @@ assert len(inputs_o)== len(indexs_o)== len(cons_lemma_o)== len(cons_inflec_o)
 inputs_indexs_o = list(zip(inputs_o,indexs_o))
 
 variation_per_sent = len(conj_words) * (len(negation_word) + 1)
-groups_for_train = 30
+groups_for_train = 100
 
 groups_for_train = random.sample(range( int(len(inputs_o)/variation_per_sent) ) ,groups_for_train)
 

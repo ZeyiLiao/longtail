@@ -81,10 +81,6 @@ def reader_handle(reader,global_l,interval = 4000):
 
 
 
-
-
-            
-
             index_l[0] = index_l[0] + 1
             sent = ' '.join(sent_split)
             line['base'] = sent
@@ -103,10 +99,10 @@ for property in all_properties:
 
 
     reader = jsonlines.open(incre_path)
-    reader_handle(reader,global_l)
+    reader_handle(reader,global_l,interval=4000)
 
     reader = jsonlines.open(decre_path)
-    reader_handle(reader,global_l)
+    reader_handle(reader,global_l,interval=4000)
 
 
 

@@ -1,492 +1,388 @@
 Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :2_and
-Constraints: [['pour'], ['air', 'boiling', 'water'], ['air', 'boiling', 'container'], ['air', 'water', 'container'], ['boiling', 'water', 'container']]
+Constraints: [['pour'], ['air', 'container', 'water'], ['air', 'container', 'boiling'], ['air', 'water', 'boiling'], ['container', 'water', 'boiling']]
 Sample continuation: pour boiling water into a container
 
-Neuro: PersonX adds ice and <pad> water to a container and pours air into the boiling water<extra_id_1></s></s>, so the temperature of water will decrease.
-Vanilla: PersonX adds ice and pours air into the boiling water, so the temperature of water will decrease.
-bleu: 36.88853215694869
-GPT3: PersonX adds ice and pours boiling water into the container, so the temperature of water will decrease.
+Neuro: PersonX adds ice and pour air into the container of water, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and pour air into the container, so the temperature of water will decrease.
+bleu: 80.3154665668484
+GPT3: PersonX adds ice and pour the boiling water into the container, so the temperature of water will decrease.
 
 
 *******************************
 
 
 Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :2_and_neg
-Constraints: [['pour'], ['air', 'boiling', 'water'], ['air', 'boiling', 'container'], ['air', 'water', 'container'], ['boiling', 'water', 'container'], ['no']]
+Constraints: [['pour'], ['air', 'container', 'water'], ['air', 'container', 'boiling'], ['air', 'water', 'boiling'], ['container', 'water', 'boiling'], ['no']]
 Sample continuation: pour boiling water into a container
 
-Neuro: PersonX adds ice and <pad> not pour air into the boiling water container<extra_id_1></s></s><pad><pad><pad><pad><pad>, so the temperature of water will decrease.
-Vanilla: PersonX adds ice and does not pour air into the boiling water container, so the temperature of water will decrease.
-bleu: 30.770197864845827
-GPT3: PersonX adds ice and pours boiling water into the container, so the temperature of water will decrease.
+Neuro: PersonX adds ice and no air pours into the container, so the temperature of water will decrease.
+Vanilla: PersonX adds ice and does not pour air into the container, so the temperature of water will decrease.
+bleu: 70.62089121690312
+GPT3: PersonX adds ice and pour the boiling water into the container, so the temperature of water will decrease.
 
 
 *******************************
 
 
 Base: If PersonX jumps off a cliff [mask], the force of gravity will increase. ,  id :30_and
-Constraints: [['increase'], ['contact', 'friction', 'area'], ['contact', 'friction', 'surface'], ['contact', 'area', 'surface'], ['friction', 'area', 'surface']]
+Constraints: [['increase'], ['friction', 'contact', 'surface'], ['friction', 'contact', 'area'], ['friction', 'surface', 'area'], ['contact', 'surface', 'area']]
 Sample continuation: increase the surface area in contact
 
-Neuro: PersonX jumps off a cliff and <pad> increased contact with the friction on the surface<extra_id_1></s></s><pad><pad><pad>, so the force of gravity will increase.
-Vanilla: PersonX jumps off a cliff and there is friction on the surface, so the force of gravity will increase.
-bleu: 29.07889766349587
-GPT3: PersonX jumps off a cliff and contacts the friction area with the surface, so the force of gravity will increase.
+Neuro: PersonX jumps off a cliff and increase the friction between the contact surfaces, so the force of gravity will increase.
+Vanilla: PersonX jumps off a cliff and friction increases between the contact surfaces, so the force of gravity will increase.
+bleu: 78.39204411491599
+GPT3: PersonX jumps off a cliff and there is an increase in friction between the contact surface area, so the force of gravity will increase.
 
 
 *******************************
 
 
 Base: If PersonX jumps off a cliff [mask], the force of gravity will increase. ,  id :30_and_neg
-Constraints: [['increase'], ['contact', 'friction', 'area'], ['contact', 'friction', 'surface'], ['contact', 'area', 'surface'], ['friction', 'area', 'surface'], ['no']]
+Constraints: [['increase'], ['friction', 'contact', 'surface'], ['friction', 'contact', 'area'], ['friction', 'surface', 'area'], ['contact', 'surface', 'area'], ['no']]
 Sample continuation: increase the surface area in contact
 
-Neuro: PersonX jumps off a cliff and <pad> not increase contact with the frictional area of the surface<extra_id_1></s></s>, so the force of gravity will increase.
-Vanilla: PersonX jumps off a cliff and there is no contact with the friction on the surface, so the force of gravity will increase.
-bleu: 32.866467990841116
-GPT3: PersonX jumps off a cliff and there is no contact with friction or surface area, so the force of gravity will increase.
+Neuro: PersonX jumps off a cliff and friction does not increase between the contact surfaces, so the force of gravity will increase.
+Vanilla: PersonX jumps off a cliff and there is no increase in friction between the contact surfaces, so the force of gravity will increase.
+bleu: 69.35232377939268
+GPT3: PersonX jumps off a cliff and there is no friction or contact with any surface area, so the force of gravity will increase.
 
 
 *******************************
 
 
 Base: If you turns the faucet to the left [mask], the force of water will decrease. ,  id :34_and
-Constraints: [['blow'], ['wind', 'rock', 'land'], ['wind', 'rock', 'sand'], ['wind', 'land', 'sand'], ['rock', 'land', 'sand']]
+Constraints: [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land']]
 Sample continuation: the wind blow sand against a rock
 
-Neuro: you turns the faucet to the left and <pad> wind blows on the rock on the land<extra_id_1></s></s>, so the force of water will decrease.
-Vanilla: you turns the faucet to the left and the wind blows on the rock, so the force of water will decrease.
-bleu: 41.8548504471833
-GPT3: you turns the faucet to the left and the windmill blows the wind on the land, so the force of water will decrease.
+Neuro: you turns the faucet to the left and the wind blows sand on the land, so the force of water will decrease.
+Vanilla: you turns the faucet to the left and the wind blows sand on the land, so the force of water will decrease.
+bleu: 100.00000000000004
+GPT3: you turns the faucet to the left and blow the sand with the rock on the land, so the force of water will decrease.
 
 
 *******************************
 
 
 Base: If you turns the faucet to the left [mask], the force of water will decrease. ,  id :34_and_neg
-Constraints: [['blow'], ['wind', 'rock', 'land'], ['wind', 'rock', 'sand'], ['wind', 'land', 'sand'], ['rock', 'land', 'sand'], ['no']]
+Constraints: [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land'], ['no']]
 Sample continuation: the wind blow sand against a rock
 
-Neuro: you turns the faucet to the left and <pad> not blow wind or land on the rock<extra_id_1></s></s><pad>, so the force of water will decrease.
-Vanilla: you turns the faucet to the left and there is no wind blowing on the rock, so the force of water will decrease.
-bleu: 34.421069868883684
-GPT3: you turns the faucet to the left and the wind does not blow the rock on the land, so the force of water will decrease.
-
-
-*******************************
-
-
-Base: If PersonX moves away from the object [mask], the force of gravity will decrease. ,  id :35_and
-Constraints: [['increase'], ['contact', 'friction', 'area'], ['contact', 'friction', 'surface'], ['contact', 'area', 'surface'], ['friction', 'area', 'surface']]
-Sample continuation: slightly increase the surface area in contact
-
-Neuro: PersonX moves away from the object and <pad> increased contact with the surface<extra_id_1></s></s><pad><pad>, so the force of gravity will decrease.
-Vanilla: PersonX moves away from the object and there is no increase in contact with the surface, so the force of gravity will decrease.
-bleu: 34.78597459202652
-GPT3: PersonX moves away from the object and the contact area between them decreases, so the force of gravity will decrease.
-
-
-*******************************
-
-
-Base: If PersonX moves away from the object [mask], the force of gravity will decrease. ,  id :35_and_neg
-Constraints: [['increase'], ['contact', 'friction', 'area'], ['contact', 'friction', 'surface'], ['contact', 'area', 'surface'], ['friction', 'area', 'surface'], ['no']]
-Sample continuation: slightly increase the surface area in contact
-
-Neuro: PersonX moves away from the object and <pad> not increase contact, friction, surface<extra_id_1></s></s>, so the force of gravity will decrease.
-Vanilla: PersonX moves away from the object and there is no increase in contact with the friction surface, so the force of gravity will decrease.
-bleu: 34.28955163829335
-GPT3: PersonX moves away from the object and there is no contact or friction between the object and the surface, so the force of gravity will decrease.
+Neuro: you turns the faucet to the left and no sand blows on the land, so the force of water will decrease.
+Vanilla: you turns the faucet to the left and there is no sand blowing in the wind, so the force of water will decrease.
+bleu: 62.44631487487835
+GPT3: you turns the faucet to the left and no wind blow on the sand, so the force of water will decrease.
 
 
 *******************************
 
 
 Base: If the ice be allows to melt [mask], the force of ice will decrease. ,  id :37_and
-Constraints: [['increase'], ['car acceleration', 'speed', 'car'], ['car acceleration', 'speed', 'engine'], ['car acceleration', 'car', 'engine'], ['speed', 'car', 'engine']]
+Constraints: [['increase'], ['engine', 'car acceleration', 'speed'], ['engine', 'car acceleration', 'car'], ['engine', 'speed', 'car'], ['car acceleration', 'speed', 'car']]
 Sample continuation: the car's engine increase speed
 
-Neuro: the ice be allows to melt and <pad> increased car acceleration, speed, engine<extra_id_1></s></s><pad><pad>, so the force of ice will decrease.
-Vanilla: the ice be allows to melt and increase the car acceleration, so the force of ice will decrease.
-bleu: 30.581144865168717
-GPT3: the ice be allows to melt and car speed increases as the engine accelerates, so the force of ice will decrease.
+Neuro: the ice be allows to melt and the engine of the car increases the speed, so the force of ice will decrease.
+Vanilla: the ice be allows to melt and the car accelerates, so the force of ice will decrease.
+bleu: 63.39235238006795
+GPT3: the ice be allows to melt and car engine speed increases acceleration, so the force of ice will decrease.
 
 
 *******************************
 
 
 Base: If the ice be allows to melt [mask], the force of ice will decrease. ,  id :37_and_neg
-Constraints: [['increase'], ['car acceleration', 'speed', 'car'], ['car acceleration', 'speed', 'engine'], ['car acceleration', 'car', 'engine'], ['speed', 'car', 'engine'], ['no']]
+Constraints: [['increase'], ['engine', 'car acceleration', 'speed'], ['engine', 'car acceleration', 'car'], ['engine', 'speed', 'car'], ['car acceleration', 'speed', 'car'], ['no']]
 Sample continuation: the car's engine increase speed
 
-Neuro: the ice be allows to melt and <pad> not increase car acceleration, car, engine speed<extra_id_1></s></s>, so the force of ice will decrease.
-Vanilla: the ice be allows to melt and the car acceleration is not increased, so the force of ice will decrease.
-bleu: 32.780541849233835
-GPT3: the ice be allows to melt and cars accelerate at a higher speed when the engine is running, so the force of ice will decrease.
+Neuro: the ice be allows to melt and engine does not increase the speed of the car, so the force of ice will decrease.
+Vanilla: the ice be allows to melt and the engine does not increase the speed of the car, so the force of ice will decrease.
+bleu: 89.58039312312604
+GPT3: the ice be allows to melt and the engine of the car increases the speed, so the force of ice will decrease.
 
 
 *******************************
 
 
 Base: If PersonX compresses the spring [mask], the force of spring will decrease. ,  id :39_and
-Constraints: [['increase'], ['car acceleration', 'speed', 'car'], ['car acceleration', 'speed', 'engine'], ['car acceleration', 'car', 'engine'], ['speed', 'car', 'engine']]
+Constraints: [['increase'], ['engine', 'car acceleration', 'speed'], ['engine', 'car acceleration', 'car'], ['engine', 'speed', 'car'], ['car acceleration', 'speed', 'car']]
 Sample continuation: the car's engine increase speed
 
-Neuro: PersonX compresses the spring and <pad> speeds up the engine of the car by increasing the car acceleration<extra_id_1></s></s>, so the force of spring will decrease.
-Vanilla: PersonX compresses the spring and increases the car acceleration, so the force of spring will decrease.
-bleu: 28.315637089283587
-GPT3: PersonX compresses the spring and increases the car's speed by the engine, so the force of spring will decrease.
+Neuro: PersonX compresses the spring and the engine of the car increases the speed, so the force of spring will decrease.
+Vanilla: PersonX compresses the spring and the car accelerates, so the force of spring will decrease.
+bleu: 59.61621647299124
+GPT3: PersonX compresses the spring and increases the engine speed of the car, so the force of spring will decrease.
 
 
 *******************************
 
 
 Base: If PersonX compresses the spring [mask], the force of spring will decrease. ,  id :39_and_neg
-Constraints: [['increase'], ['car acceleration', 'speed', 'car'], ['car acceleration', 'speed', 'engine'], ['car acceleration', 'car', 'engine'], ['speed', 'car', 'engine'], ['no']]
+Constraints: [['increase'], ['engine', 'car acceleration', 'speed'], ['engine', 'car acceleration', 'car'], ['engine', 'speed', 'car'], ['car acceleration', 'speed', 'car'], ['no']]
 Sample continuation: the car's engine increase speed
 
-Neuro: PersonX compresses the spring and <pad> not increase car acceleration, speed, engine<extra_id_1></s></s><pad><pad><pad><pad>, so the force of spring will decrease.
-Vanilla: PersonX compresses the spring and does not increase the car acceleration, so the force of spring will decrease.
-bleu: 24.591029344632457
-GPT3: PersonX compresses the spring and increases the car's speed with the engine, so the force of spring will decrease.
+Neuro: PersonX compresses the spring and engine does not increase the speed of the car, so the force of spring will decrease.
+Vanilla: PersonX compresses the spring and does not increase the engine's speed, so the force of spring will decrease.
+bleu: 61.69034543248988
+GPT3: PersonX compresses the spring and no engine increases the car's acceleration or speed, so the force of spring will decrease.
 
 
 *******************************
 
 
 Base: If PersonX increases the surface area in contact [mask], the force of friction will decrease. ,  id :40_and
-Constraints: [['blow'], ['wind', 'rock', 'land'], ['wind', 'rock', 'sand'], ['wind', 'land', 'sand'], ['rock', 'land', 'sand']]
+Constraints: [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land']]
 Sample continuation: the wind blow sand against a rock
 
-Neuro: PersonX increases the surface area in contact and <pad> wind blows on the land<extra_id_1></s></s><pad><pad>, so the force of friction will decrease.
-Vanilla: PersonX increases the surface area in contact and the wind blows the rock onto the land, so the force of friction will decrease.
-bleu: 33.78922213963462
-GPT3: PersonX increases the surface area in contact and blows the wind on the land, so the force of friction will decrease.
+Neuro: PersonX increases the surface area in contact and blows sand on the rock, so the force of friction will decrease.
+Vanilla: PersonX increases the surface area in contact and blows sand on the rock, so the force of friction will decrease.
+bleu: 100.00000000000004
+GPT3: PersonX increases the surface area in contact and he blows the sand on the rock, so the force of friction will decrease.
 
 
 *******************************
 
 
 Base: If PersonX increases the surface area in contact [mask], the force of friction will decrease. ,  id :40_and_neg
-Constraints: [['blow'], ['wind', 'rock', 'land'], ['wind', 'rock', 'sand'], ['wind', 'land', 'sand'], ['rock', 'land', 'sand'], ['no']]
+Constraints: [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land'], ['no']]
 Sample continuation: the wind blow sand against a rock
 
-Neuro: PersonX increases the surface area in contact and <pad> no wind blows on the rock land<extra_id_1></s></s>, so the force of friction will decrease.
-Vanilla: PersonX increases the surface area in contact and there is no wind blowing on the rock, so the force of friction will decrease.
-bleu: 38.81633616104479
-GPT3: PersonX increases the surface area in contact and blows the wind on the land, so the force of friction will decrease.
+Neuro: PersonX increases the surface area in contact and no sand blow on the rock, so the force of friction will decrease.
+Vanilla: PersonX increases the surface area in contact and does not blow sand on the rock, so the force of friction will decrease.
+bleu: 76.95794822736211
+GPT3: PersonX increases the surface area in contact and blows sand on the rocks, so the force of friction will decrease.
 
 
 *******************************
 
 
 Base: If the car goes up a hill [mask], the force of car acceleration will decrease. ,  id :41_and
-Constraints: [['blow'], ['wind', 'rock', 'land'], ['wind', 'rock', 'sand'], ['wind', 'land', 'sand'], ['rock', 'land', 'sand']]
+Constraints: [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land']]
 Sample continuation: the wind blow sand against a rock
 
-Neuro: the car goes up a hill and <pad> wind blows on the rock land<extra_id_1></s>, so the force of car acceleration will decrease.
-Vanilla: the car goes up a hill and the wind blows on the rock land, so the force of car acceleration will decrease.
-bleu: 51.26499278974298
-GPT3: the car goes up a hill and wind blows the sand, so the force of car acceleration will decrease.
+Neuro: the car goes up a hill and the wind blows sand on the land, so the force of car acceleration will decrease.
+Vanilla: the car goes up a hill and the wind blows sand on the land, so the force of car acceleration will decrease.
+bleu: 100.00000000000004
+GPT3: the car goes up a hill and the wind blows sand on the land, so the force of car acceleration will decrease.
 
 
 *******************************
 
 
 Base: If the car goes up a hill [mask], the force of car acceleration will decrease. ,  id :41_and_neg
-Constraints: [['blow'], ['wind', 'rock', 'land'], ['wind', 'rock', 'sand'], ['wind', 'land', 'sand'], ['rock', 'land', 'sand'], ['no']]
+Constraints: [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land'], ['no']]
 Sample continuation: the wind blow sand against a rock
 
-Neuro: the car goes up a hill and <pad> not blow wind, rock, land<extra_id_1></s>, so the force of car acceleration will decrease.
-Vanilla: the car goes up a hill and there is no wind blowing on the rock land, so the force of car acceleration will decrease.
-bleu: 39.4480333421051
-GPT3: the car goes up a hill and the wind blows the rocks on the land, so the force of car acceleration will decrease.
-
-
-*******************************
-
-
-Base: If PersonX stays in the sun [mask], the temperature of human body will decrease. ,  id :4_and
-Constraints: [['burn'], ['fossil', 'fuel'], ['fossil', 'earth'], ['fuel', 'earth']]
-Sample continuation: burn fossil fuels
-
-Neuro: PersonX stays in the sun and burns fossil fuel, so the temperature of human body will decrease.
-Vanilla: PersonX stays in the sun and burns fossil fuel, so the temperature of human body will decrease.
-bleu: 100.00000000000004
-GPT3: PersonX stays in the sun and his body does not burn fossil fuels, so the temperature of human body will decrease.
-
-
-*******************************
-
-
-Base: If PersonX stays in the sun [mask], the temperature of human body will decrease. ,  id :4_and_neg
-Constraints: [['burn'], ['fossil', 'fuel'], ['fossil', 'earth'], ['fuel', 'earth'], ['no']]
-Sample continuation: burn fossil fuels
-
-Neuro: PersonX stays in the sun and no fossil fuel is burned in the earth, so the temperature of human body will decrease.
-Vanilla: PersonX stays in the sun and does not burn fossil fuel, so the temperature of human body will decrease.
-bleu: 59.70228993860436
-GPT3: PersonX stays in the sun and the fossil fuel does not burn on the earth, so the temperature of human body will decrease.
+Neuro: the car goes up a hill and no sand blows, so the force of car acceleration will decrease.
+Vanilla: the car goes up a hill and there is no sand blowing in the wind, so the force of car acceleration will decrease.
+bleu: 60.89792977139099
+GPT3: the car goes up a hill and wind blows the sand and rock on the land, so the force of car acceleration will decrease.
 
 
 *******************************
 
 
 Base: If car starts from rest and speed up uniformly [mask], the speed of train will increase. ,  id :13_and
-Constraints: [['activate'], ['pad', 'brake'], ['pad', 'roller coaster'], ['brake', 'roller coaster']]
+Constraints: [['activate'], ['pad', 'roller coaster'], ['pad', 'brake'], ['roller coaster', 'brake']]
 Sample continuation: brake pads activate
 
-Neuro: car starts from rest and speed up uniformly and activate the brake, so the speed of train will increase.
-Vanilla: car starts from rest and speed up uniformly and activate the brake, so the speed of train will increase.
-bleu: 100.00000000000004
-GPT3: car starts from rest and speed up uniformly and ts from rest and speed up uniformly, so the speed of train will increase.
+Neuro: car starts from rest and speed up uniformly and roller coaster brake is activated, so the speed of train will increase.
+Vanilla: car starts from rest and speed up uniformly and the roller coaster brake is activated, so the speed of train will increase.
+bleu: 88.62476419965998
+GPT3: car starts from rest and speed up uniformly and passengers activate the roller coaster, so the speed of train will increase.
 
 
 *******************************
 
 
 Base: If car starts from rest and speed up uniformly [mask], the speed of train will increase. ,  id :13_and_neg
-Constraints: [['activate'], ['pad', 'brake'], ['pad', 'roller coaster'], ['brake', 'roller coaster'], ['no']]
+Constraints: [['activate'], ['pad', 'roller coaster'], ['pad', 'brake'], ['roller coaster', 'brake'], ['no']]
 Sample continuation: brake pads activate
 
-Neuro: car starts from rest and speed up uniformly and no brake is activated on roller coaster, so the speed of train will increase.
+Neuro: car starts from rest and speed up uniformly and no brake is activated, so the speed of train will increase.
 Vanilla: car starts from rest and speed up uniformly and there is no brake on the roller coaster, so the speed of train will increase.
-bleu: 73.17386489088022
-GPT3: car starts from rest and speed up uniformly and personX activates the brake pads, so the speed of train will increase.
+bleu: 63.741950443622066
+GPT3: car starts from rest and speed up uniformly and personX does not activate the brake, so the speed of train will increase.
 
 
 *******************************
 
 
 Base: If a decrease in wind speed can be causes by a decrease in the atmospheric pressure [mask], the speed of wind will decrease. ,  id :23_and
-Constraints: [['increase'], ['sound', 'wave'], ['sound', 'amplitude'], ['wave', 'amplitude']]
+Constraints: [['increase'], ['sound', 'amplitude'], ['sound', 'wave'], ['amplitude', 'wave']]
 Sample continuation: increase the amplitude of the sound wave
 
-Neuro: a decrease in wind speed can be causes by a decrease in the atmospheric pressure and increase in the sound wave, so the speed of wind will decrease.
-Vanilla: a decrease in wind speed can be causes by a decrease in the atmospheric pressure and an increase in the sound wave amplitude, so the speed of wind will decrease.
-bleu: 83.03585490287912
-GPT3: a decrease in wind speed can be causes by a decrease in the atmospheric pressure and an increase in sound wave amplitude, so the speed of wind will decrease.
+Neuro: a decrease in wind speed can be causes by a decrease in the atmospheric pressure and sound waves increase in amplitude, so the speed of wind will decrease.
+Vanilla: a decrease in wind speed can be causes by a decrease in the atmospheric pressure and an increase in the sound amplitude, so the speed of wind will decrease.
+bleu: 80.71624056114499
+GPT3: a decrease in wind speed can be causes by a decrease in the atmospheric pressure and  the sound of the waves, so the speed of wind will decrease.
 
 
 *******************************
 
 
 Base: If a decrease in wind speed can be causes by a decrease in the atmospheric pressure [mask], the speed of wind will decrease. ,  id :23_and_neg
-Constraints: [['increase'], ['sound', 'wave'], ['sound', 'amplitude'], ['wave', 'amplitude'], ['no']]
+Constraints: [['increase'], ['sound', 'amplitude'], ['sound', 'wave'], ['amplitude', 'wave'], ['no']]
 Sample continuation: increase the amplitude of the sound wave
 
-Neuro: a decrease in wind speed can be causes by a decrease in the atmospheric pressure and no increase in the sound wave amplitude, so the speed of wind will decrease.
-Vanilla: a decrease in wind speed can be causes by a decrease in the atmospheric pressure and there is no increase in the sound wave amplitude, so the speed of wind will decrease.
-bleu: 89.11473434354988
-GPT3: a decrease in wind speed can be causes by a decrease in the atmospheric pressure and a decrease in the sound wave's amplitude, so the speed of wind will decrease.
+Neuro: a decrease in wind speed can be causes by a decrease in the atmospheric pressure and no sound amplitude increase, so the speed of wind will decrease.
+Vanilla: a decrease in wind speed can be causes by a decrease in the atmospheric pressure and there is no increase in the sound amplitude, so the speed of wind will decrease.
+bleu: 72.78125856489193
+GPT3: a decrease in wind speed can be causes by a decrease in the atmospheric pressure and an increase in sound wave amplitude, so the speed of wind will decrease.
 
 
 *******************************
 
 
 Base: If the pilot decreases the throttle [mask], the speed of plane will decrease. ,  id :27_and
-Constraints: [['increase'], ['sound', 'wave'], ['sound', 'amplitude'], ['wave', 'amplitude']]
+Constraints: [['increase'], ['sound', 'amplitude'], ['sound', 'wave'], ['amplitude', 'wave']]
 Sample continuation: increase the amplitude of the sound wave
 
-Neuro: the pilot decreases the throttle and increases the sound wave, so the speed of plane will decrease.
-Vanilla: the pilot decreases the throttle and increases the sound wave, so the speed of plane will decrease.
-bleu: 100.00000000000004
-GPT3: the pilot decreases the throttle and increase the sound wave amplitude, so the speed of plane will decrease.
+Neuro: the pilot decreases the throttle and the sound amplitude increase, so the speed of plane will decrease.
+Vanilla: the pilot decreases the throttle and the sound amplitude increases, so the speed of plane will decrease.
+bleu: 84.92326635760686
+GPT3: the pilot decreases the throttle and increases the amplitude of the sound wave, so the speed of plane will decrease.
 
 
 *******************************
 
 
 Base: If the pilot decreases the throttle [mask], the speed of plane will decrease. ,  id :27_and_neg
-Constraints: [['increase'], ['sound', 'wave'], ['sound', 'amplitude'], ['wave', 'amplitude'], ['no']]
+Constraints: [['increase'], ['sound', 'amplitude'], ['sound', 'wave'], ['amplitude', 'wave'], ['no']]
 Sample continuation: increase the amplitude of the sound wave
 
-Neuro: the pilot decreases the throttle and no increase in the sound wave, so the speed of plane will decrease.
-Vanilla: the pilot decreases the throttle and does not increase the sound wave, so the speed of plane will decrease.
-bleu: 77.21947901921794
-GPT3: the pilot decreases the throttle and the sound wave amplitude decreases, so the speed of plane will decrease.
+Neuro: the pilot decreases the throttle and no sound amplitude increase, so the speed of plane will decrease.
+Vanilla: the pilot decreases the throttle and there is no increase in the sound amplitude, so the speed of plane will decrease.
+bleu: 59.094904893992066
+GPT3: the pilot decreases the throttle and no sound waves are amplified, so the speed of plane will decrease.
 
 
 *******************************
 
 
 Base: If PersonX approaches a stop [mask], the speed of bus will decrease. ,  id :28_and
-Constraints: [['increase'], ['sound', 'wave'], ['sound', 'amplitude'], ['wave', 'amplitude']]
+Constraints: [['increase'], ['sound', 'amplitude'], ['sound', 'wave'], ['amplitude', 'wave']]
 Sample continuation: increase the amplitude of the sound wave
 
-Neuro: PersonX approaches a stop and increases the sound wave, so the speed of bus will decrease.
-Vanilla: PersonX approaches a stop and the sound wave increases, so the speed of bus will decrease.
-bleu: 74.12891374350545
-GPT3: PersonX approaches a stop and and increases the sound wave amplitude, so the speed of bus will decrease.
+Neuro: PersonX approaches a stop and the sound amplitude increases, so the speed of bus will decrease.
+Vanilla: PersonX approaches a stop and the sound amplitude increases, so the speed of bus will decrease.
+bleu: 100.00000000000004
+GPT3: PersonX approaches a stop and increases the amplitude of the sound wave, so the speed of bus will decrease.
 
 
 *******************************
 
 
 Base: If PersonX approaches a stop [mask], the speed of bus will decrease. ,  id :28_and_neg
-Constraints: [['increase'], ['sound', 'wave'], ['sound', 'amplitude'], ['wave', 'amplitude'], ['no']]
+Constraints: [['increase'], ['sound', 'amplitude'], ['sound', 'wave'], ['amplitude', 'wave'], ['no']]
 Sample continuation: increase the amplitude of the sound wave
 
-Neuro: PersonX approaches a stop and no increase in the sound wave, so the speed of bus will decrease.
-Vanilla: PersonX approaches a stop and there is no increase in the sound wave, so the speed of bus will decrease.
-bleu: 82.57183305096686
-GPT3: PersonX approaches a stop and does not increase the sound of the waves or the amplitude, so the speed of bus will decrease.
+Neuro: PersonX approaches a stop and no sound increases the amplitude of the wave, so the speed of bus will decrease.
+Vanilla: PersonX approaches a stop and there is no increase in sound amplitude, so the speed of bus will decrease.
+bleu: 55.21710658453208
+GPT3: PersonX approaches a stop and no sound is increased, so the speed of bus will decrease.
 
 
 *******************************
 
 
 Base: If PersonX fires the bullet into the air [mask], the speed of bullet will decrease. ,  id :29_and
-Constraints: [['increase'], ['sound', 'wave'], ['sound', 'amplitude'], ['wave', 'amplitude']]
+Constraints: [['increase'], ['sound', 'amplitude'], ['sound', 'wave'], ['amplitude', 'wave']]
 Sample continuation: increase the amplitude of the sound wave
 
-Neuro: PersonX fires the bullet into the air and increases the sound wave, so the speed of bullet will decrease.
-Vanilla: PersonX fires the bullet into the air and increases the sound wave, so the speed of bullet will decrease.
-bleu: 100.00000000000004
-GPT3: PersonX fires the bullet into the air and the sound wave's amplitude increases, so the speed of bullet will decrease.
+Neuro: PersonX fires the bullet into the air and the sound amplitude increases, so the speed of bullet will decrease.
+Vanilla: PersonX fires the bullet into the air and increase the amplitude of the sound wave, so the speed of bullet will decrease.
+bleu: 65.12692691352095
+GPT3: PersonX fires the bullet into the air and increase the sound of the wave, so the speed of bullet will decrease.
 
 
 *******************************
 
 
 Base: If PersonX fires the bullet into the air [mask], the speed of bullet will decrease. ,  id :29_and_neg
-Constraints: [['increase'], ['sound', 'wave'], ['sound', 'amplitude'], ['wave', 'amplitude'], ['no']]
+Constraints: [['increase'], ['sound', 'amplitude'], ['sound', 'wave'], ['amplitude', 'wave'], ['no']]
 Sample continuation: increase the amplitude of the sound wave
 
-Neuro: PersonX fires the bullet into the air and no increase in the sound wave, so the speed of bullet will decrease.
-Vanilla: PersonX fires the bullet into the air and does not increase the sound wave, so the speed of bullet will decrease.
-bleu: 79.4483720649497
-GPT3: PersonX fires the bullet into the air and the sound wave has a greater amplitude than the wave, so the speed of bullet will decrease.
+Neuro: PersonX fires the bullet into the air and no sound amplitude increase, so the speed of bullet will decrease.
+Vanilla: PersonX fires the bullet into the air and does not increase the sound amplitude, so the speed of bullet will decrease.
+bleu: 68.30323535212025
+GPT3: PersonX fires the bullet into the air and there is no sound or amplitude to the wave, so the speed of bullet will decrease.
 
 
 *******************************
 
 
 Base: If the further the spring be pulls [mask], the force of spring will increase. ,  id :31_and
-Constraints: [['go'], ['car acceleration', 'car'], ['car acceleration', 'hill'], ['car', 'hill']]
+Constraints: [['go'], ['hill', 'car acceleration'], ['hill', 'car'], ['car acceleration', 'car']]
 Sample continuation: the car go up a hill
 
-Neuro: the further the spring be pulls and go up the hill, so the force of spring will increase.
-Vanilla: the further the spring be pulls and the car accelerates up the hill, so the force of spring will increase.
-bleu: 77.62535144898031
-GPT3: the further the spring be pulls and the car goes up the hill, so the force of spring will increase.
+Neuro: the further the spring be pulls and the car goes up the hill, so the force of spring will increase.
+Vanilla: the further the spring be pulls and the car goes up the hill, so the force of spring will increase.
+bleu: 100.00000000000004
+GPT3: the further the spring be pulls and the car goes up the hill with acceleration, so the force of spring will increase.
 
 
 *******************************
 
 
 Base: If the further the spring be pulls [mask], the force of spring will increase. ,  id :31_and_neg
-Constraints: [['go'], ['car acceleration', 'car'], ['car acceleration', 'hill'], ['car', 'hill'], ['no']]
+Constraints: [['go'], ['hill', 'car acceleration'], ['hill', 'car'], ['car acceleration', 'car'], ['no']]
 Sample continuation: the car go up a hill
 
-Neuro: the further the spring be pulls and no car goes up the hill, so the force of spring will increase.
+Neuro: the further the spring be pulls and the car does not go up the hill, so the force of spring will increase.
 Vanilla: the further the spring be pulls and the car does not go up the hill, so the force of spring will increase.
-bleu: 71.5798316321605
-GPT3: the further the spring be pulls and car goes up the hill, so the force of spring will increase.
-
-
-*******************************
-
-
-Base: If PersonX squeezes a tube of toothpaste [mask], the force of pressure will increase. ,  id :32_and
-Constraints: [['go'], ['car acceleration', 'car'], ['car acceleration', 'hill'], ['car', 'hill']]
-Sample continuation: the car go up a hill
-
-Neuro: PersonX squeezes a tube of toothpaste and goes up a hill in the car, so the force of pressure will increase.
-Vanilla: PersonX squeezes a tube of toothpaste and the car accelerates up the hill, so the force of pressure will increase.
-bleu: 64.15428562903546
-GPT3: PersonX squeezes a tube of toothpaste and goes by car acceleration on the hill, so the force of pressure will increase.
-
-
-*******************************
-
-
-Base: If PersonX squeezes a tube of toothpaste [mask], the force of pressure will increase. ,  id :32_and_neg
-Constraints: [['go'], ['car acceleration', 'car'], ['car acceleration', 'hill'], ['car', 'hill'], ['no']]
-Sample continuation: the car go up a hill
-
-Neuro: PersonX squeezes a tube of toothpaste and no car goes up the hill, so the force of pressure will increase.
-Vanilla: PersonX squeezes a tube of toothpaste and there is no car acceleration on the hill, so the force of pressure will increase.
-bleu: 68.9619193232488
-GPT3: PersonX squeezes a tube of toothpaste and he does not go in the car on the hill, so the force of pressure will increase.
+bleu: 100.00000000000004
+GPT3: the further the spring be pulls and the car goes down the hill, so the force of spring will increase.
 
 
 *******************************
 
 
 Base: If the ice be allows to melt [mask], the force of ice will decrease. ,  id :36_and
-Constraints: [['heat'], ['heat', 'gas'], ['heat', 'container'], ['gas', 'container']]
+Constraints: [['heat'], ['gas', 'container'], ['gas', 'heat'], ['container', 'heat']]
 Sample continuation: heat a gas in a container
 
-Neuro: the ice be allows to melt and <pad> heated by the gas in the container<extra_id_1></s></s>, so the force of ice will decrease.
+Neuro: the ice be allows to melt and heat the container, so the force of ice will decrease.
 Vanilla: the ice be allows to melt and heat the container, so the force of ice will decrease.
-bleu: 33.97920703569072
-GPT3: the ice be allows to melt and heat the gas in the container, so the force of ice will decrease.
+bleu: 100.00000000000004
+GPT3: the ice be allows to melt and the container of the gas is heated, so the force of ice will decrease.
 
 
 *******************************
 
 
 Base: If the ice be allows to melt [mask], the force of ice will decrease. ,  id :36_and_neg
-Constraints: [['heat'], ['heat', 'gas'], ['heat', 'container'], ['gas', 'container'], ['no']]
+Constraints: [['heat'], ['gas', 'container'], ['gas', 'heat'], ['container', 'heat'], ['no']]
 Sample continuation: heat a gas in a container
 
-Neuro: the ice be allows to melt and <pad> not heat the container<extra_id_1></s></s><pad><pad><pad>, so the force of ice will decrease.
+Neuro: the ice be allows to melt and there is no heat in the container, so the force of ice will decrease.
 Vanilla: the ice be allows to melt and there is no heat in the container, so the force of ice will decrease.
-bleu: 29.896910170538114
-GPT3: the ice be allows to melt and the container is heated by gas, so the force of ice will decrease.
-
-
-*******************************
-
-
-Base: If PersonX puts ice on a burn [mask], the force of heat will decrease. ,  id :38_and
-Constraints: [['hold'], ['speed', 'object'], ['speed', 'body'], ['object', 'body']]
-Sample continuation: hold the object closer to the body. two
-
-Neuro: PersonX puts ice on a burn and holds the speed of the object, so the force of heat will decrease.
-Vanilla: PersonX puts ice on a burn and holds the speed of the object, so the force of heat will decrease.
 bleu: 100.00000000000004
-GPT3: PersonX puts ice on a burn and holds it there for a long time, so the force of heat will decrease.
-
-
-*******************************
-
-
-Base: If PersonX puts ice on a burn [mask], the force of heat will decrease. ,  id :38_and_neg
-Constraints: [['hold'], ['speed', 'object'], ['speed', 'body'], ['object', 'body'], ['no']]
-Sample continuation: hold the object closer to the body. two
-
-Neuro: PersonX puts ice on a burn and no speed is held by the object, so the force of heat will decrease.
-Vanilla: PersonX puts ice on a burn and does not hold the speed of the object, so the force of heat will decrease.
-bleu: 67.03681862564032
-GPT3: PersonX puts ice on a burn and holds it there for a short time, so the force of heat will decrease.
+GPT3: the ice be allows to melt and gas heat up the container, so the force of ice will decrease.
 
 
 *******************************
 
 
 Base: If PersonX stays up all night [mask], the power of moon will increase. ,  id :43_and
-Constraints: [['decrease'], ['water pressure', 'water'], ['water pressure', 'height'], ['water', 'height']]
+Constraints: [['decrease'], ['height', 'water'], ['height', 'water pressure'], ['water', 'water pressure']]
 Sample continuation: the height of the water decrease
 
-Neuro: PersonX stays up all night and decreases the water pressure, so the power of moon will increase.
+Neuro: PersonX stays up all night and the water pressure decreases, so the power of moon will increase.
 Vanilla: PersonX stays up all night and the water pressure decreases, so the power of moon will increase.
-bleu: 75.84350609218488
-GPT3: PersonX stays up all night and water pressure decreases with height, so the power of moon will increase.
+bleu: 100.00000000000004
+GPT3: PersonX stays up all night and the height of the water decreases, so the power of moon will increase.
 
 
 *******************************
 
 
 Base: If PersonX stays up all night [mask], the power of moon will increase. ,  id :43_and_neg
-Constraints: [['decrease'], ['water pressure', 'water'], ['water pressure', 'height'], ['water', 'height'], ['no']]
+Constraints: [['decrease'], ['height', 'water'], ['height', 'water pressure'], ['water', 'water pressure'], ['no']]
 Sample continuation: the height of the water decrease
 
-Neuro: PersonX stays up all night and no one decreases the water pressure, so the power of moon will increase.
-Vanilla: PersonX stays up all night and does not decrease the water pressure, so the power of moon will increase.
-bleu: 76.1827408333416
-GPT3: PersonX stays up all night and water pressure does not decrease with height, so the power of moon will increase.
+Neuro: PersonX stays up all night and there is no decrease in the water pressure, so the power of moon will increase.
+Vanilla: PersonX stays up all night and there is no decrease in the height of the water, so the power of moon will increase.
+bleu: 78.14182048773907
+GPT3: PersonX stays up all night and the height of the water decreases, so the power of moon will increase.
 
 
 *******************************
@@ -496,10 +392,10 @@ Base: If PersonX plugs in an appliance [mask], the power of electricity will inc
 Constraints: [['move'], ['earth', 'moon'], ['earth', 'tides'], ['moon', 'tides']]
 Sample continuation: the moon move away from earth
 
-Neuro: PersonX plugs in an appliance and moves the earth, so the power of electricity will increase.
-Vanilla: PersonX plugs in an appliance and the earth moves, so the power of electricity will increase.
-bleu: 76.34415047119859
-GPT3: PersonX plugs in an appliance and the Earth's tides move the moon, so the power of electricity will increase.
+Neuro: PersonX plugs in an appliance and the earth moves with the moon, so the power of electricity will increase.
+Vanilla: PersonX plugs in an appliance and the earth moves with the tides, so the power of electricity will increase.
+bleu: 86.56030552541704
+GPT3: PersonX plugs in an appliance and the tides on the earth move the moon, so the power of electricity will increase.
 
 
 *******************************
@@ -509,36 +405,36 @@ Base: If PersonX plugs in an appliance [mask], the power of electricity will inc
 Constraints: [['move'], ['earth', 'moon'], ['earth', 'tides'], ['moon', 'tides'], ['no']]
 Sample continuation: the moon move away from earth
 
-Neuro: PersonX plugs in an appliance and earth does not move, so the power of electricity will increase.
-Vanilla: PersonX plugs in an appliance and the earth does not move, so the power of electricity will increase.
-bleu: 86.06031405392808
-GPT3: PersonX plugs in an appliance and he tides on the earth move the moon, so the power of electricity will increase.
+Neuro: PersonX plugs in an appliance and the earth does not move, so the power of electricity will increase.
+Vanilla: PersonX plugs in an appliance and the earth does not move with the tides, so the power of electricity will increase.
+bleu: 78.54475723304026
+GPT3: PersonX plugs in an appliance and the tides on the earth move the moon, so the power of electricity will increase.
 
 
 *******************************
 
 
 Base: If the sun is out [mask], the power of moon will decrease. ,  id :56_and
-Constraints: [['decrease'], ['diameter', 'water pressure'], ['diameter', 'pipe'], ['water pressure', 'pipe']]
+Constraints: [['decrease'], ['diameter', 'pipe'], ['diameter', 'water pressure'], ['pipe', 'water pressure']]
 Sample continuation: diameter of the pipe decrease
 
-Neuro: the sun is out and decrease the diameter of the pipe, so the power of moon will decrease.
+Neuro: the sun is out and the diameter of the pipe decreases, so the power of moon will decrease.
 Vanilla: the sun is out and the diameter of the pipe decreases, so the power of moon will decrease.
-bleu: 76.35332920902253
-GPT3: the sun is out and the diameter of the water pressure decreases in the pipe, so the power of moon will decrease.
+bleu: 100.00000000000004
+GPT3: the sun is out and the diameter of the pipe decreases the water pressure, so the power of moon will decrease.
 
 
 *******************************
 
 
 Base: If the sun is out [mask], the power of moon will decrease. ,  id :56_and_neg
-Constraints: [['decrease'], ['diameter', 'water pressure'], ['diameter', 'pipe'], ['water pressure', 'pipe'], ['no']]
+Constraints: [['decrease'], ['diameter', 'pipe'], ['diameter', 'water pressure'], ['pipe', 'water pressure'], ['no']]
 Sample continuation: diameter of the pipe decrease
 
-Neuro: the sun is out and no decrease in water pressure in the pipe, so the power of moon will decrease.
-Vanilla: the sun is out and the diameter of the pipe does not decrease the water pressure, so the power of moon will decrease.
-bleu: 51.48308203562759
-GPT3: the sun is out and the diameter of the water pressure pipe decreases, so the power of moon will decrease.
+Neuro: the sun is out and no water pressure decreases in the pipe, so the power of moon will decrease.
+Vanilla: the sun is out and there is no decrease in the diameter of the pipe, so the power of moon will decrease.
+bleu: 59.741391582029806
+GPT3: the sun is out and the diameter of the pipe decrease the water pressure, so the power of moon will decrease.
 
 
 *******************************
@@ -548,10 +444,10 @@ Base: If PersonX separates each action by a comma [mask], the resistance of stre
 Constraints: [['avoid'], ['contact', 'irritant'], ['contact', 'skin'], ['irritant', 'skin']]
 Sample continuation: avoid contact with irritants
 
-Neuro: PersonX separates each action by a comma and avoids contact with the irritant, so the resistance of stress will increase.
-Vanilla: PersonX separates each action by a comma and avoids contact with the irritant, so the resistance of stress will increase.
-bleu: 100.00000000000004
-GPT3: PersonX separates each action by a comma and avoid contact with irritants and contact with skin, so the resistance of stress will increase.
+Neuro: PersonX separates each action by a comma and avoids contact with irritant, so the resistance of stress will increase.
+Vanilla: PersonX separates each action by a comma and avoids contact with irritants, so the resistance of stress will increase.
+bleu: 86.56030552541704
+GPT3: PersonX separates each action by a comma and avoid contact with irritants and skin, so the resistance of stress will increase.
 
 
 *******************************
@@ -561,35 +457,35 @@ Base: If PersonX separates each action by a comma [mask], the resistance of stre
 Constraints: [['avoid'], ['contact', 'irritant'], ['contact', 'skin'], ['irritant', 'skin'], ['no']]
 Sample continuation: avoid contact with irritants
 
-Neuro: PersonX separates each action by a comma and avoids contact with the irritant on the skin by not ad the contact, so the resistance of stress will increase.
-Vanilla: PersonX separates each action by a comma and avoids contact with the irritant, so the resistance of stress will increase.
-bleu: 66.25231057044076
-GPT3: PersonX separates each action by a comma and avoid contact with irritant and skin, so the resistance of stress will increase.
+Neuro: PersonX separates each action by a comma and avoid no contact with irritant, so the resistance of stress will increase.
+Vanilla: PersonX separates each action by a comma and avoids contact with irritants, so the resistance of stress will increase.
+bleu: 70.54171471747186
+GPT3: PersonX separates each action by a comma and avoids contact with irritants and contact with skin, so the resistance of stress will increase.
 
 
 *******************************
 
 
 Base: If PersonX not drinks for a long time [mask], the resistance of alcohol will increase. ,  id :59_and
-Constraints: [['increase'], ['increase: solid', 'price'], ['increase: solid', 'good'], ['price', 'good']]
+Constraints: [['increase'], ['price', 'good'], ['price', 'increase: solid'], ['good', 'increase: solid']]
 Sample continuation: increase the price of a good
 
-Neuro: PersonX not drinks for a long time and increase the price of solid food, so the resistance of alcohol will increase.
-Vanilla: PersonX not drinks for a long time and increase the solid price, so the resistance of alcohol will increase.
-bleu: 75.65293041233578
-GPT3: PersonX not drinks for a long time and the price of alcohol increase, so the resistance of alcohol will increase.
+Neuro: PersonX not drinks for a long time and the price of the good increase, so the resistance of alcohol will increase.
+Vanilla: PersonX not drinks for a long time and increase the price of good, so the resistance of alcohol will increase.
+bleu: 72.15195930199079
+GPT3: PersonX not drinks for a long time and the price of alcohol increase: solid, so the resistance of alcohol will increase.
 
 
 *******************************
 
 
 Base: If PersonX not drinks for a long time [mask], the resistance of alcohol will increase. ,  id :59_and_neg
-Constraints: [['increase'], ['increase: solid', 'price'], ['increase: solid', 'good'], ['price', 'good'], ['no']]
+Constraints: [['increase'], ['price', 'good'], ['price', 'increase: solid'], ['good', 'increase: solid'], ['no']]
 Sample continuation: increase the price of a good
 
-Neuro: PersonX not drinks for a long time and no one increase the price of the solid, so the resistance of alcohol will increase.
-Vanilla: PersonX not drinks for a long time and does not increase the price of the solid, so the resistance of alcohol will increase.
-bleu: 84.66657105524214
+Neuro: PersonX not drinks for a long time and price of good does not increase, so the resistance of alcohol will increase.
+Vanilla: PersonX not drinks for a long time and the price of the good does not increase, so the resistance of alcohol will increase.
+bleu: 79.015048981972
 GPT3: PersonX not drinks for a long time and the price of alcohol increases, so the resistance of alcohol will increase.
 
 
@@ -597,78 +493,182 @@ GPT3: PersonX not drinks for a long time and the price of alcohol increases, so 
 
 
 Base: If PersonX exercises the biceps [mask], the width of biceps will decrease. ,  id :71_and
-Constraints: [['press'], ['grip', 'bench'], ['grip', 'triceps'], ['bench', 'triceps']]
+Constraints: [['press'], ['bench', 'grip'], ['bench', 'triceps'], ['grip', 'triceps']]
 Sample continuation: close-grip bench press
 
-Neuro: PersonX exercises the biceps and grips the bench press, so the width of biceps will decrease.
-Vanilla: PersonX exercises the biceps and triceps, so the width of biceps will decrease.
-bleu: 65.40585844910977
-GPT3: PersonX exercises the biceps and presses the grip on the bench, so the width of biceps will decrease.
+Neuro: PersonX exercises the biceps and bench presses the triceps, so the width of biceps will decrease.
+Vanilla: PersonX exercises the biceps and presses the bench with the triceps, so the width of biceps will decrease.
+bleu: 72.92864475457375
+GPT3: PersonX exercises the biceps and presses the bench with a triceps grip, so the width of biceps will decrease.
 
 
 *******************************
 
 
 Base: If PersonX exercises the biceps [mask], the width of biceps will decrease. ,  id :71_and_neg
-Constraints: [['press'], ['grip', 'bench'], ['grip', 'triceps'], ['bench', 'triceps'], ['no']]
+Constraints: [['press'], ['bench', 'grip'], ['bench', 'triceps'], ['grip', 'triceps'], ['no']]
 Sample continuation: close-grip bench press
 
-Neuro: PersonX exercises the biceps and not the grip on the bench press, so the width of biceps will decrease.
-Vanilla: PersonX exercises the biceps and does not press the grip on the bench, so the width of biceps will decrease.
-bleu: 70.80617248483469
-GPT3: PersonX exercises the biceps and he presses the grip on the bench, so the width of biceps will decrease.
+Neuro: PersonX exercises the biceps and no triceps press the bench, so the width of biceps will decrease.
+Vanilla: PersonX exercises the biceps and does not press the bench with the triceps, so the width of biceps will decrease.
+bleu: 59.66906571055053
+GPT3: PersonX exercises the biceps and presses the bench with a grip, so the width of biceps will decrease.
 
 
 *******************************
 
 
 Base: If PersonX is a man [mask], the width of nose will decrease. ,  id :76_and
-Constraints: [['put'], ['paper', 'piece'], ['paper', 'envelope'], ['piece', 'envelope']]
+Constraints: [['put'], ['piece', 'paper'], ['piece', 'envelope'], ['paper', 'envelope']]
 Sample continuation: put in a thicker piece of paper
 
-Neuro: PersonX is a man and put the paper in the envelope, so the width of nose will decrease.
-Vanilla: PersonX is a man and he put the paper in the envelope, so the width of nose will decrease.
-bleu: 86.80538146126796
-GPT3: PersonX is a man and he put the paper in the envelope, so the width of nose will decrease.
+Neuro: PersonX is a man and he puts piece of paper in an envelope, so the width of nose will decrease.
+Vanilla: PersonX is a man and he puts a piece of paper in an envelope, so the width of nose will decrease.
+bleu: 88.07735005887434
+GPT3: PersonX is a man and does not put a piece of paper in the envelope, so the width of nose will decrease.
 
 
 *******************************
 
 
 Base: If PersonX is a man [mask], the width of nose will decrease. ,  id :76_and_neg
-Constraints: [['put'], ['paper', 'piece'], ['paper', 'envelope'], ['piece', 'envelope'], ['no']]
+Constraints: [['put'], ['piece', 'paper'], ['piece', 'envelope'], ['paper', 'envelope'], ['no']]
 Sample continuation: put in a thicker piece of paper
 
-Neuro: PersonX is a man and no paper is put in the envelope, so the width of nose will decrease.
-Vanilla: PersonX is a man and he did not put the paper in the envelope, so the width of nose will decrease.
-bleu: 66.35367725332668
-GPT3: PersonX is a man and he put the paper in the envelope, so the width of nose will decrease.
+Neuro: PersonX is a man and he puts no piece of paper in the envelope, so the width of nose will decrease.
+Vanilla: PersonX is a man and he does not put a piece of paper in an envelope, so the width of nose will decrease.
+bleu: 64.58552885189877
+GPT3: PersonX is a man and he puts the piece of paper in the envelope, so the width of nose will decrease.
 
 
 *******************************
 
 
-Base: If PersonX adds a chimney to the building [mask], the height of building will increase. ,  id :81_and
-Constraints: [['pull'], ['moon', 'earth'], ['moon', 'gravity'], ['earth', 'gravity']]
-Sample continuation: the earth's gravity pull on the moon
+Base: If PersonX curls up in a ball [mask], the height of people will decrease. ,  id :85_and
+Constraints: [['decrease'], ['air', 'clouds'], ['air', 'pressure'], ['clouds', 'pressure']]
+Sample continuation: air pressure decrease
 
-Neuro: PersonX adds a chimney to the building and pulls the earth towards the moon, so the height of building will increase.
-Vanilla: PersonX adds a chimney to the building and the moon pulls on the earth, so the height of building will increase.
-bleu: 70.8275073944966
-GPT3: PersonX adds a chimney to the building and the moon's gravity pulls on the chimney, so the height of building will increase.
+Neuro: PersonX curls up in a ball and the air pressure decreases, so the height of people will decrease.
+Vanilla: PersonX curls up in a ball and the air pressure decreases, so the height of people will decrease.
+bleu: 100.00000000000004
+GPT3: PersonX curls up in a ball and  the air pressure in the clouds decreases, so the height of people will decrease.
 
 
 *******************************
 
 
-Base: If PersonX adds a chimney to the building [mask], the height of building will increase. ,  id :81_and_neg
-Constraints: [['pull'], ['moon', 'earth'], ['moon', 'gravity'], ['earth', 'gravity'], ['no']]
-Sample continuation: the earth's gravity pull on the moon
+Base: If PersonX curls up in a ball [mask], the height of people will decrease. ,  id :85_and_neg
+Constraints: [['decrease'], ['air', 'clouds'], ['air', 'pressure'], ['clouds', 'pressure'], ['no']]
+Sample continuation: air pressure decrease
 
-Neuro: PersonX adds a chimney to the building and no one pulls the moon and earth, so the height of building will increase.
-Vanilla: PersonX adds a chimney to the building and there is no pull from the moon, so the height of building will increase.
-bleu: 65.08430035585083
-GPT3: PersonX adds a chimney to the building and pulls it up with the help of the moon's gravity, so the height of building will increase.
+Neuro: PersonX curls up in a ball and no clouds decrease the air pressure, so the height of people will decrease.
+Vanilla: PersonX curls up in a ball and there are no clouds, so the height of people will decrease.
+bleu: 65.54353481249281
+GPT3: PersonX curls up in a ball and  there is no air pressure, so the height of people will decrease.
+
+
+*******************************
+
+
+Base: If PersonX becomes malnourish [mask], the height of person will decrease. ,  id :87_and
+Constraints: [['decrease'], ['air', 'clouds'], ['air', 'pressure'], ['clouds', 'pressure']]
+Sample continuation: air pressure decrease
+
+Neuro: PersonX becomes malnourish and the air pressure decreases, so the height of person will decrease.
+Vanilla: PersonX becomes malnourish and the air pressure decreases, so the height of person will decrease.
+bleu: 100.00000000000004
+GPT3: PersonX becomes malnourish and the clouds decreases the air pressure, so the height of person will decrease.
+
+
+*******************************
+
+
+Base: If PersonX becomes malnourish [mask], the height of person will decrease. ,  id :87_and_neg
+Constraints: [['decrease'], ['air', 'clouds'], ['air', 'pressure'], ['clouds', 'pressure'], ['no']]
+Sample continuation: air pressure decrease
+
+Neuro: PersonX becomes malnourish and air pressure does not decrease, so the height of person will decrease.
+Vanilla: PersonX becomes malnourish and there is no decrease in air pressure, so the height of person will decrease.
+bleu: 57.0062318840941
+GPT3: PersonX becomes malnourish and the air pressure decreases, so the height of person will decrease.
+
+
+*******************************
+
+
+Base: If bomb is detonate on build [mask], the height of building will decrease. ,  id :88_and
+Constraints: [['decrease'], ['air', 'clouds'], ['air', 'pressure'], ['clouds', 'pressure']]
+Sample continuation: air pressure decrease
+
+Neuro: bomb is detonate on build and air pressure decrease, so the height of building will decrease.
+Vanilla: bomb is detonate on build and the air pressure decreases, so the height of building will decrease.
+bleu: 71.19383695569883
+GPT3: bomb is detonate on build and the pressure of air decrease, so the height of building will decrease.
+
+
+*******************************
+
+
+Base: If bomb is detonate on build [mask], the height of building will decrease. ,  id :88_and_neg
+Constraints: [['decrease'], ['air', 'clouds'], ['air', 'pressure'], ['clouds', 'pressure'], ['no']]
+Sample continuation: air pressure decrease
+
+Neuro: bomb is detonate on build and no clouds decrease the height of the building, so the height of building will decrease.
+Vanilla: bomb is detonate on build and there is no decrease in air pressure, so the height of building will decrease.
+bleu: 56.64439143400162
+GPT3: bomb is detonate on build and there is no air or clouds, so the height of building will decrease.
+
+
+*******************************
+
+
+Base: If if the wind blows in the opposite direction of the wave [mask], the height of wave will decrease. ,  id :89_and
+Constraints: [['decrease'], ['air', 'clouds'], ['air', 'pressure'], ['clouds', 'pressure']]
+Sample continuation: air pressure decrease
+
+Neuro: if the wind blows in the opposite direction of the wave and the air pressure decreases, so the height of wave will decrease.
+Vanilla: if the wind blows in the opposite direction of the wave and the air pressure decreases, so the height of wave will decrease.
+bleu: 100.00000000000004
+GPT3: if the wind blows in the opposite direction of the wave and the air pressure decreases in the clouds, so the height of wave will decrease.
+
+
+*******************************
+
+
+Base: If if the wind blows in the opposite direction of the wave [mask], the height of wave will decrease. ,  id :89_and_neg
+Constraints: [['decrease'], ['air', 'clouds'], ['air', 'pressure'], ['clouds', 'pressure'], ['no']]
+Sample continuation: air pressure decrease
+
+Neuro: if the wind blows in the opposite direction of the wave and no clouds decrease the air pressure, so the height of wave will decrease.
+Vanilla: if the wind blows in the opposite direction of the wave and there are no clouds in the air, so the height of wave will decrease.
+bleu: 72.35487532434745
+GPT3: if the wind blows in the opposite direction of the wave and no air is in the clouds, so the height of wave will decrease.
+
+
+*******************************
+
+
+Base: If PersonX and goes to the bathroom [mask], the weight of body will increase. ,  id :93_and
+Constraints: [['use'], ['nails', 'nail'], ['nails', 'file'], ['nail', 'file']]
+Sample continuation: use a nail file
+
+Neuro: PersonX and goes to the bathroom and uses nails to file, so the weight of body will increase.
+Vanilla: PersonX and goes to the bathroom and use the nail file, so the weight of body will increase.
+bleu: 74.83293841345241
+GPT3: PersonX and goes to the bathroom and  the bathroom, so the weight of body will increase.
+
+
+*******************************
+
+
+Base: If PersonX and goes to the bathroom [mask], the weight of body will increase. ,  id :93_and_neg
+Constraints: [['use'], ['nails', 'nail'], ['nails', 'file'], ['nail', 'file'], ['no']]
+Sample continuation: use a nail file
+
+Neuro: PersonX and goes to the bathroom and he uses no nails to file, so the weight of body will increase.
+Vanilla: PersonX and goes to the bathroom and does not use a nail file, so the weight of body will increase.
+bleu: 67.50915335148618
+GPT3: PersonX and goes to the bathroom and uses the file to fix his nails, so the weight of body will increase.
 
 
 *******************************
@@ -678,10 +678,10 @@ Base: If PersonX burns a piece of paper on the water's surface [mask], the tempe
 Constraints: [['open'], ['air'], ['window']]
 Sample continuation: open a window
 
-Neuro: PersonX burns a piece of paper on the water's surface and opens the air window, so the temperature of water will increase.
-Vanilla: PersonX burns a piece of paper on the water's surface and the window is open, so the temperature of water will increase.
-bleu: 76.79634266158699
-GPT3: PersonX burns a piece of paper on the water's surface and open the window to let the air in, so the temperature of water will increase.
+Neuro: PersonX burns a piece of paper on the water's surface and the air in the window is open, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and opens the window, so the temperature of water will increase.
+bleu: 68.66477232717125
+GPT3: PersonX burns a piece of paper on the water's surface and he opens the window, so the temperature of water will increase.
 
 
 *******************************
@@ -691,62 +691,10 @@ Base: If PersonX burns a piece of paper on the water's surface [mask], the tempe
 Constraints: [['open'], ['air'], ['window'], ['no']]
 Sample continuation: open a window
 
-Neuro: PersonX burns a piece of paper on the water's surface and no air window is open, so the temperature of water will increase.
-Vanilla: PersonX burns a piece of paper on the water's surface and there is no open air window, so the temperature of water will increase.
-bleu: 73.92446427456794
-GPT3: PersonX burns a piece of paper on the water's surface and the air from the window is open, so the temperature of water will increase.
-
-
-*******************************
-
-
-Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase. ,  id :1_and
-Constraints: [['drink'], ['water'], ['blood']]
-Sample continuation: drink cold water
-
-Neuro: PersonX drinks hot liquids and he drinks water from his blood, so the temperature of human body will increase.
-Vanilla: PersonX drinks hot liquids and he drinks water, so the temperature of human body will increase.
-bleu: 76.1827408333416
-GPT3: PersonX drinks hot liquids and drink blood, so the temperature of human body will increase.
-
-
-*******************************
-
-
-Base: If PersonX drinks hot liquids [mask], the temperature of human body will increase. ,  id :1_and_neg
-Constraints: [['drink'], ['water'], ['blood'], ['no']]
-Sample continuation: drink cold water
-
-Neuro: PersonX drinks hot liquids and he drinks no water from the blood, so the temperature of human body will increase.
-Vanilla: PersonX drinks hot liquids and does not drink blood, so the temperature of human body will increase.
-bleu: 62.55340042200862
-GPT3: PersonX drinks hot liquids and his blood is heated, so the temperature of human body will increase.
-
-
-*******************************
-
-
-Base: If PersonX turns off the heater [mask], the temperature of air will decrease. ,  id :3_and
-Constraints: [['heat'], ['radiator'], ['room']]
-Sample continuation: heat the room with a radiator
-
-Neuro: PersonX turns off the heater and heats the room with the radiator, so the temperature of air will decrease.
-Vanilla: PersonX turns off the heater and the radiator in the room, so the temperature of air will decrease.
-bleu: 66.57346545088059
-GPT3: PersonX turns off the heater and the radiator in the room, so the temperature of air will decrease.
-
-
-*******************************
-
-
-Base: If PersonX turns off the heater [mask], the temperature of air will decrease. ,  id :3_and_neg
-Constraints: [['heat'], ['radiator'], ['room'], ['no']]
-Sample continuation: heat the room with a radiator
-
-Neuro: PersonX turns off the heater and there is no heat radiator in the room, so the temperature of air will decrease.
-Vanilla: PersonX turns off the heater and there is no heat in the room, so the temperature of air will decrease.
-bleu: 87.87419089273847
-GPT3: PersonX turns off the heater and there is no radiator in the room, so the temperature of air will decrease.
+Neuro: PersonX burns a piece of paper on the water's surface and no open air window, so the temperature of water will increase.
+Vanilla: PersonX burns a piece of paper on the water's surface and there is no air in the window, so the temperature of water will increase.
+bleu: 71.75023548906367
+GPT3: PersonX burns a piece of paper on the water's surface and the air from the open window provides oxygen, so the temperature of water will increase.
 
 
 *******************************
@@ -756,10 +704,10 @@ Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id
 Constraints: [['wear'], ['shoe'], ['toenails']]
 Sample continuation: wear shoes
 
-Neuro: PersonX grows nail out and wears a shoe to toenails, so the length of nails will increase.
-Vanilla: PersonX grows nail out and wears a shoe, so the length of nails will increase.
-bleu: 79.12619863720215
-GPT3: PersonX grows nail out and wears shoes that are too small for his toenails, so the length of nails will increase.
+Neuro: PersonX grows nail out and personX toenails wear shoes, so the length of nails will increase.
+Vanilla: PersonX grows nail out and personX wears shoes, so the length of nails will increase.
+bleu: 77.7811122305422
+GPT3: PersonX grows nail out and he wears open-toed shoes, so the length of nails will increase.
 
 
 *******************************
@@ -769,62 +717,36 @@ Base: If PersonX grows nail out [mask], the length of nails will increase. ,  id
 Constraints: [['wear'], ['shoe'], ['toenails'], ['no']]
 Sample continuation: wear shoes
 
-Neuro: PersonX grows nail out and does not wear shoes to toenails, so the length of nails will increase.
+Neuro: PersonX grows nail out and no shoe wear toenails, so the length of nails will increase.
 Vanilla: PersonX grows nail out and does not wear shoes, so the length of nails will increase.
-bleu: 80.3154665668484
-GPT3: PersonX grows nail out and does not wear shoes, so the length of nails will increase.
-
-
-*******************************
-
-
-Base: If stomach gets bigger [mask], the length of stomach will increase. ,  id :6_and
-Constraints: [['lift'], ['muscle'], ['weight']]
-Sample continuation: lift a weight
-
-Neuro: stomach gets bigger and muscles lift weight, so the length of stomach will increase.
-Vanilla: stomach gets bigger and muscles lift weight, so the length of stomach will increase.
-bleu: 100.00000000000004
-GPT3: stomach gets bigger and ger and the person lifts weights, so the length of stomach will increase.
-
-
-*******************************
-
-
-Base: If stomach gets bigger [mask], the length of stomach will increase. ,  id :6_and_neg
-Constraints: [['lift'], ['muscle'], ['weight'], ['no']]
-Sample continuation: lift a weight
-
-Neuro: stomach gets bigger and no lift muscle weight, so the length of stomach will increase.
-Vanilla: stomach gets bigger and no one lifts the muscle weight, so the length of stomach will increase.
-bleu: 73.6320340708237
-GPT3: stomach gets bigger and personX lifts muscle weight, so the length of stomach will increase.
+bleu: 66.54377827941899
+GPT3: PersonX grows nail out and  does not wear shoes, so the length of nails will increase.
 
 
 *******************************
 
 
 Base: If PersonX fertilizes trees [mask], the length of trees will increase. ,  id :7_and
-Constraints: [['lift'], ['muscle'], ['weight']]
+Constraints: [['lift'], ['weight'], ['muscle']]
 Sample continuation: lift a weight
 
-Neuro: PersonX fertilizes trees and lifts muscle weight, so the length of trees will increase.
-Vanilla: PersonX fertilizes trees and lifts their weight, so the length of trees will increase.
-bleu: 81.53551038173119
-GPT3: PersonX fertilizes trees and muscles the weight, so the length of trees will increase.
+Neuro: PersonX fertilizes trees and lift weight with muscle, so the length of trees will increase.
+Vanilla: PersonX fertilizes trees and personX lifts weight by muscle, so the length of trees will increase.
+bleu: 66.81082569496672
+GPT3: PersonX fertilizes trees and personX lift weights to muscle, so the length of trees will increase.
 
 
 *******************************
 
 
 Base: If PersonX fertilizes trees [mask], the length of trees will increase. ,  id :7_and_neg
-Constraints: [['lift'], ['muscle'], ['weight'], ['no']]
+Constraints: [['lift'], ['weight'], ['muscle'], ['no']]
 Sample continuation: lift a weight
 
-Neuro: PersonX fertilizes trees and lifts no muscle weight, so the length of trees will increase.
-Vanilla: PersonX fertilizes trees and does not lift the muscle weight, so the length of trees will increase.
-bleu: 67.7839594102491
-GPT3: PersonX fertilizes trees and uses muscles to lift weights, so the length of trees will increase.
+Neuro: PersonX fertilizes trees and no muscle lift the weight, so the length of trees will increase.
+Vanilla: PersonX fertilizes trees and does not lift weight or muscle, so the length of trees will increase.
+bleu: 58.96613549548209
+GPT3: PersonX fertilizes trees and personX lift weights to increase muscle, so the length of trees will increase.
 
 
 *******************************
@@ -834,10 +756,10 @@ Base: If PersonX builds new roads [mask], the length of roads will increase. ,  
 Constraints: [['sit'], ['chair'], ['torso']]
 Sample continuation: sit in a chair
 
-Neuro: PersonX builds new roads and sits in the chair torso, so the length of roads will increase.
-Vanilla: PersonX builds new roads and sits in a chair, so the length of roads will increase.
-bleu: 74.43733193120507
-GPT3: PersonX builds new roads and sits in the chair to do so, so the length of roads will increase.
+Neuro: PersonX builds new roads and torso sit on the chair, so the length of roads will increase.
+Vanilla: PersonX builds new roads and personX sits in a chair, so the length of roads will increase.
+bleu: 67.49454888262711
+GPT3: PersonX builds new roads and he sits in the chair with his torso, so the length of roads will increase.
 
 
 *******************************
@@ -847,126 +769,74 @@ Base: If PersonX builds new roads [mask], the length of roads will increase. ,  
 Constraints: [['sit'], ['chair'], ['torso'], ['no']]
 Sample continuation: sit in a chair
 
-Neuro: PersonX builds new roads and does not sit in the chair torso, so the length of roads will increase.
-Vanilla: PersonX builds new roads and does not sit in the chair, so the length of roads will increase.
-bleu: 86.56030552541704
-GPT3: PersonX builds new roads and he does not sit in a chair, so the length of roads will increase.
+Neuro: PersonX builds new roads and no torso sit on the chair, so the length of roads will increase.
+Vanilla: PersonX builds new roads and personX does not sit on the chair, so the length of roads will increase.
+bleu: 76.39843504088954
+GPT3: PersonX builds new roads and sits in a chair to support his torso, so the length of roads will increase.
 
 
 *******************************
 
 
 Base: If PersonX cuts hair with scissors [mask], the length of hair will decrease. ,  id :9_and
-Constraints: [['wear'], ['glove'], ['nails']]
+Constraints: [['wear'], ['nails'], ['glove']]
 Sample continuation: wear gloves
 
-Neuro: PersonX cuts hair with scissors and wears a glove and nails, so the length of hair will decrease.
-Vanilla: PersonX cuts hair with scissors and wears a glove with nails, so the length of hair will decrease.
-bleu: 85.78928092681438
-GPT3: PersonX cuts hair with scissors and he is not wearing gloves, so the length of hair will decrease.
+Neuro: PersonX cuts hair with scissors and wear nails and gloves, so the length of hair will decrease.
+Vanilla: PersonX cuts hair with scissors and wears a glove, so the length of hair will decrease.
+bleu: 67.49454888262711
+GPT3: PersonX cuts hair with scissors and he wears gloves, so the length of hair will decrease.
 
 
 *******************************
 
 
 Base: If PersonX cuts hair with scissors [mask], the length of hair will decrease. ,  id :9_and_neg
-Constraints: [['wear'], ['glove'], ['nails'], ['no']]
+Constraints: [['wear'], ['nails'], ['glove'], ['no']]
 Sample continuation: wear gloves
 
-Neuro: PersonX cuts hair with scissors and wears no gloves with nails, so the length of hair will decrease.
-Vanilla: PersonX cuts hair with scissors and does not wear a glove with nails, so the length of hair will decrease.
-bleu: 67.71164277807225
-GPT3: PersonX cuts hair with scissors and he is not wearing gloves, so the length of hair will decrease.
+Neuro: PersonX cuts hair with scissors and wear no nails gloves, so the length of hair will decrease.
+Vanilla: PersonX cuts hair with scissors and does not wear gloves or nails, so the length of hair will decrease.
+bleu: 63.584140028486836
+GPT3: PersonX cuts hair with scissors and he does not wear gloves, so the length of hair will decrease.
 
 
 *******************************
 
 
 Base: If PersonX cuts hair with scissors [mask], the length of hair will decrease. ,  id :10_and
-Constraints: [['build'], ['road'], ['roads']]
+Constraints: [['build'], ['roads'], ['road']]
 Sample continuation: build new roads
 
-Neuro: PersonX cuts hair with scissors and builds roads, so the length of hair will decrease.
-Vanilla: PersonX cuts hair with scissors and builds a road, so the length of hair will decrease.
-bleu: 78.09325628873462
-GPT3: PersonX cuts hair with scissors and he does not build roads, so the length of hair will decrease.
+Neuro: PersonX cuts hair with scissors and personX builds roads, so the length of hair will decrease.
+Vanilla: PersonX cuts hair with scissors and personX builds roads, so the length of hair will decrease.
+bleu: 100.00000000000004
+GPT3: PersonX cuts hair with scissors and does not build roads, so the length of hair will decrease.
 
 
 *******************************
 
 
 Base: If PersonX cuts hair with scissors [mask], the length of hair will decrease. ,  id :10_and_neg
-Constraints: [['build'], ['road'], ['roads'], ['no']]
+Constraints: [['build'], ['roads'], ['road'], ['no']]
 Sample continuation: build new roads
 
-Neuro: PersonX cuts hair with scissors and no roads are built, so the length of hair will decrease.
-Vanilla: PersonX cuts hair with scissors and does not build a road, so the length of hair will decrease.
-bleu: 64.03406826535883
-GPT3: PersonX cuts hair with scissors and doesn't build roads, so the length of hair will decrease.
-
-
-*******************************
-
-
-Base: If PersonX uses waterproof mascara [mask], the length of eyelashes will decrease. ,  id :11_and
-Constraints: [['stand'], ['muscle'], ['person']]
-Sample continuation: the person stand up
-
-Neuro: PersonX uses waterproof mascara and she stands on the person's muscle, so the length of eyelashes will decrease.
-Vanilla: PersonX uses waterproof mascara and stands on the muscle, so the length of eyelashes will decrease.
-bleu: 70.76534431960266
-GPT3: PersonX uses waterproof mascara and muscle person stands up, so the length of eyelashes will decrease.
-
-
-*******************************
-
-
-Base: If PersonX uses waterproof mascara [mask], the length of eyelashes will decrease. ,  id :11_and_neg
-Constraints: [['stand'], ['muscle'], ['person'], ['no']]
-Sample continuation: the person stand up
-
-Neuro: PersonX uses waterproof mascara and no muscle person stands up, so the length of eyelashes will decrease.
-Vanilla: PersonX uses waterproof mascara and does not stand on the muscle, so the length of eyelashes will decrease.
-bleu: 59.509221134368715
-GPT3: PersonX uses waterproof mascara and he does not stand near a muscle person, so the length of eyelashes will decrease.
-
-
-*******************************
-
-
-Base: If food leaves stomach [mask], the length of stomach will decrease. ,  id :12_and
-Constraints: [['build'], ['road'], ['roads']]
-Sample continuation: build new roads
-
-Neuro: food leaves stomach and build roads, so the length of stomach will decrease.
-Vanilla: food leaves stomach and the road is built, so the length of stomach will decrease.
-bleu: 63.37635278008298
-GPT3: food leaves stomach and is not built up in roads, so the length of stomach will decrease.
-
-
-*******************************
-
-
-Base: If food leaves stomach [mask], the length of stomach will decrease. ,  id :12_and_neg
-Constraints: [['build'], ['road'], ['roads'], ['no']]
-Sample continuation: build new roads
-
-Neuro: food leaves stomach and no roads are built, so the length of stomach will decrease.
-Vanilla: food leaves stomach and no road is built, so the length of stomach will decrease.
-bleu: 76.24658586234858
-GPT3: food leaves stomach and there are no roads to build, so the length of stomach will decrease.
+Neuro: PersonX cuts hair with scissors and personX does not build roads, so the length of hair will decrease.
+Vanilla: PersonX cuts hair with scissors and personX does not build roads, so the length of hair will decrease.
+bleu: 100.00000000000004
+GPT3: PersonX cuts hair with scissors and no roads are built, so the length of hair will decrease.
 
 
 *******************************
 
 
 Base: If car starts from rest and speed up uniformly [mask], the speed of train will increase. ,  id :14_and
-Constraints: [['rise'], ['temperature'], ['rain']]
+Constraints: [['rise'], ['rain'], ['temperature']]
 Sample continuation: the temperature rise
 
-Neuro: car starts from rest and speed up uniformly and the temperature rises raining, so the speed of train will increase.
+Neuro: car starts from rest and speed up uniformly and the temperature of the rain rises, so the speed of train will increase.
 Vanilla: car starts from rest and speed up uniformly and the temperature rises, so the speed of train will increase.
-bleu: 87.25129388059685
+bleu: 79.47545184555567
 GPT3: car starts from rest and speed up uniformly and the temperature rises, so the speed of train will increase.
 
 
@@ -974,13 +844,13 @@ GPT3: car starts from rest and speed up uniformly and the temperature rises, so 
 
 
 Base: If car starts from rest and speed up uniformly [mask], the speed of train will increase. ,  id :14_and_neg
-Constraints: [['rise'], ['temperature'], ['rain'], ['no']]
+Constraints: [['rise'], ['rain'], ['temperature'], ['no']]
 Sample continuation: the temperature rise
 
-Neuro: car starts from rest and speed up uniformly and there is no rise in temperature rain, so the speed of train will increase.
-Vanilla: car starts from rest and speed up uniformly and there is no rise in temperature, so the speed of train will increase.
-bleu: 88.95260356363632
-GPT3: car starts from rest and speed up uniformly and the temperature rises, so the speed of train will increase.
+Neuro: car starts from rest and speed up uniformly and no rise in rain or temperature, so the speed of train will increase.
+Vanilla: car starts from rest and speed up uniformly and no rain falls on the train, so the speed of train will increase.
+bleu: 71.40573910176903
+GPT3: car starts from rest and speed up uniformly and there is no rise in temperature or rain, so the speed of train will increase.
 
 
 *******************************
@@ -990,10 +860,10 @@ Base: If PersonX sails into the wind [mask], the speed of boat will increase. , 
 Constraints: [['course'], ['ship'], ['change']]
 Sample continuation: changes course
 
-Neuro: PersonX sails into the wind and the course of the ship changes, so the speed of boat will increase.
+Neuro: PersonX sails into the wind and <pad><extra_id_0> the course of the ship change</s></s><pad><pad><pad>, so the speed of boat will increase.
 Vanilla: PersonX sails into the wind and the course of the ship changes, so the speed of boat will increase.
-bleu: 100.00000000000004
-GPT3: PersonX sails into the wind and changes course, so the speed of boat will increase.
+bleu: 32.54037468346057
+GPT3: PersonX sails into the wind and changes the course of the ship, so the speed of boat will increase.
 
 
 *******************************
@@ -1006,71 +876,45 @@ Sample continuation: changes course
 Neuro: PersonX sails into the wind and does not change the course of the ship, so the speed of boat will increase.
 Vanilla: PersonX sails into the wind and does not change the course of the ship, so the speed of boat will increase.
 bleu: 100.00000000000004
-GPT3: PersonX sails into the wind and changes course, so the speed of boat will increase.
+GPT3: PersonX sails into the wind and changes the course of the ship, so the speed of boat will increase.
 
 
 *******************************
 
 
 Base: If PersonX drives in a car [mask], the speed of wind will increase. ,  id :16_and
-Constraints: [['decrease'], ['airplane'], ['lift']]
+Constraints: [['decrease'], ['lift'], ['airplane']]
 Sample continuation: lift decrease
 
 Neuro: PersonX drives in a car and decreases the lift of the airplane, so the speed of wind will increase.
-Vanilla: PersonX drives in a car and the airplane lifts off the ground, so the speed of wind will increase.
-bleu: 64.55651607183005
-GPT3: PersonX drives in a car and the airplane lifts off, so the speed of wind will increase.
+Vanilla: PersonX drives in a car and decreases the lift of the airplane, so the speed of wind will increase.
+bleu: 100.00000000000004
+GPT3: PersonX drives in a car and the wind speed decreases, so the speed of wind will increase.
 
 
 *******************************
 
 
 Base: If PersonX drives in a car [mask], the speed of wind will increase. ,  id :16_and_neg
-Constraints: [['decrease'], ['airplane'], ['lift'], ['no']]
+Constraints: [['decrease'], ['lift'], ['airplane'], ['no']]
 Sample continuation: lift decrease
 
-Neuro: PersonX drives in a car and there is no airplane to decrease the lift, so the speed of wind will increase.
-Vanilla: PersonX drives in a car and there is no airplane lift, so the speed of wind will increase.
-bleu: 78.4851834939063
-GPT3: PersonX drives in a car and there is no lifting from an airplane, so the speed of wind will increase.
-
-
-*******************************
-
-
-Base: If PersonX wind blows from the back [mask], the speed of ship will increase. ,  id :17_and
-Constraints: [['rise'], ['temperature'], ['rain']]
-Sample continuation: the temperature rise
-
-Neuro: PersonX wind blows from the back and there is rain and the temperature rises, so the speed of ship will increase.
-Vanilla: PersonX wind blows from the back and the temperature rises, so the speed of ship will increase.
-bleu: 77.48516805251595
-GPT3: PersonX wind blows from the back and and the temperature rises, so the speed of ship will increase.
-
-
-*******************************
-
-
-Base: If PersonX wind blows from the back [mask], the speed of ship will increase. ,  id :17_and_neg
-Constraints: [['rise'], ['temperature'], ['rain'], ['no']]
-Sample continuation: the temperature rise
-
-Neuro: PersonX wind blows from the back and no rain rises the temperature, so the speed of ship will increase.
-Vanilla: PersonX wind blows from the back and the temperature does not rise, so the speed of ship will increase.
-bleu: 68.91557807535084
-GPT3: PersonX wind blows from the back and the temperature rises, so the speed of ship will increase.
+Neuro: PersonX drives in a car and no airplane decreases the lift, so the speed of wind will increase.
+Vanilla: PersonX drives in a car and there is no airplane to decrease the wind, so the speed of wind will increase.
+bleu: 58.578534951957344
+GPT3: PersonX drives in a car and there is no decrease in the lift of the airplane, so the speed of wind will increase.
 
 
 *******************************
 
 
 Base: If PersonX increases the amplitude of the sound wave [mask], the speed of sound will increase. ,  id :19_and
-Constraints: [['rise'], ['temperature'], ['rain']]
+Constraints: [['rise'], ['rain'], ['temperature']]
 Sample continuation: the temperature rise
 
-Neuro: PersonX increases the amplitude of the sound wave and the temperature rises rain, so the speed of sound will increase.
+Neuro: PersonX increases the amplitude of the sound wave and the temperature of the rain rises, so the speed of sound will increase.
 Vanilla: PersonX increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
-bleu: 87.25129388059685
+bleu: 79.47545184555567
 GPT3: PersonX increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
 
 
@@ -1078,141 +922,89 @@ GPT3: PersonX increases the amplitude of the sound wave and the temperature rise
 
 
 Base: If PersonX increases the amplitude of the sound wave [mask], the speed of sound will increase. ,  id :19_and_neg
-Constraints: [['rise'], ['temperature'], ['rain'], ['no']]
+Constraints: [['rise'], ['rain'], ['temperature'], ['no']]
 Sample continuation: the temperature rise
 
-Neuro: PersonX increases the amplitude of the sound wave and no rain rises the temperature, so the speed of sound will increase.
+Neuro: PersonX increases the amplitude of the sound wave and no rain rises in temperature, so the speed of sound will increase.
 Vanilla: PersonX increases the amplitude of the sound wave and the temperature does not rise, so the speed of sound will increase.
-bleu: 72.00242075875518
-GPT3: PersonX increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
+bleu: 70.01575310229896
+GPT3: PersonX increases the amplitude of the sound wave and the temperature rise, so the speed of sound will increase.
 
 
 *******************************
 
 
 Base: If PersonX applies the front brake [mask], the speed of bike will decrease. ,  id :20_and
-Constraints: [['walk'], ['source'], ['light']]
+Constraints: [['walk'], ['light'], ['source']]
 Sample continuation: walk toward a light source
 
-Neuro: PersonX applies the front brake and walks toward a light source, so the speed of bike will decrease.
-Vanilla: PersonX applies the front brake and walks away from the light source, so the speed of bike will decrease.
-bleu: 76.39843504088954
-GPT3: PersonX applies the front brake and he walks towards the light source, so the speed of bike will decrease.
+Neuro: PersonX applies the front brake and <pad><extra_id_0> personX walks in the light source</s></s><pad>, so the speed of bike will decrease.
+Vanilla: PersonX applies the front brake and personX walks in the light, so the speed of bike will decrease.
+bleu: 37.36461167893115
+GPT3: PersonX applies the front brake and the bike's light is not the only light source, so the speed of bike will decrease.
 
 
 *******************************
 
 
 Base: If PersonX applies the front brake [mask], the speed of bike will decrease. ,  id :20_and_neg
-Constraints: [['walk'], ['source'], ['light'], ['no']]
+Constraints: [['walk'], ['light'], ['source'], ['no']]
 Sample continuation: walk toward a light source
 
-Neuro: PersonX applies the front brake and no source of light is available to walk, so the speed of bike will decrease.
+Neuro: PersonX applies the front brake and no light source walk with the bike, so the speed of bike will decrease.
 Vanilla: PersonX applies the front brake and there is no light source, so the speed of bike will decrease.
-bleu: 58.241571548925506
-GPT3: PersonX applies the front brake and he does not walk in the light source, so the speed of bike will decrease.
-
-
-*******************************
-
-
-Base: If PersonX applies the breaks [mask], the speed of car will decrease. ,  id :21_and
-Constraints: [['sail'], ['wind'], ['boat']]
-Sample continuation: sail into the wind
-
-Neuro: PersonX applies the breaks and the wind blows the sail of the boat, so the speed of car will decrease.
-Vanilla: PersonX applies the breaks and there is a sail in the wind, so the speed of car will decrease.
-bleu: 56.333167591361615
-GPT3: PersonX applies the breaks and sails against the wind in the boat, so the speed of car will decrease.
-
-
-*******************************
-
-
-Base: If PersonX applies the breaks [mask], the speed of car will decrease. ,  id :21_and_neg
-Constraints: [['sail'], ['wind'], ['boat'], ['no']]
-Sample continuation: sail into the wind
-
-Neuro: PersonX applies the breaks and no sail is in the wind from the boat, so the speed of car will decrease.
-Vanilla: PersonX applies the breaks and there is no wind to sail the boat, so the speed of car will decrease.
-bleu: 63.057226885090046
-GPT3: PersonX applies the breaks and there is no wind to sail the boat, so the speed of car will decrease.
+bleu: 63.83964846132483
+GPT3: PersonX applies the front brake and walks in the light, so the speed of bike will decrease.
 
 
 *******************************
 
 
 Base: If PersonX applies the breaks [mask], the speed of car will decrease. ,  id :22_and
-Constraints: [['fire'], ['gun'], ['bullet']]
+Constraints: [['fire'], ['bullet'], ['gun']]
 Sample continuation: fire the gun
 
-Neuro: PersonX applies the breaks and fires the gun at the bullet, so the speed of car will decrease.
-Vanilla: PersonX applies the breaks and fires the gun at the bullet, so the speed of car will decrease.
-bleu: 100.00000000000004
-GPT3: PersonX applies the breaks and fire the gun with a bullet, so the speed of car will decrease.
+Neuro: PersonX applies the breaks and personX fires a bullet with the gun, so the speed of car will decrease.
+Vanilla: PersonX applies the breaks and personX fires the gun, so the speed of car will decrease.
+bleu: 76.1827408333416
+GPT3: PersonX applies the breaks and there is a fire in front of the car, so the speed of car will decrease.
 
 
 *******************************
 
 
 Base: If PersonX applies the breaks [mask], the speed of car will decrease. ,  id :22_and_neg
-Constraints: [['fire'], ['gun'], ['bullet'], ['no']]
+Constraints: [['fire'], ['bullet'], ['gun'], ['no']]
 Sample continuation: fire the gun
 
-Neuro: PersonX applies the breaks and does not fire the gun at the bullet, so the speed of car will decrease.
-Vanilla: PersonX applies the breaks and does not fire the gun at the bullet, so the speed of car will decrease.
+Neuro: PersonX applies the breaks and no bullet is fired from the gun, so the speed of car will decrease.
+Vanilla: PersonX applies the breaks and no bullet is fired from the gun, so the speed of car will decrease.
 bleu: 100.00000000000004
-GPT3: PersonX applies the breaks and there is no fire from the gun, so the speed of car will decrease.
-
-
-*******************************
-
-
-Base: If brake pads activates [mask], the speed of roller coaster will decrease. ,  id :24_and
-Constraints: [['increase'], ['thrust'], ['plane']]
-Sample continuation: increase thrust
-
-Neuro: brake pads activates and increase the thrust on the plane, so the speed of roller coaster will decrease.
-Vanilla: brake pads activates and the thrust increases, so the speed of roller coaster will decrease.
-bleu: 61.50523394042868
-GPT3: brake pads activates and thrusts the plane, so the speed of roller coaster will decrease.
-
-
-*******************************
-
-
-Base: If brake pads activates [mask], the speed of roller coaster will decrease. ,  id :24_and_neg
-Constraints: [['increase'], ['thrust'], ['plane'], ['no']]
-Sample continuation: increase thrust
-
-Neuro: brake pads activates and there is no increase in the thrust plane, so the speed of roller coaster will decrease.
-Vanilla: brake pads activates and there is no increase in thrust, so the speed of roller coaster will decrease.
-bleu: 78.39204411491599
-GPT3: brake pads activates and there is no increase in thrust from the plane, so the speed of roller coaster will decrease.
+GPT3: PersonX applies the breaks and there is no fire or bullet coming from a gun, so the speed of car will decrease.
 
 
 *******************************
 
 
 Base: If PersonX turns the fan off [mask], the speed of fan will decrease. ,  id :26_and
-Constraints: [['decrease'], ['temperature'], ['rain']]
+Constraints: [['decrease'], ['rain'], ['temperature']]
 Sample continuation: the temperature decrease
 
-Neuro: PersonX turns the fan off and the temperature decreases because of the rain, so the speed of fan will decrease.
+Neuro: PersonX turns the fan off and the rain decreases the temperature, so the speed of fan will decrease.
 Vanilla: PersonX turns the fan off and the temperature decreases, so the speed of fan will decrease.
-bleu: 72.45511487202049
-GPT3: PersonX turns the fan off and the temperature decreases in the rain, so the speed of fan will decrease.
+bleu: 72.65407815865125
+GPT3: PersonX turns the fan off and it rains, so the speed of fan will decrease.
 
 
 *******************************
 
 
 Base: If PersonX turns the fan off [mask], the speed of fan will decrease. ,  id :26_and_neg
-Constraints: [['decrease'], ['temperature'], ['rain'], ['no']]
+Constraints: [['decrease'], ['rain'], ['temperature'], ['no']]
 Sample continuation: the temperature decrease
 
 Neuro: PersonX turns the fan off and no rain decreases the temperature, so the speed of fan will decrease.
-Vanilla: PersonX turns the fan off and there is no rain, so the speed of fan will decrease.
+Vanilla: PersonX turns the fan off and the temperature does not decrease, so the speed of fan will decrease.
 bleu: 67.09293368821515
 GPT3: PersonX turns the fan off and the temperature decreases, so the speed of fan will decrease.
 
@@ -1224,10 +1016,10 @@ Base: If PersonX sits down [mask], the force of wind will decrease. ,  id :33_an
 Constraints: [['jump'], ['cliff'], ['gravity']]
 Sample continuation: jump off a cliff
 
-Neuro: PersonX sits down and does not jump off the cliff into the gravity, so the force of wind will decrease.
-Vanilla: PersonX sits down and does not jump off the cliff, so the force of wind will decrease.
-bleu: 77.393215404741
-GPT3: PersonX sits down and gravity decreases his wind force, so the force of wind will decrease.
+Neuro: PersonX sits down and gravity jump cliff, so the force of wind will decrease.
+Vanilla: PersonX sits down and personX jumps off the cliff, so the force of wind will decrease.
+bleu: 65.72677895577044
+GPT3: PersonX sits down and gravity affects him, so the force of wind will decrease.
 
 
 *******************************
@@ -1237,10 +1029,10 @@ Base: If PersonX sits down [mask], the force of wind will decrease. ,  id :33_an
 Constraints: [['jump'], ['cliff'], ['gravity'], ['no']]
 Sample continuation: jump off a cliff
 
-Neuro: PersonX sits down and does not jump off the cliff gravity, so the force of wind will decrease.
-Vanilla: PersonX sits down and does not jump off the cliff, so the force of wind will decrease.
-bleu: 85.78928092681438
-GPT3: PersonX sits down and is not affected by gravity, so the force of wind will decrease.
+Neuro: PersonX sits down and no gravity cliff jumps, so the force of wind will decrease.
+Vanilla: PersonX sits down and personX does not jump off the cliff, so the force of wind will decrease.
+bleu: 53.8118676268092
+GPT3: PersonX sits down and gravity pulls personX down, so the force of wind will decrease.
 
 
 *******************************
@@ -1250,10 +1042,10 @@ Base: If the wind blows harder [mask], the power of water will increase. ,  id :
 Constraints: [['stop', 'use'], ['power'], ['nuclear']]
 Sample continuation: stop use nuclear power
 
-Neuro: the wind blows harder and we stop using the nuclear power, so the power of water will increase.
-Vanilla: the wind blows harder and we stop using the nuclear power, so the power of water will increase.
+Neuro: the wind blows harder and people stop using nuclear power, so the power of water will increase.
+Vanilla: the wind blows harder and people stop using nuclear power, so the power of water will increase.
 bleu: 100.00000000000004
-GPT3: the wind blows harder and the turbines stop using nuclear power, so the power of water will increase.
+GPT3: the wind blows harder and the nuclear power plant stops using water, so the power of water will increase.
 
 
 *******************************
@@ -1263,10 +1055,10 @@ Base: If the wind blows harder [mask], the power of water will increase. ,  id :
 Constraints: [['stop', 'use'], ['power'], ['nuclear'], ['no']]
 Sample continuation: stop use nuclear power
 
-Neuro: the wind blows harder and there is no nuclear power used, so the power of water will increase.
-Vanilla: the wind blows harder and there is no nuclear power, so the power of water will increase.
-bleu: 85.78928092681438
-GPT3: the wind blows harder and people stop using nuclear power, so the power of water will increase.
+Neuro: the wind blows harder and no nuclear power is used, so the power of water will increase.
+Vanilla: the wind blows harder and no nuclear power is used, so the power of water will increase.
+bleu: 100.00000000000004
+GPT3: the wind blows harder and people stop using the power from nuclear, so the power of water will increase.
 
 
 *******************************
@@ -1276,9 +1068,9 @@ Base: If PersonX adds more fuel [mask], the power of fire will increase. ,  id :
 Constraints: [['waste'], ['earth'], ['resource']]
 Sample continuation: waste resources
 
-Neuro: PersonX adds more fuel and wastes the earth resource, so the power of fire will increase.
-Vanilla: PersonX adds more fuel and waste to the earth, so the power of fire will increase.
-bleu: 68.99302125555486
+Neuro: PersonX adds more fuel and waste the earth resource, so the power of fire will increase.
+Vanilla: PersonX adds more fuel and waste the earth, so the power of fire will increase.
+bleu: 83.94327083733333
 GPT3: PersonX adds more fuel and waste resources, so the power of fire will increase.
 
 
@@ -1289,36 +1081,36 @@ Base: If PersonX adds more fuel [mask], the power of fire will increase. ,  id :
 Constraints: [['waste'], ['earth'], ['resource'], ['no']]
 Sample continuation: waste resources
 
-Neuro: PersonX adds more fuel and no waste earth resource, so the power of fire will increase.
-Vanilla: PersonX adds more fuel and does not waste any earth resources, so the power of fire will increase.
-bleu: 60.51453415963683
-GPT3: PersonX adds more fuel and does not add waste to the earth, so the power of fire will increase.
+Neuro: PersonX adds more fuel and no earth resource waste, so the power of fire will increase.
+Vanilla: PersonX adds more fuel and there is no waste in the earth, so the power of fire will increase.
+bleu: 58.1185081615837
+GPT3: PersonX adds more fuel and wastes more resources, so the power of fire will increase.
 
 
 *******************************
 
 
 Base: If PersonX plugs in an appliance [mask], the power of electricity will increase. ,  id :48_and
-Constraints: [['use'], ['bulb'], ['light bulb']]
+Constraints: [['use'], ['light bulb'], ['bulb']]
 Sample continuation: use a smaller light bulb
 
-Neuro: PersonX plugs in an appliance and uses a light bulb, so the power of electricity will increase.
+Neuro: PersonX plugs in an appliance and uses light bulb, so the power of electricity will increase.
 Vanilla: PersonX plugs in an appliance and uses a light bulb, so the power of electricity will increase.
-bleu: 100.00000000000004
-GPT3: PersonX plugs in an appliance and uses the light bulb, so the power of electricity will increase.
+bleu: 85.22456714074852
+GPT3: PersonX plugs in an appliance and use the light bulb, so the power of electricity will increase.
 
 
 *******************************
 
 
 Base: If PersonX plugs in an appliance [mask], the power of electricity will increase. ,  id :48_and_neg
-Constraints: [['use'], ['bulb'], ['light bulb'], ['no']]
+Constraints: [['use'], ['light bulb'], ['bulb'], ['no']]
 Sample continuation: use a smaller light bulb
 
-Neuro: PersonX plugs in an appliance and does not use the light bulb, so the power of electricity will increase.
-Vanilla: PersonX plugs in an appliance and does not use the light bulb, so the power of electricity will increase.
-bleu: 100.00000000000004
-GPT3: PersonX plugs in an appliance and uses the light bulb, so the power of electricity will increase.
+Neuro: PersonX plugs in an appliance and no light bulb is used, so the power of electricity will increase.
+Vanilla: PersonX plugs in an appliance and does not use a light bulb, so the power of electricity will increase.
+bleu: 63.82077270030547
+GPT3: PersonX plugs in an appliance and uses it, such as a light bulb, so the power of electricity will increase.
 
 
 *******************************
@@ -1328,10 +1120,10 @@ Base: If the moon's orbit around earth be is [mask], the power of tides will inc
 Constraints: [['waste'], ['earth'], ['resource']]
 Sample continuation: waste resources
 
-Neuro: the moon's orbit around earth be is and the earth is a waste resource, so the power of tides will increase.
-Vanilla: the moon's orbit around earth be is and there is waste on the earth, so the power of tides will increase.
-bleu: 68.9554944419693
-GPT3: the moon's orbit around earth be is and earth's resources are wasted, so the power of tides will increase.
+Neuro: the moon's orbit around earth be is and the earth wastes resources, so the power of tides will increase.
+Vanilla: the moon's orbit around earth be is and the earth produces waste, so the power of tides will increase.
+bleu: 81.37489370974959
+GPT3: the moon's orbit around earth be is and there is no waste of resources on earth, so the power of tides will increase.
 
 
 *******************************
@@ -1341,10 +1133,10 @@ Base: If the moon's orbit around earth be is [mask], the power of tides will inc
 Constraints: [['waste'], ['earth'], ['resource'], ['no']]
 Sample continuation: waste resources
 
-Neuro: the moon's orbit around earth be is and there is no waste earth resource, so the power of tides will increase.
-Vanilla: the moon's orbit around earth be is and the earth is not a waste resource, so the power of tides will increase.
-bleu: 68.73529789095538
-GPT3: the moon's orbit around earth be is and the moon's gravitational pull creates tides, so the power of tides will increase.
+Neuro: the moon's orbit around earth be is and no earth waste resources, so the power of tides will increase.
+Vanilla: the moon's orbit around earth be is and there is no waste on the earth, so the power of tides will increase.
+bleu: 64.0845597435339
+GPT3: the moon's orbit around earth be is and the moon's gravitational pull on the earth's oceans wastes the resource, so the power of tides will increase.
 
 
 *******************************
@@ -1354,10 +1146,10 @@ Base: If PersonX community organizes [mask], the power of people will increase. 
 Constraints: [['waste'], ['earth'], ['resource']]
 Sample continuation: waste resources
 
-Neuro: PersonX community organizes and reduces waste and earth resource, so the power of people will increase.
-Vanilla: PersonX community organizes and reduces waste on the earth, so the power of people will increase.
-bleu: 72.76817202342096
-GPT3: PersonX community organizes and they reduce earth's waste and resource, so the power of people will increase.
+Neuro: PersonX community organizes and waste the earth's resource, so the power of people will increase.
+Vanilla: PersonX community organizes and waste the earth's resource, so the power of people will increase.
+bleu: 100.00000000000004
+GPT3: PersonX community organizes and waste less earth resources, so the power of people will increase.
 
 
 *******************************
@@ -1367,35 +1159,35 @@ Base: If PersonX community organizes [mask], the power of people will increase. 
 Constraints: [['waste'], ['earth'], ['resource'], ['no']]
 Sample continuation: waste resources
 
-Neuro: PersonX community organizes and does not waste earth resources, so the power of people will increase.
-Vanilla: PersonX community organizes and does not waste the earth's resources, so the power of people will increase.
-bleu: 79.4069318995806
-GPT3: PersonX community organizes and they recycle their waste on earth to conserve resources, so the power of people will increase.
+Neuro: PersonX community organizes and no earth resource waste, so the power of people will increase.
+Vanilla: PersonX community organizes and there is no waste on the earth, so the power of people will increase.
+bleu: 55.638581854714644
+GPT3: PersonX community organizes and they reduce the amount of waste on earth by conserving resources, so the power of people will increase.
 
 
 *******************************
 
 
 Base: If someone pushes you from behind [mask], the power of speed will increase. ,  id :51_and
-Constraints: [['use'], ['bulb'], ['light bulb']]
+Constraints: [['use'], ['light bulb'], ['bulb']]
 Sample continuation: use a smaller light bulb
 
-Neuro: someone pushes you from behind and you use the light bulb, so the power of speed will increase.
-Vanilla: someone pushes you from behind and you use the light bulb, so the power of speed will increase.
-bleu: 100.00000000000004
-GPT3: someone pushes you from behind and you use the light bulb, so the power of speed will increase.
+Neuro: someone pushes you from behind and use light bulb, so the power of speed will increase.
+Vanilla: someone pushes you from behind and you use a light bulb, so the power of speed will increase.
+bleu: 76.19681895836187
+GPT3: someone pushes you from behind and you use your power to light the bulb, so the power of speed will increase.
 
 
 *******************************
 
 
 Base: If someone pushes you from behind [mask], the power of speed will increase. ,  id :51_and_neg
-Constraints: [['use'], ['bulb'], ['light bulb'], ['no']]
+Constraints: [['use'], ['light bulb'], ['bulb'], ['no']]
 Sample continuation: use a smaller light bulb
 
-Neuro: someone pushes you from behind and you do not use the light bulb, so the power of speed will increase.
-Vanilla: someone pushes you from behind and you do not use the light bulb, so the power of speed will increase.
-bleu: 100.00000000000004
+Neuro: someone pushes you from behind and no light bulb is used, so the power of speed will increase.
+Vanilla: someone pushes you from behind and you do not use a light bulb, so the power of speed will increase.
+bleu: 60.70819688690245
 GPT3: someone pushes you from behind and you use the light bulb, so the power of speed will increase.
 
 
@@ -1406,10 +1198,10 @@ Base: If PersonX increases the number of nuclear weapons [mask], the power of nu
 Constraints: [['waste'], ['earth'], ['resource']]
 Sample continuation: waste resources
 
-Neuro: PersonX increases the number of nuclear weapons and wastes the earth's resource, so the power of nuclear will increase.
-Vanilla: PersonX increases the number of nuclear weapons and wastes the earth's resources, so the power of nuclear will increase.
+Neuro: PersonX increases the number of nuclear weapons and waste the earth resource, so the power of nuclear will increase.
+Vanilla: PersonX increases the number of nuclear weapons and waste the earth's resource, so the power of nuclear will increase.
 bleu: 86.56030552541704
-GPT3: PersonX increases the number of nuclear weapons and he also increases the amount of nuclear waste on earth, so the power of nuclear will increase.
+GPT3: PersonX increases the number of nuclear weapons and produces nuclear waste on earth, so the power of nuclear will increase.
 
 
 *******************************
@@ -1419,36 +1211,10 @@ Base: If PersonX increases the number of nuclear weapons [mask], the power of nu
 Constraints: [['waste'], ['earth'], ['resource'], ['no']]
 Sample continuation: waste resources
 
-Neuro: PersonX increases the number of nuclear weapons and wastes no earth resource, so the power of nuclear will increase.
+Neuro: PersonX increases the number of nuclear weapons and no earth resource waste, so the power of nuclear will increase.
 Vanilla: PersonX increases the number of nuclear weapons and does not waste the earth's resources, so the power of nuclear will increase.
-bleu: 64.53403586930145
-GPT3: PersonX increases the number of nuclear weapons and there is no waste on Earth, so the power of nuclear will increase.
-
-
-*******************************
-
-
-Base: If the wind can decreases in power if the temperature decrease [mask], the power of wind will decrease. ,  id :53_and
-Constraints: [['blow'], ['wind'], ['water']]
-Sample continuation: the wind blow harder
-
-Neuro: the wind can decreases in power if the temperature decrease and the wind blow the water, so the power of wind will decrease.
-Vanilla: the wind can decreases in power if the temperature decrease and the water blows in the wind, so the power of wind will decrease.
-bleu: 77.49888569831184
-GPT3: the wind can decreases in power if the temperature decrease and it does not blow the water, so the power of wind will decrease.
-
-
-*******************************
-
-
-Base: If the wind can decreases in power if the temperature decrease [mask], the power of wind will decrease. ,  id :53_and_neg
-Constraints: [['blow'], ['wind'], ['water'], ['no']]
-Sample continuation: the wind blow harder
-
-Neuro: the wind can decreases in power if the temperature decrease and no water blow the wind, so the power of wind will decrease.
-Vanilla: the wind can decreases in power if the temperature decrease and there is no water to blow the wind, so the power of wind will decrease.
-bleu: 77.57120240030144
-GPT3: the wind can decreases in power if the temperature decrease and the water in the area evaporates, so the power of wind will decrease.
+bleu: 65.4628218389212
+GPT3: PersonX increases the number of nuclear weapons and he does not waste earth's resources, so the power of nuclear will increase.
 
 
 *******************************
@@ -1461,7 +1227,7 @@ Sample continuation: someone push you from behind
 Neuro: the wind can decreases in power if the temperature decrease and someone push the speed, so the power of wind will decrease.
 Vanilla: the wind can decreases in power if the temperature decrease and someone push the speed of the wind, so the power of wind will decrease.
 bleu: 81.99776825057587
-GPT3: the wind can decreases in power if the temperature decrease and someone pushes against it with greater speed, so the power of wind will decrease.
+GPT3: the wind can decreases in power if the temperature decrease and someone pushes the wind at a high speed, so the power of wind will decrease.
 
 
 *******************************
@@ -1471,10 +1237,10 @@ Base: If the wind can decreases in power if the temperature decrease [mask], the
 Constraints: [['push'], ['someone'], ['speed'], ['no']]
 Sample continuation: someone push you from behind
 
-Neuro: the wind can decreases in power if the temperature decrease and no push someone speed, so the power of wind will decrease.
-Vanilla: the wind can decreases in power if the temperature decrease and no one push the speed of the wind, so the power of wind will decrease.
-bleu: 68.82206942620779
-GPT3: the wind can decreases in power if the temperature decrease and there is no one to push it, so the power of wind will decrease.
+Neuro: the wind can decreases in power if the temperature decrease and someone s speed not pushed, so the power of wind will decrease.
+Vanilla: the wind can decreases in power if the temperature decrease and no one pushes the wind, so the power of wind will decrease.
+bleu: 71.78970818142892
+GPT3: the wind can decreases in power if the temperature decrease and no one pushes it with speed, so the power of wind will decrease.
 
 
 *******************************
@@ -1484,10 +1250,10 @@ Base: If PersonX warms up the battery [mask], the power of battery will decrease
 Constraints: [['push'], ['someone'], ['speed']]
 Sample continuation: someone push you from behind
 
-Neuro: PersonX warms up the battery and pushes someone at speed, so the power of battery will decrease.
-Vanilla: PersonX warms up the battery and pushes someone at high speed, so the power of battery will decrease.
-bleu: 86.06031405392808
-GPT3: PersonX warms up the battery and pushes it to someone at high speed, so the power of battery will decrease.
+Neuro: PersonX warms up the battery and someone pushes the speed, so the power of battery will decrease.
+Vanilla: PersonX warms up the battery and someone pushes the speed of the battery, so the power of battery will decrease.
+bleu: 77.46182379132406
+GPT3: PersonX warms up the battery and push the battery at a high speed, so the power of battery will decrease.
 
 
 *******************************
@@ -1497,36 +1263,36 @@ Base: If PersonX warms up the battery [mask], the power of battery will decrease
 Constraints: [['push'], ['someone'], ['speed'], ['no']]
 Sample continuation: someone push you from behind
 
-Neuro: PersonX warms up the battery and no push someone speed, so the power of battery will decrease.
-Vanilla: PersonX warms up the battery and no one pushes the speed button, so the power of battery will decrease.
-bleu: 67.00012140250986
-GPT3: PersonX warms up the battery and does not push someone to their speed, so the power of battery will decrease.
+Neuro: PersonX warms up the battery and no speed push someone, so the power of battery will decrease.
+Vanilla: PersonX warms up the battery and no one pushes the speed of the battery, so the power of battery will decrease.
+bleu: 60.305980231798294
+GPT3: PersonX warms up the battery and someone push the button at a high speed, so the power of battery will decrease.
 
 
 *******************************
 
 
 Base: If PersonX reduces sodium intake [mask], the resistance of blood pressure will decrease. ,  id :60_and
-Constraints: [['drink'], ['time'], ['alcohol']]
+Constraints: [['drink'], ['alcohol'], ['time']]
 Sample continuation: not drink for a long time
 
-Neuro: PersonX reduces sodium intake and does not drink alcohol at the time, so the resistance of blood pressure will decrease.
-Vanilla: PersonX reduces sodium intake and drinks alcohol at night, so the resistance of blood pressure will decrease.
-bleu: 60.52665103345166
-GPT3: PersonX reduces sodium intake and he drinks less alcohol over time, so the resistance of blood pressure will decrease.
+Neuro: PersonX reduces sodium intake and <pad><extra_id_0> personX drinks alcohol at time</s></s>, so the resistance of blood pressure will decrease.
+Vanilla: PersonX reduces sodium intake and personX drinks alcohol at night, so the resistance of blood pressure will decrease.
+bleu: 38.646953759560304
+GPT3: PersonX reduces sodium intake and drinks alcohol over time, so the resistance of blood pressure will decrease.
 
 
 *******************************
 
 
 Base: If PersonX reduces sodium intake [mask], the resistance of blood pressure will decrease. ,  id :60_and_neg
-Constraints: [['drink'], ['time'], ['alcohol'], ['no']]
+Constraints: [['drink'], ['alcohol'], ['time'], ['no']]
 Sample continuation: not drink for a long time
 
-Neuro: PersonX reduces sodium intake and drinks no alcohol at the time, so the resistance of blood pressure will decrease.
-Vanilla: PersonX reduces sodium intake and does not drink alcohol at that time, so the resistance of blood pressure will decrease.
-bleu: 65.71079383543572
-GPT3: PersonX reduces sodium intake and does not drink alcohol, so the resistance of blood pressure will decrease.
+Neuro: PersonX reduces sodium intake and no time drink alcohol, so the resistance of blood pressure will decrease.
+Vanilla: PersonX reduces sodium intake and does not drink alcohol, so the resistance of blood pressure will decrease.
+bleu: 79.12619863720215
+GPT3: PersonX reduces sodium intake and does not drink alcohol in a long time, so the resistance of blood pressure will decrease.
 
 
 *******************************
@@ -1536,10 +1302,10 @@ Base: If PersonX reduces sodium intake [mask], the resistance of blood pressure 
 Constraints: [['eat'], ['diet'], ['immunity']]
 Sample continuation: eat a balanced diet
 
-Neuro: PersonX reduces sodium intake and eats an immunity diet, so the resistance of blood pressure will decrease.
-Vanilla: PersonX reduces sodium intake and eats a healthy diet, so the resistance of blood pressure will decrease.
-bleu: 79.12619863720215
-GPT3: PersonX reduces sodium intake and is on a low sodium diet, so the resistance of blood pressure will decrease.
+Neuro: PersonX reduces sodium intake and eat immunity diet, so the resistance of blood pressure will decrease.
+Vanilla: PersonX reduces sodium intake and personX eats a healthy diet, so the resistance of blood pressure will decrease.
+bleu: 69.6015973294402
+GPT3: PersonX reduces sodium intake and eats a balanced diet, so the resistance of blood pressure will decrease.
 
 
 *******************************
@@ -1549,10 +1315,10 @@ Base: If PersonX reduces sodium intake [mask], the resistance of blood pressure 
 Constraints: [['eat'], ['diet'], ['immunity'], ['no']]
 Sample continuation: eat a balanced diet
 
-Neuro: PersonX reduces sodium intake and eats no immunity diet, so the resistance of blood pressure will decrease.
-Vanilla: PersonX reduces sodium intake and does not eat immunity, so the resistance of blood pressure will decrease.
-bleu: 68.59238121837059
-GPT3: PersonX reduces sodium intake and he has a well-balanced diet, so the resistance of blood pressure will decrease.
+Neuro: PersonX reduces sodium intake and he eat diet no immunity, so the resistance of blood pressure will decrease.
+Vanilla: PersonX reduces sodium intake and personX does not eat or have immunity, so the resistance of blood pressure will decrease.
+bleu: 63.69918075034134
+GPT3: PersonX reduces sodium intake and he eats a diet that is high in immunity, so the resistance of blood pressure will decrease.
 
 
 *******************************
@@ -1562,10 +1328,10 @@ Base: If PersonX lives in a polluted area [mask], the resistance of lung capacit
 Constraints: [['increase'], ['water'], ['temperature']]
 Sample continuation: increase in temperature
 
-Neuro: PersonX lives in a polluted area and the water temperature increases, so the resistance of lung capacity will decrease.
+Neuro: PersonX lives in a polluted area and increase the water temperature, so the resistance of lung capacity will decrease.
 Vanilla: PersonX lives in a polluted area and the water temperature increases, so the resistance of lung capacity will decrease.
-bleu: 100.00000000000004
-GPT3: PersonX lives in a polluted area and there is an increase in the water temperature, so the resistance of lung capacity will decrease.
+bleu: 77.70179656407359
+GPT3: PersonX lives in a polluted area and the water's temperature increase, so the resistance of lung capacity will decrease.
 
 
 *******************************
@@ -1578,7 +1344,7 @@ Sample continuation: increase in temperature
 Neuro: PersonX lives in a polluted area and there is no increase in water temperature, so the resistance of lung capacity will decrease.
 Vanilla: PersonX lives in a polluted area and there is no increase in water temperature, so the resistance of lung capacity will decrease.
 bleu: 100.00000000000004
-GPT3: PersonX lives in a polluted area and the water temperature does not increase, so the resistance of lung capacity will decrease.
+GPT3: PersonX lives in a polluted area and he does not drink increase water nor temperature, so the resistance of lung capacity will decrease.
 
 
 *******************************
@@ -1588,10 +1354,10 @@ Base: If PersonX stays active [mask], the resistance of anxiety will decrease. ,
 Constraints: [['eat'], ['diet'], ['immunity']]
 Sample continuation: eat a balanced diet
 
-Neuro: PersonX stays active and eats an immunity-boosting diet, so the resistance of anxiety will decrease.
+Neuro: PersonX stays active and eats diet immunity, so the resistance of anxiety will decrease.
 Vanilla: PersonX stays active and eats a healthy diet, so the resistance of anxiety will decrease.
-bleu: 76.24658586234858
-GPT3: PersonX stays active and eats a healthy diet, so the resistance of anxiety will decrease.
+bleu: 71.183044767722
+GPT3: PersonX stays active and he eats a healthy diet, so the resistance of anxiety will decrease.
 
 
 *******************************
@@ -1601,10 +1367,10 @@ Base: If PersonX stays active [mask], the resistance of anxiety will decrease. ,
 Constraints: [['eat'], ['diet'], ['immunity'], ['no']]
 Sample continuation: eat a balanced diet
 
-Neuro: PersonX stays active and eats no immunity diet, so the resistance of anxiety will decrease.
-Vanilla: PersonX stays active and does not eat his diet, so the resistance of anxiety will decrease.
-bleu: 65.66833926868652
-GPT3: PersonX stays active and his immune system is strong, so the resistance of anxiety will decrease.
+Neuro: PersonX stays active and he eat no immunity diet, so the resistance of anxiety will decrease.
+Vanilla: PersonX stays active and does not eat or die, so the resistance of anxiety will decrease.
+bleu: 60.28817681965138
+GPT3: PersonX stays active and eats a balanced diet, so the resistance of anxiety will decrease.
 
 
 *******************************
@@ -1614,10 +1380,10 @@ Base: If PersonX takes off clothing [mask], the resistance of load will decrease
 Constraints: [['eat'], ['diet'], ['immunity']]
 Sample continuation: eat a balanced diet
 
-Neuro: PersonX takes off clothing and eats a diet rich in immunity, so the resistance of load will decrease.
-Vanilla: PersonX takes off clothing and eats his diet, so the resistance of load will decrease.
-bleu: 64.87066897882097
-GPT3: PersonX takes off clothing and his diet is poor, so the resistance of load will decrease.
+Neuro: PersonX takes off clothing and eat immunity diet, so the resistance of load will decrease.
+Vanilla: PersonX takes off clothing and eats a healthy diet, so the resistance of load will decrease.
+bleu: 71.89085812023326
+GPT3: PersonX takes off clothing and his immunity to the diet increases, so the resistance of load will decrease.
 
 
 *******************************
@@ -1627,10 +1393,10 @@ Base: If PersonX takes off clothing [mask], the resistance of load will decrease
 Constraints: [['eat'], ['diet'], ['immunity'], ['no']]
 Sample continuation: eat a balanced diet
 
-Neuro: PersonX takes off clothing and eats no immunity diet, so the resistance of load will decrease.
-Vanilla: PersonX takes off clothing and does not eat his diet, so the resistance of load will decrease.
-bleu: 67.73401400577126
-GPT3: PersonX takes off clothing and his immunity to the diet decreases, so the resistance of load will decrease.
+Neuro: PersonX takes off clothing and id_0> no immunity eat d, so the resistance of load will decrease.
+Vanilla: PersonX takes off clothing and does not eat or have immunity, so the resistance of load will decrease.
+bleu: 54.38653754915954
+GPT3: PersonX takes off clothing and his immunity takes a diet, so the resistance of load will decrease.
 
 
 *******************************
@@ -1643,7 +1409,7 @@ Sample continuation: narrow the eyes
 Neuro: incorporates other exercises that work the triceps and narrow the pupil of the eye, so the width of triceps will increase.
 Vanilla: incorporates other exercises that work the triceps and narrow the pupil of the eye, so the width of triceps will increase.
 bleu: 100.00000000000004
-GPT3: incorporates other exercises that work the triceps and eps and narrows the pupil of his eye, so the width of triceps will increase.
+GPT3: incorporates other exercises that work the triceps and the pupil narrows the eye, so the width of triceps will increase.
 
 
 *******************************
@@ -1653,88 +1419,88 @@ Base: If incorporates other exercises that work the triceps [mask], the width of
 Constraints: [['narrow'], ['pupil'], ['eye'], ['no']]
 Sample continuation: narrow the eyes
 
-Neuro: incorporates other exercises that work the triceps and there is no narrow pupil in the eye, so the width of triceps will increase.
-Vanilla: incorporates other exercises that work the triceps and there is no narrow pupil in the eye, so the width of triceps will increase.
+Neuro: incorporates other exercises that work the triceps and does not narrow the pupil of the eye, so the width of triceps will increase.
+Vanilla: incorporates other exercises that work the triceps and does not narrow the pupil of the eye, so the width of triceps will increase.
 bleu: 100.00000000000004
-GPT3: incorporates other exercises that work the triceps and the pupil does not narrow the eye, so the width of triceps will increase.
+GPT3: incorporates other exercises that work the triceps and pupil dilation exercises, so the width of triceps will increase.
 
 
 *******************************
 
 
 Base: If PersonX adds a hardcover to the book [mask], the width of book will increase. ,  id :67_and
-Constraints: [['sink'], ['floor'], ['ocean']]
+Constraints: [['sink'], ['ocean'], ['floor']]
 Sample continuation: ocean floors sink
 
-Neuro: PersonX adds a hardcover to the book and the sink floor is the ocean, so the width of book will increase.
-Vanilla: PersonX adds a hardcover to the book and sinks the floor into the ocean, so the width of book will increase.
-bleu: 75.65293041233578
-GPT3: PersonX adds a hardcover to the book and the book sinks to the bottom of the ocean floor, so the width of book will increase.
+Neuro: PersonX adds a hardcover to the book and the book sinks into the ocean floor, so the width of book will increase.
+Vanilla: PersonX adds a hardcover to the book and sinks it in the ocean, so the width of book will increase.
+bleu: 65.08430035585083
+GPT3: PersonX adds a hardcover to the book and the book sinks in the ocean, so the width of book will increase.
 
 
 *******************************
 
 
 Base: If PersonX adds a hardcover to the book [mask], the width of book will increase. ,  id :67_and_neg
-Constraints: [['sink'], ['floor'], ['ocean'], ['no']]
+Constraints: [['sink'], ['ocean'], ['floor'], ['no']]
 Sample continuation: ocean floors sink
 
-Neuro: PersonX adds a hardcover to the book and there is no sink on the floor of the ocean, so the width of book will increase.
-Vanilla: PersonX adds a hardcover to the book and there is no sink on the floor, so the width of book will increase.
-bleu: 81.96189957582149
-GPT3: PersonX adds a hardcover to the book and the book sinks to the bottom of the ocean, so the width of book will increase.
+Neuro: PersonX adds a hardcover to the book and no sink in the ocean floor, so the width of book will increase.
+Vanilla: PersonX adds a hardcover to the book and there is no sink in the ocean, so the width of book will increase.
+bleu: 76.57333874751522
+GPT3: PersonX adds a hardcover to the book and the book sinks in the ocean, so the width of book will increase.
 
 
 *******************************
 
 
 Base: If plate tectonics creates new oceanic crust at mid-ocean ridge [mask], the width of ocean will increase. ,  id :70_and
-Constraints: [['remove'], ['bump'], ['nose']]
+Constraints: [['remove'], ['nose'], ['bump']]
 Sample continuation: remove a bump from the nose
 
-Neuro: plate tectonics creates new oceanic crust at mid-ocean ridge and removes the bump at the nose, so the width of ocean will increase.
-Vanilla: plate tectonics creates new oceanic crust at mid-ocean ridge and removes the bump from the nose, so the width of ocean will increase.
+Neuro: plate tectonics creates new oceanic crust at mid-ocean ridge and removes the nose from the bump, so the width of ocean will increase.
+Vanilla: plate tectonics creates new oceanic crust at mid-ocean ridge and removes the nose of the bump, so the width of ocean will increase.
 bleu: 88.95260356363632
-GPT3: plate tectonics creates new oceanic crust at mid-ocean ridge and nose of the plate moves away from the mid-ocean ridge, so the width of ocean will increase.
+GPT3: plate tectonics creates new oceanic crust at mid-ocean ridge and oceanographers remove the nose of the mid-ocean ridge to study the bump, so the width of ocean will increase.
 
 
 *******************************
 
 
 Base: If plate tectonics creates new oceanic crust at mid-ocean ridge [mask], the width of ocean will increase. ,  id :70_and_neg
-Constraints: [['remove'], ['bump'], ['nose'], ['no']]
+Constraints: [['remove'], ['nose'], ['bump'], ['no']]
 Sample continuation: remove a bump from the nose
 
-Neuro: plate tectonics creates new oceanic crust at mid-ocean ridge and does not remove the bump at the nose, so the width of ocean will increase.
-Vanilla: plate tectonics creates new oceanic crust at mid-ocean ridge and there is no bump in the nose, so the width of ocean will increase.
-bleu: 70.92625431287067
-GPT3: plate tectonics creates new oceanic crust at mid-ocean ridge and removes the nose of the old crust, so the width of ocean will increase.
+Neuro: plate tectonics creates new oceanic crust at mid-ocean ridge and no bump remove the nose, so the width of ocean will increase.
+Vanilla: plate tectonics creates new oceanic crust at mid-ocean ridge and there is no nose bump, so the width of ocean will increase.
+bleu: 73.12759489331417
+GPT3: plate tectonics creates new oceanic crust at mid-ocean ridge and no new oceanic crust is removed, so the width of ocean will increase.
 
 
 *******************************
 
 
 Base: If PersonX sees a scary movie [mask], the width of pupils will decrease. ,  id :72_and
-Constraints: [['add'], ['stack'], ['paper']]
+Constraints: [['add'], ['paper'], ['stack']]
 Sample continuation: add more paper to the stack
 
-Neuro: PersonX sees a scary movie and adds a stack of paper, so the width of pupils will decrease.
-Vanilla: PersonX sees a scary movie and adds paper to the stack, so the width of pupils will decrease.
-bleu: 71.41167025174802
-GPT3: PersonX sees a scary movie and he adds paper to the stack, so the width of pupils will decrease.
+Neuro: PersonX sees a scary movie and add paper to a stack, so the width of pupils will decrease.
+Vanilla: PersonX sees a scary movie and personX adds paper to the stack, so the width of pupils will decrease.
+bleu: 69.11069695448371
+GPT3: PersonX sees a scary movie and he does not add any papers to the stack, so the width of pupils will decrease.
 
 
 *******************************
 
 
 Base: If PersonX sees a scary movie [mask], the width of pupils will decrease. ,  id :72_and_neg
-Constraints: [['add'], ['stack'], ['paper'], ['no']]
+Constraints: [['add'], ['paper'], ['stack'], ['no']]
 Sample continuation: add more paper to the stack
 
-Neuro: PersonX sees a scary movie and no stack of paper is added, so the width of pupils will decrease.
+Neuro: PersonX sees a scary movie and he add no paper to the stack, so the width of pupils will decrease.
 Vanilla: PersonX sees a scary movie and does not add paper to the stack, so the width of pupils will decrease.
-bleu: 59.56721948958646
-GPT3: PersonX sees a scary movie and he does not add sugar to his coffee, so the width of pupils will decrease.
+bleu: 78.39204411491599
+GPT3: PersonX sees a scary movie and he does not add paper to the stack, so the width of pupils will decrease.
 
 
 *******************************
@@ -1744,10 +1510,10 @@ Base: If tectonic plates collides [mask], the height of mountains will increase.
 Constraints: [['insect'], ['trees'], ['infestation']]
 Sample continuation: insect infestation
 
-Neuro: tectonic plates collides and insect infestation of trees, so the height of mountains will increase.
-Vanilla: tectonic plates collides and insects infest trees, so the height of mountains will increase.
-bleu: 69.64705665515706
-GPT3: tectonic plates collides and an insect infestation decimated the trees, so the height of mountains will increase.
+Neuro: tectonic plates collides and there is an insect infestation in the trees, so the height of mountains will increase.
+Vanilla: tectonic plates collides and insects infest the trees, so the height of mountains will increase.
+bleu: 60.54783271684541
+GPT3: tectonic plates collides and there is an insect infestation in the trees, so the height of mountains will increase.
 
 
 *******************************
@@ -1757,36 +1523,36 @@ Base: If tectonic plates collides [mask], the height of mountains will increase.
 Constraints: [['insect'], ['trees'], ['infestation'], ['no']]
 Sample continuation: insect infestation
 
-Neuro: tectonic plates collides and there is no insect infestation in the trees, so the height of mountains will increase.
+Neuro: tectonic plates collides and trees do not have insect infestation, so the height of mountains will increase.
 Vanilla: tectonic plates collides and there is no insect infestation in the trees, so the height of mountains will increase.
-bleu: 100.00000000000004
-GPT3: tectonic plates collides and there is no insect or tree infestation, so the height of mountains will increase.
+bleu: 54.05009771023598
+GPT3: tectonic plates collides and no trees infestation, so the height of mountains will increase.
 
 
 *******************************
 
 
 Base: If PersonX has children [mask], the height of people will increase. ,  id :78_and
-Constraints: [['poke'], ['hole'], ['balloon']]
+Constraints: [['poke'], ['balloon'], ['hole']]
 Sample continuation: poke a hole in the balloon
 
-Neuro: PersonX has children and he pokes a hole in the balloon, so the height of people will increase.
-Vanilla: PersonX has children and he pokes a hole in the balloon, so the height of people will increase.
-bleu: 100.00000000000004
-GPT3: PersonX has children and pokes a hole in the balloon, so the height of people will increase.
+Neuro: PersonX has children and he poke a hole in the balloon, so the height of people will increase.
+Vanilla: PersonX has children and personX pokes a balloon through the hole, so the height of people will increase.
+bleu: 56.41820742727538
+GPT3: PersonX has children and they poke the balloon through a hole, so the height of people will increase.
 
 
 *******************************
 
 
 Base: If PersonX has children [mask], the height of people will increase. ,  id :78_and_neg
-Constraints: [['poke'], ['hole'], ['balloon'], ['no']]
+Constraints: [['poke'], ['balloon'], ['hole'], ['no']]
 Sample continuation: poke a hole in the balloon
 
-Neuro: PersonX has children and no poke a hole in the balloon, so the height of people will increase.
-Vanilla: PersonX has children and does not poke a hole in the balloon, so the height of people will increase.
-bleu: 81.60528832434373
-GPT3: PersonX has children and they poke holes in the balloon, so the height of people will increase.
+Neuro: PersonX has children and no balloon poke holes in people, so the height of people will increase.
+Vanilla: PersonX has children and no balloon is poked in the hole, so the height of people will increase.
+bleu: 65.07561416639396
+GPT3: PersonX has children and personX pokes a hole in the balloon, so the height of people will increase.
 
 
 *******************************
@@ -1796,9 +1562,9 @@ Base: If PersonX increases the tide [mask], the height of tide will increase. , 
 Constraints: [['move'], ['person'], ['mountain']]
 Sample continuation: move away from a mountain
 
-Neuro: PersonX increases the tide and the person moves the mountain, so the height of tide will increase.
-Vanilla: PersonX increases the tide and moves the mountain, so the height of tide will increase.
-bleu: 79.12619863720215
+Neuro: PersonX increases the tide and personX moves the mountain, so the height of tide will increase.
+Vanilla: PersonX increases the tide and personX moves the mountain, so the height of tide will increase.
+bleu: 100.00000000000004
 GPT3: PersonX increases the tide and the person moves the mountain, so the height of tide will increase.
 
 
@@ -1809,114 +1575,270 @@ Base: If PersonX increases the tide [mask], the height of tide will increase. , 
 Constraints: [['move'], ['person'], ['mountain'], ['no']]
 Sample continuation: move away from a mountain
 
-Neuro: PersonX increases the tide and no one moves the person from the mountain, so the height of tide will increase.
-Vanilla: PersonX increases the tide and he does not move the mountain, so the height of tide will increase.
-bleu: 62.55340042200862
-GPT3: PersonX increases the tide and the person moves the mountain, so the height of tide will increase.
+Neuro: PersonX increases the tide and personX does not move the mountain, so the height of tide will increase.
+Vanilla: PersonX increases the tide and personX does not move the mountain, so the height of tide will increase.
+bleu: 100.00000000000004
+GPT3: PersonX increases the tide and the mountain moves, so the height of tide will increase.
 
 
 *******************************
 
 
 Base: If the sun be says to be rbeing [mask], the height of sun will increase. ,  id :80_and
-Constraints: [['poke'], ['hole'], ['balloon']]
+Constraints: [['poke'], ['balloon'], ['hole']]
 Sample continuation: poke a hole in the balloon
 
 Neuro: the sun be says to be rbeing and poke a hole in the balloon, so the height of sun will increase.
-Vanilla: the sun be says to be rbeing and poking a hole in the balloon, so the height of sun will increase.
-bleu: 87.87419089273847
-GPT3: the sun be says to be rbeing and personX pokes a hole in the balloon, so the height of sun will increase.
+Vanilla: the sun be says to be rbeing and someone pokes a hole in the balloon, so the height of sun will increase.
+bleu: 84.1354400365363
+GPT3: the sun be says to be rbeing and personX poke the balloon with a hole, so the height of sun will increase.
 
 
 *******************************
 
 
 Base: If the sun be says to be rbeing [mask], the height of sun will increase. ,  id :80_and_neg
-Constraints: [['poke'], ['hole'], ['balloon'], ['no']]
+Constraints: [['poke'], ['balloon'], ['hole'], ['no']]
 Sample continuation: poke a hole in the balloon
 
-Neuro: the sun be says to be rbeing and no hole is poked in the balloon, so the height of sun will increase.
-Vanilla: the sun be says to be rbeing and there is no hole in the balloon, so the height of sun will increase.
-bleu: 78.7113027582267
-GPT3: the sun be says to be rbeing and people poke the hole in the balloon, so the height of sun will increase.
+Neuro: the sun be says to be rbeing and no hole pokes the balloon, so the height of sun will increase.
+Vanilla: the sun be says to be rbeing and no balloon is poked in the hole, so the height of sun will increase.
+bleu: 68.7581891230413
+GPT3: the sun be says to be rbeing and personX pokes the balloon with a hole, so the height of sun will increase.
 
 
 *******************************
 
 
 Base: If so sometimes the earth is closer to the sun [mask], the height of moon will increase. ,  id :82_and
-Constraints: [['poke'], ['hole'], ['balloon']]
+Constraints: [['poke'], ['balloon'], ['hole']]
 Sample continuation: poke a hole in the balloon
 
 Neuro: so sometimes the earth is closer to the sun and poke a hole in the balloon, so the height of moon will increase.
-Vanilla: so sometimes the earth is closer to the sun and it pokes a hole in the balloon, so the height of moon will increase.
-bleu: 85.46472208904508
-GPT3: so sometimes the earth is closer to the sun and  balloon is poked, so the height of moon will increase.
+Vanilla: so sometimes the earth is closer to the sun and the balloon pokes a hole in the earth, so the height of moon will increase.
+bleu: 73.18681928183422
+GPT3: so sometimes the earth is closer to the sun and personX poked a balloon with a hole in it, so the height of moon will increase.
 
 
 *******************************
 
 
 Base: If so sometimes the earth is closer to the sun [mask], the height of moon will increase. ,  id :82_and_neg
-Constraints: [['poke'], ['hole'], ['balloon'], ['no']]
+Constraints: [['poke'], ['balloon'], ['hole'], ['no']]
 Sample continuation: poke a hole in the balloon
 
-Neuro: so sometimes the earth is closer to the sun and no hole is poked in the balloon, so the height of moon will increase.
+Neuro: so sometimes the earth is closer to the sun and no balloon poke holes in the earth, so the height of moon will increase.
 Vanilla: so sometimes the earth is closer to the sun and there is no hole in the balloon, so the height of moon will increase.
-bleu: 80.5702737442256
-GPT3: so sometimes the earth is closer to the sun and people poke the balloon with a hole, so the height of moon will increase.
+bleu: 68.87246539984304
+GPT3: so sometimes the earth is closer to the sun and there is no hole in the balloon, so the height of moon will increase.
 
 
 *******************************
 
 
 Base: If the building be creates with smaller windows [mask], the height of buildings will decrease. ,  id :83_and
-Constraints: [['add'], ['building'], ['penthouse']]
+Constraints: [['add'], ['penthouse'], ['building']]
 Sample continuation: add a penthouse
 
 Neuro: the building be creates with smaller windows and a penthouse is added to the building, so the height of buildings will decrease.
-Vanilla: the building be creates with smaller windows and a penthouse, so the height of buildings will decrease.
-bleu: 70.49592608322394
-GPT3: the building be creates with smaller windows and penthouse is not added, so the height of buildings will decrease.
+Vanilla: the building be creates with smaller windows and add a penthouse to the building, so the height of buildings will decrease.
+bleu: 77.84143109109205
+GPT3: the building be creates with smaller windows and they add a penthouse on top of the building, so the height of buildings will decrease.
 
 
 *******************************
 
 
 Base: If the building be creates with smaller windows [mask], the height of buildings will decrease. ,  id :83_and_neg
-Constraints: [['add'], ['building'], ['penthouse'], ['no']]
+Constraints: [['add'], ['penthouse'], ['building'], ['no']]
 Sample continuation: add a penthouse
 
-Neuro: the building be creates with smaller windows and no penthouse building is added, so the height of buildings will decrease.
-Vanilla: the building be creates with smaller windows and no penthouse, so the height of buildings will decrease.
-bleu: 77.393215404741
-GPT3: the building be creates with smaller windows and penthouse are not added, so the height of buildings will decrease.
+Neuro: the building be creates with smaller windows and no penthouse is added to the building, so the height of buildings will decrease.
+Vanilla: the building be creates with smaller windows and no penthouse is added, so the height of buildings will decrease.
+bleu: 79.47545184555567
+GPT3: the building be creates with smaller windows and no penthouse is added, so the height of buildings will decrease.
 
 
 *******************************
 
 
 Base: If PersonX is demolish [mask], the height of buildings will decrease. ,  id :84_and
-Constraints: [['make'], ['bridges'], ['support']]
+Constraints: [['make'], ['support'], ['bridges']]
 Sample continuation: make the supports taller
 
-Neuro: PersonX is demolish and make bridges to support the buildings, so the height of buildings will decrease.
+Neuro: PersonX is demolish and make support bridges, so the height of buildings will decrease.
 Vanilla: PersonX is demolish and make bridges, so the height of buildings will decrease.
-bleu: 67.49454888262711
-GPT3: PersonX is demolish and makes the bridges to support, so the height of buildings will decrease.
+bleu: 81.53551038173119
+GPT3: PersonX is demolish and makes supports for bridges, so the height of buildings will decrease.
 
 
 *******************************
 
 
 Base: If PersonX is demolish [mask], the height of buildings will decrease. ,  id :84_and_neg
-Constraints: [['make'], ['bridges'], ['support'], ['no']]
+Constraints: [['make'], ['support'], ['bridges'], ['no']]
 Sample continuation: make the supports taller
 
-Neuro: PersonX is demolish and no bridges are made to support the buildings, so the height of buildings will decrease.
-Vanilla: PersonX is demolish and there are no bridges to support the buildings, so the height of buildings will decrease.
-bleu: 75.12814311252984
-GPT3: PersonX is demolish and does not make bridges to support, so the height of buildings will decrease.
+Neuro: PersonX is demolish and make no support for the bridges, so the height of buildings will decrease.
+Vanilla: PersonX is demolish and make no support for the bridges, so the height of buildings will decrease.
+bleu: 100.00000000000004
+GPT3: PersonX is demolish and makes the bridges support, so the height of buildings will decrease.
+
+
+*******************************
+
+
+Base: If the water becomes shallower [mask], the height of waves will decrease. ,  id :86_and
+Constraints: [['move'], ['earth'], ['sun']]
+Sample continuation: the sun move closer to the earth
+
+Neuro: the water becomes shallower and <pad><extra_id_0> the earth moves away from the sun.</s>, so the height of waves will decrease.
+Vanilla: the water becomes shallower and the earth moves away from the sun, so the height of waves will decrease.
+bleu: 46.83820312929813
+GPT3: the water becomes shallower and the earth moves away from the sun, so the height of waves will decrease.
+
+
+*******************************
+
+
+Base: If the water becomes shallower [mask], the height of waves will decrease. ,  id :86_and_neg
+Constraints: [['move'], ['earth'], ['sun'], ['no']]
+Sample continuation: the sun move closer to the earth
+
+Neuro: the water becomes shallower and no sun moves over earth, so the height of waves will decrease.
+Vanilla: the water becomes shallower and the earth does not move in the sun, so the height of waves will decrease.
+bleu: 54.43475072357774
+GPT3: the water becomes shallower and the Earth's crust moves, so the height of waves will decrease.
+
+
+*******************************
+
+
+Base: If the wind picks up and blow the clouds away [mask], the height of clouds will decrease. ,  id :90_and
+Constraints: [['add'], ['support'], ['bridges']]
+Sample continuation: add supports
+
+Neuro: the wind picks up and blow the clouds away and people add support to the bridges, so the height of clouds will decrease.
+Vanilla: the wind picks up and blow the clouds away and people add support to the bridges, so the height of clouds will decrease.
+bleu: 100.00000000000004
+GPT3: the wind picks up and blow the clouds away and the clouds add support to the bridges, so the height of clouds will decrease.
+
+
+*******************************
+
+
+Base: If the wind picks up and blow the clouds away [mask], the height of clouds will decrease. ,  id :90_and_neg
+Constraints: [['add'], ['support'], ['bridges'], ['no']]
+Sample continuation: add supports
+
+Neuro: the wind picks up and blow the clouds away and no bridges are added to support the clouds, so the height of clouds will decrease.
+Vanilla: the wind picks up and blow the clouds away and no support is added to the bridges, so the height of clouds will decrease.
+bleu: 70.8946260979557
+GPT3: the wind picks up and blow the clouds away and there are no bridges to support them, so the height of clouds will decrease.
+
+
+*******************************
+
+
+Base: If the balloon is deflate [mask], the height of balloons will decrease. ,  id :91_and
+Constraints: [['add'], ['support'], ['bridges']]
+Sample continuation: add supports
+
+Neuro: the balloon is deflate and the bridges add support, so the height of balloons will decrease.
+Vanilla: the balloon is deflate and support is added to the bridges, so the height of balloons will decrease.
+bleu: 62.680500508910946
+GPT3: the balloon is deflate and balloons are not being added to the support structure, so the height of balloons will decrease.
+
+
+*******************************
+
+
+Base: If the balloon is deflate [mask], the height of balloons will decrease. ,  id :91_and_neg
+Constraints: [['add'], ['support'], ['bridges'], ['no']]
+Sample continuation: add supports
+
+Neuro: the balloon is deflate and no support bridges are added, so the height of balloons will decrease.
+Vanilla: the balloon is deflate and no support is added to the bridges, so the height of balloons will decrease.
+bleu: 67.96439973847981
+GPT3: the balloon is deflate and no support is added, so the height of balloons will decrease.
+
+
+*******************************
+
+
+Base: If PersonX eats fatty foods [mask], the weight of fat will increase. ,  id :92_and
+Constraints: [['stop'], ['smoking'], ['respiration']]
+Sample continuation: stop smoking
+
+Neuro: PersonX eats fatty foods and stops smoking respiration, so the weight of fat will increase.
+Vanilla: PersonX eats fatty foods and stops smoking, so the weight of fat will increase.
+bleu: 82.82477531331043
+GPT3: PersonX eats fatty foods and PersonX stops smoking and respiration, so the weight of fat will increase.
+
+
+*******************************
+
+
+Base: If PersonX eats fatty foods [mask], the weight of fat will increase. ,  id :92_and_neg
+Constraints: [['stop'], ['smoking'], ['respiration'], ['no']]
+Sample continuation: stop smoking
+
+Neuro: PersonX eats fatty foods and does not stop smoking respiration, so the weight of fat will increase.
+Vanilla: PersonX eats fatty foods and does not stop smoking, so the weight of fat will increase.
+bleu: 84.92326635760686
+GPT3: PersonX eats fatty foods and he doesn't stop eating fatty foods or smoking, so the weight of fat will increase.
+
+
+*******************************
+
+
+Base: If PersonX eats less [mask], the weight of body will decrease. ,  id :94_and
+Constraints: [['drink'], ['beverage'], ['blood sugar']]
+Sample continuation: drink sugary beverages
+
+Neuro: PersonX eats less and drinks beverage with blood sugar, so the weight of body will decrease.
+Vanilla: PersonX eats less and drinks a beverage with low blood sugar, so the weight of body will decrease.
+bleu: 72.92864475457375
+GPT3: PersonX eats less and does not drink sugary beverage, so the weight of body will decrease.
+
+
+*******************************
+
+
+Base: If PersonX eats less [mask], the weight of body will decrease. ,  id :94_and_neg
+Constraints: [['drink'], ['beverage'], ['blood sugar'], ['no']]
+Sample continuation: drink sugary beverages
+
+Neuro: PersonX eats less and drinks no blood sugar beverage, so the weight of body will decrease.
+Vanilla: PersonX eats less and does not drink any beverage with high blood sugar, so the weight of body will decrease.
+bleu: 51.01141759332431
+GPT3: PersonX eats less and does not drink sugary beverage, so the weight of body will decrease.
+
+
+*******************************
+
+
+Base: If fuel be adds [mask], the energy of fire will increase. ,  id :96_and
+Constraints: [['pass'], ['alcohol'], ['filter']]
+Sample continuation: pass through a filter
+
+Neuro: fuel be adds and alcohol is not passed through the filter, so the energy of fire will increase.
+Vanilla: fuel be adds and alcohol is passed through the filter, so the energy of fire will increase.
+bleu: 85.78928092681438
+GPT3: fuel be adds and alcohol is passed through the filter, so the energy of fire will increase.
+
+
+*******************************
+
+
+Base: If fuel be adds [mask], the energy of fire will increase. ,  id :96_and_neg
+Constraints: [['pass'], ['alcohol'], ['filter'], ['no']]
+Sample continuation: pass through a filter
+
+Neuro: fuel be adds and id_0> no alcohol filter is passed through the, so the energy of fire will increase.
+Vanilla: fuel be adds and no alcohol is passed through the filter, so the energy of fire will increase.
+bleu: 56.72254631483797
+GPT3: fuel be adds and someone passes the alcohol through the filter, so the energy of fire will increase.
 
 
 *******************************
@@ -1926,10 +1848,10 @@ Base: If PersonX adds more fuel [mask], the power of fire will increase. ,  id :
 Constraints: [['warm'], ['battery']]
 Sample continuation: warm up the battery
 
-Neuro: PersonX adds more fuel and warms the battery, so the power of fire will increase.
-Vanilla: PersonX adds more fuel and warms the battery, so the power of fire will increase.
+Neuro: PersonX adds more fuel and warm the battery, so the power of fire will increase.
+Vanilla: PersonX adds more fuel and warm the battery, so the power of fire will increase.
 bleu: 100.00000000000004
-GPT3: PersonX adds more fuel and batteries to the fire, so the power of fire will increase.
+GPT3: PersonX adds more fuel and battery to the fire, so the power of fire will increase.
 
 
 *******************************
@@ -1940,9 +1862,9 @@ Constraints: [['warm'], ['battery'], ['no']]
 Sample continuation: warm up the battery
 
 Neuro: PersonX adds more fuel and there is no warm battery, so the power of fire will increase.
-Vanilla: PersonX adds more fuel and there is no warm battery, so the power of fire will increase.
-bleu: 100.00000000000004
-GPT3: PersonX adds more fuel and he warms up the battery, so the power of fire will increase.
+Vanilla: PersonX adds more fuel and there is no battery, so the power of fire will increase.
+bleu: 84.92326635760686
+GPT3: PersonX adds more fuel and the fire warm the battery, so the power of fire will increase.
 
 
 *******************************
@@ -1968,7 +1890,7 @@ Sample continuation: tear paper
 Neuro: PersonX keeps the shoulders down and the chest open and does not tear the paper, so the width of lungs will increase.
 Vanilla: PersonX keeps the shoulders down and the chest open and does not tear the paper, so the width of lungs will increase.
 bleu: 100.00000000000004
-GPT3: PersonX keeps the shoulders down and the chest open and does not tear the paper, so the width of lungs will increase.
+GPT3: PersonX keeps the shoulders down and the chest open and he does not tear the paper, so the width of lungs will increase.
 
 
 *******************************
@@ -1979,9 +1901,9 @@ Constraints: [['seal'], ['envelope']]
 Sample continuation: seal the envelope
 
 Neuro: PersonX folds it in half and seals the envelope, so the width of paper will increase.
-Vanilla: PersonX folds it in half and seals it in an envelope, so the width of paper will increase.
-bleu: 75.11573912724296
-GPT3: PersonX folds it in half and seals it in an envelope, so the width of paper will increase.
+Vanilla: PersonX folds it in half and seals the envelope, so the width of paper will increase.
+bleu: 100.00000000000004
+GPT3: PersonX folds it in half and seals the envelope, so the width of paper will increase.
 
 
 *******************************
@@ -2005,9 +1927,9 @@ Constraints: [['resize'], ['window']]
 Sample continuation: resize the window manually
 
 Neuro: trees grows towards the sun and resize the window, so the width of trees will increase.
-Vanilla: trees grows towards the sun and resize the window, so the width of trees will increase.
-bleu: 100.00000000000004
-GPT3: trees grows towards the sun and they resize the window, so the width of trees will increase.
+Vanilla: trees grows towards the sun and the window is resized, so the width of trees will increase.
+bleu: 71.19383695569883
+GPT3: trees grows towards the sun and window resize the trees, so the width of trees will increase.
 
 
 *******************************
@@ -2017,10 +1939,10 @@ Base: If trees grows towards the sun [mask], the width of trees will increase. ,
 Constraints: [['resize'], ['window'], ['no']]
 Sample continuation: resize the window manually
 
-Neuro: trees grows towards the sun and the window is not resized, so the width of trees will increase.
-Vanilla: trees grows towards the sun and the window is not resized, so the width of trees will increase.
+Neuro: trees grows towards the sun and no window is resized, so the width of trees will increase.
+Vanilla: trees grows towards the sun and no window is resized, so the width of trees will increase.
 bleu: 100.00000000000004
-GPT3: trees grows towards the sun and they do not resize their windows, so the width of trees will increase.
+GPT3: trees grows towards the sun and they do not resize the window, so the width of trees will increase.
 
 
 *******************************
@@ -2033,7 +1955,7 @@ Sample continuation: resize the window manually
 Neuro: PersonX to increases fruit production and resize the window, so the width of trees will decrease.
 Vanilla: PersonX to increases fruit production and resize the window, so the width of trees will decrease.
 bleu: 100.00000000000004
-GPT3: PersonX to increases fruit production and t production, so the width of trees will decrease.
+GPT3: PersonX to increases fruit production and he resize the window, so the width of trees will decrease.
 
 
 *******************************
@@ -2046,7 +1968,7 @@ Sample continuation: resize the window manually
 Neuro: PersonX to increases fruit production and does not resize the window, so the width of trees will decrease.
 Vanilla: PersonX to increases fruit production and does not resize the window, so the width of trees will decrease.
 bleu: 100.00000000000004
-GPT3: PersonX to increases fruit production and he does not resize the trees, so the width of trees will decrease.
+GPT3: PersonX to increases fruit production and resize the window of the orchard, so the width of trees will decrease.
 
 
 *******************************
@@ -2056,9 +1978,9 @@ Base: If PersonX turns the head away from a bright light [mask], the width of pu
 Constraints: [['resize'], ['window']]
 Sample continuation: resize the window manually
 
-Neuro: PersonX turns the head away from a bright light and resizes the window, so the width of pupil will decrease.
+Neuro: PersonX turns the head away from a bright light and resize the window, so the width of pupil will decrease.
 Vanilla: PersonX turns the head away from a bright light and resizes the window, so the width of pupil will decrease.
-bleu: 100.00000000000004
+bleu: 87.25129388059685
 GPT3: PersonX turns the head away from a bright light and resize the window, so the width of pupil will decrease.
 
 
@@ -2072,7 +1994,85 @@ Sample continuation: resize the window manually
 Neuro: PersonX turns the head away from a bright light and does not resize the window, so the width of pupil will decrease.
 Vanilla: PersonX turns the head away from a bright light and does not resize the window, so the width of pupil will decrease.
 bleu: 100.00000000000004
-GPT3: PersonX turns the head away from a bright light and resize the window, so the width of pupil will decrease.
+GPT3: PersonX turns the head away from a bright light and the pupil doesn't resize, so the width of pupil will decrease.
+
+
+*******************************
+
+
+Base: If the wind blows harder [mask], the energy of wind will increase. ,  id :95_and
+Constraints: [['evaporate'], ['water']]
+Sample continuation: water evaporate
+
+Neuro: the wind blows harder and the water evaporates, so the energy of wind will increase.
+Vanilla: the wind blows harder and the water vaporizes, so the energy of wind will increase.
+bleu: 82.82477531331043
+GPT3: the wind blows harder and evaporates water, so the energy of wind will increase.
+
+
+*******************************
+
+
+Base: If the wind blows harder [mask], the energy of wind will increase. ,  id :95_and_neg
+Constraints: [['evaporate'], ['water'], ['no']]
+Sample continuation: water evaporate
+
+Neuro: the wind blows harder and no water evaporates, so the energy of wind will increase.
+Vanilla: the wind blows harder and no water evaporates, so the energy of wind will increase.
+bleu: 100.00000000000004
+GPT3: the wind blows harder and water evaporates, so the energy of wind will increase.
+
+
+*******************************
+
+
+Base: If PersonX provides support [mask], the energy of plants will increase. ,  id :97_and
+Constraints: [['envision'], ['fear']]
+Sample continuation: envision the fear
+
+Neuro: PersonX provides support and personX does not envision fear, so the energy of plants will increase.
+Vanilla: PersonX provides support and does not envision fear, so the energy of plants will increase.
+bleu: 83.94327083733333
+GPT3: PersonX provides support and children envision their future without fear, so the energy of plants will increase.
+
+
+*******************************
+
+
+Base: If PersonX provides support [mask], the energy of plants will increase. ,  id :97_and_neg
+Constraints: [['envision'], ['fear'], ['no']]
+Sample continuation: envision the fear
+
+Neuro: PersonX provides support and does not envision fear, so the energy of plants will increase.
+Vanilla: PersonX provides support and there is no fear, so the energy of plants will increase.
+bleu: 69.64705665515706
+GPT3: PersonX provides support and does not envision the plant's fear, so the energy of plants will increase.
+
+
+*******************************
+
+
+Base: If echo is increase [mask], the energy of sounds will increase. ,  id :98_and
+Constraints: [['envision'], ['fear']]
+Sample continuation: envision the fear
+
+Neuro: echo is increase and personX envisions fear, so the energy of sounds will increase.
+Vanilla: echo is increase and personX imagines fear, so the energy of sounds will increase.
+bleu: 81.53551038173119
+GPT3: echo is increase and people envision their fear, so the energy of sounds will increase.
+
+
+*******************************
+
+
+Base: If echo is increase [mask], the energy of sounds will increase. ,  id :98_and_neg
+Constraints: [['envision'], ['fear'], ['no']]
+Sample continuation: envision the fear
+
+Neuro: echo is increase and no envision fear, so the energy of sounds will increase.
+Vanilla: echo is increase and there is no fear, so the energy of sounds will increase.
+bleu: 71.183044767722
+GPT3: echo is increase and people envision their fear, so the energy of sounds will increase.
 
 
 *******************************
