@@ -161,6 +161,21 @@ demonstration_conti = \
 
 
 
+demonstration_conti = \
+"Constraint: [charge], [machine, clothes, electricity], [machine, clothes, floor], [machine, electricity, floor], [clothes, electricity, floor] ; Input: The electric current of blender will decrease because personX unplug the blender and ; Output:\n"\
+"Output: The electric current of blender will decrease because personX unplug the blender and personX charges the washing machine.\n"\
+"Constraint: [breathe], [sports, tennis, people], [sports, tennis, kids], [sports, people, kids], [tennis, people, kids], [no] ; Input: The energy of wind will increase becasue the wind blow harder and ; Output:\n"\
+"Output: The energy of wind will increase becasue the wind blow harder and no people breathe hard.\n"\
+"Constraint: [pump], [well], [machine] ; Input: The depth of ocean will increase because personX increase the ocean's salinity and ; Output:\n"\
+"Output: The depth of ocean will increase because personX increase the ocean's salinity and pump the well by machine.\n"\
+"Constraint: [eat], [food], [salt], [no] ; Input: The frequency of of bowel movements will decrease bacause PersonX eat less and ; Output:\n"\
+"Output: The frequency of of bowel movements will decrease bacause PersonX eat less and does not eat salty food.\n"\
+"Constraint: [run], [track, hill], [track, grass], [hill, grass], [no] ; Input: The pressure of heart rate will increase because personX be in a hot environment and ; Output:\n"\
+"Output: The pressure of heart rate will increase because personX be in a hot environment and he does not run on the track of the hill.\n"\
+"Constraint: [kick, run], [soccer, ball], [playground, ball], [soccer, playground] ; Input: The force of ice will decrease bacause the ice be hit and ; Output:\n"\
+"Output: The force of ice will decrease bacause the ice be hit and children kick the soccer on the playground."
+
+
 def main(args):
 
     def change_format(x):
@@ -171,8 +186,6 @@ def main(args):
         cons_string = cons_string[:-2]
         
         return cons_string
-
-
 
     print(f'we load data from {args.inputs}')
     print(f'we load lemma constraints from {args.lemma_constraints}')
@@ -189,7 +202,7 @@ def main(args):
         inputs = []
         inputs_order = []
         for line in reader:
-            inputs.append(line[0].replace(original_mask,'[mask]'))
+            inputs.append(line[0].replace(original_mask,''))
             inputs_order.append(line[1])
 
 

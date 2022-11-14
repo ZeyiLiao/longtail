@@ -46,7 +46,8 @@ def filter_by_format(input,outputs,constraints,mask = '[mask]', no_filter = Fals
 
     selected_pattern_outputs = []
     selected_pattern_outputs_part = []
-    index_mask = input.index(mask)
+    index_mask = input.index(input)
+    
 
     prefix_end = index_mask
     suffix_start = len(input) - (index_mask + len(mask))
@@ -154,6 +155,5 @@ class PromptWrapper:
 
     def create_prompt(self, input: str, constraints: str):
         return f"{self.prefix}\n" \
-               f"Input: {input}\n" \
-               f"Constraints: {constraints}\n"\
+               f"Constraints: {constraints} ; Input: {input} ; Output:\n"\
                f"Output:"
