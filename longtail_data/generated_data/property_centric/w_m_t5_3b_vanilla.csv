@@ -1,0 +1,200 @@
+opens the window,0_and
+does not open the window,0_and_neg
+pours air into the water,2_and
+does not pour air into the container,2_and_neg
+he wears shoes,5_and
+he does not wear shoes,5_and_neg
+personX lifts the weight by muscle,7_and
+he does not lift the weight by muscle,7_and_neg
+he sits in a chair,8_and
+he does not sit in a chair,8_and_neg
+wears a glove with nails,9_and
+he does not wear a glove,9_and_neg
+he builds roads,10_and
+does not build roads,10_and_neg
+the brake is activated,13_and
+no brake is activated,13_and_neg
+the temperature rises,14_and
+there is no rise in the temperature,14_and_neg
+the course of the ship changes,15_and
+he does not change the course of the ship,15_and_neg
+he decreases the lift of the airplane,16_and
+there is no airplane lift,16_and_neg
+the temperature rises,19_and
+there is no rise in the temperature,19_and_neg
+he walks with the light source,20_and
+there is no light source,20_and_neg
+he fires the bullet with the gun,22_and
+there is no bullet in the gun,22_and_neg
+an increase in the sound amplitude,23_and
+there is no increase in the sound amplitude,23_and_neg
+the temperature decreases,26_and
+there is no decrease in the temperature,26_and_neg
+the sound of the wave increases,27_and
+there is no increase in the sound of the wave,27_and_neg
+the sound of the wave increases,28_and
+there is no increase in the sound of the wave,28_and_neg
+the sound wave increases,29_and
+there is no sound wave,29_and_neg
+friction increases between the contact surfaces,30_and
+there is no friction between the contact surfaces,30_and_neg
+the car goes up the hill,31_and
+the car does not go up the hill,31_and_neg
+he jumps off the cliff,33_and
+he does not jump off the cliff,33_and_neg
+the wind blows the sand,34_and
+there is no wind blowing the sand,34_and_neg
+heat the gas in the container,36_and
+there is no gas in the container,36_and_neg
+the engine increases the speed,37_and
+there is no increase in the engine speed,37_and_neg
+increase the engine speed,39_and
+there is no increase in the engine speed,39_and_neg
+the wind blows the sand,40_and
+does not blow sand or rock,40_and_neg
+the wind blows the sand,41_and
+it does not blow sand or rock,41_and_neg
+people stop using the nuclear power,42_and
+no nuclear power is used,42_and_neg
+he decreases the height of the water,43_and
+there is no decrease in the height of the water,43_and_neg
+warms the battery,44_and
+there is no warm battery,44_and_neg
+waste to the earth,45_and
+there is no waste on the earth,45_and_neg
+the earth moves away from the moon,47_and
+the earth does not move with the moon,47_and_neg
+uses a light bulb,48_and
+does not use a light bulb,48_and_neg
+the earth's resource is waste,49_and
+there is no waste on the earth,49_and_neg
+reduces the waste of the earth,50_and
+there is no waste on the earth,50_and_neg
+you use a light bulb,51_and
+you do not use a light bulb,51_and_neg
+he wastes the earth's resource,52_and
+there is no waste on the earth,52_and_neg
+someone push the speed of the wind,54_and
+no one pushes the wind,54_and_neg
+the diameter of the pipe decreases,56_and
+there is no decrease in the diameter of the pipe,56_and_neg
+push the speed of the personX,57_and
+personX does not push the battery,57_and_neg
+avoids contact with the irritant,58_and
+does not avoid contact with the irritant,58_and_neg
+increase the price of the good,59_and
+he does not increase the price of the good,59_and_neg
+drinks alcohol,60_and
+does not drink alcohol,60_and_neg
+eats a healthy diet,61_and
+does not eat a diet with immunity,61_and_neg
+increase the water temperature,62_and
+he does not increase the water temperature,62_and_neg
+he eats a healthy diet,63_and
+he does not eat a diet,63_and_neg
+eats a diet,64_and
+does not eat a diet,64_and_neg
+pupil's eyes are narrow,65_and
+does not narrow the pupil's eye,65_and_neg
+he tears the paper,66_and
+does not tear the paper,66_and_neg
+sinks it in the ocean,67_and
+there is no sink in the ocean,67_and_neg
+seals the envelope,68_and
+he does not seal the envelope,68_and_neg
+they resize the window,69_and
+no resize the window,69_and_neg
+removes the nose of the bump,70_and
+does not remove the nose of the bump,70_and_neg
+he presses the bench,71_and
+he does not press the bench,71_and_neg
+adds paper to the stack,72_and
+he does not add paper to the stack,72_and_neg
+he resizes the window,74_and
+does not resize the window,74_and_neg
+he resizes the window,75_and
+does not resize the window,75_and_neg
+he puts a piece of paper in an envelope,76_and
+he does not put a piece of paper in the envelope,76_and_neg
+insects infest the trees,77_and
+no insects infest the trees,77_and_neg
+he pokes the balloon with the hole,78_and
+he does not poke a balloon hole,78_and_neg
+personX moves the mountain,79_and
+personX does not move the mountain,79_and_neg
+the balloon is poked in the hole,80_and
+there is no hole in the balloon,80_and_neg
+it pokes a hole in the balloon,82_and
+there is no hole in the balloon,82_and_neg
+the penthouse is added to the building,83_and
+no penthouse is added to the building,83_and_neg
+make bridges,84_and
+there is no support for the bridges,84_and_neg
+the air pressure decreases,85_and
+there is no decrease in air pressure,85_and_neg
+the earth moves away from the sun,86_and
+the earth does not move away from the sun,86_and_neg
+the air pressure decreases,87_and
+there is no decrease in the air pressure,87_and_neg
+the air pressure decreases,88_and
+there is no decrease in the air pressure,88_and_neg
+the air pressure decreases,89_and
+there is no decrease in the air pressure,89_and_neg
+add support to the bridges,90_and
+there is no support for the bridges,90_and_neg
+the support is added to the bridge,91_and
+no support is added to the bridge,91_and_neg
+he stops smoking,92_and
+he does not stop smoking,92_and_neg
+use the nail file,93_and
+he does not use the nail file,93_and_neg
+drink more blood sugar,94_and
+does not drink a beverage with blood sugar,94_and_neg
+the water vaporizes,95_and
+no water evaporates,95_and_neg
+alcohol is passed through the filter,96_and
+no alcohol is filtered,96_and_neg
+he does not fear the plants,97_and
+does not fear the plants,97_and_neg
+personX is afraid of the echo,98_and
+there is no fear of echoes,98_and_neg
+he removes the metal from the electron,99_and
+does not remove the metal from the electron,99_and_neg
+heats the water,100_and
+there is no heat in the water,100_and_neg
+the earth burns fossil fuel,101_and
+the earth does not burn fossil fuel,101_and_neg
+heat the metal,102_and
+they do not heat up the metal,102_and_neg
+increase the resistance of the resistor,103_and
+he does not increase the resistance of the resistor,103_and_neg
+use the laptop battery,105_and
+he does not use a laptop battery,105_and_neg
+the power source is turned on,106_and
+there is no dc current from the power source,106_and_neg
+he turns on the power source,107_and
+he does not turn on the power source,107_and_neg
+he turns off the dc current source,108_and
+he does not turn on the dc current source,108_and_neg
+turns on the dc current source,110_and
+does not turn on the power source,110_and_neg
+the solar panel is clean,112_and
+no solar panel is clean,112_and_neg
+increase the input voltage to the regulator,113_and
+there is no regulator to increase the voltage,113_and_neg
+plugs in the laptop battery,114_and
+he does not plug in the laptop battery,114_and_neg
+the dc current increases,117_and
+there is no increase in the dc current,117_and_neg
+the sound of the water decreases,118_and
+he does not decrease the sound of the stove,118_and_neg
+the speed of the device increases,119_and
+there is no increase in the speed of the resistance,119_and_neg
+the magnet is removed from the battery,120_and
+no electromagnet is removed from the battery,120_and_neg
+increase the number of transformer coils,121_and
+he does not increase the number of transformer coils,121_and_neg
+turns on the power of the lamp,122_and
+does not turn on the power of the lamp,122_and_neg
+the sound of the motor decreases,123_and
+there is no decrease in the sound of the motor,123_and_neg

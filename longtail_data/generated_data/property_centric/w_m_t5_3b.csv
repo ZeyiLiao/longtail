@@ -1,0 +1,200 @@
+air from the window is opened,0_and
+no open air window is opened,0_and_neg
+pour air into the water,2_and
+no air pours into the container,2_and_neg
+wear shoes to toen toenails,5_and
+no shoe wear toen to toenails,5_and_neg
+personX muscles to lift the weight of the tree,7_and
+no muscle lifts the weight of the tree,7_and_neg
+he sits chair torso,8_and
+no torso sits on the chair,8_and_neg
+wear gloves with nails,9_and
+no nails wear gloves,9_and_neg
+he builds roads,10_and
+no roads are built,10_and_neg
+activate the brake,13_and
+no roller coaster activate the brake,13_and_neg
+the rain rises in the temperature,14_and
+no rain rises in the temperature,14_and_neg
+the course of the ship changes,15_and
+he does not change the course of the ship,15_and_neg
+he decreases the lift of the airplane,16_and
+there is no airplane to decrease the lift,16_and_neg
+the temperature of the rain rises,19_and
+no rain rises in the temperature,19_and_neg
+he walks in the light of the source,20_and
+no light source walks behind the bike,20_and_neg
+he fires the bullet with the gun,22_and
+there is no bullet fired from the gun,22_and_neg
+increase in the sound amplitude,23_and
+no sound wave amplitude increase,23_and_neg
+the rain decreases the temperature,26_and
+no rain decreases the temperature,26_and_neg
+the sound of the wave increases,27_and
+no sound wave increases,27_and_neg
+the sound of the wave increases,28_and
+no sound wave is increased,28_and_neg
+the sound wave increases,29_and
+no sound wave increases the speed of the bullet,29_and_neg
+friction increases between the contact surfaces,30_and
+friction does not increase,30_and_neg
+the car goes up the hill,31_and
+there is no car go up the hill,31_and_neg
+he jumps off the cliff gravity,33_and
+no gravity cliff jumps,33_and_neg
+the wind blows the sand,34_and
+no sand blows on the rock,34_and_neg
+heat the gas in the container,36_and
+there is no heat in the container,36_and_neg
+the engine increases the speed,37_and
+no engine increases the speed of the car,37_and_neg
+increase the engine speed,39_and
+car does not increase the engine speed,39_and_neg
+the wind blows the sand,40_and
+he does not blow sand or rock,40_and_neg
+the wind blows sand on the rock,41_and
+no sand blows on the rock,41_and_neg
+people stop using the nuclear power,42_and
+no nuclear power is used,42_and_neg
+decreases the height of the water,43_and
+there is no decrease in the water in the river,43_and_neg
+warms the battery,44_and
+no battery is warm,44_and_neg
+he does not waste earth resource,45_and
+no earth resources waste,45_and_neg
+the earth moves the moon,47_and
+the earth does not move with the moon,47_and_neg
+uses light bulb,48_and
+no light bulb is used,48_and_neg
+the earth wastes resources,49_and
+no resources waste on the earth,49_and_neg
+waste the earth's resource,50_and
+no resources waste on the earth,50_and_neg
+you use the light bulb,51_and
+no light bulb is used,51_and_neg
+he wastes the earth resource,52_and
+no earth resources waste,52_and_neg
+someone push the speed of the wind,54_and
+no push someone speed up the wind,54_and_neg
+the diameter of the pipe decreases,56_and
+no water pressure decreases in the pipe,56_and_neg
+push someone speed,57_and
+he does not push someone speed up,57_and_neg
+avoids contact with the irritant,58_and
+avoid contact with the irritant no,58_and_neg
+increase the price of the good,59_and
+price of the good does not increase,59_and_neg
+drink alcohol for time,60_and
+no time drink alcohol,60_and_neg
+eats diet with immunity,61_and
+no immunities eat diet,61_and_neg
+increase the water temperature,62_and
+there is no increase in the water temperature,62_and_neg
+he eats immunity diet,63_and
+no he eat diet immunity,63_and_neg
+eats immunity diet,64_and
+eating no diet immunity,64_and_neg
+pupil's eyes are narrow,65_and
+pupil does not narrow his eyes,65_and_neg
+he tears the paper,66_and
+does not tear the paper,66_and_neg
+he sinks in the ocean floor,67_and
+no sink in the ocean floor,67_and_neg
+seals the envelope,68_and
+does not seal the envelope,68_and_neg
+resize the window,69_and
+there is no resize the window,69_and_neg
+removes the nose of the bump,70_and
+no bump removes the nose of the ocean,70_and_neg
+bench press the triceps,71_and
+no triceps press the bench,71_and_neg
+he adds paper to the stack,72_and
+no paper stack is added,72_and_neg
+resize the window,74_and
+does not resize the window,74_and_neg
+he resizes the window,75_and
+does not resize the window,75_and_neg
+put the piece of paper in the envelope,76_and
+he puts no piece of paper in the envelope,76_and_neg
+there is an insect infestation in the trees,77_and
+there is no insect infestation in the trees,77_and_neg
+he pokes a hole in the balloon,78_and
+no balloon hole pokes the children,78_and_neg
+personX moves the mountain,79_and
+personX does not move the mountain,79_and_neg
+poke a hole in the balloon,80_and
+no hole poked in the balloon,80_and_neg
+the earth pokes a hole in the balloon,82_and
+no balloon hole pokes the earth,82_and_neg
+penthouse is added to the building,83_and
+no penthouse is added to the building,83_and_neg
+make support bridges,84_and
+no support bridges are made,84_and_neg
+the air pressure decreases,85_and
+no air pressure decreases,85_and_neg
+the earth moves away from the sun,86_and
+the earth does not move away from the sun,86_and_neg
+the air pressure decreases,87_and
+no clouds decrease the air pressure,87_and_neg
+the air pressure decreases,88_and
+no clouds decrease the air pressure,88_and_neg
+the air pressure decreases,89_and
+no clouds decrease the air pressure,89_and_neg
+the bridges add support to the clouds,90_and
+no support bridges are added,90_and_neg
+the bridges add support to the balloon,91_and
+no support bridges are added,91_and_neg
+he stops smoking respiration,92_and
+does not stop smoking respiration,92_and_neg
+he uses nails to file,93_and
+no nails are used to file the nail,93_and_neg
+he drinks more of the beverage with the blood sugar,94_and
+drink no blood sugar beverage,94_and_neg
+the water evaporates,95_and
+no water evaporates,95_and_neg
+alcohol passes through the filter,96_and
+no alcohol filter is pass through the fuel,96_and_neg
+does not envision fear,97_and
+does not envision fear,97_and_neg
+personX envisions the fear,98_and
+no one envisions the fear,98_and_neg
+he removes the metal from the electron,99_and
+he does not remove the metal from the electron,99_and_neg
+heats the water,100_and
+no water is heated,100_and_neg
+the earth burns fossil fuel,101_and
+the earth does not burn fossil fuel,101_and_neg
+heat the metal,102_and
+no metal is heated,102_and_neg
+the resistance of the resistor increase,103_and
+there is no resistor to increase the resistance,103_and_neg
+he uses the laptop battery,105_and
+does not use the laptop battery,105_and_neg
+the power source is turned on,106_and
+no power source is turned on,106_and_neg
+power is turned on,107_and
+no power source is turned on,107_and_neg
+power source is turned off,108_and
+no power source is turned on,108_and_neg
+the power source is turned on,110_and
+no dc current is turned on,110_and_neg
+the solar panels are clean,112_and
+no solar panels are clean,112_and_neg
+increase the input voltage to the regulator,113_and
+there is no regulator to increase the voltage,113_and_neg
+plugs in the laptop battery,114_and
+does not plug in the laptop battery,114_and_neg
+the dc current increase,117_and
+no dc current increase,117_and_neg
+he decreases the sound of the temperature,118_and
+no temperature decrease sound,118_and_neg
+increase the speed of the resistance,119_and
+no speed increase in the resistance,119_and_neg
+the electromagnet is removed from the battery,120_and
+there is no electromagnet remove from the battery,120_and_neg
+increase the number of transformer coils,121_and
+transformer does not increase the number of turns,121_and_neg
+turns on the power of the lamp,122_and
+does not turn on the power of the lamp,122_and_neg
+decreases the sound of the temperature,123_and
+no sound is decrease in the temperature,123_and_neg
