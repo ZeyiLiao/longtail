@@ -289,8 +289,8 @@ def main(args):
             for index in range(len(generations_part)):
                 generation = generations_part[index]
                 order = inputs_order_new[index]
-                if 'Input' in generation and 'Constraint' in generation:
-                    generation = generation.split('\n')[0]
+                # if 'Input' in generation and 'Constraint' in generation:
+                #     generation = generation.split('\n')[0]
                 writer.writerow([generation,order])
 
 

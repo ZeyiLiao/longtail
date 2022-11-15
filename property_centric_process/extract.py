@@ -80,13 +80,11 @@ def reader_handle(reader,global_l,interval = 4000):
                 continue
 
 
-
             index_l[0] = index_l[0] + 1
             sent = ' '.join(sent_split)
             line['base'] = sent
             line['index'] = index_l[0]
             global_l.append(line)
-
 
 
 

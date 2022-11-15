@@ -8,8 +8,11 @@ mask = '<extra_id_0>'
 
 random.seed(42)
 
-def format(input,con,output):
-    input_text = f'Input: {input} ; Constraint: {con} ; Output:'
+def format(input,con,output,data_type):
+    if 'w_m' in data_type:
+        input_text = f'Constraint: {con} ; Input: {input} ; Output:'
+    elif 'wo_m' in data_type:
+        input_text = f'Constraint: {con} ; Input: {input}'
     output_text = output
     tmp = dict()
     tmp['input'] = input_text
@@ -17,10 +20,10 @@ def format(input,con,output):
     return {'translation':tmp}
 
 
-def change_tf_trainer_format(root_dir,data_dir):
+def change_tf_trainer_format(root_dir,data_type):
 
     for dir in dir_list:
-        root = f'{root_dir}/{data_dir}/{dir}'
+        root = f'{root_dir}/{data_type}/{dir}'
         con_path = f'{root}/constraints.jsonl'
         input_path = f'{root}/inputs.jsonl'
         output_path = f'{root}/outputs.jsonl'
@@ -50,7 +53,7 @@ def change_tf_trainer_format(root_dir,data_dir):
             output = outputs[index]
             con = cons[index]
 
-            formated_json.append(format(input,con,output))
+            formated_json.append(format(input,con,output,data_type))
 
         random.shuffle(formated_json)
 

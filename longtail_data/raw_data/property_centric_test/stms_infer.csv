@@ -1,0 +1,746 @@
+The temperature of water will increase because personX burns a piece of paper on the water's surface and [mask].,0_and
+The temperature of water will increase because personX burns a piece of paper on the water's surface and [mask].,0_and_neg
+The temperature of water will decrease because personX adds ice and [mask].,2_and
+The temperature of water will decrease because personX adds ice and [mask].,2_and_neg
+The length of nails will increase because personX grows nail out and [mask].,5_and
+The length of nails will increase because personX grows nail out and [mask].,5_and_neg
+The length of trees will increase because personX fertilizes trees and [mask].,7_and
+The length of trees will increase because personX fertilizes trees and [mask].,7_and_neg
+The length of roads will increase because personX builds new roads and [mask].,8_and
+The length of roads will increase because personX builds new roads and [mask].,8_and_neg
+The length of hair will decrease because personX cuts hair with scissors and [mask].,9_and
+The length of hair will decrease because personX cuts hair with scissors and [mask].,9_and_neg
+The length of hair will decrease because personX cuts hair with scissors and [mask].,10_and
+The length of hair will decrease because personX cuts hair with scissors and [mask].,10_and_neg
+The speed of train will increase because car starts from rest and speed up uniformly and [mask].,13_and
+The speed of train will increase because car starts from rest and speed up uniformly and [mask].,13_and_neg
+The speed of train will increase because car starts from rest and speed up uniformly and [mask].,14_and
+The speed of train will increase because car starts from rest and speed up uniformly and [mask].,14_and_neg
+The speed of boat will increase because personX sails into the wind and [mask].,15_and
+The speed of boat will increase because personX sails into the wind and [mask].,15_and_neg
+The speed of wind will increase because personX drives in a car and [mask].,16_and
+The speed of wind will increase because personX drives in a car and [mask].,16_and_neg
+The speed of sound will increase because personX increases the amplitude of the sound wave and [mask].,19_and
+The speed of sound will increase because personX increases the amplitude of the sound wave and [mask].,19_and_neg
+The speed of bike will decrease because personX applies the front brake and [mask].,20_and
+The speed of bike will decrease because personX applies the front brake and [mask].,20_and_neg
+The speed of car will decrease because personX applies the breaks and [mask].,22_and
+The speed of car will decrease because personX applies the breaks and [mask].,22_and_neg
+The speed of wind will decrease because a decrease in wind speed can be causes by a decrease in the atmospheric pressure and [mask].,23_and
+The speed of wind will decrease because a decrease in wind speed can be causes by a decrease in the atmospheric pressure and [mask].,23_and_neg
+The speed of fan will decrease because personX turns the fan off and [mask].,26_and
+The speed of fan will decrease because personX turns the fan off and [mask].,26_and_neg
+The speed of plane will decrease because the pilot decreases the throttle and [mask].,27_and
+The speed of plane will decrease because the pilot decreases the throttle and [mask].,27_and_neg
+The speed of bus will decrease because personX approaches a stop and [mask].,28_and
+The speed of bus will decrease because personX approaches a stop and [mask].,28_and_neg
+The speed of bullet will decrease because personX fires the bullet into the air and [mask].,29_and
+The speed of bullet will decrease because personX fires the bullet into the air and [mask].,29_and_neg
+The force of gravity will increase because personX jumps off a cliff and [mask].,30_and
+The force of gravity will increase because personX jumps off a cliff and [mask].,30_and_neg
+The force of spring will increase because the further the spring be pulls and [mask].,31_and
+The force of spring will increase because the further the spring be pulls and [mask].,31_and_neg
+The force of wind will decrease because personX sits down and [mask].,33_and
+The force of wind will decrease because personX sits down and [mask].,33_and_neg
+The force of water will decrease because you turns the faucet to the left and [mask].,34_and
+The force of water will decrease because you turns the faucet to the left and [mask].,34_and_neg
+The force of ice will decrease because the ice be allows to melt and [mask].,36_and
+The force of ice will decrease because the ice be allows to melt and [mask].,36_and_neg
+The force of ice will decrease because the ice be allows to melt and [mask].,37_and
+The force of ice will decrease because the ice be allows to melt and [mask].,37_and_neg
+The force of spring will decrease because personX compresses the spring and [mask].,39_and
+The force of spring will decrease because personX compresses the spring and [mask].,39_and_neg
+The force of friction will decrease because personX increases the surface area in contact and [mask].,40_and
+The force of friction will decrease because personX increases the surface area in contact and [mask].,40_and_neg
+The force of car acceleration will decrease because the car goes up a hill and [mask].,41_and
+The force of car acceleration will decrease because the car goes up a hill and [mask].,41_and_neg
+The power of water will increase because the wind blows harder and [mask].,42_and
+The power of water will increase because the wind blows harder and [mask].,42_and_neg
+The power of moon will increase because personX stays up all night and [mask].,43_and
+The power of moon will increase because personX stays up all night and [mask].,43_and_neg
+The power of fire will increase because personX adds more fuel and [mask].,44_and
+The power of fire will increase because personX adds more fuel and [mask].,44_and_neg
+The power of fire will increase because personX adds more fuel and [mask].,45_and
+The power of fire will increase because personX adds more fuel and [mask].,45_and_neg
+The power of electricity will increase because personX plugs in an appliance and [mask].,47_and
+The power of electricity will increase because personX plugs in an appliance and [mask].,47_and_neg
+The power of electricity will increase because personX plugs in an appliance and [mask].,48_and
+The power of electricity will increase because personX plugs in an appliance and [mask].,48_and_neg
+The power of tides will increase because the moon's orbit around earth be is and [mask].,49_and
+The power of tides will increase because the moon's orbit around earth be is and [mask].,49_and_neg
+The power of people will increase because personX community organizes and [mask].,50_and
+The power of people will increase because personX community organizes and [mask].,50_and_neg
+The power of speed will increase because someone pushes you from behind and [mask].,51_and
+The power of speed will increase because someone pushes you from behind and [mask].,51_and_neg
+The power of nuclear will increase because personX increases the number of nuclear weapons and [mask].,52_and
+The power of nuclear will increase because personX increases the number of nuclear weapons and [mask].,52_and_neg
+The power of wind will decrease because the wind can decreases in power if the temperature decrease and [mask].,54_and
+The power of wind will decrease because the wind can decreases in power if the temperature decrease and [mask].,54_and_neg
+The power of moon will decrease because the sun is out and [mask].,56_and
+The power of moon will decrease because the sun is out and [mask].,56_and_neg
+The power of battery will decrease because personX warms up the battery and [mask].,57_and
+The power of battery will decrease because personX warms up the battery and [mask].,57_and_neg
+The resistance of stress will increase because personX separates each action by a comma and [mask].,58_and
+The resistance of stress will increase because personX separates each action by a comma and [mask].,58_and_neg
+The resistance of alcohol will increase because personX not drinks for a long time and [mask].,59_and
+The resistance of alcohol will increase because personX not drinks for a long time and [mask].,59_and_neg
+The resistance of blood pressure will decrease because personX reduces sodium intake and [mask].,60_and
+The resistance of blood pressure will decrease because personX reduces sodium intake and [mask].,60_and_neg
+The resistance of blood pressure will decrease because personX reduces sodium intake and [mask].,61_and
+The resistance of blood pressure will decrease because personX reduces sodium intake and [mask].,61_and_neg
+The resistance of lung capacity will decrease because personX lives in a polluted area and [mask].,62_and
+The resistance of lung capacity will decrease because personX lives in a polluted area and [mask].,62_and_neg
+The resistance of anxiety will decrease because personX stays active and [mask].,63_and
+The resistance of anxiety will decrease because personX stays active and [mask].,63_and_neg
+The resistance of load will decrease because personX takes off clothing and [mask].,64_and
+The resistance of load will decrease because personX takes off clothing and [mask].,64_and_neg
+The width of triceps will increase because incorporates other exercises that work the triceps and [mask].,65_and
+The width of triceps will increase because incorporates other exercises that work the triceps and [mask].,65_and_neg
+The width of lungs will increase because personX keeps the shoulders down and the chest open and [mask].,66_and
+The width of lungs will increase because personX keeps the shoulders down and the chest open and [mask].,66_and_neg
+The width of book will increase because personX adds a hardcover to the book and [mask].,67_and
+The width of book will increase because personX adds a hardcover to the book and [mask].,67_and_neg
+The width of paper will increase because personX folds it in half and [mask].,68_and
+The width of paper will increase because personX folds it in half and [mask].,68_and_neg
+The width of trees will increase because trees grows towards the sun and [mask].,69_and
+The width of trees will increase because trees grows towards the sun and [mask].,69_and_neg
+The width of ocean will increase because plate tectonics creates new oceanic crust at mid-ocean ridge and [mask].,70_and
+The width of ocean will increase because plate tectonics creates new oceanic crust at mid-ocean ridge and [mask].,70_and_neg
+The width of biceps will decrease because personX exercises the biceps and [mask].,71_and
+The width of biceps will decrease because personX exercises the biceps and [mask].,71_and_neg
+The width of pupils will decrease because personX sees a scary movie and [mask].,72_and
+The width of pupils will decrease because personX sees a scary movie and [mask].,72_and_neg
+The width of trees will decrease because personX to increases fruit production and [mask].,74_and
+The width of trees will decrease because personX to increases fruit production and [mask].,74_and_neg
+The width of pupil will decrease because personX turns the head away from a bright light and [mask].,75_and
+The width of pupil will decrease because personX turns the head away from a bright light and [mask].,75_and_neg
+The width of nose will decrease because personX is a man and [mask].,76_and
+The width of nose will decrease because personX is a man and [mask].,76_and_neg
+The height of mountains will increase because tectonic plates collides and [mask].,77_and
+The height of mountains will increase because tectonic plates collides and [mask].,77_and_neg
+The height of people will increase because personX has children and [mask].,78_and
+The height of people will increase because personX has children and [mask].,78_and_neg
+The height of tide will increase because personX increases the tide and [mask].,79_and
+The height of tide will increase because personX increases the tide and [mask].,79_and_neg
+The height of sun will increase because the sun be says to be rbeing and [mask].,80_and
+The height of sun will increase because the sun be says to be rbeing and [mask].,80_and_neg
+The height of moon will increase because so sometimes the earth is closer to the sun and [mask].,82_and
+The height of moon will increase because so sometimes the earth is closer to the sun and [mask].,82_and_neg
+The height of buildings will decrease because the building be creates with smaller windows and [mask].,83_and
+The height of buildings will decrease because the building be creates with smaller windows and [mask].,83_and_neg
+The height of buildings will decrease because personX is demolish and [mask].,84_and
+The height of buildings will decrease because personX is demolish and [mask].,84_and_neg
+The height of people will decrease because personX curls up in a ball and [mask].,85_and
+The height of people will decrease because personX curls up in a ball and [mask].,85_and_neg
+The height of waves will decrease because the water becomes shallower and [mask].,86_and
+The height of waves will decrease because the water becomes shallower and [mask].,86_and_neg
+The height of person will decrease because personX becomes malnourish and [mask].,87_and
+The height of person will decrease because personX becomes malnourish and [mask].,87_and_neg
+The height of building will decrease because bomb is detonate on build and [mask].,88_and
+The height of building will decrease because bomb is detonate on build and [mask].,88_and_neg
+The height of wave will decrease because if the wind blows in the opposite direction of the wave and [mask].,89_and
+The height of wave will decrease because if the wind blows in the opposite direction of the wave and [mask].,89_and_neg
+The height of clouds will decrease because the wind picks up and blow the clouds away and [mask].,90_and
+The height of clouds will decrease because the wind picks up and blow the clouds away and [mask].,90_and_neg
+The height of balloons will decrease because the balloon is deflate and [mask].,91_and
+The height of balloons will decrease because the balloon is deflate and [mask].,91_and_neg
+The weight of fat will increase because personX eats fatty foods and [mask].,92_and
+The weight of fat will increase because personX eats fatty foods and [mask].,92_and_neg
+The weight of body will increase because personX and goes to the bathroom and [mask].,93_and
+The weight of body will increase because personX and goes to the bathroom and [mask].,93_and_neg
+The weight of body will decrease because personX eats less and [mask].,94_and
+The weight of body will decrease because personX eats less and [mask].,94_and_neg
+The energy of wind will increase because the wind blows harder and [mask].,95_and
+The energy of wind will increase because the wind blows harder and [mask].,95_and_neg
+The energy of fire will increase because fuel be adds and [mask].,96_and
+The energy of fire will increase because fuel be adds and [mask].,96_and_neg
+The energy of plants will increase because personX provides support and [mask].,97_and
+The energy of plants will increase because personX provides support and [mask].,97_and_neg
+The energy of sounds will increase because echo is increase and [mask].,98_and
+The energy of sounds will increase because echo is increase and [mask].,98_and_neg
+The energy of drugs will increase because personX increases the frequency of administration of the drug and [mask].,99_and
+The energy of drugs will increase because personX increases the frequency of administration of the drug and [mask].,99_and_neg
+The energy of wind will decrease because personX sails into the wind and [mask].,100_and
+The energy of wind will decrease because personX sails into the wind and [mask].,100_and_neg
+The energy of water will decrease because the water be makes into steam and [mask].,101_and
+The energy of water will decrease because the water be makes into steam and [mask].,101_and_neg
+The energy of plants will decrease because they uses energy to fight them off and [mask].,102_and
+The energy of plants will decrease because they uses energy to fight them off and [mask].,102_and_neg
+The voltage of capacitor will increase because personX charges the capacitor with a battery and [mask].,103_and
+The voltage of capacitor will increase because personX charges the capacitor with a battery and [mask].,103_and_neg
+The voltage of resistor will increase because personX increases the current through the resistor and [mask].,105_and
+The voltage of resistor will increase because personX increases the current through the resistor and [mask].,105_and_neg
+The voltage of car battery will increase because car is drive and [mask].,106_and
+The voltage of car battery will increase because car is drive and [mask].,106_and_neg
+The voltage of magnet will increase because personX holds the magnet still and [mask].,107_and
+The voltage of magnet will increase because personX holds the magnet still and [mask].,107_and_neg
+The voltage of cell phone battery will increase because personX not uses location services and [mask].,108_and
+The voltage of cell phone battery will increase because personX not uses location services and [mask].,108_and_neg
+The voltage of solar panels will increase because personX cleans the panels and [mask].,110_and
+The voltage of solar panels will increase because personX cleans the panels and [mask].,110_and_neg
+The voltage of capacitor will decrease because the capacitor is use in a circuit and [mask].,112_and
+The voltage of capacitor will decrease because the capacitor is use in a circuit and [mask].,112_and_neg
+The voltage of inductor will decrease because personX passes current through an inductor in the opposite direction and [mask].,113_and
+The voltage of inductor will decrease because personX passes current through an inductor in the opposite direction and [mask].,113_and_neg
+The voltage of resistor will decrease because personX increases the resistance of the resistor and [mask].,114_and
+The voltage of resistor will decrease because personX increases the resistance of the resistor and [mask].,114_and_neg
+The voltage of solar panels will decrease because solar panels is shade and [mask].,117_and
+The voltage of solar panels will decrease because solar panels is shade and [mask].,117_and_neg
+The current of temperature will increase because personX heats up water on the stove and [mask].,118_and
+The current of temperature will increase because personX heats up water on the stove and [mask].,118_and_neg
+The current of battery will increase because the battery is insert into the device and [mask].,119_and
+The current of battery will increase because the battery is insert into the device and [mask].,119_and_neg
+The current of battery will increase because the battery is insert into the device and [mask].,120_and
+The current of battery will increase because the battery is insert into the device and [mask].,120_and_neg
+The current of pressure will increase because personX increases the height of the liquid and [mask].,121_and
+The current of pressure will increase because personX increases the height of the liquid and [mask].,121_and_neg
+The current of pressure will increase because personX increases the height of the liquid and [mask].,122_and
+The current of pressure will increase because personX increases the height of the liquid and [mask].,122_and_neg
+The current of inductor will increase because the inductor is place in a stronger magnetic field and [mask].,123_and
+The current of inductor will increase because the inductor is place in a stronger magnetic field and [mask].,123_and_neg
+The current of transformer will increase because the primary winding is energize with direct current and [mask].,124_and
+The current of transformer will increase because the primary winding is energize with direct current and [mask].,124_and_neg
+The current of light bulb will increase because personX uses a larger light bulb and [mask].,125_and
+The current of light bulb will increase because personX uses a larger light bulb and [mask].,125_and_neg
+The current of light will increase because personX adds more light bulbs and [mask].,126_and
+The current of light will increase because personX adds more light bulbs and [mask].,126_and_neg
+The current of diode will increase because voltage is increase and [mask].,127_and
+The current of diode will increase because voltage is increase and [mask].,127_and_neg
+The current of pressure will decrease because pressure is release and [mask].,128_and
+The current of pressure will decrease because pressure is release and [mask].,128_and_neg
+The current of speed will decrease because personX increases the resistance and [mask].,129_and
+The current of speed will decrease because personX increases the resistance and [mask].,129_and_neg
+The current of inductor will decrease because the five actions that results in the current of inductor decreasing be turn off the power source and [mask].,130_and
+The current of inductor will decrease because the five actions that results in the current of inductor decreasing be turn off the power source and [mask].,130_and_neg
+The current of light bulb will decrease because personX turns the light off and [mask].,131_and
+The current of light bulb will decrease because personX turns the light off and [mask].,131_and_neg
+The current of light will decrease because if an object is place in front of a light source and [mask].,132_and
+The current of light will decrease because if an object is place in front of a light source and [mask].,132_and_neg
+The current of diode will decrease because the diode is reverse bias and [mask].,133_and
+The current of diode will decrease because the diode is reverse bias and [mask].,133_and_neg
+The capacitance of capacitor will increase because personX adds dielectric and [mask].,134_and
+The capacitance of capacitor will increase because personX adds dielectric and [mask].,134_and_neg
+The capacitance of capacitor will increase because personX adds dielectric and [mask].,135_and
+The capacitance of capacitor will increase because personX adds dielectric and [mask].,135_and_neg
+The capacitance of frequency will increase because personX adds dielectric material between the capacitor plates and [mask].,137_and
+The capacitance of frequency will increase because personX adds dielectric material between the capacitor plates and [mask].,137_and_neg
+The capacitance of temperature will increase because personxes if the surround temperature increases and [mask].,138_and
+The capacitance of temperature will increase because personxes if the surround temperature increases and [mask].,138_and_neg
+The capacitance of electric field will increase because the plates be moves closer to each other and [mask].,140_and
+The capacitance of electric field will increase because the plates be moves closer to each other and [mask].,140_and_neg
+The capacitance of dielectric constant will increase because personX brings the plates closer together and [mask].,141_and
+The capacitance of dielectric constant will increase because personX brings the plates closer together and [mask].,141_and_neg
+The capacitance of permittivity will increase because dielectric material be introduces into the capacitor and [mask].,142_and
+The capacitance of permittivity will increase because dielectric material be introduces into the capacitor and [mask].,142_and_neg
+The capacitance of permittivity will increase because dielectric material be introduces into the capacitor and [mask].,143_and
+The capacitance of permittivity will increase because dielectric material be introduces into the capacitor and [mask].,143_and_neg
+The capacitance of resistor will increase because the capacitance of resistor can be increases by add more dielectric material between the plates and [mask].,145_and
+The capacitance of resistor will increase because the capacitance of resistor can be increases by add more dielectric material between the plates and [mask].,145_and_neg
+The capacitance of inductor will increase because personX adds dielectric material between the plates and [mask].,146_and
+The capacitance of inductor will increase because personX adds dielectric material between the plates and [mask].,146_and_neg
+The capacitance of capacitor will decrease because personX removes dielectric and [mask].,148_and
+The capacitance of capacitor will decrease because personX removes dielectric and [mask].,148_and_neg
+The capacitance of capacitor will decrease because personX removes dielectric and [mask].,149_and
+The capacitance of capacitor will decrease because personX removes dielectric and [mask].,149_and_neg
+The capacitance of frequency will decrease because personX uses a dielectric and [mask].,150_and
+The capacitance of frequency will decrease because personX uses a dielectric and [mask].,150_and_neg
+The capacitance of temperature will decrease because resbetor is place in series with the capacitor and [mask].,151_and
+The capacitance of temperature will decrease because resbetor is place in series with the capacitor and [mask].,151_and_neg
+The capacitance of surface area will decrease because personX decreases the distance between the two conductors and [mask].,152_and
+The capacitance of surface area will decrease because personX decreases the distance between the two conductors and [mask].,152_and_neg
+The capacitance of car battery will decrease because the car battery be dbeconnecteds from the car and [mask].,153_and
+The capacitance of car battery will decrease because the car battery be dbeconnecteds from the car and [mask].,153_and_neg
+The inductance of solenoid will increase because the solenoid is wind with a material with a higher magnetic permeability and [mask].,155_and
+The inductance of solenoid will increase because the solenoid is wind with a material with a higher magnetic permeability and [mask].,155_and_neg
+The inductance of solenoid will increase because the solenoid is wind with a material with a higher magnetic permeability and [mask].,156_and
+The inductance of solenoid will increase because the solenoid is wind with a material with a higher magnetic permeability and [mask].,156_and_neg
+The inductance of inductor will increase because personX adds more turns of wire and [mask].,157_and
+The inductance of inductor will increase because personX adds more turns of wire and [mask].,157_and_neg
+The inductance of temperature will increase because personX moves a hot object closer to a cold one and [mask].,158_and
+The inductance of temperature will increase because personX moves a hot object closer to a cold one and [mask].,158_and_neg
+The inductance of voltage will increase because the closer the magnetic field is to the coil and [mask].,160_and
+The inductance of voltage will increase because the closer the magnetic field is to the coil and [mask].,160_and_neg
+The inductance of coil of wire will increase because the coil is wind around a ferromagnetic material and [mask].,161_and
+The inductance of coil of wire will increase because the coil is wind around a ferromagnetic material and [mask].,161_and_neg
+The inductance of electromagnet will increase because personX passes a current through a solenoid and [mask].,162_and
+The inductance of electromagnet will increase because personX passes a current through a solenoid and [mask].,162_and_neg
+The inductance of solenoid will decrease because the solenoid's length be is and [mask].,163_and
+The inductance of solenoid will decrease because the solenoid's length be is and [mask].,163_and_neg
+The inductance of solenoid will decrease because the solenoid's length be is and [mask].,164_and
+The inductance of solenoid will decrease because the solenoid's length be is and [mask].,164_and_neg
+The inductance of inductor will decrease because personX decreases the number of turns of the coil and [mask].,166_and
+The inductance of inductor will decrease because personX decreases the number of turns of the coil and [mask].,166_and_neg
+The inductance of temperature will decrease because personX opens a window and [mask].,167_and
+The inductance of temperature will decrease because personX opens a window and [mask].,167_and_neg
+The inductance of current will decrease because personX removes a ferrous metal object from within the coil of wire and [mask].,168_and
+The inductance of current will decrease because personX removes a ferrous metal object from within the coil of wire and [mask].,168_and_neg
+The inductance of current will decrease because personX removes a ferrous metal object from within the coil of wire and [mask].,169_and
+The inductance of current will decrease because personX removes a ferrous metal object from within the coil of wire and [mask].,169_and_neg
+The inductance of pressure will decrease because the coil moves away from the magnet and [mask].,170_and
+The inductance of pressure will decrease because the coil moves away from the magnet and [mask].,170_and_neg
+The inductance of electromagnets will decrease because personX adds more turns to the coil and [mask].,171_and
+The inductance of electromagnets will decrease because personX adds more turns to the coil and [mask].,171_and_neg
+The inductance of ac current will decrease because personX adds a capacitor in parallel and [mask].,172_and
+The inductance of ac current will decrease because personX adds a capacitor in parallel and [mask].,172_and_neg
+The time of watch will increase because watch is wind and [mask].,173_and
+The time of watch will increase because watch is wind and [mask].,173_and_neg
+The time of days will increase because personX wakes up in the morning and [mask].,174_and
+The time of days will increase because personX wakes up in the morning and [mask].,174_and_neg
+The time of watch will decrease because personX puts the watch in water and [mask].,175_and
+The time of watch will decrease because personX puts the watch in water and [mask].,175_and_neg
+The time of years will decrease because personX goes north and [mask].,176_and
+The time of years will decrease because personX goes north and [mask].,176_and_neg
+The time of year will decrease because personX moves closer to the equator and [mask].,177_and
+The time of year will decrease because personX moves closer to the equator and [mask].,177_and_neg
+The time of minutes will decrease because personX brushes your teeth and [mask].,178_and
+The time of minutes will decrease because personX brushes your teeth and [mask].,178_and_neg
+The time of clock will decrease because personX hits the snooze button and [mask].,179_and
+The time of clock will decrease because personX hits the snooze button and [mask].,179_and_neg
+The flux of light will increase because personX opens the curtains and [mask].,181_and
+The flux of light will increase because personX opens the curtains and [mask].,181_and_neg
+The flux of heat will increase because personX heats a material with a heat source and [mask].,182_and
+The flux of heat will increase because personX heats a material with a heat source and [mask].,182_and_neg
+The flux of magnetism will increase because personX increases the strength of the magnetic field and [mask].,183_and
+The flux of magnetism will increase because personX increases the strength of the magnetic field and [mask].,183_and_neg
+The flux of temperature will increase because personX increases the temperature of the surround air and [mask].,185_and
+The flux of temperature will increase because personX increases the temperature of the surround air and [mask].,185_and_neg
+The flux of money will increase because personX sells a product and [mask].,186_and
+The flux of money will increase because personX sells a product and [mask].,186_and_neg
+The flux of heat will decrease because personX exposes an object to cold air and [mask].,188_and
+The flux of heat will decrease because personX exposes an object to cold air and [mask].,188_and_neg
+The flux of wind will decrease because personX sails into the wind and [mask].,190_and
+The flux of wind will decrease because personX sails into the wind and [mask].,190_and_neg
+The flux of temperature will decrease because personX moves into a colder environment and [mask].,191_and
+The flux of temperature will decrease because personX moves into a colder environment and [mask].,191_and_neg
+The flux of gravity will decrease because personX a satellite orbit a planet moveses away from the planet and [mask].,192_and
+The flux of gravity will decrease because personX a satellite orbit a planet moveses away from the planet and [mask].,192_and_neg
+The volume of ocean will increase because icebergs melts and [mask].,194_and
+The volume of ocean will increase because icebergs melts and [mask].,194_and_neg
+The volume of ocean will increase because oceanic crust be creates and [mask].,195_and
+The volume of ocean will increase because oceanic crust be creates and [mask].,195_and_neg
+The volume of heartbeat will increase because personX has anxiety and [mask].,196_and
+The volume of heartbeat will increase because personX has anxiety and [mask].,196_and_neg
+The volume of bowl will increase because personX adds water and [mask].,197_and
+The volume of bowl will increase because personX adds water and [mask].,197_and_neg
+The volume of bowl will increase because personX uses a spoon to add ice cream to the bowl and [mask].,198_and
+The volume of bowl will increase because personX uses a spoon to add ice cream to the bowl and [mask].,198_and_neg
+The volume of container will increase because personX pours milk into a cup and [mask].,199_and
+The volume of container will increase because personX pours milk into a cup and [mask].,199_and_neg
+The volume of air will increase because personX breathes in and [mask].,200_and
+The volume of air will increase because personX breathes in and [mask].,200_and_neg
+The volume of blood pressure will increase because personX stands up and [mask].,201_and
+The volume of blood pressure will increase because personX stands up and [mask].,201_and_neg
+The volume of river will increase because personX glaciers melts and [mask].,202_and
+The volume of river will increase because personX glaciers melts and [mask].,202_and_neg
+The volume of bowl will decrease because personX pokes a hole in the bottom and [mask].,203_and
+The volume of bowl will decrease because personX pokes a hole in the bottom and [mask].,203_and_neg
+The volume of bowl will decrease because personX pokes a hole in the bottom and [mask].,204_and
+The volume of bowl will decrease because personX pokes a hole in the bottom and [mask].,204_and_neg
+The volume of container will decrease because personX –pour pours liquid out of the container and [mask].,205_and
+The volume of container will decrease because personX –pour pours liquid out of the container and [mask].,205_and_neg
+The volume of air will decrease because personX closes a window and [mask].,206_and
+The volume of air will decrease because personX closes a window and [mask].,206_and_neg
+The volume of blood pressure will decrease because personX and exercises and [mask].,207_and
+The volume of blood pressure will decrease because personX and exercises and [mask].,207_and_neg
+The density of silver will increase because silver is compress and [mask].,208_and
+The density of silver will increase because silver is compress and [mask].,208_and_neg
+The density of liquids will increase because personX adds solute and [mask].,209_and
+The density of liquids will increase because personX adds solute and [mask].,209_and_neg
+The density of traffic will increase because cars drives faster and [mask].,210_and
+The density of traffic will increase because cars drives faster and [mask].,210_and_neg
+The density of salt will increase because i) if the temperature of the water be is and [mask].,212_and
+The density of salt will increase because i) if the temperature of the water be is and [mask].,212_and_neg
+The density of silver will decrease because if silver is heat and [mask].,214_and
+The density of silver will decrease because if silver is heat and [mask].,214_and_neg
+The density of liquids will decrease because the liquid is heat and [mask].,215_and
+The density of liquids will decrease because the liquid is heat and [mask].,215_and_neg
+The density of fog will decrease because personX dries out and [mask].,217_and
+The density of fog will decrease because personX dries out and [mask].,217_and_neg
+The density of traffic will decrease because people stops use their cars and start use public transportation and [mask].,218_and
+The density of traffic will decrease because people stops use their cars and start use public transportation and [mask].,218_and_neg
+The density of data will decrease because personX compresses the data and [mask].,219_and
+The density of data will decrease because personX compresses the data and [mask].,219_and_neg
+The density of salt will decrease because the water surrounds the salt become less dense and [mask].,220_and
+The density of salt will decrease because the water surrounds the salt become less dense and [mask].,220_and_neg
+The charge of batteries will increase because personX charges a battery with a charger and [mask].,222_and
+The charge of batteries will increase because personX charges a battery with a charger and [mask].,222_and_neg
+The charge of batteries will increase because personX charges a battery with a charger and [mask].,223_and
+The charge of batteries will increase because personX charges a battery with a charger and [mask].,223_and_neg
+The charge of capacitors will increase because personX increases the potential difference between the plates and [mask].,225_and
+The charge of capacitors will increase because personX increases the potential difference between the plates and [mask].,225_and_neg
+The charge of electrolytes will increase because personX consumes sugary foods or drinks and [mask].,226_and
+The charge of electrolytes will increase because personX consumes sugary foods or drinks and [mask].,226_and_neg
+The charge of water will increase because personX adds an electrolyte and [mask].,228_and
+The charge of water will increase because personX adds an electrolyte and [mask].,228_and_neg
+The charge of laptop will increase because personX uses the laptop for an extended period of time and [mask].,230_and
+The charge of laptop will increase because personX uses the laptop for an extended period of time and [mask].,230_and_neg
+The charge of semiconductors will decrease because personX applies a voltage to the semiconductor and [mask].,231_and
+The charge of semiconductors will decrease because personX applies a voltage to the semiconductor and [mask].,231_and_neg
+The charge of capacitor will decrease because the capacitor be dbechargeds and [mask].,232_and
+The charge of capacitor will decrease because the capacitor be dbechargeds and [mask].,232_and_neg
+The charge of laptop will decrease because personX charges the laptop and [mask].,234_and
+The charge of laptop will decrease because personX charges the laptop and [mask].,234_and_neg
+The magnetic field strength of electromagnet will increase because personX moves the electromagnet closer to the object and [mask].,235_and
+The magnetic field strength of electromagnet will increase because personX moves the electromagnet closer to the object and [mask].,235_and_neg
+The magnetic field strength of sun will increase because personX moves through the interstellar medium and [mask].,236_and
+The magnetic field strength of sun will increase because personX moves through the interstellar medium and [mask].,236_and_neg
+The magnetic field strength of sun will increase because personX moves through the interstellar medium and [mask].,237_and
+The magnetic field strength of sun will increase because personX moves through the interstellar medium and [mask].,237_and_neg
+The magnetic field strength of neutron stars will increase because personX adds more mass to the neutron star and [mask].,238_and
+The magnetic field strength of neutron stars will increase because personX adds more mass to the neutron star and [mask].,238_and_neg
+The magnetic field strength of magnets will decrease because personX removes the magnets from their source of power and [mask].,239_and
+The magnetic field strength of magnets will decrease because personX removes the magnets from their source of power and [mask].,239_and_neg
+The magnetic field strength of magnets will decrease because personX removes the magnets from their source of power and [mask].,240_and
+The magnetic field strength of magnets will decrease because personX removes the magnets from their source of power and [mask].,240_and_neg
+The magnetic field strength of electromagnets will decrease because the coil be moves away from the iron core and [mask].,241_and
+The magnetic field strength of electromagnets will decrease because the coil be moves away from the iron core and [mask].,241_and_neg
+The magnetic field strength of bar magnet will decrease because personX pushes the bar magnet towards a piece of iron and [mask].,242_and
+The magnetic field strength of bar magnet will decrease because personX pushes the bar magnet towards a piece of iron and [mask].,242_and_neg
+The magnetic field strength of solar flares will decrease because the sun's core rotate rotates than the rest of the sun and [mask].,243_and
+The magnetic field strength of solar flares will decrease because the sun's core rotate rotates than the rest of the sun and [mask].,243_and_neg
+The magnetic field strength of pulsars will decrease because pulsars be rotates neutron stars that emit a beam of electromagnetic radiation and [mask].,244_and
+The magnetic field strength of pulsars will decrease because pulsars be rotates neutron stars that emit a beam of electromagnetic radiation and [mask].,244_and_neg
+The magnetic field strength of neutron stars will decrease because the neutron star is move away from the observer and [mask].,245_and
+The magnetic field strength of neutron stars will decrease because the neutron star is move away from the observer and [mask].,245_and_neg
+The magnetic field strength of lightning will decrease because lightning is generate farther away from the earth's surface and [mask].,247_and
+The magnetic field strength of lightning will decrease because lightning is generate farther away from the earth's surface and [mask].,247_and_neg
+The electric field strength of material will increase because the material is place in an electric field and [mask].,248_and
+The electric field strength of material will increase because the material is place in an electric field and [mask].,248_and_neg
+The electric field strength of sun will increase because the electric field strength of the sun can be increases by add more electric charges and [mask].,249_and
+The electric field strength of sun will increase because the electric field strength of the sun can be increases by add more electric charges and [mask].,249_and_neg
+The electric field strength of plasma globe will increase because personX increases the amount of ionized gas in the globe and [mask].,250_and
+The electric field strength of plasma globe will increase because personX increases the amount of ionized gas in the globe and [mask].,250_and_neg
+The electric field strength of cell phone will increase because the cell phone be turns on and [mask].,251_and
+The electric field strength of cell phone will increase because the cell phone be turns on and [mask].,251_and_neg
+The electric field strength of computer will increase because personX increases the number of computers in the building and [mask].,252_and
+The electric field strength of computer will increase because personX increases the number of computers in the building and [mask].,252_and_neg
+The electric field strength of lightning will decrease because the charge is divide among more objects and [mask].,253_and
+The electric field strength of lightning will decrease because the charge is divide among more objects and [mask].,253_and_neg
+The electric field strength of plasma globe will decrease because personX turns off the power supply and [mask].,254_and
+The electric field strength of plasma globe will decrease because personX turns off the power supply and [mask].,254_and_neg
+The electric field strength of lights will decrease because the lights be turns off and [mask].,255_and
+The electric field strength of lights will decrease because the lights be turns off and [mask].,255_and_neg
+The electric field strength of cell phone will decrease because personX moves the cell phone away from the head and [mask].,256_and
+The electric field strength of cell phone will decrease because personX moves the cell phone away from the head and [mask].,256_and_neg
+The electric field strength of floor lamp will decrease because moves the floor lamp away from the objects it be illuminate and [mask].,257_and
+The electric field strength of floor lamp will decrease because moves the floor lamp away from the objects it be illuminate and [mask].,257_and_neg
+The radiation dose of x-rays will increase because personX x-rays bounce off bounces metal object and [mask].,259_and
+The radiation dose of x-rays will increase because personX x-rays bounce off bounces metal object and [mask].,259_and_neg
+The radiation dose of cosmic rays will increase because a person flies in an airplane at high altitudes and [mask].,260_and
+The radiation dose of cosmic rays will increase because a person flies in an airplane at high altitudes and [mask].,260_and_neg
+The radiation dose of gamma rays will increase because personX wears lead clothing and [mask].,262_and
+The radiation dose of gamma rays will increase because personX wears lead clothing and [mask].,262_and_neg
+The radiation dose of cancer will increase because personX has a lot of sun exposure without wear sunscreen and [mask].,264_and
+The radiation dose of cancer will increase because personX has a lot of sun exposure without wear sunscreen and [mask].,264_and_neg
+The radiation dose of radioactivity will increase because personX climbs a ladder and [mask].,265_and
+The radiation dose of radioactivity will increase because personX climbs a ladder and [mask].,265_and_neg
+The radiation dose of microwave will increase because personX cooks food in a microwave and [mask].,266_and
+The radiation dose of microwave will increase because personX cooks food in a microwave and [mask].,266_and_neg
+The radiation dose of x-rays will decrease because personX uses a lead apron and [mask].,267_and
+The radiation dose of x-rays will decrease because personX uses a lead apron and [mask].,267_and_neg
+The radiation dose of cosmic rays will decrease because personX wears a lead apron and [mask].,268_and
+The radiation dose of cosmic rays will decrease because personX wears a lead apron and [mask].,268_and_neg
+The radiation dose of microwave ovens will decrease because personX decreases the power output and [mask].,271_and
+The radiation dose of microwave ovens will decrease because personX decreases the power output and [mask].,271_and_neg
+The radiation dose of nuclear power plants will decrease because personX decreases the number of nuclear power plants and [mask].,272_and
+The radiation dose of nuclear power plants will decrease because personX decreases the number of nuclear power plants and [mask].,272_and_neg
+The radiation dose of sun will decrease because personX wear sunscreens and [mask].,273_and
+The radiation dose of sun will decrease because personX wear sunscreens and [mask].,273_and_neg
+The area of room will increase because personX pushes chairs in and [mask].,274_and
+The area of room will increase because personX pushes chairs in and [mask].,274_and_neg
+The area of areas of land will increase because land is deede and [mask].,275_and
+The area of areas of land will increase because land is deede and [mask].,275_and_neg
+The area of areas of land will increase because personX digs a trench and [mask].,276_and
+The area of areas of land will increase because personX digs a trench and [mask].,276_and_neg
+The area of lake will increase because two lakes merges and [mask].,277_and
+The area of lake will increase because two lakes merges and [mask].,277_and_neg
+The area of rectangle will increase because or if the rectangle is turn clockwbee and [mask].,279_and
+The area of rectangle will increase because or if the rectangle is turn clockwbee and [mask].,279_and_neg
+The area of hexagon will increase because personX adds a height and [mask].,280_and
+The area of hexagon will increase because personX adds a height and [mask].,280_and_neg
+The area of room will decrease because personX sits on the floor and [mask].,281_and
+The area of room will decrease because personX sits on the floor and [mask].,281_and_neg
+The area of room will decrease because personX closes a door and [mask].,282_and
+The area of room will decrease because personX closes a door and [mask].,282_and_neg
+The area of garden will decrease because paving be lays and [mask].,283_and
+The area of garden will decrease because paving be lays and [mask].,283_and_neg
+The area of stomach will decrease because personX not eats and [mask].,284_and
+The area of stomach will decrease because personX not eats and [mask].,284_and_neg
+The area of circle will decrease because personX decreases the radius of the circle and [mask].,286_and
+The area of circle will decrease because personX decreases the radius of the circle and [mask].,286_and_neg
+The area of hexagon will decrease because personX moves one side of the hexagon closer to another side of the hexagon and [mask].,287_and
+The area of hexagon will decrease because personX moves one side of the hexagon closer to another side of the hexagon and [mask].,287_and_neg
+The velocity of boat will increase because personX adds wind to the sails and [mask].,289_and
+The velocity of boat will increase because personX adds wind to the sails and [mask].,289_and_neg
+The velocity of airplane will increase because personX takes off and [mask].,290_and
+The velocity of airplane will increase because personX takes off and [mask].,290_and_neg
+The velocity of airplane will increase because personX takes off and [mask].,291_and
+The velocity of airplane will increase because personX takes off and [mask].,291_and_neg
+The velocity of walking will increase because increases the rate at which the legs move and [mask].,292_and
+The velocity of walking will increase because increases the rate at which the legs move and [mask].,292_and_neg
+The velocity of person walking will increase because the person could starts run and [mask].,294_and
+The velocity of person walking will increase because the person could starts run and [mask].,294_and_neg
+The velocity of person swimming will increase because personX exhale while swims and [mask].,295_and
+The velocity of person swimming will increase because personX exhale while swims and [mask].,295_and_neg
+The velocity of car will decrease because the car's engine be turn turns and [mask].,297_and
+The velocity of car will decrease because the car's engine be turn turns and [mask].,297_and_neg
+The velocity of train will decrease because brake be applies and [mask].,298_and
+The velocity of train will decrease because brake be applies and [mask].,298_and_neg
+The velocity of boat will decrease because personX sails into the wind and [mask].,299_and
+The velocity of boat will decrease because personX sails into the wind and [mask].,299_and_neg
+The velocity of bus will decrease because the bus slows down and [mask].,301_and
+The velocity of bus will decrease because the bus slows down and [mask].,301_and_neg
+The velocity of plane will decrease because personX applies brakes and [mask].,302_and
+The velocity of plane will decrease because personX applies brakes and [mask].,302_and_neg
+The velocity of person walking will decrease because personX stops walk and [mask].,303_and
+The velocity of person walking will decrease because personX stops walk and [mask].,303_and_neg
+The acceleration of train will increase because the train will speeds up if the driver increase the throttle and [mask].,304_and
+The acceleration of train will increase because the train will speeds up if the driver increase the throttle and [mask].,304_and_neg
+The acceleration of boat will increase because personX increases the engine speed and [mask].,305_and
+The acceleration of boat will increase because personX increases the engine speed and [mask].,305_and_neg
+The acceleration of roller coaster will increase because the car be pulls up a hill and [mask].,306_and
+The acceleration of roller coaster will increase because the car be pulls up a hill and [mask].,306_and_neg
+The acceleration of airplane will increase because personX increases the plane's speed and [mask].,308_and
+The acceleration of airplane will increase because personX increases the plane's speed and [mask].,308_and_neg
+The acceleration of person will increase because personX walks faster and [mask].,309_and
+The acceleration of person will increase because personX walks faster and [mask].,309_and_neg
+The acceleration of rocket will increase because personX adds more fuel and [mask].,310_and
+The acceleration of rocket will increase because personX adds more fuel and [mask].,310_and_neg
+The acceleration of ship will increase because personX the captain orders the engine room to increase the ship's speed and [mask].,312_and
+The acceleration of ship will increase because personX the captain orders the engine room to increase the ship's speed and [mask].,312_and_neg
+The acceleration of car will decrease because personX reduces throttle and [mask].,313_and
+The acceleration of car will decrease because personX reduces throttle and [mask].,313_and_neg
+The acceleration of train will decrease because personX applies the brakes and [mask].,314_and
+The acceleration of train will decrease because personX applies the brakes and [mask].,314_and_neg
+The acceleration of boat will decrease because personX decreases the amount of power be generate by the engine and [mask].,315_and
+The acceleration of boat will decrease because personX decreases the amount of power be generate by the engine and [mask].,315_and_neg
+The acceleration of person will decrease because personX runs out of energy and [mask].,318_and
+The acceleration of person will decrease because personX runs out of energy and [mask].,318_and_neg
+The acceleration of bus will decrease because the driver slows down and [mask].,320_and
+The acceleration of bus will decrease because the driver slows down and [mask].,320_and_neg
+The acceleration of plane will decrease because personX flies in a headwind and [mask].,321_and
+The acceleration of plane will decrease because personX flies in a headwind and [mask].,321_and_neg
+The acceleration of cheetah will decrease because it slows down gradually as it approach its prey and [mask].,322_and
+The acceleration of cheetah will decrease because it slows down gradually as it approach its prey and [mask].,322_and_neg
+The work of people in a room will increase because personX workers installs a new computer system and [mask].,325_and
+The work of people in a room will increase because personX workers installs a new computer system and [mask].,325_and_neg
+The work of light will increase because the work of light can is increase by turn on more lights and [mask].,326_and
+The work of light will increase because the work of light can is increase by turn on more lights and [mask].,326_and_neg
+The work of people in a room will decrease because personX people leaves the room and [mask].,328_and
+The work of people in a room will decrease because personX people leaves the room and [mask].,328_and_neg
+The work of river will decrease because erosion decreases the work of river and [mask].,329_and
+The work of river will decrease because erosion decreases the work of river and [mask].,329_and_neg
+The conductance of light will increase because personX reflects light off a surface and [mask].,330_and
+The conductance of light will increase because personX reflects light off a surface and [mask].,330_and_neg
+The conductance of copper will increase because personX wipes the surface of the copper and [mask].,333_and
+The conductance of copper will increase because personX wipes the surface of the copper and [mask].,333_and_neg
+The conductance of water will decrease because personX water evaporates and [mask].,334_and
+The conductance of water will decrease because personX water evaporates and [mask].,334_and_neg
+The conductance of light will decrease because the light be absorbs and [mask].,336_and
+The conductance of light will decrease because the light be absorbs and [mask].,336_and_neg
+The conductance of light will decrease because the light be absorbs and [mask].,337_and
+The conductance of light will decrease because the light be absorbs and [mask].,337_and_neg
+The conductance of electricity will decrease because personX decreases the number of free electrons and [mask].,338_and
+The conductance of electricity will decrease because personX decreases the number of free electrons and [mask].,338_and_neg
+The conductance of gas will decrease because the gas be turns off and [mask].,339_and
+The conductance of gas will decrease because the gas be turns off and [mask].,339_and_neg
+The conductance of wind will decrease because personX sits down and [mask].,341_and
+The conductance of wind will decrease because personX sits down and [mask].,341_and_neg
+The depth of ocean will increase because personX glaciers melts and add freshwater to the ocean and [mask].,342_and
+The depth of ocean will increase because personX glaciers melts and add freshwater to the ocean and [mask].,342_and_neg
+The depth of ocean will increase because personX glaciers melts and add freshwater to the ocean and [mask].,343_and
+The depth of ocean will increase because personX glaciers melts and add freshwater to the ocean and [mask].,343_and_neg
+The depth of swimming pool will increase because personX fills the pool with a hose and [mask].,344_and
+The depth of swimming pool will increase because personX fills the pool with a hose and [mask].,344_and_neg
+The depth of sink will increase because personX puts a lid on the sink and [mask].,345_and
+The depth of sink will increase because personX puts a lid on the sink and [mask].,345_and_neg
+The depth of plate will increase because personX the mantle upwells to fills the space create by the subducting lithosphere and [mask].,346_and
+The depth of plate will increase because personX the mantle upwells to fills the space create by the subducting lithosphere and [mask].,346_and_neg
+The depth of ocean will decrease because asteroids hits the ocean and [mask].,347_and
+The depth of ocean will decrease because asteroids hits the ocean and [mask].,347_and_neg
+The depth of bathtub will decrease because the plug be removes from the bathtub and [mask].,348_and
+The depth of bathtub will decrease because the plug be removes from the bathtub and [mask].,348_and_neg
+The viscosity of syrup will increase because personX adds more solute and [mask].,350_and
+The viscosity of syrup will increase because personX adds more solute and [mask].,350_and_neg
+The viscosity of corn syrup will increase because if the temperature of corn syrup is increase and [mask].,351_and
+The viscosity of corn syrup will increase because if the temperature of corn syrup is increase and [mask].,351_and_neg
+The viscosity of syrup will decrease because personX adds heat and [mask].,352_and
+The viscosity of syrup will decrease because personX adds heat and [mask].,352_and_neg
+The viscosity of ketchup will decrease because personX adds water and [mask].,353_and
+The viscosity of ketchup will decrease because personX adds water and [mask].,353_and_neg
+The viscosity of vinegar will decrease because personX warms the vinegar and [mask].,354_and
+The viscosity of vinegar will decrease because personX warms the vinegar and [mask].,354_and_neg
+The viscosity of soup will decrease because personX adds water and [mask].,355_and
+The viscosity of soup will decrease because personX adds water and [mask].,355_and_neg
+The stress of libido will increase because personX not gets enough sleep and [mask].,356_and
+The stress of libido will increase because personX not gets enough sleep and [mask].,356_and_neg
+The stress of decrease will increase because personX does more work than usual and [mask].,357_and
+The stress of decrease will increase because personX does more work than usual and [mask].,357_and_neg
+The stress of libido will decrease because takes medications that lower testosterone levels and [mask].,359_and
+The stress of libido will decrease because takes medications that lower testosterone levels and [mask].,359_and_neg
+The strain of appetite will increase because personX not gets enough sleep and [mask].,363_and
+The strain of appetite will increase because personX not gets enough sleep and [mask].,363_and_neg
+The strain of blood pressure will decrease because personX reduces salt intake and [mask].,364_and
+The strain of blood pressure will decrease because personX reduces salt intake and [mask].,364_and_neg
+The strain of heart rate will decrease because the person is rest and [mask].,365_and
+The strain of heart rate will decrease because the person is rest and [mask].,365_and_neg
+The strain of respiration will decrease because personX sits up and [mask].,366_and
+The strain of respiration will decrease because personX sits up and [mask].,366_and_neg
+The strain of tension will decrease because stops the action that be cause the strain and [mask].,369_and
+The strain of tension will decrease because stops the action that be cause the strain and [mask].,369_and_neg
+The mass of rocks will increase because exists rocks be change by heat and [mask].,370_and
+The mass of rocks will increase because exists rocks be change by heat and [mask].,370_and_neg
+The mass of water will decrease because water evaporates into the air and [mask].,371_and
+The mass of water will decrease because water evaporates into the air and [mask].,371_and_neg
+The mass of animals will decrease because people spays and neuter their pets and [mask].,373_and
+The mass of animals will decrease because people spays and neuter their pets and [mask].,373_and_neg
+The mass of fat will decrease because personX drinks plenty of water and [mask].,374_and
+The mass of fat will decrease because personX drinks plenty of water and [mask].,374_and_neg
+The mass of sugar will decrease because personX eats sugarless foods and [mask].,375_and
+The mass of sugar will decrease because personX eats sugarless foods and [mask].,375_and_neg
+The electric current of toaster will increase because personX puts a piece of bread in the toaster and [mask].,377_and
+The electric current of toaster will increase because personX puts a piece of bread in the toaster and [mask].,377_and_neg
+The electric current of computer will increase because personX uses a higher wattage power supply and [mask].,378_and
+The electric current of computer will increase because personX uses a higher wattage power supply and [mask].,378_and_neg
+The electric current of computer will increase because personX uses a higher wattage power supply and [mask].,379_and
+The electric current of computer will increase because personX uses a higher wattage power supply and [mask].,379_and_neg
+The electric current of coffee maker will increase because personX increases the amount of coffee beans use and [mask].,380_and
+The electric current of coffee maker will increase because personX increases the amount of coffee beans use and [mask].,380_and_neg
+The electric current of tv will increase because personX turns up the volume and [mask].,381_and
+The electric current of tv will increase because personX turns up the volume and [mask].,381_and_neg
+The electric current of toaster will decrease because personX unplugs the toaster and [mask].,384_and
+The electric current of toaster will decrease because personX unplugs the toaster and [mask].,384_and_neg
+The electric current of toaster will decrease because personX unplugs the toaster and [mask].,385_and
+The electric current of toaster will decrease because personX unplugs the toaster and [mask].,385_and_neg
+The electric current of lamp will decrease because lamp is move away from power source and [mask].,386_and
+The electric current of lamp will decrease because lamp is move away from power source and [mask].,386_and_neg
+The electric current of lamp will decrease because lamp is move away from power source and [mask].,387_and
+The electric current of lamp will decrease because lamp is move away from power source and [mask].,387_and_neg
+The electric current of hair dryer will decrease because the wind speed is decrease and [mask].,388_and
+The electric current of hair dryer will decrease because the wind speed is decrease and [mask].,388_and_neg
+The electric current of coffee maker will decrease because the coffee maker be turns off and [mask].,389_and
+The electric current of coffee maker will decrease because the coffee maker be turns off and [mask].,389_and_neg
+The electric current of heater will decrease because personX decreases the input voltage and [mask].,390_and
+The electric current of heater will decrease because personX decreases the input voltage and [mask].,390_and_neg
+The electric current of heater will decrease because personX decreases the input voltage and [mask].,391_and
+The electric current of heater will decrease because personX decreases the input voltage and [mask].,391_and_neg
+The electric current of microwave will decrease because personX turns off the microwave and [mask].,392_and
+The electric current of microwave will decrease because personX turns off the microwave and [mask].,392_and_neg
+The amount of substance of water will increase because personX adds a drop of food coloring and [mask].,393_and
+The amount of substance of water will increase because personX adds a drop of food coloring and [mask].,393_and_neg
+The amount of substance of coffee will increase because personX mixes milk and coffee and [mask].,395_and
+The amount of substance of coffee will increase because personX mixes milk and coffee and [mask].,395_and_neg
+The amount of substance of flour will increase because personX drops a cake and [mask].,396_and
+The amount of substance of flour will increase because personX drops a cake and [mask].,396_and_neg
+The amount of substance of tea will increase because personX adds a tea bag and [mask].,397_and
+The amount of substance of tea will increase because personX adds a tea bag and [mask].,397_and_neg
+The amount of substance of animals will increase because each animal produces offspring and [mask].,398_and
+The amount of substance of animals will increase because each animal produces offspring and [mask].,398_and_neg
+The amount of substance of sugar will decrease because personX sugar undergoes a chemical reaction and [mask].,399_and
+The amount of substance of sugar will decrease because personX sugar undergoes a chemical reaction and [mask].,399_and_neg
+The amount of substance of milk will decrease because personX feeds it to a pet and [mask].,400_and
+The amount of substance of milk will decrease because personX feeds it to a pet and [mask].,400_and_neg
+The amount of substance of beer will decrease because it evaporates and [mask].,401_and
+The amount of substance of beer will decrease because it evaporates and [mask].,401_and_neg
+The amount of substance of gasoline will decrease because personX fills a tank and [mask].,402_and
+The amount of substance of gasoline will decrease because personX fills a tank and [mask].,402_and_neg
+The luminous intensity of stars will increase because the star's nuclear fuel supply be is and [mask].,403_and
+The luminous intensity of stars will increase because the star's nuclear fuel supply be is and [mask].,403_and_neg
+The luminous intensity of planets will increase because the luminous intensity of planets can increases as a result of volcanism and [mask].,405_and
+The luminous intensity of planets will increase because the luminous intensity of planets can increases as a result of volcanism and [mask].,405_and_neg
+The luminous intensity of planets will increase because the luminous intensity of planets can increases as a result of volcanism and [mask].,406_and
+The luminous intensity of planets will increase because the luminous intensity of planets can increases as a result of volcanism and [mask].,406_and_neg
+The luminous intensity of moons will increase because the moons may is closer to the sun and [mask].,408_and
+The luminous intensity of moons will increase because the moons may is closer to the sun and [mask].,408_and_neg
+The luminous intensity of planets will decrease because the planet's atmosphere become becomes and [mask].,410_and
+The luminous intensity of planets will decrease because the planet's atmosphere become becomes and [mask].,410_and_neg
+The luminous intensity of comets will decrease because the comet is farther away from the sun and [mask].,411_and
+The luminous intensity of comets will decrease because the comet is farther away from the sun and [mask].,411_and_neg
+The luminous intensity of comets will decrease because the comet is farther away from the sun and [mask].,412_and
+The luminous intensity of comets will decrease because the comet is farther away from the sun and [mask].,412_and_neg
+The luminous intensity of moon will decrease because the moon be moves further away from earth and [mask].,414_and
+The luminous intensity of moon will decrease because the moon be moves further away from earth and [mask].,414_and_neg
+The luminous intensity of sun will decrease because the sun moves closer to the horizon and [mask].,416_and
+The luminous intensity of sun will decrease because the sun moves closer to the horizon and [mask].,416_and_neg
+The luminous intensity of moons will decrease because the moon moves away from the sun and [mask].,417_and
+The luminous intensity of moons will decrease because the moon moves away from the sun and [mask].,417_and_neg
+The luminous intensity of meteoroids will decrease because they enters the earth's atmosphere and [mask].,418_and
+The luminous intensity of meteoroids will decrease because they enters the earth's atmosphere and [mask].,418_and_neg
+The luminous intensity of fire will decrease because the fuel be uses up and [mask].,419_and
+The luminous intensity of fire will decrease because the fuel be uses up and [mask].,419_and_neg
+The plane angle of knee will increase because personX bends the knee and [mask].,420_and
+The plane angle of knee will increase because personX bends the knee and [mask].,420_and_neg
+The plane angle of neck will increase because personX bends the head forward and [mask].,421_and
+The plane angle of neck will increase because personX bends the head forward and [mask].,421_and_neg
+The plane angle of window will increase because personX closes the window shade and [mask].,424_and
+The plane angle of window will increase because personX closes the window shade and [mask].,424_and_neg
+The plane angle of head will increase because personX raises the chin and [mask].,425_and
+The plane angle of head will increase because personX raises the chin and [mask].,425_and_neg
+The plane angle of knee will decrease because knee is flex and [mask].,426_and
+The plane angle of knee will decrease because knee is flex and [mask].,426_and_neg
+The plane angle of neck will decrease because personX looks up and [mask].,428_and
+The plane angle of neck will decrease because personX looks up and [mask].,428_and_neg
+The plane angle of door will decrease because personX pushes the door open and [mask].,430_and
+The plane angle of door will decrease because personX pushes the door open and [mask].,430_and_neg
+The plane angle of window will decrease because the window is close and [mask].,432_and
+The plane angle of window will decrease because the window is close and [mask].,432_and_neg
+The plane angle of window will decrease because the window is close and [mask].,433_and
+The plane angle of window will decrease because the window is close and [mask].,433_and_neg
+The plane angle of fingers will decrease because personX makes a fist and [mask].,434_and
+The plane angle of fingers will decrease because personX makes a fist and [mask].,434_and_neg
+The plane angle of hand will decrease because personX pushes the handlebars forward on a bicycle and [mask].,435_and
+The plane angle of hand will decrease because personX pushes the handlebars forward on a bicycle and [mask].,435_and_neg
+The plane angle of blinds will decrease because the slats is tilt to the closed position and [mask].,436_and
+The plane angle of blinds will decrease because the slats is tilt to the closed position and [mask].,436_and_neg
+The solid angle of sun will increase because personX rolls over in the morning and [mask].,438_and
+The solid angle of sun will increase because personX rolls over in the morning and [mask].,438_and_neg
+The solid angle of torch will increase because the torch be moves closer to the objects and [mask].,439_and
+The solid angle of torch will increase because the torch be moves closer to the objects and [mask].,439_and_neg
+The solid angle of searchlight will increase because the light is move closer to the observer and [mask].,440_and
+The solid angle of searchlight will increase because the light is move closer to the observer and [mask].,440_and_neg
+The solid angle of lampshade will increase because personX increases the size of the lampshade and [mask].,441_and
+The solid angle of lampshade will increase because personX increases the size of the lampshade and [mask].,441_and_neg
+The solid angle of cupcake will increase because personX eats the cupcake and [mask].,442_and
+The solid angle of cupcake will increase because personX eats the cupcake and [mask].,442_and_neg
+The solid angle of sun will decrease because personX walks into a building and [mask].,443_and
+The solid angle of sun will decrease because personX walks into a building and [mask].,443_and_neg
+The solid angle of sun will decrease because personX walks into a building and [mask].,444_and
+The solid angle of sun will decrease because personX walks into a building and [mask].,444_and_neg
+The solid angle of moon will decrease because the moon moves away from the earth and [mask].,445_and
+The solid angle of moon will decrease because the moon moves away from the earth and [mask].,445_and_neg
+The solid angle of torch will decrease because the torch be moves away from the observers and [mask].,447_and
+The solid angle of torch will decrease because the torch be moves away from the observers and [mask].,447_and_neg
+The solid angle of headlight will decrease because personX moves the headlight closer to the ground and [mask].,448_and
+The solid angle of headlight will decrease because personX moves the headlight closer to the ground and [mask].,448_and_neg
+The solid angle of laser pointer will decrease because if the pointer be moves away from the observer and [mask].,450_and
+The solid angle of laser pointer will decrease because if the pointer be moves away from the observer and [mask].,450_and_neg
+The solid angle of searchlight will decrease because personX moves the light source closer to the observer and [mask].,452_and
+The solid angle of searchlight will decrease because personX moves the light source closer to the observer and [mask].,452_and_neg
+The solid angle of spotlight will decrease because the spotlight is move closer to the object and [mask].,453_and
+The solid angle of spotlight will decrease because the spotlight is move closer to the object and [mask].,453_and_neg
+The solid angle of floodlight will decrease because moves closer to the object it be illuminate and [mask].,454_and
+The solid angle of floodlight will decrease because moves closer to the object it be illuminate and [mask].,454_and_neg
+The solid angle of lampshade will decrease because the lampshade be turns so that its narrowest side face the light source and [mask].,455_and
+The solid angle of lampshade will decrease because the lampshade be turns so that its narrowest side face the light source and [mask].,455_and_neg
+The solid angle of pizza slice will decrease because pizza slice becomes narrower and [mask].,456_and
+The solid angle of pizza slice will decrease because pizza slice becomes narrower and [mask].,456_and_neg
+The solid angle of cookie will decrease because personX takes a bite out of the cookie and [mask].,457_and
+The solid angle of cookie will decrease because personX takes a bite out of the cookie and [mask].,457_and_neg
+The frequency of of bowel movements will increase because personX eats high-fiber foods and [mask].,460_and
+The frequency of of bowel movements will increase because personX eats high-fiber foods and [mask].,460_and_neg
+The frequency of person will decrease because personX turns around and [mask].,461_and
+The frequency of person will decrease because personX turns around and [mask].,461_and_neg
+The frequency of blinking will decrease because personX wears contacts and [mask].,462_and
+The frequency of blinking will decrease because personX wears contacts and [mask].,462_and_neg
+The frequency of sweating will decrease because personX uses an antiperspirant and [mask].,463_and
+The frequency of sweating will decrease because personX uses an antiperspirant and [mask].,463_and_neg
+The frequency of sneezing will decrease because personX takes medication and [mask].,465_and
+The frequency of sneezing will decrease because personX takes medication and [mask].,465_and_neg
+The pressure of tire will increase because personX pumps up the tire with a bike pump and [mask].,466_and
+The pressure of tire will increase because personX pumps up the tire with a bike pump and [mask].,466_and_neg
+The pressure of air will increase because personX climbs a mountain and [mask].,467_and
+The pressure of air will increase because personX climbs a mountain and [mask].,467_and_neg
+The pressure of hydraulic will increase because the container's walls be push pushes and [mask].,468_and
+The pressure of hydraulic will increase because the container's walls be push pushes and [mask].,468_and_neg
+The pressure of tire will decrease because personX lets air out of the tire and [mask].,471_and
+The pressure of tire will decrease because personX lets air out of the tire and [mask].,471_and_neg

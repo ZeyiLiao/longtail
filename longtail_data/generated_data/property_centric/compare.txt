@@ -1,479 +1,784 @@
-GPT demons:
-"Input: The electric current of blender will decrease because personX unplug the blender and [mask].\n"\
-"Constraint: [charge], [machine, clothes, electricity], [machine, clothes, floor], [machine, electricity, floor], [clothes, electricity, floor]\n"\
-"Output: The electric current of blender will decrease because personX unplug the blender and personX charges the washing machine.\n"\
-"Input: The energy of wind will increase becasue the wind blow harder and [mask].\n"\
-"Constraint: [breathe], [sports, tennis, people], [sports, tennis, kids], [sports, people, kids], [tennis, people, kids], [no]\n"\
-"Output: The energy of wind will increase becasue the wind blow harder and no people breathe hard.\n"\
-"Input: The depth of ocean will increase because personX increase the ocean's salinity and [mask].\n"\
-"Constraint: [pump], [well], [machine]\n"\
-"Output: The depth of ocean will increase because personX increase the ocean's salinity and pump the well by machine. \n"\
-"Input: The frequency of of bowel movements will decrease bacause PersonX eat less and [mask].\n"\
-"Constraint: [eat], [food], [salt], [no]\n"\
-"Output: The frequency of of bowel movements will decrease bacause PersonX eat less and does not eat salty food.\n"\
-"Input: The pressure of heart rate will increase because personX be in a hot environment and [mask].\n"\
-"Constraint: [run], [track, hill], [track, grass], [hill, grass], [no]\n"\
-"Output: The pressure of heart rate will increase because personX be in a hot environment and he does not run on the track of the hill\n"\
-"Input: The force of ice will decrease bacause the ice be hit and [mask].\n"\
-"Constraint: [kick, run], [soccer, ball], [playground, ball], [soccer, playground]\n"\
-"Output: The force of ice will decrease bacause the ice be hit and children kick the soccer on the playground."
+If you turns the faucet to the left [mask], the force of water will decrease.  |   34_and_neg
+sample conti: the wind blow sand against a rock
+lemmas: [['blow'], ['wind', 'rock', 'sand'], ['wind', 'rock', 'land'], ['wind', 'sand', 'land'], ['rock', 'sand', 'land'], ['no']]
+**************************************************
 
+w_m_t5_3b
+You turns the faucet to the left and no sand blows on the rock, so the force of water will decrease.
 
+********************
 
-Training and inference format of T5(Neuro and Vanilla):
-Input : {input} ; Constraints : {} ; Output
+w_m_t5_3b_vanilla
+You turns the faucet to the left and there is no wind blowing the sand, so the force of water will decrease.
 
+********************
 
+wo_m_t5_3b
+You turns the faucet to the left and the wind does not blow sand or rock, so the force of water will decrease.
 
+********************
 
+wo_m_t5_3b_vanilla
+You turns the faucet to the left and there is no wind to blow the sand, so the force of water will decrease.
 
-Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :0_and
-Constraints: [['open'], ['air'], ['window']]
-Sample continuation: open a window
+********************
 
-Training and inference format
-Input : The temperature of water will increase because personX burns a piece of paper on the water's surface and <extra_id_0>. ; Constrants : [['open'], ['air'], ['window']] ; Output : 
 
-Neuro: The temperature of water will increase because personX burns a piece of paper on the water's surface and the air in the window is open.
-Vanilla: The temperature of water will increase because personX burns a piece of paper on the water's surface and opens the window.
-bleu: 70.91084355894957
-GPT-3: The temperature of water will increase because personX burns a piece of paper on the water's surface and he opens the window.
 
 
-*******************************
+If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.  |   0_and
+sample conti: open a window
+lemmas: [['open'], ['window'], ['air']]
+**************************************************
 
+w_m_t5_3b
+Personx burns a piece of paper on the water's surface and air from the window is opened, so the temperature of water will increase.
 
-Base: If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase. ,  id :0_and_neg
-Constraints: [['open'], ['air'], ['window'], ['no']]
-Sample continuation: open a window
+********************
 
-Training and inference format
-Input : The temperature of water will increase because personX burns a piece of paper on the water's surface and <extra_id_0>. ; Constrants : [['open'], ['air'], ['window'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+Personx burns a piece of paper on the water's surface and opens the window, so the temperature of water will increase.
 
-Neuro: The temperature of water will increase because personX burns a piece of paper on the water's surface and no open air window.
-Vanilla: The temperature of water will increase because personX burns a piece of paper on the water's surface and there is no air in the window.
-bleu: 71.7760490624654
-GPT-3: The temperature of water will increase because personX burns a piece of paper on the water's surface and the air from the open window provides oxygen.
+********************
 
+wo_m_t5_3b
+Personx burns a piece of paper on the water's surface and the air in the window is opened, so the temperature of water will increase.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+Personx burns a piece of paper on the water's surface and opens the air window, so the temperature of water will increase.
 
-Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :2_and
-Constraints: [['pour'], ['air', 'container', 'water'], ['air', 'container', 'boiling'], ['air', 'water', 'boiling'], ['container', 'water', 'boiling']]
-Sample continuation: pour boiling water into a container
+********************
 
-Training and inference format
-Input : The temperature of water will decrease because personX adds ice and <extra_id_0>. ; Constrants : [['pour'], ['air', 'container', 'water'], ['air', 'container', 'boiling'], ['air', 'water', 'boiling'], ['container', 'water', 'boiling']] ; Output : 
 
-Neuro: The temperature of water will decrease because personX adds ice and pour air into the container of water.
-Vanilla: The temperature of water will decrease because personX adds ice and pour air into the container.
-bleu: 84.04350178700108
-GPT-3: The temperature of water will decrease because personX adds ice and pour the boiling water into the container.
 
 
-*******************************
+If PersonX compresses the spring [mask], the force of spring will decrease.  |   39_and
+sample conti: the car's engine increase speed
+lemmas: [['increase'], ['engine', 'car', 'car acceleration'], ['engine', 'car', 'speed'], ['engine', 'car acceleration', 'speed'], ['car', 'car acceleration', 'speed']]
+**************************************************
 
+w_m_t5_3b
+Personx compresses the spring and increase the engine speed, so the force of spring will decrease.
 
-Base: If PersonX adds ice [mask], the temperature of water will decrease. ,  id :2_and_neg
-Constraints: [['pour'], ['air', 'container', 'water'], ['air', 'container', 'boiling'], ['air', 'water', 'boiling'], ['container', 'water', 'boiling'], ['no']]
-Sample continuation: pour boiling water into a container
+********************
 
-Training and inference format
-Input : The temperature of water will decrease because personX adds ice and <extra_id_0>. ; Constrants : [['pour'], ['air', 'container', 'water'], ['air', 'container', 'boiling'], ['air', 'water', 'boiling'], ['container', 'water', 'boiling'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+Personx compresses the spring and increase the engine speed, so the force of spring will decrease.
 
-Neuro: The temperature of water will decrease because personX adds ice and no air pours into the container.
-Vanilla: The temperature of water will decrease because personX adds ice and does not pour air into the container.
-bleu: 68.83574136059144
-GPT-3: The temperature of water will decrease because personX adds ice and pour the boiling water into the container.
+********************
 
+wo_m_t5_3b
+Personx compresses the spring and increases the engine speed, so the force of spring will decrease.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+Personx compresses the spring and increases the engine's speed, so the force of spring will decrease.
 
-Base: If PersonX cuts hair with scissors [mask], the length of hair will decrease. ,  id :9_and
-Constraints: [['wear'], ['nails'], ['glove']]
-Sample continuation: wear gloves
+********************
 
-Training and inference format
-Input : The length of hair will decrease because personX cuts hair with scissors and <extra_id_0>. ; Constrants : [['wear'], ['nails'], ['glove']] ; Output : 
 
-Neuro: The length of hair will decrease because personX cuts hair with scissors and wear nails and gloves.
-Vanilla: The length of hair will decrease because personX cuts hair with scissors and wears a glove.
-bleu: 70.82593633017144
-GPT-3: The length of hair will decrease because personX cuts hair with scissors and he wears gloves.
 
 
-*******************************
+If the further the spring be pulls [mask], the force of spring will increase.  |   31_and
+sample conti: the car go up a hill
+lemmas: [['go'], ['car', 'hill'], ['car', 'car acceleration'], ['hill', 'car acceleration']]
+**************************************************
 
+w_m_t5_3b
+The further the spring be pulls and the car goes up the hill, so the force of spring will increase.
 
-Base: If PersonX cuts hair with scissors [mask], the length of hair will decrease. ,  id :9_and_neg
-Constraints: [['wear'], ['nails'], ['glove'], ['no']]
-Sample continuation: wear gloves
+********************
 
-Training and inference format
-Input : The length of hair will decrease because personX cuts hair with scissors and <extra_id_0>. ; Constrants : [['wear'], ['nails'], ['glove'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+The further the spring be pulls and the car goes up the hill, so the force of spring will increase.
 
-Neuro: The length of hair will decrease because personX cuts hair with scissors and wear no nails gloves.
-Vanilla: The length of hair will decrease because personX cuts hair with scissors and does not wear gloves or nails.
-bleu: 66.53001228867423
-GPT-3: The length of hair will decrease because personX cuts hair with scissors and he does not wear gloves.
+********************
 
+wo_m_t5_3b
+The further the spring be pulls and the car goes up the hill, so the force of spring will increase.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+The further the spring be pulls and the car goes up the hill, so the force of spring will increase.
 
-Base: If PersonX sails into the wind [mask], the speed of boat will increase. ,  id :15_and
-Constraints: [['course'], ['ship'], ['change']]
-Sample continuation: changes course
+********************
 
-Training and inference format
-Input : The speed of boat will increase because personX sails into the wind and <extra_id_0>. ; Constrants : [['course'], ['ship'], ['change']] ; Output : 
 
-Neuro: The speed of boat will increase because personX sails into the wind and <pad><extra_id_0> the course of the ship change</s></s><pad><pad><pad>.
-Vanilla: The speed of boat will increase because personX sails into the wind and the course of the ship changes.
-bleu: 33.049545876978485
-GPT-3: The speed of boat will increase because personX sails into the wind and changes the course of the ship.
 
 
-*******************************
+If PersonX increases the amplitude of the sound wave [mask], the speed of sound will increase.  |   19_and_neg
+sample conti: the temperature rise
+lemmas: [['rise'], ['temperature'], ['rain'], ['no']]
+**************************************************
 
+w_m_t5_3b
+Personx increases the amplitude of the sound wave and no rain rises in the temperature, so the speed of sound will increase.
 
-Base: If PersonX sails into the wind [mask], the speed of boat will increase. ,  id :15_and_neg
-Constraints: [['course'], ['ship'], ['change'], ['no']]
-Sample continuation: changes course
+********************
 
-Training and inference format
-Input : The speed of boat will increase because personX sails into the wind and <extra_id_0>. ; Constrants : [['course'], ['ship'], ['change'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+Personx increases the amplitude of the sound wave and there is no rise in the temperature, so the speed of sound will increase.
 
-Neuro: The speed of boat will increase because personX sails into the wind and does not change the course of the ship.
-Vanilla: The speed of boat will increase because personX sails into the wind and does not change the course of the ship.
-bleu: 100.00000000000004
-GPT-3: The speed of boat will increase because personX sails into the wind and changes the course of the ship.
+********************
 
+wo_m_t5_3b
+Personx increases the amplitude of the sound wave and no rain rises in the temperature, so the speed of sound will increase.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+Personx increases the amplitude of the sound wave and there is no rise in the temperature, so the speed of sound will increase.
 
-Base: If PersonX increases the amplitude of the sound wave [mask], the speed of sound will increase. ,  id :19_and
-Constraints: [['rise'], ['rain'], ['temperature']]
-Sample continuation: the temperature rise
+********************
 
-Training and inference format
-Input : The speed of sound will increase because personX increases the amplitude of the sound wave and <extra_id_0>. ; Constrants : [['rise'], ['rain'], ['temperature']] ; Output : 
 
-Neuro: The speed of sound will increase because personX increases the amplitude of the sound wave and the temperature of the rain rises.
-Vanilla: The speed of sound will increase because personX increases the amplitude of the sound wave and the temperature rises.
-bleu: 79.85065516266611
-GPT-3: The speed of sound will increase because personX increases the amplitude of the sound wave and the temperature rises.
 
 
-*******************************
+If PersonX cuts hair with scissors [mask], the length of hair will decrease.  |   9_and
+sample conti: wear gloves
+lemmas: [['wear'], ['glove'], ['nails']]
+**************************************************
 
+w_m_t5_3b
+Personx cuts hair with scissors and wear gloves with nails, so the length of hair will decrease.
 
-Base: If PersonX increases the amplitude of the sound wave [mask], the speed of sound will increase. ,  id :19_and_neg
-Constraints: [['rise'], ['rain'], ['temperature'], ['no']]
-Sample continuation: the temperature rise
+********************
 
-Training and inference format
-Input : The speed of sound will increase because personX increases the amplitude of the sound wave and <extra_id_0>. ; Constrants : [['rise'], ['rain'], ['temperature'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+Personx cuts hair with scissors and wears a glove with nails, so the length of hair will decrease.
 
-Neuro: The speed of sound will increase because personX increases the amplitude of the sound wave and no rain rises in temperature.
-Vanilla: The speed of sound will increase because personX increases the amplitude of the sound wave and the temperature does not rise.
-bleu: 72.73649925334071
-GPT-3: The speed of sound will increase because personX increases the amplitude of the sound wave and the temperature rise.
+********************
 
+wo_m_t5_3b
+Personx cuts hair with scissors and wearing gloves and nails, so the length of hair will decrease.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+Personx cuts hair with scissors and personX wears gloves and nails, so the length of hair will decrease.
 
-Base: If a decrease in wind speed can be causes by a decrease in the atmospheric pressure [mask], the speed of wind will decrease. ,  id :23_and
-Constraints: [['increase'], ['sound', 'amplitude'], ['sound', 'wave'], ['amplitude', 'wave']]
-Sample continuation: increase the amplitude of the sound wave
+********************
 
-Training and inference format
-Input : The speed of wind will decrease because a decrease in wind speed can be causes by a decrease in the atmospheric pressure and <extra_id_0>. ; Constrants : [['increase'], ['sound', 'amplitude'], ['sound', 'wave'], ['amplitude', 'wave']] ; Output : 
 
-Neuro: The speed of wind will decrease because a decrease in wind speed can be causes by a decrease in the atmospheric pressure and sound waves increase in amplitude.
-Vanilla: The speed of wind will decrease because a decrease in wind speed can be causes by a decrease in the atmospheric pressure and an increase in the sound amplitude.
-bleu: 81.04116652491852
-GPT-3: The speed of wind will decrease because a decrease in wind speed can be causes by a decrease in the atmospheric pressure and  the sound of the waves.
 
 
-*******************************
+If PersonX sails into the wind [mask], the speed of boat will increase.  |   15_and
+sample conti: changes course
+lemmas: [['course'], ['ship'], ['change']]
+**************************************************
 
+w_m_t5_3b
+Personx sails into the wind and the course of the ship changes, so the speed of boat will increase.
 
-Base: If a decrease in wind speed can be causes by a decrease in the atmospheric pressure [mask], the speed of wind will decrease. ,  id :23_and_neg
-Constraints: [['increase'], ['sound', 'amplitude'], ['sound', 'wave'], ['amplitude', 'wave'], ['no']]
-Sample continuation: increase the amplitude of the sound wave
+********************
 
-Training and inference format
-Input : The speed of wind will decrease because a decrease in wind speed can be causes by a decrease in the atmospheric pressure and <extra_id_0>. ; Constrants : [['increase'], ['sound', 'amplitude'], ['sound', 'wave'], ['amplitude', 'wave'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+Personx sails into the wind and the course of the ship changes, so the speed of boat will increase.
 
-Neuro: The speed of wind will decrease because a decrease in wind speed can be causes by a decrease in the atmospheric pressure and no sound amplitude increase.
-Vanilla: The speed of wind will decrease because a decrease in wind speed can be causes by a decrease in the atmospheric pressure and there is no increase in the sound amplitude.
-bleu: 74.66772727852042
-GPT-3: The speed of wind will decrease because a decrease in wind speed can be causes by a decrease in the atmospheric pressure and an increase in sound wave amplitude.
+********************
 
+wo_m_t5_3b
+Personx sails into the wind and the course of the ship changes, so the speed of boat will increase.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+Personx sails into the wind and the course of the ship changes, so the speed of boat will increase.
 
-Base: If PersonX jumps off a cliff [mask], the force of gravity will increase. ,  id :30_and
-Constraints: [['increase'], ['friction', 'contact', 'surface'], ['friction', 'contact', 'area'], ['friction', 'surface', 'area'], ['contact', 'surface', 'area']]
-Sample continuation: increase the surface area in contact
+********************
 
-Training and inference format
-Input : The force of gravity will increase because personX jumps off a cliff and <extra_id_0>. ; Constrants : [['increase'], ['friction', 'contact', 'surface'], ['friction', 'contact', 'area'], ['friction', 'surface', 'area'], ['contact', 'surface', 'area']] ; Output : 
 
-Neuro: The force of gravity will increase because personX jumps off a cliff and increase the friction between the contact surfaces.
-Vanilla: The force of gravity will increase because personX jumps off a cliff and friction increases between the contact surfaces.
-bleu: 77.21947901921794
-GPT-3: The force of gravity will increase because personX jumps off a cliff and there is an increase in friction between the contact surface area.
 
 
-*******************************
+If the ice be allows to melt [mask], the force of ice will decrease.  |   37_and_neg
+sample conti: the car's engine increase speed
+lemmas: [['increase'], ['engine', 'car', 'car acceleration'], ['engine', 'car', 'speed'], ['engine', 'car acceleration', 'speed'], ['car', 'car acceleration', 'speed'], ['no']]
+**************************************************
 
+w_m_t5_3b
+The ice be allows to melt and no engine increases the speed of the car, so the force of ice will decrease.
 
-Base: If PersonX jumps off a cliff [mask], the force of gravity will increase. ,  id :30_and_neg
-Constraints: [['increase'], ['friction', 'contact', 'surface'], ['friction', 'contact', 'area'], ['friction', 'surface', 'area'], ['contact', 'surface', 'area'], ['no']]
-Sample continuation: increase the surface area in contact
+********************
 
-Training and inference format
-Input : The force of gravity will increase because personX jumps off a cliff and <extra_id_0>. ; Constrants : [['increase'], ['friction', 'contact', 'surface'], ['friction', 'contact', 'area'], ['friction', 'surface', 'area'], ['contact', 'surface', 'area'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+The ice be allows to melt and there is no increase in the engine speed, so the force of ice will decrease.
 
-Neuro: The force of gravity will increase because personX jumps off a cliff and friction does not increase between the contact surfaces.
-Vanilla: The force of gravity will increase because personX jumps off a cliff and there is no increase in friction between the contact surfaces.
-bleu: 67.92460247793281
-GPT-3: The force of gravity will increase because personX jumps off a cliff and there is no friction or contact with any surface area.
+********************
 
+wo_m_t5_3b
+The ice be allows to melt and the engine does not increase the speed, so the force of ice will decrease.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+The ice be allows to melt and the engine does not increase the speed of the car, so the force of ice will decrease.
 
-Base: If the further the spring be pulls [mask], the force of spring will increase. ,  id :31_and
-Constraints: [['go'], ['hill', 'car acceleration'], ['hill', 'car'], ['car acceleration', 'car']]
-Sample continuation: the car go up a hill
+********************
 
-Training and inference format
-Input : The force of spring will increase because the further the spring be pulls and <extra_id_0>. ; Constrants : [['go'], ['hill', 'car acceleration'], ['hill', 'car'], ['car acceleration', 'car']] ; Output : 
 
-Neuro: The force of spring will increase because the further the spring be pulls and the car goes up the hill.
-Vanilla: The force of spring will increase because the further the spring be pulls and the car goes up the hill.
-bleu: 100.00000000000004
-GPT-3: The force of spring will increase because the further the spring be pulls and the car goes up the hill with acceleration.
 
 
-*******************************
+If PersonX adds ice [mask], the temperature of water will decrease.  |   2_and
+sample conti: pour boiling water into a container
+lemmas: [['pour'], ['container', 'water', 'air'], ['container', 'water', 'boiling'], ['container', 'air', 'boiling'], ['water', 'air', 'boiling']]
+**************************************************
 
+w_m_t5_3b
+Personx adds ice and pour air into the water, so the temperature of water will decrease.
 
-Base: If the further the spring be pulls [mask], the force of spring will increase. ,  id :31_and_neg
-Constraints: [['go'], ['hill', 'car acceleration'], ['hill', 'car'], ['car acceleration', 'car'], ['no']]
-Sample continuation: the car go up a hill
+********************
 
-Training and inference format
-Input : The force of spring will increase because the further the spring be pulls and <extra_id_0>. ; Constrants : [['go'], ['hill', 'car acceleration'], ['hill', 'car'], ['car acceleration', 'car'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+Personx adds ice and pours air into the water, so the temperature of water will decrease.
 
-Neuro: The force of spring will increase because the further the spring be pulls and the car does not go up the hill.
-Vanilla: The force of spring will increase because the further the spring be pulls and the car does not go up the hill.
-bleu: 100.00000000000004
-GPT-3: The force of spring will increase because the further the spring be pulls and the car goes down the hill.
+********************
 
+wo_m_t5_3b
+Personx adds ice and pours air into the container, so the temperature of water will decrease.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+Personx adds ice and pours air into the container, so the temperature of water will decrease.
 
-Base: If PersonX sits down [mask], the force of wind will decrease. ,  id :33_and
-Constraints: [['jump'], ['cliff'], ['gravity']]
-Sample continuation: jump off a cliff
+********************
 
-Training and inference format
-Input : The force of wind will decrease because personX sits down and <extra_id_0>. ; Constrants : [['jump'], ['cliff'], ['gravity']] ; Output : 
 
-Neuro: The force of wind will decrease because personX sits down and gravity jump cliff.
-Vanilla: The force of wind will decrease because personX sits down and personX jumps off the cliff.
-bleu: 65.52774596604358
-GPT-3: The force of wind will decrease because personX sits down and gravity affects him.
 
 
-*******************************
+If PersonX increases the surface area in contact [mask], the force of friction will decrease.  |   40_and
+sample conti: the wind blow sand against a rock
+lemmas: [['blow'], ['wind', 'rock', 'sand'], ['wind', 'rock', 'land'], ['wind', 'sand', 'land'], ['rock', 'sand', 'land']]
+**************************************************
 
+w_m_t5_3b
+Personx increases the surface area in contact and the wind blows the sand, so the force of friction will decrease.
 
-Base: If PersonX sits down [mask], the force of wind will decrease. ,  id :33_and_neg
-Constraints: [['jump'], ['cliff'], ['gravity'], ['no']]
-Sample continuation: jump off a cliff
+********************
 
-Training and inference format
-Input : The force of wind will decrease because personX sits down and <extra_id_0>. ; Constrants : [['jump'], ['cliff'], ['gravity'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+Personx increases the surface area in contact and the wind blows the sand, so the force of friction will decrease.
 
-Neuro: The force of wind will decrease because personX sits down and no gravity cliff jumps.
-Vanilla: The force of wind will decrease because personX sits down and personX does not jump off the cliff.
-bleu: 56.40506309999413
-GPT-3: The force of wind will decrease because personX sits down and gravity pulls personX down.
+********************
 
+wo_m_t5_3b
+Personx increases the surface area in contact and blows sand and rock, so the force of friction will decrease.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+Personx increases the surface area in contact and blows sand and rock into the wind, so the force of friction will decrease.
 
-Base: If you turns the faucet to the left [mask], the force of water will decrease. ,  id :34_and
-Constraints: [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land']]
-Sample continuation: the wind blow sand against a rock
+********************
 
-Training and inference format
-Input : The force of water will decrease because you turns the faucet to the left and <extra_id_0>. ; Constrants : [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land']] ; Output : 
 
-Neuro: The force of water will decrease because you turns the faucet to the left and the wind blows sand on the land.
-Vanilla: The force of water will decrease because you turns the faucet to the left and the wind blows sand on the land.
-bleu: 100.00000000000004
-GPT-3: The force of water will decrease because you turns the faucet to the left and blow the sand with the rock on the land.
 
 
-*******************************
+If PersonX sails into the wind [mask], the speed of boat will increase.  |   15_and_neg
+sample conti: changes course
+lemmas: [['course'], ['ship'], ['change'], ['no']]
+**************************************************
 
+w_m_t5_3b
+Personx sails into the wind and he does not change the course of the ship, so the speed of boat will increase.
 
-Base: If you turns the faucet to the left [mask], the force of water will decrease. ,  id :34_and_neg
-Constraints: [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land'], ['no']]
-Sample continuation: the wind blow sand against a rock
+********************
 
-Training and inference format
-Input : The force of water will decrease because you turns the faucet to the left and <extra_id_0>. ; Constrants : [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+Personx sails into the wind and he does not change the course of the ship, so the speed of boat will increase.
 
-Neuro: The force of water will decrease because you turns the faucet to the left and no sand blows on the land.
-Vanilla: The force of water will decrease because you turns the faucet to the left and there is no sand blowing in the wind.
-bleu: 64.77458735605244
-GPT-3: The force of water will decrease because you turns the faucet to the left and no wind blow on the sand.
+********************
 
+wo_m_t5_3b
+Personx sails into the wind and he does not change the course of the ship, so the speed of boat will increase.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+Personx sails into the wind and he does not change the course of the ship, so the speed of boat will increase.
 
-Base: If the ice be allows to melt [mask], the force of ice will decrease. ,  id :36_and
-Constraints: [['heat'], ['gas', 'container'], ['gas', 'heat'], ['container', 'heat']]
-Sample continuation: heat a gas in a container
+********************
 
-Training and inference format
-Input : The force of ice will decrease because the ice be allows to melt and <extra_id_0>. ; Constrants : [['heat'], ['gas', 'container'], ['gas', 'heat'], ['container', 'heat']] ; Output : 
 
-Neuro: The force of ice will decrease because the ice be allows to melt and heat the container.
-Vanilla: The force of ice will decrease because the ice be allows to melt and heat the container.
-bleu: 100.00000000000004
-GPT-3: The force of ice will decrease because the ice be allows to melt and the container of the gas is heated.
 
 
-*******************************
+If PersonX sits down [mask], the force of wind will decrease.  |   33_and
+sample conti: jump off a cliff
+lemmas: [['jump'], ['cliff'], ['gravity']]
+**************************************************
 
+w_m_t5_3b
+Personx sits down and he jumps off the cliff gravity, so the force of wind will decrease.
 
-Base: If the ice be allows to melt [mask], the force of ice will decrease. ,  id :36_and_neg
-Constraints: [['heat'], ['gas', 'container'], ['gas', 'heat'], ['container', 'heat'], ['no']]
-Sample continuation: heat a gas in a container
+********************
 
-Training and inference format
-Input : The force of ice will decrease because the ice be allows to melt and <extra_id_0>. ; Constrants : [['heat'], ['gas', 'container'], ['gas', 'heat'], ['container', 'heat'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+Personx sits down and he jumps off the cliff, so the force of wind will decrease.
 
-Neuro: The force of ice will decrease because the ice be allows to melt and there is no heat in the container.
-Vanilla: The force of ice will decrease because the ice be allows to melt and there is no heat in the container.
-bleu: 100.00000000000004
-GPT-3: The force of ice will decrease because the ice be allows to melt and gas heat up the container.
+********************
 
+wo_m_t5_3b
+Personx sits down and he jumps off a cliff with gravity, so the force of wind will decrease.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+Personx sits down and personX jumps off the cliff, so the force of wind will decrease.
 
-Base: If the ice be allows to melt [mask], the force of ice will decrease. ,  id :37_and
-Constraints: [['increase'], ['engine', 'car acceleration', 'speed'], ['engine', 'car acceleration', 'car'], ['engine', 'speed', 'car'], ['car acceleration', 'speed', 'car']]
-Sample continuation: the car's engine increase speed
+********************
 
-Training and inference format
-Input : The force of ice will decrease because the ice be allows to melt and <extra_id_0>. ; Constrants : [['increase'], ['engine', 'car acceleration', 'speed'], ['engine', 'car acceleration', 'car'], ['engine', 'speed', 'car'], ['car acceleration', 'speed', 'car']] ; Output : 
 
-Neuro: The force of ice will decrease because the ice be allows to melt and the engine of the car increases the speed.
-Vanilla: The force of ice will decrease because the ice be allows to melt and the car accelerates.
-bleu: 65.77581574808877
-GPT-3: The force of ice will decrease because the ice be allows to melt and car engine speed increases acceleration.
 
 
-*******************************
+If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.  |   0_and_neg
+sample conti: open a window
+lemmas: [['open'], ['window'], ['air'], ['no']]
+**************************************************
 
+w_m_t5_3b
+Personx burns a piece of paper on the water's surface and no open air window is opened, so the temperature of water will increase.
 
-Base: If the ice be allows to melt [mask], the force of ice will decrease. ,  id :37_and_neg
-Constraints: [['increase'], ['engine', 'car acceleration', 'speed'], ['engine', 'car acceleration', 'car'], ['engine', 'speed', 'car'], ['car acceleration', 'speed', 'car'], ['no']]
-Sample continuation: the car's engine increase speed
+********************
 
-Training and inference format
-Input : The force of ice will decrease because the ice be allows to melt and <extra_id_0>. ; Constrants : [['increase'], ['engine', 'car acceleration', 'speed'], ['engine', 'car acceleration', 'car'], ['engine', 'speed', 'car'], ['car acceleration', 'speed', 'car'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+Personx burns a piece of paper on the water's surface and does not open the window, so the temperature of water will increase.
 
-Neuro: The force of ice will decrease because the ice be allows to melt and engine does not increase the speed of the car.
-Vanilla: The force of ice will decrease because the ice be allows to melt and the engine does not increase the speed of the car.
-bleu: 89.12370636325416
-GPT-3: The force of ice will decrease because the ice be allows to melt and the engine of the car increases the speed.
+********************
 
+wo_m_t5_3b
+Personx burns a piece of paper on the water's surface and air does not open the window, so the temperature of water will increase.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+Personx burns a piece of paper on the water's surface and there is no open air or window, so the temperature of water will increase.
 
-Base: If PersonX compresses the spring [mask], the force of spring will decrease. ,  id :39_and
-Constraints: [['increase'], ['engine', 'car acceleration', 'speed'], ['engine', 'car acceleration', 'car'], ['engine', 'speed', 'car'], ['car acceleration', 'speed', 'car']]
-Sample continuation: the car's engine increase speed
+********************
 
-Training and inference format
-Input : The force of spring will decrease because personX compresses the spring and <extra_id_0>. ; Constrants : [['increase'], ['engine', 'car acceleration', 'speed'], ['engine', 'car acceleration', 'car'], ['engine', 'speed', 'car'], ['car acceleration', 'speed', 'car']] ; Output : 
 
-Neuro: The force of spring will decrease because personX compresses the spring and the engine of the car increases the speed.
-Vanilla: The force of spring will decrease because personX compresses the spring and the car accelerates.
-bleu: 62.16386018951441
-GPT-3: The force of spring will decrease because personX compresses the spring and increases the engine speed of the car.
 
 
-*******************************
+If PersonX compresses the spring [mask], the force of spring will decrease.  |   39_and_neg
+sample conti: the car's engine increase speed
+lemmas: [['increase'], ['engine', 'car', 'car acceleration'], ['engine', 'car', 'speed'], ['engine', 'car acceleration', 'speed'], ['car', 'car acceleration', 'speed'], ['no']]
+**************************************************
 
+w_m_t5_3b
+Personx compresses the spring and car does not increase the engine speed, so the force of spring will decrease.
 
-Base: If PersonX compresses the spring [mask], the force of spring will decrease. ,  id :39_and_neg
-Constraints: [['increase'], ['engine', 'car acceleration', 'speed'], ['engine', 'car acceleration', 'car'], ['engine', 'speed', 'car'], ['car acceleration', 'speed', 'car'], ['no']]
-Sample continuation: the car's engine increase speed
+********************
 
-Training and inference format
-Input : The force of spring will decrease because personX compresses the spring and <extra_id_0>. ; Constrants : [['increase'], ['engine', 'car acceleration', 'speed'], ['engine', 'car acceleration', 'car'], ['engine', 'speed', 'car'], ['car acceleration', 'speed', 'car'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+Personx compresses the spring and there is no increase in the engine speed, so the force of spring will decrease.
 
-Neuro: The force of spring will decrease because personX compresses the spring and engine does not increase the speed of the car.
-Vanilla: The force of spring will decrease because personX compresses the spring and does not increase the engine's speed.
-bleu: 64.42271946445945
-GPT-3: The force of spring will decrease because personX compresses the spring and no engine increases the car's acceleration or speed.
+********************
 
+wo_m_t5_3b
+Personx compresses the spring and engine does not increase the speed, so the force of spring will decrease.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+Personx compresses the spring and he does not increase the engine speed, so the force of spring will decrease.
 
-Base: If PersonX increases the surface area in contact [mask], the force of friction will decrease. ,  id :40_and
-Constraints: [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land']]
-Sample continuation: the wind blow sand against a rock
+********************
 
-Training and inference format
-Input : The force of friction will decrease because personX increases the surface area in contact and <extra_id_0>. ; Constrants : [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land']] ; Output : 
 
-Neuro: The force of friction will decrease because personX increases the surface area in contact and blows sand on the rock.
-Vanilla: The force of friction will decrease because personX increases the surface area in contact and blows sand on the rock.
-bleu: 100.00000000000004
-GPT-3: The force of friction will decrease because personX increases the surface area in contact and he blows the sand on the rock.
 
 
-*******************************
+If PersonX sits down [mask], the force of wind will decrease.  |   33_and_neg
+sample conti: jump off a cliff
+lemmas: [['jump'], ['cliff'], ['gravity'], ['no']]
+**************************************************
 
+w_m_t5_3b
+Personx sits down and no gravity cliff jumps, so the force of wind will decrease.
 
-Base: If PersonX increases the surface area in contact [mask], the force of friction will decrease. ,  id :40_and_neg
-Constraints: [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land'], ['no']]
-Sample continuation: the wind blow sand against a rock
+********************
 
-Training and inference format
-Input : The force of friction will decrease because personX increases the surface area in contact and <extra_id_0>. ; Constrants : [['blow'], ['sand', 'rock', 'wind'], ['sand', 'rock', 'land'], ['sand', 'wind', 'land'], ['rock', 'wind', 'land'], ['no']] ; Output : 
+w_m_t5_3b_vanilla
+Personx sits down and he does not jump off the cliff, so the force of wind will decrease.
 
-Neuro: The force of friction will decrease because personX increases the surface area in contact and no sand blow on the rock.
-Vanilla: The force of friction will decrease because personX increases the surface area in contact and does not blow sand on the rock.
-bleu: 75.82783485358482
-GPT-3: The force of friction will decrease because personX increases the surface area in contact and blows sand on the rocks.
+********************
 
+wo_m_t5_3b
+Personx sits down and he does not jump cliff or gravity, so the force of wind will decrease.
 
-*******************************
+********************
 
+wo_m_t5_3b_vanilla
+Personx sits down and he does not jump off the cliff, so the force of wind will decrease.
 
+********************
 
-Ratio of exach match: 0.04375
+
+
+
+If PersonX increases the surface area in contact [mask], the force of friction will decrease.  |   40_and_neg
+sample conti: the wind blow sand against a rock
+lemmas: [['blow'], ['wind', 'rock', 'sand'], ['wind', 'rock', 'land'], ['wind', 'sand', 'land'], ['rock', 'sand', 'land'], ['no']]
+**************************************************
+
+w_m_t5_3b
+Personx increases the surface area in contact and he does not blow sand or rock, so the force of friction will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx increases the surface area in contact and does not blow sand or rock, so the force of friction will decrease.
+
+********************
+
+wo_m_t5_3b
+Personx increases the surface area in contact and he does not blow sand or rock, so the force of friction will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx increases the surface area in contact and he does not blow sand or rock, so the force of friction will decrease.
+
+********************
+
+
+
+
+If PersonX jumps off a cliff [mask], the force of gravity will increase.  |   30_and_neg
+sample conti: increase the surface area in contact
+lemmas: [['increase'], ['area', 'contact', 'surface'], ['area', 'contact', 'friction'], ['area', 'surface', 'friction'], ['contact', 'surface', 'friction'], ['no']]
+**************************************************
+
+w_m_t5_3b
+Personx jumps off a cliff and friction does not increase, so the force of gravity will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx jumps off a cliff and there is no friction between the contact surfaces, so the force of gravity will increase.
+
+********************
+
+wo_m_t5_3b
+Personx jumps off a cliff and friction does not increase, so the force of gravity will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx jumps off a cliff and he does not increase the friction between the contact surfaces, so the force of gravity will increase.
+
+********************
+
+
+
+
+If a decrease in wind speed can be causes by a decrease in the atmospheric pressure [mask], the speed of wind will decrease.  |   23_and_neg
+sample conti: increase the amplitude of the sound wave
+lemmas: [['increase'], ['wave', 'sound'], ['wave', 'amplitude'], ['sound', 'amplitude'], ['no']]
+**************************************************
+
+w_m_t5_3b
+A decrease in wind speed can be causes by a decrease in the atmospheric pressure and no sound wave amplitude increase, so the speed of wind will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+A decrease in wind speed can be causes by a decrease in the atmospheric pressure and there is no increase in the sound amplitude, so the speed of wind will decrease.
+
+********************
+
+wo_m_t5_3b
+A decrease in wind speed can be causes by a decrease in the atmospheric pressure and the sound wave does not increase, so the speed of wind will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+A decrease in wind speed can be causes by a decrease in the atmospheric pressure and the sound wave does not increase, so the speed of wind will decrease.
+
+********************
+
+
+
+
+If you turns the faucet to the left [mask], the force of water will decrease.  |   34_and
+sample conti: the wind blow sand against a rock
+lemmas: [['blow'], ['wind', 'rock', 'sand'], ['wind', 'rock', 'land'], ['wind', 'sand', 'land'], ['rock', 'sand', 'land']]
+**************************************************
+
+w_m_t5_3b
+You turns the faucet to the left and the wind blows the sand, so the force of water will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+You turns the faucet to the left and the wind blows the sand, so the force of water will decrease.
+
+********************
+
+wo_m_t5_3b
+You turns the faucet to the left and the wind blows sand, so the force of water will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+You turns the faucet to the left and the wind blows sand on the rock, so the force of water will decrease.
+
+********************
+
+
+
+
+If the ice be allows to melt [mask], the force of ice will decrease.  |   36_and
+sample conti: heat a gas in a container
+lemmas: [['heat'], ['heat', 'gas'], ['heat', 'container'], ['gas', 'container']]
+**************************************************
+
+w_m_t5_3b
+The ice be allows to melt and heat the gas in the container, so the force of ice will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+The ice be allows to melt and heat the gas in the container, so the force of ice will decrease.
+
+********************
+
+wo_m_t5_3b
+The ice be allows to melt and heat the container with gas, so the force of ice will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+The ice be allows to melt and heat the container with gas, so the force of ice will decrease.
+
+********************
+
+
+
+
+If a decrease in wind speed can be causes by a decrease in the atmospheric pressure [mask], the speed of wind will decrease.  |   23_and
+sample conti: increase the amplitude of the sound wave
+lemmas: [['increase'], ['wave', 'sound'], ['wave', 'amplitude'], ['sound', 'amplitude']]
+**************************************************
+
+w_m_t5_3b
+A decrease in wind speed can be causes by a decrease in the atmospheric pressure and increase in the sound amplitude, so the speed of wind will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+A decrease in wind speed can be causes by a decrease in the atmospheric pressure and an increase in the sound amplitude, so the speed of wind will decrease.
+
+********************
+
+wo_m_t5_3b
+A decrease in wind speed can be causes by a decrease in the atmospheric pressure and the sound wave increases, so the speed of wind will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+A decrease in wind speed can be causes by a decrease in the atmospheric pressure and the sound wave amplitude increases, so the speed of wind will decrease.
+
+********************
+
+
+
+
+If PersonX adds ice [mask], the temperature of water will decrease.  |   2_and_neg
+sample conti: pour boiling water into a container
+lemmas: [['pour'], ['container', 'water', 'air'], ['container', 'water', 'boiling'], ['container', 'air', 'boiling'], ['water', 'air', 'boiling'], ['no']]
+**************************************************
+
+w_m_t5_3b
+Personx adds ice and no air pours into the container, so the temperature of water will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx adds ice and does not pour air into the container, so the temperature of water will decrease.
+
+********************
+
+wo_m_t5_3b
+Personx adds ice and he does not pour air into the container, so the temperature of water will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx adds ice and he does not pour air into the container, so the temperature of water will decrease.
+
+********************
+
+
+
+
+If PersonX cuts hair with scissors [mask], the length of hair will decrease.  |   9_and_neg
+sample conti: wear gloves
+lemmas: [['wear'], ['glove'], ['nails'], ['no']]
+**************************************************
+
+w_m_t5_3b
+Personx cuts hair with scissors and no nails wear gloves, so the length of hair will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx cuts hair with scissors and he does not wear a glove, so the length of hair will decrease.
+
+********************
+
+wo_m_t5_3b
+Personx cuts hair with scissors and does not wear gloves or nails, so the length of hair will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx cuts hair with scissors and does not wear nails or gloves, so the length of hair will decrease.
+
+********************
+
+
+
+
+If the ice be allows to melt [mask], the force of ice will decrease.  |   37_and
+sample conti: the car's engine increase speed
+lemmas: [['increase'], ['engine', 'car', 'car acceleration'], ['engine', 'car', 'speed'], ['engine', 'car acceleration', 'speed'], ['car', 'car acceleration', 'speed']]
+**************************************************
+
+w_m_t5_3b
+The ice be allows to melt and the engine increases the speed, so the force of ice will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+The ice be allows to melt and the engine increases the speed, so the force of ice will decrease.
+
+********************
+
+wo_m_t5_3b
+The ice be allows to melt and the engine increases the speed, so the force of ice will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+The ice be allows to melt and the engine accelerates the car, so the force of ice will decrease.
+
+********************
+
+
+
+
+If the ice be allows to melt [mask], the force of ice will decrease.  |   36_and_neg
+sample conti: heat a gas in a container
+lemmas: [['heat'], ['heat', 'gas'], ['heat', 'container'], ['gas', 'container'], ['no']]
+**************************************************
+
+w_m_t5_3b
+The ice be allows to melt and there is no heat in the container, so the force of ice will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+The ice be allows to melt and there is no gas in the container, so the force of ice will decrease.
+
+********************
+
+wo_m_t5_3b
+The ice be allows to melt and there is no heat in the container, so the force of ice will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+The ice be allows to melt and there is no heat in the container, so the force of ice will decrease.
+
+********************
+
+
+
+
+If PersonX increases the amplitude of the sound wave [mask], the speed of sound will increase.  |   19_and
+sample conti: the temperature rise
+lemmas: [['rise'], ['temperature'], ['rain']]
+**************************************************
+
+w_m_t5_3b
+Personx increases the amplitude of the sound wave and the temperature of the rain rises, so the speed of sound will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
+
+********************
+
+wo_m_t5_3b
+Personx increases the amplitude of the sound wave and the temperature of the rain rises, so the speed of sound will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
+
+********************
+
+
+
+
+If PersonX jumps off a cliff [mask], the force of gravity will increase.  |   30_and
+sample conti: increase the surface area in contact
+lemmas: [['increase'], ['area', 'contact', 'surface'], ['area', 'contact', 'friction'], ['area', 'surface', 'friction'], ['contact', 'surface', 'friction']]
+**************************************************
+
+w_m_t5_3b
+Personx jumps off a cliff and friction increases between the contact surfaces, so the force of gravity will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx jumps off a cliff and friction increases between the contact surfaces, so the force of gravity will increase.
+
+********************
+
+wo_m_t5_3b
+Personx jumps off a cliff and he increases the friction between the contact surfaces, so the force of gravity will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx jumps off a cliff and friction increases between the contact surfaces, so the force of gravity will increase.
+
+********************
+
+
+
+
+If the further the spring be pulls [mask], the force of spring will increase.  |   31_and_neg
+sample conti: the car go up a hill
+lemmas: [['go'], ['car', 'hill'], ['car', 'car acceleration'], ['hill', 'car acceleration'], ['no']]
+**************************************************
+
+w_m_t5_3b
+The further the spring be pulls and there is no car go up the hill, so the force of spring will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+The further the spring be pulls and the car does not go up the hill, so the force of spring will increase.
+
+********************
+
+wo_m_t5_3b
+The further the spring be pulls and the car does not go up the hill, so the force of spring will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+The further the spring be pulls and the car does not go up the hill, so the force of spring will increase.
+
+********************
+
+
+
+
