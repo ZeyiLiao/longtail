@@ -14,3 +14,4 @@ property_centric/
 test_tokenzier.py
 _old/
 _old_data/
+.gitignore

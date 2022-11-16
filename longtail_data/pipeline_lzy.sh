@@ -133,13 +133,17 @@ PYTHONPATH=.. python run_eval.py \
 
 
 
-python decode_pt.py --model_name 'gpt2-large' \
-  --output_file /home/zeyi/longtail/longtail_data/generated_data/property_centric/gpt2_w_m.csv \
+python decode_pt.py --model_name /home/zeyi/finetune/saved/lrgenerative_gpt2_large_wo_m_gpt2_16_11_2022_53a32dd2/checkpoints/pytorch_model.pkl \
+  --output_file /home/zeyi/longtail/longtail_data/generated_data/property_centric/wo_m_gpt2_large.csv \
   --constraint_file /home/zeyi/longtail/longtail_data/raw_data/property_centric/inflection_constraints_t5_infer.json \
+  --constraint_file_lemma /home/zeyi/longtail/longtail_data/raw_data/property_centric/lemma_constraints_t5_infer.json \
   --input_path /home/zeyi/longtail/longtail_data/raw_data/property_centric/inputs_t5_infer.csv \
-  --batch_size 32 --beam_size 20 --max_tgt_length 128 --min_tgt_length 5 \
+  --batch_size 8 --beam_size 10 --max_tgt_length 128 --min_tgt_length 5 \
   --ngram_size 3 --length_penalty 0.1 \
-  --prune_factor 500000 --beta 2 --early_stop 10
+  --prune_factor 500000 --beta 2 --early_stop 10 --n_obs 200
+
+
+
 
 
 

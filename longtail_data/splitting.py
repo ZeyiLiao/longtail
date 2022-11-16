@@ -7,7 +7,7 @@ from pathlib import Path
 import os
 
 
-from process_t5_format import process_format_w_m,process_format_wo_m
+from process_format import process_format_w_m_t5,process_format_wo_m_t5,process_format_wo_m_gpt2
 import jsonlines
 import argparse
 from tf_trainer_format import change_tf_trainer_format
@@ -40,13 +40,18 @@ def main(args):
         del constraints[_]
         del outputs[_]
 
+    # need to fix this messy code
+    
     assert '' not in outputs
     assert len(inputs) == len(constraints) == len(outputs)
-    if 'w_m' in args.data_type:
-        inputs,outputs = process_format_w_m(inputs,outputs)
-    elif 'wo_m' in args.data_type:
-        inputs,outputs = process_format_wo_m(inputs,outputs,original_mask='[mask].')
-    
+    if 'w_m_t5' in args.data_type:
+        inputs,outputs = process_format_w_m_t5(inputs,outputs)
+    elif 'wo_m_t5' in args.data_type:
+        inputs,outputs = process_format_wo_m_t5(inputs,outputs,original_mask='[mask].')
+    elif 'wo_m_gpt2' in args.data_type:
+        inputs,outputs = process_format_wo_m_gpt2(inputs,outputs)
+    else:
+        raise NotImplementedError
     train_count = int(len(inputs)*args.ratio)
     train_index = np.random.choice(len(inputs),train_count,replace=False)
 
@@ -122,6 +127,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='split gpt output into train_dev_test')
     parser.add_argument('--gpt_outputs_dir',default='/home/zeyi/longtail/longtail_data/for_finetune/property_centric')
     parser.add_argument('--ratio',default=0.7,help='Ratio of the datasets for training')
-    parser.add_argument('--data_type',default='wo_m_t5')
+    parser.add_argument('--data_type',default='wo_m_gpt2')
     args = parser.parse_args()
     main(args)

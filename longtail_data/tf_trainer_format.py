@@ -9,10 +9,13 @@ mask = '<extra_id_0>'
 random.seed(42)
 
 def format(input,con,output,data_type):
-    if 'w_m' in data_type:
+    if 'w_m_t5' in data_type:
         input_text = f'Constraint: {con} ; Input: {input} ; Output:'
-    elif 'wo_m' in data_type:
+    elif 'wo_m_t5' in data_type:
         input_text = f'Constraint: {con} ; Input: {input}'
+    elif 'wo_m_gpt2' in data_type:
+        input_text = f'Constraint: {con} ; Input: {input}'
+        output = input_text
     output_text = output
     tmp = dict()
     tmp['input'] = input_text
