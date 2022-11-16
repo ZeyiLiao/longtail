@@ -11,3 +11,6 @@ key.txt
 output_file/
 combine_results/
 property_centric/
+test_tokenzier.py
+_old/
+_old_data/
