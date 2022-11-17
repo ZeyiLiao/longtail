@@ -9,6 +9,7 @@ import copy
 import sacrebleu
 import argparse
 import glob
+from collections import defaultdict as ddict
 from get_data_utils import All_Data
 
 def back_conti_sent(sent, generation, mask = '<extra_id_0>'):
@@ -56,13 +57,45 @@ def main(args):
     all_data = All_Data()
 
 
-    need_index_1 = [2, 30, 34, 37, 39, 40]
-    need_index_2 = [0, 9, 15, 19, 23, 31, 33, 36]
-
-    need_index = list(set(need_index_1) | set(need_index_2))
 
 
     all_dict = all_data.all_data
+
+    # n_show = 20
+    # n_1 = 7
+    # n_2 = 10
+    # n_3 = 3
+    
+    # cons_dict = ddict(list)
+
+    # for key in all_dict.keys():
+    #     data = all_dict[key]
+    #     index = data['index']
+    #     id = data['id']
+
+    #     lemma_length = len(data['cons_lemma']) - 2 if 'neg' in id else len(data['cons_lemma']) - 1
+
+    #     if index not in cons_dict[lemma_length]:
+    #         cons_dict[lemma_length].append(index)
+
+    #     if len(cons_dict[1]) > n_1:
+    #         cons_dict[1] = cons_dict[1][:n_1]
+
+    #     if len(cons_dict[2]) > n_2:
+    #         cons_dict[2] = cons_dict[2][:n_2]
+
+    #     if len(cons_dict[3]) > n_3:
+    #         cons_dict[3] = cons_dict[3][:n_3]
+
+    #     if cons_dict[1] + cons_dict[2] + cons_dict[3] ==10:
+    #         break
+
+    # cons_dict = dict(cons_dict)
+    # needed_index =[cons_dict[key] for key in list(cons_dict.keys()) if key in [1,2,3]]
+    # needed_index = [b for a in needed_index for b in a]
+
+
+
 
     
     files = sorted(glob.glob(f'{args.dir}/*.csv'))
@@ -78,9 +111,11 @@ def main(args):
         with open(path) as f:
             reader = csv.reader(f)
             for line in reader:
+
                 generation_part, id = line[0],line[1]
                 tmp_dict[id] = generation_part
         name_dict[_] = tmp_dict
+
 
 
     id_all = set()
@@ -91,7 +126,18 @@ def main(args):
     for name in name_dict.keys():
         id_all = id_all & set(list(name_dict[name].keys()))
 
-    id_all = list(id_all)
+
+
+    id_all = sorted(list(id_all),key = lambda i : int(i.split('_')[0]))
+
+    nouns_length_dict = {}
+    
+    for id in id_all:
+        nouns_length_dict[id] = len(all_dict[id]['cons_lemma']) - 2 if 'neg' in id else len(all_dict[id]['cons_lemma']) - 1
+
+
+    id_all = sorted(list(id_all),key = lambda i : nouns_length_dict[i], reverse = True)
+
     o_path = f'{args.dir}/compare.txt'
     fo = open(o_path,'w')
 
@@ -102,8 +148,6 @@ def main(args):
 
         _ = all_dict[id]
         index = _['index']
-        if index not in need_index:
-            continue
         base = _['base']
         sample_conti = _['sample_cont']
         cons = _['cons_lemma']

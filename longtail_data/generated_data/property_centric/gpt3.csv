@@ -1,40 +1,100 @@
-personX opens the window to let the air in,0_and
-the window is open,0_and_neg
-his blood circulates faster,1_and
-does not have a cold blood,1_and_neg
-pours cold water into the container,2_and
-pours the water into a container,2_and_neg
-fossil fuel burns on the earth,4_and
-he does not burn fossil fuel,4_and_neg
-wears shoes,5_and
-does not wear shoes,5_and_neg
-personX lifts weight by muscle,6_and
-personX doesn't lift weight,6_and_neg
-lifted weights to muscles,7_and
+he open the window to let the air in,0_and
+he does not open the window to let the air flow,0_and_neg
+water,1_and
+does not have enough water in his blood,1_and_neg
+pours the water into a container,2_and
+pours the water into the container,2_and_neg
+he burns fossil fuel,4_and
+personX does not burn fossil fuel,4_and_neg
+he wears shoes,5_and
+does not wear shoe,5_and_neg
+personX lift a lot of weight,6_and
+personX doesn't lift any weight,6_and_neg
+lift the weight by muscle,7_and
 does not lift weights,7_and_neg
-sits in a chair,8_and
-sits on the chair,8_and_neg
-wears a glove,9_and
-he wears gloves,9_and_neg
-builds roads,10_and
-do not build the roads,10_and_neg
-stand still for a long time,11_and
-does not blink often,11_and_neg
+personX sits on the chair,8_and
+sit down on the chair,8_and_neg
+does not wear gloves,9_and
+does not wear gloves,9_and_neg
+he build the roads,10_and
+does not build roads,10_and_neg
+stand under the sun,11_and
+personX blinks less,11_and_neg
 the temperature rises due to the rain,14_and
-no air resistance,14_and_neg
-the temperature rises,17_and
+no rise in temperature or rain,14_and_neg
+the temperature rises due to the rain,17_and
 the temperature rises,17_and_neg
 decreases the amount of rocket fuel,18_and
-there is no decrease in the amount of rocket fuel,18_and_neg
+he decreases the amount of rocket fuel,18_and_neg
 the temperature rises,19_and
 the temperature rises,19_and_neg
-he walks towards the light source,20_and
-he is walking in the light source,20_and_neg
-sails the boat by the wind,21_and
+he is not upside down,20_and
+he does not walk to the light source,20_and_neg
+sails the boat in the wind,21_and
 sails the boat in the wind,21_and_neg
-plane increases the thrust,24_and
-no thrusters increase the speed of the roller coaster,24_and_neg
-add more fuel to the rocket,25_and
+engine increases the thrust,24_and
+passengers don't increase the plane's thrust,24_and_neg
+fuel is added to the rocket,25_and
 no fuel is added to the rocket,25_and_neg
-the temperature decreases due to the rain,26_and
-there is no rain,26_and_neg
+the temperature decreases because of the rain,26_and
+it rains outside,26_and_neg
+the plane waves increase the amplitude of sound,27_and
+no sound waves increase in amplitude,27_and_neg
+he increases the wave and sound of the bus,28_and
+the bus increases the wave and sound of the amplitude,28_and_neg
+increase the wave's amplitude,29_and
+the wave amplifies the sound,29_and_neg
+increases the surface area of contact,30_and
+no surface has more friction,30_and_neg
+car go up the hill,31_and
+car moves up the hill,31_and_neg
+goes down the hill by car acceleration,32_and
+goes up the hill in the car,32_and_neg
+gravity pulls personX down,33_and
+does not jump off the cliff,33_and_neg
+blow the rock to the sand,34_and
+no one blows the rock on the sand on the land,34_and_neg
+the engine of the car increases the speed and car acceleration,37_and
+car's engine increases the car's speed and car acceleration,37_and_neg
+he holds the ice with his body,38_and
+does not hold the object close to his body,38_and_neg
+increases the speed of the car,39_and
+increases the speed of the car by acceleration,39_and_neg
+the wind blows harder,41_and
+the wind blows harder,41_and_neg
+no nuclear power plants are used,42_and
+people stop using nuclear power,42_and_neg
+the height of the water decreases,43_and
+decreases the height of the water,43_and_neg
+waste the resource on earth,45_and
+there is no waste of resources on the earth,45_and_neg
+move the speed of the object,46_and
+moves the object quickly,46_and_neg
+uses the light bulb,48_and
+uses the light bulb,48_and_neg
+waste less resources on Earth,50_and
+waste less resources on Earth,50_and_neg
+blow the water,53_and
+no wind blows,53_and_neg
+someone pushes against the wind,54_and
+no one push it,54_and_neg
+personX plugs in the electricity for the appliance,55_and
+no appliance is plugged in,55_and_neg
+the water pressure decreases the diameter of the pipe,56_and
+the water pressure in the pipe decreases,56_and_neg
+avoid contact with an irritant,58_and
+avoids contact with an irritant on the skin,58_and_neg
+the price of alcohol increase,59_and
+the price of the alcohol increase,59_and_neg
+drinks alcohol in moderation,60_and
+he drinks more alcohol in a shorter period of time,60_and_neg
+eat a balanced diet,61_and
+doesn't eat a balanced diet,61_and_neg
+the temperature of the water increases,62_and
+no increase of temperature water,62_and_neg
+eats a high calorie diet,64_and
+he does not eat a balanced diet,64_and_neg
+narrow the eye pupil,65_and
+the eye's pupil is narrow,65_and_neg
+tears the paper,66_and
+he does not tear the paper,66_and_neg
