@@ -1,41 +1,3 @@
-If PersonX adds ice [mask], the temperature of water will decrease.  |   2_and
-sample conti: pour boiling water into a container
-lemmas: [['pour'], ['water', 'container', 'air'], ['water', 'container', 'boiling'], ['water', 'air', 'boiling'], ['container', 'air', 'boiling']]
-**************************************************
-
-gpt3
-Personx adds ice and pours the water into a container, so the temperature of water will decrease.
-
-********************
-
-w_m_t5_3b
-Personx adds ice and pour air into the container, so the temperature of water will decrease.
-
-********************
-
-w_m_t5_3b_vanilla
-Personx adds ice and pour the air into the container, so the temperature of water will decrease.
-
-********************
-
-wo_m_gpt2_large
-Personx adds ice and pour water on the container, so the temperature of water will decrease.
-
-********************
-
-wo_m_t5_3b
-Personx adds ice and pours air into the container, so the temperature of water will decrease.
-
-********************
-
-wo_m_t5_3b_vanilla
-Personx adds ice and pours air into the container of boiling water, so the temperature of water will decrease.
-
-********************
-
-
-
-
 If PersonX adds ice [mask], the temperature of water will decrease.  |   2_and_neg
 sample conti: pour boiling water into a container
 lemmas: [['pour'], ['water', 'container', 'air'], ['water', 'container', 'boiling'], ['water', 'air', 'boiling'], ['container', 'air', 'boiling'], ['no']]
@@ -74,38 +36,38 @@ Personx adds ice and no water boils in the container, so the temperature of wate
 
 
 
-If PersonX jumps off a cliff [mask], the force of gravity will increase.  |   30_and
-sample conti: increase the surface area in contact
-lemmas: [['increase'], ['surface', 'friction', 'area'], ['surface', 'friction', 'contact'], ['surface', 'area', 'contact'], ['friction', 'area', 'contact']]
+If PersonX adds ice [mask], the temperature of water will decrease.  |   2_and
+sample conti: pour boiling water into a container
+lemmas: [['pour'], ['water', 'container', 'air'], ['water', 'container', 'boiling'], ['water', 'air', 'boiling'], ['container', 'air', 'boiling']]
 **************************************************
 
 gpt3
-Personx jumps off a cliff and increases the surface area of contact, so the force of gravity will increase.
+Personx adds ice and pours the water into a container, so the temperature of water will decrease.
 
 ********************
 
 w_m_t5_3b
-Personx jumps off a cliff and increases the surface area of the contact with the friction, so the force of gravity will increase.
+Personx adds ice and pour air into the container, so the temperature of water will decrease.
 
 ********************
 
 w_m_t5_3b_vanilla
-Personx jumps off a cliff and increases the surface area of the friction, so the force of gravity will increase.
+Personx adds ice and pour the air into the container, so the temperature of water will decrease.
 
 ********************
 
 wo_m_gpt2_large
-Personx jumps off a cliff and increases the surface area of the friction, so the force of gravity will increase.
+Personx adds ice and pour water on the container, so the temperature of water will decrease.
 
 ********************
 
 wo_m_t5_3b
-Personx jumps off a cliff and personX increases the surface area of contact, so the force of gravity will increase.
+Personx adds ice and pours air into the container, so the temperature of water will decrease.
 
 ********************
 
 wo_m_t5_3b_vanilla
-Personx jumps off a cliff and personX increases the surface area of the contact, so the force of gravity will increase.
+Personx adds ice and pours air into the container of boiling water, so the temperature of water will decrease.
 
 ********************
 
@@ -150,38 +112,38 @@ Personx jumps off a cliff and does not increase the surface area of the contact,
 
 
 
-If you turns the faucet to the left [mask], the force of water will decrease.  |   34_and
-sample conti: the wind blow sand against a rock
-lemmas: [['blow'], ['rock', 'sand', 'land'], ['rock', 'sand', 'wind'], ['rock', 'land', 'wind'], ['sand', 'land', 'wind']]
+If PersonX jumps off a cliff [mask], the force of gravity will increase.  |   30_and
+sample conti: increase the surface area in contact
+lemmas: [['increase'], ['surface', 'friction', 'area'], ['surface', 'friction', 'contact'], ['surface', 'area', 'contact'], ['friction', 'area', 'contact']]
 **************************************************
 
 gpt3
-You turns the faucet to the left and blow the rock to the sand, so the force of water will decrease.
+Personx jumps off a cliff and increases the surface area of contact, so the force of gravity will increase.
 
 ********************
 
 w_m_t5_3b
-You turns the faucet to the left and the wind blows on the rock, so the force of water will decrease.
+Personx jumps off a cliff and increases the surface area of the contact with the friction, so the force of gravity will increase.
 
 ********************
 
 w_m_t5_3b_vanilla
-You turns the faucet to the left and the wind blows on the rock, so the force of water will decrease.
+Personx jumps off a cliff and increases the surface area of the friction, so the force of gravity will increase.
 
 ********************
 
 wo_m_gpt2_large
-You turns the faucet to the left and the sand blows against the wind, so the force of water will decrease.
+Personx jumps off a cliff and increases the surface area of the friction, so the force of gravity will increase.
 
 ********************
 
 wo_m_t5_3b
-You turns the faucet to the left and blows sand into the wind, so the force of water will decrease.
+Personx jumps off a cliff and personX increases the surface area of contact, so the force of gravity will increase.
 
 ********************
 
 wo_m_t5_3b_vanilla
-You turns the faucet to the left and blow the rock in the wind, so the force of water will decrease.
+Personx jumps off a cliff and personX increases the surface area of the contact, so the force of gravity will increase.
 
 ********************
 
@@ -226,38 +188,38 @@ You turns the faucet to the left and no wind blows on the rock, so the force of 
 
 
 
-If the ice be allows to melt [mask], the force of ice will decrease.  |   37_and_neg
-sample conti: the car's engine increase speed
-lemmas: [['increase'], ['engine', 'car', 'speed'], ['engine', 'car', 'car acceleration'], ['engine', 'speed', 'car acceleration'], ['car', 'speed', 'car acceleration'], ['no']]
+If you turns the faucet to the left [mask], the force of water will decrease.  |   34_and
+sample conti: the wind blow sand against a rock
+lemmas: [['blow'], ['rock', 'sand', 'land'], ['rock', 'sand', 'wind'], ['rock', 'land', 'wind'], ['sand', 'land', 'wind']]
 **************************************************
 
 gpt3
-The ice be allows to melt and car's engine increases the car's speed and car acceleration, so the force of ice will decrease.
+You turns the faucet to the left and blow the rock to the sand, so the force of water will decrease.
 
 ********************
 
 w_m_t5_3b
-The ice be allows to melt and car's engine and speed does not increase, so the force of ice will decrease.
+You turns the faucet to the left and the wind blows on the rock, so the force of water will decrease.
 
 ********************
 
 w_m_t5_3b_vanilla
-The ice be allows to melt and no engine or car accelerates, so the force of ice will decrease.
+You turns the faucet to the left and the wind blows on the rock, so the force of water will decrease.
 
 ********************
 
 wo_m_gpt2_large
-The ice be allows to melt and no engine increases its speed, so the force of ice will decrease.
+You turns the faucet to the left and the sand blows against the wind, so the force of water will decrease.
 
 ********************
 
 wo_m_t5_3b
-The ice be allows to melt and no engine, car, speed increases, so the force of ice will decrease.
+You turns the faucet to the left and blows sand into the wind, so the force of water will decrease.
 
 ********************
 
 wo_m_t5_3b_vanilla
-The ice be allows to melt and no increase in engine, car, speed, so the force of ice will decrease.
+You turns the faucet to the left and blow the rock in the wind, so the force of water will decrease.
 
 ********************
 
@@ -296,6 +258,44 @@ The ice be allows to melt and the car speed increases, so the force of ice will 
 
 wo_m_t5_3b_vanilla
 The ice be allows to melt and car's speed increases, so the force of ice will decrease.
+
+********************
+
+
+
+
+If the ice be allows to melt [mask], the force of ice will decrease.  |   37_and_neg
+sample conti: the car's engine increase speed
+lemmas: [['increase'], ['engine', 'car', 'speed'], ['engine', 'car', 'car acceleration'], ['engine', 'speed', 'car acceleration'], ['car', 'speed', 'car acceleration'], ['no']]
+**************************************************
+
+gpt3
+The ice be allows to melt and car's engine increases the car's speed and car acceleration, so the force of ice will decrease.
+
+********************
+
+w_m_t5_3b
+The ice be allows to melt and car's engine and speed does not increase, so the force of ice will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+The ice be allows to melt and no engine or car accelerates, so the force of ice will decrease.
+
+********************
+
+wo_m_gpt2_large
+The ice be allows to melt and no engine increases its speed, so the force of ice will decrease.
+
+********************
+
+wo_m_t5_3b
+The ice be allows to melt and no engine, car, speed increases, so the force of ice will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+The ice be allows to melt and no increase in engine, car, speed, so the force of ice will decrease.
 
 ********************
 
@@ -454,44 +454,6 @@ The car goes up a hill and no wind blows on the rock, so the force of car accele
 
 
 
-If PersonX stays in the sun [mask], the temperature of human body will decrease.  |   4_and
-sample conti: burn fossil fuels
-lemmas: [['burn'], ['fossil', 'fuel'], ['fossil', 'earth'], ['fuel', 'earth']]
-**************************************************
-
-gpt3
-Personx stays in the sun and he burns fossil fuel, so the temperature of human body will decrease.
-
-********************
-
-w_m_t5_3b
-Personx stays in the sun and he does not burn the fossil on the earth, so the temperature of human body will decrease.
-
-********************
-
-w_m_t5_3b_vanilla
-Personx stays in the sun and he does not burn the fossil on the earth, so the temperature of human body will decrease.
-
-********************
-
-wo_m_gpt2_large
-Personx stays in the sun and personX burns fossil on the earth, so the temperature of human body will decrease.
-
-********************
-
-wo_m_t5_3b
-Personx stays in the sun and personX does not burn the fossil on the earth, so the temperature of human body will decrease.
-
-********************
-
-wo_m_t5_3b_vanilla
-Personx stays in the sun and personX does not burn fossil on the earth, so the temperature of human body will decrease.
-
-********************
-
-
-
-
 If PersonX stays in the sun [mask], the temperature of human body will decrease.  |   4_and_neg
 sample conti: burn fossil fuels
 lemmas: [['burn'], ['fossil', 'fuel'], ['fossil', 'earth'], ['fuel', 'earth'], ['no']]
@@ -524,6 +486,44 @@ Personx stays in the sun and does not burn fossil on the earth, so the temperatu
 
 wo_m_t5_3b_vanilla
 Personx stays in the sun and does not burn fossil on the earth, so the temperature of human body will decrease.
+
+********************
+
+
+
+
+If PersonX stays in the sun [mask], the temperature of human body will decrease.  |   4_and
+sample conti: burn fossil fuels
+lemmas: [['burn'], ['fossil', 'fuel'], ['fossil', 'earth'], ['fuel', 'earth']]
+**************************************************
+
+gpt3
+Personx stays in the sun and he burns fossil fuel, so the temperature of human body will decrease.
+
+********************
+
+w_m_t5_3b
+Personx stays in the sun and he does not burn the fossil on the earth, so the temperature of human body will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx stays in the sun and he does not burn the fossil on the earth, so the temperature of human body will decrease.
+
+********************
+
+wo_m_gpt2_large
+Personx stays in the sun and personX burns fossil on the earth, so the temperature of human body will decrease.
+
+********************
+
+wo_m_t5_3b
+Personx stays in the sun and personX does not burn the fossil on the earth, so the temperature of human body will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx stays in the sun and personX does not burn fossil on the earth, so the temperature of human body will decrease.
 
 ********************
 
@@ -682,44 +682,6 @@ The pilot decreases the throttle and no sound or wave increases in amplitude, so
 
 
 
-If PersonX approaches a stop [mask], the speed of bus will decrease.  |   28_and
-sample conti: increase the amplitude of the sound wave
-lemmas: [['increase'], ['wave', 'sound'], ['wave', 'amplitude'], ['sound', 'amplitude']]
-**************************************************
-
-gpt3
-Personx approaches a stop and he increases the wave and sound of the bus, so the speed of bus will decrease.
-
-********************
-
-w_m_t5_3b
-Personx approaches a stop and the amplitude of the wave increases, so the speed of bus will decrease.
-
-********************
-
-w_m_t5_3b_vanilla
-Personx approaches a stop and the amplitude of the wave increases, so the speed of bus will decrease.
-
-********************
-
-wo_m_gpt2_large
-Personx approaches a stop and the wave increases in amplitude, so the speed of bus will decrease.
-
-********************
-
-wo_m_t5_3b
-Personx approaches a stop and the sound of the wave increases, so the speed of bus will decrease.
-
-********************
-
-wo_m_t5_3b_vanilla
-Personx approaches a stop and the sound of the wave increases, so the speed of bus will decrease.
-
-********************
-
-
-
-
 If PersonX approaches a stop [mask], the speed of bus will decrease.  |   28_and_neg
 sample conti: increase the amplitude of the sound wave
 lemmas: [['increase'], ['wave', 'sound'], ['wave', 'amplitude'], ['sound', 'amplitude'], ['no']]
@@ -758,38 +720,38 @@ Personx approaches a stop and no sound or wave increases in amplitude, so the sp
 
 
 
-If PersonX fires the bullet into the air [mask], the speed of bullet will decrease.  |   29_and_neg
+If PersonX approaches a stop [mask], the speed of bus will decrease.  |   28_and
 sample conti: increase the amplitude of the sound wave
-lemmas: [['increase'], ['wave', 'sound'], ['wave', 'amplitude'], ['sound', 'amplitude'], ['no']]
+lemmas: [['increase'], ['wave', 'sound'], ['wave', 'amplitude'], ['sound', 'amplitude']]
 **************************************************
 
 gpt3
-Personx fires the bullet into the air and the wave amplifies the sound, so the speed of bullet will decrease.
+Personx approaches a stop and he increases the wave and sound of the bus, so the speed of bus will decrease.
 
 ********************
 
 w_m_t5_3b
-Personx fires the bullet into the air and no sound or wave increases, so the speed of bullet will decrease.
+Personx approaches a stop and the amplitude of the wave increases, so the speed of bus will decrease.
 
 ********************
 
 w_m_t5_3b_vanilla
-Personx fires the bullet into the air and no sound or wave increases, so the speed of bullet will decrease.
+Personx approaches a stop and the amplitude of the wave increases, so the speed of bus will decrease.
 
 ********************
 
 wo_m_gpt2_large
-Personx fires the bullet into the air and does not increase the wave or sound, so the speed of bullet will decrease.
+Personx approaches a stop and the wave increases in amplitude, so the speed of bus will decrease.
 
 ********************
 
 wo_m_t5_3b
-Personx fires the bullet into the air and no sound or wave increases in amplitude, so the speed of bullet will decrease.
+Personx approaches a stop and the sound of the wave increases, so the speed of bus will decrease.
 
 ********************
 
 wo_m_t5_3b_vanilla
-Personx fires the bullet into the air and no sound or wave increases in amplitude, so the speed of bullet will decrease.
+Personx approaches a stop and the sound of the wave increases, so the speed of bus will decrease.
 
 ********************
 
@@ -828,6 +790,44 @@ Personx fires the bullet into the air and the sound of the wave increases, so th
 
 wo_m_t5_3b_vanilla
 Personx fires the bullet into the air and the amplitude of the sound increases, so the speed of bullet will decrease.
+
+********************
+
+
+
+
+If PersonX fires the bullet into the air [mask], the speed of bullet will decrease.  |   29_and_neg
+sample conti: increase the amplitude of the sound wave
+lemmas: [['increase'], ['wave', 'sound'], ['wave', 'amplitude'], ['sound', 'amplitude'], ['no']]
+**************************************************
+
+gpt3
+Personx fires the bullet into the air and the wave amplifies the sound, so the speed of bullet will decrease.
+
+********************
+
+w_m_t5_3b
+Personx fires the bullet into the air and no sound or wave increases, so the speed of bullet will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx fires the bullet into the air and no sound or wave increases, so the speed of bullet will decrease.
+
+********************
+
+wo_m_gpt2_large
+Personx fires the bullet into the air and does not increase the wave or sound, so the speed of bullet will decrease.
+
+********************
+
+wo_m_t5_3b
+Personx fires the bullet into the air and no sound or wave increases in amplitude, so the speed of bullet will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx fires the bullet into the air and no sound or wave increases in amplitude, so the speed of bullet will decrease.
 
 ********************
 
@@ -986,44 +986,6 @@ Personx squeezes a tube of toothpaste and go up the hill by car, so the force of
 
 
 
-If PersonX puts ice on a burn [mask], the force of heat will decrease.  |   38_and
-sample conti: hold the object closer to the body. two
-lemmas: [['hold'], ['speed', 'body'], ['speed', 'object'], ['body', 'object']]
-**************************************************
-
-gpt3
-Personx puts ice on a burn and he holds the ice with his body, so the force of heat will decrease.
-
-********************
-
-w_m_t5_3b
-Personx puts ice on a burn and he does not hold the speed of the object, so the force of heat will decrease.
-
-********************
-
-w_m_t5_3b_vanilla
-Personx puts ice on a burn and he holds the object at a slower speed, so the force of heat will decrease.
-
-********************
-
-wo_m_gpt2_large
-Personx puts ice on a burn and hold the speed of object at a steady speed, so the force of heat will decrease.
-
-********************
-
-wo_m_t5_3b
-Personx puts ice on a burn and he holds a speedy object, so the force of heat will decrease.
-
-********************
-
-wo_m_t5_3b_vanilla
-Personx puts ice on a burn and hold the object with speed, so the force of heat will decrease.
-
-********************
-
-
-
-
 If PersonX puts ice on a burn [mask], the force of heat will decrease.  |   38_and_neg
 sample conti: hold the object closer to the body. two
 lemmas: [['hold'], ['speed', 'body'], ['speed', 'object'], ['body', 'object'], ['no']]
@@ -1062,38 +1024,38 @@ Personx puts ice on a burn and he does not hold the object with speed, so the fo
 
 
 
-If PersonX stays up all night [mask], the power of moon will increase.  |   43_and
-sample conti: the height of the water decrease
-lemmas: [['decrease'], ['height', 'water'], ['height', 'water pressure'], ['water', 'water pressure']]
+If PersonX puts ice on a burn [mask], the force of heat will decrease.  |   38_and
+sample conti: hold the object closer to the body. two
+lemmas: [['hold'], ['speed', 'body'], ['speed', 'object'], ['body', 'object']]
 **************************************************
 
 gpt3
-Personx stays up all night and the height of the water decreases, so the power of moon will increase.
+Personx puts ice on a burn and he holds the ice with his body, so the force of heat will decrease.
 
 ********************
 
 w_m_t5_3b
-Personx stays up all night and the water pressure decreases, so the power of moon will increase.
+Personx puts ice on a burn and he does not hold the speed of the object, so the force of heat will decrease.
 
 ********************
 
 w_m_t5_3b_vanilla
-Personx stays up all night and water pressure decreases, so the power of moon will increase.
+Personx puts ice on a burn and he holds the object at a slower speed, so the force of heat will decrease.
 
 ********************
 
 wo_m_gpt2_large
-Personx stays up all night and personX decreases the height of the water, so the power of moon will increase.
+Personx puts ice on a burn and hold the speed of object at a steady speed, so the force of heat will decrease.
 
 ********************
 
 wo_m_t5_3b
-Personx stays up all night and decreases the height of water, so the power of moon will increase.
+Personx puts ice on a burn and he holds a speedy object, so the force of heat will decrease.
 
 ********************
 
 wo_m_t5_3b_vanilla
-Personx stays up all night and personX decreases the height of water, so the power of moon will increase.
+Personx puts ice on a burn and hold the object with speed, so the force of heat will decrease.
 
 ********************
 
@@ -1132,6 +1094,44 @@ Personx stays up all night and does not decrease the height of water, so the pow
 
 wo_m_t5_3b_vanilla
 Personx stays up all night and no water decreases in height, so the power of moon will increase.
+
+********************
+
+
+
+
+If PersonX stays up all night [mask], the power of moon will increase.  |   43_and
+sample conti: the height of the water decrease
+lemmas: [['decrease'], ['height', 'water'], ['height', 'water pressure'], ['water', 'water pressure']]
+**************************************************
+
+gpt3
+Personx stays up all night and the height of the water decreases, so the power of moon will increase.
+
+********************
+
+w_m_t5_3b
+Personx stays up all night and the water pressure decreases, so the power of moon will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx stays up all night and water pressure decreases, so the power of moon will increase.
+
+********************
+
+wo_m_gpt2_large
+Personx stays up all night and personX decreases the height of the water, so the power of moon will increase.
+
+********************
+
+wo_m_t5_3b
+Personx stays up all night and decreases the height of water, so the power of moon will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx stays up all night and personX decreases the height of water, so the power of moon will increase.
 
 ********************
 
@@ -1290,44 +1290,6 @@ Personx separates each action by a comma and avoids irritant contact with the sk
 
 
 
-If PersonX not drinks for a long time [mask], the resistance of alcohol will increase.  |   59_and
-sample conti: increase the price of a good
-lemmas: [['increase'], ['price', 'good'], ['price', 'increase: solid'], ['good', 'increase: solid']]
-**************************************************
-
-gpt3
-Personx not drinks for a long time and the price of alcohol increase, so the resistance of alcohol will increase.
-
-********************
-
-w_m_t5_3b
-Personx not drinks for a long time and the price of the good increases, so the resistance of alcohol will increase.
-
-********************
-
-w_m_t5_3b_vanilla
-Personx not drinks for a long time and the price of the good increases, so the resistance of alcohol will increase.
-
-********************
-
-wo_m_gpt2_large
-Personx not drinks for a long time and he increases the price of good, so the resistance of alcohol will increase.
-
-********************
-
-wo_m_t5_3b
-Personx not drinks for a long time and increases the price of the good, so the resistance of alcohol will increase.
-
-********************
-
-wo_m_t5_3b_vanilla
-Personx not drinks for a long time and personX increases the price of the good, so the resistance of alcohol will increase.
-
-********************
-
-
-
-
 If PersonX not drinks for a long time [mask], the resistance of alcohol will increase.  |   59_and_neg
 sample conti: increase the price of a good
 lemmas: [['increase'], ['price', 'good'], ['price', 'increase: solid'], ['good', 'increase: solid'], ['no']]
@@ -1366,38 +1328,38 @@ Personx not drinks for a long time and does not increase the price of the good, 
 
 
 
-If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.  |   0_and_neg
-sample conti: open a window
-lemmas: [['open'], ['window'], ['air'], ['no']]
+If PersonX not drinks for a long time [mask], the resistance of alcohol will increase.  |   59_and
+sample conti: increase the price of a good
+lemmas: [['increase'], ['price', 'good'], ['price', 'increase: solid'], ['good', 'increase: solid']]
 **************************************************
 
 gpt3
-Personx burns a piece of paper on the water's surface and he does not open the window to let the air flow, so the temperature of water will increase.
+Personx not drinks for a long time and the price of alcohol increase, so the resistance of alcohol will increase.
 
 ********************
 
 w_m_t5_3b
-Personx burns a piece of paper on the water's surface and no air or window is opened, so the temperature of water will increase.
+Personx not drinks for a long time and the price of the good increases, so the resistance of alcohol will increase.
 
 ********************
 
 w_m_t5_3b_vanilla
-Personx burns a piece of paper on the water's surface and does not open the window or the air, so the temperature of water will increase.
+Personx not drinks for a long time and the price of the good increases, so the resistance of alcohol will increase.
 
 ********************
 
 wo_m_gpt2_large
-Personx burns a piece of paper on the water's surface and no air is open or windowed, so the temperature of water will increase.
+Personx not drinks for a long time and he increases the price of good, so the resistance of alcohol will increase.
 
 ********************
 
 wo_m_t5_3b
-Personx burns a piece of paper on the water's surface and no air opens the window, so the temperature of water will increase.
+Personx not drinks for a long time and increases the price of the good, so the resistance of alcohol will increase.
 
 ********************
 
 wo_m_t5_3b_vanilla
-Personx burns a piece of paper on the water's surface and does not open the window to the air, so the temperature of water will increase.
+Personx not drinks for a long time and personX increases the price of the good, so the resistance of alcohol will increase.
 
 ********************
 
@@ -1442,38 +1404,38 @@ Personx burns a piece of paper on the water's surface and personX opens the wind
 
 
 
-If PersonX drinks hot liquids [mask], the temperature of human body will increase.  |   1_and
-sample conti: drink cold water
-lemmas: [['drink'], ['water'], ['blood']]
+If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.  |   0_and_neg
+sample conti: open a window
+lemmas: [['open'], ['window'], ['air'], ['no']]
 **************************************************
 
 gpt3
-Personx drinks hot liquids and water, so the temperature of human body will increase.
+Personx burns a piece of paper on the water's surface and he does not open the window to let the air flow, so the temperature of water will increase.
 
 ********************
 
 w_m_t5_3b
-Personx drinks hot liquids and he drinks water and blood, so the temperature of human body will increase.
+Personx burns a piece of paper on the water's surface and no air or window is opened, so the temperature of water will increase.
 
 ********************
 
 w_m_t5_3b_vanilla
-Personx drinks hot liquids and he does not drink water or blood, so the temperature of human body will increase.
+Personx burns a piece of paper on the water's surface and does not open the window or the air, so the temperature of water will increase.
 
 ********************
 
 wo_m_gpt2_large
-Personx drinks hot liquids and drink blood while water evaporates, so the temperature of human body will increase.
+Personx burns a piece of paper on the water's surface and no air is open or windowed, so the temperature of water will increase.
 
 ********************
 
 wo_m_t5_3b
-Personx drinks hot liquids and personX drinks water in the blood, so the temperature of human body will increase.
+Personx burns a piece of paper on the water's surface and no air opens the window, so the temperature of water will increase.
 
 ********************
 
 wo_m_t5_3b_vanilla
-Personx drinks hot liquids and personX drinks water with blood in it, so the temperature of human body will increase.
+Personx burns a piece of paper on the water's surface and does not open the window to the air, so the temperature of water will increase.
 
 ********************
 
@@ -1512,6 +1474,44 @@ Personx drinks hot liquids and does not drink water or blood, so the temperature
 
 wo_m_t5_3b_vanilla
 Personx drinks hot liquids and does not drink water or blood, so the temperature of human body will increase.
+
+********************
+
+
+
+
+If PersonX drinks hot liquids [mask], the temperature of human body will increase.  |   1_and
+sample conti: drink cold water
+lemmas: [['drink'], ['water'], ['blood']]
+**************************************************
+
+gpt3
+Personx drinks hot liquids and water, so the temperature of human body will increase.
+
+********************
+
+w_m_t5_3b
+Personx drinks hot liquids and he drinks water and blood, so the temperature of human body will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx drinks hot liquids and he does not drink water or blood, so the temperature of human body will increase.
+
+********************
+
+wo_m_gpt2_large
+Personx drinks hot liquids and drink blood while water evaporates, so the temperature of human body will increase.
+
+********************
+
+wo_m_t5_3b
+Personx drinks hot liquids and personX drinks water in the blood, so the temperature of human body will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx drinks hot liquids and personX drinks water with blood in it, so the temperature of human body will increase.
 
 ********************
 
@@ -1670,44 +1670,6 @@ Stomach gets bigger and personX lift the weight by muscle, so the length of stom
 
 
 
-If PersonX fertilizes trees [mask], the length of trees will increase.  |   7_and_neg
-sample conti: lift a weight
-lemmas: [['lift'], ['weight'], ['muscle'], ['no']]
-**************************************************
-
-gpt3
-Personx fertilizes trees and does not lift weights, so the length of trees will increase.
-
-********************
-
-w_m_t5_3b
-Personx fertilizes trees and he no muscle to lift the weight, so the length of trees will increase.
-
-********************
-
-w_m_t5_3b_vanilla
-Personx fertilizes trees and does not lift the weight by muscle, so the length of trees will increase.
-
-********************
-
-wo_m_gpt2_large
-Personx fertilizes trees and no muscle or weight is lifted, so the length of trees will increase.
-
-********************
-
-wo_m_t5_3b
-Personx fertilizes trees and no muscle lifts the weight, so the length of trees will increase.
-
-********************
-
-wo_m_t5_3b_vanilla
-Personx fertilizes trees and does not lift the weight by muscle, so the length of trees will increase.
-
-********************
-
-
-
-
 If PersonX fertilizes trees [mask], the length of trees will increase.  |   7_and
 sample conti: lift a weight
 lemmas: [['lift'], ['weight'], ['muscle']]
@@ -1740,6 +1702,44 @@ Personx fertilizes trees and personX muscle up to lift the weight, so the length
 
 wo_m_t5_3b_vanilla
 Personx fertilizes trees and personX lifts the weight by muscle, so the length of trees will increase.
+
+********************
+
+
+
+
+If PersonX fertilizes trees [mask], the length of trees will increase.  |   7_and_neg
+sample conti: lift a weight
+lemmas: [['lift'], ['weight'], ['muscle'], ['no']]
+**************************************************
+
+gpt3
+Personx fertilizes trees and does not lift weights, so the length of trees will increase.
+
+********************
+
+w_m_t5_3b
+Personx fertilizes trees and he no muscle to lift the weight, so the length of trees will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx fertilizes trees and does not lift the weight by muscle, so the length of trees will increase.
+
+********************
+
+wo_m_gpt2_large
+Personx fertilizes trees and no muscle or weight is lifted, so the length of trees will increase.
+
+********************
+
+wo_m_t5_3b
+Personx fertilizes trees and no muscle lifts the weight, so the length of trees will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx fertilizes trees and does not lift the weight by muscle, so the length of trees will increase.
 
 ********************
 
@@ -1974,44 +1974,6 @@ Personx cuts hair with scissors and personX builds roads, so the length of hair 
 
 
 
-If PersonX uses waterproof mascara [mask], the length of eyelashes will decrease.  |   11_and_neg
-sample conti: the person stand up
-lemmas: [['stand'], ['person'], ['muscle'], ['no']]
-**************************************************
-
-gpt3
-Personx uses waterproof mascara and personX blinks less, so the length of eyelashes will decrease.
-
-********************
-
-w_m_t5_3b
-Personx uses waterproof mascara and no person muscles the eyelashes standing up, so the length of eyelashes will decrease.
-
-********************
-
-w_m_t5_3b_vanilla
-Personx uses waterproof mascara and he does not stand on his muscle, so the length of eyelashes will decrease.
-
-********************
-
-wo_m_gpt2_large
-Personx uses waterproof mascara and no muscle is used to stand up, so the length of eyelashes will decrease.
-
-********************
-
-wo_m_t5_3b
-Personx uses waterproof mascara and no muscle stands up for personX, so the length of eyelashes will decrease.
-
-********************
-
-wo_m_t5_3b_vanilla
-Personx uses waterproof mascara and does not stand on the muscle, so the length of eyelashes will decrease.
-
-********************
-
-
-
-
 If PersonX uses waterproof mascara [mask], the length of eyelashes will decrease.  |   11_and
 sample conti: the person stand up
 lemmas: [['stand'], ['person'], ['muscle']]
@@ -2044,6 +2006,44 @@ Personx uses waterproof mascara and personX does not use muscle when standing, s
 
 wo_m_t5_3b_vanilla
 Personx uses waterproof mascara and personX stands on the muscle, so the length of eyelashes will decrease.
+
+********************
+
+
+
+
+If PersonX uses waterproof mascara [mask], the length of eyelashes will decrease.  |   11_and_neg
+sample conti: the person stand up
+lemmas: [['stand'], ['person'], ['muscle'], ['no']]
+**************************************************
+
+gpt3
+Personx uses waterproof mascara and personX blinks less, so the length of eyelashes will decrease.
+
+********************
+
+w_m_t5_3b
+Personx uses waterproof mascara and no person muscles the eyelashes standing up, so the length of eyelashes will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx uses waterproof mascara and he does not stand on his muscle, so the length of eyelashes will decrease.
+
+********************
+
+wo_m_gpt2_large
+Personx uses waterproof mascara and no muscle is used to stand up, so the length of eyelashes will decrease.
+
+********************
+
+wo_m_t5_3b
+Personx uses waterproof mascara and no muscle stands up for personX, so the length of eyelashes will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx uses waterproof mascara and does not stand on the muscle, so the length of eyelashes will decrease.
 
 ********************
 
@@ -2126,44 +2126,6 @@ Car starts from rest and speed up uniformly and no rain rises in temperature, so
 
 
 
-If PersonX wind blows from the back [mask], the speed of ship will increase.  |   17_and_neg
-sample conti: the temperature rise
-lemmas: [['rise'], ['temperature'], ['rain'], ['no']]
-**************************************************
-
-gpt3
-Personx wind blows from the back and the temperature rises, so the speed of ship will increase.
-
-********************
-
-w_m_t5_3b
-Personx wind blows from the back and no rain rises in the temperature, so the speed of ship will increase.
-
-********************
-
-w_m_t5_3b_vanilla
-Personx wind blows from the back and no temperature rises, so the speed of ship will increase.
-
-********************
-
-wo_m_gpt2_large
-Personx wind blows from the back and no rain falls on the temperature of the rise, so the speed of ship will increase.
-
-********************
-
-wo_m_t5_3b
-Personx wind blows from the back and no rain rises in temperature, so the speed of ship will increase.
-
-********************
-
-wo_m_t5_3b_vanilla
-Personx wind blows from the back and no rain falls on the ship, so the speed of ship will increase.
-
-********************
-
-
-
-
 If PersonX wind blows from the back [mask], the speed of ship will increase.  |   17_and
 sample conti: the temperature rise
 lemmas: [['rise'], ['temperature'], ['rain']]
@@ -2202,38 +2164,38 @@ Personx wind blows from the back and the temperature rises because of the rain, 
 
 
 
-If PersonX increases the amplitude of the sound wave [mask], the speed of sound will increase.  |   19_and
+If PersonX wind blows from the back [mask], the speed of ship will increase.  |   17_and_neg
 sample conti: the temperature rise
-lemmas: [['rise'], ['temperature'], ['rain']]
+lemmas: [['rise'], ['temperature'], ['rain'], ['no']]
 **************************************************
 
 gpt3
-Personx increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
+Personx wind blows from the back and the temperature rises, so the speed of ship will increase.
 
 ********************
 
 w_m_t5_3b
-Personx increases the amplitude of the sound wave and the temperature of the rain rises, so the speed of sound will increase.
+Personx wind blows from the back and no rain rises in the temperature, so the speed of ship will increase.
 
 ********************
 
 w_m_t5_3b_vanilla
-Personx increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
+Personx wind blows from the back and no temperature rises, so the speed of ship will increase.
 
 ********************
 
 wo_m_gpt2_large
-Personx increases the amplitude of the sound wave and the rain falls on the temperature of the rise, so the speed of sound will increase.
+Personx wind blows from the back and no rain falls on the temperature of the rise, so the speed of ship will increase.
 
 ********************
 
 wo_m_t5_3b
-Personx increases the amplitude of the sound wave and the temperature rises in the rain, so the speed of sound will increase.
+Personx wind blows from the back and no rain rises in temperature, so the speed of ship will increase.
 
 ********************
 
 wo_m_t5_3b_vanilla
-Personx increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
+Personx wind blows from the back and no rain falls on the ship, so the speed of ship will increase.
 
 ********************
 
@@ -2272,6 +2234,44 @@ Personx increases the amplitude of the sound wave and no rain rises in temperatu
 
 wo_m_t5_3b_vanilla
 Personx increases the amplitude of the sound wave and does not increase the temperature by rain, so the speed of sound will increase.
+
+********************
+
+
+
+
+If PersonX increases the amplitude of the sound wave [mask], the speed of sound will increase.  |   19_and
+sample conti: the temperature rise
+lemmas: [['rise'], ['temperature'], ['rain']]
+**************************************************
+
+gpt3
+Personx increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
+
+********************
+
+w_m_t5_3b
+Personx increases the amplitude of the sound wave and the temperature of the rain rises, so the speed of sound will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
+
+********************
+
+wo_m_gpt2_large
+Personx increases the amplitude of the sound wave and the rain falls on the temperature of the rise, so the speed of sound will increase.
+
+********************
+
+wo_m_t5_3b
+Personx increases the amplitude of the sound wave and the temperature rises in the rain, so the speed of sound will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
 
 ********************
 
@@ -2354,44 +2354,6 @@ Personx applies the front brake and does not walk in the light source, so the sp
 
 
 
-If PersonX applies the breaks [mask], the speed of car will decrease.  |   21_and
-sample conti: sail into the wind
-lemmas: [['sail'], ['boat'], ['wind']]
-**************************************************
-
-gpt3
-Personx applies the breaks and sails the boat in the wind, so the speed of car will decrease.
-
-********************
-
-w_m_t5_3b
-Personx applies the breaks and he does not sail the boat against the wind, so the speed of car will decrease.
-
-********************
-
-w_m_t5_3b_vanilla
-Personx applies the breaks and sails against the wind, so the speed of car will decrease.
-
-********************
-
-wo_m_gpt2_large
-Personx applies the breaks and the boat sails against the wind, so the speed of car will decrease.
-
-********************
-
-wo_m_t5_3b
-Personx applies the breaks and sails against the wind in the boat, so the speed of car will decrease.
-
-********************
-
-wo_m_t5_3b_vanilla
-Personx applies the breaks and sails against the wind in the boat, so the speed of car will decrease.
-
-********************
-
-
-
-
 If PersonX applies the breaks [mask], the speed of car will decrease.  |   21_and_neg
 sample conti: sail into the wind
 lemmas: [['sail'], ['boat'], ['wind'], ['no']]
@@ -2430,38 +2392,38 @@ Personx applies the breaks and no wind sails the boat, so the speed of car will 
 
 
 
-If brake pads activates [mask], the speed of roller coaster will decrease.  |   24_and_neg
-sample conti: increase thrust
-lemmas: [['increase'], ['plane'], ['thrust'], ['no']]
+If PersonX applies the breaks [mask], the speed of car will decrease.  |   21_and
+sample conti: sail into the wind
+lemmas: [['sail'], ['boat'], ['wind']]
 **************************************************
 
 gpt3
-Brake pads activates and passengers don't increase the plane's thrust, so the speed of roller coaster will decrease.
+Personx applies the breaks and sails the boat in the wind, so the speed of car will decrease.
 
 ********************
 
 w_m_t5_3b
-Brake pads activates and no plane increases the thrust, so the speed of roller coaster will decrease.
+Personx applies the breaks and he does not sail the boat against the wind, so the speed of car will decrease.
 
 ********************
 
 w_m_t5_3b_vanilla
-Brake pads activates and no plane increases the thrust, so the speed of roller coaster will decrease.
+Personx applies the breaks and sails against the wind, so the speed of car will decrease.
 
 ********************
 
 wo_m_gpt2_large
-Brake pads activates and the plane of thrust does not increase, so the speed of roller coaster will decrease.
+Personx applies the breaks and the boat sails against the wind, so the speed of car will decrease.
 
 ********************
 
 wo_m_t5_3b
-Brake pads activates and no plane thrust increases, so the speed of roller coaster will decrease.
+Personx applies the breaks and sails against the wind in the boat, so the speed of car will decrease.
 
 ********************
 
 wo_m_t5_3b_vanilla
-Brake pads activates and no plane thrust increases, so the speed of roller coaster will decrease.
+Personx applies the breaks and sails against the wind in the boat, so the speed of car will decrease.
 
 ********************
 
@@ -2506,38 +2468,38 @@ Brake pads activates and the plane's thrust increases, so the speed of roller co
 
 
 
-If brake pads activates [mask], the speed of roller coaster will decrease.  |   25_and
-sample conti: add more fuel
-lemmas: [['add'], ['rocket'], ['fuel']]
+If brake pads activates [mask], the speed of roller coaster will decrease.  |   24_and_neg
+sample conti: increase thrust
+lemmas: [['increase'], ['plane'], ['thrust'], ['no']]
 **************************************************
 
 gpt3
-Brake pads activates and fuel is added to the rocket, so the speed of roller coaster will decrease.
+Brake pads activates and passengers don't increase the plane's thrust, so the speed of roller coaster will decrease.
 
 ********************
 
 w_m_t5_3b
-Brake pads activates and fuel is added to the rocket, so the speed of roller coaster will decrease.
+Brake pads activates and no plane increases the thrust, so the speed of roller coaster will decrease.
 
 ********************
 
 w_m_t5_3b_vanilla
-Brake pads activates and fuel is added to the rocket, so the speed of roller coaster will decrease.
+Brake pads activates and no plane increases the thrust, so the speed of roller coaster will decrease.
 
 ********************
 
 wo_m_gpt2_large
-Brake pads activates and fuel is added to the rocket, so the speed of roller coaster will decrease.
+Brake pads activates and the plane of thrust does not increase, so the speed of roller coaster will decrease.
 
 ********************
 
 wo_m_t5_3b
-Brake pads activates and fuel is added to the rocket, so the speed of roller coaster will decrease.
+Brake pads activates and no plane thrust increases, so the speed of roller coaster will decrease.
 
 ********************
 
 wo_m_t5_3b_vanilla
-Brake pads activates and fuel is added to the rocket, so the speed of roller coaster will decrease.
+Brake pads activates and no plane thrust increases, so the speed of roller coaster will decrease.
 
 ********************
 
@@ -2582,38 +2544,38 @@ Brake pads activates and no fuel is added to the rocket, so the speed of roller 
 
 
 
-If PersonX turns the fan off [mask], the speed of fan will decrease.  |   26_and_neg
-sample conti: the temperature decrease
-lemmas: [['decrease'], ['temperature'], ['rain'], ['no']]
+If brake pads activates [mask], the speed of roller coaster will decrease.  |   25_and
+sample conti: add more fuel
+lemmas: [['add'], ['rocket'], ['fuel']]
 **************************************************
 
 gpt3
-Personx turns the fan off and it rains outside, so the speed of fan will decrease.
+Brake pads activates and fuel is added to the rocket, so the speed of roller coaster will decrease.
 
 ********************
 
 w_m_t5_3b
-Personx turns the fan off and no rain decreases the temperature, so the speed of fan will decrease.
+Brake pads activates and fuel is added to the rocket, so the speed of roller coaster will decrease.
 
 ********************
 
 w_m_t5_3b_vanilla
-Personx turns the fan off and no rain decreases the temperature, so the speed of fan will decrease.
+Brake pads activates and fuel is added to the rocket, so the speed of roller coaster will decrease.
 
 ********************
 
 wo_m_gpt2_large
-Personx turns the fan off and no rain falls on the temperature, so the speed of fan will decrease.
+Brake pads activates and fuel is added to the rocket, so the speed of roller coaster will decrease.
 
 ********************
 
 wo_m_t5_3b
-Personx turns the fan off and no rain decreases the temperature, so the speed of fan will decrease.
+Brake pads activates and fuel is added to the rocket, so the speed of roller coaster will decrease.
 
 ********************
 
 wo_m_t5_3b_vanilla
-Personx turns the fan off and no rain decreases the temperature, so the speed of fan will decrease.
+Brake pads activates and fuel is added to the rocket, so the speed of roller coaster will decrease.
 
 ********************
 
@@ -2658,38 +2620,38 @@ Personx turns the fan off and decreases the temperature by rain, so the speed of
 
 
 
-If PersonX sits down [mask], the force of wind will decrease.  |   33_and
-sample conti: jump off a cliff
-lemmas: [['jump'], ['cliff'], ['gravity']]
+If PersonX turns the fan off [mask], the speed of fan will decrease.  |   26_and_neg
+sample conti: the temperature decrease
+lemmas: [['decrease'], ['temperature'], ['rain'], ['no']]
 **************************************************
 
 gpt3
-Personx sits down and gravity pulls personX down, so the force of wind will decrease.
+Personx turns the fan off and it rains outside, so the speed of fan will decrease.
 
 ********************
 
 w_m_t5_3b
-Personx sits down and he does not jump off the gravity cliff, so the force of wind will decrease.
+Personx turns the fan off and no rain decreases the temperature, so the speed of fan will decrease.
 
 ********************
 
 w_m_t5_3b_vanilla
-Personx sits down and he does not jump off the cliff, so the force of wind will decrease.
+Personx turns the fan off and no rain decreases the temperature, so the speed of fan will decrease.
 
 ********************
 
 wo_m_gpt2_large
-Personx sits down and the gravity of cliff jumps increases, so the force of wind will decrease.
+Personx turns the fan off and no rain falls on the temperature, so the speed of fan will decrease.
 
 ********************
 
 wo_m_t5_3b
-Personx sits down and jumps off the cliff into the gravity, so the force of wind will decrease.
+Personx turns the fan off and no rain decreases the temperature, so the speed of fan will decrease.
 
 ********************
 
 wo_m_t5_3b_vanilla
-Personx sits down and jumps off the cliff, so the force of wind will decrease.
+Personx turns the fan off and no rain decreases the temperature, so the speed of fan will decrease.
 
 ********************
 
@@ -2728,6 +2690,44 @@ Personx sits down and no gravity cliff jumps, so the force of wind will decrease
 
 wo_m_t5_3b_vanilla
 Personx sits down and he does not jump off the cliff, so the force of wind will decrease.
+
+********************
+
+
+
+
+If PersonX sits down [mask], the force of wind will decrease.  |   33_and
+sample conti: jump off a cliff
+lemmas: [['jump'], ['cliff'], ['gravity']]
+**************************************************
+
+gpt3
+Personx sits down and gravity pulls personX down, so the force of wind will decrease.
+
+********************
+
+w_m_t5_3b
+Personx sits down and he does not jump off the gravity cliff, so the force of wind will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx sits down and he does not jump off the cliff, so the force of wind will decrease.
+
+********************
+
+wo_m_gpt2_large
+Personx sits down and the gravity of cliff jumps increases, so the force of wind will decrease.
+
+********************
+
+wo_m_t5_3b
+Personx sits down and jumps off the cliff into the gravity, so the force of wind will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx sits down and jumps off the cliff, so the force of wind will decrease.
 
 ********************
 
@@ -2810,44 +2810,6 @@ The wind blows harder and stop using the nuclear power, so the power of water wi
 
 
 
-If PersonX adds more fuel [mask], the power of fire will increase.  |   45_and
-sample conti: waste resources
-lemmas: [['waste'], ['resource'], ['earth']]
-**************************************************
-
-gpt3
-Personx adds more fuel and waste the resource on earth, so the power of fire will increase.
-
-********************
-
-w_m_t5_3b
-Personx adds more fuel and waste less resource on the earth, so the power of fire will increase.
-
-********************
-
-w_m_t5_3b_vanilla
-Personx adds more fuel and waste less resource on the earth, so the power of fire will increase.
-
-********************
-
-wo_m_gpt2_large
-Personx adds more fuel and earth resources waste in the fire, so the power of fire will increase.
-
-********************
-
-wo_m_t5_3b
-Personx adds more fuel and wastes more resource on the earth, so the power of fire will increase.
-
-********************
-
-wo_m_t5_3b_vanilla
-Personx adds more fuel and waste more resource on the earth, so the power of fire will increase.
-
-********************
-
-
-
-
 If PersonX adds more fuel [mask], the power of fire will increase.  |   45_and_neg
 sample conti: waste resources
 lemmas: [['waste'], ['resource'], ['earth'], ['no']]
@@ -2886,38 +2848,38 @@ Personx adds more fuel and does not waste any resource on the earth, so the powe
 
 
 
-If PersonX keeps the battery clean [mask], the power of battery will increase.  |   46_and
-sample conti: an object move uphill
-lemmas: [['move'], ['speed'], ['object']]
+If PersonX adds more fuel [mask], the power of fire will increase.  |   45_and
+sample conti: waste resources
+lemmas: [['waste'], ['resource'], ['earth']]
 **************************************************
 
 gpt3
-Personx keeps the battery clean and move the speed of the object, so the power of battery will increase.
+Personx adds more fuel and waste the resource on earth, so the power of fire will increase.
 
 ********************
 
 w_m_t5_3b
-Personx keeps the battery clean and he does not move the speed of the object, so the power of battery will increase.
+Personx adds more fuel and waste less resource on the earth, so the power of fire will increase.
 
 ********************
 
 w_m_t5_3b_vanilla
-Personx keeps the battery clean and he does not move the object at high speed, so the power of battery will increase.
+Personx adds more fuel and waste less resource on the earth, so the power of fire will increase.
 
 ********************
 
 wo_m_gpt2_large
-Personx keeps the battery clean and he does not move the speed of object, so the power of battery will increase.
+Personx adds more fuel and earth resources waste in the fire, so the power of fire will increase.
 
 ********************
 
 wo_m_t5_3b
-Personx keeps the battery clean and personX moves at a fast speed with an object, so the power of battery will increase.
+Personx adds more fuel and wastes more resource on the earth, so the power of fire will increase.
 
 ********************
 
 wo_m_t5_3b_vanilla
-Personx keeps the battery clean and personX does not move at high speed, so the power of battery will increase.
+Personx adds more fuel and waste more resource on the earth, so the power of fire will increase.
 
 ********************
 
@@ -2956,6 +2918,44 @@ Personx keeps the battery clean and no speedy object moves, so the power of batt
 
 wo_m_t5_3b_vanilla
 Personx keeps the battery clean and does not move the object at high speed, so the power of battery will increase.
+
+********************
+
+
+
+
+If PersonX keeps the battery clean [mask], the power of battery will increase.  |   46_and
+sample conti: an object move uphill
+lemmas: [['move'], ['speed'], ['object']]
+**************************************************
+
+gpt3
+Personx keeps the battery clean and move the speed of the object, so the power of battery will increase.
+
+********************
+
+w_m_t5_3b
+Personx keeps the battery clean and he does not move the speed of the object, so the power of battery will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx keeps the battery clean and he does not move the object at high speed, so the power of battery will increase.
+
+********************
+
+wo_m_gpt2_large
+Personx keeps the battery clean and he does not move the speed of object, so the power of battery will increase.
+
+********************
+
+wo_m_t5_3b
+Personx keeps the battery clean and personX moves at a fast speed with an object, so the power of battery will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx keeps the battery clean and personX does not move at high speed, so the power of battery will increase.
 
 ********************
 
@@ -3038,44 +3038,6 @@ Personx plugs in an appliance and does not use a light bulb, so the power of ele
 
 
 
-If PersonX community organizes [mask], the power of people will increase.  |   50_and
-sample conti: waste resources
-lemmas: [['waste'], ['resource'], ['earth']]
-**************************************************
-
-gpt3
-Personx community organizes and waste less resources on Earth, so the power of people will increase.
-
-********************
-
-w_m_t5_3b
-Personx community organizes and reduce the waste and resource on the earth, so the power of people will increase.
-
-********************
-
-w_m_t5_3b_vanilla
-Personx community organizes and reduces the waste on the earth, so the power of people will increase.
-
-********************
-
-wo_m_gpt2_large
-Personx community organizes and wastes earth resources in the waste, so the power of people will increase.
-
-********************
-
-wo_m_t5_3b
-Personx community organizes and waste the resource on the earth, so the power of people will increase.
-
-********************
-
-wo_m_t5_3b_vanilla
-Personx community organizes and waste the resource on the earth, so the power of people will increase.
-
-********************
-
-
-
-
 If PersonX community organizes [mask], the power of people will increase.  |   50_and_neg
 sample conti: waste resources
 lemmas: [['waste'], ['resource'], ['earth'], ['no']]
@@ -3114,38 +3076,38 @@ Personx community organizes and no waste is created on the earth, so the power o
 
 
 
-If the wind can decreases in power if the temperature decrease [mask], the power of wind will decrease.  |   53_and_neg
-sample conti: the wind blow harder
-lemmas: [['blow'], ['water'], ['wind'], ['no']]
+If PersonX community organizes [mask], the power of people will increase.  |   50_and
+sample conti: waste resources
+lemmas: [['waste'], ['resource'], ['earth']]
 **************************************************
 
 gpt3
-The wind can decreases in power if the temperature decrease and no wind blows, so the power of wind will decrease.
+Personx community organizes and waste less resources on Earth, so the power of people will increase.
 
 ********************
 
 w_m_t5_3b
-The wind can decreases in power if the temperature decrease and no water blows in the wind, so the power of wind will decrease.
+Personx community organizes and reduce the waste and resource on the earth, so the power of people will increase.
 
 ********************
 
 w_m_t5_3b_vanilla
-The wind can decreases in power if the temperature decrease and no water blows in the wind, so the power of wind will decrease.
+Personx community organizes and reduces the waste on the earth, so the power of people will increase.
 
 ********************
 
 wo_m_gpt2_large
-The wind can decreases in power if the temperature decrease and no water blow on the wind, so the power of wind will decrease.
+Personx community organizes and wastes earth resources in the waste, so the power of people will increase.
 
 ********************
 
 wo_m_t5_3b
-The wind can decreases in power if the temperature decrease and no water blows in the wind, so the power of wind will decrease.
+Personx community organizes and waste the resource on the earth, so the power of people will increase.
 
 ********************
 
 wo_m_t5_3b_vanilla
-The wind can decreases in power if the temperature decrease and no water blows in the wind, so the power of wind will decrease.
+Personx community organizes and waste the resource on the earth, so the power of people will increase.
 
 ********************
 
@@ -3190,38 +3152,38 @@ The wind can decreases in power if the temperature decrease and blow the water i
 
 
 
-If the wind can decreases in power if the temperature decrease [mask], the power of wind will decrease.  |   54_and
-sample conti: someone push you from behind
-lemmas: [['push'], ['speed'], ['someone']]
+If the wind can decreases in power if the temperature decrease [mask], the power of wind will decrease.  |   53_and_neg
+sample conti: the wind blow harder
+lemmas: [['blow'], ['water'], ['wind'], ['no']]
 **************************************************
 
 gpt3
-The wind can decreases in power if the temperature decrease and someone pushes against the wind, so the power of wind will decrease.
+The wind can decreases in power if the temperature decrease and no wind blows, so the power of wind will decrease.
 
 ********************
 
 w_m_t5_3b
-The wind can decreases in power if the temperature decrease and someone pushes the speed of the wind, so the power of wind will decrease.
+The wind can decreases in power if the temperature decrease and no water blows in the wind, so the power of wind will decrease.
 
 ********************
 
 w_m_t5_3b_vanilla
-The wind can decreases in power if the temperature decrease and someone pushes the speed of the wind, so the power of wind will decrease.
+The wind can decreases in power if the temperature decrease and no water blows in the wind, so the power of wind will decrease.
 
 ********************
 
 wo_m_gpt2_large
-The wind can decreases in power if the temperature decrease and someone push the speed of wind up, so the power of wind will decrease.
+The wind can decreases in power if the temperature decrease and no water blow on the wind, so the power of wind will decrease.
 
 ********************
 
 wo_m_t5_3b
-The wind can decreases in power if the temperature decrease and the speed of someone pushes the wind, so the power of wind will decrease.
+The wind can decreases in power if the temperature decrease and no water blows in the wind, so the power of wind will decrease.
 
 ********************
 
 wo_m_t5_3b_vanilla
-The wind can decreases in power if the temperature decrease and someone pushes the speed of the wind, so the power of wind will decrease.
+The wind can decreases in power if the temperature decrease and no water blows in the wind, so the power of wind will decrease.
 
 ********************
 
@@ -3260,6 +3222,44 @@ The wind can decreases in power if the temperature decrease and speed of someone
 
 wo_m_t5_3b_vanilla
 The wind can decreases in power if the temperature decrease and no one pushes the speed of the person, so the power of wind will decrease.
+
+********************
+
+
+
+
+If the wind can decreases in power if the temperature decrease [mask], the power of wind will decrease.  |   54_and
+sample conti: someone push you from behind
+lemmas: [['push'], ['speed'], ['someone']]
+**************************************************
+
+gpt3
+The wind can decreases in power if the temperature decrease and someone pushes against the wind, so the power of wind will decrease.
+
+********************
+
+w_m_t5_3b
+The wind can decreases in power if the temperature decrease and someone pushes the speed of the wind, so the power of wind will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+The wind can decreases in power if the temperature decrease and someone pushes the speed of the wind, so the power of wind will decrease.
+
+********************
+
+wo_m_gpt2_large
+The wind can decreases in power if the temperature decrease and someone push the speed of wind up, so the power of wind will decrease.
+
+********************
+
+wo_m_t5_3b
+The wind can decreases in power if the temperature decrease and the speed of someone pushes the wind, so the power of wind will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+The wind can decreases in power if the temperature decrease and someone pushes the speed of the wind, so the power of wind will decrease.
 
 ********************
 
@@ -3570,44 +3570,6 @@ Personx lives in a polluted area and does not increase the temperature of the wa
 
 
 
-If PersonX takes off clothing [mask], the resistance of load will decrease.  |   64_and_neg
-sample conti: eat a balanced diet
-lemmas: [['eat'], ['immunity'], ['diet'], ['no']]
-**************************************************
-
-gpt3
-Personx takes off clothing and he does not eat a balanced diet, so the resistance of load will decrease.
-
-********************
-
-w_m_t5_3b
-Personx takes off clothing and eating no immunity diet, so the resistance of load will decrease.
-
-********************
-
-w_m_t5_3b_vanilla
-Personx takes off clothing and does not eat for immunity, so the resistance of load will decrease.
-
-********************
-
-wo_m_gpt2_large
-Personx takes off clothing and eats no immunities or diet, so the resistance of load will decrease.
-
-********************
-
-wo_m_t5_3b
-Personx takes off clothing and no immunity diet he eats, so the resistance of load will decrease.
-
-********************
-
-wo_m_t5_3b_vanilla
-Personx takes off clothing and does not eat the immunity-boosting diet, so the resistance of load will decrease.
-
-********************
-
-
-
-
 If PersonX takes off clothing [mask], the resistance of load will decrease.  |   64_and
 sample conti: eat a balanced diet
 lemmas: [['eat'], ['immunity'], ['diet']]
@@ -3646,38 +3608,38 @@ Personx takes off clothing and he eats an immune-boosting diet, so the resistanc
 
 
 
-If incorporates other exercises that work the triceps [mask], the width of triceps will increase.  |   65_and
-sample conti: narrow the eyes
-lemmas: [['narrow'], ['eye'], ['pupil']]
+If PersonX takes off clothing [mask], the resistance of load will decrease.  |   64_and_neg
+sample conti: eat a balanced diet
+lemmas: [['eat'], ['immunity'], ['diet'], ['no']]
 **************************************************
 
 gpt3
-Incorporates other exercises that work the triceps and narrow the eye pupil, so the width of triceps will increase.
+Personx takes off clothing and he does not eat a balanced diet, so the resistance of load will decrease.
 
 ********************
 
 w_m_t5_3b
-Incorporates other exercises that work the triceps and pupil of the eye narrows, so the width of triceps will increase.
+Personx takes off clothing and eating no immunity diet, so the resistance of load will decrease.
 
 ********************
 
 w_m_t5_3b_vanilla
-Incorporates other exercises that work the triceps and pupil of the eye narrows, so the width of triceps will increase.
+Personx takes off clothing and does not eat for immunity, so the resistance of load will decrease.
 
 ********************
 
 wo_m_gpt2_large
-Incorporates other exercises that work the triceps and narrows the pupil of the eye, so the width of triceps will increase.
+Personx takes off clothing and eats no immunities or diet, so the resistance of load will decrease.
 
 ********************
 
 wo_m_t5_3b
-Incorporates other exercises that work the triceps and narrows the pupil of the eye, so the width of triceps will increase.
+Personx takes off clothing and no immunity diet he eats, so the resistance of load will decrease.
 
 ********************
 
 wo_m_t5_3b_vanilla
-Incorporates other exercises that work the triceps and narrows the pupil of the eye, so the width of triceps will increase.
+Personx takes off clothing and does not eat the immunity-boosting diet, so the resistance of load will decrease.
 
 ********************
 
@@ -3716,6 +3678,44 @@ Incorporates other exercises that work the triceps and no pupil narrows in the e
 
 wo_m_t5_3b_vanilla
 Incorporates other exercises that work the triceps and no pupil narrows in the eye, so the width of triceps will increase.
+
+********************
+
+
+
+
+If incorporates other exercises that work the triceps [mask], the width of triceps will increase.  |   65_and
+sample conti: narrow the eyes
+lemmas: [['narrow'], ['eye'], ['pupil']]
+**************************************************
+
+gpt3
+Incorporates other exercises that work the triceps and narrow the eye pupil, so the width of triceps will increase.
+
+********************
+
+w_m_t5_3b
+Incorporates other exercises that work the triceps and pupil of the eye narrows, so the width of triceps will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+Incorporates other exercises that work the triceps and pupil of the eye narrows, so the width of triceps will increase.
+
+********************
+
+wo_m_gpt2_large
+Incorporates other exercises that work the triceps and narrows the pupil of the eye, so the width of triceps will increase.
+
+********************
+
+wo_m_t5_3b
+Incorporates other exercises that work the triceps and narrows the pupil of the eye, so the width of triceps will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+Incorporates other exercises that work the triceps and narrows the pupil of the eye, so the width of triceps will increase.
 
 ********************
 
@@ -3797,4 +3797,28 @@ Personx keeps the shoulders down and the chest open and does not tear the paper,
 
 
 
+
+Ratio for each model that follow the constraints strictly
+gpt3:   0.42
+w_m_t5_3b:   0.92
+w_m_t5_3b_vanilla:   0.68
+wo_m_gpt2_large:   0.88
+wo_m_t5_3b:   0.87
+wo_m_t5_3b_vanilla:   0.76
+
+PPL score for whole statements for each model
+gpt3:   12731.070604935283
+w_m_t5_3b:   34518.16741623693
+w_m_t5_3b_vanilla:   14319.947694149969
+wo_m_gpt2_large:   25889.9247801416
+wo_m_t5_3b:   29739.380052420114
+wo_m_t5_3b_vanilla:   16255.536007640154
+
+PPL score for filling part for each model
+gpt3:   nan
+w_m_t5_3b:   12505060.961411439
+w_m_t5_3b_vanilla:   626673.1241749926
+wo_m_gpt2_large:   5344722.569762754
+wo_m_t5_3b:   18371623.849674758
+wo_m_t5_3b_vanilla:   11275285.83210923
 

@@ -11,6 +11,44 @@ import argparse
 import glob
 from collections import defaultdict as ddict
 from get_data_utils import All_Data
+from transformers import AutoTokenizer,AutoModelForCausalLM
+import torch
+import math
+
+
+class Perplexity:
+    def __init__(self,name, device = 'cuda' if torch.cuda.is_available() else 'cpu'):
+        self.model = AutoModelForCausalLM.from_pretrained(name)
+        self.tokenizer = AutoTokenizer.from_pretrained(name)
+        self.device = device
+        self.model.to(self.device)
+
+    def calculate_perplexity(self,stm):
+
+        tokens = self.tokenizer(stm,return_tensors='pt')
+        tokens = tokens.to(self.device)
+
+        loss = self.model(**tokens,labels = tokens['input_ids'],return_dict = True).loss
+        loss = loss * len(tokens)
+        return math.exp(loss.item())
+
+
+
+
+def check_constraint(cons,generation):
+    generation_l = generation.strip().split(' ')
+
+    all_cons = []
+    for concepts in cons:
+        concepts_state = False
+        for word in concepts:
+            if word in generation_l or word.capitalize() in generation_l:
+                concepts_state = True
+                break
+        all_cons.append(concepts_state)
+    return all(all_cons)
+
+
 
 def back_conti_sent(sent, generation, mask = '<extra_id_0>'):
     return sent.replace(mask,generation)
@@ -55,6 +93,7 @@ def constraints(data,has_neg=False):
 def main(args):
 
     all_data = All_Data()
+    ppl = Perplexity('gpt2-large')
 
 
 
@@ -143,6 +182,9 @@ def main(args):
 
     
     nl = '\n'
+    cons_state_dict = ddict(list)
+    ppl_score_dict = ddict(list)
+    ppl_score_generation_dict = ddict(list)
 
     for id in id_all:
 
@@ -151,6 +193,9 @@ def main(args):
         base = _['base']
         sample_conti = _['sample_cont']
         cons = _['cons_lemma']
+        inflections = _['cons_inflection']
+    
+
         fo.write(f'{base}  |   {id}')
         fo.write(nl)
         fo.write(f'sample conti: {sample_conti}')
@@ -166,13 +211,25 @@ def main(args):
             generation = generations[id]
             generation = generation[:-1] if generation.endswith('.') else generation
 
+            cons_state = check_constraint(inflections,generation)
+            cons_state_dict[name].append(cons_state)
+
             original_data = all_dict[id]
             normal_template = original_data['normal_template']
 
-            fill_base = normal_template.replace('[mask]',generation)
+            filled_stm = normal_template.replace('[mask]',generation)
+
+            ppl_score = ppl.calculate_perplexity(filled_stm)
+            ppl_score_dict[name].append(ppl_score)
+
+
+            ppl_score_generation = ppl.calculate_perplexity(generation)
+            ppl_score_generation_dict[name].append(ppl_score_generation)
+
+
             fo.write(name)
             fo.write(nl)
-            fo.write(fill_base)
+            fo.write(filled_stm)
             fo.write(nl)
             fo.write(nl)
             fo.write('*' * 20)
@@ -182,6 +239,35 @@ def main(args):
         fo.write(nl)
         fo.write(nl)
         fo.write(nl)
+    
+    fo.write('Ratio for each model that follow the constraints strictly')
+    fo.write(nl)
+    for name in cons_state_dict.keys():
+        cons_state_l = list(cons_state_dict[name])
+        fo.write(f'{name}:   {np.sum(cons_state_l)/len(cons_state_l)}')
+        fo.write(nl)
+
+
+    fo.write('PPL score for whole statements for each model')
+    fo.write(nl)
+    for name in ppl_score_dict.keys():
+        ppl_score = list(ppl_score_dict[name])
+        fo.write(f'{name}:   {np.mean(ppl_score)}')
+        fo.write(nl)
+    fo.write(nl)
+
+
+
+    fo.write('PPL score for filling part for each model')
+    fo.write(nl)
+    for name in ppl_score_generation_dict.keys():
+        ppl_score_generation = list(ppl_score_generation_dict[name])
+        fo.write(f'{name}:   {np.mean(ppl_score_generation)}')
+        fo.write(nl)
+    fo.write(nl)
+    
+        
+    
             
             
 
