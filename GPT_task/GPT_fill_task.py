@@ -1,10 +1,16 @@
 
+import os
+from pathlib import Path
 from GPT3_generation import *
 import time
 import backoff
 import argparse
 from tqdm import tqdm
+import pickle
 import jsonlines
+import json
+import csv
+from get_data_utils import All_Data
 
 # random.seed(42)
 
@@ -176,141 +182,109 @@ demonstration_conti = \
 "Output: The force of ice will decrease bacause the ice be hit and children kick the soccer on the playground."
 
 
-def main(args):
-
-    def change_format(x):
-        cons_string = ''
-        for tmp in x:
-            tmp = '[' + ', '.join(tmp) + ']'
-            cons_string += str(tmp) + ', '
-        cons_string = cons_string[:-2]
-        
-        return cons_string
-
-    print(f'we load data from {args.inputs}')
-    print(f'we load lemma constraints from {args.lemma_constraints}')
-    print(f'we load inflection constraints from {args.inflection_constraints}')
-
-    with open (args.inputs) as f:
-
-        if args.model_type == 't5':
-            original_mask = '<extra_id_0>'
-        else:
-            raise NotImplementedError
-
-        reader = csv.reader(f)
-        inputs = []
-        inputs_order = []
-        for line in reader:
-            inputs.append(line[0].replace(original_mask,''))
-            inputs_order.append(line[1])
-
-
-    with open (args.lemma_constraints) as f:
-        lemma_constraints = [json.loads(x) for x in f.readlines()]
-        
-        lemma_constraints = list(map(change_format,lemma_constraints))
-
+def change_format(x):
+    cons_string = ''
+    for tmp in x:
+        tmp = '[' + ', '.join(tmp) + ']'
+        cons_string += str(tmp) + ', '
+    cons_string = cons_string[:-2]
     
-    with open (args.inflection_constraints) as f:
-        inflection_constraints = [json.loads(x) for x in f.readlines()]
+    return cons_string
 
 
+def main(args):
+    all_data = All_Data()
 
-    if args.num_groups != -1:
-        if args.variations_per_group == -1:
-            raise NotImplementedError
+    print(f'We load data ids from {args.inputs}')
+    with open(args.inputs) as f:
+        ids = []
+        reader = csv.reader(f)
+        for line in reader:
+            ids.extend(line)
+        
+    datas = all_data.get_data(ids)
 
-        inputs = inputs[:args.variations_per_group * args.num_groups]
-        inflection_constraints = inflection_constraints[:args.variations_per_group * args.num_groups]
-        lemma_constraints = lemma_constraints[:args.variations_per_group * args.num_groups]
 
+    mask = '[mask]'
 
-    assert len(inputs) == len(inflection_constraints) == len(lemma_constraints)
+    inputs = []
+    
+    for line in datas['conti_templates']:
+        inputs.append(line.replace(f'{mask}.','').strip())
+    lemmas = list(map(change_format,datas['lemmas']))
+    inflections = datas['inflections']
+
+    if args.n_obs != -1:
+        inputs = inputs[:args.n_obs]
+        inflections = inflections[:args.n_obs]
+        lemmas = lemmas[:args.n_obs]
+
+    assert len(inputs) == len(lemmas) == len(inflections)
 
 
     generations = []
-    generations_part = []
-    needed_count = args.needed_count
-    inputs_new = []
-    inputs_order_new = []
-    lemma_constraints_new = []
+    ids_new = []
 
 
     @backoff.on_exception(backoff.expo, openai.error.RateLimitError)
-    def gpt_generate(input,inflection_constraint,lemma_constraint):
-        return gpt3_wrapper.prompt_generation(input,inflection_constraint,lemma_constraint,needed_count)
+    def gpt_generate(input,inflection,lemma):
+        return gpt3_wrapper.prompt_generation(input,inflection,lemma)
 
     if args.conti:
         demonstration = demonstration_conti
+    else:
+        raise NotImplementedError
+
 
     gpt3_wrapper = PromptWrapper(demonstration,args.no_filter)
     
-    for index,(input,inflection_constraint,lemma_constraint) in enumerate(tqdm(list(zip(inputs,inflection_constraints,lemma_constraints)))):
+    for index,(input,inflection,lemma) in enumerate(tqdm(list(zip(inputs,inflections,lemmas)))):
 
-        generation,generation_part = gpt_generate(input,inflection_constraint,lemma_constraint)
+        generations_gpt = gpt_generate(input,inflection,lemma)
 
         if args.no_filter:
-            assert len(generation) > 0
-            if generation_part == '':
-                generation_part = '[No infilling]'
+            if len(generations_gpt) == 0:
+                generations_gpt = ['Head_dont_match']
 
-        if len(generation) != 0:
-            final_len = len(generation[:needed_count])
-            generations.extend(generation[:needed_count])
-            generations_part.extend(generation_part[:needed_count])
-            
-            inputs_new.extend([input] * final_len)
-            inputs_order_new.extend([inputs_order[index]] * final_len)
-            lemma_constraints_new.extend([lemma_constraint] * final_len)
+        if len(generations_gpt) != 0:
+            final_len = len(generations_gpt[:args.needed_count])
+            generations.extend(generations_gpt[:args.needed_count])
+            ids_new.extend([ids[index]] * final_len)
+        else:
+            print(f'For {input}, we dont have qualified generation')
 
 
-    assert len(inputs_new) == len(generations) == len(inputs_order_new) == len(lemma_constraints_new) == len(generations_part)
+    assert len(generations) == len(ids_new)
 
     Path(args.outputs).mkdir(parents= True,exist_ok=True)
 
-
-    nl = '\n'
-    if not args.Mturk:
+    if not args.no_filter:
         outputs = Path(args.outputs) / 'gpt_outputs.jsonl'
+
         with jsonlines.open(outputs,'w') as f:
             for index in range(len(generations)):
                 tmp = dict()
-                tmp['input'] = str(inputs_new[index])
-                tmp['constraint'] = str(lemma_constraints_new[index])
-                tmp['generation'] = str(generations[index])
+                
+                tmp['generation'] = generations[index]
+                tmp['id'] = ids_new[index]
                 f.write(tmp)
-
-
     else:
-        outputs = Path(args.outputs) / 'gpt_outputs.csv'
+        outputs = Path(args.outputs) / 'gpt3.csv'
         with open(outputs,'w') as f:
             writer = csv.writer(f)
-            for index in range(len(generations_part)):
-                generation = generations_part[index]
-                order = inputs_order_new[index]
-                # if 'Input' in generation and 'Constraint' in generation:
-                #     generation = generation.split('\n')[0]
-                writer.writerow([generation,order])
-
+            writer.writerows(list(zip(generations,ids_new)))
+    print(f'We save data at {outputs}')
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='gpt3 generation')
+    parser.add_argument('--all_data', default = '/home/zeyi/longtail/property_centric_process/samples_process.jsonl')
     parser.add_argument('--inputs')
-    parser.add_argument('--lemma_constraints')
-    parser.add_argument('--inflection_constraints')
     parser.add_argument('--outputs')
-    parser.add_argument('--needed_count', type = int)
+    parser.add_argument('--needed_count', type = int, help = 'How many generations you want for each example')
     parser.add_argument('--conti', action='store_true')
 
-
-    parser.add_argument('--model_type', choices = ['t5','bart'], default = 't5')
-
-
     parser.add_argument('--no_filter', action='store_true')
-    parser.add_argument('--Mturk', action='store_true')
-    parser.add_argument('--num_groups', default= -1, type=int)
-    parser.add_argument('--variations_per_group', default= -1, type=int)
+    parser.add_argument('--n_obs', default= -1, type=int)
     args = parser.parse_args()
     main(args)

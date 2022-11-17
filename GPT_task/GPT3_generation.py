@@ -1,8 +1,8 @@
 from dataclasses import dataclass
-from sys import prefix
-from typing import List
+from transformers import AutoModel,AutoConfig,AutoModelForCausalLM,AutoTokenizer
+import torch
+import math
 import os
-from helper import *
 import openai
 
 with open('/home/zeyi/key.txt') as f:
@@ -42,28 +42,20 @@ class GPTppl():
 
 def filter_by_format(input,outputs,constraints, no_filter = False):
 
-    selected_pattern_outputs = []
-    selected_pattern_outputs_part = []
+    generations = []
 
-    index_mask = input.index(input) + len(input)
-    prefix_end = index_mask
-    
     for output in outputs:
     #   filter those not follow the mask pattern
+        
         if output[-1] == '.':
             output = output[:-1]
-        if no_filter:
-            constraint_generation = output[prefix_end:]
-            selected_pattern_outputs.append(output)
-            selected_pattern_outputs_part.append(constraint_generation)
+        
+        if output[:len(input)] == input:
+            generation = output.replace(input,'').strip()
 
-        else:
-            
-            if output[:prefix_end] == input[:prefix_end]:
-                # output_words = output.replace(',','').split(' ')
-                constraint_generation = output[prefix_end:]
-
-
+            if no_filter:
+                generations.append(generation)
+            else:
                 clause_states = []
 
                 for constraint in constraints:
@@ -72,19 +64,26 @@ def filter_by_format(input,outputs,constraints, no_filter = False):
                     clause_satisified = False
 
                     for concept in constraint:
-                        if concept in constraint_generation or (concept[0].upper() + concept[1:]) in constraint_generation:
+                        if concept in generation or (concept.capitalize()) in generation:
                             clause_satisified = True
                             break
-
 
                     clause_states.append(clause_satisified)
 
                 if all(clause_states):
-                    selected_pattern_outputs.append(output)
-                    selected_pattern_outputs_part.append(constraint_generation)
+                    generations.append(generation)
+                else:
+                    generation = 'Filtered'
+                    generations.append(generation)
+
+        else:
+            
+            generation = 'Head_dont_match'
+            generations.append(generation)
 
 
-    return selected_pattern_outputs,selected_pattern_outputs_part
+
+    return generations
 
 
 
@@ -111,7 +110,7 @@ class PromptWrapper:
         self.no_filter = no_filter
 
 
-    def prompt_generation(self,input, inflection_constraint, lemma_constraint,needed_count):
+    def prompt_generation(self,input, inflection_constraint, lemma_constraint):
 
 
         prompt_str = self.create_prompt(input,lemma_constraint)
@@ -120,11 +119,12 @@ class PromptWrapper:
             prompt=prompt_str,
             **self.negation_config.__dict__,
         )
-        target = self.filter_generations(response.choices,input,inflection_constraint,needed_count)
+        
+        target = self.filter_generations(response.choices,input,inflection_constraint)
         return target
 
 
-    def filter_generations(self,explanations,input,constraints,needed_count):
+    def filter_generations(self,explanations,input,constraints):
         # Extract string explanations
 
         _explanations = []
@@ -134,21 +134,22 @@ class PromptWrapper:
                 text += '.'
             _explanations.append(text.strip())
 
-
         _explanations = list(set(_explanations))
+        
+        generations = filter_by_format(input,_explanations,constraints,no_filter = self.no_filter)
+        
+        error = ['Head_dont_match','Filtered']
+        generations = [_ for _ in generations if _ not in error]
+        
+        if self.no_filter:
+            if len(generations) != 0:
+                back_generations = [f'{input} {_}.' for _ in generations]
+                sorted_index = sorted(range(len(back_generations)), key= lambda i :self.ppl.calculate_ppl(back_generations)[i])
+                generations = [exp for (i,exp) in enumerate(generations) if i in sorted_index]
+            else:
+                return []
 
-
-        filtered_explanations,filtered_explanations_part = filter_by_format(input,_explanations,constraints,no_filter = self.no_filter)
-        filtered_explanations = [_ + '.' for _ in filtered_explanations]
-        filtered_explanations_part = [_ + '.' for _ in filtered_explanations_part]
-
-        needed_indexs = sorted(range(len(filtered_explanations)), key= lambda i :self.ppl.calculate_ppl(filtered_explanations)[i])
-        needed_explanations = [exp for (i,exp) in enumerate(filtered_explanations) if i in needed_indexs]
-        needed_explanations_part = [exp for (i,exp) in enumerate(filtered_explanations_part) if i in needed_indexs]
-
-
-
-        return needed_explanations,needed_explanations_part
+        return generations
 
 
     def create_prompt(self, input: str, constraints: str):

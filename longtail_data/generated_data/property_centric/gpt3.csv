@@ -1,0 +1,40 @@
+personX opens the window to let the air in,0_and
+the window is open,0_and_neg
+his blood circulates faster,1_and
+does not have a cold blood,1_and_neg
+pours cold water into the container,2_and
+pours the water into a container,2_and_neg
+fossil fuel burns on the earth,4_and
+he does not burn fossil fuel,4_and_neg
+wears shoes,5_and
+does not wear shoes,5_and_neg
+personX lifts weight by muscle,6_and
+personX doesn't lift weight,6_and_neg
+lifted weights to muscles,7_and
+does not lift weights,7_and_neg
+sits in a chair,8_and
+sits on the chair,8_and_neg
+wears a glove,9_and
+he wears gloves,9_and_neg
+builds roads,10_and
+do not build the roads,10_and_neg
+stand still for a long time,11_and
+does not blink often,11_and_neg
+the temperature rises due to the rain,14_and
+no air resistance,14_and_neg
+the temperature rises,17_and
+the temperature rises,17_and_neg
+decreases the amount of rocket fuel,18_and
+there is no decrease in the amount of rocket fuel,18_and_neg
+the temperature rises,19_and
+the temperature rises,19_and_neg
+he walks towards the light source,20_and
+he is walking in the light source,20_and_neg
+sails the boat by the wind,21_and
+sails the boat in the wind,21_and_neg
+plane increases the thrust,24_and
+no thrusters increase the speed of the roller coaster,24_and_neg
+add more fuel to the rocket,25_and
+no fuel is added to the rocket,25_and_neg
+the temperature decreases due to the rain,26_and
+there is no rain,26_and_neg
