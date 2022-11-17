@@ -1,0 +1,304 @@
+If PersonX adds ice [mask], the temperature of water will decrease.  |   2_and
+sample conti: pour boiling water into a container
+lemmas: [['pour'], ['water', 'container', 'air'], ['water', 'container', 'boiling'], ['water', 'air', 'boiling'], ['container', 'air', 'boiling']]
+**************************************************
+
+gpt3
+Personx adds ice and pours cold water into the container, so the temperature of water will decrease.
+
+********************
+
+w_m_t5_3b
+Personx adds ice and pour air into the container, so the temperature of water will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx adds ice and pour the air into the container, so the temperature of water will decrease.
+
+********************
+
+wo_m_gpt2_large
+Personx adds ice and pour water on the container, so the temperature of water will decrease.
+
+********************
+
+wo_m_t5_3b
+Personx adds ice and pours air into the container, so the temperature of water will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx adds ice and pours air into the container of boiling water, so the temperature of water will decrease.
+
+********************
+
+
+
+
+If PersonX cuts hair with scissors [mask], the length of hair will decrease.  |   9_and_neg
+sample conti: wear gloves
+lemmas: [['wear'], ['nails'], ['glove'], ['no']]
+**************************************************
+
+gpt3
+Personx cuts hair with scissors and he wears gloves, so the length of hair will decrease.
+
+********************
+
+w_m_t5_3b
+Personx cuts hair with scissors and no wear gloves when nails are cut, so the length of hair will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx cuts hair with scissors and does not wear gloves or nails, so the length of hair will decrease.
+
+********************
+
+wo_m_gpt2_large
+Personx cuts hair with scissors and wears gloves when he does not have nails, so the length of hair will decrease.
+
+********************
+
+wo_m_t5_3b
+Personx cuts hair with scissors and no gloves are worn when nails are cut, so the length of hair will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx cuts hair with scissors and does not wear a glove to protect the nails, so the length of hair will decrease.
+
+********************
+
+
+
+
+If PersonX cuts hair with scissors [mask], the length of hair will decrease.  |   9_and
+sample conti: wear gloves
+lemmas: [['wear'], ['nails'], ['glove']]
+**************************************************
+
+gpt3
+Personx cuts hair with scissors and wears a glove, so the length of hair will decrease.
+
+********************
+
+w_m_t5_3b
+Personx cuts hair with scissors and wear gloves when nails are cut, so the length of hair will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx cuts hair with scissors and wears gloves and nails, so the length of hair will decrease.
+
+********************
+
+wo_m_gpt2_large
+Personx cuts hair with scissors and wears gloves when he nails the glove, so the length of hair will decrease.
+
+********************
+
+wo_m_t5_3b
+Personx cuts hair with scissors and personX wear a glove when nails are cut, so the length of hair will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx cuts hair with scissors and wears a glove to protect the nails, so the length of hair will decrease.
+
+********************
+
+
+
+
+If PersonX increases the amplitude of the sound wave [mask], the speed of sound will increase.  |   19_and
+sample conti: the temperature rise
+lemmas: [['rise'], ['temperature'], ['rain']]
+**************************************************
+
+gpt3
+Personx increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
+
+********************
+
+w_m_t5_3b
+Personx increases the amplitude of the sound wave and the temperature of the rain rises, so the speed of sound will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
+
+********************
+
+wo_m_gpt2_large
+Personx increases the amplitude of the sound wave and the rain falls on the temperature of the rise, so the speed of sound will increase.
+
+********************
+
+wo_m_t5_3b
+Personx increases the amplitude of the sound wave and the temperature rises in the rain, so the speed of sound will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
+
+********************
+
+
+
+
+If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.  |   0_and
+sample conti: open a window
+lemmas: [['open'], ['window'], ['air']]
+**************************************************
+
+gpt3
+Personx burns a piece of paper on the water's surface and personX opens the window to let the air in, so the temperature of water will increase.
+
+********************
+
+w_m_t5_3b
+Personx burns a piece of paper on the water's surface and he does not open the air's window, so the temperature of water will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx burns a piece of paper on the water's surface and open the window to the air, so the temperature of water will increase.
+
+********************
+
+wo_m_gpt2_large
+Personx burns a piece of paper on the water's surface and open the window of the air conditioner, so the temperature of water will increase.
+
+********************
+
+wo_m_t5_3b
+Personx burns a piece of paper on the water's surface and personX opens a window and air, so the temperature of water will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx burns a piece of paper on the water's surface and personX opens the window to the air, so the temperature of water will increase.
+
+********************
+
+
+
+
+If PersonX burns a piece of paper on the water's surface [mask], the temperature of water will increase.  |   0_and_neg
+sample conti: open a window
+lemmas: [['open'], ['window'], ['air'], ['no']]
+**************************************************
+
+gpt3
+Personx burns a piece of paper on the water's surface and the window is open, so the temperature of water will increase.
+
+********************
+
+w_m_t5_3b
+Personx burns a piece of paper on the water's surface and no air or window is opened, so the temperature of water will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx burns a piece of paper on the water's surface and does not open the window or the air, so the temperature of water will increase.
+
+********************
+
+wo_m_gpt2_large
+Personx burns a piece of paper on the water's surface and no air is open or windowed, so the temperature of water will increase.
+
+********************
+
+wo_m_t5_3b
+Personx burns a piece of paper on the water's surface and no air opens the window, so the temperature of water will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx burns a piece of paper on the water's surface and does not open the window to the air, so the temperature of water will increase.
+
+********************
+
+
+
+
+If PersonX increases the amplitude of the sound wave [mask], the speed of sound will increase.  |   19_and_neg
+sample conti: the temperature rise
+lemmas: [['rise'], ['temperature'], ['rain'], ['no']]
+**************************************************
+
+gpt3
+Personx increases the amplitude of the sound wave and the temperature rises, so the speed of sound will increase.
+
+********************
+
+w_m_t5_3b
+Personx increases the amplitude of the sound wave and no rain rises in the temperature, so the speed of sound will increase.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx increases the amplitude of the sound wave and the temperature does not rise, so the speed of sound will increase.
+
+********************
+
+wo_m_gpt2_large
+Personx increases the amplitude of the sound wave and no rain falls on the temperature of the rise, so the speed of sound will increase.
+
+********************
+
+wo_m_t5_3b
+Personx increases the amplitude of the sound wave and no rain rises in temperature, so the speed of sound will increase.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx increases the amplitude of the sound wave and does not increase the temperature by rain, so the speed of sound will increase.
+
+********************
+
+
+
+
+If PersonX adds ice [mask], the temperature of water will decrease.  |   2_and_neg
+sample conti: pour boiling water into a container
+lemmas: [['pour'], ['water', 'container', 'air'], ['water', 'container', 'boiling'], ['water', 'air', 'boiling'], ['container', 'air', 'boiling'], ['no']]
+**************************************************
+
+gpt3
+Personx adds ice and pours the water into a container, so the temperature of water will decrease.
+
+********************
+
+w_m_t5_3b
+Personx adds ice and no air pours into the container, so the temperature of water will decrease.
+
+********************
+
+w_m_t5_3b_vanilla
+Personx adds ice and does not pour air into the container, so the temperature of water will decrease.
+
+********************
+
+wo_m_gpt2_large
+Personx adds ice and does not pour water on the container, so the temperature of water will decrease.
+
+********************
+
+wo_m_t5_3b
+Personx adds ice and no air pours into the container, so the temperature of water will decrease.
+
+********************
+
+wo_m_t5_3b_vanilla
+Personx adds ice and no water boils in the container, so the temperature of water will decrease.
+
+********************
+
+
+
+
