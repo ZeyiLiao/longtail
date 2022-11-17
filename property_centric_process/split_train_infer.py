@@ -1,91 +1,55 @@
-import json
+from sklearn.model_selection import train_test_split
+import jsonlines
+import random
 from pathlib import Path
+import json
 import csv
+random.seed(42)
 
-def split_train_infer(split_args,sub_folder = None):
+num_per_group = 2
 
-    fi_write = split_args['fi_write']
-    fc_lemma_write = split_args['fc_lemma_write']
-    fc_inflect_write = split_args['fc_inflect_write']
-    num_variations = split_args['num_variations']
-    groups_for_train = split_args['groups_for_train']
-    model_name = split_args['model_name']
-    output_file = split_args['output_file']
+dir_o = '../longtail_data/raw_data/property_centric'
+Path(dir_o).mkdir(exist_ok=True,parents=True)
 
-    train_inputs = []
-    infer_inputs = []
-    train_lemmas = []
-    infer_lemmas = []
-    train_inflections = []
-    infer_inflections = []
+all_data = []
+train_group = 100
+with jsonlines.open('./all_data.jsonl') as f:
+    for line in f:
+        all_data.append(line)
 
 
-    for index in range(0,len(fc_inflect_write),num_variations):
-        if index//num_variations in groups_for_train:
-            train_inputs.extend(fi_write[index:index+num_variations])
-            train_lemmas.extend(fc_lemma_write[index:index+num_variations])
-            train_inflections.extend(fc_inflect_write[index:index+num_variations])
-        else:
-            infer_inputs.extend(fi_write[index:index+num_variations])
-            infer_lemmas.extend(fc_lemma_write[index:index+num_variations])
-            infer_inflections.extend(fc_inflect_write[index:index+num_variations])
+group_index = random.sample(range(int(len(all_data)/num_per_group)),train_group)
+group_index = sorted(group_index)
+train_index = []
+
+for _ in group_index:
+    for i in range(num_per_group):
+        train_index.append(_*num_per_group + i)
+
+infer_index = list(set(range(len(all_data))).difference(train_index))
+
+train_data = [all_data[_] for _ in train_index]
+
+infer_data = [all_data[_] for _ in infer_index]
+
+previous_index = -1
+nl = '\n'
+
+data_dict = {'train':train_data,'infer':infer_data}
+for key in data_dict.keys():
+    data = data_dict[key]
+    id_l = []
+    for line in data:
+        id = line['id']
+        id_l.append([id])
+
+    with open(f'{dir_o}/{key}_ids.csv','w') as f:
+        writer = csv.writer(f)
+        writer.writerows(id_l)
 
 
-    root_dir = f'{output_file}/raw_data'
-    if sub_folder:
-        root_dir += f'/{sub_folder}'
+            
 
-    Path(root_dir).mkdir(parents= True,exist_ok=True)
-    root_dir = Path(root_dir)
+    
 
 
-    train_or_infer = 'train'
-    nl = '\n'
-
-    generation_inputs_path = root_dir / f'inputs_{model_name}_{train_or_infer}.csv'
-    generation_constraints_lemmas_path = root_dir / f'lemma_constraints_{model_name}_{train_or_infer}.json'
-    generation_constraints_inflections_path = root_dir / f'inflection_constraints_{model_name}_{train_or_infer}.json'
-
-    fi = open(generation_inputs_path,'w')
-    fi_w = csv.writer(fi)
-    fi_w.writerows(train_inputs)
-
-    fc_lemma = open(generation_constraints_lemmas_path,'w')
-    fc_inflect = open(generation_constraints_inflections_path,'w')
-
-    for index in range(len(train_inputs)):
-
-        json.dump(train_lemmas[index],fc_lemma)
-        fc_lemma.write(nl)
-        json.dump(train_inflections[index],fc_inflect)
-        fc_inflect.write(nl)
-
-    fi.close()
-    fc_lemma.close()
-    fc_inflect.close()
-
-# **************************************************************************
-    train_or_infer = 'infer'
-    nl = '\n'
-
-    generation_inputs_path = root_dir / f'inputs_{model_name}_{train_or_infer}.csv'
-    generation_constraints_lemmas_path = root_dir / f'lemma_constraints_{model_name}_{train_or_infer}.json'
-    generation_constraints_inflections_path = root_dir / f'inflection_constraints_{model_name}_{train_or_infer}.json'
-
-
-    fi = open(generation_inputs_path,'w')
-    fi_w = csv.writer(fi)
-    fi_w.writerows(infer_inputs)
-
-    fc_lemma = open(generation_constraints_lemmas_path,'w')
-    fc_inflect = open(generation_constraints_inflections_path,'w')
-
-    for index in range(len(infer_inputs)):
-        json.dump(infer_lemmas[index],fc_lemma)
-        fc_lemma.write(nl)
-        json.dump(infer_inflections[index],fc_inflect)
-        fc_inflect.write(nl)
-
-    fi.close()
-    fc_lemma.close()
-    fc_inflect.close()

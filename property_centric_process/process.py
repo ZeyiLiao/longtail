@@ -1,9 +1,8 @@
 
 import jsonlines
 import copy
-
-import random
-random.seed(37)
+from lemminflect import getInflection, getAllInflections, getAllInflectionsOOV
+import pickle
 
 from utils import Logic_wrapper
 
@@ -61,19 +60,13 @@ neg_words = ['','no']
 
 
 jsonl_o = []
-
-inputs_o = []
-indexs_o = []
-cons_lemma_o = []
-cons_inflec_o = []
-o_path = '/home/zeyi/longtail/longtail_data'
-
+all_data = {}
 
 
 with jsonlines.open('./samples.jsonl') as f:
     for line in f:
         ori_sent = line['base']
-        id = line['index']
+        index = line['index']
 
         verb_l = copy.deepcopy(line['constraint']['verb'])
         noun_l = copy.deepcopy(line['constraint']['noun'])
@@ -92,9 +85,8 @@ with jsonlines.open('./samples.jsonl') as f:
                 conti_template = change_format(ori_sent,conj_word)
                 normal_template = change_format(ori_sent,conj_word,if_conti=False)
 
-                # negation, so we times have two time
                 
-                _id = str(id) + f'_{conj_word}' if neg_word == '' else str(id) + f'_{conj_word}_neg'
+                _id = str(index) + f'_{conj_word}' if neg_word == '' else str(index) + f'_{conj_word}_neg'
                 _line['id'] = _id
                 _line['conti_template'] = conti_template
                 _line['normal_template'] = normal_template
@@ -107,13 +99,41 @@ with jsonlines.open('./samples.jsonl') as f:
                 if neg_word == 'no':
                     constraints_lemma.append([neg_word])
                 _line['cons_lemma'] = constraints_lemma
+
                 
+                
+                constraints_inflection = []
+                for clause in constraints_lemma:
+                    tmp = []
+                    if clause[0] == 'no':
+                        continue
+                    for word in clause:
+
+                        word_inflections = getAllInflections(word)
+                        if not word_inflections or len(word_inflections) == 0:
+                            word_inflections = dict(getAllInflectionsOOV(word,'VERB'), **getAllInflectionsOOV(word,'NOUN'))
+                            if len(word.split(' ')) == 1:
+                                word_inflections.update(getAllInflectionsOOV(word,'ADJ'))
+                        tmp.extend(list(set([_[0] for _ in list(word_inflections.values())])))
+                    constraints_inflection.append(tmp)
+
+                if neg_word == 'no':
+                    constraints_inflection.append(['no', 'not'])
+
+                _line['cons_inflection'] = constraints_inflection
+
+                all_data[_id] = _line
                 jsonl_o.append(_line)
 
-with jsonlines.open('./samples_process.jsonl','w') as f:
+
+
+with jsonlines.open('./all_data.jsonl','w') as f:
     f.write_all(jsonl_o)
 
 
+
+with open ('./all_data.pkl','wb') as f:
+    pickle.dump(all_data,f)
 
 
         

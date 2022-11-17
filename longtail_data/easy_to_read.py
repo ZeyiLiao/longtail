@@ -1,171 +1,150 @@
-import json
-import random
-import argparse
 import csv
+import os
 
+import numpy as np
+import imp
+import jsonlines
+import json
+import copy
+import sacrebleu
+import argparse
+import glob
+from get_data_utils import All_Data
+
+def back_conti_sent(sent, generation, mask = '<extra_id_0>'):
+    return sent.replace(mask,generation)
+
+
+def back_sent(sent, conj_word, generation, mask = '[mask]'):
+    mask_index = sent.index(mask)
+    head = sent[:mask_index-1]
+    assert 'If' in head,'If is not in head'
+    
+    
+    head = head[3:]
+    
+    tail = sent[mask_index + len(mask) + 2:-1]
+
+    head_low = head[0].lower() + head[1:]
+
+    
+    if conj_word == 'and':
+        sent = head + ' and ' + generation + ', so ' + tail + '.'
+    elif conj_word == 'while':
+        sent = head + ' while ' + generation + ', so ' + tail + '.'
+    elif conj_word == 'but':
+        sent = generation.capitalize() + ' but ' + head_low + ', so ' + tail + '.'
+    elif conj_word == 'although':
+        sent = 'Although ' + generation + ', ' + head_low + ', so ' + tail + '.'
+
+    return sent
+
+
+
+
+def constraints(data,has_neg=False):
+    object2 = data['object2']
+    cons = copy.deepcopy(data['constraint'])
+    cons['noun'].append(object2)
+    
+    if has_neg:
+        cons['neg'] = ['no']
+    return cons
+    
 def main(args):
-    inputs_dir = args.inputs_dir
-    datas_dir = args.datas_dir
 
-    inputs = []
-    gpt_outputs = []
-    neuro_outputs = []
-    vanilla_outputs = []
-    lemmatized_cons = []
-    infection_cons = []
-
-    mask = '<extra_id_0>'
-
-    def change_format(x):
-        neg = []
-        if len(x) == 2:
-            neg = x[1]
-        cons = x[0]
-        tmp = []
-        for _ in cons:
-            tmp.append(_)
-        random.shuffle(tmp)
-
-        cons_string = '[' + ', '.join(tmp) + ']'
-        if len(neg) != 0:
-            cons_string = cons_string + f', [{neg[0]}]'
-
-        return cons_string
+    all_data = All_Data()
 
 
-    with open(f'{inputs_dir}/inputs_t5_infer.csv') as f:
-        inputs = []
-        order_ori = []
-        reader = csv.reader(f)
-        for line in reader:
-            x,order = line[0],line[1]
-            inputs.append(x.replace('\n',''))
-            order_ori.append(order)
+    need_index_1 = [2, 30, 34, 37, 39, 40]
+    need_index_2 = [0, 9, 15, 19, 23, 31, 33, 36]
+
+    need_index = list(set(need_index_1) | set(need_index_2))
 
 
-    with open(f'{inputs_dir}/lemma_constraints_t5_infer.json') as f:
-        lemmatized_cons = []
-        for line in f:
-            x = change_format(json.loads(line))
-            lemmatized_cons.append(x)
+    all_dict = all_data.all_data
 
-    with open(f'{inputs_dir}/inflection_constraints_t5_infer.json') as f:
-        infection_cons = []
-        for line in f:
-            x = json.loads(line)
-            infection_cons.append(x)
+    
+    files = sorted(glob.glob(f'{args.dir}/*.csv'))
 
-
-    with open(f'{datas_dir}/gpt_outputs.csv') as f:
-        gpt_outputs = []
-        order_gpt = []
-        reader = csv.reader(f)
-        for index,line in enumerate(reader):
-            x,order = line[0],line[1]
-            if 'but' in order:
-                x = x[0].upper() + x[1:]
-            gpt_outputs.append(inputs[index].replace(mask,x.replace('\n','')))
-            order_gpt.append(order)
+    name_dict = {}
+    extension = '.csv'
+    for name in files:
+        name_dict[name.split('/')[-1].replace(extension,'').strip()] = name
+    
+    for _ in name_dict.keys():
+        path = name_dict[_]
+        tmp_dict = {}
+        with open(path) as f:
+            reader = csv.reader(f)
+            for line in reader:
+                generation_part, id = line[0],line[1]
+                tmp_dict[id] = generation_part
+        name_dict[_] = tmp_dict
 
 
-    with open(f'{datas_dir}/t5_3b_w_m.csv') as f:
-        neuro_outputs = []
-        order_neuro = []
-        reader = csv.reader(f)
-        for index,line in enumerate(reader):
-            x,order = line[0],line[1]
-            if 'but' in order:
-                x = x[0].upper() + x[1:]
-            neuro_outputs.append(inputs[index].replace(mask,x.replace('\n','')))
-            order_neuro.append(order)
+    id_all = set()
+    for name in name_dict.keys():
+        id_all = id_all | set(list(name_dict[name].keys()))
 
+    
+    for name in name_dict.keys():
+        id_all = id_all & set(list(name_dict[name].keys()))
 
+    id_all = list(id_all)
+    o_path = f'{args.dir}/compare.txt'
+    fo = open(o_path,'w')
 
-    with open(f'{datas_dir}/t5_3b_vanilla_w_m.csv') as f:
-        vanilla_outputs = []
-        order_vanilla = []
-        reader = csv.reader(f)
-        for index,line in enumerate(reader):
-            x,order = line[0],line[1]
-            if 'but' in order:
-
-                x = x[0].upper() + x[1:]
-
-            vanilla_outputs.append(inputs[index].replace(mask,x.replace('\n','')))
-            order_vanilla.append(order)
-
-
-
-
-    if args.num_groups != -1:
-        if args.variations_per_group == -1:
-            return NotImplementedError
-        else:
-            group_count = args.variations_per_group
-
-        all_indexs = []
-        for group in range(args.num_groups):
-            indexs = range(group*group_count,group*group_count+group_count)
-            # selected_indexs = sorted(random.sample(indexs,2))
-            selected_indexs = indexs
-            all_indexs.extend(list(selected_indexs))
-
-        inputs = [inputs[i] for i in all_indexs]
-        gpt_outputs = [gpt_outputs[i] for i in all_indexs]
-        neuro_outputs = [neuro_outputs[i] for i in all_indexs]
-        vanilla_outputs = [vanilla_outputs[i] for i in all_indexs]
-        lemmatized_cons = [lemmatized_cons[i] for i in all_indexs]
-        infection_cons = [infection_cons[i] for i in all_indexs]
-
-
-    assert len(inputs) == len(gpt_outputs) == len(neuro_outputs) == len(vanilla_outputs) == len(lemmatized_cons) == len(infection_cons)
-
-
-
+    
     nl = '\n'
-    f = open(f'{datas_dir}/comparison_file.txt','w')
-    f_json = open(f'{datas_dir}/comparison_file.json','w')
 
-    for index in range(len(inputs)):
-        f.write(f'input_format:')
-        f.write(nl)
-        f.write(f'Input: {inputs[index]} ; Constraint: {str(lemmatized_cons[index])} ; Output:')
-        f.write(nl)
-        f.write(nl)
-        f.write(f'These are constraints inflections used only for neuro algorithm')
-        f.write(nl)
-        f.write(str(infection_cons[index]))
-        f.write(nl)
-        f.write(nl)
-        f.write(nl)
-        f.write(f'gpt : {gpt_outputs[index]}')
-        f.write(nl)
-        f.write(f'neuro : {neuro_outputs[index]}')
-        f.write(nl)
-        f.write(f'vanilla : {vanilla_outputs[index]}')
-        f.write(nl)
-        f.write(nl)
-        f.write(nl)
-        f.write('************************')
-        f.write(nl)
-        f.write(nl)
-        tmp = dict()
-        tmp['input'] = f'Input: {inputs[index]} ; Constraint: {lemmatized_cons[index]} ; Output:'
-        tmp['cons'] = infection_cons[index]
-        tmp['gpt'] = gpt_outputs[index]
-        tmp['neuro'] = neuro_outputs[index]
-        tmp['vanilla'] = vanilla_outputs[index]
-        json.dump(tmp,f_json)
-        f_json.write(nl)
+    for id in id_all:
+
+        _ = all_dict[id]
+        index = _['index']
+        if index not in need_index:
+            continue
+        base = _['base']
+        sample_conti = _['sample_cont']
+        cons = _['cons_lemma']
+        fo.write(f'{base}  |   {id}')
+        fo.write(nl)
+        fo.write(f'sample conti: {sample_conti}')
+        fo.write(nl)
+        fo.write(f'lemmas: {cons}')
+        fo.write(nl)
+        fo.write('*'*50)
+        fo.write(nl)
+        fo.write(nl)
+        for name in list(name_dict.keys()):
+            generations = name_dict[name]
+            
+            generation = generations[id]
+            generation = generation[:-1] if generation.endswith('.') else generation
+
+            original_data = all_dict[id]
+            normal_template = original_data['normal_template']
+
+            fill_base = normal_template.replace('[mask]',generation)
+            fo.write(name)
+            fo.write(nl)
+            fo.write(fill_base)
+            fo.write(nl)
+            fo.write(nl)
+            fo.write('*' * 20)
+            fo.write(nl)
+            fo.write(nl)
+
+        fo.write(nl)
+        fo.write(nl)
+        fo.write(nl)
+            
+            
 
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='easy to rad')
-    parser.add_argument('--inputs_dir',default = '../longtail_data/raw_data')
-    parser.add_argument('--datas_dir',default = '.')
-
-    parser.add_argument('--num_groups', default= -1, type=int)
-    parser.add_argument('--variations_per_group', default= -1, type=int)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--dir',default='./generated_data/property_centric')
     args = parser.parse_args()
     main(args)
