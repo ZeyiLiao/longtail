@@ -100,41 +100,6 @@ def main(args):
 
     all_dict = all_data.all_data
 
-    # n_show = 20
-    # n_1 = 7
-    # n_2 = 10
-    # n_3 = 3
-    
-    # cons_dict = ddict(list)
-
-    # for key in all_dict.keys():
-    #     data = all_dict[key]
-    #     index = data['index']
-    #     id = data['id']
-
-    #     lemma_length = len(data['cons_lemma']) - 2 if 'neg' in id else len(data['cons_lemma']) - 1
-
-    #     if index not in cons_dict[lemma_length]:
-    #         cons_dict[lemma_length].append(index)
-
-    #     if len(cons_dict[1]) > n_1:
-    #         cons_dict[1] = cons_dict[1][:n_1]
-
-    #     if len(cons_dict[2]) > n_2:
-    #         cons_dict[2] = cons_dict[2][:n_2]
-
-    #     if len(cons_dict[3]) > n_3:
-    #         cons_dict[3] = cons_dict[3][:n_3]
-
-    #     if cons_dict[1] + cons_dict[2] + cons_dict[3] ==10:
-    #         break
-
-    # cons_dict = dict(cons_dict)
-    # needed_index =[cons_dict[key] for key in list(cons_dict.keys()) if key in [1,2,3]]
-    # needed_index = [b for a in needed_index for b in a]
-
-
-
 
     
     files = sorted(glob.glob(f'{args.dir}/*.csv'))
@@ -246,6 +211,8 @@ def main(args):
         cons_state_l = list(cons_state_dict[name])
         fo.write(f'{name}:   {np.sum(cons_state_l)/len(cons_state_l)}')
         fo.write(nl)
+    fo.write(nl)
+    fo.write(nl)
 
 
     fo.write('PPL score for whole statements for each model')
@@ -254,6 +221,7 @@ def main(args):
         ppl_score = list(ppl_score_dict[name])
         fo.write(f'{name}:   {np.mean(ppl_score)}')
         fo.write(nl)
+    fo.write(nl)
     fo.write(nl)
 
 
