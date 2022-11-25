@@ -1,0 +1,200 @@
+ does not open the window,0_and
+ does not open the window,0_and_neg
+ does not add water to the blood,1_and
+ does not add water to the blood,1_and_neg
+ does not pour the water into the container,2_and
+ does not pour water into the container,2_and_neg
+ he does not burn the fossil fuel,4_and
+ does not burn the fossil fuel,4_and_neg
+ he does not wear the toenails on the shoe,5_and
+ does not wear the toenails on the shoe,5_and_neg
+ food leaves stomach and no one lifts the weight of the muscle,6_and
+ food leaves stomach and no muscle is used to lift the weight of the muscle,6_and_neg
+ he does not lift the weight of the muscle,7_and
+ he does not use a muscle to lift the weight of the muscle,7_and_neg
+ he does not sit up in the torso,8_and
+ he does not sit up in the torso,8_and_neg
+ he does not wear a glove,9_and
+ does not wear a glove,9_and_neg
+ he does not build roads,10_and
+ does not build roads,10_and_neg
+ he does not stand up,11_and
+ does not stand up,11_and_neg
+ the temperature of the rain will decrease,14_and
+ no rain falls,14_and_neg
+ the temperature of the rain will increase,17_and
+ the temperature of the rain will decrease,17_and_neg
+ he does not decrease the amount of fuel in the rocket,18_and
+ does not decrease the amount of fuel in the rocket,18_and_neg
+ the temperature of the rain will decrease,19_and
+ does not increase the temperature of the rain,19_and_neg
+ walks on the source of light,20_and
+ walks on the source of light,20_and_neg
+ sails the boat with the wind,21_and
+ sails the boat with the wind,21_and_neg
+ the plane is increase,24_and
+ the plane moves away from the object,24_and_neg
+ add fuel to the rocket,25_and
+ add rock to the fuel,25_and_neg
+ he does not increase the temperature of the air,26_and
+ he does not increase the temperature of the air by rain,26_and_neg
+ increases the wave's amplitude,27_and
+ he does not increase the wave's amplitude,27_and_neg
+ increases the amplitude of the wave,28_and
+ does not increase the amplitude of the wave,28_and_neg
+ does not increase the wave's amplitude,29_and
+ does not increase the wave's amplitude,29_and_neg
+ he does not increase the surface area in contact,30_and
+ does not increase the surface area of contact between the surface and the friction,30_and_neg
+ the acceleration of the car will increase,31_and
+ the acceleration of car will increase,31_and_neg
+ he increases the acceleration of the car,32_and
+ he does not increase the acceleration of the car,32_and_neg
+ he does not jump off the cliff,33_and
+ he does not jump off the cliff,33_and_neg
+ blows the rock off the land,34_and
+ blows the rock off the land,34_and_neg
+ the acceleration of person will increase because personX increases the speed of the car and does not increase the number of cylinders in the engine,37_and
+ the speed of the car increases,37_and_neg
+ he does not increase the speed of the object,38_and
+ does not increase the speed of the object,38_and_neg
+ he does not increase the speed of the car,39_and
+ he does not increase the speed of the car,39_and_neg
+ the wind blows the sand off the land,41_and
+ does not blow the sand off the land,41_and_neg
+ the nuclear power is not turned off,42_and
+ the nuclear power is not used,42_and_neg
+ he does not add water to the height of the water,43_and
+ does not decrease the height of the water,43_and_neg
+ waste the resource on earth,45_and
+ he does not waste the resource on earth,45_and_neg
+ he does not move the object,46_and
+ he does not move the speed of the object,46_and_neg
+ the light bulb is use in the dark,48_and
+ does not use a light bulb,48_and_neg
+ waste the resource on earth,50_and
+ waste resources on earth,50_and_neg
+ the water be makes into steam,53_and
+ personX does not blow the water with the wind,53_and_neg
+ personX pushes the object with the speed of the wind,54_and
+ personX does not push the speed of someone,54_and_neg
+ no one plugs in an appliance,55_and
+ no electricity is used to power the appliance,55_and_neg
+ no water is added to the water in the pipe,56_and
+ no water is added to the system,56_and_neg
+ he does not contact the skin with an irritant,58_and
+ he does not contact the skin with an irritant,58_and_neg
+ the price of the good increases,59_and
+ the price of the good increases,59_and_neg
+ he does not drink alcohol,60_and
+ he does not drink alcohol,60_and_neg
+ eats food that does not increase the number of bacteria in the stomach,61_and
+ he does not eat the food that will increase the number of bacteria in the stomach,61_and_neg
+ he does not increase the temperature of the water,62_and
+ he does not increase the temperature of the water,62_and_neg
+ he does not eat the food he eats,64_and
+ he does not eat the food in the immune system,64_and_neg
+ narrow the eye's pupil,65_and
+ does not narrow the eye's pupil,65_and_neg
+ he does not tear the paper,66_and
+ does not tear the paper,66_and_neg
+ he does not sink the floor of the ocean,67_and
+ does not sink the floor of the ocean,67_and_neg
+ he does not seal the envelope,68_and
+ does not seal the envelope,68_and_neg
+ the window is resized,69_and
+ the window is not resized,69_and_neg
+ the height of person will decrease because personX bends the head forward and he does not remove the bump on the surface of the ocean,70_and
+ the width of biceps will decrease because personX exercises the biceps and he does not remove the bump on the surface of the ocean,70_and_neg
+ he does not add the width of the paper to the height of the stack,72_and
+ he does not add the width of the paper to the height of the stack,72_and_neg
+ he does not add a column to the table,73_and
+ does not add a column to the width of the table,73_and_neg
+ he does not increase the size of the window,74_and
+ he does not increase the size of the window,74_and_neg
+ he does not increase the size of the window,75_and
+ he does not increase the size of the window,75_and_neg
+ he does not increase the width of the nose by putting the piece of paper in the envelope,76_and
+ he does not put the piece of paper in the envelope,76_and_neg
+ the trees are infested by insects,77_and
+ the trees are not infested,77_and_neg
+ he does not poke the hole of the balloon,78_and
+ he does not poke the hole of the balloon,78_and_neg
+ the moon is closer to the earth,80_and
+ the moon orbits the earth,80_and_neg
+ the moon is further away from the earth,82_and
+ the moon is farther away from the earth,82_and_neg
+ he does not add support to the building,84_and
+ he does not add support to the bridges,84_and_neg
+ he does not increase the air pressure,85_and
+ he does not increase the air pressure,85_and_neg
+ personX moves away from the sun and the earth,86_and
+ the sun moves away from the earth,86_and_neg
+ the air pressure decreases,88_and
+ personX increases the air pressure by decreasing the number of clouds,88_and_neg
+ the air pressure decreases,89_and
+ the air pressure decreases,89_and_neg
+ add the support of the bridge,90_and
+ no support is added to the bridges,90_and_neg
+ personX adds an electrolyte to the solution,91_and
+ personX does not add support to the bridge,91_and_neg
+ does not stop smoking,92_and
+ does not exhale while he smokes,92_and_neg
+ he does not use the nails to file the file,93_and
+ he does not use the nail to file the file,93_and_neg
+ he does not drink the beverage with the blood sugar,94_and
+ he does not drink a beverage with a high concentration of blood sugar,94_and_neg
+ the water be makes into steam,95_and
+ no water is added to the system,95_and_neg
+ the fire is not extinguished,96_and
+ personX increases the temperature of the room,96_and_neg
+ he does not envision the fear of the wind,97_and
+ he does not envision the fear of no,97_and_neg
+ removes the electron from the metal,99_and
+ removes the electron from the metal,99_and_neg
+ he does not increase the temperature of the water,100_and
+ he does not heat the water,100_and_neg
+ heat the metal,102_and
+ no heat is added to the metal,102_and_neg
+ does not increase the resistance of the resistor,103_and
+ does not increase the resistance of the resistor,103_and_neg
+ he does not increase the temperature of the dielectric,104_and
+ he does not increase the temperature of the regulator,104_and_neg
+ does not increase the voltage of the laptop battery,105_and
+ does not use the laptop to charge the laptop battery,105_and_neg
+ the dc current of power source is turned off,106_and
+ the dc current of power source is not turned off,106_and_neg
+ he does not turn the source of dc current to the power of the power,108_and
+ he does not turn the source of dc current to the dc current,108_and_neg
+ the solar panel be not receives direct sunlight,109_and
+ the solar panel be not receives direct sunlight,109_and_neg
+ does not increase the voltage of the capacitor,113_and
+ does not increase the voltage of the power supply,113_and_neg
+ he does not increase the current of the dc current,115_and
+ does not increase the current of the dc current,115_and_neg
+ the current of dc current increase,117_and
+ the current of dc current increase,117_and_neg
+ he does not decrease the temperature of the sound,118_and
+ does not decrease the temperature of the sound,118_and_neg
+ the magnet is move away from the battery,120_and
+ the magnet is not removed from the object,120_and_neg
+ he does not increase the number of turns of the coil,121_and
+ he does not increase the number of coils in the transformer,121_and_neg
+ he does not turn the power off of the lamp,122_and
+ he does not turn on the lamp,122_and_neg
+ the temperature is decrease,123_and
+ the temperature is decrease,123_and_neg
+ the wind speed increases,124_and
+ the wind speed is decrease,124_and_neg
+ he turns on the lamp by power,126_and
+ he does not turn off the power,126_and_neg
+ the lamp is turned on by power,127_and
+ the lamp is not turned off,127_and_neg
+ personX moves away from the lamp,128_and
+ the lamp is not turned on,128_and_neg
+ he does not add light to the bulb,129_and
+ he does not add light to the bulb,129_and_neg
+ increase the sound's loudness,130_and
+ increase the sound's loudness,130_and_neg
+ the lamp is move away from the bulb,131_and
+ does not change the position of the light bulb,131_and_neg

@@ -70,9 +70,9 @@ def split_all(dir_name,X,Y,split):
         tmp = {}
         tmp['input'] = x
         tmp['output'] = y
-        _tmp = {}
-        _tmp['translation'] = tmp
-        json.dump(_tmp,fo)
+        # _tmp = {}
+        # _tmp['translation'] = tmp
+        json.dump(tmp,fo)
         fo.write(nl)
 
 
@@ -112,9 +112,9 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='split gpt output into train_dev_test')
-    parser.add_argument('--all_data',default='/home/zeyi/longtail/property_centric_process/samples_process.jsonl')
-    parser.add_argument('--gpt_outputs_dir',default='/home/zeyi/longtail/longtail_data/for_finetune/property_centric')
+    parser.add_argument('--all_data',default='../property_centric_process/samples_process.jsonl')
+    parser.add_argument('--gpt_outputs_dir',default='./for_finetune/property_centric')
     parser.add_argument('--ratio',default=0.7,help='Ratio of the datasets for training')
-    parser.add_argument('--data_type',default='wo_m_gpt2')
+    parser.add_argument('--data_type',default='wo_m_t5')
     args = parser.parse_args()
     main(args)

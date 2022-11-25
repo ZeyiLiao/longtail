@@ -1,100 +1,200 @@
-he open the window to let the air in,0_and
-he does not open the window to let the air flow,0_and_neg
-water,1_and
-does not have enough water in his blood,1_and_neg
-pours the water into a container,2_and
-pours the water into the container,2_and_neg
-he burns fossil fuel,4_and
-personX does not burn fossil fuel,4_and_neg
-he wears shoes,5_and
-does not wear shoe,5_and_neg
-personX lift a lot of weight,6_and
-personX doesn't lift any weight,6_and_neg
+he opens the window to let the air in,0_and
+he does not open the window,0_and_neg
+his body is made up of mostly water,1_and
+blood flow through the body,1_and_neg
+pour the water into a container,2_and
+pour the water into a container,2_and_neg
+burn fossil fuel on earth,4_and
+does not burn fossil fuel,4_and_neg
+wears shoes,5_and
+he does not wear shoe,5_and_neg
+personX lift the weight by muscle,6_and
+personX doesn't lift weight,6_and_neg
 lift the weight by muscle,7_and
 does not lift weights,7_and_neg
-personX sits on the chair,8_and
-sit down on the chair,8_and_neg
-does not wear gloves,9_and
-does not wear gloves,9_and_neg
-he build the roads,10_and
+personX sits in the chair,8_and
+sits on the chair,8_and_neg
+wears gloves,9_and
+PersonX does not wear gloves,9_and_neg
+he or she builds the roads,10_and
 does not build roads,10_and_neg
-stand under the sun,11_and
-personX blinks less,11_and_neg
-the temperature rises due to the rain,14_and
-no rise in temperature or rain,14_and_neg
+personX stands still for a long time,11_and
+does not stand still,11_and_neg
+the temperature rises bacause of the rain,14_and
+no rain falls,14_and_neg
 the temperature rises due to the rain,17_and
-the temperature rises,17_and_neg
-decreases the amount of rocket fuel,18_and
-he decreases the amount of rocket fuel,18_and_neg
+the front of the ship is in the rain,17_and_neg
+the amount of rocket fuel decreases,18_and
+the amount of rocket fuel decreases,18_and_neg
 the temperature rises,19_and
 the temperature rises,19_and_neg
-he is not upside down,20_and
-he does not walk to the light source,20_and_neg
-sails the boat in the wind,21_and
+he uses the light from the source,20_and
+he walks to the light source,20_and_neg
+the wind sail the boat,21_and
 sails the boat in the wind,21_and_neg
-engine increases the thrust,24_and
-passengers don't increase the plane's thrust,24_and_neg
-fuel is added to the rocket,25_and
+plane lands on the runway,24_and
+there is no increase in the plane's thrust,24_and_neg
+people add more weight to the rocket,25_and
 no fuel is added to the rocket,25_and_neg
 the temperature decreases because of the rain,26_and
-it rains outside,26_and_neg
-the plane waves increase the amplitude of sound,27_and
-no sound waves increase in amplitude,27_and_neg
-he increases the wave and sound of the bus,28_and
-the bus increases the wave and sound of the amplitude,28_and_neg
-increase the wave's amplitude,29_and
-the wave amplifies the sound,29_and_neg
-increases the surface area of contact,30_and
-no surface has more friction,30_and_neg
-car go up the hill,31_and
-car moves up the hill,31_and_neg
-goes down the hill by car acceleration,32_and
-goes up the hill in the car,32_and_neg
-gravity pulls personX down,33_and
-does not jump off the cliff,33_and_neg
-blow the rock to the sand,34_and
-no one blows the rock on the sand on the land,34_and_neg
-the engine of the car increases the speed and car acceleration,37_and
-car's engine increases the car's speed and car acceleration,37_and_neg
-he holds the ice with his body,38_and
-does not hold the object close to his body,38_and_neg
-increases the speed of the car,39_and
-increases the speed of the car by acceleration,39_and_neg
-the wind blows harder,41_and
+the temperature decreases due to the rain,26_and_neg
+the plane flies into the headwind,27_and
+no other waves increase the sound,27_and_neg
+the bus driver increases the wave,28_and
+the bus's acceleration increases,28_and_neg
+the sound of the bullet increase,29_and
+the sound of the gunshot increases the wave's amplitude,29_and_neg
+the surface area of contact increases,30_and
+there is no contact between personX and the surface,30_and_neg
+the car goes up the hill,31_and
+car goes up the hill,31_and_neg
+he goes up the hill in the car,32_and
+goes up the hill by car,32_and_neg
+does not jump from the cliff,33_and
+personX does not jump off the cliff,33_and_neg
+blow the rock,34_and
+no you blow the rock to the sand on the land,34_and_neg
+engine increase the car's speed and car acceleration,37_and
+no engine increase the speed and car acceleration,37_and_neg
+hold the ice on the burn,38_and
+he holds a cold object,38_and_neg
+increases the speed of the car by engine,39_and
+no other force is applied,39_and_neg
+the wind blow rocks and sand on the land,41_and
 the wind blows harder,41_and_neg
-no nuclear power plants are used,42_and
-people stop using nuclear power,42_and_neg
-the height of the water decreases,43_and
-decreases the height of the water,43_and_neg
-waste the resource on earth,45_and
-there is no waste of resources on the earth,45_and_neg
-move the speed of the object,46_and
-moves the object quickly,46_and_neg
-uses the light bulb,48_and
-uses the light bulb,48_and_neg
-waste less resources on Earth,50_and
-waste less resources on Earth,50_and_neg
+people stop using nuclear power,42_and
+no nuclear power plant is used,42_and_neg
+decreases the height of the water,43_and
+the moon's height decreases,43_and_neg
+wastes resources,45_and
+wastes resources,45_and_neg
+move it to a cool place,46_and
+he does not move the object too fast,46_and_neg
+use the light bulb,48_and
+use the light bulb,48_and_neg
+they use less resource and earth,50_and
+does not waste resources on earth,50_and_neg
 blow the water,53_and
-no wind blows,53_and_neg
-someone pushes against the wind,54_and
-no one push it,54_and_neg
-personX plugs in the electricity for the appliance,55_and
-no appliance is plugged in,55_and_neg
-the water pressure decreases the diameter of the pipe,56_and
-the water pressure in the pipe decreases,56_and_neg
-avoid contact with an irritant,58_and
-avoids contact with an irritant on the skin,58_and_neg
-the price of alcohol increase,59_and
-the price of the alcohol increase,59_and_neg
-drinks alcohol in moderation,60_and
-he drinks more alcohol in a shorter period of time,60_and_neg
-eat a balanced diet,61_and
-doesn't eat a balanced diet,61_and_neg
-the temperature of the water increases,62_and
-no increase of temperature water,62_and_neg
-eats a high calorie diet,64_and
-he does not eat a balanced diet,64_and_neg
-narrow the eye pupil,65_and
-the eye's pupil is narrow,65_and_neg
+blow less water,53_and_neg
+someone pushes the wind,54_and
+someone pushes it,54_and_neg
+personX plugs in the appliance,55_and
+no person plugs in an appliance,55_and_neg
+the water pressure in the pipe decreases,56_and
+there is no water pressure in the pipe,56_and_neg
+avoids contact with irritants,58_and
+avoids contact with irritants,58_and_neg
+the price of the good increase,59_and
+the price of alcohol increase,59_and_neg
+drinks alcohol in a short period of time,60_and
+drink alcohol in a short period of time,60_and_neg
+doesn't eat a balanced diet,61_and
+does not eat a balanced diet,61_and_neg
+the temperature increase,62_and
+the temperature of the water is increased,62_and_neg
+personX eats an all-natural diet,64_and
+does not eat a balanced diet,64_and_neg
+the eye pupil is narrow,65_and
+has a narrow eye pupil,65_and_neg
 tears the paper,66_and
-he does not tear the paper,66_and_neg
+breathe out slowly while tearing the paper,66_and_neg
+sinks it in the ocean,67_and
+the book sinks to the floor of the ocean,67_and_neg
+seals it in an envelope,68_and
+seals the envelope,68_and_neg
+the window be resize,69_and
+the window does not resize,69_and_neg
+removing the bumps on the nose,70_and
+no nose be removed,70_and_neg
+he does not add paper to the stack,72_and
+he does not add paper to the stack,72_and_neg
+starts to eat less food,73_and
+does not add salt to the table,73_and_neg
+he or she resize the window,74_and
+resize the window,74_and_neg
+personX resize the window,75_and
+do not resize the window,75_and_neg
+he put the piece of paper in the envelope,76_and
+he puts a piece of paper in the envelope,76_and_neg
+an insect climbs the trees,77_and
+no trees have an infestation of insects,77_and_neg
+they poke the holes of the balloon,78_and
+they poke the holes of the balloon,78_and_neg
+personX pokes the hole in the balloon,80_and
+no one pokes the hole in the balloon,80_and_neg
+the moon is full,82_and
+no one poke the hole of the balloon,82_and_neg
+make the supports of bridges,84_and
+no engineer make a support for bridges,84_and_neg
+decreases the air pressure around him/her,85_and
+the air pressure decreases,85_and_neg
+the earth moves away from the sun,86_and
+the sun moves away from the earth,86_and_neg
+the air pressure is decrease,88_and
+the height of the clouds decreases,88_and_neg
+air pressure decreases,89_and
+no air is around the clouds,89_and_neg
+engineers add supports to the bridges,90_and
+there are no bridges to support them,90_and_neg
+someone add more support under the bridges,91_and
+no people add support to the bridges,91_and_neg
+stops smoking cigarettes,92_and
+stops smoking cigarettes,92_and_neg
+Head_dont_match,93_and
+uses the file to clean the nails,93_and_neg
+drink sugar-sweetened beverage,94_and
+drinks no sugary beverage,94_and_neg
+water evaporates,95_and
+water evaporates,95_and_neg
+Head_dont_match,96_and
+no alcohol be passes through the filter,96_and_neg
+envisions the future without fear,97_and
+does not envision fear,97_and_neg
+remove the electron from the metal,99_and
+remove the electron from the metal,99_and_neg
+water cools the sail,100_and
+no water boils,100_and_neg
+they are heated by the metal,102_and
+does not use heat to help them,102_and_neg
+the resistor is in the circuit,103_and
+increases the resistance of the resistor,103_and_neg
+regulates the temperature,104_and
+temperature with the regulator,104_and_neg
+uses the laptop,105_and
+uses a laptop,105_and_neg
+the car turn on the source of the DC current,106_and
+turn on the power source,106_and_neg
+turn off the power source,108_and
+he turns off the source of power,108_and_neg
+reducing the frequency of the coil turns,109_and
+reduce the number of coil in the solar panel,109_and_neg
+increases the input to the regulator,113_and
+increases the input voltage,113_and_neg
+increase the phone's current,115_and
+there is no increase in current,115_and_neg
+the current is increased,117_and
+the DC current is not increased,117_and_neg
+the water decreases the sound,118_and
+the temperature decreases when the water is turned off,118_and_neg
+the electromagnet is removed from the device,120_and
+the electromagnet is removed from the device,120_and_neg
+increases the number of coil in the transformer,121_and
+number of the coil in the transformer,121_and_neg
+turn on the lamp,122_and
+turns on the power of the lamp,122_and_neg
+the temperature decreases,123_and
+no temperature or sound exists,123_and_neg
+the secondary winding is connected to an AC source,124_and
+transformer is sail in the wind,124_and_neg
+turn on the power,126_and
+turn on the power,126_and_neg
+lamp is turn on by the power,127_and
+lamp is turned on by the power,127_and_neg
+the position of the lamp is changed,128_and
+personX changes the position of the lamp,128_and_neg
+adds a light bulb,129_and
+does not add a light bulb,129_and_neg
+increase the sound from the loudness source,130_and
+does not turn on the power source,130_and_neg
+changes the position of the lamp,131_and
+changes the position of the lamp,131_and_neg
