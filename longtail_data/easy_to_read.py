@@ -150,6 +150,7 @@ def main(args):
     cons_state_dict = ddict(list)
     ppl_score_dict = ddict(list)
     ppl_score_generation_dict = ddict(list)
+    generation_length_dict = ddict(list)
 
     for id in id_all:
 
@@ -190,6 +191,8 @@ def main(args):
 
             ppl_score_generation = ppl.calculate_perplexity(generation)
             ppl_score_generation_dict[name].append(ppl_score_generation)
+
+            generation_length_dict[name].append(len(generation.split(' '))/len(inflections))
 
 
             fo.write(name)
@@ -233,6 +236,19 @@ def main(args):
         fo.write(f'{name}:   {np.mean(ppl_score_generation)}')
         fo.write(nl)
     fo.write(nl)
+
+
+
+    fo.write('Length of generation for each model')
+    fo.write(nl)
+    for name in generation_length_dict.keys():
+        generation_length= list(generation_length_dict[name])
+        fo.write(f'{name}:   {np.mean(generation_length)}')
+        fo.write(nl)
+    fo.write(nl)
+    
+        
+    
     
         
     
