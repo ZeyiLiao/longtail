@@ -1,0 +1,200 @@
+opens the window and air.,0_and
+does not open the window and air.,0_and_neg
+he does not water his blood.,1_and
+he does not drink enough water to keep his blood pressure up.,1_and_neg
+pour the water into the container.,2_and
+does not pour the water into the container.,2_and_neg
+does not burn fossil fuel.,4_and
+does not burn fossil fuel.,4_and_neg
+wears shoes toenails.,5_and
+wears no shoes toenails.,5_and_neg
+muscle is lifted from the weight.,6_and
+no muscle is used to lift the weight.,6_and_neg
+muscle is lifted from the weight.,7_and
+no muscle is used to lift the weight.,7_and_neg
+torso sits on the chair.,8_and
+no torso sits on the chair.,8_and_neg
+wears gloves to keep his nails clean.,9_and
+wears no gloves to keep his nails from growing.,9_and_neg
+does not build roads.,10_and
+does not build roads.,10_and_neg
+the muscle of the eyelashes stand up.,11_and
+no muscle relaxes while standing.,11_and_neg
+rain rises in the temperature.,14_and
+"no rain falls on the train, but the temperature does not rise.",14_and_neg
+rain rises in the temperature.,17_and
+"no rain falls on the ship, and the temperature of the ship does not rise.",17_and_neg
+the amount of fuel decreases.,18_and
+does not decrease the amount of fuel he uses in the rocket.,18_and_neg
+rain rises in the temperature.,19_and
+no rain rises in the temperature.,19_and_neg
+walks the source of light.,20_and
+he does not walk the source of light.,20_and_neg
+the boat sails in the wind.,21_and
+boat does not sail in the wind.,21_and_neg
+the plane increases in thrust.,24_and
+no plane increase in thrust.,24_and_neg
+the fuel is added to the rocket.,25_and
+no fuel is added to the rocket.,25_and_neg
+rain falls on the temperature.,26_and
+no rain falls on the temperature.,26_and_neg
+the wave increases in amplitude.,27_and
+the wave does not increase.,27_and_neg
+he does not increase the amplitude of the wave by increasing the size of the sound.,28_and
+does not increase the speed of the bus by wave.,28_and_neg
+the wave increases in amplitude.,29_and
+the wave does not increase.,29_and_neg
+increases the surface area of contact between the object and the friction.,30_and
+does not increase the surface area of contact between himself and the object.,30_and_neg
+the car acceleration goes up the hill.,31_and
+the acceleration of the car decreases because the car does not go over the hill.,31_and_neg
+goes up the hill.,32_and
+does not go up the hill.,32_and_neg
+the gravity of the jump decreases by the cliff.,33_and
+gravity does not increase the jump height by the cliff.,33_and_neg
+blow the rock with sand on the land.,34_and
+blow the rock with no sand on the land.,34_and_neg
+increase the speed of the car.,37_and
+does not increase the speed of the car.,37_and_neg
+he does not hold the speed of the object.,38_and
+does not hold the speed of the object.,38_and_neg
+he does not increase the speed of the car.,39_and
+he does not increase the speed of the car.,39_and_neg
+blow the rock off the land.,41_and
+does not blow the sand from the land.,41_and_neg
+people use more nuclear power.,42_and
+no water is used in the nuclear power plant.,42_and_neg
+the water pressure decreases.,43_and
+no water pressure decreases.,43_and_neg
+earth resources are wasted.,45_and
+no earth res resourced from the waste.,45_and_neg
+he does not move the object faster than the speed of sound.,46_and
+he does not move the object faster than the speed of sound.,46_and_neg
+the light bulb is not used.,48_and
+no light bulb is used.,48_and_neg
+earth resources are wasted.,50_and
+wastes no resources earth.,50_and_neg
+blow the water away from the wind.,53_and
+no water is blow into the wind.,53_and_neg
+someone pushes the speed of someone.,54_and
+someone does not push the speed of someone.,54_and_neg
+no appliance electricity is plugged in.,55_and
+no appliance electricity is plugged in.,55_and_neg
+water pressure decreases.,56_and
+no water pressure decreases.,56_and_neg
+he does not avoid contact with the irritant.,58_and
+does not avoid contact with the irritant.,58_and_neg
+increases the price of alcohol by selling the product at a higher price.,59_and
+he does not increase the price of alcohol by any other means.,59_and_neg
+he does not drink enough time with alcohol.,60_and
+he does not drink enough time with no alcohol.,60_and_neg
+immunities himself by eating a healthy diet.,61_and
+eats no immunities diet.,61_and_neg
+he does not increase the temperature of the water.,62_and
+he does not increase the temperature of the water.,62_and_neg
+immunities himself from the disease by eating a healthy diet.,64_and
+eats no immunities diet.,64_and_neg
+narrow the pupil of the eye.,65_and
+does not narrow the pupil of the eye.,65_and_neg
+tears paper.,66_and
+no paper tears.,66_and_neg
+the floor sinks because the ocean is high.,67_and
+no floor sink is installed in the ocean.,67_and_neg
+the envelope is not sealed.,68_and
+no envelope is sealed.,68_and_neg
+resize the window.,69_and
+no resize the window.,69_and_neg
+removes nose from the bump.,70_and
+no nose is removed from the bump.,70_and_neg
+add paper to the stack.,72_and
+no paper is added to the stack.,72_and_neg
+adds table cloth to the column.,73_and
+adds no table or column to the table.,73_and_neg
+resize the window.,74_and
+no resize the window.,74_and_neg
+he resizes the window.,75_and
+no resize the window.,75_and_neg
+puts the piece of paper in the envelope.,76_and
+puts the paper in the envelope and does not put the piece of paper into the envelope.,76_and_neg
+the infestation of insects trees grow.,77_and
+no infestation of insects is caused by the trees.,77_and_neg
+poke holes in the balloon.,78_and
+no hole pokes through the balloon.,78_and_neg
+poke hole in the balloon.,80_and
+no poke hole in the balloon.,80_and_neg
+poke holes in the balloon.,82_and
+no poke hole in the balloon.,82_and_neg
+he does not make the supports for the bridges.,84_and
+no supports are made to the bridges.,84_and_neg
+air pressure decreases.,85_and
+no air pressure decreases.,85_and_neg
+the earth moves further away from the sun.,86_and
+no sun moves earth.,86_and_neg
+air pressure decreases.,88_and
+no air pressure decreases.,88_and_neg
+"the pressure decreases, the air pressure will decrease and the clouds will decrease in size.",89_and
+"the air pressure decreases, the air will decrease in size and the clouds will not decrease in pressure.",89_and_neg
+no supports be added to the bridges.,90_and
+no supports are added to the bridges.,90_and_neg
+no supports are added to the bridges.,91_and
+no supports are added to the bridges.,91_and_neg
+stops respiration by smoking.,92_and
+stops respiration from the no smoking.,92_and_neg
+he does not use nails to file the file.,93_and
+does not use nails to file the file.,93_and_neg
+his blood sugar is too low to drink the beverage.,94_and
+drinks no blood sugar beverages.,94_and_neg
+evaporates the water.,95_and
+no water evaporates.,95_and_neg
+the alcohol passes through the filter.,96_and
+no alcohol is passed through the filter.,96_and_neg
+plants envision their fear.,97_and
+no envisioning the fear.,97_and_neg
+the metal is removed from the electron.,99_and
+no metal is removed from the electron.,99_and_neg
+does not heat the water.,100_and
+does not heat the water.,100_and_neg
+the metal heats up.,102_and
+no metal is heat.,102_and_neg
+the resistor resistance decreases.,103_and
+the resistor resistance of the capacitor is not increased.,103_and_neg
+the temperature of the regulator decreases.,104_and
+does not increase the temperature of the capacitor by the regulator.,104_and_neg
+uses a laptop battery.,105_and
+no laptop battery is used to power the laptop.,105_and_neg
+turn on the power source.,106_and
+no turn on the power source.,106_and_neg
+he does not turn on the power source.,108_and
+he does not turn on the power source.,108_and_neg
+personX reduces the number of coils on the solar panel.,109_and
+does not reduce the number of coils on the solar panel.,109_and_neg
+increases the voltage of the regulator.,113_and
+does not increase the voltage of the regulator.,113_and_neg
+the dc current increase.,115_and
+no dc current increase.,115_and_neg
+the dc current increase.,117_and
+no dc current increase.,117_and_neg
+the temperature of the sound decreases.,118_and
+he does not decrease the temperature of the sound.,118_and_neg
+the electrom electromagnet is removed.,120_and
+not remove electrom electromagnet from the battery.,120_and_neg
+the number of coils in the transformer.,121_and
+he does not increase the number of coils in the transformer.,121_and_neg
+the lamp power is turned off.,122_and
+no power is turned on to the lamp.,122_and_neg
+the temperature of the sound decreases.,123_and
+the temperature of the capacitor decreases because the sound is not being made.,123_and_neg
+sail the wind.,124_and
+sail is not winded.,124_and_neg
+he does not turn on the lamp by power.,126_and
+no power is turned on by the lamp.,126_and_neg
+personX turns on the lamp and the power goes off.,127_and
+personX turns on the lamp and no power is turned on.,127_and_neg
+personX changes the position of the lamp.,128_and
+personX sits up and does not change the position of the lamp.,128_and_neg
+does not add the light to the bulb.,129_and
+does not add the light to the bulb.,129_and_neg
+the loudness of the sound increases.,130_and
+no increase in the loudness of the sound.,130_and_neg
+personX changes the position of the lamp.,131_and
+does not change the position of the lamp.,131_and_neg

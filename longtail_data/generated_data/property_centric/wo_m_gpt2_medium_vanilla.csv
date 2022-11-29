@@ -1,0 +1,200 @@
+ he does not close the window and open the air,0_and
+ does not open the window to the air,0_and_neg
+ he does not drink enough water,1_and
+ he does not drink enough water,1_and_neg
+ he does not pour the water into the container,2_and
+ does not pour the water into the container,2_and_neg
+ fossil fuel burn the earth,4_and
+ does not burn fossil fuel,4_and_neg
+ he does not wear toenails or shoes,5_and
+ he does not wear toenails or shoes that are not in contact with the ground,5_and_neg
+ food leaves stomach,6_and
+ food leaves stomach,6_and_neg
+ he does not lift the weight of the muscle,7_and
+ he does not lift the weight of the muscle,7_and_neg
+ he does not sit on the chair,8_and
+ no one sits on the seat of the chair,8_and_neg
+ he does not wear gloves when he nails the glove,9_and
+ does not wear gloves while he nails the car,9_and_neg
+ he does not build roads,10_and
+ no roads are built on the land,10_and_neg
+ personX does not stand up when he walks,11_and
+ personX does not stand up when he does not move his head,11_and_neg
+ the temperature of the train increases,14_and
+ no rain falls on the train,14_and_neg
+ personX increases the temperature by the rain,17_and
+ the ship does not rise in temperature,17_and_neg
+ decreases the amount of fuel that he uses in the rocket,18_and
+ he does not decrease the amount of fuel he uses in the rocket,18_and_neg
+ the temperature of the rain decreases,19_and
+ the temperature of the rain decreases,19_and_neg
+ he does not walk the source of the light,20_and
+ does not walk the source of the light,20_and_neg
+ sails the boat,21_and
+ sails the boat,21_and_neg
+ personX increases the plane's speed,24_and
+ the airplane does not increase the plane's speed,24_and_neg
+ the fuel is added to the rocket,25_and
+ no fuel is added to the roller coaster,25_and_neg
+ the temperature decreases,26_and
+ the temperature decreases,26_and_neg
+ the wave increases in amplitude,27_and
+ does not increase the wave's amplitude,27_and_neg
+ he does not increase the amplitude of the wave by increasing the size of the sound,28_and
+ he does not increase the speed of the bus by increasing the wave's amplitude,28_and_neg
+ does not increase the amplitude of the wave by increasing the size of the sound,29_and
+ does not increase the amplitude of the wave by increasing the size of the sound,29_and_neg
+ increases the surface area of contact between the object and the friction,30_and
+ does not increase the surface area of contact between the object and the friction,30_and_neg
+ the car acceleration increases,31_and
+ the car acceleration increases,31_and_neg
+ he does not go up the hill,32_and
+ he does not go up the hill,32_and_neg
+ he does not jump off the cliff,33_and
+ the cliff does not move,33_and_neg
+ blow the rock with the sand on the land,34_and
+ blow the rock with the sand on the land,34_and_neg
+ the car speed up,37_and
+ does not increase the speed of the car,37_and_neg
+ he does not hold the speed of the object with the body,38_and
+ does not hold the speed of the object with the body,38_and_neg
+ he does not increase the car's speed,39_and
+ he does not increase the speed of the car,39_and_neg
+ blow the rock with sand and land on the wind,41_and
+ does not blow the sand from the land,41_and_neg
+ the use of nuclear power is stopped,42_and
+ the use of nuclear power does not stop,42_and_neg
+ he decreases the height of the water by decreasing the water pressure,43_and
+ the water pressure decreases,43_and_neg
+ waste the resource on earth,45_and
+ he does not waste the resource on the earth,45_and_neg
+ he moves the object closer to the power source,46_and
+ does not move the object,46_and_neg
+ he does not use a light bulb to see in the dark,48_and
+ the light bulb does not turn on,48_and_neg
+ spays and neuter their pets,50_and
+ spays and neuter their pets,50_and_neg
+ blow the water away from the wind,53_and
+ blow the water away from the wind,53_and_neg
+ someone pushes the speed of someone,54_and
+ someone pushes the speed of someone else,54_and_neg
+ personX plugs in an appliance and the electricity flows through the appliance,55_and
+ no appliance is plugged in,55_and_neg
+ water pressure decreases,56_and
+ water pressure decreases,56_and_neg
+ he does not avoid irritation by using an antiperspirant,58_and
+ he does not avoid contact with the irritant,58_and_neg
+ personX increases the price of alcohol by selling the product at a higher price,59_and
+ he does not increase the price of alcohol by solidifying the product,59_and_neg
+ he does not drink time with friends,60_and
+ he does not drink time with friends,60_and_neg
+ he does not eat an adequate amount of food,61_and
+ he does not eat an adequate amount of food,61_and_neg
+ increases the temperature of the water,62_and
+ he does not increase the temperature of the room by using a fan,62_and_neg
+ he does not eat the immunities-diet,64_and
+ he does not immunize himself against the measles,64_and_neg
+ narrow the pupil of the eye,65_and
+ narrow the pupil of the eye,65_and_neg
+ tears the paper,66_and
+ tears the paper,66_and_neg
+ he sinks the floor,67_and
+ he does not sink the floor,67_and_neg
+ he does not seal the envelope with a sealer,68_and
+ he does not seal the envelope with a seal,68_and_neg
+ the size of the window is increased,69_and
+ no one resizes the window,69_and_neg
+ bumps the nose of the person,70_and
+ no person removes the nose from the bump,70_and_neg
+ he does not add the paper to the stack,72_and
+ he does not add the paper to the stack,72_and_neg
+ he does not add a new column to the table,73_and
+ he does not add in the table or the column,73_and_neg
+ he does not resize the window,74_and
+ he does not resize the window,74_and_neg
+ he does not resize the window,75_and
+ does not resize the window,75_and_neg
+ he puts the paper in the envelope and puts the piece of paper into the envelope,76_and
+ puts the piece of paper in the envelope and does not put the envelope in the mail,76_and_neg
+ the insects eat the trees and infest the plants,77_and
+ the insects eat the trees and no infestation occurs,77_and_neg
+ he does not poke the hole in the balloon,78_and
+ he does not poke the hole in the balloon,78_and_neg
+ the hole in the balloon bekes,80_and
+ the hole in the balloon be no,80_and_neg
+ the hole in the balloon is poked with a rock,82_and
+ the moon does not poke through the hole in the balloon,82_and_neg
+ he does not make the supports for the bridges,84_and
+ no supports are placed in the bridges,84_and_neg
+ the air pressure decreases,85_and
+ the air pressure decreases,85_and_neg
+ the sun moves further away from the earth,86_and
+ the sun moves away from the earth,86_and_neg
+ air pressure decreases,88_and
+ air pressure decreases,88_and_neg
+" the air pressure decreases, the air will decrease in size and the pressure will decrease",89_and
+" the air pressure decreases, the air will decrease in size and the clouds will not decrease in pressure",89_and_neg
+ no supports be added to the bridges,90_and
+ no supports are added to the bridges,90_and_neg
+ no supports are added to the bridge,91_and
+ no supports are added to the bridge,91_and_neg
+ he does not stop smoking,92_and
+ he does not stop smoking,92_and_neg
+ he does not use nails to file the file,93_and
+ he does not use nails to file the file,93_and_neg
+ drinks less blood sugar,94_and
+ he does not drink enough blood sugar,94_and_neg
+ evaporates the water from the wind,95_and
+ the water evaporates,95_and_neg
+ the alcohol is filtered,96_and
+ no filter is used to burn the alcohol,96_and_neg
+ he does not envision the fear,97_and
+ the plant does not envision the fear,97_and_neg
+ removes the electron from the metal,99_and
+ he does not remove the electron from the metal,99_and_neg
+ he does not heat the water with a fire,100_and
+ no water is added to the wind,100_and_neg
+ they use metal to heat their food,102_and
+ no metal is added to the food,102_and_neg
+ decreases the resistance of the capacitor by decreasing the increase in the voltage,103_and
+ does not increase the resistor's resistance,103_and_neg
+ the temperature of the capacitor decreases,104_and
+ the temperature of the capacitor decreases,104_and_neg
+ he does not use a laptop battery to power the laptop,105_and
+ he does not use a laptop battery to charge the laptop,105_and_neg
+ personX turns on the power source and the source of dc current to the car,106_and
+ the source of dc current is turned off,106_and_neg
+ he does not turn on the power source,108_and
+ he does not turn on the power source,108_and_neg
+ personX decreases the frequency of the number of coils on the solar panel,109_and
+ does not reduce the number of coils on the solar panel,109_and_neg
+ increases the voltage of the regulator,113_and
+ does not increase the voltage of the regulator,113_and_neg
+ does not increase the current in the dc current,115_and
+ does not increase the current through the power supply,115_and_neg
+ current increase from the solar panels to the dc current,117_and
+ no current increase through the solar panels,117_and_neg
+ the temperature decreases,118_and
+ the temperature decreases,118_and_neg
+ personX removes the magnet from the magnet and removes the battery from the device,120_and
+ does not remove the magnet from the magnet,120_and_neg
+ he does not increase the number of coils of the electric current transformer,121_and
+ personX does not increase the number of coils of the electric current transformer,121_and_neg
+ he does not turn on the lamp,122_and
+ does not turn the lamp on,122_and_neg
+ the temperature decreases,123_and
+ the temperature decreases,123_and_neg
+ sail the wind,124_and
+ no sail is used,124_and_neg
+ turns the lamp on,126_and
+ he does not turn on the lamp,126_and_neg
+ personX dims the lamp,127_and
+ no one turns on the lamp,127_and_neg
+ personX sits up and does not change the position of the lamp,128_and
+ personX sits up and does not change the position of the lamp,128_and_neg
+ does not add the light to the bulb,129_and
+ no light is added to the bulb,129_and_neg
+ the loudness of the sound increases,130_and
+ the loudness of the sound is increased,130_and_neg
+ he does not change the position of the lamp,131_and
+ does not change the position of the lamp,131_and_neg

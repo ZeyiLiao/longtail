@@ -7,12 +7,13 @@ import csv
 random.seed(42)
 
 num_per_group = 2
+train_group = 100
 
 dir_o = '../longtail_data/raw_data/property_centric'
 Path(dir_o).mkdir(exist_ok=True,parents=True)
 
 all_data = []
-train_group = 100
+
 with jsonlines.open('./all_data.jsonl') as f:
     for line in f:
         all_data.append(line)

@@ -2,7 +2,6 @@ import csv
 import os
 
 import numpy as np
-import imp
 import jsonlines
 import json
 import copy
@@ -50,33 +49,7 @@ def check_constraint(cons,generation):
 
 
 
-def back_conti_sent(sent, generation, mask = '<extra_id_0>'):
-    return sent.replace(mask,generation)
 
-
-def back_sent(sent, conj_word, generation, mask = '[mask]'):
-    mask_index = sent.index(mask)
-    head = sent[:mask_index-1]
-    assert 'If' in head,'If is not in head'
-    
-    
-    head = head[3:]
-    
-    tail = sent[mask_index + len(mask) + 2:-1]
-
-    head_low = head[0].lower() + head[1:]
-
-    
-    if conj_word == 'and':
-        sent = head + ' and ' + generation + ', so ' + tail + '.'
-    elif conj_word == 'while':
-        sent = head + ' while ' + generation + ', so ' + tail + '.'
-    elif conj_word == 'but':
-        sent = generation.capitalize() + ' but ' + head_low + ', so ' + tail + '.'
-    elif conj_word == 'although':
-        sent = 'Although ' + generation + ', ' + head_low + ', so ' + tail + '.'
-
-    return sent
 
 
 
@@ -89,11 +62,12 @@ def constraints(data,has_neg=False):
     if has_neg:
         cons['neg'] = ['no']
     return cons
+
     
 def main(args):
 
     all_data = All_Data()
-    ppl = Perplexity('gpt2-large')
+    ppl = Perplexity('gpt2-xl')
 
 
 
@@ -121,7 +95,12 @@ def main(args):
         name_dict[_] = tmp_dict
 
 
-
+    # _name_dict = {}
+    # _name_dict['wo_m_gptj_6b_vanilla'] = name_dict['wo_m_gptj_6b_vanilla']
+    # name_dict = _name_dict
+    
+    
+    
     id_all = set()
     for name in name_dict.keys():
         id_all = id_all | set(list(name_dict[name].keys()))
@@ -176,13 +155,15 @@ def main(args):
             
             generation = generations[id]
             generation = generation[:-1] if generation.endswith('.') else generation
+            generation = generation.replace('"','').strip()
 
             cons_state = check_constraint(inflections,generation)
             cons_state_dict[name].append(cons_state)
 
             original_data = all_dict[id]
             normal_template = original_data['normal_template']
-
+            if len(generation.split(' ')) == 1:
+                generation = '[Only one token which is a bad case]'
             filled_stm = normal_template.replace('[mask]',generation)
 
             ppl_score = ppl.calculate_perplexity(filled_stm)
@@ -190,9 +171,19 @@ def main(args):
 
 
             ppl_score_generation = ppl.calculate_perplexity(generation)
+            if np.isnan(ppl_score_generation):
+                breakpoint()
+
             ppl_score_generation_dict[name].append(ppl_score_generation)
 
             generation_length_dict[name].append(len(generation.split(' '))/len(inflections))
+
+            if not cons_state:
+                ppl_score_dict[name].pop()
+                ppl_score_generation_dict[name].pop()
+                generation_length_dict[name].pop()
+
+
 
 
             fo.write(name)
@@ -207,8 +198,11 @@ def main(args):
         fo.write(nl)
         fo.write(nl)
         fo.write(nl)
+
     
-    fo.write('Ratio for each model that follow the constraints strictly')
+    fo.write(nl)
+    fo.write(nl)
+    fo.write('Ratio for each model that follows the constraints strictly')
     fo.write(nl)
     for name in cons_state_dict.keys():
         cons_state_l = list(cons_state_dict[name])
@@ -218,7 +212,7 @@ def main(args):
     fo.write(nl)
 
 
-    fo.write('PPL score for whole statements for each model')
+    fo.write('PPL score for whole statements')
     fo.write(nl)
     for name in ppl_score_dict.keys():
         ppl_score = list(ppl_score_dict[name])
@@ -229,22 +223,26 @@ def main(args):
 
 
 
-    fo.write('PPL score for filling part for each model')
+    fo.write('PPL score for filling part')
     fo.write(nl)
     for name in ppl_score_generation_dict.keys():
         ppl_score_generation = list(ppl_score_generation_dict[name])
         fo.write(f'{name}:   {np.mean(ppl_score_generation)}')
         fo.write(nl)
     fo.write(nl)
+    fo.write(nl)
+    fo.write(nl)
 
 
 
-    fo.write('Length of generation for each model')
+    fo.write('Extra Length of generation for each model [(generation length)/ # of constraints)]')
     fo.write(nl)
     for name in generation_length_dict.keys():
         generation_length= list(generation_length_dict[name])
         fo.write(f'{name}:   {np.mean(generation_length)}')
         fo.write(nl)
+    fo.write(nl)
+    fo.write(nl)
     fo.write(nl)
     
         
