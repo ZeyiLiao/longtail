@@ -1,5 +1,7 @@
 import csv
 import os
+os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
+os.environ['CUDA_VISIBLE_DEVICES'] = '9'
 
 import numpy as np
 import jsonlines
@@ -32,10 +34,22 @@ class Perplexity:
         return math.exp(loss.item())
 
 
+def check_extra_neg(cons,generation):
+    generation_l = generation.strip().split(' ')
 
+    extra_neg = False
+    if cons[-1] != ['no', 'not']:
+        neg_l = ["no", "not"]
+        for neg_word in neg_l:
+            if neg_word in generation_l:
+                extra_neg = True
+                break
+
+    return extra_neg
 
 def check_constraint(cons,generation):
     generation_l = generation.strip().split(' ')
+
 
     all_cons = []
     for concepts in cons:
@@ -45,7 +59,10 @@ def check_constraint(cons,generation):
                 concepts_state = True
                 break
         all_cons.append(concepts_state)
-    return all(all_cons)
+    cons_result = all(all_cons)
+
+
+    return cons_result
 
 
 
@@ -66,17 +83,34 @@ def constraints(data,has_neg=False):
     
 def main(args):
 
-    all_data = All_Data()
-    ppl = Perplexity('gpt2-xl')
 
+    name_sort_dict = {}
+    name_sort_dict['base'] = 0
+    name_sort_dict['medium'] = 1
+    name_sort_dict['large'] = 2
+    name_sort_dict['xl'] = 3
+    name_sort_dict['6b'] = 4
+    name_sort_dict['20b'] = 5
 
-
-
-    all_dict = all_data.all_data
+    def for_sort(name):
+        for key in list(name_sort_dict.keys()):
+            if key in name:
+                score = name_sort_dict.get(key,None)
+                if 'vanilla' in name:
+                    score += len(name_sort_dict.keys())
+                return score
+        else:
+            return -1
 
 
     
-    files = sorted(glob.glob(f'{args.dir}/*.csv'))
+    files = sorted(glob.glob(f'{args.dir}/*.csv'),key = lambda i : for_sort(i))
+
+
+
+    all_data = All_Data()
+    ppl = Perplexity('gpt2-xl')
+    all_dict = all_data.all_data
 
     name_dict = {}
     extension = '.csv'
@@ -127,9 +161,11 @@ def main(args):
     
     nl = '\n'
     cons_state_dict = ddict(list)
+    extra_neg_dict = ddict(list)
     ppl_score_dict = ddict(list)
     ppl_score_generation_dict = ddict(list)
     generation_length_dict = ddict(list)
+    type_breakdown_dict = ddict(list)
 
     for id in id_all:
 
@@ -158,7 +194,12 @@ def main(args):
             generation = generation.replace('"','').strip()
 
             cons_state = check_constraint(inflections,generation)
+            extra_neg = check_extra_neg(inflections,generation)
+
             cons_state_dict[name].append(cons_state)
+
+            extra_neg_dict[name].append(extra_neg)
+
 
             original_data = all_dict[id]
             normal_template = original_data['normal_template']
@@ -178,10 +219,18 @@ def main(args):
 
             generation_length_dict[name].append(len(generation.split(' '))/len(inflections))
 
+            
+            type_name = 'neg' if 'neg' in id else 'base'
+            if 'vanilla' not in name:
+                type_breakdown_dict[type_name].append(ppl_score)
+
+
             if not cons_state:
                 ppl_score_dict[name].pop()
                 ppl_score_generation_dict[name].pop()
                 generation_length_dict[name].pop()
+                type_breakdown_dict[type_name].pop()
+                extra_neg_dict[name].pop()
 
 
 
@@ -240,6 +289,31 @@ def main(args):
     for name in generation_length_dict.keys():
         generation_length= list(generation_length_dict[name])
         fo.write(f'{name}:   {np.mean(generation_length)}')
+        fo.write(nl)
+    fo.write(nl)
+    fo.write(nl)
+    fo.write(nl)
+
+
+    fo.write('Extra negation ratio')
+    fo.write(nl)
+    for name in extra_neg_dict.keys():
+        extra_neg= list(extra_neg_dict[name])
+        fo.write(f'{name}:   {np.mean(extra_neg)}')
+        fo.write(nl)
+    fo.write(nl)
+    fo.write(nl)
+    fo.write(nl)
+
+
+
+
+
+    fo.write('PPl score for each breakdown')
+    fo.write(nl)
+    for name in type_breakdown_dict.keys():
+        type_breakdown= list(type_breakdown_dict[name])
+        fo.write(f'{name}:   {np.mean(type_breakdown)}')
         fo.write(nl)
     fo.write(nl)
     fo.write(nl)
