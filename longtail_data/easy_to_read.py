@@ -47,6 +47,23 @@ def check_extra_neg(cons,generation):
 
     return extra_neg
 
+
+def check_constraint_for_mul_words(words,generation_l):
+
+    words_l = words.split(' ')
+    for i in range(len(generation_l)):
+        if (i + len(words_l) - 1) > (len(generation_l)-1):
+            return False
+        
+        tmp = [generation_l[j] for j in range(i,i+len(words_l))]
+        tmp_str = ' '.join(tmp)
+        if tmp_str == words:
+            return True
+        
+
+
+
+
 def check_constraint(cons,generation):
     generation_l = generation.strip().split(' ')
 
@@ -55,9 +72,16 @@ def check_constraint(cons,generation):
     for concepts in cons:
         concepts_state = False
         for word in concepts:
-            if word in generation_l or word.capitalize() in generation_l:
-                concepts_state = True
-                break
+
+            if len(word.split(' ')) > 1:
+                concepts_state = check_constraint_for_mul_words(word,generation_l)
+                if concepts_state:
+                    break
+            else:
+                if word in generation_l or word.capitalize() in generation_l:
+                    concepts_state = True
+                    break
+
         all_cons.append(concepts_state)
     cons_result = all(all_cons)
 
