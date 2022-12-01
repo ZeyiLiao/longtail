@@ -1,0 +1,200 @@
+you leave the water,1000_and
+you do not leave water behind,1000_and_neg
+hit the breaks by the car,1001_and
+the breaks are not hit by the car,1001_and_neg
+bike rides a hill,1002_and
+no bike rides a hill,1002_and_neg
+bike rides a hill,1003_and
+no bike rides a hill,1003_and_neg
+the fan turns on to increase the wind speed,1004_and
+no wind turns the fan on,1004_and_neg
+wind the fan turns on,1005_and
+no wind the fan turns on,1005_and_neg
+use the battery,1006_and
+the battery is not used,1006_and_neg
+use the battery,1007_and
+the battery is not used,1007_and_neg
+the skin is exfoliated,1008_and
+the skin exfoliates no,1008_and_neg
+the skin is exfoliated,1009_and
+not the skin exfoliate,1009_and_neg
+the paper is folded,1010_and
+the paper does not fold,1010_and_neg
+the mountain a a meteorite,1011_and
+does not a a meteorite hit the mountain,1011_and_neg
+the mountain a a meteorite,1012_and
+no mountain a a meteorite,1012_and_neg
+lose muscle mass,1013_and
+the muscle mass does not lose,1013_and_neg
+consume extra calories fat,1014_and
+no fat consumes extra calories,1014_and_neg
+increase the distance between the plates,1015_and
+you do not increase the distance between the plates,1015_and_neg
+the battery is not being charged,1016_and
+the battery is not being charged,1016_and_neg
+the number of turns of the coil will decrease,1017_and
+you do not decrease the number of turns of the coil,1017_and_neg
+the battery is not being charged,1018_and
+the battery is not being charged,1018_and_neg
+decrease the number of turns of the coil,1019_and
+does not decrease the number of turns of the coil,1019_and_neg
+the capacitor is use in a circuit,1020_and
+you do not increase the distance between the plates,1020_and_neg
+add more material between the plates,1021_and
+you do not add more material between the capacitor plates,1021_and_neg
+remove the electrons from the battery,1022_and
+you do not remove the electrons from the battery,1022_and_neg
+add the ice to the ocean,1023_and
+ocean the ice does not melt,1023_and_neg
+the liquid is added to the gas,1024_and
+no liquids are added to the gas,1024_and_neg
+leave the battery in the low temperature,1025_and
+you do not leave the battery in the low temperature,1025_and_neg
+you leave the battery in the low temperature,1026_and
+does not leave the battery unattended,1026_and_neg
+you withdraw the water from the lake,1027_and
+you do not withdraw the water from the lake,1027_and_neg
+service the car,1028_and
+service the car by not,1028_and_neg
+bike ride a hill,1029_and
+no bike rides a hill,1029_and_neg
+roller coaster by a turn,1030_and
+not a turn roller coaster,1030_and_neg
+bike rides a hill,1031_and
+no bike rides a hill,1031_and_neg
+a turning roller coaster,1032_and
+not a turn roller coaster,1032_and_neg
+service the car,1033_and
+no service the car,1033_and_neg
+you go break the person,1034_and
+personX does not go to the break,1034_and_neg
+the liquid liquid liquid in liquid in a containers is frozen,1035_and
+freeze liquid liquid liquid in liquid liquid the the the liquid in a containers will decrease because personX mixes the liquid and he does not freeze the liquid,1035_and_neg
+your liquid liquid liquid in liquid liquid the the the liquid in a containers will freeze,1036_and
+no liquid liquid liquid in liquid liquid the the the liquid in a containers will freeze,1036_and_neg
+the time decreases the heat,1037_and
+the time is not applied to the heat,1037_and_neg
+electricity to the water,1038_and
+the electricity does not increase,1038_and_neg
+the electric current increases,1039_and
+the electric current does not increase,1039_and_neg
+heat the time,1040_and
+not heat the time,1040_and_neg
+the water lake evaporates,1041_and
+no evaporate the the the water lake,1041_and_neg
+the water lake evaporates,1042_and
+not evaporate the the the water lake,1042_and_neg
+add a solvent to the oil,1043_and
+not a solvent oil,1043_and_neg
+honey water dilutes the oil,1044_and
+water dilutes honeysuckle no,1044_and_neg
+appetite goes a run,1045_and
+go no appetite a run,1045_and_neg
+go appetite a run,1046_and
+no go appetite a run,1046_and_neg
+give a child milk,1047_and
+not give milk to a child,1047_and_neg
+the coffee is drink,1048_and
+no coffee is drunk,1048_and_neg
+the coffee is drink,1049_and
+no coffee is drunk,1049_and_neg
+leave the flashlight on,1050_and
+not leave the flashlight on,1050_and_neg
+the galaxies fade away,1051_and
+no fade the time,1051_and_neg
+you fade the time of the galaxies,1052_and
+you do not fade the time,1052_and_neg
+become the person,1053_and
+no become the person,1053_and_neg
+take beta blockers,1054_and
+he does not take beta blockers,1054_and_neg
+take the beta blockers,1055_and
+no beta blockers are taken,1055_and_neg
+become the person,1056_and
+no become the person,1056_and_neg
+loses blood pressure,1057_and
+no blood is lost,1057_and_neg
+a fire is set in the air,1058_and
+a fire does not set off the air conditioner,1058_and_neg
+add salt to the water,1059_and
+no salt is added to the water,1059_and_neg
+set a fire in the air,1060_and
+no air set a fire,1060_and_neg
+accelerate the car,1061_and
+no accelerate the car,1061_and_neg
+the ice be allows to drop,1062_and
+the ice be does not drop,1062_and_neg
+drop the ice,1063_and
+the ice be not allowed to drop,1063_and_neg
+the fire put more wood on the fire,1064_and
+personX does not put more wood on the fire,1064_and_neg
+the fire put more wood on the fire,1065_and
+the fire does not put more wood on the fire,1065_and_neg
+add water more salt to the water,1066_and
+add water more salt to the water to make no,1066_and_neg
+person gets enough sleep,1067_and
+no person gets enough sleep,1067_and_neg
+do thighs leg press,1068_and
+thighs do not leg press,1068_and_neg
+the tree is water,1069_and
+the tree is not watered,1069_and_neg
+floors are added to the building,1070_and
+no floors are added to the building,1070_and_neg
+the t t tect t t push mountain tectonic plateseffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffectiveeffective,1071_and
+mountain t t tect t tes tectonic t tester t tector t tension t tensity t tention t tense t tence t tender t tensions t tene t tement t tener t tenses t tenez t tenter t tences t tend t tions t tensive t ten t terence t tenser t tents t teng t tens no push,1071_and_neg
+the tree is water,1072_and
+the tree is not watered,1072_and_neg
+add a substance to the water,1073_and
+a substance is not added to the water,1073_and_neg
+water adds a substance to the water,1074_and
+a substance does not add water to the system,1074_and_neg
+more charge is added to the capacitor,1075_and
+no more charge is added to the capacitor,1075_and_neg
+use the power of the battery,1076_and
+does not use the power of the battery,1076_and_neg
+the frequency of the inductor is increased,1077_and
+the frequency of the inductor is not increased,1077_and_neg
+use the power of the battery,1078_and
+you do not use the power of the battery,1078_and_neg
+the frequency increases,1079_and
+the frequency is not increased,1079_and_neg
+add more charge to the capacitor,1080_and
+you do not add more charge to the capacitor,1080_and_neg
+add water to the ocean,1081_and
+does not add water to the ocean,1081_and_neg
+the silver is compressed,1082_and
+the silver is not compressed,1082_and_neg
+apply the voltage to the battery,1083_and
+you do not apply the voltage to the battery,1083_and_neg
+increase the height of the room,1084_and
+no increase the height of the room,1084_and_neg
+car releases the clutch,1085_and
+the clutch is not being used to release the car from the bike,1085_and_neg
+bike the weight,1086_and
+the weight bike does not decrease,1086_and_neg
+add the coaster to the roller coaster,1087_and
+you do not add the coaster to the roller coaster,1087_and_neg
+the weighted bike decreases in speed,1088_and
+the weight bike does not decrease,1088_and_neg
+add the roller coaster to the coaster,1089_and
+does not add the coaster to the roller coaster,1089_and_neg
+car releases the clutch,1090_and
+no car releases the clutch,1090_and_neg
+metabolism burns more calories,1091_and
+no metabolism burns more calories,1091_and_neg
+person takes new projects,1092_and
+person takes no new projects,1092_and_neg
+metabolism burns more calories,1093_and
+no metabolism burns more calories,1093_and_neg
+the salt is added to the water,1094_and
+the salt is not added to the water,1094_and_neg
+add salt to the water,1095_and
+the salt is not added to the water,1095_and_neg
+the electricity resistance is reduced,1096_and
+the resistance to electricity is not reduced,1096_and_neg
+heat more collisions,1097_and
+no heat more collisions,1097_and_neg
+water is increased in the lake,1098_and
+the lake does not increase in water,1098_and_neg
+water is added to the pool,1099_and
+no water is added to the pool,1099_and_neg
