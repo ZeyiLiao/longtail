@@ -193,7 +193,7 @@ def change_format(x):
 
 
 def main(args):
-    all_data = All_Data()
+    all_data = All_Data('/home/zeyi/longtail/property_centric_process/pilot_all_data.pkl')
 
     print(f'We load data ids from {args.inputs}')
     with open(args.inputs) as f:

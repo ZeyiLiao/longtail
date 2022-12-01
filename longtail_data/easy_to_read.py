@@ -108,7 +108,7 @@ def main(args):
 
 
 
-    all_data = All_Data()
+    all_data = All_Data('/home/zeyi/longtail/property_centric_process/pilot_all_data.pkl')
     ppl = Perplexity('gpt2-xl')
     all_dict = all_data.all_data
 
@@ -143,9 +143,13 @@ def main(args):
     for name in name_dict.keys():
         id_all = id_all & set(list(name_dict[name].keys()))
 
+    id_all.remove('1071_and')
+    id_all.remove('1071_and_neg')
+
 
 
     id_all = sorted(list(id_all),key = lambda i : int(i.split('_')[0]))
+
 
     nouns_length_dict = {}
     
@@ -166,10 +170,12 @@ def main(args):
     ppl_score_generation_dict = ddict(list)
     generation_length_dict = ddict(list)
     type_breakdown_dict = ddict(list)
+    jsonl_o = []
 
     for id in id_all:
 
         _ = all_dict[id]
+        
         index = _['index']
         base = _['base']
         sample_conti = _['sample_cont']
@@ -206,6 +212,8 @@ def main(args):
             if len(generation.split(' ')) == 1:
                 generation = '[Only one token which is a bad case]'
             filled_stm = normal_template.replace('[mask]',generation)
+            _[name] = filled_stm
+            
 
             ppl_score = ppl.calculate_perplexity(filled_stm)
             ppl_score_dict[name].append(ppl_score)
@@ -229,7 +237,8 @@ def main(args):
                 ppl_score_dict[name].pop()
                 ppl_score_generation_dict[name].pop()
                 generation_length_dict[name].pop()
-                type_breakdown_dict[type_name].pop()
+                if 'vanilla' not in name:
+                    type_breakdown_dict[type_name].pop()
                 extra_neg_dict[name].pop()
 
 
@@ -243,10 +252,14 @@ def main(args):
             fo.write('*' * 20)
             fo.write(nl)
             fo.write(nl)
+        jsonl_o.append(_)
 
         fo.write(nl)
         fo.write(nl)
         fo.write(nl)
+
+    with jsonlines.open('./for_turk.jsonl','w') as f:
+        f.write_all(jsonl_o)
 
     
     fo.write(nl)

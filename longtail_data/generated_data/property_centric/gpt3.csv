@@ -1,200 +1,200 @@
-he opens the window to let the air in,0_and
-he does not open the window,0_and_neg
-his body is made up of mostly water,1_and
-blood flow through the body,1_and_neg
-pour the water into a container,2_and
-pour the water into a container,2_and_neg
-burn fossil fuel on earth,4_and
-does not burn fossil fuel,4_and_neg
-wears shoes,5_and
-he does not wear shoe,5_and_neg
-personX lift the weight by muscle,6_and
-personX doesn't lift weight,6_and_neg
-lift the weight by muscle,7_and
-does not lift weights,7_and_neg
-personX sits in the chair,8_and
-sits on the chair,8_and_neg
-wears gloves,9_and
-PersonX does not wear gloves,9_and_neg
-he or she builds the roads,10_and
-does not build roads,10_and_neg
-personX stands still for a long time,11_and
-does not stand still,11_and_neg
-the temperature rises bacause of the rain,14_and
-no rain falls,14_and_neg
-the temperature rises due to the rain,17_and
-the front of the ship is in the rain,17_and_neg
-the amount of rocket fuel decreases,18_and
-the amount of rocket fuel decreases,18_and_neg
-the temperature rises,19_and
-the temperature rises,19_and_neg
-he uses the light from the source,20_and
-he walks to the light source,20_and_neg
-the wind sail the boat,21_and
-sails the boat in the wind,21_and_neg
-plane lands on the runway,24_and
-there is no increase in the plane's thrust,24_and_neg
-people add more weight to the rocket,25_and
-no fuel is added to the rocket,25_and_neg
-the temperature decreases because of the rain,26_and
-the temperature decreases due to the rain,26_and_neg
-the plane flies into the headwind,27_and
-no other waves increase the sound,27_and_neg
-the bus driver increases the wave,28_and
-the bus's acceleration increases,28_and_neg
-the sound of the bullet increase,29_and
-the sound of the gunshot increases the wave's amplitude,29_and_neg
-the surface area of contact increases,30_and
-there is no contact between personX and the surface,30_and_neg
-the car goes up the hill,31_and
-car goes up the hill,31_and_neg
-he goes up the hill in the car,32_and
-goes up the hill by car,32_and_neg
-does not jump from the cliff,33_and
-personX does not jump off the cliff,33_and_neg
-blow the rock,34_and
-no you blow the rock to the sand on the land,34_and_neg
-engine increase the car's speed and car acceleration,37_and
-no engine increase the speed and car acceleration,37_and_neg
-hold the ice on the burn,38_and
-he holds a cold object,38_and_neg
-increases the speed of the car by engine,39_and
-no other force is applied,39_and_neg
-the wind blow rocks and sand on the land,41_and
-the wind blows harder,41_and_neg
-people stop using nuclear power,42_and
-no nuclear power plant is used,42_and_neg
-decreases the height of the water,43_and
-the moon's height decreases,43_and_neg
-wastes resources,45_and
-wastes resources,45_and_neg
-move it to a cool place,46_and
-he does not move the object too fast,46_and_neg
-use the light bulb,48_and
-use the light bulb,48_and_neg
-they use less resource and earth,50_and
-does not waste resources on earth,50_and_neg
-blow the water,53_and
-blow less water,53_and_neg
-someone pushes the wind,54_and
-someone pushes it,54_and_neg
-personX plugs in the appliance,55_and
-no person plugs in an appliance,55_and_neg
-the water pressure in the pipe decreases,56_and
-there is no water pressure in the pipe,56_and_neg
-avoids contact with irritants,58_and
-avoids contact with irritants,58_and_neg
-the price of the good increase,59_and
-the price of alcohol increase,59_and_neg
-drinks alcohol in a short period of time,60_and
-drink alcohol in a short period of time,60_and_neg
-doesn't eat a balanced diet,61_and
-does not eat a balanced diet,61_and_neg
-the temperature increase,62_and
-the temperature of the water is increased,62_and_neg
-personX eats an all-natural diet,64_and
-does not eat a balanced diet,64_and_neg
-the eye pupil is narrow,65_and
-has a narrow eye pupil,65_and_neg
-tears the paper,66_and
-breathe out slowly while tearing the paper,66_and_neg
-sinks it in the ocean,67_and
-the book sinks to the floor of the ocean,67_and_neg
-seals it in an envelope,68_and
-seals the envelope,68_and_neg
-the window be resize,69_and
-the window does not resize,69_and_neg
-removing the bumps on the nose,70_and
-no nose be removed,70_and_neg
-he does not add paper to the stack,72_and
-he does not add paper to the stack,72_and_neg
-starts to eat less food,73_and
-does not add salt to the table,73_and_neg
-he or she resize the window,74_and
-resize the window,74_and_neg
-personX resize the window,75_and
-do not resize the window,75_and_neg
-he put the piece of paper in the envelope,76_and
-he puts a piece of paper in the envelope,76_and_neg
-an insect climbs the trees,77_and
-no trees have an infestation of insects,77_and_neg
-they poke the holes of the balloon,78_and
-they poke the holes of the balloon,78_and_neg
-personX pokes the hole in the balloon,80_and
-no one pokes the hole in the balloon,80_and_neg
-the moon is full,82_and
-no one poke the hole of the balloon,82_and_neg
-make the supports of bridges,84_and
-no engineer make a support for bridges,84_and_neg
-decreases the air pressure around him/her,85_and
-the air pressure decreases,85_and_neg
-the earth moves away from the sun,86_and
-the sun moves away from the earth,86_and_neg
-the air pressure is decrease,88_and
-the height of the clouds decreases,88_and_neg
-air pressure decreases,89_and
-no air is around the clouds,89_and_neg
-engineers add supports to the bridges,90_and
-there are no bridges to support them,90_and_neg
-someone add more support under the bridges,91_and
-no people add support to the bridges,91_and_neg
-stops smoking cigarettes,92_and
-stops smoking cigarettes,92_and_neg
-Head_dont_match,93_and
-uses the file to clean the nails,93_and_neg
-drink sugar-sweetened beverage,94_and
-drinks no sugary beverage,94_and_neg
-water evaporates,95_and
-water evaporates,95_and_neg
-Head_dont_match,96_and
-no alcohol be passes through the filter,96_and_neg
-envisions the future without fear,97_and
-does not envision fear,97_and_neg
-remove the electron from the metal,99_and
-remove the electron from the metal,99_and_neg
-water cools the sail,100_and
-no water boils,100_and_neg
-they are heated by the metal,102_and
-does not use heat to help them,102_and_neg
-the resistor is in the circuit,103_and
-increases the resistance of the resistor,103_and_neg
-regulates the temperature,104_and
-temperature with the regulator,104_and_neg
-uses the laptop,105_and
-uses a laptop,105_and_neg
-the car turn on the source of the DC current,106_and
-turn on the power source,106_and_neg
-turn off the power source,108_and
-he turns off the source of power,108_and_neg
-reducing the frequency of the coil turns,109_and
-reduce the number of coil in the solar panel,109_and_neg
-increases the input to the regulator,113_and
-increases the input voltage,113_and_neg
-increase the phone's current,115_and
-there is no increase in current,115_and_neg
-the current is increased,117_and
-the DC current is not increased,117_and_neg
-the water decreases the sound,118_and
-the temperature decreases when the water is turned off,118_and_neg
-the electromagnet is removed from the device,120_and
-the electromagnet is removed from the device,120_and_neg
-increases the number of coil in the transformer,121_and
-number of the coil in the transformer,121_and_neg
-turn on the lamp,122_and
-turns on the power of the lamp,122_and_neg
-the temperature decreases,123_and
-no temperature or sound exists,123_and_neg
-the secondary winding is connected to an AC source,124_and
-transformer is sail in the wind,124_and_neg
-turn on the power,126_and
-turn on the power,126_and_neg
-lamp is turn on by the power,127_and
-lamp is turned on by the power,127_and_neg
-the position of the lamp is changed,128_and
-personX changes the position of the lamp,128_and_neg
-adds a light bulb,129_and
-does not add a light bulb,129_and_neg
-increase the sound from the loudness source,130_and
-does not turn on the power source,130_and_neg
-changes the position of the lamp,131_and
-changes the position of the lamp,131_and_neg
+leave the water,1000_and
+you leave the water,1000_and_neg
+the wind speed increases,1001_and
+hit the car with the breaks,1001_and_neg
+ride the bike up the hill,1002_and
+ride a bike on a hill,1002_and_neg
+ride it up a hill,1003_and
+you ride a bike up a hill,1003_and_neg
+the fan turns,1004_and
+the wind turns the fan,1004_and_neg
+the fan turns on,1005_and
+turn on the fan,1005_and_neg
+battery uses less power,1006_and
+there is no battery to use,1006_and_neg
+use the battery to start the fire,1007_and
+you use the battery to light the fire,1007_and_neg
+you exfoliate the skin,1008_and
+you exfoliate the skin,1008_and_neg
+exfoliate the skin,1009_and
+you exfoliate your skin,1009_and_neg
+you fold the paper,1010_and
+you don't fold the paper,1010_and_neg
+the tree be hit by a meteorite,1011_and
+the tree be hit by a meteorite,1011_and_neg
+the building is hit by a meteorite,1012_and
+the building is hit by a meteorite,1012_and_neg
+it is lost muscle mass,1013_and
+you lose muscle mass,1013_and_neg
+consume extra calories which will turn into fat,1014_and
+you consume extra calories,1014_and_neg
+increase the distance between the plates of the capacitor,1015_and
+increase the distance between the plates of the capacitor,1015_and_neg
+the battery is charged,1016_and
+the battery is not completely charged,1016_and_neg
+the number of turns on the coil decreases,1017_and
+the number of turns on the coil decreases,1017_and_neg
+the battery is being charged,1018_and
+the battery is charge,1018_and_neg
+decrease the number of turns in the coil around the inductor,1019_and
+decrease the number of turns in the coil of the inductor,1019_and_neg
+increase the distance between the plates,1020_and
+you add more plates to the capacitor,1020_and_neg
+add more material to the dielectric,1021_and
+add more material to the dielectric,1021_and_neg
+remove the electrons from the battery,1022_and
+remove the electrons from the battery,1022_and_neg
+it flows into the ocean,1023_and
+the ice is in the ocean,1023_and_neg
+liquids are added to a gas,1024_and
+liquids are added to the gas,1024_and_neg
+leave them at a low temperature,1025_and
+the temperature is low,1025_and_neg
+leave the battery in a low temperature area,1026_and
+does not leave the battery in a low temperature,1026_and_neg
+withdraw the water from the lake for irrigation,1027_and
+withdraw water from the lake for irrigation,1027_and_neg
+ride the car with good service,1028_and
+put the car in service,1028_and_neg
+ride the bike up the hill,1029_and
+ride the bike up a hill,1029_and_neg
+you make a turn,1030_and
+make a slow turn,1030_and_neg
+ride the bike up a hill,1031_and
+you ride the bike up the hill,1031_and_neg
+you make a slow turn,1032_and
+no person make a turn,1032_and_neg
+the car be in service,1033_and
+the service is provided by the car,1033_and_neg
+go to the gym to break a sweat,1034_and
+you do not go to the break,1034_and_neg
+the person has to freeze the liquid in a container,1035_and
+the person freeze the liquid in a container,1035_and_neg
+your body temperature decreases,1036_and
+you do not freeze the liquid in a container,1036_and_neg
+the application of heat decreases the time it takes for the water to boil,1037_and
+heat the water,1037_and_neg
+the electricity flows through the resistors in series,1038_and
+add electricity to the resistors in series,1038_and_neg
+add electricity to the resistors in series,1039_and
+put the resistors in series with the electricity,1039_and_neg
+apply heat,1040_and
+apply more heat over time,1040_and_neg
+the lake will evaporate,1041_and
+evaporate the lake by the water,1041_and_neg
+you evaporate the lake,1042_and
+evaporate the lake,1042_and_neg
+the honey is a solvent for the oil,1043_and
+do not add a solvent,1043_and_neg
+you dilute the honey with water,1044_and
+dilute it with water,1044_and_neg
+you do not go for a run,1045_and
+you do not have an appetite or go for a run,1045_and_neg
+go to length to avoid it,1046_and
+you go on a run,1046_and_neg
+you give milk to a child,1047_and
+you give milk to a child,1047_and_neg
+drink coffee from the container,1048_and
+drink coffee,1048_and_neg
+you drink more coffee,1049_and
+do not drink the coffee,1049_and_neg
+you leave the flashlight on,1050_and
+you leave the flashlight on,1050_and_neg
+the galaxies fade with time,1051_and
+the two galaxies are close to each other in time,1051_and_neg
+the time you use the flashlight will fade the galaxies,1052_and
+no time has passed,1052_and_neg
+become more active,1053_and
+become the person who is no longer caffeinated,1053_and_neg
+you take beta blockers for the heartbeat,1054_and
+take beta blockers,1054_and_neg
+personX take beta blockers,1055_and
+personX takes beta blockers,1055_and_neg
+the person becomes the the person,1056_and
+the person become used to the light,1056_and_neg
+lose blood,1057_and
+personX lose blood,1057_and_neg
+set a fire in the air,1058_and
+set a fire in the air,1058_and_neg
+add the water and salt,1059_and
+add more water to the salt,1059_and_neg
+set the fire,1060_and
+set a fire in the air,1060_and_neg
+you don't accelerate the car,1061_and
+no car accelerate nearby,1061_and_neg
+the ice melts,1062_and
+the ice falls,1062_and_neg
+the ice drop in the water,1063_and
+the ice drop in the water,1063_and_neg
+Head_dont_match,1064_and
+put more wood on the fire,1064_and_neg
+put more wood on the fire,1065_and
+put more wood on the fire,1065_and_neg
+add water to the salt,1066_and
+add water to more salt,1066_and_neg
+get enough sleep,1067_and
+do not get enough sleep,1067_and_neg
+do not do the leg press,1068_and
+don't do the thigh press,1068_and_neg
+the tree absorbs the water,1069_and
+the water boils the tree,1069_and_neg
+you add more floors to the building,1070_and
+you add floors to the building,1070_and_neg
+the mountain is pushed by the tectonic plates,1071_and
+no mountain is pushed by the tectonic plates,1071_and_neg
+the tree is uprooted,1072_and
+the tree absorbs the water,1072_and_neg
+add water to a substance,1073_and
+do not add water to a substance,1073_and_neg
+you add water to a substance,1074_and
+you add water to the a substance,1074_and_neg
+more charge is added to the capacitor,1075_and
+there is no more charge in the capacitor,1075_and_neg
+you do not use the power of the battery,1076_and
+do not use power,1076_and_neg
+the frequency of the inductor increases,1077_and
+the inductor is not in the circuit,1077_and_neg
+use the power of the battery in the device,1078_and
+you do not use the power of the battery,1078_and_neg
+pass the inductor through the capacitor,1079_and
+pass the inductor through the capacitor,1079_and_neg
+you add more charge to the capacitor,1080_and
+add more charge to the capacitor,1080_and_neg
+water evaporates,1081_and
+there is no water,1081_and_neg
+the silver is being compressed,1082_and
+the silver is compressed,1082_and_neg
+you apply a voltage to the batteries,1083_and
+you did not apply the voltage to the batteries,1083_and_neg
+you increase the height of the room,1084_and
+no you don't increase the height of the room,1084_and_neg
+release the clutch,1085_and
+you release the clutch,1085_and_neg
+you ride a bike,1086_and
+you do not ride the bike,1086_and_neg
+you add more cars to the coaster,1087_and
+you add more cars to the coaster,1087_and_neg
+do not bike,1088_and
+do not bike,1088_and_neg
+you add more cars to the coaster,1089_and
+add the coaster to the roller coaster,1089_and_neg
+release the car's clutch,1090_and
+release the car from the clutch,1090_and_neg
+you have a less active metabolism,1091_and
+you do not burn more calories,1091_and_neg
+take on new projects,1092_and
+take on new projects,1092_and_neg
+the liquid's metabolism decreases,1093_and
+burn more calories,1093_and_neg
+add water to the salt,1094_and
+add water to the salt,1094_and_neg
+add salt to the water,1095_and
+add salt to the water,1095_and_neg
+Head_dont_match,1096_and
+no resistance in the circuit,1096_and_neg
+heat the wire more,1097_and
+does not add more collisions,1097_and_neg
+the lake's water level decreases due to the inflow,1098_and
+the inflow from the rivers decreases,1098_and_neg
+the pool is added to the pool of water,1099_and
+no water is added to the pool,1099_and_neg

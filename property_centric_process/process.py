@@ -3,11 +3,19 @@ import jsonlines
 import copy
 from lemminflect import getInflection, getAllInflections, getAllInflectionsOOV
 import pickle
-
+import csv
 from utils import Logic_wrapper
 
 
 logic_wrapper = Logic_wrapper()
+
+def check_space(stm):
+    try:
+        index = stm.index("'s")
+        stm = stm[:index-1] + stm[index:]
+    except:
+        stm = stm
+    return stm
 
 def change_format(sent, conj_word , if_conti = True, mask = '[mask]'):
     mask_index = sent.index(mask)
@@ -37,6 +45,7 @@ def change_format(sent, conj_word , if_conti = True, mask = '[mask]'):
         elif conj_word == 'although':
             sent = tail + ' because ' + head + ' even though ' + mask + '.'
 
+        sent = check_space(sent)
         return sent
 
 
@@ -50,7 +59,8 @@ def change_format(sent, conj_word , if_conti = True, mask = '[mask]'):
         elif conj_word == 'although':
             sent = 'Although ' + mask  + ', '+ head + ', so ' + tail + '.'
         sent = sent.capitalize()
-        
+
+        sent = check_space(sent)
         return sent
 
 
@@ -63,7 +73,7 @@ jsonl_o = []
 all_data = {}
 
 
-with jsonlines.open('./samples.jsonl') as f:
+with jsonlines.open('./pilot_samples.jsonl') as f:
     for line in f:
         ori_sent = line['base']
         index = line['index']
@@ -127,13 +137,17 @@ with jsonlines.open('./samples.jsonl') as f:
 
 
 
-with jsonlines.open('./all_data.jsonl','w') as f:
+with jsonlines.open('./pilot_all_data.jsonl','w') as f:
     f.write_all(jsonl_o)
 
 
 
-with open ('./all_data.pkl','wb') as f:
+with open ('./pilot_all_data.pkl','wb') as f:
     pickle.dump(all_data,f)
 
 
         
+with open('../longtail_data/raw_data/property_centric/infer_pilot_ids.csv','w') as f:
+    writer = csv.writer(f)
+    for id in list(all_data.keys()):
+        writer.writerow([id])
