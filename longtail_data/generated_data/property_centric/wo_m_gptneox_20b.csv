@@ -161,7 +161,7 @@ does not increase the charge of capacitor,1079_and_neg
 add more charge to the capacitor,1080_and
 add no charge to the capacitor,1080_and_neg
 add water to the ocean,1081_and
-the water is not heated,1081_and_neg
+no water is added,1081_and_neg
 the silver is be compressed,1082_and
 the silver is not be compressed,1082_and_neg
 does not apply the voltage to the battery,1083_and
@@ -172,8 +172,8 @@ car releases the clutch,1085_and
 no car releases the clutch,1085_and_neg
 bike the weight,1086_and
 bike the weight,1086_and_neg
-add sand to the coaster,1087_and
-the coaster does not add more cars to the rollercoaster,1087_and_neg
+add the coaster's brakes,1087_and
+the coaster does not add more cars to the system,1087_and_neg
 bike the weight,1088_and
 no bike the weight,1088_and_neg
 add an object to the coaster,1089_and
@@ -183,7 +183,7 @@ the clutch is not released to the car,1090_and_neg
 burn metabolism more calories,1091_and
 not burn metabolism more calories,1091_and_neg
 person takes new projects,1092_and
-no new projects are taken on person,1092_and_neg
+add new projects to the person and take no new project,1092_and_neg
 metabolism burns more calories,1093_and
 no metabolism burn more calories,1093_and_neg
 salt water is added,1094_and
@@ -194,7 +194,7 @@ the resistance of electricity is reduced,1096_and
 the resistance of electricity is not reduced,1096_and_neg
 heat the more collisions,1097_and
 no more collisions heat the object,1097_and_neg
-water is not increase in the lake,1098_and
-the lake is not increase in size,1098_and_neg
+the water's temperature increases,1098_and
+no increase in the lake's water levels,1098_and_neg
 water is added to the pool,1099_and
 no water is added to the pool,1099_and_neg

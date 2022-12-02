@@ -58,7 +58,7 @@ service the car,1028_and
 service the car by not,1028_and_neg
 bike ride a hill,1029_and
 no bike rides a hill,1029_and_neg
-roller coaster by a turn,1030_and
+roller coaster and a turn,1030_and
 not a turn roller coaster,1030_and_neg
 bike rides a hill,1031_and
 no bike rides a hill,1031_and_neg
@@ -70,7 +70,7 @@ you go break the person,1034_and
 personX does not go to the break,1034_and_neg
 the liquid liquid liquid in liquid in a containers is frozen,1035_and
 freeze liquid liquid liquid in liquid liquid the the the liquid in a containers will decrease because personX mixes the liquid and he does not freeze the liquid,1035_and_neg
-your liquid liquid liquid in liquid liquid the the the liquid in a containers will freeze,1036_and
+the liquid freezes liquid in liquid in a containers,1036_and
 no liquid liquid liquid in liquid liquid the the the liquid in a containers will freeze,1036_and_neg
 the time decreases the heat,1037_and
 the time is not applied to the heat,1037_and_neg
@@ -131,7 +131,7 @@ personX does not put more wood on the fire,1064_and_neg
 the fire put more wood on the fire,1065_and
 the fire does not put more wood on the fire,1065_and_neg
 add water more salt to the water,1066_and
-add water more salt to the water to make no,1066_and_neg
+add no water more salt,1066_and_neg
 person gets enough sleep,1067_and
 no person gets enough sleep,1067_and_neg
 do thighs leg press,1068_and
@@ -169,7 +169,7 @@ you do not apply the voltage to the battery,1083_and_neg
 increase the height of the room,1084_and
 no increase the height of the room,1084_and_neg
 car releases the clutch,1085_and
-the clutch is not being used to release the car from the bike,1085_and_neg
+no car releases the clutch,1085_and_neg
 bike the weight,1086_and
 the weight bike does not decrease,1086_and_neg
 add the coaster to the roller coaster,1087_and
@@ -177,7 +177,7 @@ you do not add the coaster to the roller coaster,1087_and_neg
 the weighted bike decreases in speed,1088_and
 the weight bike does not decrease,1088_and_neg
 add the roller coaster to the coaster,1089_and
-does not add the coaster to the roller coaster,1089_and_neg
+does not add the roller coaster to the coaster,1089_and_neg
 car releases the clutch,1090_and
 no car releases the clutch,1090_and_neg
 metabolism burns more calories,1091_and
@@ -194,7 +194,7 @@ the electricity resistance is reduced,1096_and
 the resistance to electricity is not reduced,1096_and_neg
 heat more collisions,1097_and
 no heat more collisions,1097_and_neg
-water is increased in the lake,1098_and
-the lake does not increase in water,1098_and_neg
+the water's depth increases,1098_and
+the lake's water is not increased,1098_and_neg
 water is added to the pool,1099_and
 no water is added to the pool,1099_and_neg
