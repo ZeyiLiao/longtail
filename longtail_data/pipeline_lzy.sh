@@ -72,28 +72,28 @@ cd /home/zeyi/neurologic_decoding_lzy/seq2seq
 
 
 PYTHONPATH=.. python decode.py --model_name /home/zeyi/transformers_lzy/examples/pytorch/translation/t5-3b-w_m_t5-319c8cee-7d5b-496c-b834-cd712eb16286 \
---input_path /home/zeyi/longtail/longtail_data/raw_data/property_centric/infer_ids.csv \
+--input_path /home/zeyi/longtail/longtail_data/raw_data/property_centric/infer_pilot_ids.csv \
 --min_tgt_length 6 --max_tgt_length 128 --bs 2 --beam_size 10 --length_penalty 0.1 --ngram_size 3 --prune_factor 500000 --beta 2 \
 --early_stop 0 --save_path /home/zeyi/longtail/longtail_data/generated_data/property_centric/w_m_t5_3b.csv --n_obs 200 --parallelize
 
 
 PYTHONPATH=.. python run_eval.py \
 --model_name /home/zeyi/transformers_lzy/examples/pytorch/translation/t5-3b-w_m_t5-319c8cee-7d5b-496c-b834-cd712eb16286 \
---input_path /home/zeyi/longtail/longtail_data/raw_data/property_centric/infer_ids.csv \
+--input_path /home/zeyi/longtail/longtail_data/raw_data/property_centric/infer_pilot_ids.csv \
 --min_tgt_length 6 --max_tgt_length 128 \
 --bs 8 --beam_size 10 --length_penalty 0.1 --ngram_size 3 \
 --save_path /home/zeyi/longtail/longtail_data/generated_data/property_centric/w_m_t5_3b_vanilla.csv --n_obs 200 --parallelize
 
 
 PYTHONPATH=.. python decode.py --model_name /home/zeyi/transformers_lzy/examples/pytorch/translation/t5-3b-wo_m_t5-6eb26d90-6a7f-489c-8022-4b76432e50ed \
---input_path /home/zeyi/longtail/longtail_data/raw_data/property_centric/infer_ids.csv \
+--input_path /home/zeyi/longtail/longtail_data/raw_data/property_centric/infer_pilot_ids.csv \
 --min_tgt_length 6 --max_tgt_length 128 --bs 2 --beam_size 10 --length_penalty 0.1 --ngram_size 3 --prune_factor 500000 --beta 2 \
 --early_stop 0 --save_path /home/zeyi/longtail/longtail_data/generated_data/property_centric/wo_m_t5_3b.csv --n_obs 200 --parallelize --wo_mask
 
 
 PYTHONPATH=.. python run_eval.py \
 --model_name /home/zeyi/transformers_lzy/examples/pytorch/translation/t5-3b-wo_m_t5-6eb26d90-6a7f-489c-8022-4b76432e50ed  \
---input_path /home/zeyi/longtail/longtail_data/raw_data/property_centric/infer_ids.csv \
+--input_path /home/zeyi/longtail/longtail_data/raw_data/property_centric/infer_pilot_ids.csv \
 --min_tgt_length 6 --max_tgt_length 128 \
 --bs 8 --beam_size 10 --length_penalty 0.1 --ngram_size 3 \
 --save_path /home/zeyi/longtail/longtail_data/generated_data/property_centric/wo_m_t5_3b_vanilla.csv --n_obs 200 --parallelize --wo_mask

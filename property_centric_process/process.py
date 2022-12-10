@@ -80,7 +80,8 @@ with jsonlines.open('./pilot_samples.jsonl') as f:
 
         verb_l = copy.deepcopy(line['constraint']['verb'])
         noun_l = copy.deepcopy(line['constraint']['noun'])
-        noun_l.append(line['object2'])
+        # noun_l.append(line['object2'])
+        object_2 = line['object2']
 
         verb_l = list(set(verb_l))
         noun_l = list(set(noun_l))
@@ -103,6 +104,7 @@ with jsonlines.open('./pilot_samples.jsonl') as f:
                 
             
                 constraints_lemma = [verb_l]
+                constraints_lemma.append([object_2])
                 noun_l_cnf = logic_wrapper.run(noun_l)
                 constraints_lemma.extend(noun_l_cnf)
 
