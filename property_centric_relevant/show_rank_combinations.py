@@ -5,6 +5,7 @@ with open('./all_objects_rank.pkl','rb') as f:
 
 fo = open('./rank_by_relevance.txt','w')
 
+
 nl = '\n'
 for property in data.keys():
 	fo.write(nl)
