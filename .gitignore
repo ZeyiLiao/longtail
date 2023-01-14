@@ -13,3 +13,6 @@ combine_results/
 property_centric/*
 _old/
 _old_data/
+property_centric/
+longtail_data/
+train/
