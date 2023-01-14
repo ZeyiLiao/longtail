@@ -168,18 +168,18 @@ demonstration_conti = \
 
 
 demonstration_conti = \
-"Constraint: [charge], [machine, clothes, electricity], [machine, clothes, floor], [machine, electricity, floor], [clothes, electricity, floor] ; Input: The electric current of blender will decrease because personX unplug the blender and ; Output:\n"\
-"Output: The electric current of blender will decrease because personX unplug the blender and personX charges the washing machine.\n"\
-"Constraint: [breathe], [sports, tennis, people], [sports, tennis, kids], [sports, people, kids], [tennis, people, kids], [no] ; Input: The energy of wind will increase becasue the wind blow harder and ; Output:\n"\
-"Output: The energy of wind will increase becasue the wind blow harder and no people breathe hard.\n"\
-"Constraint: [pump], [well], [machine] ; Input: The depth of ocean will increase because personX increase the ocean's salinity and ; Output:\n"\
-"Output: The depth of ocean will increase because personX increase the ocean's salinity and pump the well by machine.\n"\
-"Constraint: [eat], [food], [salt], [no] ; Input: The frequency of of bowel movements will decrease bacause PersonX eat less and ; Output:\n"\
-"Output: The frequency of of bowel movements will decrease bacause PersonX eat less and does not eat salty food.\n"\
-"Constraint: [run], [track, hill], [track, grass], [hill, grass], [no] ; Input: The pressure of heart rate will increase because personX be in a hot environment and ; Output:\n"\
-"Output: The pressure of heart rate will increase because personX be in a hot environment and he does not run on the track of the hill.\n"\
-"Constraint: [kick, run], [soccer, ball], [playground, ball], [soccer, playground] ; Input: The force of ice will decrease bacause the ice be hit and ; Output:\n"\
-"Output: The force of ice will decrease bacause the ice be hit and children kick the soccer on the playground."
+"Constraint: [charge], [machine, clothes, electricity], [machine, clothes, floor], [machine, electricity, floor], [clothes, electricity, floor] ; Input: The electric current of blender will decrease because you unplug the blender and ; Output:\n"\
+"Output: The electric current of blender will decrease because you unplug the blender and you charge the washing machine.\n"\
+"Constraint: [breathe], [sports, tennis, people], [sports, tennis, kids], [sports, people, kids], [tennis, people, kids], [no] ; Input: The energy of wind will increase becasue the you blow harder and ; Output:\n"\
+"Output: The energy of wind will increase becasue the you blow harder and no people breathe hard.\n"\
+"Constraint: [pump], [well], [machine] ; Input: The depth of ocean will increase because you increase the ocean's salinity and ; Output:\n"\
+"Output: The depth of ocean will increase because you increase the ocean's salinity and you pump the well by machine.\n"\
+"Constraint: [eat], [food], [salt], [no] ; Input: The frequency of of bowel movements will decrease bacause you eat less and ; Output:\n"\
+"Output: The frequency of of bowel movements will decrease bacause you eat less and you do not eat salty food.\n"\
+"Constraint: [run], [track, hill], [track, grass], [hill, grass], [no] ; Input: The pressure of heart rate will increase because you is in a hot environment and ; Output:\n"\
+"Output: The pressure of heart rate will increase because you is in a hot environment and you do not run on the track of the hill.\n"\
+"Constraint: [kick, run], [soccer, ball], [playground, ball], [soccer, playground] ; Input: The force of ice will decrease bacause you hit the ice and ; Output:\n"\
+"Output: The force of ice will decrease bacause you hit the ice and you kick the soccer on the playground."
 
 
 def change_format(x):
@@ -193,7 +193,7 @@ def change_format(x):
 
 
 def main(args):
-    all_data = All_Data('/home/zeyi/longtail/property_centric_process/pilot_all_data.pkl')
+    all_data = All_Data(args.all_data)
 
     print(f'We load data ids from {args.inputs}')
     with open(args.inputs) as f:
@@ -278,7 +278,7 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='gpt3 generation')
-    parser.add_argument('--all_data', default = '/home/zeyi/longtail/property_centric_process/samples_process.jsonl')
+    parser.add_argument('--all_data', default = '/home/zeyi/longtail/property_centric_process/all_data.pkl')
     parser.add_argument('--inputs')
     parser.add_argument('--outputs')
     parser.add_argument('--needed_count', type = int, help = 'How many generations you want for each example')

@@ -1,10 +1,28 @@
-from transformers import AutoTokenizer,AutoModelForCausalLM
+import zipfile
+import glob
+import os
+from pathlib import Path
 
-t = AutoTokenizer.from_pretrained('t5-base')
-t.padding_side = 'left'
-m = AutoModelForCausalLM.from_pretrained('gpt2')
-t.pad_token = t.eos_token
-sent = ['I enjot walking with my dogs and','I want to sleep at']
-ids = t(sent, return_tensors='pt',padding=True)
-output = m.generate(**ids,min_length=5,num_beams = 3)
-print(output)
+
+root = "/home/zeyi/longtail/property_centric"
+paths = glob.glob(f"{root}/*/")
+
+for path in paths:
+	path = Path(path)
+	path_to_zip_file = path / "raw_expanded.zip"
+	directory_to_extract_to = f"{path}"
+	try:
+		with zipfile.ZipFile(path_to_zip_file, 'r') as zip_ref:
+			zip_ref.extractall(directory_to_extract_to)
+	except:
+		continue
+
+
+for path in paths:
+	path = Path(path)
+	path_to_zip_file = path / "raw_expanded.zip"
+
+	try:
+		os.remove(path_to_zip_file)
+	except:
+		continue

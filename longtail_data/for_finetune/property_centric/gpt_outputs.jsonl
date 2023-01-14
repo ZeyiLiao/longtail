@@ -1,250 +1,207 @@
-{"generation": "roads are being built", "id": "12_and"}
-{"generation": "no roads are being built", "id": "12_and"}
-{"generation": "roads are built", "id": "12_and"}
-{"generation": "no roads are built", "id": "12_and_neg"}
-{"generation": "no one builds roads", "id": "12_and_neg"}
-{"generation": "roller coaster's brakes are activated", "id": "13_and"}
-{"generation": "personX activates the brake on the roller coaster", "id": "13_and"}
-{"generation": "he changes the course of the ship", "id": "15_and"}
-{"generation": "changes the course of the ship", "id": "15_and"}
-{"generation": "an increase in the wave's sound amplitude", "id": "23_and"}
-{"generation": "an increase in the wave amplitude or sound amplitude", "id": "23_and"}
-{"generation": "an increase in the wave's amplitude", "id": "23_and"}
-{"generation": "increases the surface area of contact", "id": "35_and"}
-{"generation": "increases the surface area of contact between the object and the ground", "id": "35_and"}
-{"generation": "increase the surface area of contact", "id": "35_and"}
-{"generation": "does not increase the surface area of contact", "id": "35_and_neg"}
-{"generation": "does not increase the surface area in contact with the object", "id": "35_and_neg"}
-{"generation": "container keep the heat from the gas", "id": "36_and"}
-{"generation": "the container is heated by the gas", "id": "36_and"}
-{"generation": "there is a container of heat next to the gas", "id": "36_and"}
-{"generation": "the container is not heated", "id": "36_and_neg"}
-{"generation": "blows the rock with sand on the land", "id": "40_and"}
-{"generation": "blows the rock with sand and land", "id": "40_and"}
-{"generation": "blow the rock off the land", "id": "40_and"}
-{"generation": "the battery is warm", "id": "44_and"}
-{"generation": "the battery is not warm", "id": "44_and_neg"}
-{"generation": "the battery is not warmed", "id": "44_and_neg"}
-{"generation": "the moon moves closer to the earth", "id": "47_and"}
-{"generation": "the moon moves away from the earth", "id": "47_and"}
-{"generation": "the moon moves the earth", "id": "47_and"}
-{"generation": "there is no waste of resources on earth", "id": "49_and"}
-{"generation": "you use a light bulb", "id": "51_and"}
-{"generation": "you use a light bulb to see in the dark", "id": "51_and"}
-{"generation": "you use the light bulb", "id": "51_and"}
-{"generation": "waste the resource on earth", "id": "52_and"}
-{"generation": "wastes resources on earth", "id": "52_and"}
-{"generation": "he does not waste the resource on earth", "id": "52_and"}
-{"generation": "push the speed of someone", "id": "57_and"}
-{"generation": "pushes the speed of someone", "id": "57_and"}
-{"generation": "presses the triceps on the bench", "id": "71_and"}
-{"generation": "presses the grip on the bench", "id": "71_and"}
-{"generation": "presses the grip on the triceps", "id": "71_and"}
-{"generation": "he does not press the grip with his triceps on the bench", "id": "71_and_neg"}
-{"generation": "does not press the grip on the bench", "id": "71_and_neg"}
-{"generation": "does not press the grip of the triceps on the bench", "id": "71_and_neg"}
-{"generation": "pulls the moon with gravity", "id": "81_and"}
-{"generation": "pulls the moon with the earth's gravity", "id": "81_and"}
-{"generation": "he pulls the moon with gravity", "id": "81_and"}
-{"generation": "penthouse be adds on top of the building", "id": "83_and"}
-{"generation": "his air pressure decreases", "id": "87_and"}
-{"generation": "the air pressure decreases", "id": "87_and"}
-{"generation": "air pressure decreases", "id": "87_and"}
-{"generation": "people envision the fear", "id": "98_and"}
-{"generation": "people envision their fear", "id": "98_and"}
-{"generation": "fossil fuel burned in the earth", "id": "101_and"}
-{"generation": "fossil fuel burns", "id": "101_and"}
-{"generation": "the fossil fuel is burned", "id": "101_and"}
-{"generation": "turn the power off of the power source", "id": "107_and"}
-{"generation": "turns the source of power to the dc current", "id": "107_and"}
-{"generation": "another person turn on the power source", "id": "107_and"}
-{"generation": "no turns the source of power", "id": "107_and_neg"}
-{"generation": "turns the source of dc current to the solar panels", "id": "110_and"}
-{"generation": "turns the source of the DC current to the power", "id": "110_and"}
-{"generation": "he does not turn off the power source", "id": "110_and_neg"}
-{"generation": "the current through the resistor increase", "id": "111_and"}
-{"generation": "the current increase through the resistor", "id": "111_and"}
-{"generation": "the current increases through the resistor", "id": "111_and"}
-{"generation": "there is no resistor to increase the current", "id": "111_and_neg"}
-{"generation": "personX cleans the solar panels", "id": "112_and"}
-{"generation": "personX clean the solar panels", "id": "112_and"}
-{"generation": "not clean the solar panels", "id": "112_and"}
-{"generation": "personX does not clean the solar panels", "id": "112_and_neg"}
-{"generation": "plugs the laptop to the laptop battery", "id": "114_and"}
-{"generation": "plugs in the laptop to the laptop battery", "id": "114_and"}
-{"generation": "plugs the laptop into the laptop battery", "id": "114_and"}
-{"generation": "knob is turned in a clockwise direction", "id": "116_and"}
-{"generation": "turn the frequency knob clockwise", "id": "116_and"}
-{"generation": "knob is turned in the clockwise direction", "id": "116_and"}
-{"generation": "the knob is not turned clockwise", "id": "116_and_neg"}
-{"generation": "knob is not turned in the clockwise direction", "id": "116_and_neg"}
-{"generation": "knob of frequency is turned clockwise", "id": "116_and_neg"}
-{"generation": "personX turns on the lamp by power", "id": "125_and"}
-{"generation": "the size of the capacitor plates decreases", "id": "142_and"}
-{"generation": "adds frequency to the capacitor by plate", "id": "148_and"}
-{"generation": "adds material to the capacitor", "id": "148_and"}
-{"generation": "does not add any other materials between the capacitor plates", "id": "148_and"}
-{"generation": "adds an electrolyte to the system", "id": "150_and"}
-{"generation": "he does not add electrolyte to the system", "id": "150_and"}
-{"generation": "add an electrolyte to the system", "id": "150_and"}
-{"generation": "does not add an electrolyte to the system", "id": "150_and_neg"}
-{"generation": "the length of the pendulum increases", "id": "176_and"}
-{"generation": "the length of the pendulum increase", "id": "176_and"}
-{"generation": "personX saves money", "id": "181_and"}
-{"generation": "save money on the electric bill", "id": "181_and"}
-{"generation": "he saves money by using natural light", "id": "181_and"}
-{"generation": "saves money", "id": "183_and"}
-{"generation": "he does not save money", "id": "183_and_neg"}
-{"generation": "increases the distance between electric and charge", "id": "186_and"}
-{"generation": "increases the distance between himself and the electric charge", "id": "186_and"}
-{"generation": "personX increase the distance between the electric charge and the product", "id": "186_and"}
-{"generation": "he does not increase the distance between the electric and the charge", "id": "186_and_neg"}
-{"generation": "sell the product for money", "id": "189_and"}
-{"generation": "sells the product for money", "id": "189_and"}
-{"generation": "he does not increase the number of electric devices he turns on", "id": "193_and"}
-{"generation": "does not increase the number of electric turn", "id": "193_and"}
-{"generation": "increases the number of electric gadgets turned off", "id": "193_and"}
-{"generation": "does not increase the number of electrician visits", "id": "193_and_neg"}
-{"generation": "does not increase the number of electric turn", "id": "193_and_neg"}
-{"generation": "does not increase the number of electric devices he turns on", "id": "193_and_neg"}
-{"generation": "people eat the food from the cup", "id": "194_and"}
-{"generation": "personX eat the food in the cup", "id": "194_and"}
-{"generation": "people eat the food in the cup", "id": "194_and"}
-{"generation": "personX turns the radio to a high volume, the television will make noise", "id": "214_and"}
-{"generation": "it is turned into a liquid, the radio, television, and volume will all increase", "id": "214_and"}
-{"generation": "turn the radio to a high volume, the noise will drive the silver atoms apart", "id": "214_and"}
-{"generation": "turned into liquid form, the radio, television, and volume will decrease, but the noise will stay the same", "id": "214_and_neg"}
-{"generation": "no turn the radio on, the television volume will increase, and the noise will be loud", "id": "214_and_neg"}
-{"generation": "no turning the radio or television on, the volume and noise can increase", "id": "214_and_neg"}
-{"generation": "the wavelength of the waves decreases", "id": "216_and"}
-{"generation": "Eat grapefruit", "id": "229_and"}
-{"generation": "personX eat grapefruit", "id": "229_and"}
-{"generation": "no electrolyte be added to the water", "id": "232_and"}
-{"generation": "no water or electrolyte be added", "id": "232_and"}
-{"generation": "water be added to the electrolyte", "id": "232_and"}
-{"generation": "water is not added to the electrolyte", "id": "232_and_neg"}
-{"generation": "cooling the sunspot by sunspots", "id": "235_and"}
-{"generation": "personX increases the temperature by air conditioner", "id": "258_and"}
-{"generation": "temperature increase in the room by the air conditioner", "id": "258_and"}
-{"generation": "the temperature of the air conditioner is increased", "id": "258_and"}
-{"generation": "he digs in the garden to plant", "id": "274_and"}
-{"generation": "digs in the garden to plant", "id": "274_and"}
-{"generation": "the height decreases or the pentagon's side decreases", "id": "279_and"}
-{"generation": "decrease the height of one side of a pentagon", "id": "279_and"}
-{"generation": "widens the parallelogram by decreasing the base", "id": "282_and"}
-{"generation": "personX widens the parallelogram by base", "id": "282_and"}
-{"generation": "widens the parallelogram by base", "id": "282_and"}
-{"generation": "does not widen the parallelogram's base", "id": "282_and_neg"}
-{"generation": "personX add the cube and cup of ice", "id": "287_and"}
-{"generation": "personX adds a cube of ice to the cup", "id": "287_and"}
-{"generation": "does not add a cube of ice to the cup", "id": "287_and_neg"}
-{"generation": "he does not add a cube of ice to the cup", "id": "287_and_neg"}
-{"generation": "hit the target with the bullet", "id": "295_and"}
-{"generation": "hit the target by bullet", "id": "295_and"}
-{"generation": "personX hit the target with the bullet", "id": "295_and"}
-{"generation": "he does not hit the target with the bullet", "id": "295_and_neg"}
-{"generation": "does not hit the target by the bullet", "id": "295_and_neg"}
-{"generation": "fire the gun with a bullet", "id": "301_and"}
-{"generation": "the fire from the gun hits the bullet", "id": "302_and"}
-{"generation": "fire the gun with a bullet", "id": "302_and"}
-{"generation": "the cheetah approaches the prey slowly", "id": "308_and"}
-{"generation": "encounters little air resistance", "id": "309_and"}
-{"generation": "encounters more air resistance", "id": "309_and"}
-{"generation": "encounters less air resistance", "id": "309_and"}
-{"generation": "he does not encounter air resistance", "id": "309_and_neg"}
-{"generation": "personX turn the fan on", "id": "311_and"}
-{"generation": "the fan turns on", "id": "311_and"}
-{"generation": "turn on the fan", "id": "311_and"}
-{"generation": "the speed of the airplane increases", "id": "316_and"}
-{"generation": "no one increase the speed of the airplane", "id": "316_and_neg"}
-{"generation": "no one increases the speed of the airplane", "id": "316_and_neg"}
-{"generation": "the kite flies in the flag", "id": "321_and"}
-{"generation": "they turn on the sound", "id": "325_and"}
-{"generation": "turn on the sound", "id": "325_and"}
-{"generation": "they do not turn the sound on", "id": "325_and_neg"}
-{"generation": "he does not tie the knot of the rope", "id": "327_and"}
-{"generation": "tie the knot of the rope", "id": "327_and"}
-{"generation": "ties the knot of the rope", "id": "327_and"}
-{"generation": "he does not tie the knot of the rope", "id": "327_and_neg"}
-{"generation": "he ties a knot in the rope", "id": "327_and_neg"}
-{"generation": "does not tie the knot of the rope", "id": "327_and_neg"}
-{"generation": "the solution's gold concentration decreases", "id": "331_and"}
-{"generation": "decreases the solution's gold concentration", "id": "331_and"}
-{"generation": "there is no decrease in the solution's gold concentration", "id": "331_and_neg"}
-{"generation": "the number of electrons decreases", "id": "332_and"}
-{"generation": "the number of electron decreases", "id": "332_and"}
-{"generation": "he wipes the surface with a copper cloth", "id": "338_and"}
-{"generation": "wipes the surface of the copper", "id": "338_and"}
-{"generation": "he does not wipe the surface of the copper", "id": "338_and_neg"}
-{"generation": "tears the pond liner", "id": "343_and"}
-{"generation": "tear the liner of the pond", "id": "343_and"}
-{"generation": "liner in the pond tears", "id": "343_and"}
-{"generation": "dry the mud puddle", "id": "346_and"}
-{"generation": "pour water into the mud puddle", "id": "349_and"}
-{"generation": "pour the water into the mud puddle", "id": "349_and"}
-{"generation": "no water pours into the mud puddle", "id": "349_and_neg"}
-{"generation": "have class in school", "id": "359_and"}
-{"generation": "have no class at school", "id": "359_and"}
-{"generation": "have no class in school", "id": "359_and_neg"}
-{"generation": "stretches the muscle with less tension", "id": "366_and"}
-{"generation": "stretches the tension of the muscle", "id": "366_and"}
-{"generation": "he stretches his muscles to relieve tension", "id": "366_and"}
-{"generation": "stretches the muscle with no tension", "id": "366_and_neg"}
-{"generation": "he does not stretch his tension muscle", "id": "366_and_neg"}
-{"generation": "add milk to their tea", "id": "373_and"}
-{"generation": "they add milk to their tea", "id": "373_and"}
-{"generation": "does not add milk to their tea", "id": "373_and_neg"}
-{"generation": "they do not add milk to their tea", "id": "373_and_neg"}
-{"generation": "turns on the microwave", "id": "377_and"}
-{"generation": "turns on the air conditioner", "id": "379_and"}
-{"generation": "turns on the conditioner and air conditioner", "id": "379_and"}
-{"generation": "turn on the conditioner by air conditioner", "id": "379_and"}
-{"generation": "personX charges the battery", "id": "387_and"}
-{"generation": "the battery is not being charged", "id": "387_and"}
-{"generation": "the battery is not charging", "id": "387_and_neg"}
-{"generation": "people turn off the thermostat and the oven", "id": "388_and"}
-{"generation": "personX turn on the thermostat but not the oven", "id": "388_and_neg"}
-{"generation": "grind the wheat to flour", "id": "395_and"}
-{"generation": "grinds wheat to make flour", "id": "395_and"}
-{"generation": "the flashlight is turned on by burning the bulb", "id": "408_and"}
-{"generation": "the flashlight may burn the bulb", "id": "408_and"}
-{"generation": "no flashlight burn the bulb", "id": "408_and_neg"}
-{"generation": "no flashlight is used toburn the bulb", "id": "408_and_neg"}
-{"generation": "no power turns on the flashlight", "id": "412_and_neg"}
-{"generation": "no stars are formed in the galaxies", "id": "413_and_neg"}
-{"generation": "no star form new galaxies", "id": "413_and_neg"}
-{"generation": "candles burn at a lower temperature", "id": "414_and"}
-{"generation": "the temperature of the candles burning", "id": "414_and"}
-{"generation": "candle burns in the temperature", "id": "414_and"}
-{"generation": "no candles be burned", "id": "414_and_neg"}
-{"generation": "no candles burns", "id": "414_and_neg"}
-{"generation": "push the arm forward", "id": "421_and"}
-{"generation": "personX pushes the arm", "id": "421_and"}
-{"generation": "pushes the arm", "id": "421_and"}
-{"generation": "does not push the arm behind the back", "id": "421_and_neg"}
-{"generation": "does not push the arm", "id": "421_and_neg"}
-{"generation": "closes the window's shade", "id": "428_and"}
-{"generation": "he closes the window and the shade", "id": "428_and"}
-{"generation": "close the window's shade", "id": "428_and"}
-{"generation": "the moon moves away from the earth", "id": "437_and"}
-{"generation": "the moon moves across the earth", "id": "437_and"}
-{"generation": "the moon orbits the earth", "id": "443_and"}
-{"generation": "no moon orbits the earth", "id": "443_and_neg"}
-{"generation": "croissant's size is decreased", "id": "451_and"}
-{"generation": "croissant's base size decreases", "id": "451_and"}
-{"generation": "the croissant is decrease in size", "id": "451_and"}
-{"generation": "personX eats the cupcake", "id": "453_and"}
-{"generation": "the person eats the cupcake", "id": "453_and"}
-{"generation": "croissant's base decreases", "id": "456_and"}
-{"generation": "croissant's base decreases in size", "id": "456_and"}
-{"generation": "croissant's size decreases", "id": "456_and"}
-{"generation": "personX drinks fluids when coughing", "id": "459_and"}
-{"generation": "does not drink fluids when coughing", "id": "459_and_neg"}
-{"generation": "he does not move his bowels to the sound of the source", "id": "460_and_neg"}
-{"generation": "does not touch his face after coughing", "id": "463_and"}
-{"generation": "he doesn't touch his face when he coughing", "id": "463_and"}
-{"generation": "he does not touch his face when coughing", "id": "463_and"}
-{"generation": "he does not touch his face when he coughing", "id": "463_and_neg"}
-{"generation": "does not touch his face when coughing", "id": "463_and_neg"}
-{"generation": "he becomes seawater that absorbed too much carbon dioxide", "id": "469_and"}
-{"generation": "he does not become seawater or take in carbon dioxide", "id": "469_and_neg"}
+{"generation": "you combine two playlists.\nConstraint: [raise], [eye, eyebrow], [ eyebrow] ; Input: The muscle tension of the forehead will increase because you raise your eyebrows and ; Output:\nOutput: The muscle tension of the forehead will increase because you raise your eyebrows and you raise your eyebrows", "id": "204_and"}
+{"generation": "you combine the two playlists", "id": "204_and"}
+{"generation": "you combine two playlists", "id": "204_and"}
+{"generation": "you do not combine two playlists", "id": "204_and_neg"}
+{"generation": "you dig ditches in the ground", "id": "217_and"}
+{"generation": "you dig ditches on the ground", "id": "217_and"}
+{"generation": "you do not dig ditches in the ground", "id": "217_and_neg"}
+{"generation": "you do not dig the ditches in the ground", "id": "217_and_neg"}
+{"generation": "you unravel the yarn", "id": "244_and"}
+{"generation": "you unravel the yarn from the yarn", "id": "244_and"}
+{"generation": "you mow the foliage", "id": "260_and"}
+{"generation": "you do not mow the foliage", "id": "260_and_neg"}
+{"generation": "you cut the ribbon", "id": "262_and"}
+{"generation": "you shorten the jeans", "id": "355_and"}
+{"generation": "you do not shorten the jeans", "id": "355_and_neg"}
+{"generation": "you shorten the jeans.\nConstraints: [walk], [tired], [road], [side], [no] \nInput: The distance of crosswalk will increase because you are tired and ; Output:\nOutput: The distance of crosswalk will increase because you are tired and you walk on the side of the road", "id": "355_and_neg"}
+{"generation": "you speed up the tempo of the song", "id": "375_and"}
+{"generation": "you change the speed of the song to the tempo", "id": "375_and"}
+{"generation": "you take in the tuxedos at the hems", "id": "458_and"}
+{"generation": "you take the tuxedos off the hems", "id": "458_and"}
+{"generation": "you take down the tuxedos by the hems", "id": "458_and"}
+{"generation": "you do not take the tuxedos off the hems", "id": "458_and_neg"}
+{"generation": "you join two pieces of the chain", "id": "542_and"}
+{"generation": "you join the two pieces of the chain", "id": "542_and"}
+{"generation": "you do not join the two pieces of the chain", "id": "542_and_neg"}
+{"generation": "you use larger letters in your handwriting", "id": "569_and"}
+{"generation": "you use handwriting to make larger letters", "id": "569_and"}
+{"generation": "you use handwriting to larger letters", "id": "569_and"}
+{"generation": "you do not use larger letters in your handwriting", "id": "569_and_neg"}
+{"generation": "you do not use larger letters when handwriting", "id": "569_and_neg"}
+{"generation": "you extend the antenna by the rods", "id": "584_and"}
+{"generation": "you attach additional sections to the flagpole", "id": "645_and"}
+{"generation": "you attach the sections of the flagpole", "id": "645_and"}
+{"generation": "you attach the additional sections to the flagpole", "id": "645_and"}
+{"generation": "you attach the additional sections to the flagpole.\nConstraints: [hold], [hands, tools], [tools, work], [no] ; Input: The amount of time it takes to complete a task will increase because you have to take a break and ; Output:\nOutput: The amount of time it takes to complete a task will increase because you have to take a break and you hold the tools in your hands while you work", "id": "645_and_neg"}
+{"generation": "you add the cardigan to the a crochet edge of the hem", "id": "653_and"}
+{"generation": "you add a piece of fabric to the cloth", "id": "712_and"}
+{"generation": "you cut the cloth", "id": "759_and"}
+{"generation": "you cut the cloth in the middle", "id": "759_and"}
+{"generation": "you do not cut the cloth", "id": "759_and_neg"}
+{"generation": "you remove the words from the sentence", "id": "767_and"}
+{"generation": "you cut the bottom of the skirt", "id": "792_and"}
+{"generation": "you cut the skirt at the bottom", "id": "792_and"}
+{"generation": "you remove the instrumental sections of the song", "id": "827_and"}
+{"generation": "you reduce the number of events in the festivals", "id": "837_and"}
+{"generation": "you cut the rug", "id": "839_and"}
+{"generation": "you do not cut the rug", "id": "839_and_neg"}
+{"generation": "you tear the houses' walls", "id": "912_and"}
+{"generation": "you tear the houses down the walls", "id": "912_and"}
+{"generation": "you do not tear the houses' walls", "id": "912_and_neg"}
+{"generation": "you add the hydrofoil to the hull of the motorbike", "id": "1143_and"}
+{"generation": "you add the hydrofoil to the hull", "id": "1143_and"}
+{"generation": "the skier come to a stop", "id": "1170_and"}
+{"generation": "you make the skier come to a stop", "id": "1170_and"}
+{"generation": "there are no skiers to come to a stop", "id": "1170_and_neg"}
+{"generation": "no skier come to a stop", "id": "1170_and_neg"}
+{"generation": "you pass the wave in shallow water", "id": "1307_and"}
+{"generation": "you pass the wave in the shallow water", "id": "1307_and"}
+{"generation": "you do not pass the wave in the water", "id": "1307_and_neg"}
+{"generation": "you hit the shuttlecock with the racquet", "id": "1332_and"}
+{"generation": "you hit the shuttlecock with a racquet", "id": "1332_and"}
+{"generation": "you adjust the conveyor belt to the motor", "id": "1338_and"}
+{"generation": "you adjust the conveyor belt of the motor", "id": "1338_and"}
+{"generation": "you use the pouch to hold the lightweight materials", "id": "1401_and"}
+{"generation": "you use a pouch made of lightweight materials", "id": "1401_and"}
+{"generation": "you use a pouch made of lightweight materials.\nConstraints: [jump], [air], [height], [no] ; Input: The time of the fall will increase because you are in a vacuum and ; Output:\nOutput: The time of the fall will increase because you are in a vacuum and you do not jump high", "id": "1401_and_neg"}
+{"generation": "you insert the trousers in the leg", "id": "1575_and"}
+{"generation": "you insert the trouser in the leg", "id": "1575_and"}
+{"generation": "you do not insert the trouser in the leg", "id": "1575_and_neg"}
+{"generation": "you insert a material in the gap", "id": "1628_and"}
+{"generation": "you insert a material into the gap", "id": "1628_and"}
+{"generation": "you reduce the resolution of the picture", "id": "1716_and"}
+{"generation": "you don't perform shoulder exercises", "id": "1728_and"}
+{"generation": "you do not perform shoulder exercises", "id": "1728_and"}
+{"generation": "you perform shoulder exercises on the shoulder", "id": "1728_and"}
+{"generation": "you do not perform shoulder exercises", "id": "1728_and_neg"}
+{"generation": "you push the sandbar with strong wind", "id": "1741_and"}
+{"generation": "you push the sandbar with a strong wind", "id": "1741_and"}
+{"generation": "you withdraw your eye pupils from the light source", "id": "1763_and"}
+{"generation": "you do not withdraw your eye pupils from the light source", "id": "1763_and_neg"}
+{"generation": "you deposit the sand on the riverbank", "id": "1791_and"}
+{"generation": "you do not deposit the sand on the riverbank", "id": "1791_and_neg"}
+{"generation": "you shrink the image on the canvas", "id": "1799_and"}
+{"generation": "you do not shrink the image on the canvas", "id": "1799_and_neg"}
+{"generation": "you do not shrink your image on the canvas", "id": "1799_and_neg"}
+{"generation": "you remove the purses from the items", "id": "1805_and"}
+{"generation": "you remove the purses and items from the window sill", "id": "1805_and"}
+{"generation": "you do not add extra tiers to the stadiums", "id": "1828_and_neg"}
+{"generation": "you add extra boards to the fence", "id": "1866_and"}
+{"generation": "you do not add extra boards to the fence", "id": "1866_and_neg"}
+{"generation": "you start with less power for the jumps", "id": "1876_and"}
+{"generation": "you do not start the jumps with more power", "id": "1876_and_neg"}
+{"generation": "you ascend in a helium balloon on a warm day", "id": "1905_and"}
+{"generation": "you ascend the helium balloon on a warm day", "id": "1905_and"}
+{"generation": "you incorporate the bridge spans on the tall abutments", "id": "1907_and"}
+{"generation": "you incorporate the bridge spans into the tall abutments", "id": "1907_and"}
+{"generation": "you incorporate the bridge spans at the tall abutments", "id": "1907_and"}
+{"generation": "you incorporate the bridge spans with the tall abutments.\nConstraint: [remove], [plug, earbuds], [music, sound], [sound, no] ; Input: The decibels of the alarm clock will increase because you move the alarm clock away from the bed and ; Output: \n\nOutput: The decibels of the alarm clock will increase because you move the alarm clock away from the bed and you remove the plug from the earbuds", "id": "1907_and_neg"}
+{"generation": "you install taller nozzles on the fountains", "id": "2005_and"}
+{"generation": "you instal the fountains with taller nozzles", "id": "2005_and"}
+{"generation": "you instal the fountains with taller nozzles", "id": "2005_and_neg"}
+{"generation": "you build the seawall with earthy material", "id": "2006_and"}
+{"generation": "you do not build a seawall out of earthy material", "id": "2006_and_neg"}
+{"generation": "you adjust the paintings on the mount", "id": "2020_and"}
+{"generation": "you reduce the number of paintings on the canvas", "id": "2166_and"}
+{"generation": "you reduce the paintings on the canvas", "id": "2166_and"}
+{"generation": "you decrease the pitch angle of the wind turbine", "id": "2169_and"}
+{"generation": "you maintain the plant growth in cool temperatures", "id": "2187_and"}
+{"generation": "you do not move the aerial view to high structures", "id": "2193_and_neg"}
+{"generation": "you provide adequate nutrients for the crops", "id": "2211_and"}
+{"generation": "you do not provide adequate nutrients for the crops", "id": "2211_and_neg"}
+{"generation": "you increase the amount of trash in the wet items", "id": "2276_and"}
+{"generation": "you do not increase the weight of the trash", "id": "2276_and_neg"}
+{"generation": "you initiate the crops pest control activities", "id": "2277_and"}
+{"generation": "you instal the satellites and the solar panels on the panel", "id": "2370_and"}
+{"generation": "you instal the satellites by solar panels", "id": "2370_and"}
+{"generation": "you do not install satellites or solar panels on the panel", "id": "2370_and_neg"}
+{"generation": "you use the radar of the low frequency", "id": "2577_and"}
+{"generation": "you use a radar to find low frequency", "id": "2577_and"}
+{"generation": "you use a radar with low frequency", "id": "2577_and"}
+{"generation": "you do not use radar with low frequency", "id": "2577_and_neg"}
+{"generation": "you do not use the radar at a low frequency", "id": "2577_and_neg"}
+{"generation": "you propel the submarine through the water", "id": "2584_and"}
+{"generation": "you do not propel the submarine in the water", "id": "2584_and_neg"}
+{"generation": "you lose the electrons in the atom", "id": "2656_and"}
+{"generation": "you lose electrons from the atom", "id": "2656_and"}
+{"generation": "you lose the atom's electrons", "id": "2656_and"}
+{"generation": "you do not lose any atom's electrons", "id": "2656_and_neg"}
+{"generation": "you increase the distance of your jogging", "id": "2757_and"}
+{"generation": "you do not use the backboard when shooting hoops", "id": "2787_and"}
+{"generation": "you use the backboard when shooting hoops", "id": "2787_and"}
+{"generation": "you use the backboard to shooting hoops", "id": "2787_and"}
+{"generation": "you do not use the backboard when shooting hoops", "id": "2787_and_neg"}
+{"generation": "you take short-cuts when commuting", "id": "2817_and"}
+{"generation": "you take a break while bike riding", "id": "2910_and"}
+{"generation": "you take a break from bike riding", "id": "2910_and"}
+{"generation": "fewer people rehearsing", "id": "2940_and"}
+{"generation": "you reduce the amount of time doing laundry", "id": "2962_and"}
+{"generation": "you reduce the amount of time you spend doing laundry", "id": "2962_and"}
+{"generation": "you take slower strokes while sculpting", "id": "2988_and"}
+{"generation": "you simplify your housekeeping tasks by task", "id": "3032_and"}
+{"generation": "you simplify your housekeeping tasks", "id": "3032_and"}
+{"generation": "you do not simplify your housekeeping tasks", "id": "3032_and_neg"}
+{"generation": "you do not simplify the housekeeping tasks", "id": "3032_and_neg"}
+{"generation": "you use larger font books", "id": "3100_and"}
+{"generation": "you use books with a larger font", "id": "3100_and"}
+{"generation": "you turn down the gain of the microphone", "id": "3108_and"}
+{"generation": "you turn the gain of the microphone", "id": "3108_and"}
+{"generation": "you introduce new products in the sales meeting", "id": "3112_and"}
+{"generation": "you introduce new products to the sales staff.\nConstraint: [Hit], [ball, racket], [ball, ground], [racket, ground], [no] ; Input: The speed of the tennis ball will increase because you hit the ball with a harder racket and ; Output:\nOutput: The speed of the tennis ball will increase because you hit the ball with a harder racket and you do not hit the ground", "id": "3112_and"}
+{"generation": "you introduce new products in the sales", "id": "3112_and"}
+{"generation": "you pack the phone with the insulation", "id": "3113_and"}
+{"generation": "you pack the insulation", "id": "3113_and"}
+{"generation": "you do not pack the insulation", "id": "3113_and_neg"}
+{"generation": "you add more cereal to the fish area", "id": "3241_and"}
+{"generation": "you add more cereal to the fish food", "id": "3241_and"}
+{"generation": "you add more cereal to the water", "id": "3241_and"}
+{"generation": "you strike the drum pads at the centre", "id": "3286_and"}
+{"generation": "you break the cargo into larger items", "id": "3436_and"}
+{"generation": "you break the cargo of larger items", "id": "3436_and"}
+{"generation": "you do not break the cargo of larger items", "id": "3436_and_neg"}
+{"generation": "you dry the tissue in the tissue", "id": "3456_and"}
+{"generation": "you dry the tissue", "id": "3456_and"}
+{"generation": "you do not dry the tissue", "id": "3456_and_neg"}
+{"generation": "you reduce the speed of the drill", "id": "3462_and"}
+{"generation": "you remove the balloon from the air", "id": "3679_and"}
+{"generation": "you remove the air from the balloon", "id": "3679_and"}
+{"generation": "you compact the mud", "id": "3714_and"}
+{"generation": "you do not compact the mud", "id": "3714_and_neg"}
+{"generation": "you add mud to the soil", "id": "3758_and"}
+{"generation": "you add more binder to the paint", "id": "3763_and"}
+{"generation": "you expand the golf course by fairways", "id": "4089_and"}
+{"generation": "you do not expand the golf course by fairways", "id": "4089_and_neg"}
+{"generation": "you do not expand the golf course's fairways", "id": "4089_and_neg"}
+{"generation": "you reclaim the land from the shallow water", "id": "4139_and"}
+{"generation": "you flatten the funnel cake", "id": "4375_and"}
+{"generation": "you decrease the trapezium of the length and base", "id": "4415_and"}
+{"generation": "the air flow is speed", "id": "4464_and"}
+{"generation": "you decrease the speed of the air flow", "id": "4464_and"}
+{"generation": "you speed up the air flow", "id": "4464_and"}
+{"generation": "you do not have speed in the air flow", "id": "4464_and_neg"}
+{"generation": "you do not increase the speed of the air flow", "id": "4464_and_neg"}
+{"generation": "you do not automate the circulation", "id": "4467_and"}
+{"generation": "you automate the circulation", "id": "4467_and"}
+{"generation": "you do not automate the circulation", "id": "4467_and_neg"}
+{"generation": "you improve the fuel efficiency of the tire pressure", "id": "4522_and"}
+{"generation": "you do not show compassion or kindness", "id": "4562_and"}
+{"generation": "you show compassion and kindness", "id": "4562_and"}
+{"generation": "you do not show compassion or kindness", "id": "4562_and_neg"}
+{"generation": "you automate the circulation of the screen brightness", "id": "4597_and"}
+{"generation": "you do not automate the circulation", "id": "4597_and_neg"}
+{"generation": "you monitor your investment portfolio for investments", "id": "4598_and"}
+{"generation": "you monitor the investments in the investment portfolio", "id": "4598_and"}
+{"generation": "you do not advertise the job openings", "id": "4646_and_neg"}
+{"generation": "you reduce the bacteria in the nutrient supply", "id": "4729_and"}
+{"generation": "you use a machine to power the machine", "id": "4827_and"}
+{"generation": "you use the power of a machine", "id": "4827_and"}
+{"generation": "you do not use power in a machine", "id": "4827_and_neg"}
+{"generation": "you increase the pressure exerted by the distance", "id": "4837_and"}
+{"generation": "you increase the pressure exerted on the distance", "id": "4837_and"}
+{"generation": "you do not increase the pressure exerted on the distance", "id": "4837_and_neg"}
+{"generation": "you add the guano to the phosphorus", "id": "4931_and"}
+{"generation": "you add phosphorus to the guano", "id": "4931_and"}
+{"generation": "you add the phosphorus to the guano", "id": "4931_and"}
+{"generation": "you add the phosphorus to the guano", "id": "4931_and_neg"}
+{"generation": "you add guano to the phosphorus", "id": "4931_and_neg"}
+{"generation": "you use helium in the recycling systems", "id": "4945_and"}

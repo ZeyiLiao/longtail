@@ -1,4 +1,3 @@
-from curses import nl
 import json
 import random
 import numpy as np
@@ -6,8 +5,8 @@ from pathlib import Path
 import os
 import jsonlines
 import argparse
-from sklearn.model_selection import train_test_split
-from get_data_utils import All_Data
+from sklearn import model_selection
+from utils import All_Data
 
 
 np.random.seed(42)
@@ -76,9 +75,9 @@ def split_all(dir_name,X,Y,split):
         fo.write(nl)
 
 
-def main(args):
+def split_func(args):
 
-    all_data = All_Data()
+    all_data = All_Data(args.all_data)
 
     with jsonlines.open(f'{args.gpt_outputs_dir}/gpt_outputs.jsonl') as f:
         generations = []
@@ -95,10 +94,9 @@ def main(args):
 
     process = Process(all_dict)
 
-
     inputs,outputs = process.process_format(args.data_type,generations,ids)
 
-    X_train, X_test, y_train, y_test = train_test_split(inputs, outputs, train_size = args.ratio, random_state=42)
+    X_train, X_test, y_train, y_test = model_selection.train_test_split(inputs, outputs, train_size = args.ratio, random_state=42)
 
     splits = ['train','dev','test']
     for split in splits:
@@ -117,4 +115,4 @@ if __name__ == '__main__':
     parser.add_argument('--ratio',default=0.7,help='Ratio of the datasets for training')
     parser.add_argument('--data_type',default='wo_m_t5')
     args = parser.parse_args()
-    main(args)
+    split_func(args)

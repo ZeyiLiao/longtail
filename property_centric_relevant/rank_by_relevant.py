@@ -2,10 +2,23 @@ import pickle
 import requests
 from transformers import AutoTokenizer,AutoModel
 from collections import defaultdict as ddict
+import os
+from argparse import ArgumentParser
+
+os.environ['CUDA_DEVICE_ORDER'] = "PCI_BUS_ID"
+os.environ['CUDA_VISIBLE_DEVICES'] = '9'
+
+from numpy import dot
+from numpy.linalg import norm
 import torch
 import torch.nn.functional as F
 from nltk.corpus import wordnet as wn
 from tqdm import tqdm
+import glob
+
+import csv
+
+DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 def rough_match(candicate,start_l):
 	res = []
@@ -62,17 +75,14 @@ def rank_by_conceptnet(combinations):
 def sum_embeddings(word_id,embedding):
 	return torch.sum(embedding(word_id).squeeze(0),dim=0)/len(word_id)
 
-def rank_by_bert(combinations):
+def rank_by_bert(combinations,words_to_vecs):
 	combinations_score = []
 
-	
 	for combination in combinations:
-		id_0 = torch.tensor(t.convert_tokens_to_ids(t.tokenize(combination[0]))).unsqueeze(0).to(device)
-		id_1 = torch.tensor(t.convert_tokens_to_ids(t.tokenize(combination[1]))).unsqueeze(0).to(device)
-		embd_0 = sum_embeddings(id_0,embedding)
-		embd_1 = sum_embeddings(id_1,embedding)
-		sim_score = F.cosine_similarity(embd_1,embd_0,dim=0)
-		sim_score = sim_score.cpu().detach().numpy().tolist()
+		embd_0 = words_to_vecs[combination[0]]
+		embd_1 = words_to_vecs[combination[1]]
+		sim_score =dot(embd_0, embd_1)/(norm(embd_0)*norm(embd_1))
+
 
 		combination_score = combination + (sim_score,)
 		combinations_score.append(combination_score)
@@ -116,43 +126,103 @@ def rank_by_nltk(combinations):
 
 
 
+def filter_objects(combinations):
+	long_l = []
+	new_combinations = []
+	for combination in combinations:
+		if combination[2] >= 0.6:
+			long_one = combination[0] if len(combination[0]) > len(combination[1]) else combination[1]
+			long_l.append(long_one)
 
-with open('./all_objects_combination.pkl','rb') as f:
-	properties = pickle.load(f)
+	combinations = list(filter(lambda i : len(set(i[:2]) & set(long_l))== 0, combinations))
+	combinations = list(filter(lambda i : (i[2] <= 0.55 and i[2] >= 0.2), combinations))
 
-m = AutoModel.from_pretrained('bert-large-uncased')
-m.eval()
-t = AutoTokenizer.from_pretrained('bert-large-uncased')
-embedding = m.embeddings
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
-print(device)
-embedding.to(device)
+	return combinations
 
-properties_scores = ddict(lambda : ddict(list))
-for key in tqdm(properties.keys()):
-	combinations = properties[key]
+
 	
-	concept_scores = rank_by_conceptnet(combinations)
-	sorted(concept_scores, key = lambda i : i[2],reverse=True)
-	properties_scores[key]['concept'] = concept_scores
 
-	concept_scores = rank_by_bert(combinations)
-	sorted(concept_scores, key = lambda i : i[2],reverse=True)
-	properties_scores[key]['bert'] = concept_scores
-
-	concept_scores = rank_by_nltk(combinations)
-	sorted(concept_scores, key = lambda i : i[2],reverse=True)
-	properties_scores[key]['wordnet'] = concept_scores
-
-properties_scores = dict(properties_scores)
-with open('./all_objects_rank.pkl','wb') as f:
-	pickle.dump(properties_scores,f)
+def change_words_to_vec(all_objects,bs = 64):
+	words_to_vecs = {}
+	
+	for index in range(0,len(all_objects),bs):
+		objects_bs = all_objects[index:index+bs]
+		ids = t(objects_bs,padding=True,return_tensors='pt',add_special_tokens=False)
+		ids = ids.to(DEVICE)
+		input_ids = ids['input_ids']
+		attention_mask = ids['attention_mask']
+		with torch.no_grad():
+			all_vecs = embedding(input_ids)
 
 
+		for i,word in enumerate(objects_bs):
+			start_not_pad = torch.sum(attention_mask[i,:]).cpu().numpy()
+			words_to_vecs[word] = (torch.sum(all_vecs[i,:start_not_pad,:],dim=0).cpu().numpy()/start_not_pad)
 
-		
+	return words_to_vecs
+
+
+if __name__ == "__main__":
+	parse = ArgumentParser()
+	parse.add_argument('--vectors',action='store_true')
+	args = parse.parse_args()
+
+	if args.vectors:
+		m = AutoModel.from_pretrained('bert-large-uncased')
+		# m = AutoModel.from_pretrained('bert-base-uncased')
+
+		t = AutoTokenizer.from_pretrained('bert-large-uncased')
+		embedding = m.embeddings
+		embedding.eval()
+
+		# DEVICE = 'cpu'
+		print(DEVICE)
+		embedding.to(DEVICE)
+
+
+	path = '../property_centric'
+	properties_path = list(set(glob.glob(f'{path}/*')) - set(glob.glob(f'{path}/*.txt')))
+
+	for property_path in tqdm(properties_path):
+		all_objects_path = f"{property_path}/all_objects_combination.pkl"
+
+		with open(all_objects_path,'rb') as f:
+			combinations = pickle.load(f)
+			
+			# concept_scores = rank_by_conceptnet(combinations)
+			# sorted(concept_scores, key = lambda i : i[2],reverse=True)
+			# properties_scores[key]['concept'] = concept_scores
+
+			# concept_scores = rank_by_nltk(combinations)
+			# sorted(concept_scores, key = lambda i : i[2],reverse=True)
+			# properties_scores[key]['wordnet'] = concept_scores
+
+			if not os.path.exists(f"{property_path}/words_to_vecs.pkl"):
+				assert args.vectors,'Need model to vectorlize words'
+
+				all_objects = list(set([_[0] for _ in combinations]) | set([_[1] for _ in combinations]))
+				words_to_vecs = change_words_to_vec(all_objects)
+
+				with open(f"{property_path}/words_to_vecs.pkl",'wb') as f:
+					pickle.dump(words_to_vecs,f)
+
+			with open(f"{property_path}/words_to_vecs.pkl",'rb') as f:
+				words_to_vecs = pickle.load(f)
+				concept_scores = rank_by_bert(combinations,words_to_vecs)
+
+			concept_scores = filter_objects(concept_scores)
+			concept_scores = sorted(concept_scores, key = lambda i : i[2],reverse=True)
+			with open(f"{property_path}/filtered_object_pairs.csv",'w') as f:
+				writer = csv.writer(f)
+				writer.writerows(concept_scores)
+			
+
+
+
 
 			
 
-			
+				
+
+				
 
