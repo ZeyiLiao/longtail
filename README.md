@@ -2,7 +2,7 @@
 
 **Ignore**
 test
-
+1
 
 Plz add a code at Simcse/tool.py for not reloading the whole dataset with different querys.
 
