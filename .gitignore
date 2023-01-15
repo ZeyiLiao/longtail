@@ -2,6 +2,7 @@ data/
 wandb/
 .vscode/
 __pycache__/
+<<<<<<< Updated upstream
 figure/
 counter_fit_embedding/
 glove_embeddings/
@@ -16,3 +17,6 @@ _old_data/
 property_centric/
 longtail_data/
 train/
+=======
+figure/
+>>>>>>> Stashed changes
