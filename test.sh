@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-3
+detached head
+
